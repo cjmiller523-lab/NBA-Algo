@@ -9,7 +9,6 @@ import pandas as pd
 from datetime import datetime
 from nba_api.stats.endpoints import ScoreboardV2, PlayerGameLog
 from nba_api.stats.static import teams, players
-from tabulate import tabulate
 from reportlab.lib.pagesizes import letter
 from reportlab.lib import colors
 from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Table, TableStyle
