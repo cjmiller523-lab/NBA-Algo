@@ -128,7 +128,7 @@ def get_recent_games_cached(player_name, player_id):
         return df_cached.head(NUM_GAMES)
 
     fetched_df["GAME_DATE"] = pd.to_datetime(fetched_df["GAME_DATE"])
-    fetched_df = fetched_df[["GAME_DATE", "MATCHUP", "PTS", "REB", "AST", "STL", "BLK", "FG3M"]]
+    fetched_df = fetched_df[["GAME_DATE", "MATCHUP", "MIN", "PTS", "REB", "AST", "STL", "BLK", "FG3M"]]
     fetched_df.sort_values("GAME_DATE", ascending=False, inplace=True)
     fetched_df = fetched_df.head(NUM_GAMES)
 
@@ -168,6 +168,68 @@ def summarize_stat(df, stat_name, thresholds):
         if top_100 not in output:
             output.insert(0, top_100)
     return output
+
+import numpy as np
+
+def compute_confidence(df, stat_col, threshold):
+    """
+    df: last 10 games for player
+    stat_col: "PTS", "REB", etc.
+    threshold: e.g. 20
+    returns: confidence 0-100
+    """
+    vals = df[stat_col].tolist()
+    mins = df["MIN"] if "MIN" in df.columns else pd.Series([None]*len(df))
+
+    # 1) base from hit rate
+    hits = sum(v >= threshold for v in vals)
+    total = len(vals)
+    if total == 0:
+        return 0
+    base = hits / total * 100  # e.g. 90
+
+    # 2) figure out typical minutes
+    if "MIN" in df.columns:
+        median_min = df["MIN"].median()
+    else:
+        median_min = None
+
+    # find misses
+    miss_indices = [i for i, v in enumerate(vals) if v < threshold]
+
+    outlier_bonus = 0
+    if miss_indices:
+        outlierish = True
+        for i in miss_indices:
+            miss_val = vals[i]
+            # how big was the miss?
+            miss_gap = threshold - miss_val  # if 20 line and got 4 -> gap 16
+            # was it low minutes?
+            low_min = False
+            if median_min is not None and not pd.isna(mins.iloc[i]):
+                low_min = mins.iloc[i] < (0.6 * median_min)  # played <60% of normal
+
+            # if we find a miss that was NOT a tiny-minute or close miss, then it's real
+            close_miss = miss_gap <= 2  # like 19 on 20 line
+            if not (low_min or close_miss):
+                outlierish = False
+                break
+
+        if outlierish:
+            outlier_bonus = 5  # give small bump for "the only miss was weird"
+
+    # 3) consistency bonus (low std dev)
+    stat_std = np.std(vals)
+    # rough rule: std <= 3 (for pts) is very consistent; for rebounds/assists it'll be smaller
+    consistency_bonus = 0
+    if stat_std <= 2:
+        consistency_bonus = 5
+    elif stat_std <= 4:
+        consistency_bonus = 2
+
+    confidence = base + outlier_bonus + consistency_bonus
+    return min(100, round(confidence, 1))
+
 
 # =====================================
 # FETCH GAMES + MAIN LOGIC
@@ -242,13 +304,19 @@ def generate_report():
                     res = summarize_stat(df, stat, thresholds)
                     for t, pct, hits, total in res:
                         table_data.append([label, f"{t}+", f"{hits}/{total}", f"{pct:.0f}%"])
+                        conf = compute_confidence(df, stat, t)
                         top_trends.append({
                             "player": player_name,
-                            "team": team_abbr,
-                            "label": label,
-                            "threshold": t,
-                            "pct": pct
-                        })
+                             "team": team_abbr,
+                             "label": label,
+                             "threshold": t,
+                             "pct": pct,
+                             "confidence": conf,
+                             "hits": hits,
+                             "total": total,
+                            })
+
+                        
 
                 if len(table_data) > 1:
                     t = Table(table_data)
@@ -268,7 +336,7 @@ def generate_report():
 
     # SUMMARY
     if top_trends:
-        top_sorted = sorted(top_trends, key=lambda x: x["pct"], reverse=True)[:25]
+        top_conf = sorted(top_trends, key=lambda x: (-x["confidence"], -x["pct"]))[:5]
         story.append(Spacer(1, 12))
         story.append(Paragraph("<b>Top Hit Rate Trends</b>", styles["Heading2"]))
         summary_data = [["Player", "Team", "Stat", "Threshold", "Hit Rate"]]
