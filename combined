@@ -1,0 +1,603 @@
+import warnings
+warnings.filterwarnings("ignore")
+
+import os
+import json
+import random
+import time
+from datetime import datetime
+
+import numpy as np
+import pandas as pd
+import requests
+from nba_api.stats.endpoints import PlayerGameLog
+from nba_api.stats.static import players as nba_players
+
+from reportlab.lib.pagesizes import letter
+from reportlab.lib import colors
+from reportlab.platypus import (
+    SimpleDocTemplate,
+    Paragraph,
+    Spacer,
+    Table,
+    TableStyle,
+)
+from reportlab.lib.styles import getSampleStyleSheet
+
+
+# =====================================
+# SETTINGS
+# =====================================
+NUM_GAMES = 10
+SEASONS = ["2025-26", "2024-25"]
+SEASON_TYPES = ["Regular Season", "Playoffs"]
+HIT_RATE_CUTOFF = 0  # we will apply ranking instead of hard cutoff
+MAX_RETRIES = 3
+
+# Thresholds (same concept as Script A)
+POINT_THRESHOLDS = [10, 15, 20, 25, 30]
+REB_THRESHOLDS = [2, 4, 6, 8, 10]
+AST_THRESHOLDS = [2, 4, 6, 8, 10]
+STL_THRESHOLDS = [1, 2]
+BLK_THRESHOLDS = [1, 2]
+THREEPM_THRESHOLDS = [1, 2, 3, 4, 5]
+
+# Map SGO stat key -> metadata
+STAT_META = {
+    "points":   {"label": "Points",   "df_col": "PTS",  "thresholds": POINT_THRESHOLDS},
+    "rebounds": {"label": "Rebounds", "df_col": "REB",  "thresholds": REB_THRESHOLDS},
+    "assists":  {"label": "Assists",  "df_col": "AST",  "thresholds": AST_THRESHOLDS},
+    "steals":   {"label": "Steals",   "df_col": "STL",  "thresholds": STL_THRESHOLDS},
+    "blocks":   {"label": "Blocks",   "df_col": "BLK",  "thresholds": BLK_THRESHOLDS},
+    "threes":   {"label": "3PM",      "df_col": "FG3M", "thresholds": THREEPM_THRESHOLDS},
+}
+
+STATS = list(STAT_META.keys())
+
+# Odds / SGO
+SGO_API_KEY = os.getenv("SGO_API_KEY", "7243468c02f981445249730c03b426c1")
+BASE_URL = "https://api.sportsgameodds.com/v2/events"
+
+ODDS_CACHE_DIR = "odds_cache"
+PLAYER_CACHE_DIR = "cache"
+os.makedirs(ODDS_CACHE_DIR, exist_ok=True)
+os.makedirs(PLAYER_CACHE_DIR, exist_ok=True)
+
+
+# =====================================
+# PLAYER CACHE HELPERS (from Script A)
+# =====================================
+def _safe_filename(name: str) -> str:
+    return name.replace(" ", "_").replace(".", "").replace("'", "")
+
+
+def load_cache_player(player_name):
+    file_path = os.path.join(PLAYER_CACHE_DIR, f"{_safe_filename(player_name)}.json")
+    if os.path.exists(file_path):
+        try:
+            with open(file_path, "r") as f:
+                data = json.load(f)
+            df = pd.DataFrame(data)
+            if not df.empty and "GAME_DATE" in df.columns:
+                df["GAME_DATE"] = pd.to_datetime(df["GAME_DATE"], errors="coerce")
+            return df.to_dict(orient="records")
+        except Exception as e:
+            print(f"  ⚠️ Error loading cache for {player_name}: {e}")
+            return []
+    return []
+
+
+def save_cache_player(player_name, data):
+    file_path = os.path.join(PLAYER_CACHE_DIR, f"{_safe_filename(player_name)}.json")
+    with open(file_path, "w") as f:
+        json.dump(data, f, indent=2, default=str)
+
+
+def safe_fetch_player_logs(player_id, season, stype):
+    for attempt in range(MAX_RETRIES):
+        try:
+            time.sleep(random.uniform(0.3, 0.8))
+            return PlayerGameLog(
+                player_id=player_id,
+                season=season,
+                season_type_all_star=stype
+            ).get_data_frames()[0]
+        except Exception as e:
+            print(f"   ⚠️ Attempt {attempt+1} failed for {player_id}: {e}")
+            time.sleep(2 + attempt)
+    print(f"   ❌ Skipping {player_id} after {MAX_RETRIES} failed attempts.")
+    return pd.DataFrame()
+
+
+def get_recent_games_cached(player_name, player_id):
+    player_cache = load_cache_player(player_name)
+    df_cached = pd.DataFrame(player_cache)
+
+    if not df_cached.empty:
+        df_cached["GAME_DATE"] = pd.to_datetime(df_cached["GAME_DATE"], errors="coerce")
+
+    fetched_df = pd.DataFrame()
+    for season in SEASONS:
+        for stype in SEASON_TYPES:
+            logs = safe_fetch_player_logs(player_id, season, stype)
+            if not logs.empty:
+                fetched_df = pd.concat([fetched_df, logs], ignore_index=True)
+
+    if fetched_df.empty:
+        print(f"  ⚠️ No data from API for {player_name}, using cache only.")
+        return df_cached.head(NUM_GAMES)
+
+    fetched_df["GAME_DATE"] = pd.to_datetime(fetched_df["GAME_DATE"], errors="coerce")
+    fetched_df = fetched_df[
+        ["GAME_DATE", "MATCHUP", "MIN", "PTS", "REB", "AST", "STL", "BLK", "FG3M"]
+    ]
+    fetched_df.sort_values("GAME_DATE", ascending=False, inplace=True)
+    fetched_df = fetched_df.head(NUM_GAMES)
+
+    if df_cached.empty:
+        combined = fetched_df
+    else:
+        combined = pd.concat([fetched_df, df_cached], ignore_index=True)
+        combined["GAME_DATE"] = pd.to_datetime(combined["GAME_DATE"], errors="coerce")
+        combined = (
+            combined
+            .drop_duplicates(subset="GAME_DATE")
+            .sort_values("GAME_DATE", ascending=False)
+            .head(NUM_GAMES)
+        )
+
+    print(f"  ♻️ Updating cache for {player_name} with {len(fetched_df)} fetched rows.")
+    save_cache_player(player_name, combined.to_dict(orient="records"))
+    return combined
+
+
+# =====================================
+# CONFIDENCE / EDGE HELPERS
+# =====================================
+def hit_rate(series, threshold):
+    series = pd.to_numeric(series, errors="coerce").dropna()
+    total = len(series)
+    if total == 0:
+        return 0.0, 0, 0
+    hits = (series >= threshold).sum()
+    pct = hits / total * 100
+    return pct, int(hits), int(total)
+
+
+def compute_confidence(df, stat_col, threshold):
+    """
+    Enhanced confidence:
+    - Base = hit rate
+    - Outlier adjustment: ignore misses that were low-minutes or close misses
+    - Consistency bonus from std dev
+    """
+    if df.empty or stat_col not in df.columns:
+        return 0.0
+
+    values = pd.to_numeric(df[stat_col], errors="coerce").dropna().tolist()
+    if not values:
+        return 0.0
+
+    mins = (
+        pd.to_numeric(df["MIN"], errors="coerce").fillna(0).tolist()
+        if "MIN" in df.columns
+        else [0] * len(values)
+    )
+
+    base_hits = sum(v >= threshold for v in values)
+    total = len(values)
+    base_pct = base_hits / total * 100
+
+    # median minutes for context
+    median_min = np.median([m for m in mins if m > 0]) if any(m > 0 for m in mins) else None
+
+    # outlier logic
+    penalties = 0
+    ignorable_miss_count = 0
+    for v, m in zip(values, mins):
+        if v >= threshold:
+            continue
+        gap = threshold - v
+        low_min = False
+        if median_min and m < 0.5 * median_min:
+            low_min = True
+        close_miss = gap <= 2
+
+        if low_min or close_miss:
+            ignorable_miss_count += 1
+            continue
+
+        # real miss: penalize based on gap, capped
+        penalties += min(gap * 1.5, 10)
+
+    outlier_bonus = 0
+    if base_hits >= 1 and penalties == 0 and ignorable_miss_count > 0:
+        outlier_bonus = 5
+
+    # consistency bonus from std dev
+    stat_std = float(np.std(values))
+    if stat_std <= 2:
+        consistency_bonus = 5
+    elif stat_std <= 4:
+        consistency_bonus = 2
+    else:
+        consistency_bonus = 0
+
+    confidence = base_pct + outlier_bonus + consistency_bonus - penalties
+    return float(max(0, min(100, round(confidence, 1))))
+
+
+def american_to_implied_prob(odds):
+    """
+    Return implied probability [0,1] from American odds.
+    """
+    try:
+        o = int(odds)
+    except Exception:
+        return 0.0
+
+    if o == 0:
+        return 0.0
+
+    if o < 0:
+        return (-o) / ((-o) + 100)
+    else:
+        return 100 / (o + 100)
+
+
+# =====================================
+# ODDS CACHE HELPERS (from Script B)
+# =====================================
+def get_odds_cache_path(tag):
+    today = datetime.utcnow().strftime("%Y%m%d")
+    return os.path.join(ODDS_CACHE_DIR, f"{tag}_{today}.json")
+
+
+def load_cached_odds(tag):
+    path = get_odds_cache_path(tag)
+    if os.path.exists(path):
+        try:
+            with open(path, "r") as f:
+                return json.load(f)
+        except:
+            return None
+    return None
+
+
+def save_cached_odds(data, tag):
+    with open(get_odds_cache_path(tag), "w") as f:
+        json.dump(data, f, indent=2)
+
+
+# =====================================
+# SGO: GET GAMES + PROPS
+# =====================================
+def get_all_games_today_sgo():
+    params = {
+        "apiKey": SGO_API_KEY,
+        "leagueID": "NBA",
+        "oddsAvailable": "true",
+        "bookmakerID": "fanduel",
+        "limit": "200",
+    }
+    r = requests.get(BASE_URL, params=params, timeout=20)
+    r.raise_for_status()
+    js = r.json()
+    return js.get("data", [])
+
+
+def get_starters(players_dict):
+    # SGO doesn't mark starters, so we take 5 alphabetically by playerID.
+    return sorted(players_dict.keys())[:5]
+
+
+def build_odds_request(player_ids):
+    odd_ids = []
+    for pid in player_ids:
+        for stat in STATS:
+            odd_ids.append(f"{stat}-{pid}-game-ou-over")
+    return ",".join(odd_ids)
+
+
+def fetch_team_props(odd_id_string, tag):
+    cached = load_cached_odds(tag)
+    if cached:
+        return cached
+
+    params = {
+        "apiKey": SGO_API_KEY,
+        "leagueID": "NBA",
+        "bookmakerID": "fanduel",
+        "oddsAvailable": "true",
+        "oddIDs": odd_id_string,
+        "includeOpposingOdds": "true",
+        "includeAltLines": "true",
+        "limit": "1",
+    }
+
+    for _ in range(3):
+        r = requests.get(BASE_URL, params=params, timeout=20)
+        js = r.json()
+        if "data" in js and js["data"]:
+            save_cached_odds(js, tag)
+            return js
+        time.sleep(1)
+
+    return None
+
+
+def parse_props(player_id, stat, odds_obj):
+    odd_id = f"{stat}-{player_id}-game-ou-over"
+    if odd_id not in odds_obj:
+        return None
+
+    node = odds_obj[odd_id]
+    bm = node.get("byBookmaker", {})
+    if "fanduel" not in bm:
+        return None
+
+    book = bm["fanduel"]
+    main_line = {
+        "overUnder": float(node["bookOverUnder"]),
+        "odds": int(book["odds"]),
+        "is_main": True,
+    }
+
+    alt_lines = []
+    for alt in book.get("altLines", []):
+        try:
+            alt_lines.append(
+                {
+                    "overUnder": float(alt["overUnder"]),
+                    "odds": int(alt["odds"]),
+                    "is_main": False,
+                }
+            )
+        except Exception:
+            continue
+
+    return [main_line] + alt_lines
+
+
+def filter_juiced(lines):
+    clean = []
+    for x in lines:
+        try:
+            if int(x["odds"]) >= -600:
+                clean.append(x)
+        except:
+            continue
+    return clean
+
+
+# =====================================
+# CORE MERGE: HIT RATES + ODDS
+# =====================================
+def find_best_threshold(thresholds, line_value):
+    """
+    Match a line (e.g. 23.5) to the closest threshold (e.g. 25).
+    """
+    if not thresholds:
+        return None
+    return min(thresholds, key=lambda t: abs(t - line_value))
+
+
+def process_all_games():
+    games = get_all_games_today_sgo()
+    if not games:
+        print("⚠️ No games returned from SGO.")
+        return []
+
+    all_game_results = []  # list of {"game_label": str, "rows": [...]}
+
+    for game in games:
+        if "players" not in game:
+            print("  ⚠️ Game has no player data — skipping.")
+            continue
+
+        home = game["teams"]["home"]
+        away = game["teams"]["away"]
+        players_dict = game["players"]
+
+        home_team_name = home["names"]["medium"]
+        away_team_name = away["names"]["medium"]
+        game_label = f"{away_team_name} @ {home_team_name}"
+
+        print("\n==============================")
+        print(game_label)
+        print("==============================")
+
+        # split players by teamID
+        home_players = {pid: p for pid, p in players_dict.items() if p["teamID"] == home["teamID"]}
+        away_players = {pid: p for pid, p in players_dict.items() if p["teamID"] == away["teamID"]}
+
+        home_starters = get_starters(home_players)
+        away_starters = get_starters(away_players)
+
+        home_req = build_odds_request(home_starters)
+        away_req = build_odds_request(away_starters)
+
+        home_data = fetch_team_props(home_req, tag=f"{home_team_name}")
+        away_data = fetch_team_props(away_req, tag=f"{away_team_name}")
+
+        if not home_data or "data" not in home_data or not home_data["data"]:
+            print("  ⚠️ Home team props unavailable — skipping game.")
+            continue
+
+        if not away_data or "data" not in away_data or not away_data["data"]:
+            print("  ⚠️ Away team props unavailable — skipping game.")
+            continue
+
+        home_odds_obj = home_data["data"][0]["odds"]
+        away_odds_obj = away_data["data"][0]["odds"]
+
+        game_rows = []
+
+        # Helper to process one side
+        def process_team(team_players, starter_ids, odds_obj, team_name):
+            for pid in starter_ids:
+                player = team_players.get(pid)
+                if not player or "name" not in player:
+                    continue
+                name = player["name"]
+
+                # Find player in nba_api
+                found = nba_players.find_players_by_full_name(name)
+                if not found:
+                    print(f"  ⚠️ Could not match {name} to NBA API — skipping.")
+                    continue
+                player_id = found[0]["id"]
+
+                # Get recent games
+                df = get_recent_games_cached(name, player_id)
+                if df.empty:
+                    print(f"  ⚠️ No recent games for {name} — skipping.")
+                    continue
+
+                for stat_key in STATS:
+                    stat_info = STAT_META[stat_key]
+                    df_col = stat_info["df_col"]
+                    thresholds = stat_info["thresholds"]
+
+                    if df_col not in df.columns:
+                        continue
+
+                    prop_list = parse_props(pid, stat_key, odds_obj)
+                    if not prop_list:
+                        continue
+
+                    prop_list = filter_juiced(prop_list)
+                    if not prop_list:
+                        continue
+
+                    for prop in prop_list:
+                        line_val = prop["overUnder"]
+                        odds_val = prop["odds"]
+
+                        thr = find_best_threshold(thresholds, line_val)
+                        if thr is None:
+                            continue
+
+                        pct, hits, total = hit_rate(df[df_col], thr)
+                        conf = compute_confidence(df, df_col, thr)
+                        implied = american_to_implied_prob(odds_val) * 100
+                        edge = round(conf - implied, 1)
+
+                        game_rows.append(
+                            {
+                                "game": game_label,
+                                "team": team_name,
+                                "player": name,
+                                "stat": stat_info["label"],
+                                "line": line_val,
+                                "odds": odds_val,
+                                "threshold": thr,
+                                "hit_rate": round(pct, 1),
+                                "hits": hits,
+                                "total": total,
+                                "confidence": conf,
+                                "edge": edge,
+                                "is_main": prop.get("is_main", False),
+                            }
+                        )
+
+        process_team(away_players, away_starters, away_odds_obj, away_team_name)
+        process_team(home_players, home_starters, home_odds_obj, home_team_name)
+
+        # sort & keep top 10 by confidence, then edge, then hit_rate
+        if game_rows:
+            game_rows_sorted = sorted(
+                game_rows,
+                key=lambda r: (-r["confidence"], -r["edge"], -r["hit_rate"])
+            )[:10]
+
+            # Console output
+            print("\nTop 10 Props (by Confidence + Edge):")
+            for r in game_rows_sorted:
+                print(
+                    f"{r['player']} ({r['team']}) - {r['stat']} "
+                    f"line {r['line']} @ {r['odds']} | "
+                    f"Hit {r['hits']}/{r['total']} ({r['hit_rate']}%) | "
+                    f"Conf {r['confidence']} | Edge {r['edge']}"
+                )
+
+            all_game_results.append(
+                {
+                    "game_label": game_label,
+                    "rows": game_rows_sorted,
+                }
+            )
+        else:
+            print("  ⚠️ No valid props with hit-rate data for this game.")
+
+    return all_game_results
+
+
+# =====================================
+# PDF REPORT
+# =====================================
+def build_pdf_report(all_game_results):
+    if not all_game_results:
+        print("⚠️ Nothing to write to PDF.")
+        return
+
+    today_str = datetime.now().strftime("%Y-%m-%d")
+    pdf_filename = f"NBA_Props_Confidence_{today_str}.pdf"
+
+    doc = SimpleDocTemplate(pdf_filename, pagesize=letter)
+    styles = getSampleStyleSheet()
+    story = []
+
+    story.append(Paragraph(f"NBA Props Confidence Report – {today_str}", styles["Title"]))
+    story.append(Spacer(1, 12))
+
+    for game in all_game_results:
+        story.append(Paragraph(f"<b>{game['game_label']}</b>", styles["Heading2"]))
+        story.append(Spacer(1, 6))
+
+        data = [["Player", "Team", "Stat", "Line", "Odds", "Thr", "Hit", "Hit%", "Conf", "Edge"]]
+        for r in game["rows"]:
+            data.append(
+                [
+                    r["player"],
+                    r["team"],
+                    r["stat"],
+                    f"{r['line']}",
+                    f"{r['odds']}",
+                    f"{r['threshold']}+",
+                    f"{r['hits']}/{r['total']}",
+                    f"{r['hit_rate']}%",
+                    f"{r['confidence']}",
+                    f"{r['edge']}",
+                ]
+            )
+
+        t = Table(data)
+        t.setStyle(
+            TableStyle(
+                [
+                    ("BACKGROUND", (0, 0), (-1, 0), colors.lightgrey),
+                    ("GRID", (0, 0), (-1, -1), 0.5, colors.grey),
+                    ("FONTNAME", (0, 0), (-1, 0), "Helvetica-Bold"),
+                    ("ALIGN", (3, 1), (-1, -1), "CENTER"),
+                ]
+            )
+        )
+
+        story.append(t)
+        story.append(Spacer(1, 12))
+
+    doc.build(story)
+    print(f"\n✅ PDF report saved to {pdf_filename}")
+
+
+# =====================================
+# MAIN
+# =====================================
+def main():
+    results = process_all_games()
+    build_pdf_report(results)
+
+
+if __name__ == "__main__":
+    main()

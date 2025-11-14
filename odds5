@@ -1,0 +1,253 @@
+import os
+import requests
+import time
+import json
+from datetime import datetime
+
+SGO_API_KEY = os.getenv("SGO_API_KEY", "7243468c02f981445249730c03b426c1")
+BASE_URL = "https://api.sportsgameodds.com/v2/events"
+
+CACHE_DIR = "odds_cache"
+os.makedirs(CACHE_DIR, exist_ok=True)
+
+
+############################################################
+# CACHE HELPERS
+############################################################
+
+def get_cache_path(tag):
+    today = datetime.utcnow().strftime("%Y%m%d")
+    return os.path.join(CACHE_DIR, f"{tag}_{today}.json")
+
+def load_cached(tag):
+    path = get_cache_path(tag)
+    if os.path.exists(path):
+        try:
+            return json.load(open(path))
+        except:
+            return None
+    return None
+
+def save_cached(data, tag):
+    json.dump(data, open(get_cache_path(tag), "w"), indent=2)
+
+
+############################################################
+# FETCH ALL GAMES TODAY (FanDuel only)
+############################################################
+
+def get_all_games_today():
+    params = {
+        "apiKey": SGO_API_KEY,
+        "leagueID": "NBA",
+        "oddsAvailable": "true",
+        "bookmakerID": "fanduel",
+        "limit": "200",
+    }
+    r = requests.get(BASE_URL, params=params, timeout=20)
+    r.raise_for_status()
+    js = r.json()
+    return js["data"]
+
+
+############################################################
+# STARTERS = ALPHABETICALLY FIRST 5 PLAYERS (your method)
+############################################################
+
+def get_starters(players_dict):
+    return sorted(players_dict.keys())[:5]
+
+
+############################################################
+# BUILD ALL ODD IDs FOR ALL STATS FOR 1 TEAM
+############################################################
+
+STATS = ["points", "rebounds", "assists", "steals", "blocks", "threes"]
+
+def build_odds_request(player_ids):
+    odd_ids = []
+    for pid in player_ids:
+        for stat in STATS:
+            odd_ids.append(f"{stat}-{pid}-game-ou-over")
+    return ",".join(odd_ids)
+
+
+############################################################
+# FETCH PROPS FOR ONE TEAM (cached, 1 request)
+############################################################
+
+def fetch_team_props(odd_id_string, tag):
+    cached = load_cached(tag)
+    if cached:
+        return cached
+
+    params = {
+        "apiKey": SGO_API_KEY,
+        "leagueID": "NBA",
+        "bookmakerID": "fanduel",
+        "oddsAvailable": "true",
+        "oddIDs": odd_id_string,
+        "includeOpposingOdds": "true",
+        "includeAltLines": "true",
+        "limit": "1",
+    }
+
+    for _ in range(3):
+        r = requests.get(BASE_URL, params=params, timeout=20)
+        js = r.json()
+        if "data" in js and js["data"]:
+            save_cached(js, tag)
+            return js
+        time.sleep(1)
+
+    return None
+
+
+############################################################
+# PARSE INDIVIDUAL PLAYER PROP
+############################################################
+
+def parse_props(player_id, stat, odds):
+    odd_id = f"{stat}-{player_id}-game-ou-over"
+
+    if odd_id not in odds:
+        return None
+
+    node = odds[odd_id]
+    bm = node.get("byBookmaker", {})
+
+    if "fanduel" not in bm:
+        return None
+
+    book = bm["fanduel"]
+
+    main_line = {
+        "line": node["bookOverUnder"],
+        "odds": book["odds"]
+    }
+
+    alt_lines = book.get("altLines", [])
+
+    return main_line, alt_lines
+
+
+############################################################
+# FILTER JUICED LINES
+############################################################
+
+def filter_juiced(lines):
+    out = []
+    for x in lines:
+        try:
+            if int(x["odds"]) >= -600:
+                out.append(x)
+        except:
+            pass
+    return out
+
+
+############################################################
+# PRINT PLAYER PROPS
+############################################################
+
+def print_player_props(name, props):
+    print(name)
+    print("-" * len(name))
+
+    for stat, val in props.items():
+        print(f"  {stat.upper()}:")
+        if val is None:
+            print("    No data")
+            continue
+
+        main_line, alts = val
+        alts = filter_juiced(alts)
+
+        print(f"    {main_line['line']} : {main_line['odds']} (main)")
+        for alt in alts:
+            print(f"    {alt['overUnder']} : {alt['odds']}")
+    print("")
+
+
+############################################################
+# MAIN — PROCESS ALL GAMES TODAY
+############################################################
+
+def main():
+    games = get_all_games_today()
+
+    for game in games:
+        home = game["teams"]["home"]
+        away = game["teams"]["away"]
+        if "players" not in game:
+            print("  ⚠️ Game has no player data — skipping.")
+            continue
+
+        players = game["players"]
+
+        home_team = home["names"]["medium"]
+        away_team = away["names"]["medium"]
+
+        print("\n==============================")
+        print(f"{away_team} @ {home_team}")
+        print("==============================")
+
+        # split players by team
+        home_players = {pid: p for pid, p in players.items() if p["teamID"] == home["teamID"]}
+        away_players = {pid: p for pid, p in players.items() if p["teamID"] == away["teamID"]}
+
+        # starters
+        home_starters = get_starters(home_players)
+        away_starters = get_starters(away_players)
+
+        # build oddIDs
+        home_req = build_odds_request(home_starters)
+        away_req = build_odds_request(away_starters)
+
+        # fetch props (cached)
+        home_data = fetch_team_props(home_req, tag=f"{home_team}")
+        away_data = fetch_team_props(away_req, tag=f"{away_team}")
+
+        if not home_data or "data" not in home_data or not home_data["data"]:
+            print("  ⚠️ Home team props unavailable — skipping game.")
+            continue
+
+        if not away_data or "data" not in away_data or not away_data["data"]:
+            print("  ⚠️ Away team props unavailable — skipping game.")
+            continue
+
+        home_odds = home_data["data"][0]["odds"]
+        away_odds = away_data["data"][0]["odds"]
+
+        print("\n--- AWAY TEAM STARTERS ---")
+        for pid in away_starters:
+            player = away_players[pid]
+
+            # PATCH 3 — skip players missing name
+            if "name" not in player:
+        # Optional: print(f"Skipping unnamed player {pid}")
+                continue
+
+            name = player["name"]
+
+            props = {stat: parse_props(pid, stat, away_odds) for stat in STATS}
+            print_player_props(name, props)
+
+
+
+        print("--- HOME TEAM STARTERS ---")
+        for pid in home_starters:
+            player = home_players[pid]
+
+            # PATCH 3 — skip players missing name
+            if "name" not in player:
+                continue
+
+            name = player["name"]
+
+            props = {stat: parse_props(pid, stat, home_odds) for stat in STATS}
+            print_player_props(name, props)
+
+
+if __name__ == "__main__":
+    main()

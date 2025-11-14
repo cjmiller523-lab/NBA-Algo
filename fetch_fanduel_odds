@@ -1,0 +1,33 @@
+import requests
+import json
+
+API_KEY = "7243468c02f981445249730c03b426c1"
+
+def fetch_fanduel():
+    url = "https://api.the-odds-api.com/v4/sports/basketball_nba/odds"
+
+    params = {
+        "apiKey": API_KEY,
+        "regions": "us",
+        "oddsFormat": "american",
+        "markets": "player_points,player_rebounds,player_assists",
+        "bookmakers": "fanduel"
+    }
+
+
+    print("Fetching FanDuel odds...")
+    r = requests.get(url, params=params)
+
+    if r.status_code != 200:
+        print("Error:", r.status_code, r.text)
+        return
+
+    data = r.json()
+
+    with open("fanduel_odds.json", "w") as f:
+        json.dump(data, f, indent=4)
+
+    print("Saved fanduel_odds.json")
+
+if __name__ == "__main__":
+    fetch_fanduel()

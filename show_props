@@ -1,0 +1,41 @@
+import json
+
+def load_odds():
+    with open("fanduel_odds.json", "r") as f:
+        return json.load(f)
+
+def print_game(game_name):
+    odds = load_odds()
+
+    for game in odds:
+        matchup = f"{game['away_team']} @ {game['home_team']}"
+        if game_name.lower() in matchup.lower():
+
+            print("\n==============================")
+            print(matchup)
+            print("==============================\n")
+
+            for bookmaker in game["bookmakers"]:
+                if bookmaker["key"] != "fanduel":
+                    continue
+
+                for market in bookmaker["markets"]:
+                    player = market["outcomes"][0]["description"]
+                    stat = market["key"].replace("player_", "").upper()
+
+                    print(f"{player}")
+                    print("-" * len(player))
+                    print(f"  {stat}:")
+
+                    for outcome in market["outcomes"]:
+                        line = outcome.get("point")
+                        price = outcome.get("price")
+                        print(f"    {line}: {price}")
+
+                    print("")
+            return
+
+    print("Game not found.")
+
+if __name__ == "__main__":
+    print_game("76ers @ Pistons")
