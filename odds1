@@ -1,0 +1,97 @@
+import os
+import requests
+from pprint import pprint
+
+# ==========================
+# CONFIG
+# ==========================
+
+# Recommended: set this in your environment instead of hardcoding:
+#   export SGO_API_KEY="your_real_key_here"
+SGO_API_KEY = os.getenv("SGO_API_KEY", "7243468c02f981445249730c03b426c1")
+
+BASE_URL = "https://api.sportsgameodds.com/v2/events"
+
+# Example: SGO's player ID format looks like JALEN_DUREN_1_NBA in their docs
+# You will swap this out for whatever player you want.
+EXAMPLE_PLAYER_ID = "JALEN_DUREN_1_NBA"   # placeholder
+
+
+def fetch_fanduel_alt_player_lines(
+    player_id: str,
+    stat: str = "points",
+    league_id: str = "NBA",
+    limit: int = 10,
+):
+    """
+    Fetch FanDuel odds + alt lines for a single player's prop (e.g. points)
+    using the SportsGameOdds /v2/events endpoint.
+
+    :param player_id: SGO statEntityID for the player, e.g. 'JALEN_DUREN_1_NBA'
+    :param stat: 'points', 'assists', 'rebounds', etc.
+    :param league_id: 'NBA'
+    :param limit: how many events (games) to return
+    :return: parsed JSON from SGO
+    """
+
+    if SGO_API_KEY in (None, "", "YOUR_SGO_API_KEY_HERE"):
+        raise RuntimeError("Set SGO_API_KEY env var or update the script with your real API key.")
+
+    # OddID format (from docs): {statID}-{statEntityID}-{periodID}-{betTypeID}-{sideID}
+    # Example from docs: points-JALEN_DUREN_1_NBA-game-ou-over :contentReference[oaicite:2]{index=2}
+    odd_id = f"{stat}-{player_id}-game-ou-over"
+
+    params = {
+        "apiKey": SGO_API_KEY,
+        "leagueID": league_id,
+        "oddsAvailable": "true",
+        "bookmakerID": "fanduel",         # only FanDuel
+        "oddIDs": odd_id,                 # this stat for this player
+        "includeOpposingOdds": "true",    # also include the 'under' side
+        "includeAltLines": "true",        # <- THIS pulls alt lines ladder
+        "limit": str(limit),
+    }
+
+    resp = requests.get(BASE_URL, params=params, timeout=15)
+    resp.raise_for_status()
+    return resp.json()
+
+
+def parse_player_alt_lines(data, player_id, stat="points"):
+    # Find the single event returned
+    event = data["data"][0]
+    odds = event["odds"]
+
+    key = f"{stat}-{player_id}-game-ou-over"
+    if key not in odds:
+        raise ValueError("Stat key not found in API response")
+
+    node = odds[key]
+    fd_data = node["byBookmaker"]["fanduel"]
+
+    main_line = {
+        "overUnder": node["bookOverUnder"],
+        "odds": fd_data["odds"]
+    }
+
+    alt_lines = fd_data.get("altLines", [])
+
+    return main_line, alt_lines
+
+
+def main():
+    player_id = "JALEN_DUREN_1_NBA"
+    data = fetch_fanduel_alt_player_lines(player_id, stat="points")
+
+    main_line, alts = parse_player_alt_lines(data, player_id)
+
+    print("\nJalen Duren – FanDuel Points Lines")
+    print("-----------------------------------")
+    print(f"{main_line['overUnder']} : {main_line['odds']}  (main line)")
+
+    for line in alts:
+        print(f"{line['overUnder']} : {line['odds']}")
+
+
+if __name__ == "__main__":
+    main()

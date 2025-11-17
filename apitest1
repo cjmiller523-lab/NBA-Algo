@@ -1,0 +1,65 @@
+import requests
+
+PLAYER_NAME = "Joel Embiid"
+TEAM_NAME = "76ers"
+MARKET_KEYWORD = "points"
+
+# Convert decimal odds → American
+def decimal_to_american(decimal_odds):
+    if decimal_odds >= 2:
+        return f"+{int((decimal_odds - 1) * 100):,}"
+    else:
+        return f"-{int(100 / (decimal_odds - 1)):,}"
+
+# Step 1 — Get event ID from FanDuel's league-page API
+def get_fanduel_event_id(team_name):
+    url = "https://sportsbook.fanduel.com/api/sports-data/league-page?competition=nba&_ak=FhMFpcPWXMeyZxOx"
+    headers = {"User-Agent": "Mozilla/5.0"}
+    resp = requests.get(url, headers=headers)
+    if resp.status_code != 200:
+        print(f"⚠️ Request failed: {resp.status_code}")
+        return None, None
+    data = resp.json()
+    for event in data.get("events", []):
+        if team_name.lower() in event["name"].lower():
+            return event["id"], event["name"]
+    return None, None
+
+# Step 2 — Pull event JSON and parse alt markets
+def get_alt_player_props(event_id, player_name, market_keyword):
+    url = f"https://sportsbook.fanduel.com/api/event-page?_ak=FhMFpcPWXMeyZxOx&eventId={event_id}"
+    headers = {"User-Agent": "Mozilla/5.0"}
+    resp = requests.get(url, headers=headers)
+    if resp.status_code != 200:
+        print(f"⚠️ Event fetch failed: {resp.status_code}")
+        return []
+    data = resp.json()
+    markets = data.get("attachments", {}).get("markets", {})
+    outcomes = data.get("attachments", {}).get("outcomes", {})
+    results = []
+    for market in markets.values():
+        name = market.get("marketName", "").lower()
+        if market_keyword in name and player_name.lower() in name:
+            for oid in market.get("outcomes", []):
+                outcome = outcomes.get(oid)
+                if not outcome:
+                    continue
+                label = outcome.get("label", "")
+                dec_odds = outcome.get("oddsDecimal")
+                if dec_odds:
+                    results.append((label, decimal_to_american(dec_odds)))
+    return results
+
+# Run the test
+event_id, event_name = get_fanduel_event_id(TEAM_NAME)
+if not event_id:
+    print("❌ Could not find event for team.")
+else:
+    print(f"Found event: {event_name} (ID: {event_id})")
+    alt_odds = get_alt_player_props(event_id, PLAYER_NAME, MARKET_KEYWORD)
+    if not alt_odds:
+        print("⚠️ No alt odds found for player.")
+    else:
+        print(f"\nAlternate lines for {PLAYER_NAME} – {MARKET_KEYWORD.title()}:")
+        for label, odds in alt_odds:
+            print(f"  {label}: {odds}")

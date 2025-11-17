@@ -1,0 +1,178 @@
+import warnings
+warnings.filterwarnings("ignore")
+
+from nba_api.stats.endpoints import ScoreboardV2, PlayerGameLog
+from nba_api.stats.static import teams, players
+import pandas as pd
+import time
+from datetime import datetime
+
+# -----------------------------
+# SETTINGS
+# -----------------------------
+NUM_GAMES = 10
+SEASONS = ["2025-26", "2024-25"]
+SEASON_TYPES = ["Regular Season", "Playoffs"]
+HIT_RATE_CUTOFF = 70
+
+POINT_THRESHOLDS = [10, 15, 20, 25, 30]
+REB_THRESHOLDS   = [5, 7, 8, 10]
+AST_THRESHOLDS   = [3, 5, 7, 8]
+
+# -----------------------------
+# DEFINE TEAMS AND PLAYERS
+# -----------------------------
+TEAM_PLAYERS = {
+    "ATL": ["Trae Young", "Dejounte Murray", "Clint Capela", "John Collins"],
+    "BOS": ["Jayson Tatum", "Jaylen Brown", "Kristaps Porziņģis", "Marcus Smart"],
+    "BKN": ["Mikal Bridges", "Cam Thomas", "Ben Simmons", "Nic Claxton"],
+    "CHA": ["LaMelo Ball", "Gordon Hayward", "Brandon Miller", "Nick Richards"],
+    "CHI": ["Zach LaVine", "DeMar DeRozan", "Coby White", "Patrick Williams"],
+    "CLE": ["Donovan Mitchell", "Darius Garland", "Evan Mobley", "Jarrett Allen"],
+    "DAL": ["Luka Dončić", "Kyrie Irving", "Dwight Powell", "Reggie Bullock"],
+    "DEN": ["Nikola Jokić", "Jamal Murray", "Aaron Gordon", "Kentavious Caldwell-Pope"],
+    "DET": ["Cade Cunningham", "Jaden Ivey", "Jalen Duren", "Isaiah Stewart"],
+    "GSW": ["Stephen Curry", "Draymond Green", "Jonathan Kuminga", "Jordan Poole"],
+    "HOU": ["Jalen Green", "Alperen Şengün", "Fred VanVleet", "Eric Gordon"],
+    "IND": ["Tyrese Haliburton", "Myles Turner", "Bennedict Mathurin", "Guy Dearing"],
+    "LAC": ["Paul George", "Russell Westbrook", "Kawhi Leonard", "Nic Batum"],
+    "LAL": ["LeBron James", "Anthony Davis", "Austin Reaves", "Max Christie"],
+    "MEM": ["Ja Morant", "Jaren Jackson Jr.", "Ziaire Williams", "Desmond Bane"],
+    "MIA": ["Jimmy Butler", "Bam Adebayo", "Tyler Herro", "Kolan Lopez"],
+    "MIL": ["Giannis Antetokounmpo", "Khris Middleton", "Brook Lopez", "Bobby Portis"],
+    "MIN": ["Anthony Edwards", "Karl-Anthony Towns", "Mike Conley", "Jaden McDaniels"],
+    "NOP": ["Zion Williamson", "Brandon Ingram", "Herb Jones", "CJ McCollum"],
+    "NYK": ["Jalen Brunson", "Julius Randle", "RJ Barrett", "Mitchell Robinson"],
+    "OKC": ["Shai Gilgeous-Alexander", "Chet Holmgren", "Josh Giddey", "Jalen Williams"],
+    "ORL": ["Paolo Banchero", "Wendell Carter Jr.", "Cole Anthony", "Gary Harris"],
+    "PHI": ["Joel Embiid", "Tyrese Maxey", "Tobias Harris", "De’Anthony Melton"],
+    "PHX": ["Devin Booker", "Kevin Durant", "Bradley Beal", "Cam Johnson"],
+    "POR": ["Scoot Henderson", "Jerami Grant", "Anfernee Simons", "Derrick Jones Jr."],
+    "SAC": ["De’Aaron Fox", "Domantas Sabonis", "Keegan Murray", "Harrison Barnes"],
+    "SAS": ["Victor Wembanyama", "Zach Collins", "Keldon Johnson", "Malaki Branham"],
+    "TOR": ["Pascal Siakam", "Scottie Barnes", "Goran Dragić", "Immanuel Quickley"],
+    "UTA": ["Lauri Markkanen", "Walker Kessler", "Jarred Vanderbilt", "Collin Sexton"],
+    "WAS": ["Tyus Jones", "Kyle Kuzma", "Dylan Windler", "Jordan Poole"],
+}
+
+    # Add more as needed
+
+
+# -----------------------------
+# HELPER FUNCTIONS
+# -----------------------------
+def get_todays_games():
+    """Get today's NBA games using team IDs — more reliable than line_score."""
+    today = datetime.now().strftime("%m/%d/%Y")
+    scoreboard = ScoreboardV2(game_date=today)
+    games = scoreboard.game_header.get_data_frame()
+
+    team_lookup = {t["id"]: t["abbreviation"] for t in teams.get_teams()}
+
+    matchups = []
+    for _, row in games.iterrows():
+        home_abbrev = team_lookup.get(row["HOME_TEAM_ID"], "UNK")
+        away_abbrev = team_lookup.get(row["VISITOR_TEAM_ID"], "UNK")
+        matchups.append({
+            "game_id": row["GAME_ID"],
+            "home_team": home_abbrev,
+            "away_team": away_abbrev
+        })
+    return matchups
+
+
+def get_recent_games(player_id):
+    """Fetch the player's most recent 10 games across seasons and playoffs."""
+    all_logs = pd.DataFrame()
+    for season in SEASONS:
+        for stype in SEASON_TYPES:
+            try:
+                logs = PlayerGameLog(
+                    player_id=player_id,
+                    season=season,
+                    season_type_all_star=stype
+                ).get_data_frames()[0]
+                all_logs = pd.concat([all_logs, logs], ignore_index=True)
+                time.sleep(0.3)
+            except:
+                pass
+    if all_logs.empty:
+        return pd.DataFrame()
+
+    all_logs["GAME_DATE"] = pd.to_datetime(all_logs["GAME_DATE"])
+    all_logs = all_logs[["GAME_DATE", "MATCHUP", "PTS", "REB", "AST"]]
+    all_logs.sort_values("GAME_DATE", ascending=False, inplace=True)
+    return all_logs.head(NUM_GAMES)
+
+
+def hit_rate(series, threshold):
+    return (series >= threshold).mean() * 100
+
+
+# -----------------------------
+# MAIN LOGIC
+# -----------------------------
+print("📅 Fetching today’s NBA games...\n")
+matchups = get_todays_games()
+
+if not matchups:
+    print("⚠️ No NBA games found for today. Try checking the date or later in the day.")
+    exit()
+
+print("Tonight’s Games:")
+for m in matchups:
+    print(f"  🏀 {m['away_team']} @ {m['home_team']}")
+
+print("\n-------------------------------------------\n")
+
+# -----------------------------
+# LOOP THROUGH MATCHUPS
+# -----------------------------
+for game in matchups:
+    away_team = game["away_team"]
+    home_team = game["home_team"]
+
+    print(f"\n==================== {away_team}@{home_team} ====================")
+
+    for team_abbr in [away_team, home_team]:
+        if team_abbr not in TEAM_PLAYERS:
+            print(f"\nSkipping {team_abbr} (no players defined in TEAM_PLAYERS)")
+            continue
+
+        print(f"\n{team_abbr} players being analyzed:")
+        for player_name in TEAM_PLAYERS[team_abbr]:
+            print(f"  ⏳ Fetching {player_name}...")
+            found = players.find_players_by_full_name(player_name)
+            if not found:
+                print(f"  ⚠️ Could not find {player_name}")
+                continue
+            player_id = found[0]["id"]
+
+            df = get_recent_games(player_id)
+            if df.empty:
+                print(f"  ⚠️ No recent games found for {player_name}")
+                continue
+
+            # --- Calculate hit rates ---
+            results = []
+            for p in POINT_THRESHOLDS:
+                rate = hit_rate(df["PTS"], p)
+                if rate >= HIT_RATE_CUTOFF:
+                    results.append(f"{p}+ Points - {rate:.0f}%")
+
+            for r in REB_THRESHOLDS:
+                rate = hit_rate(df["REB"], r)
+                if rate >= HIT_RATE_CUTOFF:
+                    results.append(f"{r}+ Rebounds - {rate:.0f}%")
+
+            for a in AST_THRESHOLDS:
+                rate = hit_rate(df["AST"], a)
+                if rate >= HIT_RATE_CUTOFF:
+                    results.append(f"{a}+ Assists - {rate:.0f}%")
+
+            if results:
+                print(f"  ✅ {player_name}: " + ", ".join(results))
+            else:
+                print(f"  ⚪ {player_name}: (no strong trends)")
+
+        print("\n-------------------------------------------\n")

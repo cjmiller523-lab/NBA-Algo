@@ -1,0 +1,260 @@
+import requests
+import datetime
+from nba_api.stats.endpoints import TeamGameLogs, LeagueDashTeamStats
+from nba_api.stats.static import teams
+import math
+
+# ============================================================
+# SETTINGS
+# ============================================================
+SLEPPER_NBA_LEAGUE = "nba"
+SLEEPER_PLAYERS_URL = "https://api.sleeper.app/v1/players/nba"
+
+SCORE_SCALE = 100  # 0–100 score
+
+WEIGHTS = {
+    "rest_diff": 18,
+    "injury_diff": 22,
+    "net_rating_diff": 28,
+    "pace_diff": 10,
+    "off_def_diff": 12,
+    "travel_diff": 10
+}
+
+# ============================================================
+# HELPERS
+# ============================================================
+
+def get_nba_games_today():
+    """Returns list of games: [{'home': 'BOS', 'away': 'LAL'}]"""
+    url = "https://cdn.nba.com/static/json/liveData/scoreboard/todaysScoreboard_00.json"
+    data = requests.get(url).json()
+
+    matchups = []
+    for game in data["scoreboard"]["games"]:
+        home = game["homeTeam"]["teamTricode"]
+        away = game["awayTeam"]["teamTricode"]
+        matchups.append({"home": home, "away": away})
+    return matchups
+
+
+def get_team_id_map():
+    """Map tricode → team_id for NBA API"""
+    mapping = {}
+    for t in teams.get_teams():
+        mapping[t["abbreviation"]] = t["id"]
+    return mapping
+
+
+def get_last10_stats():
+    """Pull ALL team stats once and auto-detect stat column names."""
+    try:
+        res = LeagueDashTeamStats(
+            last_n_games=10,
+            season="2024-25",
+            season_type_all_star="Regular Season"
+        ).get_normalized_dict()["LeagueDashTeamStats"]
+
+        stats = {}
+
+        # Detect the correct column names
+        sample = res[0]
+        col_net = None
+        col_off = None
+        col_def = None
+
+        # Try all possible column versions
+        possible_net = ["NET_RATING", "NET_RTG"]
+        possible_off = ["OFF_RATING", "ORTG"]
+        possible_def = ["DEF_RATING", "DRTG"]
+
+        for c in possible_net:
+            if c in sample:
+                col_net = c
+                break
+
+        for c in possible_off:
+            if c in sample:
+                col_off = c
+                break
+
+        for c in possible_def:
+            if c in sample:
+                col_def = c
+                break
+
+        for row in res:
+            team_id = row["TEAM_ID"]
+            stats[team_id] = {
+                "NET": float(row.get(col_net, 0)),
+                "PACE": float(row.get("PACE", 0)),
+                "OFF": float(row.get(col_off, 0)),
+                "DEF": float(row.get(col_def, 0)),
+            }
+
+        return stats
+
+    except Exception as e:
+        print("ERROR pulling Last 10 stats:", e)
+        return {}
+
+
+def get_rest_days(team_id):
+    """Calculate rest days by checking last played date."""
+    try:
+        logs = TeamGameLogs(
+            team_id_nullable=team_id,
+            season_nullable="2024-25"
+        ).get_normalized_dict()["TeamGameLogs"]["data"]
+
+        if not logs:
+            return 2
+
+        last_game = logs[0]["GAME_DATE"]
+        last_date = datetime.datetime.strptime(last_game, "%Y-%m-%d")
+        delta = (datetime.datetime.now() - last_date).days
+        return delta
+
+    except:
+        return 2
+
+
+def get_sleeper_injuries():
+    """Return {TEAM: [players_out]} using Sleeper 'injuries' field."""
+    try:
+        data = requests.get(SLEEPER_PLAYERS_URL).json()
+        injuries = {}
+
+        for pid, p in data.items():
+            if not isinstance(p, dict):
+                continue
+
+            team = p.get("team")
+            if not team:
+                continue
+
+            inj = p.get("injuries", {})
+            if not inj:
+                continue
+
+            status = inj.get("status", "")
+            if status.lower() in ["out", "doubtful", "questionable"]:
+                injuries.setdefault(team, []).append(p.get("full_name"))
+
+        return injuries
+    except:
+        return {}
+
+
+def get_travel_penalty(home, away):
+    """Simple fatigue estimate from West→East or long miles."""
+    west = ["LAL","LAC","GSW","SAC","PHX","POR","UTA","DEN","MIN","DAL","HOU","SAS","OKC"]
+    east = ["BOS","NYK","BKN","PHI","TOR","MIA","ORL","ATL","CLE","CHI","MIL","DET","IND","CHA","WAS"]
+
+    if away in west and home in east:
+        return 1.0
+    if away in east and home in west:
+        return 0.5
+    return 0.2
+
+
+def compute_stat_diff_score(home_stat, away_stat, weight):
+    diff = abs(home_stat - away_stat)
+    return min(diff * weight, SCORE_SCALE)
+
+
+# ============================================================
+# MAIN BLOWOUT SCORE CALC
+# ============================================================
+
+def calculate_blowout_score(game, team_map, injuries, last10):
+    home = game["home"]
+    away = game["away"]
+
+    home_id = team_map[home]
+    away_id = team_map[away]
+
+    # --- Last 10 stats ---
+    h_stats = last10.get(home_id, {"NET": 0, "PACE": 0, "OFF": 0, "DEF": 0})
+    a_stats = last10.get(away_id, {"NET": 0, "PACE": 0, "OFF": 0, "DEF": 0})
+
+    # --- Rest days ---
+    home_rest = get_rest_days(home_id)
+    away_rest = get_rest_days(away_id)
+    rest_score = compute_stat_diff_score(home_rest, away_rest, WEIGHTS["rest_diff"])
+
+    # --- Injuries ---
+    home_inj = len(injuries.get(home, []))
+    away_inj = len(injuries.get(away, []))
+    injury_score = compute_stat_diff_score(home_inj, away_inj, WEIGHTS["injury_diff"])
+
+    # --- Net Rating last 10 ---
+    net_score = compute_stat_diff_score(h_stats["NET"], a_stats["NET"], WEIGHTS["net_rating_diff"])
+
+    # --- Pace difference ---
+    pace_score = compute_stat_diff_score(h_stats["PACE"], a_stats["PACE"], WEIGHTS["pace_diff"])
+
+    # --- Off/Def mismatch ---
+    off_def_h = h_stats["OFF"] - a_stats["DEF"]
+    off_def_a = a_stats["OFF"] - h_stats["DEF"]
+    off_def_score = compute_stat_diff_score(off_def_h, off_def_a, WEIGHTS["off_def_diff"])
+
+    # --- Travel ---
+    travel_score = get_travel_penalty(home, away) * WEIGHTS["travel_diff"]
+
+    # --- Final score ---
+    blowout_score = rest_score + injury_score + net_score + pace_score + off_def_score + travel_score
+    blowout_score = min(blowout_score, SCORE_SCALE)
+
+    breakdown = {
+        "rest": rest_score,
+        "injuries": injury_score,
+        "net_rating": net_score,
+        "pace": pace_score,
+        "off_def": off_def_score,
+        "travel": travel_score
+    }
+
+    return blowout_score, breakdown
+
+
+# ============================================================
+# RUN SCRIPT
+# ============================================================
+
+def main():
+    print("\n==========================")
+    print("      NBA BLOWOUT MODEL")
+    print("==========================\n")
+
+    games = get_nba_games_today()
+    team_map = get_team_id_map()
+    injuries = get_sleeper_injuries()
+    last10 = get_last10_stats()
+
+    results = []
+
+    for g in games:
+        score, breakdown = calculate_blowout_score(g, team_map, injuries, last10)
+        results.append((g["away"], g["home"], score, breakdown))
+
+    results.sort(key=lambda x: x[2], reverse=True)
+
+    # --- Clean Table ---
+    print("\n===== CLEAN TABLE (High → Low Risk) =====\n")
+    for away, home, score, _ in results:
+        print(f"{away} @ {home:<5}   Blowout Score: {score:.1f}")
+
+    # --- Detailed Breakdown ---
+    print("\n===== DETAILED BREAKDOWN =====\n")
+    for away, home, score, breakdown in results:
+        print(f"--- {away} @ {home} | Blowout Score: {score:.1f} ---")
+        for k, v in breakdown.items():
+            print(f"  {k:10}: {v:.2f}")
+        print("")
+
+    print("\nDone.\n")
+
+
+if __name__ == "__main__":
+    main()

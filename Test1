@@ -1,0 +1,111 @@
+from nba_api.stats.endpoints import ScoreboardV2, PlayerGameLog, CommonTeamRoster
+from nba_api.stats.static import players, teams
+from datetime import date
+import pandas as pd
+import time
+
+# -----------------------------
+# SETTINGS
+# -----------------------------
+NUM_GAMES = 10
+SEASONS = ["2025-26", "2024-25"]  # regular seasons to include
+TODAY = date.today()
+
+POINT_THRESHOLDS = [10, 15, 20, 25, 30]
+REB_THRESHOLDS = [5, 7, 8, 10]
+AST_THRESHOLDS = [3, 5, 7, 8]
+HIT_RATE_CUTOFF = 70  # %
+
+def hit_rate(series, threshold):
+    return (series >= threshold).mean() * 100
+
+def get_recent_games(player_id):
+    """Fetch recent games across multiple seasons and playoffs."""
+    all_games = pd.DataFrame()
+
+    for season in SEASONS:
+        # Regular season
+        try:
+            log = PlayerGameLog(player_id=player_id, season=season, season_type_all_star="Regular Season").get_data_frames()[0]
+            all_games = pd.concat([all_games, log])
+        except:
+            pass
+        # Playoffs
+        try:
+            log = PlayerGameLog(player_id=player_id, season=season, season_type_all_star="Playoffs").get_data_frames()[0]
+            all_games = pd.concat([all_games, log])
+        except:
+            pass
+
+    if all_games.empty:
+        return pd.DataFrame()
+
+    all_games.sort_values("GAME_DATE", ascending=False, inplace=True)
+    return all_games.head(NUM_GAMES)
+
+
+# -----------------------------
+# STEP 1: Find today's games
+# -----------------------------
+scoreboard = ScoreboardV2(game_date=TODAY.strftime("%m/%d/%Y"))
+games_df = scoreboard.game_header.get_data_frame()
+line_df = scoreboard.line_score.get_data_frame()
+
+if games_df.empty:
+    print("No NBA games today.")
+    exit()
+
+# -----------------------------
+# STEP 2: Loop through games
+# -----------------------------
+for _, game in games_df.iterrows():
+    game_id = game["GAME_ID"]
+    teams_playing = line_df[line_df["GAME_ID"] == game_id]
+
+    if len(teams_playing) < 2:
+        continue
+
+    away_team = teams_playing.iloc[0]["TEAM_ABBREVIATION"]
+    home_team = teams_playing.iloc[1]["TEAM_ABBREVIATION"]
+
+    print(f"\n🏀 {away_team}@{home_team} - Top Hit Rate Trends")
+    print("-" * 55)
+
+    for team_abbr in [away_team, home_team]:
+        team_info = teams.find_teams_by_abbreviation(team_abbr)
+        if not team_info:
+            continue
+        team_id = team_info[0]["id"]
+
+        try:
+            roster = CommonTeamRoster(team_id=team_id, season="2025-26").get_data_frames()[0]
+        except:
+            print(f"Could not fetch roster for {team_abbr}")
+            continue
+
+        players_list = roster["PLAYER"].tolist()[:8]  # can later swap for projected starters
+
+        print(f"\n{team_abbr} players:")
+        for name in players_list:
+            found = players.find_players_by_full_name(name)
+            if not found:
+                continue
+            player_id = found[0]["id"]
+
+            recent = get_recent_games(player_id)
+            if recent.empty:
+                continue
+
+            results = []
+            for p in POINT_THRESHOLDS:
+                rate = hit_rate(recent["PTS"], p)
+                if rate >= HIT_RATE_CUTOFF:
+                    results.append(f"{p}+ Points - {rate:.0f}%")
+            for r in REB_THRESHOLDS:
+                rate = hit_rate(recent["REB"], r)
+                if rate >= HIT_RATE_CUTOFF:
+                    results.append(f"{r}+ Rebounds - {rate:.0f}%")
+            for a in AST_THRESHOLDS:
+                rate = hit_rate(recent["AST"], a)
+                if rate >= HIT_RATE_CUTOFF:
+                    results.append(f"{a}+ Assists - {rate:.0f}%")

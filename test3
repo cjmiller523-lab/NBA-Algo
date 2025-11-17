@@ -1,0 +1,101 @@
+from nba_api.stats.endpoints import PlayerGameLog
+from nba_api.stats.static import players
+import pandas as pd
+import time
+import warnings
+warnings.filterwarnings("ignore")
+
+
+# -----------------------------
+# SETTINGS
+# -----------------------------
+NUM_GAMES = 10
+SEASONS = ["2025-26", "2024-25"]
+SEASON_TYPES = ["Regular Season", "Playoffs"]
+HIT_RATE_CUTOFF = 70
+
+POINT_THRESHOLDS = [10, 15, 20, 25, 30]
+REB_THRESHOLDS   = [5, 7, 8, 10]
+AST_THRESHOLDS   = [3, 5, 7, 8]
+
+# -----------------------------
+# DEFINE TEAMS AND PLAYERS
+# -----------------------------
+TEAM_PLAYERS = {
+    "NYK": ["Jalen Brunson", "Julius Randle", "Donte DiVincenzo", "OG Anunoby"],
+    "MIL": ["Giannis Antetokounmpo", "Damian Lillard", "Khris Middleton", "Brook Lopez"],
+}
+
+# -----------------------------
+# FUNCTIONS
+# -----------------------------
+def get_recent_games(player_id):
+    """Fetch the player's most recent 10 games across seasons and playoffs."""
+    all_logs = pd.DataFrame()
+
+    for season in SEASONS:
+        for stype in SEASON_TYPES:
+            try:
+                logs = PlayerGameLog(
+                    player_id=player_id,
+                    season=season,
+                    season_type_all_star=stype
+                ).get_data_frames()[0]
+                all_logs = pd.concat([all_logs, logs], ignore_index=True)
+                time.sleep(0.5)
+            except:
+                pass
+
+    if all_logs.empty:
+        return pd.DataFrame()
+
+    all_logs["GAME_DATE"] = pd.to_datetime(all_logs["GAME_DATE"])
+    all_logs = all_logs[["GAME_DATE", "MATCHUP", "PTS", "REB", "AST"]]
+    all_logs.sort_values("GAME_DATE", ascending=False, inplace=True)
+    return all_logs.head(NUM_GAMES)
+
+
+def hit_rate(series, threshold):
+    return (series >= threshold).mean() * 100
+
+
+# -----------------------------
+# MAIN LOGIC
+# -----------------------------
+print("🏀 NYK@MIL - Hit Rate Trends")
+print("-" * 60)
+
+for team_abbr in ["NYK", "MIL"]:
+    print(f"\n{team_abbr} key players:")
+
+    for player_name in TEAM_PLAYERS[team_abbr]:
+        found = players.find_players_by_full_name(player_name)
+        if not found:
+            print(f"  ⚠️ Could not find {player_name}")
+            continue
+        player_id = found[0]["id"]
+
+        df = get_recent_games(player_id)
+        if df.empty:
+            print(f"  No recent games found for {player_name}")
+            continue
+
+        # Compute hit rates
+        results = []
+        for p in POINT_THRESHOLDS:
+            rate = hit_rate(df["PTS"], p)
+            if rate >= HIT_RATE_CUTOFF:
+                results.append(f"{p}+ Points - {rate:.0f}%")
+        for r in REB_THRESHOLDS:
+            rate = hit_rate(df["REB"], r)
+            if rate >= HIT_RATE_CUTOFF:
+                results.append(f"{r}+ Rebounds - {rate:.0f}%")
+        for a in AST_THRESHOLDS:
+            rate = hit_rate(df["AST"], a)
+            if rate >= HIT_RATE_CUTOFF:
+                results.append(f"{a}+ Assists - {rate:.0f}%")
+
+        if results:
+            print(f"  {player_name}: " + ", ".join(results))
+        else:
+            print(f"  {player_name}: (no strong trends)")

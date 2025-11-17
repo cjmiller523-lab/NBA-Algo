@@ -1,0 +1,246 @@
+import os
+import requests
+
+SGO_API_KEY = os.getenv("SGO_API_KEY", "7243468c02f981445249730c03b426c1")
+BASE_URL = "https://api.sportsgameodds.com/v2/events"
+
+
+############################################################
+# 1. Fetch Pacers vs Suns Game
+############################################################
+
+def get_pacers_suns_event():
+    params = {
+        "apiKey": SGO_API_KEY,
+        "leagueID": "NBA",
+        "oddsAvailable": "true",
+        "bookmakerID": "fanduel",
+        "limit": "100"
+    }
+
+    resp = requests.get(BASE_URL, params=params, timeout=15)
+    resp.raise_for_status()
+    js = resp.json()
+
+    for game in js["data"]:
+        home = game["teams"]["home"]["names"]["long"].lower()
+        away = game["teams"]["away"]["names"]["long"].lower()
+
+        if (
+            ("pacers" in home and "suns" in away) or
+            ("pacers" in away and "suns" in home)
+        ):
+            return game
+
+    raise ValueError("Pacers vs Suns game not found in API data.")
+
+
+############################################################
+# 2. Determine starters (top 5 players alphabetically)
+# This will be replaced later with your stats-based starter detection
+############################################################
+
+def get_top5_starters(players_dict):
+    ids = list(players_dict.keys())
+    ids.sort()
+    return ids[:5]
+
+
+############################################################
+# 3. Fetch FanDuel props + alt lines for a single stat
+############################################################
+
+def fetch_fanduel_prop(player_id, stat):
+    odd_id = f"{stat}-{player_id}-game-ou-over"
+
+    params = {
+        "apiKey": SGO_API_KEY,
+        "leagueID": "NBA",
+        "bookmakerID": "fanduel",
+        "oddsAvailable": "true",
+        "oddIDs": odd_id,
+        "includeOpposingOdds": "true",
+        "includeAltLines": "true",
+        "limit": "1",
+    }
+
+    r = requests.get(BASE_URL, params=params, timeout=15)
+    if r.status_code != 200:
+        return None
+
+    js = r.json()
+    if not js["data"]:
+        return None
+
+    event = js["data"][0]
+    odds = event["odds"]
+
+    if odd_id not in odds:
+        return None
+
+    node = odds[odd_id]
+
+    # 🚨 NEW CHECK — If no FanDuel line exists for this player/stat
+    if "fanduel" not in node["byBookmaker"]:
+        return None
+
+    fd = node["byBookmaker"]["fanduel"]
+
+    main_line = {
+        "overUnder": node["bookOverUnder"],
+        "odds": fd["odds"]
+    }
+
+    alt_lines = fd.get("altLines", [])
+    return main_line, alt_lines
+
+def debug_check_suns_props(game):
+    players = game["players"]
+    print("\nChecking all Suns players for available FanDuel props:\n")
+
+    for pid, pdata in players.items():
+        if "SUNS" in pdata["teamID"]:
+            print(f"{pdata['name']} ({pid})")
+
+            for stat in ["points", "rebounds", "assists"]:
+                odd_id = f"{stat}-{pid}-game-ou-over"
+
+                params = {
+                    "apiKey": SGO_API_KEY,
+                    "leagueID": "NBA",
+                    "bookmakerID": "fanduel",
+                    "oddsAvailable": "true",
+                    "oddIDs": odd_id,
+                    "includeOpposingOdds": "true",
+                    "includeAltLines": "true",
+                    "limit": "1",
+                }
+
+                r = requests.get(BASE_URL, params=params, timeout=15)
+                try:
+                    js = r.json()
+                except:
+                    print(f"  {stat}: invalid JSON response")
+                    continue
+
+                # SAFE CHECK — prevents KeyError
+                if "data" not in js or not js["data"]:
+                    print(f"  {stat}: INVALID RESPONSE (Rate limit or unavailable)")
+                    continue
+
+                ev = js["data"][0]
+                odds = ev.get("odds", {})
+
+                if odd_id not in odds:
+                    print(f"  {stat}: oddID not found")
+                    continue
+
+                node = odds[odd_id]
+
+                if "fanduel" not in node.get("byBookmaker", {}):
+                    print(f"  {stat}: NO FanDuel data")
+                else:
+                    print(f"  {stat}: FOUND")
+############################################################
+# 4. Filter extreme juice
+############################################################
+
+def filter_juiced(lines):
+    clean = []
+    for l in lines:
+        try:
+            o = int(l["odds"])
+        except:
+            continue
+
+        if o >= -600:
+            clean.append(l)
+
+    return clean
+
+
+############################################################
+# 5. Print props for each player
+############################################################
+
+def print_player_props(name, props):
+    print(f"\n{name}")
+    print("-" * len(name))
+
+    for stat, result in props.items():
+        print(f"  {stat.upper()}:")
+
+        if result is None:
+            print("    No Data")
+            continue
+
+        main_line, alt_lines = result
+        alt_lines = filter_juiced(alt_lines)
+
+        print(f"    {main_line['overUnder']} : {main_line['odds']} (main)")
+
+        for alt in alt_lines:
+            print(f"    {alt['overUnder']} : {alt['odds']}")
+
+    print()
+
+
+############################################################
+# MAIN
+############################################################
+
+def main():
+    print("\nFetching Pacers vs Suns...\n")
+
+    game = get_pacers_suns_event()
+    debug_check_suns_props(game)
+    players = game["players"]
+
+    home_team_id = game["teams"]["home"]["teamID"]
+    away_team_id = game["teams"]["away"]["teamID"]
+
+    home_team_short = game["teams"]["home"]["names"]["medium"]
+    away_team_short = game["teams"]["away"]["names"]["medium"]
+
+    # Assign players to teams by exact teamID
+    home_players = {pid: p for pid, p in players.items() if p["teamID"] == home_team_id}
+    away_players = {pid: p for pid, p in players.items() if p["teamID"] == away_team_id}
+
+    home_starters = get_top5_starters(home_players)
+    away_starters = get_top5_starters(away_players)
+
+    print("==============================")
+    print(f"{away_team_short} STARTERS")
+    print("==============================")
+
+    for pid in away_starters:
+        pdata = away_players[pid]
+        name = pdata["name"]
+
+        props = {
+            "points": fetch_fanduel_prop(pid, "points"),
+            "rebounds": fetch_fanduel_prop(pid, "rebounds"),
+            "assists": fetch_fanduel_prop(pid, "assists"),
+        }
+
+        print_player_props(name, props)
+
+    print("==============================")
+    print(f"{home_team_short} STARTERS")
+    print("==============================")
+
+    for pid in home_starters:
+        pdata = home_players[pid]
+        name = pdata["name"]
+
+        props = {
+            "points": fetch_fanduel_prop(pid, "points"),
+            "rebounds": fetch_fanduel_prop(pid, "rebounds"),
+            "assists": fetch_fanduel_prop(pid, "assists"),
+        }
+
+        print_player_props(name, props)
+
+
+if __name__ == "__main__":
+    main()

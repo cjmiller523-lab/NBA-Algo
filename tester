@@ -1,0 +1,8 @@
+from nba_api.stats.endpoints import LeagueGameLog
+
+try:
+    data = LeagueGameLog(season="2024-25").get_dict()
+    print("SUCCESS: LeagueGameLog returned data.")
+    print("Headers:", data["resultSets"][0]["headers"])
+except Exception as e:
+    print("ERROR:", e)

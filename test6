@@ -1,0 +1,191 @@
+import warnings
+warnings.filterwarnings("ignore")
+
+from nba_api.stats.endpoints import ScoreboardV2, PlayerGameLog
+from nba_api.stats.static import teams, players
+import pandas as pd
+import time
+from datetime import datetime
+
+# -----------------------------
+# SETTINGS
+# -----------------------------
+NUM_GAMES = 10
+SEASONS = ["2025-26", "2024-25"]
+SEASON_TYPES = ["Regular Season", "Playoffs"]
+HIT_RATE_CUTOFF = 70  # percent
+
+POINT_THRESHOLDS = [10, 15, 20, 25, 30]
+REB_THRESHOLDS   = [2, 4, 6, 8, 10]
+AST_THRESHOLDS   = [2, 4, 6, 8, 10]
+STL_THRESHOLDS   = [1, 2]
+BLK_THRESHOLDS   = [1, 2]
+THREEPM_THRESHOLDS = [1, 2, 3, 4, 5]
+
+# -----------------------------
+# TEAM PLAYERS (paste your full version here)
+# -----------------------------
+TEAM_PLAYERS = {
+    "ATL": ["Trae Young", "Dejounte Murray", "Jalen Johnson", "Clint Capela", "Saddiq Bey", "Onyeka Okongwu"],
+    "BOS": ["Jayson Tatum", "Jaylen Brown", "Kristaps Porzingis", "Jrue Holiday", "Derrick White", "Al Horford"],
+    "BKN": ["Mikal Bridges", "Cam Thomas", "Ben Simmons", "Nic Claxton", "Dennis Schroder", "Dorian Finney-Smith"],
+    "CHA": ["LaMelo Ball", "Brandon Miller", "Miles Bridges", "Mark Williams", "Nick Smith Jr.", "Grant Williams"],
+    "CHI": ["Zach LaVine", "DeMar DeRozan", "Coby White", "Patrick Williams", "Nikola Vucevic", "Ayo Dosunmu"],
+    "CLE": ["Donovan Mitchell", "Darius Garland", "Evan Mobley", "Jarrett Allen", "Max Strus", "Caris LeVert"],
+    "DAL": ["Luka Doncic", "Kyrie Irving", "Cooper Flagg", "Dereck Lively II", "P.J. Washington", "Josh Green"],
+    "DEN": ["Nikola Jokic", "Jamal Murray", "Aaron Gordon", "Michael Porter Jr.", "Kentavious Caldwell-Pope", "Christian Braun"],
+    "DET": ["Cade Cunningham", "Jaden Ivey", "Jalen Duren", "Ausar Thompson", "Isaiah Stewart", "Simone Fontecchio"],
+    "GSW": ["Stephen Curry", "Draymond Green", "Jonathan Kuminga", "Brandin Podziemski", "Andrew Wiggins", "Kevon Looney"],
+    "HOU": ["Jalen Green", "Alperen Sengun", "Fred VanVleet", "Dillon Brooks", "Amen Thompson", "Cam Whitmore"],
+    "IND": ["Tyrese Haliburton", "Myles Turner", "Bennedict Mathurin", "Jarace Walker", "Bruce Brown", "Andrew Nembhard"],
+    "LAC": ["Paul George", "Kawhi Leonard", "James Harden", "Ivica Zubac", "Terance Mann", "Norman Powell"],
+    "LAL": ["LeBron James", "Anthony Davis", "Austin Reaves", "Rui Hachimura", "Gabe Vincent", "Spencer Dinwiddie"],
+    "MEM": ["Ja Morant", "Desmond Bane", "Jaren Jackson Jr.", "Marcus Smart", "Santi Aldama", "Luke Kennard"],
+    "MIA": ["Jimmy Butler", "Bam Adebayo", "Tyler Herro", "Terry Rozier", "Jaime Jaquez Jr.", "Caleb Martin"],
+    "MIL": ["Giannis Antetokounmpo", "Damian Lillard", "Khris Middleton", "Brook Lopez", "Bobby Portis", "Malik Beasley"],
+    "MIN": ["Anthony Edwards", "Karl-Anthony Towns", "Rudy Gobert", "Mike Conley", "Jaden McDaniels", "Naz Reid"],
+    "NOP": ["Zion Williamson", "Brandon Ingram", "CJ McCollum", "Herbert Jones", "Trey Murphy III", "Jonas Valanciunas"],
+    "NYK": ["Jalen Brunson", "Julius Randle", "RJ Barrett", "OG Anunoby", "Josh Hart", "Mitchell Robinson"],
+    "OKC": ["Shai Gilgeous-Alexander", "Chet Holmgren", "Jalen Williams", "Josh Giddey", "Luguentz Dort", "Isaiah Joe"],
+    "ORL": ["Paolo Banchero", "Franz Wagner", "Wendell Carter Jr.", "Jalen Suggs", "Cole Anthony", "Jonathan Isaac"],
+    "PHI": ["Joel Embiid", "Tyrese Maxey", "Tobias Harris", "Kelly Oubre Jr.", "Kyle Lowry", "Ricky Council IV"],
+    "PHX": ["Kevin Durant", "Devin Booker", "Bradley Beal", "Grayson Allen", "Jusuf Nurkic", "Eric Gordon"],
+    "POR": ["Scoot Henderson", "Anfernee Simons", "Jerami Grant", "Deandre Ayton", "Shaedon Sharpe", "Matisse Thybulle"],
+    "SAC": ["De’Aaron Fox", "Domantas Sabonis", "Keegan Murray", "Malik Monk", "Harrison Barnes", "Kevin Huerter"],
+    "SAS": ["Victor Wembanyama", "Devin Vassell", "Zach Collins", "Keldon Johnson", "Jeremy Sochan", "Malaki Branham"],
+    "TOR": ["Scottie Barnes", "RJ Barrett", "Immanuel Quickley", "Jakob Poeltl", "Gradey Dick", "Kelly Olynyk"],
+    "UTA": ["Lauri Markkanen", "Walker Kessler", "Collin Sexton", "John Collins", "Keyonte George", "Jordan Clarkson"],
+    "WAS": ["Jordan Poole", "Kyle Kuzma", "Deni Avdija", "Tyus Jones", "Bilal Coulibaly", "Marvin Bagley III"],
+}
+
+# -----------------------------
+# FUNCTIONS
+# -----------------------------
+def get_todays_games():
+    """Get today's NBA games using team IDs."""
+    today = datetime.now().strftime("%m/%d/%Y")
+    scoreboard = ScoreboardV2(game_date=today)
+    games = scoreboard.game_header.get_data_frame()
+    team_lookup = {t["id"]: t["abbreviation"] for t in teams.get_teams()}
+    matchups = []
+    for _, row in games.iterrows():
+        home_abbrev = team_lookup.get(row["HOME_TEAM_ID"], "UNK")
+        away_abbrev = team_lookup.get(row["VISITOR_TEAM_ID"], "UNK")
+        matchups.append({"game_id": row["GAME_ID"], "home_team": home_abbrev, "away_team": away_abbrev})
+    return matchups
+
+
+def get_recent_games(player_id):
+    """Fetch the player's most recent 10 games across seasons and playoffs."""
+    all_logs = pd.DataFrame()
+    for season in SEASONS:
+        for stype in SEASON_TYPES:
+            try:
+                logs = PlayerGameLog(player_id=player_id, season=season, season_type_all_star=stype).get_data_frames()[0]
+                all_logs = pd.concat([all_logs, logs], ignore_index=True)
+                time.sleep(0.3)
+            except:
+                pass
+    if all_logs.empty:
+        return pd.DataFrame()
+
+    all_logs["GAME_DATE"] = pd.to_datetime(all_logs["GAME_DATE"])
+    all_logs = all_logs[["GAME_DATE", "MATCHUP", "PTS", "REB", "AST", "STL", "BLK", "FG3M"]]
+    all_logs.sort_values("GAME_DATE", ascending=False, inplace=True)
+    return all_logs.head(NUM_GAMES)
+
+
+def hit_rate(series, threshold):
+    hits = (series >= threshold).sum()
+    pct = hits / len(series) * 100 if len(series) > 0 else 0
+    return pct, hits, len(series)
+
+
+def summarize_stat(df, stat_name, thresholds):
+    """Return only top relevant thresholds (avoids clutter)."""
+    results = []
+    last_pct = None
+    for t in thresholds:
+        pct, hits, total = hit_rate(df[stat_name], t)
+        if pct >= HIT_RATE_CUTOFF:
+            results.append((t, pct, hits, total))
+        last_pct = pct
+    if not results:
+        return []
+
+    # Keep only highest threshold meeting cutoff and one below if both are 100%
+    best = results[-1]  # highest threshold above cutoff
+    output = [best]
+    # if multiple 100%s, include next lower one for context
+    for i in range(len(results) - 2, -1, -1):
+        if results[i][1] == 100 and results[i+1][1] == 100:
+            output.insert(0, results[i])
+        else:
+            break
+    return output
+
+
+# -----------------------------
+# MAIN LOGIC
+# -----------------------------
+print("📅 Fetching today’s NBA games...\n")
+matchups = get_todays_games()
+
+if not matchups:
+    print("⚠️ No NBA games found for today.")
+    exit()
+
+print("Tonight’s Games:")
+for m in matchups:
+    print(f"  🏀 {m['away_team']} @ {m['home_team']}")
+print("\n-------------------------------------------\n")
+
+# -----------------------------
+# LOOP THROUGH MATCHUPS
+# -----------------------------
+for game in matchups:
+    away_team = game["away_team"]
+    home_team = game["home_team"]
+
+    print(f"\n==================== {away_team}@{home_team} ====================")
+
+    for team_abbr in [away_team, home_team]:
+        if team_abbr not in TEAM_PLAYERS:
+            print(f"\nSkipping {team_abbr} (no players defined in TEAM_PLAYERS)")
+            continue
+
+        print(f"\n{team_abbr} players being analyzed:")
+        for player_name in TEAM_PLAYERS[team_abbr]:
+            print(f"  ⏳ Fetching {player_name}...")
+            found = players.find_players_by_full_name(player_name)
+            if not found:
+                print(f"  ⚠️ Could not find {player_name}")
+                continue
+            player_id = found[0]["id"]
+
+            df = get_recent_games(player_id)
+            if df.empty:
+                print(f"  ⚠️ No recent games found for {player_name}")
+                continue
+
+            categories = [
+                ("PTS", POINT_THRESHOLDS, "Points"),
+                ("REB", REB_THRESHOLDS, "Rebounds"),
+                ("AST", AST_THRESHOLDS, "Assists"),
+                ("STL", STL_THRESHOLDS, "Steals"),
+                ("BLK", BLK_THRESHOLDS, "Blocks"),
+                ("FG3M", THREEPM_THRESHOLDS, "3PM"),
+            ]
+
+            results = []
+            for stat, thresholds, label in categories:
+                res = summarize_stat(df, stat, thresholds)
+                for t, pct, hits, total in res:
+                    results.append(f"{t}+ {label} - {pct:.0f}% ({hits}/{total})")
+
+            if results:
+                print(f"  ✅ {player_name}: " + ", ".join(results))
+            else:
+                print(f"  ⚪ {player_name}: (no strong trends)")
+
+        print("\n-------------------------------------------\n")

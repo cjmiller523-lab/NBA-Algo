@@ -1,0 +1,426 @@
+import warnings
+warnings.filterwarnings("ignore")
+
+import os
+import json
+import random
+import time
+import pandas as pd
+from datetime import datetime
+from nba_api.stats.endpoints import ScoreboardV2, PlayerGameLog
+from nba_api.stats.static import teams, players
+from reportlab.lib.pagesizes import letter
+from reportlab.lib import colors
+from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Table, TableStyle
+from reportlab.lib.styles import getSampleStyleSheet
+
+# =====================================
+# SETTINGS
+# =====================================
+NUM_GAMES = 10
+SEASONS = ["2025-26", "2024-25"]
+SEASON_TYPES = ["Regular Season", "Playoffs"]
+HIT_RATE_CUTOFF = 70  # %
+CACHE_DIR = "cache"
+MAX_RETRIES = 3
+
+POINT_THRESHOLDS = [10, 15, 20, 25, 30]
+REB_THRESHOLDS = [2, 4, 6, 8, 10]
+AST_THRESHOLDS = [2, 4, 6, 8, 10]
+STL_THRESHOLDS = [1, 2]
+BLK_THRESHOLDS = [1, 2]
+THREEPM_THRESHOLDS = [1, 2, 3, 4, 5]
+
+# =====================================
+# TEAM PLAYERS (add all your teams here)
+# =====================================
+TEAM_PLAYERS = {
+    "ATL": ["Trae Young", "Dejounte Murray", "Jalen Johnson", "Clint Capela", "Saddiq Bey", "Onyeka Okongwu"],
+    "BOS": ["Jayson Tatum", "Jaylen Brown", "Kristaps Porzingis", "Jrue Holiday", "Derrick White", "Al Horford"],
+    "BKN": ["Mikal Bridges", "Cam Thomas", "Ben Simmons", "Nic Claxton", "Dennis Schroder", "Dorian Finney-Smith"],
+    "CHA": ["LaMelo Ball", "Brandon Miller", "Miles Bridges", "Mark Williams", "Nick Smith Jr.", "Grant Williams"],
+    "CHI": ["Zach LaVine", "DeMar DeRozan", "Coby White", "Patrick Williams", "Nikola Vucevic", "Ayo Dosunmu"],
+    "CLE": ["Donovan Mitchell", "Darius Garland", "Evan Mobley", "Jarrett Allen", "Max Strus", "Caris LeVert"],
+    "DAL": ["Luka Doncic", "Kyrie Irving", "Cooper Flagg", "Dereck Lively II", "P.J. Washington", "Josh Green"],
+    "DEN": ["Nikola Jokic", "Jamal Murray", "Aaron Gordon", "Michael Porter Jr.", "Kentavious Caldwell-Pope", "Christian Braun"],
+    "DET": ["Cade Cunningham", "Jaden Ivey", "Jalen Duren", "Ausar Thompson", "Isaiah Stewart", "Simone Fontecchio"],
+    "GSW": ["Stephen Curry", "Draymond Green", "Jonathan Kuminga", "Brandin Podziemski", "Andrew Wiggins", "Kevon Looney"],
+    "HOU": ["Jalen Green", "Alperen Sengun", "Fred VanVleet", "Dillon Brooks", "Amen Thompson", "Cam Whitmore"],
+    "IND": ["Tyrese Haliburton", "Myles Turner", "Bennedict Mathurin", "Jarace Walker", "Bruce Brown", "Andrew Nembhard"],
+    "LAC": ["Paul George", "Kawhi Leonard", "James Harden", "Ivica Zubac", "Terance Mann", "Norman Powell"],
+    "LAL": ["LeBron James", "Anthony Davis", "Austin Reaves", "Rui Hachimura", "Gabe Vincent", "Spencer Dinwiddie"],
+    "MEM": ["Ja Morant", "Desmond Bane", "Jaren Jackson Jr.", "Marcus Smart", "Santi Aldama", "Luke Kennard"],
+    "MIA": ["Jimmy Butler", "Bam Adebayo", "Tyler Herro", "Terry Rozier", "Jaime Jaquez Jr.", "Caleb Martin"],
+    "MIL": ["Giannis Antetokounmpo", "Damian Lillard", "Khris Middleton", "Brook Lopez", "Bobby Portis", "Malik Beasley"],
+    "MIN": ["Anthony Edwards", "Karl-Anthony Towns", "Rudy Gobert", "Mike Conley", "Jaden McDaniels", "Naz Reid"],
+    "NOP": ["Zion Williamson", "Brandon Ingram", "CJ McCollum", "Herbert Jones", "Trey Murphy III", "Jonas Valanciunas"],
+    "NYK": ["Jalen Brunson", "Julius Randle", "RJ Barrett", "OG Anunoby", "Josh Hart", "Mitchell Robinson"],
+    "OKC": ["Shai Gilgeous-Alexander", "Chet Holmgren", "Jalen Williams", "Josh Giddey", "Luguentz Dort", "Isaiah Joe"],
+    "ORL": ["Paolo Banchero", "Franz Wagner", "Wendell Carter Jr.", "Jalen Suggs", "Cole Anthony", "Jonathan Isaac"],
+    "PHI": ["Joel Embiid", "Tyrese Maxey", "Tobias Harris", "Kelly Oubre Jr.", "Kyle Lowry", "Ricky Council IV"],
+    "PHX": ["Kevin Durant", "Devin Booker", "Bradley Beal", "Grayson Allen", "Jusuf Nurkic", "Eric Gordon"],
+    "POR": ["Scoot Henderson", "Anfernee Simons", "Jerami Grant", "Deandre Ayton", "Shaedon Sharpe", "Matisse Thybulle"],
+    "SAC": ["De’Aaron Fox", "Domantas Sabonis", "Keegan Murray", "Malik Monk", "Harrison Barnes", "Kevin Huerter"],
+    "SAS": ["Victor Wembanyama", "Devin Vassell", "Zach Collins", "Keldon Johnson", "Jeremy Sochan", "Malaki Branham"],
+    "TOR": ["Scottie Barnes", "RJ Barrett", "Immanuel Quickley", "Jakob Poeltl", "Gradey Dick", "Kelly Olynyk"],
+    "UTA": ["Lauri Markkanen", "Walker Kessler", "Collin Sexton", "John Collins", "Keyonte George", "Jordan Clarkson"],
+    "WAS": ["Jordan Poole", "Kyle Kuzma", "Deni Avdija", "Tyus Jones", "Bilal Coulibaly", "Marvin Bagley III"],
+}
+
+# =====================================
+# CACHE FUNCTIONS
+# =====================================
+def _safe_filename(name):
+    return name.replace(" ", "_").replace(".", "").replace("'", "")
+
+def load_cache_player(player_name):
+    """Load a single player's cached JSON file as a list of dicts."""
+    if not os.path.exists(CACHE_DIR):
+        os.makedirs(CACHE_DIR)
+
+    file_path = os.path.join(CACHE_DIR, f"{_safe_filename(player_name)}.json")
+
+    if os.path.exists(file_path):
+        try:
+            with open(file_path, "r") as f:
+                data = json.load(f)
+            df = pd.DataFrame(data)
+            if not df.empty and "GAME_DATE" in df.columns:
+                df["GAME_DATE"] = pd.to_datetime(df["GAME_DATE"], errors="coerce")
+            # Return the same structure you use elsewhere
+            return df.to_dict(orient="records")
+        except Exception as e:
+            print(f"  ⚠️ Error loading cache for {player_name}: {e}")
+            return []
+    return []
+
+def save_cache_player(player_name, data):
+    """Save one player's cache to their own file."""
+    if not os.path.exists(CACHE_DIR):
+        os.makedirs(CACHE_DIR)
+    file_path = os.path.join(CACHE_DIR, f"{_safe_filename(player_name)}.json")
+    with open(file_path, "w") as f:
+        json.dump(data, f, indent=2, default=str)
+
+def safe_fetch_player_logs(player_id, season, stype):
+    """Safely fetch with retry and random delay."""
+    for attempt in range(MAX_RETRIES):
+        try:
+            time.sleep(random.uniform(0.3, 0.8))  # polite delay
+            return PlayerGameLog(player_id=player_id, season=season, season_type_all_star=stype).get_data_frames()[0]
+        except Exception as e:
+            print(f"   ⚠️ Attempt {attempt+1} failed: {e}")
+            time.sleep(2 + attempt)  # exponential backoff
+    print(f"   ❌ Skipping {player_id} after {MAX_RETRIES} failed attempts.")
+    return pd.DataFrame()
+
+def get_recent_games_cached(player_name, player_id):
+    """Return last 10 games, updating cache if new ones found."""
+    player_cache = load_cache_player(player_name)
+    df_cached = pd.DataFrame(player_cache)
+
+    if not df_cached.empty:
+        last_cached_date = pd.to_datetime(df_cached["GAME_DATE"].max())
+    else:
+        last_cached_date = pd.Timestamp(0)
+
+    fetched_df = pd.DataFrame()
+    for season in SEASONS:
+        for stype in SEASON_TYPES:
+            logs = safe_fetch_player_logs(player_id, season, stype)
+            if not logs.empty:
+                fetched_df = pd.concat([fetched_df, logs], ignore_index=True)
+
+    if fetched_df.empty:
+        print(f"  ⚠️ No data from API, using cache only.")
+        return df_cached.head(NUM_GAMES)
+
+    # ensure datetime everywhere
+    fetched_df["GAME_DATE"] = pd.to_datetime(fetched_df["GAME_DATE"], errors="coerce")
+    if not df_cached.empty and "GAME_DATE" in df_cached.columns:
+        df_cached["GAME_DATE"] = pd.to_datetime(df_cached["GAME_DATE"], errors="coerce")
+
+    fetched_df = fetched_df[["GAME_DATE","MATCHUP","MIN","PTS","REB","AST","STL","BLK","FG3M"]]
+    fetched_df.sort_values("GAME_DATE", ascending=False, inplace=True)
+    fetched_df = fetched_df.head(NUM_GAMES)
+
+    new_games = fetched_df[fetched_df["GAME_DATE"] > (df_cached["GAME_DATE"].max() if not df_cached.empty else pd.Timestamp(0))]
+
+    if not new_games.empty or df_cached.empty:
+        print(f"  ♻️ Updating cache for {player_name} with {len(new_games)} new games.")
+        combined = pd.concat([new_games, df_cached], ignore_index=True)
+        combined["GAME_DATE"] = pd.to_datetime(combined["GAME_DATE"], errors="coerce")
+        combined = (combined
+                    .drop_duplicates(subset="GAME_DATE")
+                    .sort_values("GAME_DATE", ascending=False)
+                    .head(NUM_GAMES))
+        save_cache_player(player_name, combined.to_dict(orient="records"))
+        return combined
+    else:
+        print(f"  💤 Using cached data for {player_name}")
+        return df_cached.head(NUM_GAMES)
+
+# =====================================
+# CALCULATION HELPERS
+# =====================================
+def hit_rate(series, threshold):
+    hits = (series >= threshold).sum()
+    pct = hits / len(series) * 100 if len(series) > 0 else 0
+    return pct, hits, len(series)
+
+def summarize_stat(df, stat_name, thresholds):
+    results = []
+    for t in thresholds:
+        pct, hits, total = hit_rate(df[stat_name], t)
+        if pct >= HIT_RATE_CUTOFF:
+            results.append((t, pct, hits, total))
+    if not results:
+        return []
+    highest = results[-1]
+    output = [highest]
+    max_100s = [r for r in results if r[1] == 100]
+    if max_100s:
+        top_100 = max_100s[-1]
+        if top_100 not in output:
+            output.insert(0, top_100)
+    return output
+
+import numpy as np
+
+def compute_confidence(df, stat_col, threshold):
+    """
+    df: last 10 games for player
+    stat_col: "PTS", "REB", etc.
+    threshold: e.g. 20
+    returns: confidence 0-100
+    """
+    vals = df[stat_col].tolist()
+    mins = df["MIN"] if "MIN" in df.columns else pd.Series([None]*len(df))
+
+    # 1) base from hit rate
+    hits = sum(v >= threshold for v in vals)
+    total = len(vals)
+    if total == 0:
+        return 0
+    base = hits / total * 100  # e.g. 90
+
+    # 2) figure out typical minutes
+    if "MIN" in df.columns:
+        median_min = df["MIN"].median()
+    else:
+        median_min = None
+
+    # find misses
+    miss_indices = [i for i, v in enumerate(vals) if v < threshold]
+
+    outlier_bonus = 0
+    if miss_indices:
+        outlierish = True
+        for i in miss_indices:
+            miss_val = vals[i]
+            # how big was the miss?
+            miss_gap = threshold - miss_val  # if 20 line and got 4 -> gap 16
+            # was it low minutes?
+            low_min = False
+            if median_min is not None and not pd.isna(mins.iloc[i]):
+                low_min = mins.iloc[i] < (0.6 * median_min)  # played <60% of normal
+
+            # if we find a miss that was NOT a tiny-minute or close miss, then it's real
+            close_miss = miss_gap <= 2  # like 19 on 20 line
+            if not (low_min or close_miss):
+                outlierish = False
+                break
+
+        if outlierish:
+            outlier_bonus = 5  # give small bump for "the only miss was weird"
+
+    # 3) consistency bonus (low std dev)
+    stat_std = np.std(vals)
+    # rough rule: std <= 3 (for pts) is very consistent; for rebounds/assists it'll be smaller
+    consistency_bonus = 0
+    if stat_std <= 2:
+        consistency_bonus = 5
+    elif stat_std <= 4:
+        consistency_bonus = 2
+
+    confidence = base + outlier_bonus + consistency_bonus
+    return min(100, round(confidence, 1))
+
+
+# =====================================
+# FETCH GAMES + MAIN LOGIC
+# =====================================
+from nba_api.stats.endpoints import ScoreboardV2
+from nba_api.stats.library.parameters import GameDate
+
+def get_todays_games():
+    """
+    Try to pull today's games from NBA API.
+    If it times out or fails, fall back to a dummy list
+    so the rest of the script can still run.
+    """
+    today = datetime.now().strftime("%m/%d/%Y")
+    try:
+        # try up to 3 times
+        last_exc = None
+        for _ in range(3):
+            try:
+                scoreboard = ScoreboardV2(game_date=today)
+                games = scoreboard.game_header.get_data_frame()
+                break
+            except Exception as e:
+                last_exc = e
+                time.sleep(1.0)
+        else:
+            raise last_exc
+    except Exception as e:
+        print(f"⚠️ Could not fetch today's games from NBA API ({e}). Using fallback teams.")
+        # fallback: just run it on a few teams you actually have in TEAM_PLAYERS
+        fallback_matchups = [
+            {"game_id": "FAKE1", "home_team": "LAL", "away_team": "GSW"},
+            {"game_id": "FAKE2", "home_team": "BOS", "away_team": "MIL"},
+        ]
+        return fallback_matchups
+
+    team_lookup = {t["id"]: t["abbreviation"] for t in teams.get_teams()}
+    matchups = []
+    for _, row in games.iterrows():
+        home_abbrev = team_lookup.get(row["HOME_TEAM_ID"], "UNK")
+        away_abbrev = team_lookup.get(row["VISITOR_TEAM_ID"], "UNK")
+        matchups.append({
+            "game_id": row["GAME_ID"],
+            "home_team": home_abbrev,
+            "away_team": away_abbrev
+        })
+    return matchups
+
+
+# =====================================
+# REPORT GENERATION
+# =====================================
+def generate_report():
+    print("📅 Fetching today’s NBA games...\n")
+    matchups = get_todays_games()
+    if not matchups:
+        print("⚠️ No NBA games found for today.")
+        return
+
+    today_str = datetime.now().strftime("%Y-%m-%d")
+    pdf_filename = f"NBA_HitRates_{today_str}.pdf"
+    doc = SimpleDocTemplate(pdf_filename, pagesize=letter)
+    story = []
+    all_top_trends = []  # global list to collect all game trends for summary
+    styles = getSampleStyleSheet()
+    story.append(Paragraph(f"NBA Hit Rate Report – {today_str}", styles["Title"]))
+    story.append(Spacer(1, 12))
+
+    top_trends = []
+
+    player_counter = 0
+
+    for game in matchups:
+        away_team, home_team = game["away_team"], game["home_team"]
+        print(f"\n==================== {away_team}@{home_team} ====================")
+        story.append(Paragraph(f"<b>{away_team} @ {home_team}</b>", styles["Heading2"]))
+
+        for team_abbr in [away_team, home_team]:
+            if team_abbr not in TEAM_PLAYERS:
+                story.append(Paragraph(f"Skipping {team_abbr} (no players defined)", styles["Normal"]))
+                continue
+
+            story.append(Paragraph(f"<b>{team_abbr} Players:</b>", styles["Heading3"]))
+            for player_name in TEAM_PLAYERS[team_abbr]:
+                player_counter += 1
+                print(f"⏳ ({player_counter}) {player_name}...")
+                found = players.find_players_by_full_name(player_name)
+                if not found:
+                    continue
+                player_id = found[0]["id"]
+                df = get_recent_games_cached(player_name, player_id)
+                if df.empty:
+                    continue
+
+                categories = [
+                    ("PTS", POINT_THRESHOLDS, "Points"),
+                    ("REB", REB_THRESHOLDS, "Rebounds"),
+                    ("AST", AST_THRESHOLDS, "Assists"),
+                    ("STL", STL_THRESHOLDS, "Steals"),
+                    ("BLK", BLK_THRESHOLDS, "Blocks"),
+                    ("FG3M", THREEPM_THRESHOLDS, "3PM"),
+                ]
+
+                table_data = [["Stat", "Threshold", "Hits", "Rate"]]
+                for stat, thresholds, label in categories:
+                    res = summarize_stat(df, stat, thresholds)
+                    for t, pct, hits, total in res:
+                        table_data.append([label, f"{t}+", f"{hits}/{total}", f"{pct:.0f}%"])
+                        conf = compute_confidence(df, stat, t)
+                        top_trends.append({
+                            "player": player_name,
+                             "team": team_abbr,
+                             "label": label,
+                             "threshold": t,
+                             "pct": pct,
+                             "confidence": conf,
+                             "hits": hits,
+                             "total": total,
+                            })
+
+                        
+
+                if len(table_data) > 1:
+                    t = Table(table_data)
+                    t.setStyle(TableStyle([
+                        ("BACKGROUND", (0, 0), (-1, 0), colors.lightgrey),
+                        ("GRID", (0, 0), (-1, -1), 0.5, colors.grey),
+                        ("FONTNAME", (0, 0), (-1, 0), "Helvetica-Bold"),
+                    ]))
+                    story.append(Paragraph(f"<b>{player_name}</b>", styles["Normal"]))
+                    story.append(t)
+                    story.append(Spacer(1, 6))
+
+                # periodic checkpoint save
+                if player_counter % 10 == 0:
+                    print("💾 Checkpoint save (every 10 players)...")
+                    time.sleep(1)
+
+    # ======== SUMMARY SECTION AT TOP ========
+    # ======== SUMMARY SECTION AT TOP (after loop completes) ========
+    if top_trends:
+        # Sort all player results
+        top_conf = sorted(top_trends, key=lambda x: (-x["confidence"], -x["pct"]))[:10]
+
+        summary_title = Paragraph("<b>🏀 Top Confidence Trends Across All Games</b>", styles["Heading1"])
+        summary_data = [["Player", "Team", "Stat", "Threshold", "Hit Rate", "Conf."]]
+        for t in top_conf:
+            summary_data.append([
+                t["player"],
+                t["team"],
+                t["label"],
+                f"{t['threshold']}+",
+                f"{t['pct']:.0f}%",
+                f"{t['confidence']:.0f}",
+            ])
+
+        summary_table = Table(summary_data)
+        summary_table.setStyle(TableStyle([
+            ("BACKGROUND", (0, 0), (-1, 0), colors.lightgrey),
+            ("GRID", (0, 0), (-1, -1), 0.5, colors.grey),
+            ("FONTNAME", (0, 0), (-1, 0), "Helvetica-Bold"),
+        ]))
+
+        # Now insert both title and table right after the title at index 2
+        story.insert(2, Spacer(1, 12))
+        story.insert(2, summary_table)
+        story.insert(2, summary_title)
+        story.insert(2, Spacer(1, 12))
+
+    # finally build the PDF
+    doc.build(story)
+    print(f"\n✅ Report saved to {pdf_filename}")
+
+# =====================================
+# RUN SCRIPT
+# =====================================
+if __name__ == "__main__":
+    generate_report()

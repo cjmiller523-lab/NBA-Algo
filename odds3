@@ -1,0 +1,212 @@
+import os
+import requests
+import time
+
+SGO_API_KEY = os.getenv("SGO_API_KEY", "7243468c02f981445249730c03b426c1")
+BASE_URL = "https://api.sportsgameodds.com/v2/events"
+
+
+############################################################
+# 1. Fetch Pacers vs Suns game
+############################################################
+
+def get_pacers_suns_event():
+    params = {
+        "apiKey": SGO_API_KEY,
+        "leagueID": "NBA",
+        "oddsAvailable": "true",
+        "bookmakerID": "fanduel",
+        "limit": "100"
+    }
+
+    r = requests.get(BASE_URL, params=params, timeout=15)
+    r.raise_for_status()
+    js = r.json()
+
+    for game in js.get("data", []):
+        home = game["teams"]["home"]["names"]["long"].lower()
+        away = game["teams"]["away"]["names"]["long"].lower()
+
+        if ("pacers" in home and "suns" in away) or ("pacers" in away and "suns" in home):
+            return game
+
+    raise ValueError("Pacers vs Suns not found.")
+
+
+############################################################
+# 2. Determine starters (top 5 alphabetically)
+############################################################
+
+def get_starters(players_dict):
+    pids = sorted(players_dict.keys())
+    return pids[:5]
+
+
+############################################################
+# 3. Build ALL oddIDs for one team in a single request
+############################################################
+
+def build_team_odds_request(player_ids):
+    odd_ids = []
+    for pid in player_ids:
+        odd_ids.append(f"points-{pid}-game-ou-over")
+        odd_ids.append(f"rebounds-{pid}-game-ou-over")
+        odd_ids.append(f"assists-{pid}-game-ou-over")
+    return ",".join(odd_ids)
+
+
+############################################################
+# 4. Fetch ALL props for a team in ONE request
+############################################################
+
+def fetch_team_props(odd_id_string):
+    params = {
+        "apiKey": SGO_API_KEY,
+        "leagueID": "NBA",
+        "bookmakerID": "fanduel",
+        "oddsAvailable": "true",
+        "oddIDs": odd_id_string,
+        "includeOpposingOdds": "true",
+        "includeAltLines": "true",
+        "limit": "1",
+    }
+
+    # Retry if rate-limited
+    for _ in range(3):
+        r = requests.get(BASE_URL, params=params, timeout=15)
+        js = r.json()
+
+        if "data" in js and js["data"]:
+            return js
+
+        time.sleep(1)
+
+    return None
+
+
+############################################################
+# 5. Parse props from the large response
+############################################################
+
+def parse_props(player_id, stat, odds_object):
+    odd_id = f"{stat}-{player_id}-game-ou-over"
+
+    if odd_id not in odds_object:
+        return None
+
+    node = odds_object[odd_id]
+    bm = node.get("byBookmaker", {})
+
+    if "fanduel" not in bm:
+        return None
+
+    fd = bm["fanduel"]
+
+    main_line = {
+        "overUnder": node["bookOverUnder"],
+        "odds": fd["odds"],
+    }
+
+    alt_lines = fd.get("altLines", [])
+    return main_line, alt_lines
+
+
+############################################################
+# 6. Pretty-print props
+############################################################
+
+def filter_juiced(lines):
+    clean = []
+    for x in lines:
+        try:
+            if int(x["odds"]) >= -600:
+                clean.append(x)
+        except:
+            continue
+    return clean
+
+
+def print_player_props(name, props_dict):
+    print(f"\n{name}")
+    print("-" * len(name))
+    for stat, res in props_dict.items():
+        print(f"  {stat.upper()}:")
+        if res is None:
+            print("    No Data")
+            continue
+
+        main_line, alts = res
+        alts = filter_juiced(alts)
+
+        print(f"    {main_line['overUnder']} : {main_line['odds']} (main)")
+
+        for a in alts:
+            print(f"    {a['overUnder']} : {a['odds']}")
+
+
+############################################################
+# MAIN
+############################################################
+
+def main():
+    print("\nFetching Pacers vs Suns...\n")
+
+    game = get_pacers_suns_event()
+    players = game["players"]
+
+    home_id = game["teams"]["home"]["teamID"]
+    away_id = game["teams"]["away"]["teamID"]
+
+    home_team_short = game["teams"]["home"]["names"]["medium"]
+    away_team_short = game["teams"]["away"]["names"]["medium"]
+
+    home_players = {pid: p for pid, p in players.items() if p["teamID"] == home_id}
+    away_players = {pid: p for pid, p in players.items() if p["teamID"] == away_id}
+
+    home_starters = get_starters(home_players)
+    away_starters = get_starters(away_players)
+
+    # BUILD oddIDs
+    home_odds_req = build_team_odds_request(home_starters)
+    away_odds_req = build_team_odds_request(away_starters)
+
+    # FETCH all props in 1 request per team
+    home_props_data = fetch_team_props(home_odds_req)
+    away_props_data = fetch_team_props(away_odds_req)
+
+    if not home_props_data or not away_props_data:
+        print("API returned empty data due to rate limits. Try again in 1 minute.")
+        return
+
+    home_odds = home_props_data["data"][0]["odds"]
+    away_odds = away_props_data["data"][0]["odds"]
+
+    print("==============================")
+    print(f"{away_team_short} STARTERS")
+    print("==============================")
+
+    for pid in away_starters:
+        name = away_players[pid]["name"]
+        props = {
+            "points": parse_props(pid, "points", away_odds),
+            "rebounds": parse_props(pid, "rebounds", away_odds),
+            "assists": parse_props(pid, "assists", away_odds),
+        }
+        print_player_props(name, props)
+
+    print("\n==============================")
+    print(f"{home_team_short} STARTERS")
+    print("==============================")
+
+    for pid in home_starters:
+        name = home_players[pid]["name"]
+        props = {
+            "points": parse_props(pid, "points", home_odds),
+            "rebounds": parse_props(pid, "rebounds", home_odds),
+            "assists": parse_props(pid, "assists", home_odds),
+        }
+        print_player_props(name, props)
+
+
+if __name__ == "__main__":
+    main()

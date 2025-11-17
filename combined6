@@ -1,0 +1,494 @@
+import warnings
+warnings.filterwarnings("ignore")
+
+import os
+import json
+import random
+import time
+from datetime import datetime
+from typing import Dict, List, Tuple
+
+import numpy as np
+import pandas as pd
+import requests
+from nba_api.stats.endpoints import PlayerGameLog
+from nba_api.stats.static import players as nba_players
+
+from reportlab.lib.pagesizes import letter
+from reportlab.lib import colors
+from reportlab.platypus import (
+    SimpleDocTemplate,
+    Paragraph,
+    Spacer,
+    Table,
+    TableStyle,
+)
+from reportlab.lib.styles import getSampleStyleSheet
+
+# =========================================================
+# SETTINGS
+# =========================================================
+NUM_GAMES = 10
+SEASONS = ["2025-26", "2024-25"]
+SEASON_TYPES = ["Regular Season", "Playoffs"]
+MAX_RETRIES = 3
+
+# Hit-rate thresholds
+POINT_THRESHOLDS   = [10, 15, 20, 25, 30]
+REB_THRESHOLDS     = [2, 4, 6, 8, 10]
+AST_THRESHOLDS     = [2, 4, 6, 8, 10]
+STL_THRESHOLDS     = [1, 2]
+BLK_THRESHOLDS     = [1, 2]
+THREEPM_THRESHOLDS = [1, 2, 3, 4, 5]
+
+STAT_META = {
+    "points":   {"label": "Points",   "df_col": "PTS",  "thresholds": POINT_THRESHOLDS},
+    "rebounds": {"label": "Rebounds", "df_col": "REB",  "thresholds": REB_THRESHOLDS},
+    "assists":  {"label": "Assists",  "df_col": "AST",  "thresholds": AST_THRESHOLDS},
+    "steals":   {"label": "Steals",   "df_col": "STL",  "thresholds": STL_THRESHOLDS},
+    "blocks":   {"label": "Blocks",   "df_col": "BLK",  "thresholds": BLK_THRESHOLDS},
+    "threes":   {"label": "3PM",      "df_col": "FG3M", "thresholds": THREEPM_THRESHOLDS},
+}
+STATS = list(STAT_META.keys())
+
+# SGO odds API (used for GAME LISTING ONLY here)
+SGO_API_KEY = os.getenv("SGO_API_KEY", "7243468c02f981445249730c03b426c1")
+BASE_URL = "https://api.sportsgameodds.com/v2/events"
+
+# Caches
+ODDS_CACHE_DIR = "odds_cache"
+PLAYER_CACHE_DIR = "cache"
+os.makedirs(ODDS_CACHE_DIR, exist_ok=True)
+os.makedirs(PLAYER_CACHE_DIR, exist_ok=True)
+
+# =========================================================
+# PLAYER LOG CACHE
+# =========================================================
+def _safe_filename(name: str) -> str:
+    return name.replace(" ", "_").replace(".", "").replace("'", "")
+
+def load_cache_player(player_name: str) -> List[dict]:
+    fp = os.path.join(PLAYER_CACHE_DIR, f"{_safe_filename(player_name)}.json")
+    if os.path.exists(fp):
+        try:
+            with open(fp, "r") as f:
+                data = json.load(f)
+            df = pd.DataFrame(data)
+            if not df.empty and "GAME_DATE" in df.columns:
+                df["GAME_DATE"] = pd.to_datetime(df["GAME_DATE"], errors="coerce")
+            return df.to_dict(orient="records")
+        except Exception as e:
+            print(f"  ⚠️ Error loading cache for {player_name}: {e}")
+    return []
+
+def save_cache_player(player_name: str, data: List[dict]) -> None:
+    fp = os.path.join(PLAYER_CACHE_DIR, f"{_safe_filename(player_name)}.json")
+    with open(fp, "w") as f:
+        json.dump(data, f, indent=2, default=str)
+
+def safe_fetch_player_logs(player_id: int, season: str, stype: str) -> pd.DataFrame:
+    for attempt in range(MAX_RETRIES):
+        try:
+            time.sleep(random.uniform(0.3, 0.8))
+            return PlayerGameLog(
+                player_id=player_id,
+                season=season,
+                season_type_all_star=stype
+            ).get_data_frames()[0]
+        except Exception as e:
+            print(f"   ⚠️ Attempt {attempt+1} failed for NBA ID {player_id}: {e}")
+            time.sleep(1.5 + attempt)
+    print(f"   ❌ Skipping NBA ID {player_id} after {MAX_RETRIES} failed attempts.")
+    return pd.DataFrame()
+
+def get_recent_games_cached(player_name: str, player_id: int) -> pd.DataFrame:
+    player_cache = load_cache_player(player_name)
+    df_cached = pd.DataFrame(player_cache)
+    if not df_cached.empty:
+        df_cached["GAME_DATE"] = pd.to_datetime(df_cached["GAME_DATE"], errors="coerce")
+
+    fetched = pd.DataFrame()
+    for season in SEASONS:
+        for stype in SEASON_TYPES:
+            logs = safe_fetch_player_logs(player_id, season, stype)
+            if not logs.empty:
+                fetched = pd.concat([fetched, logs], ignore_index=True)
+
+    if fetched.empty:
+        print(f"  ⚠️ No API data for {player_name}, using cache only.")
+        return df_cached.head(NUM_GAMES)
+
+    fetched["GAME_DATE"] = pd.to_datetime(fetched["GAME_DATE"], errors="coerce")
+    fetched = fetched[["GAME_DATE","MATCHUP","MIN","PTS","REB","AST","STL","BLK","FG3M"]]
+    fetched.sort_values("GAME_DATE", ascending=False, inplace=True)
+    fetched = fetched.head(NUM_GAMES)
+
+    if df_cached.empty:
+        combined = fetched
+    else:
+        combined = pd.concat([fetched, df_cached], ignore_index=True)
+        combined["GAME_DATE"] = pd.to_datetime(combined["GAME_DATE"], errors="coerce")
+        combined = (
+            combined
+            .drop_duplicates(subset="GAME_DATE")
+            .sort_values("GAME_DATE", ascending=False)
+            .head(NUM_GAMES)
+        )
+
+    print(f"  ♻️ Updating cache for {player_name} with {len(fetched)} fetched rows.")
+    save_cache_player(player_name, combined.to_dict(orient="records"))
+    return combined
+
+# =========================================================
+# CONFIDENCE / EDGE HELPERS
+# =========================================================
+def hit_rate(series, threshold) -> Tuple[float,int,int]:
+    s = pd.to_numeric(series, errors="coerce").dropna()
+    total = len(s)
+    if total == 0:
+        return 0.0, 0, 0
+    hits = (s >= threshold).sum()
+    return hits / total * 100, int(hits), int(total)
+
+def compute_confidence(df: pd.DataFrame, stat_col: str, threshold: int) -> float:
+    if df.empty or stat_col not in df.columns:
+        return 0.0
+    values = pd.to_numeric(df[stat_col], errors="coerce").dropna().tolist()
+    if not values:
+        return 0.0
+
+    mins = pd.to_numeric(df["MIN"], errors="coerce").fillna(0).tolist()
+
+    base_hits = sum(v >= threshold for v in values)
+    total = len(values)
+    base_pct = base_hits / total * 100
+
+    positive_mins = [m for m in mins if m > 0]
+    median_min = np.median(positive_mins) if positive_mins else None
+
+    penalties = 0.0
+    ignorable = 0
+    for v, m in zip(values, mins):
+        if v >= threshold:
+            continue
+        gap = threshold - v
+        low_min = bool(median_min and m < 0.5 * median_min)
+        close_miss = gap <= 2
+        if low_min or close_miss:
+            ignorable += 1
+            continue
+        penalties += min(gap * 1.5, 10)
+
+    outlier_bonus = 5 if (base_hits >= 1 and penalties == 0 and ignorable > 0) else 0
+    std = float(np.std(values))
+    consistency_bonus = 5 if std <= 2 else (2 if std <= 4 else 0)
+
+    conf = base_pct + outlier_bonus + consistency_bonus - penalties
+    return float(max(0, min(100, round(conf, 1))))
+
+def american_to_implied_prob(odds: int) -> float:
+    try:
+        o = int(odds)
+    except:
+        return 0.0
+    if o < 0:
+        return (-o) / ((-o) + 100)
+    return 100 / (o + 100)
+
+# =========================================================
+# ODDS CACHE HELPERS
+# =========================================================
+def get_odds_cache_path(tag: str) -> str:
+    today = datetime.utcnow().strftime("%Y%m%d")
+    return os.path.join(ODDS_CACHE_DIR, f"{tag}_{today}.json")
+
+def load_cached_odds(tag: str):
+    fp = get_odds_cache_path(tag)
+    if os.path.exists(fp):
+        try:
+            with open(fp, "r") as f:
+                return json.load(f)
+        except:
+            return None
+    return None
+
+def save_cached_odds(data, tag: str):
+    with open(get_odds_cache_path(tag), "w") as f:
+        json.dump(data, f, indent=2)
+
+# =========================================================
+# SGO: GAMES + PROPS (events for today's slate)
+# =========================================================
+def get_all_games_today_sgo():
+    params = {
+        "apiKey": SGO_API_KEY,
+        "leagueID": "NBA",
+        "oddsAvailable": "true",
+        "bookmakerID": "fanduel",
+        "limit": "200",
+    }
+    r = requests.get(BASE_URL, params=params, timeout=20)
+    r.raise_for_status()
+    return r.json().get("data", [])
+
+def get_event_label(ev: dict) -> str:
+    # Best effort labeling
+    home = ev.get("homeTeam", {}).get("name") or ev.get("home_team") or "HOME"
+    away = ev.get("awayTeam", {}).get("name") or ev.get("away_team") or "AWAY"
+    return f"{away} @ {home}"
+
+def guess_starters_from_sgo(event: dict) -> List[str]:
+    """
+    Best-effort: tries to pull a small set of likely starters from the event payload.
+    If not available, returns empty list and the caller will skip the game.
+    """
+    starters: List[str] = []
+
+    # Some feeds include participants or team rosters
+    for key in ("participants", "players", "athletes"):
+        arr = event.get(key)
+        if isinstance(arr, list):
+            names = []
+            for p in arr:
+                # Accept common shapes
+                if isinstance(p, dict):
+                    nm = p.get("name") or p.get("fullName") or p.get("player_name")
+                    if nm:
+                        names.append(nm)
+                elif isinstance(p, str):
+                    names.append(p)
+            if names:
+                starters = list(dict.fromkeys(names))[:10]  # both teams, cap 10
+                break
+
+    # Fallback: try markets/props with player names
+    if not starters:
+        for key in ("markets", "props", "odds"):
+            mkts = event.get(key)
+            if isinstance(mkts, list):
+                pool = []
+                for m in mkts:
+                    # look for playerName in outcomes/selections
+                    for subkey in ("outcomes", "selections", "lines"):
+                        lines = m.get(subkey)
+                        if isinstance(lines, list):
+                            for ln in lines:
+                                nm = (
+                                    ln.get("playerName") or ln.get("participant") or
+                                    ln.get("name") or ln.get("player_name")
+                                )
+                                if nm:
+                                    pool.append(nm)
+                if pool:
+                    starters = list(dict.fromkeys(pool))[:10]
+                    break
+
+    # Reduce to 5 per team: we don't know team split, but returning 10 helps.
+    return starters[:10]
+
+def get_starters(players_dict: Dict[str, dict]):
+    # Unused now; kept for compatibility
+    return sorted(players_dict.keys())[:5]
+
+def build_odds_request(player_ids: List[str]) -> str:
+    odd_ids = []
+    for pid in player_ids:
+        for stat in STATS:
+            odd_ids.append(f"{stat}-{pid}-game-ou-over")  # fixed stray brace
+    return ",".join(odd_ids)
+
+# =========================================================
+# 🟪 SLEEPER INJURY MODULE (ONLY source for injuries)
+# =========================================================
+EXCLUDE_STATUSES = {"OUT", "DOUBTFUL", "INACTIVE", "SUSPENDED", "QUESTIONABLE", "DTD", "DAY-TO-DAY"}
+
+def fetch_sleeper_players():
+    url = "https://api.sleeper.app/v1/players/nba"
+    try:
+        r = requests.get(url, timeout=20)
+        r.raise_for_status()
+        return r.json()
+    except Exception as e:
+        print("❌ Sleeper player API error:", e)
+        return {}
+
+def map_sleeper_players():
+    data = fetch_sleeper_players()
+    mapping = {}
+
+    for pid, info in data.items():
+        if not isinstance(info, dict):
+            continue
+
+        first = info.get("first_name", "")
+        last = info.get("last_name", "")
+        if not first or not last:
+            continue
+
+        name = f"{first} {last}".strip()
+
+        mapping[name] = {
+            "id": pid,
+            "status": (info.get("injury_status") or "").upper(),
+            "notes": info.get("injury_notes", ""),
+            "body": info.get("injury_body_part", "")
+        }
+    return mapping
+
+def get_sleeper_injuries_for_players(player_names: List[str]) -> Dict[str, dict]:
+    sleeper_all = map_sleeper_players()
+    injuries = {}
+
+    for name in player_names:
+        match = sleeper_all.get(name)
+        if match:
+            injuries[name] = match
+        else:
+            injuries[name] = {
+                "id": None,
+                "status": "UNKNOWN",
+                "notes": "",
+                "body": ""
+            }
+    return injuries
+
+def is_player_active_sleeper(status: str) -> bool:
+    if not status:
+        return True
+    s = status.upper().strip()
+    return s not in EXCLUDE_STATUSES
+
+# =========================================================
+# NBA HELPERS
+# =========================================================
+def find_nba_player_id_by_name(full_name: str) -> int:
+    """
+    Returns NBA player_id for nba_api using a robust name finder.
+    """
+    # nba_api provides find_players_by_full_name returning list of dicts
+    # We choose the exact case-insensitive match if available, else first result.
+    cands = nba_players.find_players_by_full_name(full_name)
+    if not cands:
+        return -1
+    # Try exact match
+    low = full_name.lower()
+    for c in cands:
+        if c.get("full_name", "").lower() == low:
+            return c.get("id", -1)
+    # Fallback to the first candidate
+    return cands[0].get("id", -1)
+
+def analyze_player_trends(player_name: str) -> List[Tuple[float, str, float, str]]:
+    """
+    For a given player name:
+      - fetch recent NUM_GAMES
+      - compute hit rates & confidence for all thresholds & stats
+    Returns a list of tuples:
+      (confidence, pretty_label, hit_pct, hits_str)
+    """
+    pid = find_nba_player_id_by_name(player_name)
+    if pid == -1:
+        return []
+
+    df = get_recent_games_cached(player_name, pid)
+    if df.empty:
+        return []
+
+    results = []
+    for stat_key, meta in STAT_META.items():
+        col = meta["df_col"]
+        for th in meta["thresholds"]:
+            pct, hits, total = hit_rate(df[col], th)
+            conf = compute_confidence(df, col, th)
+            pretty = f"{player_name} — {meta['label']} {th}+"
+            hits_str = f"{hits}/{total}"
+            results.append((conf, pretty, pct, hits_str))
+
+    # Sort high to low confidence
+    results.sort(key=lambda x: x[0], reverse=True)
+    return results
+
+# =========================================================
+# MAIN LOOP
+# =========================================================
+def main():
+    print("\nFetching today's NBA events from SGO ...")
+    try:
+        events = get_all_games_today_sgo()
+    except Exception as e:
+        print("❌ Could not fetch SGO events:", e)
+        events = []
+
+    if not events:
+        print("No events found. Exiting.")
+        return
+
+    # Iterate events and process game-by-game
+    for ev in events:
+        game_label = get_event_label(ev)
+
+        # Try to identify ~10 players from SGO to act as 'likely starters'
+        candidate_players = guess_starters_from_sgo(ev)
+        if not candidate_players:
+            print(f"\n{game_label}\n  ⚠️ No player list available from SGO for this game — skipping.")
+            continue
+
+        # Limit to unique names, preserve order
+        candidate_players = list(dict.fromkeys(candidate_players))
+
+        print("\n" + "="*30)
+        print(game_label)
+        print("="*30)
+
+        # SLEEPER injuries
+        injuries = get_sleeper_injuries_for_players(candidate_players)
+
+        print("\nSLEEPER INJURY STATUSES")
+        print("------------------------")
+        for p in candidate_players:
+            info = injuries.get(p, {"status": "UNKNOWN", "notes": ""})
+            status = info.get("status", "UNKNOWN")
+            notes = info.get("notes", "")
+            note_tail = f" — {notes}" if notes else ""
+            print(f"  {p}: {status}{note_tail}")
+
+        # Active filter (Sleeper only)
+        active_players = [p for p in candidate_players if is_player_active_sleeper(injuries.get(p, {}).get("status", ""))]
+
+        if not active_players:
+            print("\n  ⚠️ No active players after Sleeper filter — skipping.")
+            continue
+
+        # Analyze each active player
+        per_game_trends: List[Tuple[float, str, float, str]] = []
+        print("\nAnalyzing recent games & computing confidence (this uses cache + nba_api)...")
+        for p in active_players:
+            try:
+                trends = analyze_player_trends(p)
+                # You can throttle if the slate is large
+                time.sleep(random.uniform(0.2, 0.5))
+                per_game_trends.extend(trends)
+            except Exception as e:
+                print(f"  ⚠️ Trend analysis failed for {p}: {e}")
+
+        if not per_game_trends:
+            print("  ⚠️ No trend results for this game.")
+            continue
+
+        # Sort all and show top N per game (e.g., top 8–10)
+        TOP_N = 10
+        per_game_trends.sort(key=lambda x: x[0], reverse=True)
+        top_trends = per_game_trends[:TOP_N]
+
+        # Pretty print table
+        print("\nTop Confidence Trends")
+        print("---------------------")
+        # columns: Rank, Pick, HitRate, Confidence
+        # x: (conf, pretty, pct, hits_str)
+        for i, (conf, pretty, pct, hits_str) in enumerate(top_trends, 1):
+            print(f"{i:>2}. {pretty:<40} | Hit: {hits_str:<5} ({pct:>5.1f}%) | Conf: {conf:>5.1f}")
+
+    print("\nDone.")
+
+if __name__ == "__main__":
+    main()
