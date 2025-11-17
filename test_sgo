@@ -1,0 +1,22 @@
+from pprint import pprint
+from combined11 import get_all_games_today_sgo
+
+games = get_all_games_today_sgo()
+for g in games:
+    print("\n==============================")
+    print(g["teams"]["away"]["names"]["medium"], "@", g["teams"]["home"]["names"]["medium"])
+    print("==============================")
+
+    # Print ENTIRE odds block
+    if "odds" in g:
+        pprint(g["odds"])
+    else:
+        print("No odds field present")
+
+    # Print one player's feed
+    players = list(g["players"].values())
+    if players:
+        p = players[0]
+        print("\nSample player entry:")
+        pprint(p)
+        break  # just show first player

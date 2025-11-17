@@ -1,0 +1,83 @@
+import requests
+from pprint import pprint
+
+SGO_API_KEY = "7243468c02f981445249730c03b426c1"
+BASE_URL = "https://api.sportsgameodds.com/v2/events"
+
+TARGET_TEAM = "76ers"  # <-- THIS IS THE REAL SGO NAME
+
+# Which stats your main model cares about
+TARGET_STATS = {
+    "points",
+    "rebounds",
+    "assists",
+    "steals",
+    "blocks",
+    "fg3m",
+}
+
+def main():
+    print(f"\n🔍 Checking FanDuel props for: {TARGET_TEAM}\n")
+
+    params = {
+        "apiKey": SGO_API_KEY,
+        "leagueID": "NBA",
+        "oddsAvailable": "true",
+        "bookmakerID": "fanduel",
+        "limit": 200,
+    }
+
+    r = requests.get(BASE_URL, params=params, timeout=20)
+    data = r.json().get("data", [])
+
+    # Find the game by matching either home or away
+    target_game = None
+    for game in data:
+        home = game["teams"]["home"]["names"]["medium"]
+        away = game["teams"]["away"]["names"]["medium"]
+
+        if TARGET_TEAM.lower() == home.lower() or TARGET_TEAM.lower() == away.lower():
+            target_game = game
+            break
+
+    if not target_game:
+        print("❌ No SGO game found for the 76ers today.")
+        return
+
+    print("📌 Found game:")
+    print(f"   {target_game['teams']['away']['names']['medium']} @ {target_game['teams']['home']['names']['medium']}\n")
+
+    game_odds = target_game.get("odds", {})
+    if not game_odds:
+        print("❌ SGO returned no odds block.\n")
+        return
+
+    print("📊 STAT IDs returned for this game:\n")
+    stat_ids = sorted({node.get("statID", "") for node in game_odds.values()})
+    for sid in stat_ids:
+        print(" -", sid)
+    print()
+
+    print("🔎 Checking for PTS / REB / AST / STL / BLK / 3PM props:\n")
+
+    found_core_props = False
+
+    for oddID, node in game_odds.items():
+        statID = node.get("statID", "").lower()
+
+        if statID in TARGET_STATS:
+            found_core_props = True
+            print("=========================================")
+            print(f"STAT: {statID.upper()}")
+            pprint(node)
+            print()
+
+    if not found_core_props:
+        print("❌ No FanDuel core props found yet for the 76ers.")
+        print("   SGO is still missing PTS/REB/AST props for this matchup.\n")
+    else:
+        print("✅ Core props detected above.\n")
+
+
+if __name__ == "__main__":
+    main()

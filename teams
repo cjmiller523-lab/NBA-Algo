@@ -1,0 +1,10 @@
+from combined11 import get_all_games_today_sgo
+
+games = get_all_games_today_sgo()
+print("\nSGO Team Names Today:\n")
+
+for g in games:
+    home = g["teams"]["home"]["names"]["medium"]
+    away = g["teams"]["away"]["names"]["medium"]
+
+    print(f"- {away} @ {home}")
