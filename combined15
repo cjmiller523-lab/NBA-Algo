@@ -1,0 +1,560 @@
+import warnings
+warnings.filterwarnings("ignore")
+
+import os
+import json
+import random
+import time
+from datetime import datetime
+
+import numpy as np
+import pandas as pd
+import requests
+from nba_api.stats.endpoints import PlayerGameLog
+from nba_api.stats.static import players as nba_players
+
+from reportlab.lib.pagesizes import letter
+from reportlab.lib import colors
+from reportlab.platypus import (
+    SimpleDocTemplate,
+    Paragraph,
+    Spacer,
+    Table,
+    TableStyle,
+)
+from reportlab.lib.styles import getSampleStyleSheet
+
+# =====================================
+# SETTINGS
+# =====================================
+NUM_GAMES = 10
+SEASONS = ["2025-26", "2024-25"]
+SEASON_TYPES = ["Regular Season", "Playoffs"]
+MAX_RETRIES = 3
+
+STAT_META = {
+    "points":   {"label": "Points",   "df_col": "PTS"},
+    "rebounds": {"label": "Rebounds", "df_col": "REB"},
+    "assists":  {"label": "Assists",  "df_col": "AST"},
+    "steals":   {"label": "Steals",   "df_col": "STL"},
+    "blocks":   {"label": "Blocks",   "df_col": "BLK"},
+    "threes":   {"label": "3PM",      "df_col": "FG3M"},
+}
+
+STATS = list(STAT_META.keys())
+
+# Odds / SGO
+SGO_API_KEY = os.getenv("SGO_API_KEY", "7243468c02f981445249730c03b426c1")
+BASE_URL = "https://api.sportsgameodds.com/v2/events"
+
+ODDS_CACHE_DIR = "odds_cache"
+PLAYER_CACHE_DIR = "cache"
+os.makedirs(ODDS_CACHE_DIR, exist_ok=True)
+os.makedirs(PLAYER_CACHE_DIR, exist_ok=True)
+
+OUT_STATUSES = {"OUT", "DOUBTFUL", "INACTIVE", "SUSPENDED"}
+
+# =====================================
+# PLAYER CACHE
+# =====================================
+def _safe_filename(name: str) -> str:
+    return name.replace(" ", "_").replace(".", "").replace("'", "")
+
+def load_cache_player(player_name):
+    path = os.path.join(PLAYER_CACHE_DIR, f"{_safe_filename(player_name)}.json")
+    if os.path.exists(path):
+        try:
+            with open(path, "r") as f:
+                data = json.load(f)
+            df = pd.DataFrame(data)
+            if not df.empty and "GAME_DATE" in df.columns:
+                df["GAME_DATE"] = pd.to_datetime(df["GAME_DATE"])
+            return df.to_dict(orient="records")
+        except:
+            return []
+    return []
+
+def save_cache_player(player_name, data):
+    path = os.path.join(PLAYER_CACHE_DIR, f"{_safe_filename(player_name)}.json")
+    with open(path, "w") as f:
+        json.dump(data, f, indent=2, default=str)
+
+def safe_fetch_player_logs(player_id, season, stype):
+    for attempt in range(MAX_RETRIES):
+        try:
+            time.sleep(random.uniform(0.3, 0.8))
+            df = PlayerGameLog(player_id=player_id, season=season, season_type_all_star=stype).get_data_frames()[0]
+            return df
+        except Exception as e:
+            print(f"   ⚠️ Attempt {attempt+1} failed for {player_id}: {e}")
+            time.sleep(2)
+    print(f"   ❌ Skipping {player_id}")
+    return pd.DataFrame()
+
+def get_recent_games_cached(name, player_id):
+    cached = pd.DataFrame(load_cache_player(name))
+    if not cached.empty:
+        cached["GAME_DATE"] = pd.to_datetime(cached["GAME_DATE"])
+
+    fetched = pd.DataFrame()
+    for season in SEASONS:
+        for stype in SEASON_TYPES:  # ✅ Correct
+            df = safe_fetch_player_logs(player_id, season, stype)
+            if not df.empty:
+                fetched = pd.concat([fetched, df], ignore_index=True)
+
+
+    if fetched.empty:
+        return cached.head(NUM_GAMES)
+
+    fetched["GAME_DATE"] = pd.to_datetime(fetched["GAME_DATE"])
+    fetched = fetched[["GAME_DATE","MATCHUP","MIN","PTS","REB","AST","STL","BLK","FG3M"]]
+    fetched.sort_values("GAME_DATE", ascending=False, inplace=True)
+    fetched = fetched.head(NUM_GAMES)
+
+    if cached.empty:
+        combined = fetched
+    else:
+        combined = (
+            pd.concat([fetched, cached], ignore_index=True)
+            .drop_duplicates(subset="GAME_DATE")
+            .sort_values("GAME_DATE", ascending=False)
+            .head(NUM_GAMES)
+        )
+
+    save_cache_player(name, combined.to_dict(orient="records"))
+    return combined
+
+# =====================================
+# CONFIDENCE / EDGE
+# =====================================
+def hit_rate(series, thr):
+    series = pd.to_numeric(series, errors="coerce").dropna()
+    if len(series) == 0:
+        return 0, 0, 0
+    hits = (series >= thr).sum()
+    pct = hits / len(series) * 100
+    return pct, hits, len(series)
+
+def compute_confidence(df, stat_col, thr):
+    values = pd.to_numeric(df[stat_col], errors="coerce").dropna().tolist()
+    if not values:
+        return 0
+
+    mins = pd.to_numeric(df["MIN"], errors="coerce").fillna(0).tolist()
+    base_hits = sum(v >= thr for v in values)
+    total = len(values)
+    base_pct = base_hits / total * 100
+
+    positive_mins = [m for m in mins if m > 0]
+    median_min = np.median(positive_mins) if positive_mins else None
+
+    penalties = 0
+    ignorable = 0
+    for v, m in zip(values, mins):
+        if v >= thr:
+            continue
+        gap = thr - v
+        if (median_min and m < 0.5 * median_min) or gap <= 2:
+            ignorable += 1
+            continue
+        penalties += min(gap * 1.5, 10)
+
+    outlier = 5 if (base_hits >= 1 and penalties == 0 and ignorable > 0) else 0
+
+    std = np.std(values)
+    if std <= 2: c_bonus = 5
+    elif std <= 4: c_bonus = 2
+    else: c_bonus = 0
+
+    conf = base_pct + outlier + c_bonus - penalties
+    return round(max(0, min(conf, 100)), 1)
+
+def american_to_implied_prob(odds):
+    try:
+        o = int(odds)
+    except:
+        return 0
+    if o < 0:
+        return (-o) / ((-o)+100)
+    return 100 / (o+100)
+
+# =====================================
+# ODDS CACHE
+# =====================================
+def get_odds_cache_path(tag):
+    today = datetime.utcnow().strftime("%Y%m%d")
+    return os.path.join(ODDS_CACHE_DIR, f"{tag}_{today}.json")
+
+def load_cached_odds(tag):
+    path = get_odds_cache_path(tag)
+    if os.path.exists(path):
+        with open(path, "r") as f:
+            return json.load(f)
+    return None
+
+def save_cached_odds(data, tag):
+    with open(get_odds_cache_path(tag), "w") as f:
+        json.dump(data, f, indent=2)
+
+# =====================================
+# SGO
+# =====================================
+def get_all_games_today_sgo():
+    params = {
+        "apiKey": SGO_API_KEY,
+        "leagueID": "NBA",
+        "oddsAvailable": "true",
+        "bookmakerID": "fanduel",
+        "limit": 200,
+    }
+    r = requests.get(BASE_URL, params=params, timeout=20)
+    return r.json().get("data", [])
+
+def get_starters(players_dict):
+    return sorted(players_dict.keys())[:5]
+
+def build_odds_request(ids):
+    return ",".join(f"{stat}-{pid}-game-ou-over" for pid in ids for stat in STATS)
+
+def fetch_team_props(odd_id_string, tag):
+    cached = load_cached_odds(tag)
+    if cached:
+        return cached
+
+    params = {
+        "apiKey": SGO_API_KEY,
+        "leagueID": "NBA",
+        "bookmakerID": "fanduel",
+        "oddsAvailable": "true",
+        "oddIDs": odd_id_string,
+        "includeOpposingOdds": "true",
+        "includeAltLines": "true",
+        "limit": 1,
+    }
+
+    for _ in range(3):
+        r = requests.get(BASE_URL, params=params, timeout=20)
+        js = r.json()
+        if js.get("data"):
+            save_cached_odds(js, tag)
+            return js
+        time.sleep(1)
+    return None
+
+def parse_props(pid, stat, odds_obj):
+    key = f"{stat}-{pid}-game-ou-over"
+    if key not in odds_obj:
+        return None
+
+    node = odds_obj[key]
+    if "fanduel" not in node.get("byBookmaker", {}):
+        return None
+
+    book = node["byBookmaker"]["fanduel"]
+
+    out = []
+    try:
+        out.append({
+            "overUnder": float(node["bookOverUnder"]),
+            "odds": int(book["odds"]),
+            "is_main": True,
+        })
+    except:
+        pass
+
+    for alt in book.get("altLines", []):
+        try:
+            out.append({
+                "overUnder": float(alt["overUnder"]),
+                "odds": int(alt["odds"]),
+                "is_main": False,
+            })
+        except:
+            continue
+
+    # ✅ Only keep odds in your range: -700 to +200
+    clean = [x for x in out if -700 <= int(x["odds"]) <= 200]
+    return clean
+
+
+# =====================================
+# SLEEPER INJURIES
+# =====================================
+def fetch_nba_injury_report():
+    injury_lookup = {}
+
+    try:
+        r = requests.get("https://api.sleeper.app/v1/players/nba", timeout=15)
+        data = r.json()
+
+        for pid, p in data.items():
+            name = p.get("full_name")
+            if not name:
+                continue
+
+            status = p.get("injury_status")
+            if status:
+                status = status.upper().strip()
+                if status in OUT_STATUSES:
+                    injury_lookup[name] = status
+
+    except Exception as e:
+        print("⚠️ Sleeper injury fetch failed:", e)
+
+    return injury_lookup
+
+# =====================================
+# THRESHOLD MATCHING
+# =====================================
+def round_half_up(x): return int(np.floor(x + 0.5))
+
+
+# =====================================
+# MAIN MERGE + NEW OUTPUT FORMAT
+# =====================================
+def process_all_games():
+    import math
+
+    injuries = fetch_nba_injury_report()
+    games = get_all_games_today_sgo()
+    results = []
+
+    for game in games:
+        if "players" not in game:
+            continue
+
+        home = game["teams"]["home"]
+        away = game["teams"]["away"]
+        players_dict = game["players"]
+
+        home_name = home["names"]["medium"]
+        away_name = away["names"]["medium"]
+        label = f"{away_name} @ {home_name}"
+
+        print("\n==============================")
+        print(label)
+        print("==============================")
+
+        # Split players by team
+        home_p = {pid: p for pid, p in players_dict.items() if p["teamID"] == home["teamID"]}
+        away_p = {pid: p for pid, p in players_dict.items() if p["teamID"] == away["teamID"]}
+
+        home_ids = get_starters(home_p)
+        away_ids = get_starters(away_p)
+
+        # Fetch odds from SGO
+        home_data = fetch_team_props(build_odds_request(home_ids), tag=home_name)
+        away_data = fetch_team_props(build_odds_request(away_ids), tag=away_name)
+
+        if not home_data or not home_data.get("data"):
+            continue
+        if not away_data or not away_data.get("data"):
+            continue
+
+        home_odds = home_data["data"][0]["odds"]
+        away_odds = away_data["data"][0]["odds"]
+
+        # Collect all best props for this game
+        rows = []
+
+        def process_team(team_p, ids, odds_obj, tname):
+            for pid in ids:
+                if pid not in team_p:
+                    continue
+
+                name = team_p[pid]["name"]
+
+                # Injury filter
+                if injuries.get(name) in OUT_STATUSES:
+                    print(f"  🚫 Skipping injured {name}")
+                    continue
+
+                match = nba_players.find_players_by_full_name(name)
+                if not match:
+                    continue
+
+                nbaid = match[0]["id"]
+                df = get_recent_games_cached(name, nbaid)
+                if df.empty:
+                    continue
+
+                # For each stat category (Points, Rebounds, etc.)
+                for stat in STATS:
+                    meta = STAT_META[stat]
+                    df_col = meta["df_col"]
+                    if df_col not in df.columns:
+                        continue
+
+                    props = parse_props(pid, stat, odds_obj)
+                    if not props:
+                        continue
+
+                    best_row_for_player_stat = None
+
+                    for prop in props:
+                        line = prop["overUnder"]
+                        odds_val = prop["odds"]
+
+                        # Convert FD O/U into "X+" style threshold
+                        thr = math.ceil(line)  # 7.5 → 8+, 10.5 → 11+, etc.
+
+                        # Hit rate vs last N games
+                        pct, hits, total = hit_rate(df[df_col], thr)
+
+                        # Still compute confidence/edge in case you want them later
+                        conf = compute_confidence(df, df_col, thr)
+                        implied = american_to_implied_prob(odds_val) * 100
+                        edge = round(conf - implied, 1)
+
+                        row = {
+                            "game": label,
+                            "team": tname,
+                            "player": name,
+                            "stat": meta["label"],   # "Points", "Rebounds", etc.
+                            "line": line,            # sportsbook O/U line
+                            "odds": odds_val,        # actual FD odds for this prop
+                            "threshold": thr,        # X+ value
+                            "hit_rate": round(pct, 1),
+                            "hits": hits,
+                            "total": total,
+                            "confidence": conf,
+                            "edge": edge,
+                        }
+
+                        # ✅ One line per player per stat:
+                        # choose highest hit rate; if tie, odds closer to even
+                        if best_row_for_player_stat is None:
+                            best_row_for_player_stat = row
+                        else:
+                            br = best_row_for_player_stat
+                            if row["hit_rate"] > br["hit_rate"]:
+                                best_row_for_player_stat = row
+                            elif row["hit_rate"] == br["hit_rate"]:
+                                # tie-breaker: odds closer to 0 (even money)
+                                if abs(row["odds"]) < abs(br["odds"]):
+                                    best_row_for_player_stat = row
+
+                    if best_row_for_player_stat:
+                        rows.append(best_row_for_player_stat)
+
+        # Process both teams
+        process_team(away_p, away_ids, away_odds, away_name)
+        process_team(home_p, home_ids, home_odds, home_name)
+
+        # ----- GROUP BY CATEGORY -----
+        points_rows   = [r for r in rows if r["stat"] == "Points"]
+        rebounds_rows = [r for r in rows if r["stat"] == "Rebounds"]
+        assists_rows  = [r for r in rows if r["stat"] == "Assists"]
+        defense_rows  = [r for r in rows if r["stat"] in ("Steals", "Blocks")]
+
+        # ----- SORT BY HIT RATE (DESC) -----
+        points_rows   = sorted(points_rows,   key=lambda r: -r["hit_rate"])[:3]
+        rebounds_rows = sorted(rebounds_rows, key=lambda r: -r["hit_rate"])[:3]
+        assists_rows  = sorted(assists_rows,  key=lambda r: -r["hit_rate"])[:3]
+        defense_rows  = sorted(defense_rows,  key=lambda r: -r["hit_rate"])[:3]
+
+        # ----- PRINT TO TERMINAL -----
+        print("\n=== Points – Top 3 ===")
+        for r in points_rows:
+            print(
+                f"{r['player']} ({r['team']}) - Points {r['threshold']}+ @ {r['odds']} | "
+                f"Hit {r['hits']}/{r['total']} ({r['hit_rate']}%)"
+            )
+
+        print("\n=== Rebounds – Top 3 ===")
+        for r in rebounds_rows:
+            print(
+                f"{r['player']} ({r['team']}) - Rebounds {r['threshold']}+ @ {r['odds']} | "
+                f"Hit {r['hits']}/{r['total']} ({r['hit_rate']}%)"
+            )
+
+        print("\n=== Assists – Top 3 ===")
+        for r in assists_rows:
+            print(
+                f"{r['player']} ({r['team']}) - Assists {r['threshold']}+ @ {r['odds']} | "
+                f"Hit {r['hits']}/{r['total']} ({r['hit_rate']}%)"
+            )
+
+        print("\n=== Defense – Top 3 ===")
+        for r in defense_rows:
+            print(
+                f"{r['player']} ({r['team']}) - {r['stat']} {r['threshold']}+ @ {r['odds']} | "
+                f"Hit {r['hits']}/{r['total']} ({r['hit_rate']}%)"
+            )
+
+        # ----- STORE FOR PDF -----
+        results.append({
+            "game_label": label,
+            "points": points_rows,
+            "rebounds": rebounds_rows,
+            "assists": assists_rows,
+            "defense": defense_rows,
+        })
+
+    return results
+
+
+
+# =====================================
+# PDF BUILDER – UPDATED FOR NEW GROUPING
+# =====================================
+def build_pdf_report(results):
+    if not results:
+        return
+
+    today = datetime.now().strftime("%Y-%m-%d")
+    filename = f"NBA_Props_Confidence_{today}.pdf"
+
+    doc = SimpleDocTemplate(filename, pagesize=letter)
+    styles = getSampleStyleSheet()
+    story = []
+
+    story.append(Paragraph(f"NBA Props Hit-Rate Report – {today}", styles["Title"]))
+    story.append(Spacer(1, 12))
+
+    def make_table(rows, label):
+        story.append(Paragraph(f"<b>{label}</b>", styles["Heading3"]))
+        story.append(Spacer(1, 4))
+
+        data = [["Player", "Team", "Stat", "Line", "Odds", "Hit", "Hit%"]]
+        for r in rows:
+            data.append([
+                r["player"], r["team"], r["stat"],
+                str(r["line"]), str(r["odds"]),
+                f"{r['hits']}/{r['total']}",
+                f"{r['hit_rate']}%",
+            ])
+
+        t = Table(data)
+        t.setStyle(TableStyle([
+            ("BACKGROUND", (0,0), (-1,0), colors.lightgrey),
+            ("GRID", (0,0), (-1,-1), 0.5, colors.grey),
+            ("FONTNAME", (0,0), (-1,0), "Helvetica-Bold"),
+            ("ALIGN", (3,1), (-1,-1), "CENTER"),
+        ]))
+
+        story.append(t)
+        story.append(Spacer(1, 12))
+
+    for g in results:
+        story.append(Paragraph(f"<b>{g['game_label']}</b>", styles["Heading2"]))
+        story.append(Spacer(1, 12))
+
+        make_table(g["points"],   "Points – Top 3")
+        make_table(g["rebounds"], "Rebounds – Top 3")
+        make_table(g["assists"],  "Assists – Top 3")
+        make_table(g["defense"],  "Defense – Top 3")
+
+    doc.build(story)
+    print(f"\n✅ PDF saved: {filename}")
+
+# =====================================
+# MAIN
+# =====================================
+def main():
+    res = process_all_games()
+    build_pdf_report(res)
+
+if __name__ == "__main__":
+    main()

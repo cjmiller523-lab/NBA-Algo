@@ -33,8 +33,8 @@ SEASON_TYPES = ["Regular Season", "Playoffs"]
 MAX_RETRIES = 3
 
 POINT_THRESHOLDS   = [10, 15, 20, 25, 30]
-REB_THRESHOLDS     = [2, 4, 6, 8, 10]
-AST_THRESHOLDS     = [2, 4, 6, 8, 10]
+REB_THRESHOLDS     = [2, 4, 6, 8, 10, 12, 14, 16]
+AST_THRESHOLDS     = [2, 4, 6, 8, 10, 12]
 STL_THRESHOLDS     = [1, 2]
 BLK_THRESHOLDS     = [1, 2]
 THREEPM_THRESHOLDS = [1, 2, 3, 4, 5]
