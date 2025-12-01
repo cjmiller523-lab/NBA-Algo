@@ -1,0 +1,309 @@
+# edge_finder.py (patched)
+# Loads ALL files from CACHE and ODDS_CACHE (even without .json extension)
+# Adds warnings if players aren't found in cache
+# Adds debug output for full transparency
+
+import os, json, math, glob, re
+from datetime import datetime
+
+ODDS_DIR = "ODDS_CACHE"
+CACHE_DIR = "cache"
+OUTPUT_DIR = "TWEETS"
+TOP_N = 10
+
+MIN_GAMES = 5
+MIN_HIT = 0.55
+MIN_EDGE = 10
+MIN_ODDS = -300
+MAX_ODDS = 300
+
+STAT_KEYS = {
+    "points": ["PTS", "points", "Points"],
+    "assists": ["AST", "assists", "Assists"],
+    "rebounds": ["REB", "rebounds", "Rebounds"]
+}
+
+def hybrid_score(hit_rate, edge_american):
+    return (hit_rate * 100 * 1.5) + edge_american
+
+def american_to_prob(a):
+    a = int(a)
+    if a >= 100:
+        return 100 / (a + 100)
+    return -a / (-a + 100)
+
+def prob_to_american(p):
+    p = max(0.01, min(0.99, p))
+    if p >= 0.5:
+        return int(round(-(p / (1 - p)) * 100))
+    else:
+        return int(round(((1 - p) / p) * 100))
+
+def parse_american(s):
+    if isinstance(s, (int, float)):
+        return int(round(s))
+    if not s:
+        return None
+    s = s.strip()
+    try:
+        return int(round(float(s)))
+    except:
+        return None
+
+def clean_line_value(v):
+    try:
+        return float(v)
+    except:
+        m = re.search(r"[-+]?\d+(\.\d+)?", str(v))
+        return float(m.group(0)) if m else None
+
+def norm_name(n):
+    if not n:
+        return None
+    n = str(n)
+    n = re.sub(r"_[A-Za-z]*\d*_NBA$", "", n)
+    n = re.sub(r"_[0-9]+$", "", n)
+    n = n.replace("_", " ")
+    n = re.sub(r"\s+", " ", n).strip()
+    return " ".join([w.capitalize() for w in n.split()])
+
+# -----------------------------------------------------
+# LOAD ALL CACHE FILES (ANY EXTENSION)
+# -----------------------------------------------------
+def index_cache_players(cache_dir):
+    index = {}
+    files = glob.glob(os.path.join(cache_dir, "*"))  # LOAD EVERYTHING
+
+    print(f"\n[DEBUG] Found {len(files)} files in CACHE\n")
+
+    for fp in files:
+        if os.path.isdir(fp):
+            continue
+        try:
+            with open(fp, "r", encoding="utf-8") as f:
+                data = json.load(f)
+        except Exception as e:
+            print(f"[WARNING] Could not parse cache file: {fp}")
+            continue
+
+        # Detect player name
+        pname = None
+        if isinstance(data, dict):
+            for key in ["player_name", "PLAYER_NAME", "name", "full_name"]:
+                if key in data:
+                    pname = data[key]
+                    break
+
+        if not pname:
+            base = os.path.basename(fp)
+            pname = norm_name(os.path.splitext(base)[0])
+
+        pname_norm = norm_name(pname)
+        if not pname_norm:
+            continue
+
+        # Extract stats
+        games = None
+        if isinstance(data, list):
+            games = data
+        elif isinstance(data, dict):
+            if "games" in data and isinstance(data["games"], list):
+                games = data["games"]
+            else:
+                if all(isinstance(v, dict) for v in data.values()):
+                    games = list(data.values())
+
+        def get_series(keys):
+            vals = []
+            if not games:
+                return vals
+            for g in games:
+                if not isinstance(g, dict):
+                    continue
+                for k in keys:
+                    if k in g:
+                        try:
+                            vals.append(float(g[k]))
+                        except:
+                            pass
+                        break
+            return vals
+
+        index[pname_norm] = {
+            "file": fp,
+            "stats": {
+                "points": get_series(STAT_KEYS["points"]),
+                "assists": get_series(STAT_KEYS["assists"]),
+                "rebounds": get_series(STAT_KEYS["rebounds"]),
+            }
+        }
+
+    print(f"[DEBUG] Cache index built for {len(index)} players\n")
+    return index
+
+# -----------------------------------------------------
+# LOAD ODDS (ANY structure)
+# -----------------------------------------------------
+def iter_regular_ou_markets(odds_dir):
+    import glob, json, os, re
+
+    files = glob.glob(os.path.join(odds_dir, "*"))
+    print(f"[DEBUG] Found {len(files)} files in ODDS_CACHE")
+
+    for fp in files:
+        if os.path.isdir(fp):
+            continue
+
+        try:
+            with open(fp, "r", encoding="utf-8") as f:
+                payload = json.load(f)
+        except Exception as e:
+            print(f"[WARNING] Could not parse: {fp}")
+            continue
+
+        # THE CORRECT LOCATION BASED ON YOUR FILES
+        markets = payload.get("markets")
+        if not isinstance(markets, dict):
+            continue
+
+        for odd_key, m in markets.items():
+
+            if not isinstance(m, dict):
+                continue
+
+            # filter correct stat types
+            stat = (m.get("statID") or "").lower()
+            if stat not in ("points", "assists", "rebounds"):
+                continue
+
+            # only game props
+            if (m.get("periodID") or "").lower() != "game":
+                continue
+
+            # over/under only
+            if (m.get("betTypeID") or "").lower() != "ou":
+                continue
+
+            side = (m.get("sideID") or "").lower()
+            if side not in ("over", "under"):
+                continue
+
+            # extract main-line O/U
+            try:
+                line = float(m.get("bookOverUnder"))
+            except:
+                continue
+
+            # extract odds
+            try:
+                odds = int(m.get("bookOdds"))
+            except:
+                # handle "+120"
+                try:
+                    odds = int(str(m.get("bookOdds")).replace("+", ""))
+                except:
+                    continue
+
+            # extract player name
+            raw_player = m.get("playerID") or m.get("statEntityID")
+            if not raw_player:
+                continue
+
+            # normalize
+            name = re.sub(r"_\d+_NBA$", "", raw_player).replace("_", " ").title()
+
+            yield {
+                "player_name": name,
+                "stat": stat,
+                "line": line,
+                "side": side,
+                "book_odds": odds
+            }
+
+
+
+
+# -----------------------------------------------------
+def main():
+    os.makedirs(OUTPUT_DIR, exist_ok=True)
+
+    player_index = index_cache_players(CACHE_DIR)
+
+    print("[DEBUG] Loading odds…\n")
+    markets = list(iter_regular_ou_markets(ODDS_DIR))
+    print(f"[DEBUG] Loaded {len(markets)} prop entries\n")
+
+    candidates = []
+
+    for m in markets:
+        name = m["player_name"]
+        stat = m["stat"]
+        line = m["line"]
+        side = m["side"]
+        odds = m["book_odds"]
+
+        if not name:
+            continue
+
+        if name not in player_index:
+            print(f"[WARNING] No cached stats for player: {name}")
+            continue
+
+        series = player_index[name]["stats"][stat]
+        if len(series) < MIN_GAMES:
+            print(f"[WARNING] Not enough games for {name} ({stat})")
+            continue
+
+        hits = sum(1 for v in series if (v > line if side == "over" else v < line))
+        hit_rate = hits / len(series)
+
+        if hit_rate < MIN_HIT:
+            continue
+
+        if odds is None or not (MIN_ODDS <= odds <= MAX_ODDS):
+            continue
+
+        fair = prob_to_american(hit_rate)
+        edge = fair - odds
+
+        if edge < MIN_EDGE:
+            continue
+
+        score = hybrid_score(hit_rate, edge)
+
+        candidates.append({
+            "player": name,
+            "stat": stat,
+            "line": line,
+            "side": side.upper(),
+            "book": odds,
+            "fair": fair,
+            "edge": edge,
+            "hit_rate": hit_rate,
+            "games": len(series),
+            "score": score
+        })
+
+    candidates.sort(key=lambda x: x["score"], reverse=True)
+    top = candidates[:TOP_N]
+
+    print("\nTop Edges Tonight:\n")
+    for i, c in enumerate(top, 1):
+        print(f"{i}. {c['player']} – {c['stat']} {c['line']} {c['side']}")
+        print(f"   Hit Rate: {int(c['hit_rate']*100)}% over {c['games']} games")
+        print(f"   Book: {c['book']}  Fair: {c['fair']}  EDGE: {c['edge']}  SCORE: {int(c['score'])}")
+        print("")
+
+    tweet = "Top Edges Tonight: " + " | ".join(
+        f"{c['player']} {c['side'][0]}{c['line']} {c['stat'][0].upper()} {int(c['hit_rate']*100)}% (+{c['edge']})"
+        for c in top
+    )
+
+    out_path = os.path.join(OUTPUT_DIR, f"edge_list_{datetime.now().strftime('%Y-%m-%d')}.txt")
+    with open(out_path, "w", encoding="utf-8") as f:
+        f.write(tweet)
+
+    print(f"Saved tweet file: {out_path}")
+
+if __name__ == "__main__":
+    main()

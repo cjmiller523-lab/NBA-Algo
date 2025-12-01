@@ -1,0 +1,1961 @@
+{
+  "nextCursor": "n.1764030600000.GVq9rp0smzeuQoYeI6x0",
+  "success": true,
+  "data": [
+    {
+      "eventID": "GVq9rp0smzeuQoYeI6x0",
+      "sportID": "BASKETBALL",
+      "leagueID": "NBA",
+      "type": "match",
+      "teams": {
+        "home": {
+          "teamID": "BROOKLYN_NETS_NBA",
+          "names": {
+            "long": "Brooklyn Nets",
+            "medium": "Nets",
+            "short": "BKN",
+            "location": "Brooklyn"
+          },
+          "colors": {
+            "primary": "#FFFFFF",
+            "secondary": "",
+            "primaryContrast": "#000000",
+            "secondaryContrast": ""
+          },
+          "statEntityID": "home"
+        },
+        "away": {
+          "teamID": "NEW_YORK_KNICKS_NBA",
+          "names": {
+            "long": "New York Knicks",
+            "medium": "Knicks",
+            "short": "NYK",
+            "location": "New York"
+          },
+          "colors": {
+            "primary": "#006BB6",
+            "secondary": "#F58426",
+            "primaryContrast": "#FFFFFF",
+            "secondaryContrast": "#006BB6"
+          },
+          "statEntityID": "away"
+        }
+      },
+      "status": {
+        "started": false,
+        "completed": false,
+        "cancelled": false,
+        "ended": false,
+        "live": false,
+        "delayed": false,
+        "currentPeriodID": "",
+        "previousPeriodID": "",
+        "displayShort": "",
+        "displayLong": "Upcoming",
+        "inBreak": false,
+        "startsAt": "2025-11-25T00:30:00.000Z",
+        "previousStartsAt": [],
+        "hardStart": true,
+        "periods": {
+          "started": [],
+          "ended": []
+        },
+        "oddsPresent": true,
+        "oddsAvailable": true,
+        "finalized": false
+      },
+      "info": {
+        "seasonWeek": "NBA 25/26"
+      },
+      "links": {
+        "bookmakers": {
+          "fanduel": "https://sportsbook.fanduel.com/basketball/-/34991290",
+          "1xbet": "https://1xbet.com/en/line/football/13589-nba/289162556-brooklyn-nets-new-york-knicks",
+          "betfairsportsbook": "https://www.betfair.com/betting/basketball/nba/new-york-knicks-@-brooklyn-nets/e-34991290",
+          "ladbrokes": "https://www.ladbrokes.com.au/sports/-/-/-/c974e37b-6ecd-4d97-be23-cb2f0fba5d29",
+          "neds": "https://www.neds.com.au/sports/-/-/-/c974e37b-6ecd-4d97-be23-cb2f0fba5d29",
+          "paddypower": "https://www.paddypower.com/basketball/nba/new-york-knicks-@-brooklyn-nets-34991290",
+          "pointsbet": "https://pointsbet.com.au/sports/basketball/NBA/2516802",
+          "sportsbet": "https://www.sportsbet.com.au/betting/basketball---us/nba/new-york-knicks-at-brooklyn-nets-9877535",
+          "boombet": "https://www.boombet.com.au/sport-menu/Sport/Basketball/NBA/39583463",
+          "boylesports": "https://www.boylesports.com/sports/basketball/event/usa-nba/brooklyn-nets-v-new-york-knicks",
+          "casumo": "https://www.casumo.com/en-gb/sports#event/1024652664",
+          "888sport": "https://www.888sport.com/basketball/united-states-of-america/nba/new-york-knicks-brooklyn-nets-e-6748832",
+          "ballybet": "https://play.ballybet.com/sports#event/1024652664",
+          "betparx": "https://nj.betparx.com/kambi#event/1024652664",
+          "betrivers": "https://nj.betrivers.com/?page=sportsbook#event/1024652664",
+          "coolbet": "https://www.coolbet.com/en/sports/match/4677958",
+          "grosvenor": "https://www.grosvenorcasinos.com/sport#event/1024652664",
+          "leovegas": "https://www.leovegas.co.uk/betting#event/1024652664",
+          "livescorebet": "https://www.livescorebet.com/uk/sports/basketball/nba/brooklyn-nets-new-york-knicks/SBTE_2_1024652664",
+          "tabtouch": "https://www.tabtouch.mobi/tabtouch-sports/event/1024652664",
+          "unibet": "https://www.unibet.com/betting/sports/event/1024652664",
+          "virginbet": "https://www.virginbet.com/sports/basketball/nba/brooklyn-nets-new-york-knicks/SBTE_2_1024652664",
+          "betrsportsbook": "https://www.betr.com.au/sports/Basketball/107/United-States-of-America/NBA/New-York-Knicks-@-Brooklyn-Nets/1914977/All-Markets",
+          "draftkings": "https://sportsbook.draftkings.com/event/33185004",
+          "fliff": "https://sports.getfliff.com/markets/346972_c_p_204_prematch",
+          "tab": "https://www.tab.com.au/sports/betting/Basketball/competitions/NBA/matches/Brooklyn%20v%20New%20York",
+          "matchbook": "https://www.matchbook.com/events/basketball/united-states-of-america/nba/31798733095100053",
+          "caesars": "https://sportsbook.caesars.com/us/nj/bet/basketball/2638998d-7d84-4edc-a1c3-f1de6443594d/new-york-knicks-at-brooklyn-nets",
+          "espnbet": "https://espnbet.com/sport/basketball/organization/united-states/competition/nba/event/3f858f4b-b85c-4cc3-b4b4-408ba4363119",
+          "thescorebet": "https://thescore.bet/sport/basketball/organization/united-states/competition/nba/event/3f858f4b-b85c-4cc3-b4b4-408ba4363119",
+          "williamhill": "https://sports.williamhill.com/betting/en-gb/basketball/OB_EV37799266/new-york-knicks-at-brooklyn-nets",
+          "betmgm": "https://sports.nj.betmgm.com/en/sports/events/18443717",
+          "coral": "https://sports.coral.co.uk/event/basketball/basketball-usa/nba/bro-nets-v-ny-knicks/40542674",
+          "betsson": "https://www.betsson.com/en/sportsbook/basketball/nba/nba?eventId=f-0lNH5VAYN02GVqZtRFnQ8g",
+          "nordicbet": "https://www.nordicbet.com/en/sportsbook/basketball/nba/nba/brooklyn-nets-new-york-knicks",
+          "playup": "https://www.playup.com.au/betting/sports/nba/brooklyn-nets-v-new-york-knicks/1722196",
+          "hardrockbet": "https://app.hardrock.bet/home/competition/nba/5152124164030333190",
+          "betonline": "https://sports.betonline.ag/sportsbook/basketball/nba/game/490891222",
+          "lowvig": "https://sports.lowvig.ag/sportsbook/basketball/nba/game/490891222",
+          "pinnacle": "https://www.pinnacle.com/en/basketball/nba/new-york-knicks-vs-brooklyn-nets/1619727981",
+          "bovada": "https://www.bovada.lv/sports/basketball/nba/new-york-knicks-brooklyn-nets-202511241930",
+          "betway": "https://betway.com/en/sports/evt/16065595"
+        }
+      },
+      "odds": {
+        "assists-EGOR_DEMIN_1_NBA-game-ou-over": {
+          "oddID": "assists-EGOR_DEMIN_1_NBA-game-ou-over",
+          "opposingOddID": "assists-EGOR_DEMIN_1_NBA-game-ou-under",
+          "marketName": "Egor Demin Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "EGOR_DEMIN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "EGOR_DEMIN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "-115",
+          "fairOverUnder": "5",
+          "bookOverUnder": "4.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "-115",
+          "openFairOverUnder": "5",
+          "openBookOverUnder": "4.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-114",
+              "overUnder": "4.5",
+              "lastUpdatedAt": "2025-11-24T11:10:55.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.542533585&selectionId=77126552",
+              "altLines": [
+                {
+                  "odds": "-3500",
+                  "overUnder": "1.5",
+                  "lastUpdatedAt": "2025-11-24T11:10:55.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-235",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2025-11-24T11:10:55.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+176",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2025-11-24T11:10:55.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+600",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2025-11-24T11:10:55.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1400",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2025-11-24T11:10:55.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "assists-EGOR_DEMIN_1_NBA-game-ou-under": {
+          "oddID": "assists-EGOR_DEMIN_1_NBA-game-ou-under",
+          "opposingOddID": "assists-EGOR_DEMIN_1_NBA-game-ou-over",
+          "marketName": "Egor Demin Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "EGOR_DEMIN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "EGOR_DEMIN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "-115",
+          "fairOverUnder": "5",
+          "bookOverUnder": "4.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "-115",
+          "openFairOverUnder": "5",
+          "openBookOverUnder": "4.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-114",
+              "overUnder": "4.5",
+              "lastUpdatedAt": "2025-11-24T11:10:55.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.542533585&selectionId=77126553"
+            }
+          }
+        },
+        "assists-MICHAEL_PORTER_JR_1_NBA-game-ou-over": {
+          "oddID": "assists-MICHAEL_PORTER_JR_1_NBA-game-ou-over",
+          "opposingOddID": "assists-MICHAEL_PORTER_JR_1_NBA-game-ou-under",
+          "marketName": "Michael Porter Jr. Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "MICHAEL_PORTER_JR_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "MICHAEL_PORTER_JR_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-128",
+          "bookOdds": "-150",
+          "fairOverUnder": "2.5",
+          "bookOverUnder": "2.5",
+          "openFairOdds": "-128",
+          "openBookOdds": "-150",
+          "openFairOverUnder": "2.5",
+          "openBookOverUnder": "2.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-148",
+              "overUnder": "2.5",
+              "lastUpdatedAt": "2025-11-24T11:10:55.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.542533584&selectionId=27559094",
+              "altLines": [
+                {
+                  "odds": "-460",
+                  "overUnder": "1.5",
+                  "lastUpdatedAt": "2025-11-24T11:10:55.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+182",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2025-11-24T11:10:55.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+900",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2025-11-24T11:10:55.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "assists-MICHAEL_PORTER_JR_1_NBA-game-ou-under": {
+          "oddID": "assists-MICHAEL_PORTER_JR_1_NBA-game-ou-under",
+          "opposingOddID": "assists-MICHAEL_PORTER_JR_1_NBA-game-ou-over",
+          "marketName": "Michael Porter Jr. Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "MICHAEL_PORTER_JR_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "MICHAEL_PORTER_JR_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+128",
+          "bookOdds": "+113",
+          "fairOverUnder": "2.5",
+          "bookOverUnder": "2.5",
+          "openFairOdds": "+128",
+          "openBookOdds": "+113",
+          "openFairOverUnder": "2.5",
+          "openBookOverUnder": "2.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+112",
+              "overUnder": "2.5",
+              "lastUpdatedAt": "2025-11-24T11:10:55.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.542533584&selectionId=27559095"
+            }
+          }
+        },
+        "assists-NIC_CLAXTON_1_NBA-game-ou-over": {
+          "oddID": "assists-NIC_CLAXTON_1_NBA-game-ou-over",
+          "opposingOddID": "assists-NIC_CLAXTON_1_NBA-game-ou-under",
+          "marketName": "Nic Claxton Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "NIC_CLAXTON_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "NIC_CLAXTON_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+142",
+          "bookOdds": "+125",
+          "fairOverUnder": "4.5",
+          "bookOverUnder": "4.5",
+          "openFairOdds": "+142",
+          "openBookOdds": "+125",
+          "openFairOverUnder": "4.5",
+          "openBookOverUnder": "4.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+134",
+              "overUnder": "4.5",
+              "lastUpdatedAt": "2025-11-24T11:10:55.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.542533582&selectionId=50236314",
+              "altLines": [
+                {
+                  "odds": "-1800",
+                  "overUnder": "1.5",
+                  "lastUpdatedAt": "2025-11-24T11:10:55.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-162",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2025-11-24T11:10:55.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+265",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2025-11-24T11:10:55.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+900",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2025-11-24T11:10:55.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+2500",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2025-11-24T11:10:55.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "assists-NIC_CLAXTON_1_NBA-game-ou-under": {
+          "oddID": "assists-NIC_CLAXTON_1_NBA-game-ou-under",
+          "opposingOddID": "assists-NIC_CLAXTON_1_NBA-game-ou-over",
+          "marketName": "Nic Claxton Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "NIC_CLAXTON_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "NIC_CLAXTON_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-142",
+          "bookOdds": "-171",
+          "fairOverUnder": "4.5",
+          "bookOverUnder": "4.5",
+          "openFairOdds": "-142",
+          "openBookOdds": "-171",
+          "openFairOverUnder": "4.5",
+          "openBookOverUnder": "4.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-180",
+              "overUnder": "4.5",
+              "lastUpdatedAt": "2025-11-24T11:10:55.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.542533582&selectionId=50236313"
+            }
+          }
+        },
+        "assists-NOAH_CLOWNEY_1_NBA-game-ou-over": {
+          "oddID": "assists-NOAH_CLOWNEY_1_NBA-game-ou-over",
+          "opposingOddID": "assists-NOAH_CLOWNEY_1_NBA-game-ou-under",
+          "marketName": "Noah Clowney Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "NOAH_CLOWNEY_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "NOAH_CLOWNEY_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-133",
+          "bookOdds": "-154",
+          "fairOverUnder": "1.5",
+          "bookOverUnder": "1.5",
+          "openFairOdds": "-133",
+          "openBookOdds": "-154",
+          "openFairOverUnder": "1.5",
+          "openBookOverUnder": "1.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        },
+        "assists-NOAH_CLOWNEY_1_NBA-game-ou-under": {
+          "oddID": "assists-NOAH_CLOWNEY_1_NBA-game-ou-under",
+          "opposingOddID": "assists-NOAH_CLOWNEY_1_NBA-game-ou-over",
+          "marketName": "Noah Clowney Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "NOAH_CLOWNEY_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "NOAH_CLOWNEY_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+133",
+          "bookOdds": "+120",
+          "fairOverUnder": "1.5",
+          "bookOverUnder": "1.5",
+          "openFairOdds": "+133",
+          "openBookOdds": "+120",
+          "openFairOverUnder": "1.5",
+          "openBookOverUnder": "1.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        },
+        "blocks-EGOR_DEMIN_1_NBA-game-ou-over": {
+          "oddID": "blocks-EGOR_DEMIN_1_NBA-game-ou-over",
+          "opposingOddID": "blocks-EGOR_DEMIN_1_NBA-game-ou-under",
+          "marketName": "Egor Demin Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "EGOR_DEMIN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "EGOR_DEMIN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+321",
+          "bookOdds": "+295",
+          "fairOverUnder": "0.5",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "+321",
+          "openBookOdds": "+295",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        },
+        "blocks-EGOR_DEMIN_1_NBA-game-ou-under": {
+          "oddID": "blocks-EGOR_DEMIN_1_NBA-game-ou-under",
+          "opposingOddID": "blocks-EGOR_DEMIN_1_NBA-game-ou-over",
+          "marketName": "Egor Demin Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "EGOR_DEMIN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "EGOR_DEMIN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-321",
+          "bookOdds": "-435",
+          "fairOverUnder": "0.5",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "-321",
+          "openBookOdds": "-435",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        },
+        "blocks-MICHAEL_PORTER_JR_1_NBA-game-ou-over": {
+          "oddID": "blocks-MICHAEL_PORTER_JR_1_NBA-game-ou-over",
+          "opposingOddID": "blocks-MICHAEL_PORTER_JR_1_NBA-game-ou-under",
+          "marketName": "Michael Porter Jr. Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "MICHAEL_PORTER_JR_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "MICHAEL_PORTER_JR_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+254",
+          "bookOdds": "+228",
+          "fairOverUnder": "0.5",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "+254",
+          "openBookOdds": "+228",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        },
+        "blocks-MICHAEL_PORTER_JR_1_NBA-game-ou-under": {
+          "oddID": "blocks-MICHAEL_PORTER_JR_1_NBA-game-ou-under",
+          "opposingOddID": "blocks-MICHAEL_PORTER_JR_1_NBA-game-ou-over",
+          "marketName": "Michael Porter Jr. Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "MICHAEL_PORTER_JR_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "MICHAEL_PORTER_JR_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-254",
+          "bookOdds": "-341",
+          "fairOverUnder": "0.5",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "-254",
+          "openBookOdds": "-341",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        },
+        "blocks-NIC_CLAXTON_1_NBA-game-ou-over": {
+          "oddID": "blocks-NIC_CLAXTON_1_NBA-game-ou-over",
+          "opposingOddID": "blocks-NIC_CLAXTON_1_NBA-game-ou-under",
+          "marketName": "Nic Claxton Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "NIC_CLAXTON_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "NIC_CLAXTON_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+131",
+          "bookOdds": "+115",
+          "fairOverUnder": "1.5",
+          "bookOverUnder": "1.5",
+          "openFairOdds": "+131",
+          "openBookOdds": "+115",
+          "openFairOverUnder": "1.5",
+          "openBookOverUnder": "1.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        },
+        "blocks-NIC_CLAXTON_1_NBA-game-ou-under": {
+          "oddID": "blocks-NIC_CLAXTON_1_NBA-game-ou-under",
+          "opposingOddID": "blocks-NIC_CLAXTON_1_NBA-game-ou-over",
+          "marketName": "Nic Claxton Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "NIC_CLAXTON_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "NIC_CLAXTON_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-131",
+          "bookOdds": "-155",
+          "fairOverUnder": "1.5",
+          "bookOverUnder": "1.5",
+          "openFairOdds": "-131",
+          "openBookOdds": "-155",
+          "openFairOverUnder": "1.5",
+          "openBookOverUnder": "1.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        },
+        "blocks-NOAH_CLOWNEY_1_NBA-game-ou-over": {
+          "oddID": "blocks-NOAH_CLOWNEY_1_NBA-game-ou-over",
+          "opposingOddID": "blocks-NOAH_CLOWNEY_1_NBA-game-ou-under",
+          "marketName": "Noah Clowney Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "NOAH_CLOWNEY_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "NOAH_CLOWNEY_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+108",
+          "bookOdds": "-105",
+          "fairOverUnder": "0.5",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "+108",
+          "openBookOdds": "-105",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        },
+        "blocks-NOAH_CLOWNEY_1_NBA-game-ou-under": {
+          "oddID": "blocks-NOAH_CLOWNEY_1_NBA-game-ou-under",
+          "opposingOddID": "blocks-NOAH_CLOWNEY_1_NBA-game-ou-over",
+          "marketName": "Noah Clowney Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "NOAH_CLOWNEY_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "NOAH_CLOWNEY_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-108",
+          "bookOdds": "-125",
+          "fairOverUnder": "0.5",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "-108",
+          "openBookOdds": "-125",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        },
+        "points-EGOR_DEMIN_1_NBA-game-ou-over": {
+          "oddID": "points-EGOR_DEMIN_1_NBA-game-ou-over",
+          "opposingOddID": "points-EGOR_DEMIN_1_NBA-game-ou-under",
+          "marketName": "Egor Demin Points Over/Under",
+          "statID": "points",
+          "statEntityID": "EGOR_DEMIN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "EGOR_DEMIN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+110",
+          "bookOdds": "-130",
+          "fairOverUnder": "10.5",
+          "bookOverUnder": "9.5",
+          "openFairOdds": "+110",
+          "openBookOdds": "-130",
+          "openFairOverUnder": "10.5",
+          "openBookOverUnder": "9.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-130",
+              "overUnder": "9.5",
+              "lastUpdatedAt": "2025-11-24T11:10:55.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.542533572&selectionId=77126552",
+              "altLines": [
+                {
+                  "odds": "+310",
+                  "overUnder": "14.5",
+                  "lastUpdatedAt": "2025-11-24T11:10:55.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1000",
+                  "overUnder": "19.5",
+                  "lastUpdatedAt": "2025-11-24T11:10:55.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+2500",
+                  "overUnder": "24.5",
+                  "lastUpdatedAt": "2025-11-24T07:32:31.000Z",
+                  "available": false
+                }
+              ]
+            }
+          }
+        },
+        "points-EGOR_DEMIN_1_NBA-game-ou-under": {
+          "oddID": "points-EGOR_DEMIN_1_NBA-game-ou-under",
+          "opposingOddID": "points-EGOR_DEMIN_1_NBA-game-ou-over",
+          "marketName": "Egor Demin Points Over/Under",
+          "statID": "points",
+          "statEntityID": "EGOR_DEMIN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "EGOR_DEMIN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-110",
+          "bookOdds": "-101",
+          "fairOverUnder": "10.5",
+          "bookOverUnder": "9.5",
+          "openFairOdds": "-110",
+          "openBookOdds": "-101",
+          "openFairOverUnder": "10.5",
+          "openBookOverUnder": "9.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-102",
+              "overUnder": "9.5",
+              "lastUpdatedAt": "2025-11-24T11:10:55.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.542533572&selectionId=77126553"
+            }
+          }
+        },
+        "points-MICHAEL_PORTER_JR_1_NBA-game-ou-over": {
+          "oddID": "points-MICHAEL_PORTER_JR_1_NBA-game-ou-over",
+          "opposingOddID": "points-MICHAEL_PORTER_JR_1_NBA-game-ou-under",
+          "marketName": "Michael Porter Jr. Points Over/Under",
+          "statID": "points",
+          "statEntityID": "MICHAEL_PORTER_JR_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "MICHAEL_PORTER_JR_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+115",
+          "bookOdds": "-116",
+          "fairOverUnder": "25.5",
+          "bookOverUnder": "24.5",
+          "openFairOdds": "+115",
+          "openBookOdds": "-116",
+          "openFairOverUnder": "25.5",
+          "openBookOverUnder": "24.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-122",
+              "overUnder": "24.5",
+              "lastUpdatedAt": "2025-11-24T11:10:55.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.542533571&selectionId=27559094",
+              "altLines": [
+                {
+                  "odds": "-1400",
+                  "overUnder": "14.5",
+                  "lastUpdatedAt": "2025-11-24T11:10:55.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-340",
+                  "overUnder": "19.5",
+                  "lastUpdatedAt": "2025-11-24T11:10:55.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+210",
+                  "overUnder": "29.5",
+                  "lastUpdatedAt": "2025-11-24T11:10:55.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+500",
+                  "overUnder": "34.5",
+                  "lastUpdatedAt": "2025-11-24T11:10:55.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1060",
+                  "overUnder": "39.5",
+                  "lastUpdatedAt": "2025-11-24T11:10:55.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1800",
+                  "overUnder": "44.5",
+                  "lastUpdatedAt": "2025-11-24T11:10:55.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+5000",
+                  "overUnder": "49.5",
+                  "lastUpdatedAt": "2025-11-24T06:20:48.000Z",
+                  "available": false
+                }
+              ]
+            }
+          }
+        },
+        "points-MICHAEL_PORTER_JR_1_NBA-game-ou-under": {
+          "oddID": "points-MICHAEL_PORTER_JR_1_NBA-game-ou-under",
+          "opposingOddID": "points-MICHAEL_PORTER_JR_1_NBA-game-ou-over",
+          "marketName": "Michael Porter Jr. Points Over/Under",
+          "statID": "points",
+          "statEntityID": "MICHAEL_PORTER_JR_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "MICHAEL_PORTER_JR_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-115",
+          "bookOdds": "-112",
+          "fairOverUnder": "25.5",
+          "bookOverUnder": "24.5",
+          "openFairOdds": "-115",
+          "openBookOdds": "-112",
+          "openFairOverUnder": "25.5",
+          "openBookOverUnder": "24.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-108",
+              "overUnder": "24.5",
+              "lastUpdatedAt": "2025-11-24T11:10:55.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.542533571&selectionId=27559095"
+            }
+          }
+        },
+        "points-NIC_CLAXTON_1_NBA-game-ou-over": {
+          "oddID": "points-NIC_CLAXTON_1_NBA-game-ou-over",
+          "opposingOddID": "points-NIC_CLAXTON_1_NBA-game-ou-under",
+          "marketName": "Nic Claxton Points Over/Under",
+          "statID": "points",
+          "statEntityID": "NIC_CLAXTON_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "NIC_CLAXTON_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+108",
+          "bookOdds": "-105",
+          "fairOverUnder": "14.5",
+          "bookOverUnder": "14.5",
+          "openFairOdds": "+108",
+          "openBookOdds": "-105",
+          "openFairOverUnder": "14.5",
+          "openBookOverUnder": "14.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-102",
+              "overUnder": "14.5",
+              "lastUpdatedAt": "2025-11-24T11:10:55.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.542533568&selectionId=50236314",
+              "altLines": [
+                {
+                  "odds": "-500",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2025-11-24T11:10:55.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+330",
+                  "overUnder": "19.5",
+                  "lastUpdatedAt": "2025-11-24T11:10:55.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1060",
+                  "overUnder": "24.5",
+                  "lastUpdatedAt": "2025-11-24T11:10:55.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+2500",
+                  "overUnder": "29.5",
+                  "lastUpdatedAt": "2025-11-24T11:10:55.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "points-NIC_CLAXTON_1_NBA-game-ou-under": {
+          "oddID": "points-NIC_CLAXTON_1_NBA-game-ou-under",
+          "opposingOddID": "points-NIC_CLAXTON_1_NBA-game-ou-over",
+          "marketName": "Nic Claxton Points Over/Under",
+          "statID": "points",
+          "statEntityID": "NIC_CLAXTON_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "NIC_CLAXTON_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-108",
+          "bookOdds": "-123",
+          "fairOverUnder": "14.5",
+          "bookOverUnder": "14.5",
+          "openFairOdds": "-108",
+          "openBookOdds": "-123",
+          "openFairOverUnder": "14.5",
+          "openBookOverUnder": "14.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-130",
+              "overUnder": "14.5",
+              "lastUpdatedAt": "2025-11-24T11:10:55.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.542533568&selectionId=50236313"
+            }
+          }
+        },
+        "points-NOAH_CLOWNEY_1_NBA-game-ou-over": {
+          "oddID": "points-NOAH_CLOWNEY_1_NBA-game-ou-over",
+          "opposingOddID": "points-NOAH_CLOWNEY_1_NBA-game-ou-under",
+          "marketName": "Noah Clowney Points Over/Under",
+          "statID": "points",
+          "statEntityID": "NOAH_CLOWNEY_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "NOAH_CLOWNEY_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+109",
+          "bookOdds": "-105",
+          "fairOverUnder": "13.5",
+          "bookOverUnder": "13.5",
+          "openFairOdds": "+109",
+          "openBookOdds": "-105",
+          "openFairOverUnder": "13.5",
+          "openBookOverUnder": "13.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+100",
+              "overUnder": "13.5",
+              "lastUpdatedAt": "2025-11-24T11:10:55.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.542533569&selectionId=51103143",
+              "altLines": [
+                {
+                  "odds": "-310",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2025-11-24T11:10:55.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-118",
+                  "overUnder": "12.5",
+                  "lastUpdatedAt": "2025-11-24T05:40:44.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "+130",
+                  "overUnder": "14.5",
+                  "lastUpdatedAt": "2025-11-24T11:10:55.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+400",
+                  "overUnder": "19.5",
+                  "lastUpdatedAt": "2025-11-24T11:10:55.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1100",
+                  "overUnder": "24.5",
+                  "lastUpdatedAt": "2025-11-24T11:10:55.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+3000",
+                  "overUnder": "29.5",
+                  "lastUpdatedAt": "2025-11-24T11:10:55.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "points-NOAH_CLOWNEY_1_NBA-game-ou-under": {
+          "oddID": "points-NOAH_CLOWNEY_1_NBA-game-ou-under",
+          "opposingOddID": "points-NOAH_CLOWNEY_1_NBA-game-ou-over",
+          "marketName": "Noah Clowney Points Over/Under",
+          "statID": "points",
+          "statEntityID": "NOAH_CLOWNEY_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "NOAH_CLOWNEY_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-109",
+          "bookOdds": "-127",
+          "fairOverUnder": "13.5",
+          "bookOverUnder": "13.5",
+          "openFairOdds": "-109",
+          "openBookOdds": "-127",
+          "openFairOverUnder": "13.5",
+          "openBookOverUnder": "13.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-132",
+              "overUnder": "13.5",
+              "lastUpdatedAt": "2025-11-24T11:10:55.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.542533569&selectionId=51103142",
+              "altLines": [
+                {
+                  "odds": "-112",
+                  "overUnder": "12.5",
+                  "lastUpdatedAt": "2025-11-24T05:40:44.000Z",
+                  "available": false
+                }
+              ]
+            }
+          }
+        },
+        "rebounds-EGOR_DEMIN_1_NBA-game-ou-over": {
+          "oddID": "rebounds-EGOR_DEMIN_1_NBA-game-ou-over",
+          "opposingOddID": "rebounds-EGOR_DEMIN_1_NBA-game-ou-under",
+          "marketName": "Egor Demin Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "EGOR_DEMIN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "EGOR_DEMIN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-103",
+          "bookOdds": "-118",
+          "fairOverUnder": "3.5",
+          "bookOverUnder": "3.5",
+          "openFairOdds": "-103",
+          "openBookOdds": "-118",
+          "openFairOverUnder": "3.5",
+          "openBookOverUnder": "3.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-120",
+              "overUnder": "3.5",
+              "lastUpdatedAt": "2025-11-24T11:10:55.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.542533579&selectionId=77126552",
+              "altLines": [
+                {
+                  "odds": "+350",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2025-11-24T11:10:55.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1200",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2025-11-24T11:10:55.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "rebounds-EGOR_DEMIN_1_NBA-game-ou-under": {
+          "oddID": "rebounds-EGOR_DEMIN_1_NBA-game-ou-under",
+          "opposingOddID": "rebounds-EGOR_DEMIN_1_NBA-game-ou-over",
+          "marketName": "Egor Demin Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "EGOR_DEMIN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "EGOR_DEMIN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+103",
+          "bookOdds": "-111",
+          "fairOverUnder": "3.5",
+          "bookOverUnder": "3.5",
+          "openFairOdds": "+103",
+          "openBookOdds": "-111",
+          "openFairOverUnder": "3.5",
+          "openBookOverUnder": "3.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-110",
+              "overUnder": "3.5",
+              "lastUpdatedAt": "2025-11-24T11:10:55.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.542533579&selectionId=77126553"
+            }
+          }
+        },
+        "rebounds-MICHAEL_PORTER_JR_1_NBA-game-ou-over": {
+          "oddID": "rebounds-MICHAEL_PORTER_JR_1_NBA-game-ou-over",
+          "opposingOddID": "rebounds-MICHAEL_PORTER_JR_1_NBA-game-ou-under",
+          "marketName": "Michael Porter Jr. Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "MICHAEL_PORTER_JR_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "MICHAEL_PORTER_JR_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-113",
+          "bookOdds": "-130",
+          "fairOverUnder": "6.5",
+          "bookOverUnder": "6.5",
+          "openFairOdds": "-113",
+          "openBookOdds": "-130",
+          "openFairOverUnder": "6.5",
+          "openBookOverUnder": "6.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-132",
+              "overUnder": "6.5",
+              "lastUpdatedAt": "2025-11-24T11:10:55.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.542533578&selectionId=27559094",
+              "altLines": [
+                {
+                  "odds": "-1400",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2025-11-24T11:10:55.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-245",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2025-11-24T11:10:55.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+142",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2025-11-24T11:10:55.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+340",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2025-11-24T11:10:55.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+900",
+                  "overUnder": "11.5",
+                  "lastUpdatedAt": "2025-11-24T11:10:55.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+2000",
+                  "overUnder": "13.5",
+                  "lastUpdatedAt": "2025-11-24T11:10:55.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "rebounds-MICHAEL_PORTER_JR_1_NBA-game-ou-under": {
+          "oddID": "rebounds-MICHAEL_PORTER_JR_1_NBA-game-ou-under",
+          "opposingOddID": "rebounds-MICHAEL_PORTER_JR_1_NBA-game-ou-over",
+          "marketName": "Michael Porter Jr. Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "MICHAEL_PORTER_JR_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "MICHAEL_PORTER_JR_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+113",
+          "bookOdds": "+100",
+          "fairOverUnder": "6.5",
+          "bookOverUnder": "6.5",
+          "openFairOdds": "+113",
+          "openBookOdds": "+100",
+          "openFairOverUnder": "6.5",
+          "openBookOverUnder": "6.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+100",
+              "overUnder": "6.5",
+              "lastUpdatedAt": "2025-11-24T11:10:55.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.542533578&selectionId=27559095"
+            }
+          }
+        },
+        "rebounds-NIC_CLAXTON_1_NBA-game-ou-over": {
+          "oddID": "rebounds-NIC_CLAXTON_1_NBA-game-ou-over",
+          "opposingOddID": "rebounds-NIC_CLAXTON_1_NBA-game-ou-under",
+          "marketName": "Nic Claxton Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "NIC_CLAXTON_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "NIC_CLAXTON_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "-111",
+          "fairOverUnder": "9",
+          "bookOverUnder": "8.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "-111",
+          "openFairOverUnder": "9",
+          "openBookOverUnder": "8.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-114",
+              "overUnder": "8.5",
+              "lastUpdatedAt": "2025-11-24T11:10:55.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.542533575&selectionId=50236314",
+              "altLines": [
+                {
+                  "odds": "-650",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2025-11-24T11:10:55.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-188",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2025-11-24T11:10:55.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+126",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2025-11-24T11:10:55.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+320",
+                  "overUnder": "11.5",
+                  "lastUpdatedAt": "2025-11-24T11:10:55.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+750",
+                  "overUnder": "13.5",
+                  "lastUpdatedAt": "2025-11-24T11:10:55.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1500",
+                  "overUnder": "15.5",
+                  "lastUpdatedAt": "2025-11-24T11:10:55.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "rebounds-NIC_CLAXTON_1_NBA-game-ou-under": {
+          "oddID": "rebounds-NIC_CLAXTON_1_NBA-game-ou-under",
+          "opposingOddID": "rebounds-NIC_CLAXTON_1_NBA-game-ou-over",
+          "marketName": "Nic Claxton Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "NIC_CLAXTON_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "NIC_CLAXTON_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "-116",
+          "fairOverUnder": "9",
+          "bookOverUnder": "8.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "-116",
+          "openFairOverUnder": "9",
+          "openBookOverUnder": "8.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-114",
+              "overUnder": "8.5",
+              "lastUpdatedAt": "2025-11-24T11:10:55.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.542533575&selectionId=50236313"
+            }
+          }
+        },
+        "rebounds-NOAH_CLOWNEY_1_NBA-game-ou-over": {
+          "oddID": "rebounds-NOAH_CLOWNEY_1_NBA-game-ou-over",
+          "opposingOddID": "rebounds-NOAH_CLOWNEY_1_NBA-game-ou-under",
+          "marketName": "Noah Clowney Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "NOAH_CLOWNEY_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "NOAH_CLOWNEY_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "-161",
+          "fairOverUnder": "4",
+          "bookOverUnder": "3.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "-161",
+          "openFairOverUnder": "4",
+          "openBookOverUnder": "3.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+134",
+              "overUnder": "4.5",
+              "lastUpdatedAt": "2025-11-24T11:10:55.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.542533576&selectionId=51103143",
+              "altLines": [
+                {
+                  "odds": "-166",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2025-11-24T11:10:55.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+280",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2025-11-24T11:10:55.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+900",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2025-11-24T11:10:55.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+2000",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2025-11-24T11:10:55.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "rebounds-NOAH_CLOWNEY_1_NBA-game-ou-under": {
+          "oddID": "rebounds-NOAH_CLOWNEY_1_NBA-game-ou-under",
+          "opposingOddID": "rebounds-NOAH_CLOWNEY_1_NBA-game-ou-over",
+          "marketName": "Noah Clowney Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "NOAH_CLOWNEY_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "NOAH_CLOWNEY_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "+119",
+          "fairOverUnder": "4",
+          "bookOverUnder": "3.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "+119",
+          "openFairOverUnder": "4",
+          "openBookOverUnder": "3.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-180",
+              "overUnder": "4.5",
+              "lastUpdatedAt": "2025-11-24T11:10:55.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.542533576&selectionId=51103142"
+            }
+          }
+        },
+        "steals-EGOR_DEMIN_1_NBA-game-ou-over": {
+          "oddID": "steals-EGOR_DEMIN_1_NBA-game-ou-over",
+          "opposingOddID": "steals-EGOR_DEMIN_1_NBA-game-ou-under",
+          "marketName": "Egor Demin Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "EGOR_DEMIN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "EGOR_DEMIN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-144",
+          "bookOdds": "-168",
+          "fairOverUnder": "0.5",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "-144",
+          "openBookOdds": "-168",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        },
+        "steals-EGOR_DEMIN_1_NBA-game-ou-under": {
+          "oddID": "steals-EGOR_DEMIN_1_NBA-game-ou-under",
+          "opposingOddID": "steals-EGOR_DEMIN_1_NBA-game-ou-over",
+          "marketName": "Egor Demin Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "EGOR_DEMIN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "EGOR_DEMIN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+144",
+          "fairOverUnder": "0.5",
+          "openFairOdds": "+144",
+          "openFairOverUnder": "0.5",
+          "scoringSupported": true,
+          "bookOdds": "+130",
+          "bookOverUnder": "0.5",
+          "byBookmaker": {},
+          "openBookOdds": "+130",
+          "openBookOverUnder": "0.5"
+        },
+        "steals-MICHAEL_PORTER_JR_1_NBA-game-ou-over": {
+          "oddID": "steals-MICHAEL_PORTER_JR_1_NBA-game-ou-over",
+          "opposingOddID": "steals-MICHAEL_PORTER_JR_1_NBA-game-ou-under",
+          "marketName": "Michael Porter Jr. Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "MICHAEL_PORTER_JR_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "MICHAEL_PORTER_JR_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-131",
+          "bookOdds": "-152",
+          "fairOverUnder": "0.5",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "-131",
+          "openBookOdds": "-152",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        },
+        "steals-MICHAEL_PORTER_JR_1_NBA-game-ou-under": {
+          "oddID": "steals-MICHAEL_PORTER_JR_1_NBA-game-ou-under",
+          "opposingOddID": "steals-MICHAEL_PORTER_JR_1_NBA-game-ou-over",
+          "marketName": "Michael Porter Jr. Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "MICHAEL_PORTER_JR_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "MICHAEL_PORTER_JR_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+131",
+          "fairOverUnder": "0.5",
+          "openFairOdds": "+131",
+          "openFairOverUnder": "0.5",
+          "scoringSupported": true,
+          "bookOdds": "+117",
+          "bookOverUnder": "0.5",
+          "byBookmaker": {},
+          "openBookOdds": "+117",
+          "openBookOverUnder": "0.5"
+        },
+        "steals-NIC_CLAXTON_1_NBA-game-ou-over": {
+          "oddID": "steals-NIC_CLAXTON_1_NBA-game-ou-over",
+          "opposingOddID": "steals-NIC_CLAXTON_1_NBA-game-ou-under",
+          "marketName": "Nic Claxton Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "NIC_CLAXTON_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "NIC_CLAXTON_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-122",
+          "bookOdds": "-140",
+          "fairOverUnder": "0.5",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "-122",
+          "openBookOdds": "-140",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        },
+        "steals-NIC_CLAXTON_1_NBA-game-ou-under": {
+          "oddID": "steals-NIC_CLAXTON_1_NBA-game-ou-under",
+          "opposingOddID": "steals-NIC_CLAXTON_1_NBA-game-ou-over",
+          "marketName": "Nic Claxton Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "NIC_CLAXTON_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "NIC_CLAXTON_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+122",
+          "fairOverUnder": "0.5",
+          "openFairOdds": "+122",
+          "openFairOverUnder": "0.5",
+          "scoringSupported": true,
+          "bookOdds": "+109",
+          "bookOverUnder": "0.5",
+          "byBookmaker": {},
+          "openBookOdds": "+109",
+          "openBookOverUnder": "0.5"
+        },
+        "steals-NOAH_CLOWNEY_1_NBA-game-ou-over": {
+          "oddID": "steals-NOAH_CLOWNEY_1_NBA-game-ou-over",
+          "opposingOddID": "steals-NOAH_CLOWNEY_1_NBA-game-ou-under",
+          "marketName": "Noah Clowney Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "NOAH_CLOWNEY_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "NOAH_CLOWNEY_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-127",
+          "bookOdds": "-143",
+          "fairOverUnder": "0.5",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "-127",
+          "openBookOdds": "-143",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        },
+        "steals-NOAH_CLOWNEY_1_NBA-game-ou-under": {
+          "oddID": "steals-NOAH_CLOWNEY_1_NBA-game-ou-under",
+          "opposingOddID": "steals-NOAH_CLOWNEY_1_NBA-game-ou-over",
+          "marketName": "Noah Clowney Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "NOAH_CLOWNEY_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "NOAH_CLOWNEY_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+127",
+          "fairOverUnder": "0.5",
+          "openFairOdds": "+127",
+          "openFairOverUnder": "0.5",
+          "scoringSupported": true,
+          "bookOdds": "+115",
+          "bookOverUnder": "0.5",
+          "byBookmaker": {},
+          "openBookOdds": "+115",
+          "openBookOverUnder": "0.5"
+        },
+        "points-DAYRON_SHARPE_1_NBA-game-ou-over": {
+          "oddID": "points-DAYRON_SHARPE_1_NBA-game-ou-over",
+          "opposingOddID": "points-DAYRON_SHARPE_1_NBA-game-ou-under",
+          "statID": "points",
+          "statEntityID": "DAYRON_SHARPE_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "DAYRON_SHARPE_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+101",
+          "bookOdds": "-113",
+          "fairOverUnder": "6.5",
+          "bookOverUnder": "6.5",
+          "openFairOdds": "+101",
+          "openBookOdds": "-113",
+          "openFairOverUnder": "6.5",
+          "openBookOverUnder": "6.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-110",
+              "overUnder": "6.5",
+              "lastUpdatedAt": "2025-11-24T11:10:55.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.542533573&selectionId=42351813",
+              "altLines": [
+                {
+                  "odds": "+250",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2025-11-24T11:10:55.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1100",
+                  "overUnder": "14.5",
+                  "lastUpdatedAt": "2025-11-24T11:10:55.000Z",
+                  "available": true
+                }
+              ]
+            }
+          },
+          "marketName": "Day'Ron Sharpe Points Over/Under"
+        },
+        "points-DAYRON_SHARPE_1_NBA-game-ou-under": {
+          "oddID": "points-DAYRON_SHARPE_1_NBA-game-ou-under",
+          "opposingOddID": "points-DAYRON_SHARPE_1_NBA-game-ou-over",
+          "statID": "points",
+          "statEntityID": "DAYRON_SHARPE_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "DAYRON_SHARPE_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-101",
+          "bookOdds": "-116",
+          "fairOverUnder": "6.5",
+          "bookOverUnder": "6.5",
+          "openFairOdds": "-101",
+          "openBookOdds": "-116",
+          "openFairOverUnder": "6.5",
+          "openBookOverUnder": "6.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-120",
+              "overUnder": "6.5",
+              "lastUpdatedAt": "2025-11-24T11:10:55.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.542533573&selectionId=42351812"
+            }
+          },
+          "marketName": "Day'Ron Sharpe Points Over/Under"
+        },
+        "rebounds-DAYRON_SHARPE_1_NBA-game-ou-over": {
+          "oddID": "rebounds-DAYRON_SHARPE_1_NBA-game-ou-over",
+          "opposingOddID": "rebounds-DAYRON_SHARPE_1_NBA-game-ou-under",
+          "marketName": "Day'Ron Sharpe Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "DAYRON_SHARPE_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "DAYRON_SHARPE_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+125",
+          "bookOdds": "+110",
+          "fairOverUnder": "5.5",
+          "bookOverUnder": "5.5",
+          "openFairOdds": "+125",
+          "openBookOdds": "+110",
+          "openFairOverUnder": "5.5",
+          "openBookOverUnder": "5.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+110",
+              "overUnder": "5.5",
+              "lastUpdatedAt": "2025-11-24T11:10:55.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.542533580&selectionId=42351813",
+              "altLines": [
+                {
+                  "odds": "-320",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2025-11-24T11:10:55.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+310",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2025-11-24T11:10:55.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+630",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2025-11-24T11:10:55.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1400",
+                  "overUnder": "11.5",
+                  "lastUpdatedAt": "2025-11-24T11:10:55.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+3000",
+                  "overUnder": "13.5",
+                  "lastUpdatedAt": "2025-11-24T11:10:55.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "rebounds-DAYRON_SHARPE_1_NBA-game-ou-under": {
+          "oddID": "rebounds-DAYRON_SHARPE_1_NBA-game-ou-under",
+          "opposingOddID": "rebounds-DAYRON_SHARPE_1_NBA-game-ou-over",
+          "marketName": "Day'Ron Sharpe Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "DAYRON_SHARPE_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "DAYRON_SHARPE_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-125",
+          "bookOdds": "-147",
+          "fairOverUnder": "5.5",
+          "bookOverUnder": "5.5",
+          "openFairOdds": "-125",
+          "openBookOdds": "-147",
+          "openFairOverUnder": "5.5",
+          "openBookOverUnder": "5.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-146",
+              "overUnder": "5.5",
+              "lastUpdatedAt": "2025-11-24T11:10:55.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.542533580&selectionId=42351812"
+            }
+          }
+        }
+      },
+      "players": {
+        "JALEN_BRUNSON_1_NBA": {
+          "playerID": "JALEN_BRUNSON_1_NBA",
+          "teamID": "NEW_YORK_KNICKS_NBA",
+          "firstName": "Jalen",
+          "lastName": "Brunson",
+          "name": "Jalen Brunson"
+        },
+        "KARLANTHONY_TOWNS_1_NBA": {
+          "playerID": "KARLANTHONY_TOWNS_1_NBA",
+          "teamID": "NEW_YORK_KNICKS_NBA",
+          "firstName": "Karl-Anthony",
+          "lastName": "Towns",
+          "name": "Karl-Anthony Towns"
+        },
+        "MICHAEL_PORTER_JR_1_NBA": {
+          "playerID": "MICHAEL_PORTER_JR_1_NBA",
+          "teamID": "BROOKLYN_NETS_NBA",
+          "firstName": "Michael",
+          "lastName": "Porter",
+          "name": "Michael Porter Jr."
+        },
+        "MIKAL_BRIDGES_1_NBA": {
+          "playerID": "MIKAL_BRIDGES_1_NBA",
+          "teamID": "NEW_YORK_KNICKS_NBA",
+          "firstName": "Mikal",
+          "lastName": "Bridges",
+          "name": "Mikal Bridges"
+        },
+        "NIC_CLAXTON_1_NBA": {
+          "playerID": "NIC_CLAXTON_1_NBA",
+          "teamID": "BROOKLYN_NETS_NBA",
+          "firstName": "Nic",
+          "lastName": "Claxton",
+          "name": "Nic Claxton"
+        },
+        "NOAH_CLOWNEY_1_NBA": {
+          "playerID": "NOAH_CLOWNEY_1_NBA",
+          "teamID": "BROOKLYN_NETS_NBA",
+          "firstName": "Noah",
+          "lastName": "Clowney",
+          "name": "Noah Clowney"
+        },
+        "TERANCE_MANN_1_NBA": {
+          "playerID": "TERANCE_MANN_1_NBA",
+          "teamID": "BROOKLYN_NETS_NBA",
+          "firstName": "Terance",
+          "lastName": "Mann",
+          "name": "Terance Mann"
+        },
+        "MILES_MCBRIDE_1_NBA": {
+          "playerID": "MILES_MCBRIDE_1_NBA",
+          "teamID": "NEW_YORK_KNICKS_NBA",
+          "firstName": "Miles",
+          "lastName": "McBride",
+          "name": "Miles McBride"
+        },
+        "EGOR_DEMIN_1_NBA": {
+          "playerID": "EGOR_DEMIN_1_NBA",
+          "teamID": "BROOKLYN_NETS_NBA",
+          "firstName": "Egor",
+          "lastName": "Demin",
+          "name": "Egor Demin"
+        },
+        "MITCHELL_ROBINSON_1_NBA": {
+          "playerID": "MITCHELL_ROBINSON_1_NBA",
+          "teamID": "NEW_YORK_KNICKS_NBA",
+          "firstName": "Mitchell",
+          "lastName": "Robinson",
+          "name": "Mitchell Robinson"
+        },
+        "JORDAN_CLARKSON_1_NBA": {
+          "playerID": "JORDAN_CLARKSON_1_NBA",
+          "teamID": "NEW_YORK_KNICKS_NBA",
+          "firstName": "Jordan",
+          "lastName": "Clarkson",
+          "name": "Jordan Clarkson"
+        },
+        "JOSH_HART_1_NBA": {
+          "playerID": "JOSH_HART_1_NBA",
+          "teamID": "NEW_YORK_KNICKS_NBA",
+          "firstName": "Josh",
+          "lastName": "Hart",
+          "name": "Josh Hart"
+        },
+        "TYRESE_MARTIN_1_NBA": {
+          "playerID": "TYRESE_MARTIN_1_NBA",
+          "teamID": "BROOKLYN_NETS_NBA",
+          "firstName": "Tyrese",
+          "lastName": "Martin",
+          "name": "Tyrese Martin"
+        },
+        "ZIAIRE_WILLIAMS_1_NBA": {
+          "playerID": "ZIAIRE_WILLIAMS_1_NBA",
+          "teamID": "BROOKLYN_NETS_NBA",
+          "firstName": "Ziaire",
+          "lastName": "Williams",
+          "name": "Ziaire Williams"
+        },
+        "DAYRON_SHARPE_1_NBA": {
+          "playerID": "DAYRON_SHARPE_1_NBA",
+          "teamID": "BROOKLYN_NETS_NBA",
+          "firstName": "Day'Ron",
+          "lastName": "Sharpe",
+          "name": "Day'Ron Sharpe"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,2552 @@
+{
+  "nextCursor": "n.1763773200000.OHvFTtifqt6OidJ57Pr3",
+  "success": true,
+  "data": [
+    {
+      "eventID": "OHvFTtifqt6OidJ57Pr3",
+      "sportID": "BASKETBALL",
+      "leagueID": "NBA",
+      "type": "match",
+      "teams": {
+        "home": {
+          "teamID": "CHICAGO_BULLS_NBA",
+          "names": {
+            "long": "Chicago Bulls",
+            "medium": "Bulls",
+            "short": "CHI",
+            "location": "Chicago"
+          },
+          "colors": {
+            "primary": "#CE1141",
+            "secondary": "#000000",
+            "primaryContrast": "#FFFFFF",
+            "secondaryContrast": "#CE1141"
+          },
+          "statEntityID": "home"
+        },
+        "away": {
+          "teamID": "MIAMI_HEAT_NBA",
+          "names": {
+            "long": "Miami Heat",
+            "medium": "Heat",
+            "short": "MIA",
+            "location": "Miami"
+          },
+          "colors": {
+            "primary": "#98002E",
+            "secondary": "#000000",
+            "primaryContrast": "#FFFFFF",
+            "secondaryContrast": "#98002E"
+          },
+          "statEntityID": "away"
+        }
+      },
+      "status": {
+        "started": false,
+        "completed": false,
+        "cancelled": false,
+        "ended": false,
+        "live": false,
+        "delayed": false,
+        "currentPeriodID": "",
+        "previousPeriodID": "",
+        "displayShort": "",
+        "displayLong": "Upcoming",
+        "inBreak": false,
+        "startsAt": "2025-11-22T01:00:00.000Z",
+        "previousStartsAt": [],
+        "hardStart": true,
+        "periods": {
+          "started": [],
+          "ended": []
+        },
+        "oddsPresent": true,
+        "oddsAvailable": true,
+        "finalized": false
+      },
+      "info": {
+        "seasonWeek": "NBA Cup 2025"
+      },
+      "links": {
+        "bookmakers": {
+          "fanduel": "https://sportsbook.fanduel.com/basketball/-/34980521",
+          "ladbrokes": "https://www.ladbrokes.com.au/sports/-/-/-/8f12a7a3-c2c7-466b-98b4-5a6b963f9606",
+          "neds": "https://www.neds.com.au/sports/-/-/-/8f12a7a3-c2c7-466b-98b4-5a6b963f9606",
+          "sportsbet": "https://www.sportsbet.com.au/betting/basketball---us/nba/miami-heat-at-chicago-bulls-9866965",
+          "paddypower": "https://www.paddypower.com/basketball/nba/miami-heat-@-chicago-bulls-34980521",
+          "1xbet": "https://1xbet.com/en/line/football/13589-nba/288681471-chicago-bulls-miami-heat",
+          "betrsportsbook": "https://www.betr.com.au/sports/Basketball/107/United-States-of-America/NBA/Miami-Heat-@-Chicago-Bulls/1911453/All-Markets",
+          "boylesports": "https://www.boylesports.com/sports/basketball/event/usa-nba/chicago-bulls-v-miami-heat",
+          "draftkings": "https://sportsbook.draftkings.com/event/33162130",
+          "pointsbet": "https://pointsbet.com.au/sports/basketball/NBA/2512671",
+          "betfairsportsbook": "https://www.betfair.com/betting/basketball/nba/miami-heat-@-chicago-bulls/e-34980521",
+          "caesars": "https://sportsbook.caesars.com/us/nj/bet/basketball/c60986ad-2827-4030-964a-2e2572dde04a/miami-heat-at-chicago-bulls",
+          "tab": "https://www.tab.com.au/sports/betting/Basketball/competitions/NBA/matches/Chicago%20v%20Miami",
+          "boombet": "https://www.boombet.com.au/sport-menu/Sport/Basketball/NBA/39578800",
+          "williamhill": "https://sports.williamhill.com/betting/en-gb/basketball/OB_EV37761903/miami-heat-at-chicago-bulls",
+          "fliff": "https://sports.getfliff.com/markets/346277_c_p_204_prematch",
+          "betonline": "https://sports.betonline.ag/sportsbook/basketball/nba/game/490888143",
+          "lowvig": "https://sports.lowvig.ag/sportsbook/basketball/nba/game/490888143",
+          "betrivers": "https://nj.betrivers.com/?page=sportsbook#event/1024647955",
+          "casumo": "https://www.casumo.com/en-gb/sports#event/1024647955",
+          "leovegas": "https://www.leovegas.co.uk/betting#event/1024647955",
+          "livescorebet": "https://www.livescorebet.com/uk/sports/basketball/nba/chicago-bulls-miami-heat/SBTE_2_1024647955",
+          "tabtouch": "https://www.tabtouch.mobi/tabtouch-sports/event/1024647955",
+          "virginbet": "https://www.virginbet.com/sports/basketball/nba/chicago-bulls-miami-heat/SBTE_2_1024647955",
+          "ballybet": "https://play.ballybet.com/sports#event/1024647955",
+          "betparx": "https://nj.betparx.com/kambi#event/1024647955",
+          "grosvenor": "https://www.grosvenorcasinos.com/sport#event/1024647955",
+          "unibet": "https://www.unibet.com/betting/sports/event/1024647955",
+          "betmgm": "https://sports.nj.betmgm.com/en/sports/events/18443604",
+          "coral": "https://sports.coral.co.uk/event/basketball/basketball-usa/nba/chi-bulls-v-mia-heat/40490059",
+          "nordicbet": "https://www.nordicbet.com/en/sportsbook/basketball/nba/nba/chicago-bulls-miami-heat-",
+          "betsson": "https://www.betsson.com/en/sportsbook/basketball/nba/nba?eventId=f-uX7xX0yiWEGevlny8tDi8Q",
+          "playup": "https://www.playup.com.au/betting/sports/nba/chicago-bulls-v-miami-heat/1717662",
+          "hardrockbet": "https://app.hardrock.bet/home/competition/nba/2811272292271390982",
+          "espnbet": "https://espnbet.com/sport/basketball/organization/united-states/competition/nba/event/b8a15139-bfac-4935-8f32-618f726d5c27",
+          "thescorebet": "https://thescore.bet/sport/basketball/organization/united-states/competition/nba/event/b8a15139-bfac-4935-8f32-618f726d5c27",
+          "pinnacle": "https://www.pinnacle.com/en/basketball/nba/miami-heat-vs-chicago-bulls/1619861266",
+          "bovada": "https://www.bovada.lv/sports/basketball/nba/miami-heat-chicago-bulls-202511212000",
+          "betway": "https://betway.com/en/sports/evt/16053872"
+        }
+      },
+      "odds": {
+        "assists-BAM_ADEBAYO_1_NBA-game-ou-over": {
+          "oddID": "assists-BAM_ADEBAYO_1_NBA-game-ou-over",
+          "opposingOddID": "assists-BAM_ADEBAYO_1_NBA-game-ou-under",
+          "statID": "assists",
+          "statEntityID": "BAM_ADEBAYO_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "BAM_ADEBAYO_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+126",
+          "bookOdds": "+110",
+          "fairOverUnder": "3.5",
+          "bookOverUnder": "3.5",
+          "openFairOdds": "+126",
+          "openBookOdds": "+110",
+          "openFairOverUnder": "3.5",
+          "openBookOverUnder": "3.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+120",
+              "overUnder": "3.5",
+              "lastUpdatedAt": "2025-11-22T00:07:20.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.541886150&selectionId=22043940",
+              "altLines": [
+                {
+                  "odds": "-700",
+                  "overUnder": "1.5",
+                  "lastUpdatedAt": "2025-11-22T00:07:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-215",
+                  "overUnder": "2.5",
+                  "lastUpdatedAt": "2025-11-22T00:07:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+250",
+                  "overUnder": "4.5",
+                  "lastUpdatedAt": "2025-11-22T00:07:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+560",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2025-11-22T00:07:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1700",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2025-11-22T00:07:20.000Z",
+                  "available": true
+                }
+              ]
+            }
+          },
+          "marketName": "Bam Adebayo Assists Over/Under"
+        },
+        "assists-BAM_ADEBAYO_1_NBA-game-ou-under": {
+          "oddID": "assists-BAM_ADEBAYO_1_NBA-game-ou-under",
+          "opposingOddID": "assists-BAM_ADEBAYO_1_NBA-game-ou-over",
+          "statID": "assists",
+          "statEntityID": "BAM_ADEBAYO_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "BAM_ADEBAYO_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-126",
+          "bookOdds": "-150",
+          "fairOverUnder": "3.5",
+          "bookOverUnder": "3.5",
+          "openFairOdds": "-126",
+          "openBookOdds": "-150",
+          "openFairOverUnder": "3.5",
+          "openBookOverUnder": "3.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-154",
+              "overUnder": "3.5",
+              "lastUpdatedAt": "2025-11-22T00:07:20.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.541886150&selectionId=22043941",
+              "altLines": [
+                {
+                  "odds": "+410",
+                  "overUnder": "1.5",
+                  "lastUpdatedAt": "2025-11-22T00:07:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+158",
+                  "overUnder": "2.5",
+                  "lastUpdatedAt": "2025-11-22T00:07:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-360",
+                  "overUnder": "4.5",
+                  "lastUpdatedAt": "2025-11-22T00:07:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-1100",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2025-11-22T00:07:20.000Z",
+                  "available": true
+                }
+              ]
+            }
+          },
+          "marketName": "Bam Adebayo Assists Over/Under"
+        },
+        "assists-DAVION_MITCHELL_1_NBA-game-ou-over": {
+          "oddID": "assists-DAVION_MITCHELL_1_NBA-game-ou-over",
+          "opposingOddID": "assists-DAVION_MITCHELL_1_NBA-game-ou-under",
+          "statID": "assists",
+          "statEntityID": "DAVION_MITCHELL_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "DAVION_MITCHELL_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+124",
+          "bookOdds": "-155",
+          "fairOverUnder": "7.5",
+          "bookOverUnder": "6.5",
+          "openFairOdds": "+124",
+          "openBookOdds": "-155",
+          "openFairOverUnder": "7.5",
+          "openBookOverUnder": "6.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-154",
+              "overUnder": "6.5",
+              "lastUpdatedAt": "2025-11-22T00:07:20.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.541886153&selectionId=40195572",
+              "altLines": [
+                {
+                  "odds": "-2000",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2025-11-22T00:07:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-650",
+                  "overUnder": "4.5",
+                  "lastUpdatedAt": "2025-11-22T00:07:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-290",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2025-11-22T00:07:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+118",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2025-11-22T00:07:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+205",
+                  "overUnder": "8.5",
+                  "lastUpdatedAt": "2025-11-22T00:07:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+300",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2025-11-22T00:07:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+830",
+                  "overUnder": "11.5",
+                  "lastUpdatedAt": "2025-11-22T00:07:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+2000",
+                  "overUnder": "13.5",
+                  "lastUpdatedAt": "2025-11-22T00:07:20.000Z",
+                  "available": true
+                }
+              ]
+            }
+          },
+          "marketName": "Davion Mitchell Assists Over/Under"
+        },
+        "assists-DAVION_MITCHELL_1_NBA-game-ou-under": {
+          "oddID": "assists-DAVION_MITCHELL_1_NBA-game-ou-under",
+          "opposingOddID": "assists-DAVION_MITCHELL_1_NBA-game-ou-over",
+          "statID": "assists",
+          "statEntityID": "DAVION_MITCHELL_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "DAVION_MITCHELL_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-124",
+          "bookOdds": "+120",
+          "fairOverUnder": "7.5",
+          "bookOverUnder": "6.5",
+          "openFairOdds": "-124",
+          "openBookOdds": "+120",
+          "openFairOverUnder": "7.5",
+          "openBookOverUnder": "6.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+120",
+              "overUnder": "6.5",
+              "lastUpdatedAt": "2025-11-22T00:07:20.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.541886153&selectionId=40195573",
+              "altLines": [
+                {
+                  "odds": "+390",
+                  "overUnder": "4.5",
+                  "lastUpdatedAt": "2025-11-22T00:07:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+205",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2025-11-22T00:07:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-158",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2025-11-22T00:07:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-290",
+                  "overUnder": "8.5",
+                  "lastUpdatedAt": "2025-11-22T00:07:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-440",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2025-11-22T00:07:20.000Z",
+                  "available": true
+                }
+              ]
+            }
+          },
+          "marketName": "Davion Mitchell Assists Over/Under"
+        },
+        "assists-DRU_SMITH_1_NBA-game-ou-over": {
+          "oddID": "assists-DRU_SMITH_1_NBA-game-ou-over",
+          "opposingOddID": "assists-DRU_SMITH_1_NBA-game-ou-under",
+          "statID": "assists",
+          "statEntityID": "DRU_SMITH_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "DRU_SMITH_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "-135",
+          "fairOverUnder": "4",
+          "bookOverUnder": "3.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "-135",
+          "openFairOverUnder": "4",
+          "openBookOverUnder": "3.5",
+          "scoringSupported": true,
+          "byBookmaker": {},
+          "marketName": "Dru Smith Assists Over/Under"
+        },
+        "assists-DRU_SMITH_1_NBA-game-ou-under": {
+          "oddID": "assists-DRU_SMITH_1_NBA-game-ou-under",
+          "opposingOddID": "assists-DRU_SMITH_1_NBA-game-ou-over",
+          "statID": "assists",
+          "statEntityID": "DRU_SMITH_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "DRU_SMITH_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "+100",
+          "fairOverUnder": "4",
+          "bookOverUnder": "3.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "+100",
+          "openFairOverUnder": "4",
+          "openBookOverUnder": "3.5",
+          "scoringSupported": true,
+          "byBookmaker": {},
+          "marketName": "Dru Smith Assists Over/Under"
+        },
+        "assists-JAIME_JAQUEZ_JR_1_NBA-game-ou-over": {
+          "oddID": "assists-JAIME_JAQUEZ_JR_1_NBA-game-ou-over",
+          "opposingOddID": "assists-JAIME_JAQUEZ_JR_1_NBA-game-ou-under",
+          "statID": "assists",
+          "statEntityID": "JAIME_JAQUEZ_JR_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "JAIME_JAQUEZ_JR_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-104",
+          "bookOdds": "-120",
+          "fairOverUnder": "5.5",
+          "bookOverUnder": "5.5",
+          "openFairOdds": "-104",
+          "openBookOdds": "-120",
+          "openFairOverUnder": "5.5",
+          "openBookOverUnder": "5.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-115",
+              "overUnder": "5.5",
+              "lastUpdatedAt": "2025-11-22T00:07:20.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.541886151&selectionId=43072643",
+              "altLines": [
+                {
+                  "odds": "-550",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2025-11-22T00:07:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-245",
+                  "overUnder": "4.5",
+                  "lastUpdatedAt": "2025-11-22T00:07:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+154",
+                  "overUnder": "6.5",
+                  "lastUpdatedAt": "2025-11-22T00:07:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+280",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2025-11-22T00:07:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+470",
+                  "overUnder": "8.5",
+                  "lastUpdatedAt": "2025-11-22T00:07:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+750",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2025-11-22T00:07:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1700",
+                  "overUnder": "11.5",
+                  "lastUpdatedAt": "2025-11-22T00:07:20.000Z",
+                  "available": true
+                }
+              ]
+            }
+          },
+          "marketName": "Jaime Jaquez Jr. Assists Over/Under"
+        },
+        "assists-JAIME_JAQUEZ_JR_1_NBA-game-ou-under": {
+          "oddID": "assists-JAIME_JAQUEZ_JR_1_NBA-game-ou-under",
+          "opposingOddID": "assists-JAIME_JAQUEZ_JR_1_NBA-game-ou-over",
+          "statID": "assists",
+          "statEntityID": "JAIME_JAQUEZ_JR_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "JAIME_JAQUEZ_JR_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+104",
+          "bookOdds": "-110",
+          "fairOverUnder": "5.5",
+          "bookOverUnder": "5.5",
+          "openFairOdds": "+104",
+          "openBookOdds": "-110",
+          "openFairOverUnder": "5.5",
+          "openBookOverUnder": "5.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-111",
+              "overUnder": "5.5",
+              "lastUpdatedAt": "2025-11-22T00:07:20.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.541886151&selectionId=43072644",
+              "altLines": [
+                {
+                  "odds": "+350",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2025-11-22T00:07:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+172",
+                  "overUnder": "4.5",
+                  "lastUpdatedAt": "2025-11-22T00:07:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-210",
+                  "overUnder": "6.5",
+                  "lastUpdatedAt": "2025-11-22T00:07:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-420",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2025-11-22T00:07:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-850",
+                  "overUnder": "8.5",
+                  "lastUpdatedAt": "2025-11-22T00:07:20.000Z",
+                  "available": true
+                }
+              ]
+            }
+          },
+          "marketName": "Jaime Jaquez Jr. Assists Over/Under"
+        },
+        "blocks-BAM_ADEBAYO_1_NBA-game-ou-over": {
+          "oddID": "blocks-BAM_ADEBAYO_1_NBA-game-ou-over",
+          "opposingOddID": "blocks-BAM_ADEBAYO_1_NBA-game-ou-under",
+          "statID": "blocks",
+          "statEntityID": "BAM_ADEBAYO_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "BAM_ADEBAYO_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-121",
+          "bookOdds": "-145",
+          "fairOverUnder": "0.5",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "-121",
+          "openBookOdds": "-145",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-136",
+              "overUnder": "0.5",
+              "lastUpdatedAt": "2025-11-22T00:07:20.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.541930759&selectionId=14388955",
+              "altLines": [
+                {
+                  "odds": "+360",
+                  "overUnder": "1.5",
+                  "lastUpdatedAt": "2025-11-22T00:07:20.000Z",
+                  "available": true
+                }
+              ]
+            }
+          },
+          "marketName": "Bam Adebayo Blocks Over/Under"
+        },
+        "blocks-BAM_ADEBAYO_1_NBA-game-ou-under": {
+          "oddID": "blocks-BAM_ADEBAYO_1_NBA-game-ou-under",
+          "opposingOddID": "blocks-BAM_ADEBAYO_1_NBA-game-ou-over",
+          "statID": "blocks",
+          "statEntityID": "BAM_ADEBAYO_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "BAM_ADEBAYO_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+121",
+          "fairOverUnder": "0.5",
+          "openFairOdds": "+121",
+          "openFairOverUnder": "0.5",
+          "scoringSupported": true,
+          "bookOdds": "+105",
+          "bookOverUnder": "0.5",
+          "byBookmaker": {},
+          "marketName": "Bam Adebayo Blocks Over/Under",
+          "openBookOdds": "+105",
+          "openBookOverUnder": "0.5"
+        },
+        "blocks-DAVION_MITCHELL_1_NBA-game-ou-over": {
+          "oddID": "blocks-DAVION_MITCHELL_1_NBA-game-ou-over",
+          "opposingOddID": "blocks-DAVION_MITCHELL_1_NBA-game-ou-under",
+          "statID": "blocks",
+          "statEntityID": "DAVION_MITCHELL_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "DAVION_MITCHELL_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+475",
+          "bookOdds": "+437",
+          "fairOverUnder": "0.5",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "+475",
+          "openBookOdds": "+437",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {},
+          "marketName": "Davion Mitchell Blocks Over/Under"
+        },
+        "blocks-DAVION_MITCHELL_1_NBA-game-ou-under": {
+          "oddID": "blocks-DAVION_MITCHELL_1_NBA-game-ou-under",
+          "opposingOddID": "blocks-DAVION_MITCHELL_1_NBA-game-ou-over",
+          "statID": "blocks",
+          "statEntityID": "DAVION_MITCHELL_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "DAVION_MITCHELL_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-475",
+          "fairOverUnder": "0.5",
+          "openFairOdds": "-475",
+          "openFairOverUnder": "0.5",
+          "scoringSupported": true,
+          "bookOdds": "-769",
+          "bookOverUnder": "0.5",
+          "byBookmaker": {},
+          "marketName": "Davion Mitchell Blocks Over/Under",
+          "openBookOdds": "-769",
+          "openBookOverUnder": "0.5"
+        },
+        "blocks-DRU_SMITH_1_NBA-game-ou-over": {
+          "oddID": "blocks-DRU_SMITH_1_NBA-game-ou-over",
+          "opposingOddID": "blocks-DRU_SMITH_1_NBA-game-ou-under",
+          "statID": "blocks",
+          "statEntityID": "DRU_SMITH_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "DRU_SMITH_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+285",
+          "bookOdds": "+262",
+          "fairOverUnder": "0.5",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "+285",
+          "openBookOdds": "+262",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {},
+          "marketName": "Dru Smith Blocks Over/Under"
+        },
+        "blocks-DRU_SMITH_1_NBA-game-ou-under": {
+          "oddID": "blocks-DRU_SMITH_1_NBA-game-ou-under",
+          "opposingOddID": "blocks-DRU_SMITH_1_NBA-game-ou-over",
+          "statID": "blocks",
+          "statEntityID": "DRU_SMITH_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "DRU_SMITH_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-285",
+          "fairOverUnder": "0.5",
+          "openFairOdds": "-285",
+          "openFairOverUnder": "0.5",
+          "scoringSupported": true,
+          "bookOdds": "-370",
+          "bookOverUnder": "0.5",
+          "byBookmaker": {},
+          "marketName": "Dru Smith Blocks Over/Under",
+          "openBookOdds": "-370",
+          "openBookOverUnder": "0.5"
+        },
+        "blocks-JAIME_JAQUEZ_JR_1_NBA-game-ou-over": {
+          "oddID": "blocks-JAIME_JAQUEZ_JR_1_NBA-game-ou-over",
+          "opposingOddID": "blocks-JAIME_JAQUEZ_JR_1_NBA-game-ou-under",
+          "statID": "blocks",
+          "statEntityID": "JAIME_JAQUEZ_JR_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "JAIME_JAQUEZ_JR_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+166",
+          "bookOdds": "+145",
+          "fairOverUnder": "0.5",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "+166",
+          "openBookOdds": "+145",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {},
+          "marketName": "Jaime Jaquez Jr. Blocks Over/Under"
+        },
+        "blocks-JAIME_JAQUEZ_JR_1_NBA-game-ou-under": {
+          "oddID": "blocks-JAIME_JAQUEZ_JR_1_NBA-game-ou-under",
+          "opposingOddID": "blocks-JAIME_JAQUEZ_JR_1_NBA-game-ou-over",
+          "statID": "blocks",
+          "statEntityID": "JAIME_JAQUEZ_JR_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "JAIME_JAQUEZ_JR_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-166",
+          "fairOverUnder": "0.5",
+          "openFairOdds": "-166",
+          "openFairOverUnder": "0.5",
+          "scoringSupported": true,
+          "bookOdds": "-210",
+          "bookOverUnder": "0.5",
+          "byBookmaker": {},
+          "marketName": "Jaime Jaquez Jr. Blocks Over/Under",
+          "openBookOdds": "-210",
+          "openBookOverUnder": "0.5"
+        },
+        "points-BAM_ADEBAYO_1_NBA-game-ou-over": {
+          "oddID": "points-BAM_ADEBAYO_1_NBA-game-ou-over",
+          "opposingOddID": "points-BAM_ADEBAYO_1_NBA-game-ou-under",
+          "statID": "points",
+          "statEntityID": "BAM_ADEBAYO_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "BAM_ADEBAYO_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+128",
+          "bookOdds": "-109",
+          "fairOverUnder": "22.5",
+          "bookOverUnder": "21.5",
+          "openFairOdds": "+128",
+          "openBookOdds": "-109",
+          "openFairOverUnder": "22.5",
+          "openBookOverUnder": "21.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+100",
+              "overUnder": "21.5",
+              "lastUpdatedAt": "2025-11-22T00:07:20.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.541886124&selectionId=22043940",
+              "altLines": [
+                {
+                  "odds": "-6000",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2025-11-22T00:07:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-1200",
+                  "overUnder": "12.5",
+                  "lastUpdatedAt": "2025-11-22T00:03:42.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "-800",
+                  "overUnder": "13.5",
+                  "lastUpdatedAt": "2025-11-22T00:03:42.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "-590",
+                  "overUnder": "14.5",
+                  "lastUpdatedAt": "2025-11-22T00:07:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-440",
+                  "overUnder": "15.5",
+                  "lastUpdatedAt": "2025-11-22T00:03:42.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "-320",
+                  "overUnder": "16.5",
+                  "lastUpdatedAt": "2025-11-22T00:03:42.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "-260",
+                  "overUnder": "17.5",
+                  "lastUpdatedAt": "2025-11-22T00:03:42.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "-200",
+                  "overUnder": "18.5",
+                  "lastUpdatedAt": "2025-11-22T00:03:42.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "-160",
+                  "overUnder": "19.5",
+                  "lastUpdatedAt": "2025-11-22T00:07:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-128",
+                  "overUnder": "20.5",
+                  "lastUpdatedAt": "2025-11-22T00:03:42.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "+122",
+                  "overUnder": "22.5",
+                  "lastUpdatedAt": "2025-11-22T00:03:42.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "+152",
+                  "overUnder": "23.5",
+                  "lastUpdatedAt": "2025-11-22T00:03:42.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "+180",
+                  "overUnder": "24.5",
+                  "lastUpdatedAt": "2025-11-22T00:07:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+225",
+                  "overUnder": "25.5",
+                  "lastUpdatedAt": "2025-11-22T00:03:42.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "+270",
+                  "overUnder": "26.5",
+                  "lastUpdatedAt": "2025-11-22T00:03:42.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "+320",
+                  "overUnder": "27.5",
+                  "lastUpdatedAt": "2025-11-22T00:03:42.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "+390",
+                  "overUnder": "28.5",
+                  "lastUpdatedAt": "2025-11-22T00:03:42.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "+450",
+                  "overUnder": "29.5",
+                  "lastUpdatedAt": "2025-11-22T00:07:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1060",
+                  "overUnder": "34.5",
+                  "lastUpdatedAt": "2025-11-22T00:07:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+2500",
+                  "overUnder": "39.5",
+                  "lastUpdatedAt": "2025-11-22T00:07:20.000Z",
+                  "available": true
+                }
+              ]
+            }
+          },
+          "marketName": "Bam Adebayo Points Over/Under"
+        },
+        "points-BAM_ADEBAYO_1_NBA-game-ou-under": {
+          "oddID": "points-BAM_ADEBAYO_1_NBA-game-ou-under",
+          "opposingOddID": "points-BAM_ADEBAYO_1_NBA-game-ou-over",
+          "statID": "points",
+          "statEntityID": "BAM_ADEBAYO_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "BAM_ADEBAYO_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-128",
+          "bookOdds": "-120",
+          "fairOverUnder": "22.5",
+          "bookOverUnder": "21.5",
+          "openFairOdds": "-128",
+          "openBookOdds": "-120",
+          "openFairOverUnder": "22.5",
+          "openBookOverUnder": "21.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-128",
+              "overUnder": "21.5",
+              "lastUpdatedAt": "2025-11-22T00:07:20.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.541886124&selectionId=22043941",
+              "altLines": [
+                {
+                  "odds": "+490",
+                  "overUnder": "12.5",
+                  "lastUpdatedAt": "2025-11-21T17:13:00.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "+450",
+                  "overUnder": "13.5",
+                  "lastUpdatedAt": "2025-11-22T00:03:42.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "+360",
+                  "overUnder": "14.5",
+                  "lastUpdatedAt": "2025-11-22T00:03:42.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "+290",
+                  "overUnder": "15.5",
+                  "lastUpdatedAt": "2025-11-22T00:03:42.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "+225",
+                  "overUnder": "16.5",
+                  "lastUpdatedAt": "2025-11-22T00:03:42.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "+188",
+                  "overUnder": "17.5",
+                  "lastUpdatedAt": "2025-11-22T00:03:42.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "+148",
+                  "overUnder": "18.5",
+                  "lastUpdatedAt": "2025-11-22T00:03:42.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "+118",
+                  "overUnder": "19.5",
+                  "lastUpdatedAt": "2025-11-22T00:03:42.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "-104",
+                  "overUnder": "20.5",
+                  "lastUpdatedAt": "2025-11-22T00:03:42.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "-162",
+                  "overUnder": "22.5",
+                  "lastUpdatedAt": "2025-11-22T00:03:42.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "-205",
+                  "overUnder": "23.5",
+                  "lastUpdatedAt": "2025-11-22T00:03:42.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "-250",
+                  "overUnder": "24.5",
+                  "lastUpdatedAt": "2025-11-22T00:03:42.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "-320",
+                  "overUnder": "25.5",
+                  "lastUpdatedAt": "2025-11-22T00:03:42.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "-400",
+                  "overUnder": "26.5",
+                  "lastUpdatedAt": "2025-11-22T00:03:42.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "-490",
+                  "overUnder": "27.5",
+                  "lastUpdatedAt": "2025-11-22T00:03:42.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "-650",
+                  "overUnder": "28.5",
+                  "lastUpdatedAt": "2025-11-22T00:03:42.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "-850",
+                  "overUnder": "29.5",
+                  "lastUpdatedAt": "2025-11-22T00:03:42.000Z",
+                  "available": false
+                }
+              ]
+            }
+          },
+          "marketName": "Bam Adebayo Points Over/Under"
+        },
+        "points-DAVION_MITCHELL_1_NBA-game-ou-over": {
+          "oddID": "points-DAVION_MITCHELL_1_NBA-game-ou-over",
+          "opposingOddID": "points-DAVION_MITCHELL_1_NBA-game-ou-under",
+          "statID": "points",
+          "statEntityID": "DAVION_MITCHELL_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "DAVION_MITCHELL_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+129",
+          "bookOdds": "-118",
+          "fairOverUnder": "11.5",
+          "bookOverUnder": "10.5",
+          "openFairOdds": "+129",
+          "openBookOdds": "-118",
+          "openFairOverUnder": "11.5",
+          "openBookOverUnder": "10.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-111",
+              "overUnder": "10.5",
+              "lastUpdatedAt": "2025-11-22T00:07:20.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.541886129&selectionId=40195572",
+              "altLines": [
+                {
+                  "odds": "-750",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2025-11-22T00:03:42.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "-450",
+                  "overUnder": "6.5",
+                  "lastUpdatedAt": "2025-11-22T00:03:42.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "-300",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2025-11-22T00:03:42.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "-215",
+                  "overUnder": "8.5",
+                  "lastUpdatedAt": "2025-11-22T00:03:42.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "-148",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2025-11-22T00:07:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+126",
+                  "overUnder": "11.5",
+                  "lastUpdatedAt": "2025-11-22T00:03:42.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "+168",
+                  "overUnder": "12.5",
+                  "lastUpdatedAt": "2025-11-22T00:03:42.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "+220",
+                  "overUnder": "13.5",
+                  "lastUpdatedAt": "2025-11-22T00:03:42.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "+285",
+                  "overUnder": "14.5",
+                  "lastUpdatedAt": "2025-11-22T00:07:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1000",
+                  "overUnder": "19.5",
+                  "lastUpdatedAt": "2025-11-22T00:07:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+2500",
+                  "overUnder": "24.5",
+                  "lastUpdatedAt": "2025-11-21T23:49:57.000Z",
+                  "available": false
+                }
+              ]
+            }
+          },
+          "marketName": "Davion Mitchell Points Over/Under"
+        },
+        "points-DAVION_MITCHELL_1_NBA-game-ou-under": {
+          "oddID": "points-DAVION_MITCHELL_1_NBA-game-ou-under",
+          "opposingOddID": "points-DAVION_MITCHELL_1_NBA-game-ou-over",
+          "statID": "points",
+          "statEntityID": "DAVION_MITCHELL_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "DAVION_MITCHELL_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-129",
+          "bookOdds": "-111",
+          "fairOverUnder": "11.5",
+          "bookOverUnder": "10.5",
+          "openFairOdds": "-129",
+          "openBookOdds": "-111",
+          "openFairOverUnder": "11.5",
+          "openBookOverUnder": "10.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-115",
+              "overUnder": "10.5",
+              "lastUpdatedAt": "2025-11-22T00:07:20.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.541886129&selectionId=40195573",
+              "altLines": [
+                {
+                  "odds": "+430",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2025-11-22T00:03:42.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "+300",
+                  "overUnder": "6.5",
+                  "lastUpdatedAt": "2025-11-22T00:03:42.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "+210",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2025-11-22T00:03:42.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "+158",
+                  "overUnder": "8.5",
+                  "lastUpdatedAt": "2025-11-22T00:03:42.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "+114",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2025-11-22T00:03:42.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "-168",
+                  "overUnder": "11.5",
+                  "lastUpdatedAt": "2025-11-22T00:03:42.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "-230",
+                  "overUnder": "12.5",
+                  "lastUpdatedAt": "2025-11-22T00:03:42.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "-310",
+                  "overUnder": "13.5",
+                  "lastUpdatedAt": "2025-11-22T00:03:42.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "-420",
+                  "overUnder": "14.5",
+                  "lastUpdatedAt": "2025-11-22T00:03:42.000Z",
+                  "available": false
+                }
+              ]
+            }
+          },
+          "marketName": "Davion Mitchell Points Over/Under"
+        },
+        "points-DRU_SMITH_1_NBA-game-ou-over": {
+          "oddID": "points-DRU_SMITH_1_NBA-game-ou-over",
+          "opposingOddID": "points-DRU_SMITH_1_NBA-game-ou-under",
+          "statID": "points",
+          "statEntityID": "DRU_SMITH_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "DRU_SMITH_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "-140",
+          "fairOverUnder": "6",
+          "bookOverUnder": "5.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "-140",
+          "openFairOverUnder": "6",
+          "openBookOverUnder": "5.5",
+          "scoringSupported": true,
+          "byBookmaker": {},
+          "marketName": "Dru Smith Points Over/Under"
+        },
+        "points-DRU_SMITH_1_NBA-game-ou-under": {
+          "oddID": "points-DRU_SMITH_1_NBA-game-ou-under",
+          "opposingOddID": "points-DRU_SMITH_1_NBA-game-ou-over",
+          "statID": "points",
+          "statEntityID": "DRU_SMITH_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "DRU_SMITH_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "fairOverUnder": "6",
+          "openFairOdds": "+100",
+          "openFairOverUnder": "6",
+          "scoringSupported": true,
+          "bookOdds": "+100",
+          "bookOverUnder": "5.5",
+          "byBookmaker": {},
+          "marketName": "Dru Smith Points Over/Under",
+          "openBookOdds": "+100",
+          "openBookOverUnder": "5.5"
+        },
+        "points-JAIME_JAQUEZ_JR_1_NBA-game-ou-over": {
+          "oddID": "points-JAIME_JAQUEZ_JR_1_NBA-game-ou-over",
+          "opposingOddID": "points-JAIME_JAQUEZ_JR_1_NBA-game-ou-under",
+          "statID": "points",
+          "statEntityID": "JAIME_JAQUEZ_JR_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "JAIME_JAQUEZ_JR_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+108",
+          "bookOdds": "-105",
+          "fairOverUnder": "19.5",
+          "bookOverUnder": "19.5",
+          "openFairOdds": "+108",
+          "openBookOdds": "-105",
+          "openFairOverUnder": "19.5",
+          "openBookOverUnder": "19.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-102",
+              "overUnder": "19.5",
+              "lastUpdatedAt": "2025-11-22T00:07:20.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.541886125&selectionId=43072643",
+              "altLines": [
+                {
+                  "odds": "-2500",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2025-11-22T00:07:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-700",
+                  "overUnder": "12.5",
+                  "lastUpdatedAt": "2025-11-22T00:03:42.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "-500",
+                  "overUnder": "13.5",
+                  "lastUpdatedAt": "2025-11-22T00:03:42.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "-350",
+                  "overUnder": "14.5",
+                  "lastUpdatedAt": "2025-11-22T00:07:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-280",
+                  "overUnder": "15.5",
+                  "lastUpdatedAt": "2025-11-22T00:03:42.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "-220",
+                  "overUnder": "16.5",
+                  "lastUpdatedAt": "2025-11-22T00:03:42.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "-172",
+                  "overUnder": "17.5",
+                  "lastUpdatedAt": "2025-11-22T00:03:42.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "-132",
+                  "overUnder": "18.5",
+                  "lastUpdatedAt": "2025-11-22T00:03:42.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "+122",
+                  "overUnder": "20.5",
+                  "lastUpdatedAt": "2025-11-22T00:03:42.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "+148",
+                  "overUnder": "21.5",
+                  "lastUpdatedAt": "2025-11-22T00:03:42.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "+182",
+                  "overUnder": "22.5",
+                  "lastUpdatedAt": "2025-11-22T00:03:42.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "+225",
+                  "overUnder": "23.5",
+                  "lastUpdatedAt": "2025-11-22T00:03:42.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "+285",
+                  "overUnder": "24.5",
+                  "lastUpdatedAt": "2025-11-22T00:07:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+350",
+                  "overUnder": "25.5",
+                  "lastUpdatedAt": "2025-11-22T00:03:42.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "+410",
+                  "overUnder": "26.5",
+                  "lastUpdatedAt": "2025-11-22T00:03:42.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "+470",
+                  "overUnder": "27.5",
+                  "lastUpdatedAt": "2025-11-21T23:07:59.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "+750",
+                  "overUnder": "29.5",
+                  "lastUpdatedAt": "2025-11-22T00:07:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1700",
+                  "overUnder": "34.5",
+                  "lastUpdatedAt": "2025-11-22T00:07:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+5000",
+                  "overUnder": "39.5",
+                  "lastUpdatedAt": "2025-11-21T23:52:23.000Z",
+                  "available": false
+                }
+              ]
+            }
+          },
+          "marketName": "Jaime Jaquez Jr. Points Over/Under"
+        },
+        "points-JAIME_JAQUEZ_JR_1_NBA-game-ou-under": {
+          "oddID": "points-JAIME_JAQUEZ_JR_1_NBA-game-ou-under",
+          "opposingOddID": "points-JAIME_JAQUEZ_JR_1_NBA-game-ou-over",
+          "statID": "points",
+          "statEntityID": "JAIME_JAQUEZ_JR_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "JAIME_JAQUEZ_JR_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-108",
+          "bookOdds": "-125",
+          "fairOverUnder": "19.5",
+          "bookOverUnder": "19.5",
+          "openFairOdds": "-108",
+          "openBookOdds": "-125",
+          "openFairOverUnder": "19.5",
+          "openBookOverUnder": "19.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-125",
+              "overUnder": "19.5",
+              "lastUpdatedAt": "2025-11-22T00:07:20.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.541886125&selectionId=43072644",
+              "altLines": [
+                {
+                  "odds": "+410",
+                  "overUnder": "12.5",
+                  "lastUpdatedAt": "2025-11-22T00:03:42.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "+320",
+                  "overUnder": "13.5",
+                  "lastUpdatedAt": "2025-11-22T00:03:42.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "+250",
+                  "overUnder": "14.5",
+                  "lastUpdatedAt": "2025-11-22T00:03:42.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "+200",
+                  "overUnder": "15.5",
+                  "lastUpdatedAt": "2025-11-22T00:03:42.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "+162",
+                  "overUnder": "16.5",
+                  "lastUpdatedAt": "2025-11-22T00:03:42.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "+128",
+                  "overUnder": "17.5",
+                  "lastUpdatedAt": "2025-11-22T00:03:42.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "+100",
+                  "overUnder": "18.5",
+                  "lastUpdatedAt": "2025-11-22T00:03:42.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "-162",
+                  "overUnder": "20.5",
+                  "lastUpdatedAt": "2025-11-22T00:03:42.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "-200",
+                  "overUnder": "21.5",
+                  "lastUpdatedAt": "2025-11-22T00:03:42.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "-250",
+                  "overUnder": "22.5",
+                  "lastUpdatedAt": "2025-11-22T00:03:42.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "-320",
+                  "overUnder": "23.5",
+                  "lastUpdatedAt": "2025-11-22T00:03:42.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "-420",
+                  "overUnder": "24.5",
+                  "lastUpdatedAt": "2025-11-22T00:03:42.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "-550",
+                  "overUnder": "25.5",
+                  "lastUpdatedAt": "2025-11-22T00:03:42.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "-700",
+                  "overUnder": "26.5",
+                  "lastUpdatedAt": "2025-11-22T00:03:42.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "-1000",
+                  "overUnder": "27.5",
+                  "lastUpdatedAt": "2025-11-22T00:03:42.000Z",
+                  "available": false
+                }
+              ]
+            }
+          },
+          "marketName": "Jaime Jaquez Jr. Points Over/Under"
+        },
+        "rebounds-BAM_ADEBAYO_1_NBA-game-ou-over": {
+          "oddID": "rebounds-BAM_ADEBAYO_1_NBA-game-ou-over",
+          "opposingOddID": "rebounds-BAM_ADEBAYO_1_NBA-game-ou-under",
+          "statID": "rebounds",
+          "statEntityID": "BAM_ADEBAYO_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "BAM_ADEBAYO_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+120",
+          "bookOdds": "+106",
+          "fairOverUnder": "9.5",
+          "bookOverUnder": "9.5",
+          "openFairOdds": "+120",
+          "openBookOdds": "+106",
+          "openFairOverUnder": "9.5",
+          "openBookOverUnder": "9.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+112",
+              "overUnder": "9.5",
+              "lastUpdatedAt": "2025-11-22T00:07:20.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.541886137&selectionId=22043940",
+              "altLines": [
+                {
+                  "odds": "-1000",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2025-11-22T00:07:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-420",
+                  "overUnder": "6.5",
+                  "lastUpdatedAt": "2025-11-22T00:07:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-235",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2025-11-22T00:07:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-132",
+                  "overUnder": "8.5",
+                  "lastUpdatedAt": "2025-11-22T00:07:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+178",
+                  "overUnder": "10.5",
+                  "lastUpdatedAt": "2025-11-22T00:07:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+285",
+                  "overUnder": "11.5",
+                  "lastUpdatedAt": "2025-11-22T00:07:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+430",
+                  "overUnder": "12.5",
+                  "lastUpdatedAt": "2025-11-22T00:07:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+680",
+                  "overUnder": "13.5",
+                  "lastUpdatedAt": "2025-11-22T00:07:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1400",
+                  "overUnder": "15.5",
+                  "lastUpdatedAt": "2025-11-22T00:07:20.000Z",
+                  "available": true
+                }
+              ]
+            }
+          },
+          "marketName": "Bam Adebayo Rebounds Over/Under"
+        },
+        "rebounds-BAM_ADEBAYO_1_NBA-game-ou-under": {
+          "oddID": "rebounds-BAM_ADEBAYO_1_NBA-game-ou-under",
+          "opposingOddID": "rebounds-BAM_ADEBAYO_1_NBA-game-ou-over",
+          "statID": "rebounds",
+          "statEntityID": "BAM_ADEBAYO_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "BAM_ADEBAYO_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-120",
+          "bookOdds": "-140",
+          "fairOverUnder": "9.5",
+          "bookOverUnder": "9.5",
+          "openFairOdds": "-120",
+          "openBookOdds": "-140",
+          "openFairOverUnder": "9.5",
+          "openBookOverUnder": "9.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-142",
+              "overUnder": "9.5",
+              "lastUpdatedAt": "2025-11-22T00:07:20.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.541886137&selectionId=22043941",
+              "altLines": [
+                {
+                  "odds": "+450",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2025-11-22T00:03:42.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "+280",
+                  "overUnder": "6.5",
+                  "lastUpdatedAt": "2025-11-22T00:07:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+172",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2025-11-22T00:07:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+100",
+                  "overUnder": "8.5",
+                  "lastUpdatedAt": "2025-11-22T00:07:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-245",
+                  "overUnder": "10.5",
+                  "lastUpdatedAt": "2025-11-22T00:07:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-400",
+                  "overUnder": "11.5",
+                  "lastUpdatedAt": "2025-11-22T00:07:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-750",
+                  "overUnder": "12.5",
+                  "lastUpdatedAt": "2025-11-22T00:07:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-1450",
+                  "overUnder": "13.5",
+                  "lastUpdatedAt": "2025-11-22T00:07:20.000Z",
+                  "available": true
+                }
+              ]
+            }
+          },
+          "marketName": "Bam Adebayo Rebounds Over/Under"
+        },
+        "rebounds-DAVION_MITCHELL_1_NBA-game-ou-over": {
+          "oddID": "rebounds-DAVION_MITCHELL_1_NBA-game-ou-over",
+          "opposingOddID": "rebounds-DAVION_MITCHELL_1_NBA-game-ou-under",
+          "statID": "rebounds",
+          "statEntityID": "DAVION_MITCHELL_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "DAVION_MITCHELL_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "-145",
+          "fairOverUnder": "3",
+          "bookOverUnder": "2.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "-145",
+          "openFairOverUnder": "3",
+          "openBookOverUnder": "2.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-146",
+              "overUnder": "2.5",
+              "lastUpdatedAt": "2025-11-22T00:07:20.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.541886142&selectionId=40195572",
+              "altLines": [
+                {
+                  "odds": "-450",
+                  "overUnder": "1.5",
+                  "lastUpdatedAt": "2025-11-22T00:07:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+178",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2025-11-22T00:07:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+390",
+                  "overUnder": "4.5",
+                  "lastUpdatedAt": "2025-11-22T00:07:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+830",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2025-11-22T00:07:20.000Z",
+                  "available": true
+                }
+              ]
+            }
+          },
+          "marketName": "Davion Mitchell Rebounds Over/Under"
+        },
+        "rebounds-DAVION_MITCHELL_1_NBA-game-ou-under": {
+          "oddID": "rebounds-DAVION_MITCHELL_1_NBA-game-ou-under",
+          "opposingOddID": "rebounds-DAVION_MITCHELL_1_NBA-game-ou-over",
+          "statID": "rebounds",
+          "statEntityID": "DAVION_MITCHELL_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "DAVION_MITCHELL_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "+110",
+          "fairOverUnder": "3",
+          "bookOverUnder": "2.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "+110",
+          "openFairOverUnder": "3",
+          "openBookOverUnder": "2.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+114",
+              "overUnder": "2.5",
+              "lastUpdatedAt": "2025-11-22T00:07:20.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.541886142&selectionId=40195573",
+              "altLines": [
+                {
+                  "odds": "+300",
+                  "overUnder": "1.5",
+                  "lastUpdatedAt": "2025-11-22T00:07:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-245",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2025-11-22T00:07:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-650",
+                  "overUnder": "4.5",
+                  "lastUpdatedAt": "2025-11-22T00:07:20.000Z",
+                  "available": true
+                }
+              ]
+            }
+          },
+          "marketName": "Davion Mitchell Rebounds Over/Under"
+        },
+        "rebounds-DRU_SMITH_1_NBA-game-ou-over": {
+          "oddID": "rebounds-DRU_SMITH_1_NBA-game-ou-over",
+          "opposingOddID": "rebounds-DRU_SMITH_1_NBA-game-ou-under",
+          "statID": "rebounds",
+          "statEntityID": "DRU_SMITH_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "DRU_SMITH_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "+127",
+          "fairOverUnder": "2",
+          "bookOverUnder": "2.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "+127",
+          "openFairOverUnder": "2",
+          "openBookOverUnder": "2.5",
+          "scoringSupported": true,
+          "byBookmaker": {},
+          "marketName": "Dru Smith Rebounds Over/Under"
+        },
+        "rebounds-DRU_SMITH_1_NBA-game-ou-under": {
+          "oddID": "rebounds-DRU_SMITH_1_NBA-game-ou-under",
+          "opposingOddID": "rebounds-DRU_SMITH_1_NBA-game-ou-over",
+          "statID": "rebounds",
+          "statEntityID": "DRU_SMITH_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "DRU_SMITH_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "-171",
+          "fairOverUnder": "2",
+          "bookOverUnder": "2.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "-171",
+          "openFairOverUnder": "2",
+          "openBookOverUnder": "2.5",
+          "scoringSupported": true,
+          "byBookmaker": {},
+          "marketName": "Dru Smith Rebounds Over/Under"
+        },
+        "rebounds-JAIME_JAQUEZ_JR_1_NBA-game-ou-over": {
+          "oddID": "rebounds-JAIME_JAQUEZ_JR_1_NBA-game-ou-over",
+          "opposingOddID": "rebounds-JAIME_JAQUEZ_JR_1_NBA-game-ou-under",
+          "statID": "rebounds",
+          "statEntityID": "JAIME_JAQUEZ_JR_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "JAIME_JAQUEZ_JR_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+126",
+          "bookOdds": "+113",
+          "fairOverUnder": "7.5",
+          "bookOverUnder": "7.5",
+          "openFairOdds": "+126",
+          "openBookOdds": "+113",
+          "openFairOverUnder": "7.5",
+          "openBookOverUnder": "7.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+114",
+              "overUnder": "7.5",
+              "lastUpdatedAt": "2025-11-22T00:07:20.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.541886138&selectionId=43072643",
+              "altLines": [
+                {
+                  "odds": "-1600",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2025-11-22T00:07:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-600",
+                  "overUnder": "4.5",
+                  "lastUpdatedAt": "2025-11-22T00:07:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-300",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2025-11-22T00:07:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-158",
+                  "overUnder": "6.5",
+                  "lastUpdatedAt": "2025-11-22T00:07:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+182",
+                  "overUnder": "8.5",
+                  "lastUpdatedAt": "2025-11-22T00:07:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+260",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2025-11-22T00:07:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+410",
+                  "overUnder": "10.5",
+                  "lastUpdatedAt": "2025-11-22T00:07:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+700",
+                  "overUnder": "11.5",
+                  "lastUpdatedAt": "2025-11-22T00:07:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1500",
+                  "overUnder": "13.5",
+                  "lastUpdatedAt": "2025-11-22T00:07:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+3500",
+                  "overUnder": "15.5",
+                  "lastUpdatedAt": "2025-11-21T21:03:25.000Z",
+                  "available": false
+                }
+              ]
+            }
+          },
+          "marketName": "Jaime Jaquez Jr. Rebounds Over/Under"
+        },
+        "rebounds-JAIME_JAQUEZ_JR_1_NBA-game-ou-under": {
+          "oddID": "rebounds-JAIME_JAQUEZ_JR_1_NBA-game-ou-under",
+          "opposingOddID": "rebounds-JAIME_JAQUEZ_JR_1_NBA-game-ou-over",
+          "statID": "rebounds",
+          "statEntityID": "JAIME_JAQUEZ_JR_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "JAIME_JAQUEZ_JR_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-126",
+          "bookOdds": "-149",
+          "fairOverUnder": "7.5",
+          "bookOverUnder": "7.5",
+          "openFairOdds": "-126",
+          "openBookOdds": "-149",
+          "openFairOverUnder": "7.5",
+          "openBookOverUnder": "7.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-146",
+              "overUnder": "7.5",
+              "lastUpdatedAt": "2025-11-22T00:07:20.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.541886138&selectionId=43072644",
+              "altLines": [
+                {
+                  "odds": "+370",
+                  "overUnder": "4.5",
+                  "lastUpdatedAt": "2025-11-22T00:07:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+210",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2025-11-22T00:07:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+118",
+                  "overUnder": "6.5",
+                  "lastUpdatedAt": "2025-11-22T00:07:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-250",
+                  "overUnder": "8.5",
+                  "lastUpdatedAt": "2025-11-22T00:07:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-380",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2025-11-22T00:07:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-700",
+                  "overUnder": "10.5",
+                  "lastUpdatedAt": "2025-11-22T00:07:20.000Z",
+                  "available": true
+                }
+              ]
+            }
+          },
+          "marketName": "Jaime Jaquez Jr. Rebounds Over/Under"
+        },
+        "steals-BAM_ADEBAYO_1_NBA-game-ou-over": {
+          "oddID": "steals-BAM_ADEBAYO_1_NBA-game-ou-over",
+          "opposingOddID": "steals-BAM_ADEBAYO_1_NBA-game-ou-under",
+          "statID": "steals",
+          "statEntityID": "BAM_ADEBAYO_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "BAM_ADEBAYO_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+202",
+          "bookOdds": "-236",
+          "fairOverUnder": "1.5",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "+202",
+          "openBookOdds": "-236",
+          "openFairOverUnder": "1.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+178",
+              "overUnder": "1.5",
+              "lastUpdatedAt": "2025-11-22T00:07:20.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.541930748&selectionId=22043940",
+              "altLines": [
+                {
+                  "odds": "-275",
+                  "overUnder": "0.5",
+                  "lastUpdatedAt": "2025-11-22T00:07:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+550",
+                  "overUnder": "2.5",
+                  "lastUpdatedAt": "2025-11-22T00:07:20.000Z",
+                  "available": true
+                }
+              ]
+            }
+          },
+          "marketName": "Bam Adebayo Steals Over/Under"
+        },
+        "steals-BAM_ADEBAYO_1_NBA-game-ou-under": {
+          "oddID": "steals-BAM_ADEBAYO_1_NBA-game-ou-under",
+          "opposingOddID": "steals-BAM_ADEBAYO_1_NBA-game-ou-over",
+          "statID": "steals",
+          "statEntityID": "BAM_ADEBAYO_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "BAM_ADEBAYO_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-202",
+          "fairOverUnder": "1.5",
+          "openFairOdds": "-202",
+          "openFairOverUnder": "1.5",
+          "scoringSupported": true,
+          "bookOdds": "+169",
+          "bookOverUnder": "0.5",
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-245",
+              "overUnder": "1.5",
+              "lastUpdatedAt": "2025-11-22T00:07:20.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.541930748&selectionId=22043941"
+            }
+          },
+          "marketName": "Bam Adebayo Steals Over/Under",
+          "openBookOdds": "+169",
+          "openBookOverUnder": "0.5"
+        },
+        "steals-DAVION_MITCHELL_1_NBA-game-ou-over": {
+          "oddID": "steals-DAVION_MITCHELL_1_NBA-game-ou-over",
+          "opposingOddID": "steals-DAVION_MITCHELL_1_NBA-game-ou-under",
+          "statID": "steals",
+          "statEntityID": "DAVION_MITCHELL_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "DAVION_MITCHELL_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+147",
+          "bookOdds": "+130",
+          "fairOverUnder": "1.5",
+          "bookOverUnder": "1.5",
+          "openFairOdds": "+147",
+          "openBookOdds": "+130",
+          "openFairOverUnder": "1.5",
+          "openBookOverUnder": "1.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+198",
+              "overUnder": "1.5",
+              "lastUpdatedAt": "2025-11-22T00:07:20.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.541930755&selectionId=36981613",
+              "altLines": [
+                {
+                  "odds": "-245",
+                  "overUnder": "0.5",
+                  "lastUpdatedAt": "2025-11-22T00:07:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+640",
+                  "overUnder": "2.5",
+                  "lastUpdatedAt": "2025-11-22T00:07:20.000Z",
+                  "available": true
+                }
+              ]
+            }
+          },
+          "marketName": "Davion Mitchell Steals Over/Under"
+        },
+        "steals-DAVION_MITCHELL_1_NBA-game-ou-under": {
+          "oddID": "steals-DAVION_MITCHELL_1_NBA-game-ou-under",
+          "opposingOddID": "steals-DAVION_MITCHELL_1_NBA-game-ou-over",
+          "statID": "steals",
+          "statEntityID": "DAVION_MITCHELL_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "DAVION_MITCHELL_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-147",
+          "fairOverUnder": "1.5",
+          "openFairOdds": "-147",
+          "openFairOverUnder": "1.5",
+          "scoringSupported": true,
+          "bookOdds": "-177",
+          "bookOverUnder": "1.5",
+          "byBookmaker": {},
+          "marketName": "Davion Mitchell Steals Over/Under",
+          "openBookOdds": "-177",
+          "openBookOverUnder": "1.5"
+        },
+        "steals-DRU_SMITH_1_NBA-game-ou-over": {
+          "oddID": "steals-DRU_SMITH_1_NBA-game-ou-over",
+          "opposingOddID": "steals-DRU_SMITH_1_NBA-game-ou-under",
+          "statID": "steals",
+          "statEntityID": "DRU_SMITH_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "DRU_SMITH_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+130",
+          "bookOdds": "+130",
+          "fairOverUnder": "1.5",
+          "bookOverUnder": "1.5",
+          "openFairOdds": "+130",
+          "openBookOdds": "+130",
+          "openFairOverUnder": "1.5",
+          "openBookOverUnder": "1.5",
+          "scoringSupported": true,
+          "byBookmaker": {},
+          "marketName": "Dru Smith Steals Over/Under"
+        },
+        "steals-DRU_SMITH_1_NBA-game-ou-under": {
+          "oddID": "steals-DRU_SMITH_1_NBA-game-ou-under",
+          "opposingOddID": "steals-DRU_SMITH_1_NBA-game-ou-over",
+          "statID": "steals",
+          "statEntityID": "DRU_SMITH_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "DRU_SMITH_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-130",
+          "fairOverUnder": "1.5",
+          "openFairOdds": "-130",
+          "openFairOverUnder": "1.5",
+          "scoringSupported": true,
+          "bookOdds": "-131",
+          "bookOverUnder": "1.5",
+          "byBookmaker": {},
+          "marketName": "Dru Smith Steals Over/Under",
+          "openBookOdds": "-131",
+          "openBookOverUnder": "1.5"
+        },
+        "steals-JAIME_JAQUEZ_JR_1_NBA-game-ou-over": {
+          "oddID": "steals-JAIME_JAQUEZ_JR_1_NBA-game-ou-over",
+          "opposingOddID": "steals-JAIME_JAQUEZ_JR_1_NBA-game-ou-under",
+          "statID": "steals",
+          "statEntityID": "JAIME_JAQUEZ_JR_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "JAIME_JAQUEZ_JR_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-194",
+          "bookOdds": "-240",
+          "fairOverUnder": "0.5",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "-194",
+          "openBookOdds": "-240",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-300",
+              "overUnder": "0.5",
+              "lastUpdatedAt": "2025-11-22T00:07:20.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.541930754&selectionId=41472501",
+              "altLines": [
+                {
+                  "odds": "+162",
+                  "overUnder": "1.5",
+                  "lastUpdatedAt": "2025-11-22T00:07:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+470",
+                  "overUnder": "2.5",
+                  "lastUpdatedAt": "2025-11-22T00:07:20.000Z",
+                  "available": true
+                }
+              ]
+            }
+          },
+          "marketName": "Jaime Jaquez Jr. Steals Over/Under"
+        },
+        "steals-JAIME_JAQUEZ_JR_1_NBA-game-ou-under": {
+          "oddID": "steals-JAIME_JAQUEZ_JR_1_NBA-game-ou-under",
+          "opposingOddID": "steals-JAIME_JAQUEZ_JR_1_NBA-game-ou-over",
+          "statID": "steals",
+          "statEntityID": "JAIME_JAQUEZ_JR_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "JAIME_JAQUEZ_JR_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+194",
+          "fairOverUnder": "0.5",
+          "openFairOdds": "+194",
+          "openFairOverUnder": "0.5",
+          "scoringSupported": true,
+          "bookOdds": "+175",
+          "bookOverUnder": "0.5",
+          "byBookmaker": {},
+          "marketName": "Jaime Jaquez Jr. Steals Over/Under",
+          "openBookOdds": "+175",
+          "openBookOverUnder": "0.5"
+        }
+      },
+      "players": {
+        "JAIME_JAQUEZ_JR_1_NBA": {
+          "playerID": "JAIME_JAQUEZ_JR_1_NBA",
+          "teamID": "MIAMI_HEAT_NBA",
+          "firstName": "Jamie",
+          "lastName": "Jaquez",
+          "name": "Jaime Jaquez Jr."
+        },
+        "COBY_WHITE_1_NBA": {
+          "playerID": "COBY_WHITE_1_NBA",
+          "teamID": "CHICAGO_BULLS_NBA",
+          "firstName": "Coby",
+          "lastName": "White",
+          "name": "Coby White"
+        },
+        "NIKOLA_VUCEVIC_1_NBA": {
+          "playerID": "NIKOLA_VUCEVIC_1_NBA",
+          "teamID": "CHICAGO_BULLS_NBA",
+          "firstName": "Nikola",
+          "lastName": "Vu\u010devi\u0107",
+          "name": "Nikola Vucevic"
+        },
+        "DRU_SMITH_1_NBA": {
+          "playerID": "DRU_SMITH_1_NBA",
+          "teamID": "MIAMI_HEAT_NBA",
+          "firstName": "Dru",
+          "lastName": "Smith",
+          "name": "Dru Smith"
+        },
+        "NORMAN_POWELL_1_NBA": {
+          "playerID": "NORMAN_POWELL_1_NBA",
+          "teamID": "MIAMI_HEAT_NBA",
+          "firstName": "Norman",
+          "lastName": "Powell",
+          "name": "Norman Powell"
+        },
+        "JOSH_GIDDEY_1_NBA": {
+          "playerID": "JOSH_GIDDEY_1_NBA",
+          "teamID": "CHICAGO_BULLS_NBA",
+          "firstName": "Josh",
+          "lastName": "Giddey",
+          "name": "Josh Giddey"
+        },
+        "DAVION_MITCHELL_1_NBA": {
+          "playerID": "DAVION_MITCHELL_1_NBA",
+          "teamID": "MIAMI_HEAT_NBA",
+          "firstName": "Davion",
+          "lastName": "Mitchell",
+          "name": "Davion Mitchell"
+        },
+        "PELLE_LARSSON_1_NBA": {
+          "playerID": "PELLE_LARSSON_1_NBA",
+          "teamID": "MIAMI_HEAT_NBA",
+          "firstName": "Pelle",
+          "lastName": "Larsson",
+          "name": "Pelle Larsson"
+        },
+        "BAM_ADEBAYO_1_NBA": {
+          "playerID": "BAM_ADEBAYO_1_NBA",
+          "teamID": "MIAMI_HEAT_NBA",
+          "firstName": "Bam",
+          "lastName": "Adebayo",
+          "name": "Bam Adebayo"
+        },
+        "KELEL_WARE_1_NBA": {
+          "playerID": "KELEL_WARE_1_NBA",
+          "teamID": "MIAMI_HEAT_NBA",
+          "firstName": "Kel'el",
+          "lastName": "Ware",
+          "name": "Kel'el Ware"
+        },
+        "SIMONE_FONTECCHIO_1_NBA": {
+          "playerID": "SIMONE_FONTECCHIO_1_NBA",
+          "teamID": "MIAMI_HEAT_NBA",
+          "firstName": "Simone",
+          "lastName": "Fontecchio",
+          "name": "Simone Fontecchio"
+        },
+        "MATAS_BUZELIS_1_NBA": {
+          "playerID": "MATAS_BUZELIS_1_NBA",
+          "teamID": "CHICAGO_BULLS_NBA",
+          "firstName": "Matas",
+          "lastName": "Buzelis",
+          "name": "Matas Buzelis"
+        },
+        "ISAAC_OKORO_1_NBA": {
+          "playerID": "ISAAC_OKORO_1_NBA",
+          "teamID": "CHICAGO_BULLS_NBA",
+          "firstName": "Isaac",
+          "lastName": "Okoro",
+          "name": "Isaac Okoro"
+        },
+        "ANDREW_WIGGINS_1_NBA": {
+          "playerID": "ANDREW_WIGGINS_1_NBA",
+          "teamID": "MIAMI_HEAT_NBA",
+          "firstName": "Andrew",
+          "lastName": "Wiggins",
+          "name": "Andrew Wiggins"
+        },
+        "TRE_JONES_1_NBA": {
+          "playerID": "TRE_JONES_1_NBA",
+          "teamID": "CHICAGO_BULLS_NBA",
+          "firstName": "Tre",
+          "lastName": "Jones",
+          "name": "Tre Jones"
+        },
+        "AYO_DOSUNMU_1_NBA": {
+          "playerID": "AYO_DOSUNMU_1_NBA",
+          "teamID": "CHICAGO_BULLS_NBA",
+          "firstName": "Ayo",
+          "lastName": "Dosunmu",
+          "name": "Ayo Dosunmu"
+        },
+        "JALEN_SMITH_1_NBA": {
+          "playerID": "JALEN_SMITH_1_NBA",
+          "teamID": "CHICAGO_BULLS_NBA",
+          "firstName": "Jalen",
+          "lastName": "Smith",
+          "name": "Jalen Smith"
+        },
+        "KEVIN_HUERTER_1_NBA": {
+          "playerID": "KEVIN_HUERTER_1_NBA",
+          "teamID": "CHICAGO_BULLS_NBA",
+          "firstName": "Kevin",
+          "lastName": "Huerter",
+          "name": "Kevin Huerter"
+        },
+        "PATRICK_WILLIAMS_1_NBA": {
+          "playerID": "PATRICK_WILLIAMS_1_NBA",
+          "teamID": "CHICAGO_BULLS_NBA",
+          "firstName": "Patrick",
+          "lastName": "Williams",
+          "name": "Patrick Williams"
+        }
+      }
+    }
+  ]
+}

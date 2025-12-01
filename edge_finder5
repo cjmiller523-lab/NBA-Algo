@@ -1,0 +1,460 @@
+# edge_finder_final_v2.py
+# One output: TWEETS/Top10_Trended_Props_<UTC_DATE>.txt
+# Inputs: ODDS_CACHE/* (SGO format), CACHE/* (your player game logs)
+# Stats INCLUDED: Points, Rebounds, Assists, PRA (no steals/blocks/TO/3PM)
+# Lines INCLUDED: regular O/U only (betTypeID == "ou", periodID == "game")
+# Date filter: include events with startsAt on UTC "today" OR "today+1" (to catch midnight UTC tips)
+# PRA hit-rate is computed from cached logs at the prop line/side (PTS+REB+AST).
+# Advanced score components with your chosen rules (skip zero std-dev players).
+
+import os, json, glob, re
+from datetime import datetime, timedelta
+from statistics import mean, stdev
+
+ODDS_DIR    = "ODDS_CACHE"
+CACHE_DIR   = "CACHE"
+OUTPUT_DIR  = "TWEETS"
+
+TOP_N           = 10
+LOOKBACK_HIT    = 10      # hit-rate window (games)
+LOOKBACK_TREND  = 5       # up/down trend window
+LOOKBACK_MIN3   = 3       # minutes short window
+MAX_JUICE       = -600    # drop book odds with too much juice
+MIN_EDGE_SCREEN = 0.00    # pre-screen (e.g., 0.02 => require 2%+ edge)
+
+# ===== Weights for final score =====
+W_EDGE      = 40.0  # value edge (percent)
+W_ZSCORE    = 12.0  # season z-score
+W_CONSIST   = 7.0   # 1/stddev (with floor)
+W_TREND5    = 3.0   # (last5_avg - season_avg)
+W_MOMENTUM  = 18.0  # (hit5 - hit10)
+W_MIN_TREND = 0.5   # (avg last3 min - season avg min)
+
+# ===== Stat set (only these will be considered) =====
+ALLOWED_STATS = {"points", "rebounds", "assists", "pra"}
+
+# ---------- helpers: odds ----------
+def american_to_prob(odds_str):
+    if odds_str is None: return None
+    s = str(odds_str).strip()
+    try:
+        if s.startswith("+"):
+            v = float(s[1:]); return 100.0 / (v + 100.0)
+        if s.startswith("-"):
+            v = float(s[1:]); return v / (v + 100.0)
+        v = float(s)
+        if v >= 0: return 100.0 / (v + 100.0)
+        v = abs(v); return v / (v + 100.0)
+    except: return None
+
+def int_book(odds_str):
+    if odds_str is None: return None
+    s = str(odds_str).strip()
+    try:
+        if s.startswith("+"): return int(round(float(s[1:])))
+        return int(round(float(s)))
+    except: return None
+
+# ---------- unwrap event ----------
+def unwrap_event(payload):
+    if isinstance(payload, dict):
+        if "data" in payload and isinstance(payload["data"], list) and payload["data"]:
+            return payload["data"][0]
+        if all(k in payload for k in ("teams","players","odds")):
+            return payload
+    elif isinstance(payload, list) and payload:
+        if isinstance(payload[0], dict) and all(k in payload[0] for k in ("teams","players","odds")):
+            return payload[0]
+    return None
+
+# ---------- player name + cache matching ----------
+def norm_player_name(s):
+    if not s: return None
+    s = s.strip()
+    s = re.sub(r"_\d+_NBA$", "", s)
+    s = s.replace("_", " ").replace(".", "")
+    s = re.sub(r"[’'`]", "", s)
+    s = re.sub(r"\s+", " ", s).strip()
+    return s
+
+def possible_cache_filenames(player_name):
+    base = norm_player_name(player_name)
+    if not base: return []
+    parts = base.split(" ")
+    cands = []
+    title_parts = [p.title() for p in parts]
+    snake = "_".join(title_parts)
+    lower_snake = "_".join([p.lower() for p in parts])
+    cands.extend([
+        f"{snake}.json",
+        f"{lower_snake}.json",
+        f"{base}.json",
+        f"{base.title().replace(' ','_')}.json"
+    ])
+    # handle suffixes like Jr/Sr/II...
+    if parts and parts[-1].lower() in {"jr","sr","ii","iii","iv","v"}:
+        trimmed = "_".join([p.title() for p in parts[:-1]])
+        cands.append(f"{trimmed}.json")
+    # dedup
+    seen, out = set(), []
+    for c in cands:
+        if c not in seen:
+            seen.add(c); out.append(c)
+    return out
+
+def find_cache_file(player_name):
+    for fn in possible_cache_filenames(player_name):
+        path = os.path.join(CACHE_DIR, fn)
+        if os.path.isfile(path): return path
+    # fuzzy fallback
+    base = norm_player_name(player_name) or ""
+    key = re.sub(r"[^a-z0-9]", "", base.lower())
+    for path in glob.glob(os.path.join(CACHE_DIR, "*.json")):
+        stem = os.path.splitext(os.path.basename(path))[0]
+        stem_norm = norm_player_name(stem) or stem
+        stem_key = re.sub(r"[^a-z0-9]", "", stem_norm.lower())
+        if stem_key == key:
+            return path
+    return None
+
+# ---------- stat extraction from a single game dict ----------
+STAT_KEYS = {
+    "points":   ("PTS","points","pts"),
+    "rebounds": ("REB","rebounds","reb"),
+    "assists":  ("AST","assists","ast"),
+}
+MIN_KEYS   = ("MIN","minutes","min")
+
+def parse_minutes(v):
+    # supports "34:12" -> 34 + 12/60; or numeric
+    if v is None: return None
+    if isinstance(v, (int,float)): return float(v)
+    s = str(v)
+    if ":" in s:
+        try:
+            mm, ss = s.split(":")
+            return float(mm) + float(ss)/60.0
+        except: return None
+    try:
+        return float(s)
+    except:
+        return None
+
+def get_stat_from_game(game, stat_id):
+    if stat_id == "pra":
+        p = get_stat_from_game(game, "points") or 0.0
+        r = get_stat_from_game(game, "rebounds") or 0.0
+        a = get_stat_from_game(game, "assists") or 0.0
+        return float(p)+float(r)+float(a)
+    keys = STAT_KEYS.get(stat_id, ())
+    for k in keys:
+        if k in game:
+            try: return float(game[k])
+            except: pass
+    # lowercase sweep fallback
+    for k in keys:
+        kl = k.lower()
+        if kl in game:
+            try: return float(game[kl])
+            except: pass
+    return None
+
+def get_minutes_from_game(game):
+    for k in MIN_KEYS:
+        if k in game:
+            m = parse_minutes(game[k])
+            if m is not None: return m
+    # lowercase fallback
+    for k in MIN_KEYS:
+        kl = k.lower()
+        if kl in game:
+            m = parse_minutes(game[kl])
+            if m is not None: return m
+    return None
+
+# ---------- read cache (games array) ----------
+def read_games(cache_path):
+    try:
+        with open(cache_path, "r", encoding="utf-8") as f:
+            data = json.load(f)
+    except:
+        return []
+    if isinstance(data, list):
+        games = data
+    elif isinstance(data, dict):
+        for k in ["games","game_logs","recent","logs","data"]:
+            if k in data and isinstance(data[k], list):
+                games = data[k]; break
+        else:
+            games = list(data.values()) if all(isinstance(v, dict) for v in data.values()) else []
+    else:
+        games = []
+    # sort recent first if date present
+    def gdate(g):
+        for k in ["GAME_DATE","game_date","date","GAME_DATE_EST"]:
+            if k in g:
+                try: return datetime.fromisoformat(str(g[k]).replace("Z","+00:00"))
+                except: pass
+        return None
+    dated = [(g, gdate(g)) for g in games]
+    dated.sort(key=lambda t: (t[1] is None, t[1]), reverse=True)
+    return [g for g,_ in dated]
+
+# ---------- hit-rate ----------
+def compute_hit_rate(games, stat_id, line, side, window):
+    sample = 0
+    hits = 0
+    for g in games[:window]:
+        v = get_stat_from_game(g, stat_id)
+        if v is None: continue
+        sample += 1
+        if side == "over":
+            if v >= line: hits += 1
+        else:
+            if v <= line: hits += 1
+    if sample == 0: return None, 0
+    return hits / sample, sample
+
+# ---------- season aggregates ----------
+def season_avg_and_std(games, stat_id):
+    vals = []
+    for g in games:
+        v = get_stat_from_game(g, stat_id)
+        if v is not None: vals.append(float(v))
+    if len(vals) < 2:
+        return None, None
+    try:
+        return mean(vals), stdev(vals)
+    except:
+        return None, None
+
+def avg_last_n(games, stat_id, n):
+    vals = []
+    for g in games[:n]:
+        v = get_stat_from_game(g, stat_id)
+        if v is not None: vals.append(float(v))
+    return (mean(vals) if vals else None)
+
+def season_minutes(games):
+    vals = []
+    for g in games:
+        m = get_minutes_from_game(g)
+        if m is not None: vals.append(m)
+    return (mean(vals) if vals else None)
+
+def avg_last_n_minutes(games, n):
+    vals = []
+    for g in games[:n]:
+        m = get_minutes_from_game(g)
+        if m is not None: vals.append(m)
+    return (mean(vals) if vals else None)
+
+# ---------- stat label for display ----------
+def stat_label(s):
+    return {"points":"Points","rebounds":"Rebounds","assists":"Assists","pra":"PRA"}.get(s, s.upper())
+
+# ---------- main ----------
+def main():
+    os.makedirs(OUTPUT_DIR, exist_ok=True)
+
+    files = glob.glob(os.path.join(ODDS_DIR, "*"))
+    print(f"[DEBUG] Found {len(files)} odds files")
+
+    today_utc = datetime.utcnow().date()
+    all_rows = []
+
+    for fp in files:
+        # load event
+        try:
+            with open(fp, "r", encoding="utf-8") as f:
+                payload = json.load(f)
+        except:
+            continue
+        ev = unwrap_event(payload)
+        if not isinstance(ev, dict) or "odds" not in ev or "players" not in ev:
+            continue
+
+        # date filter (UTC today or UTC+1)
+        starts_at = (ev.get("status") or {}).get("startsAt")
+        if not starts_at:
+            continue
+        try:
+            game_dt = datetime.fromisoformat(starts_at.replace("Z","+00:00"))
+            game_date = game_dt.date()
+        except:
+            continue
+        if not (game_date == today_utc or game_date == today_utc + timedelta(days=1)):
+            continue
+
+        players_map = ev.get("players", {})
+        odds_block  = ev.get("odds", {})
+
+        for oid, o in odds_block.items():
+            if not isinstance(o, dict): continue
+            if (o.get("betTypeID") or "").lower() != "ou": continue
+            if (o.get("periodID") or "").lower() != "game": continue
+
+            stat_id = (o.get("statID") or "").lower()
+            side    = (o.get("sideID") or "").lower()
+            if side not in ("over","under"): continue
+
+            # normalize stat into allowed set
+            stat_alias = {"pts":"points","reb":"rebounds","ast":"assists",
+                          "3pm":"ignore","steals":"ignore","blocks":"ignore","to":"ignore",
+                          "3pointers":"ignore","three_pointers_made":"ignore"}
+            stat_core = stat_alias.get(stat_id, stat_id)
+            if stat_core not in ALLOWED_STATS:
+                continue  # skip non-core stats by your choice
+
+            book = o.get("bookOdds")
+            fair = o.get("fairOdds")
+            line_raw = o.get("bookOverUnder") or o.get("fairOverUnder")
+            if not (book and fair and line_raw): continue
+
+            book_int = int_book(book)
+            if book.startswith("-") and book_int is not None and book_int < abs(MAX_JUICE):
+                continue
+
+            p_book = american_to_prob(book)
+            p_fair = american_to_prob(fair)
+            if p_book is None or p_fair is None: continue
+            edge = p_fair - p_book
+            if edge < MIN_EDGE_SCREEN: continue
+
+            # player name
+            pid = o.get("playerID") or o.get("statEntityID")
+            disp = players_map.get(pid, {}).get("name") if pid in players_map else None
+            if not disp: disp = norm_player_name(pid)
+
+            # numeric line
+            try:
+                line = float(str(line_raw))
+            except:
+                m = re.search(r"[-+]?\d+(\.\d+)?", str(line_raw))
+                if not m: continue
+                line = float(m.group(0))
+
+            # read player cache
+            cache_path = find_cache_file(disp)
+            if not cache_path:
+                continue
+            games = read_games(cache_path)
+            if not games:
+                continue
+
+            # hit rates
+            hit10, n10 = compute_hit_rate(games, stat_core, line, side, LOOKBACK_HIT)
+            hit5,  n5  = compute_hit_rate(games, stat_core, line, side, LOOKBACK_TREND)
+            if hit10 is None or n10 == 0:
+                continue
+
+            # season avg + std (skip zero std as requested)
+            s_avg, s_std = season_avg_and_std(games, stat_core)
+            if s_avg is None or s_std is None or s_std == 0:
+                # Your choice A: skip zero-std / insufficient season stats
+                continue
+
+            # z-score (line vs season mean)
+            # For OVER, positive (s_avg - line) boosts if mean > line
+            # For UNDER, flip sign so positive favors the chosen side
+            z = (s_avg - line) / s_std
+            if side == "under":
+                z = -z
+
+            # consistency (use sd with floor so it doesn't explode)
+            sd_floor = max(s_std, 0.1)
+            consistency = 1.0 / sd_floor
+
+            # trend last 5 (difference from season avg, directional to chosen side)
+            last5_avg = avg_last_n(games, stat_core, LOOKBACK_TREND)
+            trend5 = 0.0
+            if last5_avg is not None:
+                d = last5_avg - s_avg
+                trend5 = d if side == "over" else -d
+
+            # momentum (hit5 - hit10)
+            momentum = 0.0
+            if hit5 is not None and n5 > 0:
+                momentum = (hit5 - hit10)
+
+            # minutes trend
+            s_min = season_minutes(games)
+            l3_min = avg_last_n_minutes(games, LOOKBACK_MIN3)
+            min_trend = 0.0
+            if s_min is not None and l3_min is not None:
+                min_trend = l3_min - s_min
+
+            # final score
+            score = (
+                hit10 * 100.0
+                + (edge * 100.0) * W_EDGE
+                + z * W_ZSCORE
+                + consistency * W_CONSIST
+                + trend5 * W_TREND5
+                + momentum * W_MOMENTUM
+                + min_trend * W_MIN_TREND
+            )
+
+            all_rows.append({
+                "player": disp,
+                "stat": stat_core,
+                "side": side,
+                "line": line,
+                "book": str(book),
+                "fair": str(fair),
+                "edge": edge,           # fraction
+                "hit10": hit10,         # fraction
+                "hit5": hit5 if hit5 is not None else None,
+                "z": z,
+                "consistency": consistency,
+                "trend5": trend5,
+                "momentum": momentum,
+                "min_trend": min_trend,
+                "score": score
+            })
+
+    if not all_rows:
+        print("[INFO] No qualifying props for today's slate.")
+        date_str = datetime.utcnow().strftime("%Y-%m-%d")
+        out_path = os.path.join(OUTPUT_DIR, f"Top10_Trended_Props_{date_str}.txt")
+        with open(out_path, "w", encoding="utf-8") as f:
+            f.write(f"Top {TOP_N} Trended Props — {date_str}\n\nNo qualifying props.")
+        print(f"[OK] Wrote: {out_path}")
+        return
+
+    # sort and take Top N
+    all_rows.sort(key=lambda x: x["score"], reverse=True)
+    top = all_rows[:TOP_N]
+
+    date_str = datetime.utcnow().strftime("%Y-%m-%d")
+
+    def fmt_pct(x, digits=1):
+        return f"{x*100:.{digits}f}%" if x is not None else "—"
+
+    # build lines
+    header = f"Top {TOP_N} Trended Props — {date_str}"
+    lines = [header, ""]
+    for i, p in enumerate(top, 1):
+        side_char = "O" if p["side"] == "over" else "U"
+        lines.append(
+            f"{i}. {p['player']} — {stat_label(p['stat'])} {side_char}{p['line']}"
+        )
+        lines.append(
+            f"   Score: {p['score']:.1f} | Hit10: {fmt_pct(p['hit10'],0)} | Edge: +{fmt_pct(p['edge'])} | "
+            f"Z: {p['z']:+.2f} | Trend5: {p['trend5']:+.2f} | Mom: {p['momentum']:+.2f} | MinTrend: {p['min_trend']:+.1f} | "
+            f"Book {p['book']} (fair {p['fair']})"
+        )
+
+    # print to terminal
+    print("\n".join(lines))
+
+    # write to file
+    os.makedirs(OUTPUT_DIR, exist_ok=True)
+    out_path = os.path.join(OUTPUT_DIR, f"Top10_Trended_Props_{date_str}.txt")
+    with open(out_path, "w", encoding="utf-8") as f:
+        f.write("\n".join(lines))
+
+    print(f"\n[OK] Wrote Top {TOP_N}: {out_path}")
+
+if __name__ == "__main__":
+    main()

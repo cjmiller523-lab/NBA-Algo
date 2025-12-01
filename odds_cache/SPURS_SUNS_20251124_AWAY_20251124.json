@@ -1,0 +1,2781 @@
+{
+  "nextCursor": "n.1763946000000.YpkTRX3UyOYOiPZ14pRj",
+  "success": true,
+  "data": [
+    {
+      "eventID": "YpkTRX3UyOYOiPZ14pRj",
+      "sportID": "BASKETBALL",
+      "leagueID": "NBA",
+      "type": "match",
+      "teams": {
+        "home": {
+          "teamID": "PHOENIX_SUNS_NBA",
+          "names": {
+            "long": "Phoenix Suns",
+            "medium": "Suns",
+            "short": "PHX",
+            "location": "Phoenix"
+          },
+          "colors": {
+            "primary": "#E56020",
+            "secondary": "#1D1160",
+            "primaryContrast": "#000000",
+            "secondaryContrast": "#E56020"
+          },
+          "statEntityID": "home",
+          "score": 29
+        },
+        "away": {
+          "teamID": "SAN_ANTONIO_SPURS_NBA",
+          "names": {
+            "long": "San Antonio Spurs",
+            "medium": "Spurs",
+            "short": "SAS",
+            "location": "San Antonio"
+          },
+          "colors": {
+            "primary": "#A6AFAF",
+            "secondary": "",
+            "primaryContrast": "#000000",
+            "secondaryContrast": ""
+          },
+          "statEntityID": "away",
+          "score": 36
+        }
+      },
+      "status": {
+        "started": true,
+        "completed": false,
+        "cancelled": false,
+        "ended": false,
+        "live": true,
+        "delayed": false,
+        "currentPeriodID": "2q",
+        "previousPeriodID": "1q",
+        "displayShort": "2nd",
+        "displayLong": "2nd Quarter",
+        "inBreak": false,
+        "startsAt": "2025-11-24T01:00:00.000Z",
+        "previousStartsAt": [],
+        "hardStart": true,
+        "periods": {
+          "started": [
+            "1q",
+            "2q",
+            "game",
+            "reg"
+          ],
+          "ended": [
+            "1q"
+          ]
+        },
+        "oddsPresent": true,
+        "oddsAvailable": true,
+        "finalized": false,
+        "clock": "9:09"
+      },
+      "info": {
+        "seasonWeek": "NBA 25/26"
+      },
+      "links": {
+        "bookmakers": {
+          "fanduel": "https://sportsbook.fanduel.com/basketball/-/34987546",
+          "paddypower": "https://www.paddypower.com/basketball/nba/san-antonio-spurs-@-phoenix-suns-34987546",
+          "sportsbet": "https://www.sportsbet.com.au/betting/basketball---us/nba/san-antonio-spurs-at-phoenix-suns-9874473",
+          "lowvig": "https://sports.lowvig.ag/sportsbook/basketball/nba/game/490890444",
+          "pointsbet": "https://pointsbet.com.au/sports/basketball/NBA/2515586",
+          "ladbrokes": "https://www.ladbrokes.com.au/sports/-/-/-/a45c1bd2-ddbf-4adf-905f-b7e68e1c81ef",
+          "betonline": "https://sports.betonline.ag/sportsbook/basketball/nba/game/490890444",
+          "neds": "https://www.neds.com.au/sports/-/-/-/a45c1bd2-ddbf-4adf-905f-b7e68e1c81ef",
+          "boombet": "https://www.boombet.com.au/sport-menu/Sport/Basketball/NBA/39582445",
+          "888sport": "https://www.888sport.com/basketball/united-states-of-america/nba/san-antonio-spurs-phoenix-suns-e-6744035",
+          "betrsportsbook": "https://www.betr.com.au/sports/Basketball/107/United-States-of-America/NBA/San-Antonio-Spurs-@-Phoenix-Suns/1913878/All-Markets",
+          "boylesports": "https://www.boylesports.com/sports/basketball/event/usa-nba/phoenix-suns-v-san-antonio-spurs",
+          "coolbet": "https://www.coolbet.com/en/sports/match/4673672",
+          "nordicbet": "https://www.nordicbet.com/en/sportsbook/basketball/nba/nba/phoenix-suns-san-antonio-spurs",
+          "betsson": "https://www.betsson.com/en/sportsbook/basketball/nba/nba?eventId=f-qQA2Ur7120uT39lLRCA29w",
+          "playup": "https://www.playup.com.au/betting/sports/nba/phoenix-suns-v-san-antonio-spurs/1720843",
+          "fliff": "https://sports.getfliff.com/markets/346725_c_p_204_prematch",
+          "1xbet": "https://1xbet.com/en/line/football/13589-nba/289035359-phoenix-suns-san-antonio-spurs",
+          "williamhill": "https://sports.williamhill.com/betting/en-gb/basketball/OB_EV37774524/san-antonio-spurs-at-phoenix-suns",
+          "draftkings": "https://sportsbook.draftkings.com/event/33183087",
+          "tab": "https://www.tab.com.au/sports/betting/Basketball/competitions/NBA/matches/Phoenix%20v%20San%20Antonio",
+          "caesars": "https://sportsbook.caesars.com/us/nj/bet/basketball/5451781c-c2bd-4429-b001-6c3965ed6d97/san-antonio-spurs-at-phoenix-suns",
+          "betmgm": "https://sports.nj.betmgm.com/en/sports/events/18444020",
+          "coral": "https://sports.coral.co.uk/event/basketball/basketball-usa/nba/phx-suns-v-sa-spurs/40525946",
+          "matchbook": "https://www.matchbook.com/events/basketball/united-states-of-america/nba/31789657892600053",
+          "hardrockbet": "https://app.hardrock.bet/home/competition/nba/8265307775194366198",
+          "espnbet": "https://espnbet.com/sport/basketball/organization/united-states/competition/nba/event/451931ea-d5de-46b3-a2f1-76750c0e0b37",
+          "thescorebet": "https://thescore.bet/sport/basketball/organization/united-states/competition/nba/event/451931ea-d5de-46b3-a2f1-76750c0e0b37",
+          "bovada": "https://www.bovada.lv/sports/basketball/nba/san-antonio-spurs-phoenix-suns-202511232000",
+          "pinnacle": "https://www.pinnacle.com/en/basketball/nba/san-antonio-spurs-vs-phoenix-suns/1619691593",
+          "betfairsportsbook": "https://www.betfair.com/betting/basketball/nba/san-antonio-spurs-@-phoenix-suns/e-34987546",
+          "ballybet": "https://play.ballybet.com/sports#event/1024652667",
+          "betparx": "https://nj.betparx.com/kambi#event/1024652667",
+          "betrivers": "https://nj.betrivers.com/?page=sportsbook#event/1024652667",
+          "casumo": "https://www.casumo.com/en-gb/sports#event/1024652667",
+          "grosvenor": "https://www.grosvenorcasinos.com/sport#event/1024652667",
+          "leovegas": "https://www.leovegas.co.uk/betting#event/1024652667",
+          "livescorebet": "https://www.livescorebet.com/uk/sports/basketball/nba/phoenix-suns-san-antonio-spurs/SBTE_2_1024652667",
+          "tabtouch": "https://www.tabtouch.mobi/tabtouch-sports/event/1024652667",
+          "unibet": "https://www.unibet.com/betting/sports/event/1024652667",
+          "virginbet": "https://www.virginbet.com/sports/basketball/nba/phoenix-suns-san-antonio-spurs/SBTE_2_1024652667",
+          "betway": "https://betway.com/en/sports/evt/16061993"
+        }
+      },
+      "odds": {
+        "assists-DEAARON_FOX_1_NBA-game-ou-over": {
+          "oddID": "assists-DEAARON_FOX_1_NBA-game-ou-over",
+          "opposingOddID": "assists-DEAARON_FOX_1_NBA-game-ou-under",
+          "statID": "assists",
+          "statEntityID": "DEAARON_FOX_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "DEAARON_FOX_1_NBA",
+          "started": true,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-119",
+          "bookOdds": "-144",
+          "fairOverUnder": "4.5",
+          "bookOverUnder": "4.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-148",
+              "overUnder": "4.5",
+              "lastUpdatedAt": "2025-11-24T01:45:43.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.542323336&selectionId=15572079",
+              "altLines": [
+                {
+                  "odds": "-330",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2025-11-24T01:45:43.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+142",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2025-11-24T01:45:43.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+108",
+                  "overUnder": "6.5",
+                  "lastUpdatedAt": "2025-11-24T01:35:22.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "+550",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2025-11-24T01:45:43.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+154",
+                  "overUnder": "8.5",
+                  "lastUpdatedAt": "2025-11-24T01:11:32.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "+1280",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2025-11-24T01:45:43.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+370",
+                  "overUnder": "10.5",
+                  "lastUpdatedAt": "2025-11-24T01:11:32.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "+2500",
+                  "overUnder": "11.5",
+                  "lastUpdatedAt": "2025-11-24T01:41:08.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "+3500",
+                  "overUnder": "13.5",
+                  "lastUpdatedAt": "2025-11-24T01:22:22.000Z",
+                  "available": false
+                }
+              ]
+            }
+          },
+          "marketName": "De'Aaron Fox Assists Over/Under",
+          "closeBookOdds": "-144",
+          "closeBookOverUnder": "4.5",
+          "closeFairOdds": "-119",
+          "closeFairOverUnder": "4.5"
+        },
+        "assists-DEAARON_FOX_1_NBA-game-ou-under": {
+          "oddID": "assists-DEAARON_FOX_1_NBA-game-ou-under",
+          "opposingOddID": "assists-DEAARON_FOX_1_NBA-game-ou-over",
+          "statID": "assists",
+          "statEntityID": "DEAARON_FOX_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "DEAARON_FOX_1_NBA",
+          "started": true,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+119",
+          "bookOdds": "+107",
+          "fairOverUnder": "4.5",
+          "bookOverUnder": "4.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+112",
+              "overUnder": "4.5",
+              "lastUpdatedAt": "2025-11-24T01:45:43.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.542323336&selectionId=15572080",
+              "altLines": [
+                {
+                  "odds": "-144",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2025-11-24T01:43:21.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "-144",
+                  "overUnder": "6.5",
+                  "lastUpdatedAt": "2025-11-24T01:35:22.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "-152",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2025-11-24T01:12:46.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "-210",
+                  "overUnder": "8.5",
+                  "lastUpdatedAt": "2025-11-24T01:11:32.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "-320",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2025-11-24T01:11:32.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "-600",
+                  "overUnder": "10.5",
+                  "lastUpdatedAt": "2025-11-24T01:11:32.000Z",
+                  "available": false
+                }
+              ]
+            }
+          },
+          "marketName": "De'Aaron Fox Assists Over/Under",
+          "closeBookOdds": "+107",
+          "closeBookOverUnder": "4.5",
+          "closeFairOdds": "+119",
+          "closeFairOverUnder": "4.5"
+        },
+        "points-DEAARON_FOX_1_NBA-game-ou-over": {
+          "oddID": "points-DEAARON_FOX_1_NBA-game-ou-over",
+          "opposingOddID": "points-DEAARON_FOX_1_NBA-game-ou-under",
+          "statID": "points",
+          "statEntityID": "DEAARON_FOX_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "DEAARON_FOX_1_NBA",
+          "started": true,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-102",
+          "bookOdds": "-120",
+          "fairOverUnder": "25.5",
+          "bookOverUnder": "25.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-114",
+              "overUnder": "25.5",
+              "lastUpdatedAt": "2025-11-24T01:45:43.000Z",
+              "available": true,
+              "altLines": [
+                {
+                  "odds": "-5000",
+                  "overUnder": "14.5",
+                  "lastUpdatedAt": "2025-11-24T01:41:08.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "-580",
+                  "overUnder": "16.5",
+                  "lastUpdatedAt": "2025-11-24T01:11:32.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "-420",
+                  "overUnder": "17.5",
+                  "lastUpdatedAt": "2025-11-24T01:11:32.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "-320",
+                  "overUnder": "18.5",
+                  "lastUpdatedAt": "2025-11-24T01:11:32.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "-700",
+                  "overUnder": "19.5",
+                  "lastUpdatedAt": "2025-11-24T01:45:43.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-205",
+                  "overUnder": "20.5",
+                  "lastUpdatedAt": "2025-11-24T01:11:32.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "-130",
+                  "overUnder": "21.5",
+                  "lastUpdatedAt": "2025-11-24T01:12:46.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "-125",
+                  "overUnder": "22.5",
+                  "lastUpdatedAt": "2025-11-24T01:17:34.204Z",
+                  "available": false
+                },
+                {
+                  "odds": "-120",
+                  "overUnder": "23.5",
+                  "lastUpdatedAt": "2025-11-24T01:38:17.455Z",
+                  "available": false
+                },
+                {
+                  "odds": "-152",
+                  "overUnder": "24.5",
+                  "lastUpdatedAt": "2025-11-24T01:45:43.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-114",
+                  "overUnder": "26.5",
+                  "lastUpdatedAt": "2025-11-24T01:43:21.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "+220",
+                  "overUnder": "27.5",
+                  "lastUpdatedAt": "2025-11-24T01:11:32.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "+265",
+                  "overUnder": "28.5",
+                  "lastUpdatedAt": "2025-11-24T01:11:32.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "+230",
+                  "overUnder": "29.5",
+                  "lastUpdatedAt": "2025-11-24T01:45:43.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+390",
+                  "overUnder": "30.5",
+                  "lastUpdatedAt": "2025-11-24T01:11:32.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "+450",
+                  "overUnder": "31.5",
+                  "lastUpdatedAt": "2025-11-24T01:11:32.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "+350",
+                  "overUnder": "32.5",
+                  "lastUpdatedAt": "2025-11-23T21:22:17.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "+400",
+                  "overUnder": "33.5",
+                  "lastUpdatedAt": "2025-11-23T21:22:17.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "+700",
+                  "overUnder": "34.5",
+                  "lastUpdatedAt": "2025-11-24T01:45:43.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1700",
+                  "overUnder": "39.5",
+                  "lastUpdatedAt": "2025-11-24T01:45:43.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+5000",
+                  "overUnder": "44.5",
+                  "lastUpdatedAt": "2025-11-24T01:43:21.000Z",
+                  "available": false
+                }
+              ],
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.542323331&selectionId=15572079"
+            }
+          },
+          "marketName": "De'Aaron Fox Points Over/Under",
+          "closeBookOdds": "-120",
+          "closeBookOverUnder": "25.5",
+          "closeFairOdds": "-102",
+          "closeFairOverUnder": "25.5"
+        },
+        "points-DEAARON_FOX_1_NBA-game-ou-under": {
+          "oddID": "points-DEAARON_FOX_1_NBA-game-ou-under",
+          "opposingOddID": "points-DEAARON_FOX_1_NBA-game-ou-over",
+          "statID": "points",
+          "statEntityID": "DEAARON_FOX_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "DEAARON_FOX_1_NBA",
+          "started": true,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+102",
+          "bookOdds": "-114",
+          "fairOverUnder": "25.5",
+          "bookOverUnder": "25.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-114",
+              "overUnder": "25.5",
+              "lastUpdatedAt": "2025-11-24T01:45:43.000Z",
+              "available": true,
+              "altLines": [
+                {
+                  "odds": "+360",
+                  "overUnder": "16.5",
+                  "lastUpdatedAt": "2025-11-24T01:11:32.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "+280",
+                  "overUnder": "17.5",
+                  "lastUpdatedAt": "2025-11-24T01:11:32.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "+225",
+                  "overUnder": "18.5",
+                  "lastUpdatedAt": "2025-11-24T01:11:32.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "+188",
+                  "overUnder": "19.5",
+                  "lastUpdatedAt": "2025-11-24T01:11:32.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "+152",
+                  "overUnder": "20.5",
+                  "lastUpdatedAt": "2025-11-24T01:11:32.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "-102",
+                  "overUnder": "21.5",
+                  "lastUpdatedAt": "2025-11-24T01:12:46.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "-106",
+                  "overUnder": "22.5",
+                  "lastUpdatedAt": "2025-11-24T01:17:34.204Z",
+                  "available": false
+                },
+                {
+                  "odds": "-110",
+                  "overUnder": "23.5",
+                  "lastUpdatedAt": "2025-11-24T01:38:17.455Z",
+                  "available": false
+                },
+                {
+                  "odds": "-102",
+                  "overUnder": "24.5",
+                  "lastUpdatedAt": "2025-11-24T01:47:15.684Z",
+                  "available": true
+                },
+                {
+                  "odds": "-114",
+                  "overUnder": "26.5",
+                  "lastUpdatedAt": "2025-11-24T01:43:21.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "-310",
+                  "overUnder": "27.5",
+                  "lastUpdatedAt": "2025-11-24T01:11:32.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "-390",
+                  "overUnder": "28.5",
+                  "lastUpdatedAt": "2025-11-24T01:11:32.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "-490",
+                  "overUnder": "29.5",
+                  "lastUpdatedAt": "2025-11-24T01:11:32.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "-650",
+                  "overUnder": "30.5",
+                  "lastUpdatedAt": "2025-11-24T01:11:32.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "-800",
+                  "overUnder": "31.5",
+                  "lastUpdatedAt": "2025-11-24T01:11:32.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "-1100",
+                  "overUnder": "32.5",
+                  "lastUpdatedAt": "2025-11-24T01:11:32.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "-1450",
+                  "overUnder": "33.5",
+                  "lastUpdatedAt": "2025-11-24T01:11:32.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "-900",
+                  "overUnder": "34.5",
+                  "lastUpdatedAt": "2025-11-23T21:22:17.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "-1200",
+                  "overUnder": "35.5",
+                  "lastUpdatedAt": "2025-11-23T21:22:17.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "-1450",
+                  "overUnder": "36.5",
+                  "lastUpdatedAt": "2025-11-23T18:43:53.000Z",
+                  "available": false
+                }
+              ],
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.542323331&selectionId=15572080"
+            }
+          },
+          "marketName": "De'Aaron Fox Points Over/Under",
+          "closeBookOdds": "-114",
+          "closeBookOverUnder": "25.5",
+          "closeFairOdds": "+102",
+          "closeFairOverUnder": "25.5"
+        },
+        "points-DEVIN_VASSELL_1_NBA-game-ou-over": {
+          "oddID": "points-DEVIN_VASSELL_1_NBA-game-ou-over",
+          "opposingOddID": "points-DEVIN_VASSELL_1_NBA-game-ou-under",
+          "statID": "points",
+          "statEntityID": "DEVIN_VASSELL_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "DEVIN_VASSELL_1_NBA",
+          "started": true,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+108",
+          "bookOdds": "-106",
+          "fairOverUnder": "13.5",
+          "bookOverUnder": "13.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+100",
+              "overUnder": "13.5",
+              "lastUpdatedAt": "2025-11-24T01:45:43.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.542323332&selectionId=38295529",
+              "altLines": [
+                {
+                  "odds": "-390",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2025-11-24T01:45:43.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-850",
+                  "overUnder": "10.5",
+                  "lastUpdatedAt": "2025-11-24T01:11:32.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "-580",
+                  "overUnder": "11.5",
+                  "lastUpdatedAt": "2025-11-24T01:11:32.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "-132",
+                  "overUnder": "12.5",
+                  "lastUpdatedAt": "2025-11-24T01:44:30.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "+134",
+                  "overUnder": "14.5",
+                  "lastUpdatedAt": "2025-11-24T01:45:43.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-110",
+                  "overUnder": "15.5",
+                  "lastUpdatedAt": "2025-11-24T01:22:22.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "-110",
+                  "overUnder": "16.5",
+                  "lastUpdatedAt": "2025-11-24T01:17:34.204Z",
+                  "available": false
+                },
+                {
+                  "odds": "-102",
+                  "overUnder": "17.5",
+                  "lastUpdatedAt": "2025-11-24T01:11:32.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "+118",
+                  "overUnder": "18.5",
+                  "lastUpdatedAt": "2025-11-24T01:11:32.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "+520",
+                  "overUnder": "19.5",
+                  "lastUpdatedAt": "2025-11-24T01:45:43.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+182",
+                  "overUnder": "20.5",
+                  "lastUpdatedAt": "2025-11-24T01:11:32.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "+225",
+                  "overUnder": "21.5",
+                  "lastUpdatedAt": "2025-11-24T01:11:32.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "+1400",
+                  "overUnder": "24.5",
+                  "lastUpdatedAt": "2025-11-24T01:45:43.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+2800",
+                  "overUnder": "29.5",
+                  "lastUpdatedAt": "2025-11-24T01:35:22.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "+3000",
+                  "overUnder": "34.5",
+                  "lastUpdatedAt": "2025-11-24T01:11:32.000Z",
+                  "available": false
+                }
+              ]
+            }
+          },
+          "marketName": "Devin Vassell Points Over/Under",
+          "closeBookOdds": "-106",
+          "closeBookOverUnder": "13.5",
+          "closeFairOdds": "+108",
+          "closeFairOverUnder": "13.5"
+        },
+        "points-DEVIN_VASSELL_1_NBA-game-ou-under": {
+          "oddID": "points-DEVIN_VASSELL_1_NBA-game-ou-under",
+          "opposingOddID": "points-DEVIN_VASSELL_1_NBA-game-ou-over",
+          "statID": "points",
+          "statEntityID": "DEVIN_VASSELL_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "DEVIN_VASSELL_1_NBA",
+          "started": true,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-108",
+          "bookOdds": "-127",
+          "fairOverUnder": "13.5",
+          "bookOverUnder": "13.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-132",
+              "overUnder": "13.5",
+              "lastUpdatedAt": "2025-11-24T01:45:43.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.542323332&selectionId=38295528",
+              "altLines": [
+                {
+                  "odds": "+470",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2025-11-23T20:08:50.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "+470",
+                  "overUnder": "10.5",
+                  "lastUpdatedAt": "2025-11-24T01:11:32.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "+360",
+                  "overUnder": "11.5",
+                  "lastUpdatedAt": "2025-11-24T01:11:32.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "+100",
+                  "overUnder": "12.5",
+                  "lastUpdatedAt": "2025-11-24T01:44:30.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "-130",
+                  "overUnder": "14.5",
+                  "lastUpdatedAt": "2025-11-24T01:35:22.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "-120",
+                  "overUnder": "15.5",
+                  "lastUpdatedAt": "2025-11-24T01:22:22.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "-120",
+                  "overUnder": "16.5",
+                  "lastUpdatedAt": "2025-11-24T01:17:34.204Z",
+                  "available": false
+                },
+                {
+                  "odds": "-125",
+                  "overUnder": "17.5",
+                  "lastUpdatedAt": "2025-11-24T01:11:32.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "-158",
+                  "overUnder": "18.5",
+                  "lastUpdatedAt": "2025-11-24T01:11:32.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "-200",
+                  "overUnder": "19.5",
+                  "lastUpdatedAt": "2025-11-24T01:11:32.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "-250",
+                  "overUnder": "20.5",
+                  "lastUpdatedAt": "2025-11-24T01:11:32.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "-320",
+                  "overUnder": "21.5",
+                  "lastUpdatedAt": "2025-11-24T01:11:32.000Z",
+                  "available": false
+                }
+              ]
+            }
+          },
+          "marketName": "Devin Vassell Points Over/Under",
+          "closeBookOdds": "-127",
+          "closeBookOverUnder": "13.5",
+          "closeFairOdds": "-108",
+          "closeFairOverUnder": "13.5"
+        },
+        "points-HARRISON_BARNES_1_NBA-game-ou-over": {
+          "oddID": "points-HARRISON_BARNES_1_NBA-game-ou-over",
+          "opposingOddID": "points-HARRISON_BARNES_1_NBA-game-ou-under",
+          "statID": "points",
+          "statEntityID": "HARRISON_BARNES_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "HARRISON_BARNES_1_NBA",
+          "started": true,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+105",
+          "bookOdds": "-130",
+          "fairOverUnder": "17.5",
+          "bookOverUnder": "16.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-104",
+              "overUnder": "17.5",
+              "lastUpdatedAt": "2025-11-24T01:45:43.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.542325466&selectionId=12257277",
+              "altLines": [
+                {
+                  "odds": "-1000",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2025-11-24T01:11:32.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "-600",
+                  "overUnder": "8.5",
+                  "lastUpdatedAt": "2025-11-24T01:11:32.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "-5000",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2025-11-24T01:45:43.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-300",
+                  "overUnder": "10.5",
+                  "lastUpdatedAt": "2025-11-24T01:11:32.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "-230",
+                  "overUnder": "11.5",
+                  "lastUpdatedAt": "2025-11-24T01:11:32.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "-125",
+                  "overUnder": "12.5",
+                  "lastUpdatedAt": "2025-11-24T01:14:46.227Z",
+                  "available": false
+                },
+                {
+                  "odds": "-125",
+                  "overUnder": "13.5",
+                  "lastUpdatedAt": "2025-11-24T01:19:21.153Z",
+                  "available": false
+                },
+                {
+                  "odds": "-280",
+                  "overUnder": "14.5",
+                  "lastUpdatedAt": "2025-11-24T01:45:43.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-108",
+                  "overUnder": "15.5",
+                  "lastUpdatedAt": "2025-11-24T01:41:08.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "+100",
+                  "overUnder": "16.5",
+                  "lastUpdatedAt": "2025-11-24T01:43:21.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "+265",
+                  "overUnder": "18.5",
+                  "lastUpdatedAt": "2025-11-24T01:11:32.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "+174",
+                  "overUnder": "19.5",
+                  "lastUpdatedAt": "2025-11-24T01:45:43.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+630",
+                  "overUnder": "24.5",
+                  "lastUpdatedAt": "2025-11-24T01:45:43.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1700",
+                  "overUnder": "29.5",
+                  "lastUpdatedAt": "2025-11-24T01:45:43.000Z",
+                  "available": true
+                }
+              ]
+            }
+          },
+          "marketName": "Harrison Barnes Points Over/Under",
+          "closeBookOdds": "-130",
+          "closeBookOverUnder": "16.5",
+          "closeFairOdds": "+105",
+          "closeFairOverUnder": "17.5"
+        },
+        "points-HARRISON_BARNES_1_NBA-game-ou-under": {
+          "oddID": "points-HARRISON_BARNES_1_NBA-game-ou-under",
+          "opposingOddID": "points-HARRISON_BARNES_1_NBA-game-ou-over",
+          "statID": "points",
+          "statEntityID": "HARRISON_BARNES_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "HARRISON_BARNES_1_NBA",
+          "started": true,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-105",
+          "bookOdds": "+100",
+          "fairOverUnder": "17.5",
+          "bookOverUnder": "16.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-125",
+              "overUnder": "17.5",
+              "lastUpdatedAt": "2025-11-24T01:45:43.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.542325466&selectionId=12257276",
+              "altLines": [
+                {
+                  "odds": "+520",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2025-11-24T00:59:28.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "+370",
+                  "overUnder": "8.5",
+                  "lastUpdatedAt": "2025-11-24T01:11:32.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "+280",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2025-11-24T01:11:32.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "+210",
+                  "overUnder": "10.5",
+                  "lastUpdatedAt": "2025-11-24T01:11:32.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "+168",
+                  "overUnder": "11.5",
+                  "lastUpdatedAt": "2025-11-24T01:11:32.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "-106",
+                  "overUnder": "12.5",
+                  "lastUpdatedAt": "2025-11-24T01:14:46.227Z",
+                  "available": false
+                },
+                {
+                  "odds": "-106",
+                  "overUnder": "13.5",
+                  "lastUpdatedAt": "2025-11-24T01:19:21.153Z",
+                  "available": false
+                },
+                {
+                  "odds": "-106",
+                  "overUnder": "14.5",
+                  "lastUpdatedAt": "2025-11-24T01:24:34.780Z",
+                  "available": false
+                },
+                {
+                  "odds": "-122",
+                  "overUnder": "15.5",
+                  "lastUpdatedAt": "2025-11-24T01:41:08.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "-132",
+                  "overUnder": "16.5",
+                  "lastUpdatedAt": "2025-11-24T01:43:21.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "-390",
+                  "overUnder": "18.5",
+                  "lastUpdatedAt": "2025-11-24T01:11:32.000Z",
+                  "available": false
+                }
+              ]
+            }
+          },
+          "marketName": "Harrison Barnes Points Over/Under",
+          "closeBookOdds": "+100",
+          "closeBookOverUnder": "16.5",
+          "closeFairOdds": "-105",
+          "closeFairOverUnder": "17.5"
+        },
+        "assists-DEVIN_VASSELL_1_NBA-game-ou-over": {
+          "oddID": "assists-DEVIN_VASSELL_1_NBA-game-ou-over",
+          "opposingOddID": "assists-DEVIN_VASSELL_1_NBA-game-ou-under",
+          "marketName": "Devin Vassell Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "DEVIN_VASSELL_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "DEVIN_VASSELL_1_NBA",
+          "started": true,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+129",
+          "bookOdds": "+115",
+          "fairOverUnder": "3.5",
+          "bookOverUnder": "3.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+110",
+              "overUnder": "3.5",
+              "lastUpdatedAt": "2025-11-24T01:45:43.000Z",
+              "available": true,
+              "altLines": [
+                {
+                  "odds": "-2000",
+                  "overUnder": "1.5",
+                  "lastUpdatedAt": "2025-11-24T01:45:43.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-114",
+                  "overUnder": "2.5",
+                  "lastUpdatedAt": "2025-11-24T01:24:48.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "+220",
+                  "overUnder": "4.5",
+                  "lastUpdatedAt": "2025-11-24T01:11:32.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "+640",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2025-11-24T01:45:43.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+2000",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2025-11-24T01:27:08.000Z",
+                  "available": false
+                }
+              ],
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.542323337&selectionId=38295529"
+            }
+          },
+          "closeBookOdds": "+115",
+          "closeBookOverUnder": "3.5",
+          "closeFairOdds": "+129",
+          "closeFairOverUnder": "3.5"
+        },
+        "assists-DEVIN_VASSELL_1_NBA-game-ou-under": {
+          "oddID": "assists-DEVIN_VASSELL_1_NBA-game-ou-under",
+          "opposingOddID": "assists-DEVIN_VASSELL_1_NBA-game-ou-over",
+          "marketName": "Devin Vassell Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "DEVIN_VASSELL_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "DEVIN_VASSELL_1_NBA",
+          "started": true,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-129",
+          "bookOdds": "-150",
+          "fairOverUnder": "3.5",
+          "bookOverUnder": "3.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-146",
+              "overUnder": "3.5",
+              "lastUpdatedAt": "2025-11-24T01:45:43.000Z",
+              "available": true,
+              "altLines": [
+                {
+                  "odds": "+470",
+                  "overUnder": "1.5",
+                  "lastUpdatedAt": "2025-11-24T01:11:32.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "-114",
+                  "overUnder": "2.5",
+                  "lastUpdatedAt": "2025-11-24T01:24:48.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "-310",
+                  "overUnder": "4.5",
+                  "lastUpdatedAt": "2025-11-24T01:11:32.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "-800",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2025-11-24T01:11:32.000Z",
+                  "available": false
+                }
+              ],
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.542323337&selectionId=38295528"
+            }
+          },
+          "closeBookOdds": "-150",
+          "closeBookOverUnder": "3.5",
+          "closeFairOdds": "-129",
+          "closeFairOverUnder": "3.5"
+        },
+        "assists-HARRISON_BARNES_1_NBA-game-ou-over": {
+          "oddID": "assists-HARRISON_BARNES_1_NBA-game-ou-over",
+          "opposingOddID": "assists-HARRISON_BARNES_1_NBA-game-ou-under",
+          "marketName": "Harrison Barnes Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "HARRISON_BARNES_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "HARRISON_BARNES_1_NBA",
+          "started": true,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+130",
+          "bookOdds": "+114",
+          "fairOverUnder": "2.5",
+          "bookOverUnder": "2.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+270",
+              "overUnder": "3.5",
+              "lastUpdatedAt": "2025-11-24T01:45:43.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.542323367&selectionId=8296898",
+              "altLines": [
+                {
+                  "odds": "-580",
+                  "overUnder": "1.5",
+                  "lastUpdatedAt": "2025-11-24T01:45:43.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1400",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2025-11-24T01:44:30.000Z",
+                  "available": false
+                }
+              ]
+            }
+          },
+          "closeBookOdds": "+114",
+          "closeBookOverUnder": "2.5",
+          "closeFairOdds": "+130",
+          "closeFairOverUnder": "2.5"
+        },
+        "assists-HARRISON_BARNES_1_NBA-game-ou-under": {
+          "oddID": "assists-HARRISON_BARNES_1_NBA-game-ou-under",
+          "opposingOddID": "assists-HARRISON_BARNES_1_NBA-game-ou-over",
+          "marketName": "Harrison Barnes Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "HARRISON_BARNES_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "HARRISON_BARNES_1_NBA",
+          "started": true,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-130",
+          "bookOdds": "-154",
+          "fairOverUnder": "2.5",
+          "bookOverUnder": "2.5",
+          "scoringSupported": true,
+          "byBookmaker": {},
+          "closeBookOdds": "-154",
+          "closeBookOverUnder": "2.5",
+          "closeFairOdds": "-130",
+          "closeFairOverUnder": "2.5"
+        },
+        "blocks-DEAARON_FOX_1_NBA-game-ou-over": {
+          "oddID": "blocks-DEAARON_FOX_1_NBA-game-ou-over",
+          "opposingOddID": "blocks-DEAARON_FOX_1_NBA-game-ou-under",
+          "marketName": "De'Aaron Fox Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "DEAARON_FOX_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "DEAARON_FOX_1_NBA",
+          "started": true,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "-137",
+          "fairOverUnder": "0.5",
+          "bookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {},
+          "closeBookOdds": "-137",
+          "closeBookOverUnder": "0.5",
+          "closeFairOdds": "+100",
+          "closeFairOverUnder": "0.5"
+        },
+        "blocks-DEAARON_FOX_1_NBA-game-ou-under": {
+          "oddID": "blocks-DEAARON_FOX_1_NBA-game-ou-under",
+          "opposingOddID": "blocks-DEAARON_FOX_1_NBA-game-ou-over",
+          "marketName": "De'Aaron Fox Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "DEAARON_FOX_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "DEAARON_FOX_1_NBA",
+          "started": true,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "-137",
+          "fairOverUnder": "0.5",
+          "bookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {},
+          "closeBookOdds": "-137",
+          "closeBookOverUnder": "0.5",
+          "closeFairOdds": "+100",
+          "closeFairOverUnder": "0.5"
+        },
+        "blocks-DEVIN_VASSELL_1_NBA-game-ou-over": {
+          "oddID": "blocks-DEVIN_VASSELL_1_NBA-game-ou-over",
+          "opposingOddID": "blocks-DEVIN_VASSELL_1_NBA-game-ou-under",
+          "marketName": "Devin Vassell Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "DEVIN_VASSELL_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "DEVIN_VASSELL_1_NBA",
+          "started": true,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+137",
+          "bookOdds": "+137",
+          "fairOverUnder": "0.5",
+          "bookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {},
+          "closeBookOdds": "+137",
+          "closeBookOverUnder": "0.5",
+          "closeFairOdds": "+137",
+          "closeFairOverUnder": "0.5"
+        },
+        "blocks-DEVIN_VASSELL_1_NBA-game-ou-under": {
+          "oddID": "blocks-DEVIN_VASSELL_1_NBA-game-ou-under",
+          "opposingOddID": "blocks-DEVIN_VASSELL_1_NBA-game-ou-over",
+          "marketName": "Devin Vassell Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "DEVIN_VASSELL_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "DEVIN_VASSELL_1_NBA",
+          "started": true,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-137",
+          "bookOdds": "-137",
+          "fairOverUnder": "0.5",
+          "bookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {},
+          "closeBookOdds": "-137",
+          "closeBookOverUnder": "0.5",
+          "closeFairOdds": "-137",
+          "closeFairOverUnder": "0.5"
+        },
+        "blocks-HARRISON_BARNES_1_NBA-game-ou-over": {
+          "oddID": "blocks-HARRISON_BARNES_1_NBA-game-ou-over",
+          "opposingOddID": "blocks-HARRISON_BARNES_1_NBA-game-ou-under",
+          "marketName": "Harrison Barnes Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "HARRISON_BARNES_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "HARRISON_BARNES_1_NBA",
+          "started": true,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "-137",
+          "fairOverUnder": "0.5",
+          "bookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {},
+          "closeBookOdds": "-137",
+          "closeBookOverUnder": "0.5",
+          "closeFairOdds": "+100",
+          "closeFairOverUnder": "0.5"
+        },
+        "blocks-HARRISON_BARNES_1_NBA-game-ou-under": {
+          "oddID": "blocks-HARRISON_BARNES_1_NBA-game-ou-under",
+          "opposingOddID": "blocks-HARRISON_BARNES_1_NBA-game-ou-over",
+          "marketName": "Harrison Barnes Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "HARRISON_BARNES_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "HARRISON_BARNES_1_NBA",
+          "started": true,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "-137",
+          "fairOverUnder": "0.5",
+          "bookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {},
+          "closeBookOdds": "-137",
+          "closeBookOverUnder": "0.5",
+          "closeFairOdds": "+100",
+          "closeFairOverUnder": "0.5"
+        },
+        "rebounds-DEAARON_FOX_1_NBA-game-ou-over": {
+          "oddID": "rebounds-DEAARON_FOX_1_NBA-game-ou-over",
+          "opposingOddID": "rebounds-DEAARON_FOX_1_NBA-game-ou-under",
+          "marketName": "De'Aaron Fox Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "DEAARON_FOX_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "DEAARON_FOX_1_NBA",
+          "started": true,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "-118",
+          "fairOverUnder": "4.5",
+          "bookOverUnder": "4.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-118",
+              "overUnder": "4.5",
+              "lastUpdatedAt": "2025-11-24T01:45:43.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.542323334&selectionId=15572079",
+              "altLines": [
+                {
+                  "odds": "-1450",
+                  "overUnder": "1.5",
+                  "lastUpdatedAt": "2025-11-24T01:09:09.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "-340",
+                  "overUnder": "2.5",
+                  "lastUpdatedAt": "2025-11-24T01:09:09.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "-350",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2025-11-24T01:45:43.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+220",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2025-11-24T01:45:43.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+920",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2025-11-24T01:45:43.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1700",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2025-11-24T01:12:46.000Z",
+                  "available": false
+                }
+              ]
+            }
+          },
+          "closeBookOdds": "-118",
+          "closeBookOverUnder": "4.5",
+          "closeFairOdds": "+100",
+          "closeFairOverUnder": "4.5"
+        },
+        "rebounds-DEAARON_FOX_1_NBA-game-ou-under": {
+          "oddID": "rebounds-DEAARON_FOX_1_NBA-game-ou-under",
+          "opposingOddID": "rebounds-DEAARON_FOX_1_NBA-game-ou-over",
+          "marketName": "De'Aaron Fox Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "DEAARON_FOX_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "DEAARON_FOX_1_NBA",
+          "started": true,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "-115",
+          "fairOverUnder": "4.5",
+          "bookOverUnder": "4.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-112",
+              "overUnder": "4.5",
+              "lastUpdatedAt": "2025-11-24T01:45:43.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.542323334&selectionId=15572080",
+              "altLines": [
+                {
+                  "odds": "+235",
+                  "overUnder": "2.5",
+                  "lastUpdatedAt": "2025-11-24T01:09:09.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "+114",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2025-11-24T01:43:23.049Z",
+                  "available": false
+                },
+                {
+                  "odds": "-550",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2025-11-24T01:09:09.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "-1450",
+                  "overUnder": "6.5",
+                  "lastUpdatedAt": "2025-11-24T01:09:09.000Z",
+                  "available": false
+                }
+              ]
+            }
+          },
+          "closeBookOdds": "-115",
+          "closeBookOverUnder": "4.5",
+          "closeFairOdds": "+100",
+          "closeFairOverUnder": "4.5"
+        },
+        "rebounds-DEVIN_VASSELL_1_NBA-game-ou-over": {
+          "oddID": "rebounds-DEVIN_VASSELL_1_NBA-game-ou-over",
+          "opposingOddID": "rebounds-DEVIN_VASSELL_1_NBA-game-ou-under",
+          "marketName": "Devin Vassell Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "DEVIN_VASSELL_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "DEVIN_VASSELL_1_NBA",
+          "started": true,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-119",
+          "bookOdds": "-140",
+          "fairOverUnder": "4.5",
+          "bookOverUnder": "4.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-138",
+              "overUnder": "4.5",
+              "lastUpdatedAt": "2025-11-24T01:45:43.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.542323335&selectionId=38295529",
+              "altLines": [
+                {
+                  "odds": "-1450",
+                  "overUnder": "1.5",
+                  "lastUpdatedAt": "2025-11-24T01:09:09.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "-330",
+                  "overUnder": "2.5",
+                  "lastUpdatedAt": "2025-11-24T01:09:09.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "-420",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2025-11-24T01:45:43.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+182",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2025-11-24T01:45:43.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+850",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2025-11-24T01:45:43.000Z",
+                  "available": true
+                }
+              ]
+            }
+          },
+          "closeBookOdds": "-140",
+          "closeBookOverUnder": "4.5",
+          "closeFairOdds": "-119",
+          "closeFairOverUnder": "4.5"
+        },
+        "rebounds-DEVIN_VASSELL_1_NBA-game-ou-under": {
+          "oddID": "rebounds-DEVIN_VASSELL_1_NBA-game-ou-under",
+          "opposingOddID": "rebounds-DEVIN_VASSELL_1_NBA-game-ou-over",
+          "marketName": "Devin Vassell Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "DEVIN_VASSELL_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "DEVIN_VASSELL_1_NBA",
+          "started": true,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+119",
+          "bookOdds": "+105",
+          "fairOverUnder": "4.5",
+          "bookOverUnder": "4.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+104",
+              "overUnder": "4.5",
+              "lastUpdatedAt": "2025-11-24T01:45:43.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.542323335&selectionId=38295528",
+              "altLines": [
+                {
+                  "odds": "+230",
+                  "overUnder": "2.5",
+                  "lastUpdatedAt": "2025-11-24T01:09:09.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "+128",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2025-11-24T01:24:34.780Z",
+                  "available": false
+                },
+                {
+                  "odds": "-500",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2025-11-24T01:09:09.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "-1450",
+                  "overUnder": "6.5",
+                  "lastUpdatedAt": "2025-11-24T01:09:09.000Z",
+                  "available": false
+                }
+              ]
+            }
+          },
+          "closeBookOdds": "+105",
+          "closeBookOverUnder": "4.5",
+          "closeFairOdds": "+119",
+          "closeFairOverUnder": "4.5"
+        },
+        "rebounds-HARRISON_BARNES_1_NBA-game-ou-over": {
+          "oddID": "rebounds-HARRISON_BARNES_1_NBA-game-ou-over",
+          "opposingOddID": "rebounds-HARRISON_BARNES_1_NBA-game-ou-under",
+          "marketName": "Harrison Barnes Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "HARRISON_BARNES_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "HARRISON_BARNES_1_NBA",
+          "started": true,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-109",
+          "bookOdds": "-130",
+          "fairOverUnder": "4.5",
+          "bookOverUnder": "4.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-136",
+              "overUnder": "4.5",
+              "lastUpdatedAt": "2025-11-24T01:45:43.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.542325467&selectionId=12257277",
+              "altLines": [
+                {
+                  "odds": "-1100",
+                  "overUnder": "1.5",
+                  "lastUpdatedAt": "2025-11-24T01:09:09.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "-300",
+                  "overUnder": "2.5",
+                  "lastUpdatedAt": "2025-11-24T01:09:09.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "-440",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2025-11-24T01:45:43.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+188",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2025-11-24T01:45:43.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+850",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2025-11-24T01:45:43.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+2000",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2025-11-24T01:43:21.000Z",
+                  "available": false
+                }
+              ]
+            }
+          },
+          "closeBookOdds": "-130",
+          "closeBookOverUnder": "4.5",
+          "closeFairOdds": "-109",
+          "closeFairOverUnder": "4.5"
+        },
+        "rebounds-HARRISON_BARNES_1_NBA-game-ou-under": {
+          "oddID": "rebounds-HARRISON_BARNES_1_NBA-game-ou-under",
+          "opposingOddID": "rebounds-HARRISON_BARNES_1_NBA-game-ou-over",
+          "marketName": "Harrison Barnes Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "HARRISON_BARNES_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "HARRISON_BARNES_1_NBA",
+          "started": true,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+109",
+          "bookOdds": "-105",
+          "fairOverUnder": "4.5",
+          "bookOverUnder": "4.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+102",
+              "overUnder": "4.5",
+              "lastUpdatedAt": "2025-11-24T01:45:43.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.542325467&selectionId=12257276",
+              "altLines": [
+                {
+                  "odds": "+210",
+                  "overUnder": "2.5",
+                  "lastUpdatedAt": "2025-11-24T01:09:09.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "+118",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2025-11-24T01:24:34.780Z",
+                  "available": false
+                },
+                {
+                  "odds": "-580",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2025-11-24T01:09:09.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "-1450",
+                  "overUnder": "6.5",
+                  "lastUpdatedAt": "2025-11-24T01:09:09.000Z",
+                  "available": false
+                }
+              ]
+            }
+          },
+          "closeBookOdds": "-105",
+          "closeBookOverUnder": "4.5",
+          "closeFairOdds": "+109",
+          "closeFairOverUnder": "4.5"
+        },
+        "steals-DEAARON_FOX_1_NBA-game-ou-over": {
+          "oddID": "steals-DEAARON_FOX_1_NBA-game-ou-over",
+          "opposingOddID": "steals-DEAARON_FOX_1_NBA-game-ou-under",
+          "marketName": "De'Aaron Fox Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "DEAARON_FOX_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "DEAARON_FOX_1_NBA",
+          "started": true,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-123",
+          "bookOdds": "-166",
+          "fairOverUnder": "0.5",
+          "bookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+126",
+              "overUnder": "1.5",
+              "lastUpdatedAt": "2025-11-24T01:10:21.000Z",
+              "available": false,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.542328279&selectionId=15572079",
+              "altLines": [
+                {
+                  "odds": "-400",
+                  "overUnder": "0.5",
+                  "lastUpdatedAt": "2025-11-24T01:10:21.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "+400",
+                  "overUnder": "2.5",
+                  "lastUpdatedAt": "2025-11-24T01:10:21.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "+1000",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2025-11-24T01:10:21.000Z",
+                  "available": false
+                }
+              ]
+            }
+          },
+          "closeBookOdds": "-166",
+          "closeBookOverUnder": "0.5",
+          "closeFairOdds": "-123",
+          "closeFairOverUnder": "0.5"
+        },
+        "steals-DEAARON_FOX_1_NBA-game-ou-under": {
+          "oddID": "steals-DEAARON_FOX_1_NBA-game-ou-under",
+          "opposingOddID": "steals-DEAARON_FOX_1_NBA-game-ou-over",
+          "marketName": "De'Aaron Fox Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "DEAARON_FOX_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "DEAARON_FOX_1_NBA",
+          "started": true,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+123",
+          "bookOdds": "+130",
+          "fairOverUnder": "0.5",
+          "bookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-168",
+              "overUnder": "1.5",
+              "lastUpdatedAt": "2025-11-24T01:10:21.000Z",
+              "available": false,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.542328279&selectionId=15572080"
+            }
+          },
+          "closeBookOdds": "+130",
+          "closeBookOverUnder": "0.5",
+          "closeFairOdds": "+123",
+          "closeFairOverUnder": "0.5"
+        },
+        "steals-DEVIN_VASSELL_1_NBA-game-ou-over": {
+          "oddID": "steals-DEVIN_VASSELL_1_NBA-game-ou-over",
+          "opposingOddID": "steals-DEVIN_VASSELL_1_NBA-game-ou-under",
+          "marketName": "Devin Vassell Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "DEVIN_VASSELL_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "DEVIN_VASSELL_1_NBA",
+          "started": true,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-129",
+          "bookOdds": "-180",
+          "fairOverUnder": "0.5",
+          "bookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+148",
+              "overUnder": "1.5",
+              "lastUpdatedAt": "2025-11-24T01:10:21.000Z",
+              "available": false,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.542328306&selectionId=38295529",
+              "altLines": [
+                {
+                  "odds": "-330",
+                  "overUnder": "0.5",
+                  "lastUpdatedAt": "2025-11-24T01:10:21.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "+490",
+                  "overUnder": "2.5",
+                  "lastUpdatedAt": "2025-11-24T01:10:21.000Z",
+                  "available": false
+                }
+              ]
+            }
+          },
+          "closeBookOdds": "-180",
+          "closeBookOverUnder": "0.5",
+          "closeFairOdds": "-129",
+          "closeFairOverUnder": "0.5"
+        },
+        "steals-DEVIN_VASSELL_1_NBA-game-ou-under": {
+          "oddID": "steals-DEVIN_VASSELL_1_NBA-game-ou-under",
+          "opposingOddID": "steals-DEVIN_VASSELL_1_NBA-game-ou-over",
+          "marketName": "Devin Vassell Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "DEVIN_VASSELL_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "DEVIN_VASSELL_1_NBA",
+          "started": true,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+129",
+          "bookOdds": "+140",
+          "fairOverUnder": "0.5",
+          "bookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-200",
+              "overUnder": "1.5",
+              "lastUpdatedAt": "2025-11-24T01:10:21.000Z",
+              "available": false,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.542328306&selectionId=38295528"
+            }
+          },
+          "closeBookOdds": "+140",
+          "closeBookOverUnder": "0.5",
+          "closeFairOdds": "+129",
+          "closeFairOverUnder": "0.5"
+        },
+        "steals-HARRISON_BARNES_1_NBA-game-ou-over": {
+          "oddID": "steals-HARRISON_BARNES_1_NBA-game-ou-over",
+          "opposingOddID": "steals-HARRISON_BARNES_1_NBA-game-ou-under",
+          "marketName": "Harrison Barnes Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "HARRISON_BARNES_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "HARRISON_BARNES_1_NBA",
+          "started": true,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-111",
+          "bookOdds": "-140",
+          "fairOverUnder": "0.5",
+          "bookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {},
+          "closeBookOdds": "-140",
+          "closeBookOverUnder": "0.5",
+          "closeFairOdds": "-111",
+          "closeFairOverUnder": "0.5"
+        },
+        "steals-HARRISON_BARNES_1_NBA-game-ou-under": {
+          "oddID": "steals-HARRISON_BARNES_1_NBA-game-ou-under",
+          "opposingOddID": "steals-HARRISON_BARNES_1_NBA-game-ou-over",
+          "marketName": "Harrison Barnes Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "HARRISON_BARNES_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "HARRISON_BARNES_1_NBA",
+          "started": true,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+111",
+          "bookOdds": "-111",
+          "fairOverUnder": "0.5",
+          "bookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {},
+          "closeBookOdds": "-111",
+          "closeBookOverUnder": "0.5",
+          "closeFairOdds": "+111",
+          "closeFairOverUnder": "0.5"
+        }
+      },
+      "players": {
+        "DEVIN_BOOKER_1_NBA": {
+          "playerID": "DEVIN_BOOKER_1_NBA",
+          "teamID": "PHOENIX_SUNS_NBA",
+          "firstName": "Devin",
+          "lastName": "Booker",
+          "name": "Devin Booker"
+        },
+        "DEAARON_FOX_1_NBA": {
+          "playerID": "DEAARON_FOX_1_NBA",
+          "teamID": "SAN_ANTONIO_SPURS_NBA",
+          "firstName": "De'Aaron",
+          "lastName": "Fox",
+          "name": "De'Aaron Fox"
+        },
+        "DEVIN_VASSELL_1_NBA": {
+          "playerID": "DEVIN_VASSELL_1_NBA",
+          "teamID": "SAN_ANTONIO_SPURS_NBA",
+          "firstName": "Devin",
+          "lastName": "Vassell",
+          "name": "Devin Vassell"
+        },
+        "DILLON_BROOKS_1_NBA": {
+          "playerID": "DILLON_BROOKS_1_NBA",
+          "teamID": "PHOENIX_SUNS_NBA",
+          "firstName": "Dillon",
+          "lastName": "Brooks",
+          "name": "Dillon Brooks"
+        },
+        "GRAYSON_ALLEN_1_NBA": {
+          "playerID": "GRAYSON_ALLEN_1_NBA",
+          "teamID": "PHOENIX_SUNS_NBA",
+          "firstName": "Grayson",
+          "lastName": "Allen",
+          "name": "Grayson Allen"
+        },
+        "HARRISON_BARNES_1_NBA": {
+          "playerID": "HARRISON_BARNES_1_NBA",
+          "teamID": "SAN_ANTONIO_SPURS_NBA",
+          "firstName": "Harrison",
+          "lastName": "Barnes",
+          "name": "Harrison Barnes"
+        },
+        "JEREMY_SOCHAN_1_NBA": {
+          "playerID": "JEREMY_SOCHAN_1_NBA",
+          "teamID": "SAN_ANTONIO_SPURS_NBA",
+          "firstName": "Jeremy",
+          "lastName": "Sochan",
+          "name": "Jeremy Sochan"
+        },
+        "JULIAN_CHAMPAGNIE_1_NBA": {
+          "playerID": "JULIAN_CHAMPAGNIE_1_NBA",
+          "teamID": "SAN_ANTONIO_SPURS_NBA",
+          "firstName": "Julian",
+          "lastName": "Champagnie",
+          "name": "Julian Champagnie"
+        },
+        "KELDON_JOHNSON_1_NBA": {
+          "playerID": "KELDON_JOHNSON_1_NBA",
+          "teamID": "SAN_ANTONIO_SPURS_NBA",
+          "firstName": "Keldon",
+          "lastName": "Johnson",
+          "name": "Keldon Johnson"
+        },
+        "LUKE_KORNET_1_NBA": {
+          "playerID": "LUKE_KORNET_1_NBA",
+          "teamID": "SAN_ANTONIO_SPURS_NBA",
+          "firstName": "Luke",
+          "lastName": "Kornet",
+          "name": "Luke Kornet"
+        },
+        "MARK_WILLIAMS_1_NBA": {
+          "playerID": "MARK_WILLIAMS_1_NBA",
+          "teamID": "PHOENIX_SUNS_NBA",
+          "firstName": "Mark",
+          "lastName": "Williams",
+          "name": "Mark Williams"
+        },
+        "ROYCE_ONEALE_1_NBA": {
+          "playerID": "ROYCE_ONEALE_1_NBA",
+          "teamID": "PHOENIX_SUNS_NBA",
+          "firstName": "Royce",
+          "lastName": "O'Neale",
+          "name": "Royce O'Neale"
+        },
+        "RYAN_DUNN_1_NBA": {
+          "playerID": "RYAN_DUNN_1_NBA",
+          "teamID": "PHOENIX_SUNS_NBA",
+          "firstName": "Ryan",
+          "lastName": "Dunn",
+          "name": "Ryan Dunn"
+        },
+        "COLLIN_GILLESPIE_1_NBA": {
+          "playerID": "COLLIN_GILLESPIE_1_NBA",
+          "teamID": "PHOENIX_SUNS_NBA",
+          "firstName": "Collin",
+          "lastName": "Gillespie",
+          "name": "Collin Gillespie"
+        },
+        "JORDAN_GOODWIN_1_NBA": {
+          "playerID": "JORDAN_GOODWIN_1_NBA",
+          "teamID": "PHOENIX_SUNS_NBA",
+          "firstName": "Jordan",
+          "lastName": "Goodwin",
+          "name": "Jordan Goodwin"
+        },
+        "OSO_IGHODARO_1_NBA": {
+          "playerID": "OSO_IGHODARO_1_NBA",
+          "teamID": "PHOENIX_SUNS_NBA",
+          "firstName": "Oso",
+          "lastName": "Ighodaro",
+          "name": "Oso Ighodaro"
+        },
+        "ISAIAH_LIVERS_1_NBA": {
+          "playerID": "ISAIAH_LIVERS_1_NBA",
+          "teamID": "PHOENIX_SUNS_NBA",
+          "firstName": "Isaiah",
+          "lastName": "Livers",
+          "name": "Isaiah Livers"
+        },
+        "KELLY_OLYNYK_1_NBA": {
+          "playerID": "KELLY_OLYNYK_1_NBA",
+          "teamID": "SAN_ANTONIO_SPURS_NBA",
+          "firstName": "Kelly",
+          "lastName": "Olynyk",
+          "name": "Kelly Olynyk"
+        },
+        "DAVID_JONES_1_NBA": {
+          "playerID": "DAVID_JONES_1_NBA",
+          "teamID": "SAN_ANTONIO_SPURS_NBA",
+          "firstName": "David",
+          "lastName": "Jones",
+          "name": "David Jones"
+        },
+        "CARTER_BRYANT_1_NBA": {
+          "playerID": "CARTER_BRYANT_1_NBA",
+          "teamID": "SAN_ANTONIO_SPURS_NBA",
+          "firstName": "Carter",
+          "lastName": "Bryant",
+          "name": "Carter Bryant"
+        },
+        "NICK_RICHARDS_1_NBA": {
+          "playerID": "NICK_RICHARDS_1_NBA",
+          "teamID": "PHOENIX_SUNS_NBA",
+          "firstName": "Nick",
+          "lastName": "Richards",
+          "name": "Nick Richards"
+        }
+      },
+      "results": {
+        "game": {
+          "home": {
+            "freeThrowsMade": 5,
+            "freeThrowsAttempted": 6,
+            "twoPointersMade": 9,
+            "twoPointersAttempted": 23,
+            "threePointersMade": 2,
+            "threePointersAttempted": 15,
+            "fieldGoalsMade": 11,
+            "fieldGoalsAttempted": 38,
+            "rebounds": 19,
+            "defensiveRebounds": 11,
+            "offensiveRebounds": 8,
+            "assists": 7,
+            "turnovers": 0,
+            "steals": 2,
+            "blocks": 3,
+            "fouls": 8,
+            "secondsInLead": 130,
+            "largestLead": 4,
+            "points": 29,
+            "fieldGoalPercent": 29,
+            "freeThrowPercent": 83,
+            "longestScoringRun": 9,
+            "plusMinus": -7,
+            "threePointerPercent": 13
+          },
+          "away": {
+            "freeThrowsMade": 12,
+            "freeThrowsAttempted": 14,
+            "twoPointersMade": 9,
+            "twoPointersAttempted": 14,
+            "threePointersMade": 2,
+            "threePointersAttempted": 8,
+            "fieldGoalsMade": 11,
+            "fieldGoalsAttempted": 22,
+            "rebounds": 18,
+            "defensiveRebounds": 17,
+            "offensiveRebounds": 1,
+            "assists": 4,
+            "turnovers": 5,
+            "steals": 0,
+            "blocks": 1,
+            "fouls": 4,
+            "secondsInLead": 597,
+            "largestLead": 8,
+            "points": 36,
+            "fieldGoalPercent": 50,
+            "freeThrowPercent": 86,
+            "longestScoringRun": 10,
+            "plusMinus": 7,
+            "threePointerPercent": 25
+          },
+          "DEAARON_FOX_1_NBA": {
+            "points": 9,
+            "fieldGoalsMade": 1,
+            "fieldGoalsAttempted": 2,
+            "fieldGoalPercent": 50,
+            "freeThrowsMade": 6,
+            "freeThrowsAttempted": 6,
+            "freeThrowPercent": 100,
+            "threePointersMade": 1,
+            "threePointersAttempted": 2,
+            "threePointerPercent": 50,
+            "offensiveRebounds": 0,
+            "defensiveRebounds": 2,
+            "rebounds": 2,
+            "assists": 0,
+            "fouls": 0,
+            "steals": 0,
+            "turnovers": 1,
+            "blocks": 0,
+            "plusMinus": 3,
+            "secondsPlayed": 643,
+            "twoPointersMade": 0,
+            "twoPointersAttempted": 0
+          },
+          "DEVIN_BOOKER_1_NBA": {
+            "points": 4,
+            "fieldGoalsMade": 1,
+            "fieldGoalsAttempted": 6,
+            "fieldGoalPercent": 17,
+            "freeThrowsMade": 2,
+            "freeThrowsAttempted": 2,
+            "freeThrowPercent": 100,
+            "threePointersMade": 0,
+            "threePointersAttempted": 3,
+            "threePointerPercent": 0,
+            "offensiveRebounds": 0,
+            "defensiveRebounds": 2,
+            "rebounds": 2,
+            "assists": 0,
+            "fouls": 1,
+            "steals": 0,
+            "turnovers": 0,
+            "blocks": 1,
+            "plusMinus": -5,
+            "secondsPlayed": 720,
+            "twoPointersMade": 1,
+            "twoPointersAttempted": 3
+          },
+          "DEVIN_VASSELL_1_NBA": {
+            "points": 2,
+            "fieldGoalsMade": 1,
+            "fieldGoalsAttempted": 3,
+            "fieldGoalPercent": 33,
+            "freeThrowsMade": 0,
+            "freeThrowsAttempted": 0,
+            "freeThrowPercent": 0,
+            "threePointersMade": 0,
+            "threePointersAttempted": 1,
+            "threePointerPercent": 0,
+            "offensiveRebounds": 0,
+            "defensiveRebounds": 2,
+            "rebounds": 2,
+            "assists": 1,
+            "fouls": 1,
+            "steals": 0,
+            "turnovers": 1,
+            "blocks": 0,
+            "plusMinus": 6,
+            "secondsPlayed": 514,
+            "twoPointersMade": 1,
+            "twoPointersAttempted": 2
+          },
+          "DILLON_BROOKS_1_NBA": {
+            "points": 5,
+            "fieldGoalsMade": 2,
+            "fieldGoalsAttempted": 9,
+            "fieldGoalPercent": 22,
+            "freeThrowsMade": 1,
+            "freeThrowsAttempted": 2,
+            "freeThrowPercent": 50,
+            "threePointersMade": 0,
+            "threePointersAttempted": 4,
+            "threePointerPercent": 0,
+            "offensiveRebounds": 1,
+            "defensiveRebounds": 0,
+            "rebounds": 1,
+            "assists": 0,
+            "fouls": 2,
+            "steals": 1,
+            "turnovers": 0,
+            "blocks": 0,
+            "plusMinus": -6,
+            "secondsPlayed": 514,
+            "twoPointersMade": 2,
+            "twoPointersAttempted": 5
+          },
+          "HARRISON_BARNES_1_NBA": {
+            "points": 7,
+            "fieldGoalsMade": 3,
+            "fieldGoalsAttempted": 6,
+            "fieldGoalPercent": 50,
+            "freeThrowsMade": 1,
+            "freeThrowsAttempted": 2,
+            "freeThrowPercent": 50,
+            "threePointersMade": 0,
+            "threePointersAttempted": 1,
+            "threePointerPercent": 0,
+            "offensiveRebounds": 1,
+            "defensiveRebounds": 1,
+            "rebounds": 2,
+            "assists": 1,
+            "fouls": 0,
+            "steals": 0,
+            "turnovers": 0,
+            "blocks": 0,
+            "plusMinus": 8,
+            "secondsPlayed": 576,
+            "twoPointersMade": 3,
+            "twoPointersAttempted": 5
+          },
+          "JORDAN_GOODWIN_1_NBA": {
+            "points": 8,
+            "fieldGoalsMade": 4,
+            "fieldGoalsAttempted": 8,
+            "fieldGoalPercent": 50,
+            "freeThrowsMade": 0,
+            "freeThrowsAttempted": 0,
+            "freeThrowPercent": 0,
+            "threePointersMade": 0,
+            "threePointersAttempted": 1,
+            "threePointerPercent": 0,
+            "offensiveRebounds": 3,
+            "defensiveRebounds": 3,
+            "rebounds": 6,
+            "assists": 0,
+            "fouls": 1,
+            "steals": 0,
+            "turnovers": 0,
+            "blocks": 0,
+            "plusMinus": 1,
+            "secondsPlayed": 582,
+            "twoPointersMade": 4,
+            "twoPointersAttempted": 7
+          },
+          "JULIAN_CHAMPAGNIE_1_NBA": {
+            "points": 3,
+            "fieldGoalsMade": 1,
+            "fieldGoalsAttempted": 3,
+            "fieldGoalPercent": 33,
+            "freeThrowsMade": 0,
+            "freeThrowsAttempted": 0,
+            "freeThrowPercent": 0,
+            "threePointersMade": 1,
+            "threePointersAttempted": 3,
+            "threePointerPercent": 33.3,
+            "offensiveRebounds": 0,
+            "defensiveRebounds": 3,
+            "rebounds": 3,
+            "assists": 1,
+            "fouls": 0,
+            "steals": 0,
+            "turnovers": 0,
+            "blocks": 0,
+            "plusMinus": 8,
+            "secondsPlayed": 624,
+            "twoPointersMade": 0,
+            "twoPointersAttempted": 0
+          },
+          "LUKE_KORNET_1_NBA": {
+            "points": 6,
+            "fieldGoalsMade": 2,
+            "fieldGoalsAttempted": 2,
+            "fieldGoalPercent": 100,
+            "freeThrowsMade": 2,
+            "freeThrowsAttempted": 2,
+            "freeThrowPercent": 100,
+            "threePointersMade": 0,
+            "threePointersAttempted": 0,
+            "threePointerPercent": 0,
+            "offensiveRebounds": 0,
+            "defensiveRebounds": 4,
+            "rebounds": 4,
+            "assists": 0,
+            "fouls": 2,
+            "steals": 0,
+            "turnovers": 1,
+            "blocks": 1,
+            "plusMinus": 8,
+            "secondsPlayed": 578,
+            "twoPointersMade": 2,
+            "twoPointersAttempted": 2
+          },
+          "MARK_WILLIAMS_1_NBA": {
+            "points": 2,
+            "fieldGoalsMade": 0,
+            "fieldGoalsAttempted": 1,
+            "fieldGoalPercent": 0,
+            "freeThrowsMade": 2,
+            "freeThrowsAttempted": 2,
+            "freeThrowPercent": 100,
+            "threePointersMade": 0,
+            "threePointersAttempted": 0,
+            "threePointerPercent": 0,
+            "offensiveRebounds": 2,
+            "defensiveRebounds": 0,
+            "rebounds": 2,
+            "assists": 1,
+            "fouls": 0,
+            "steals": 0,
+            "turnovers": 0,
+            "blocks": 0,
+            "plusMinus": -6,
+            "secondsPlayed": 406,
+            "twoPointersMade": 0,
+            "twoPointersAttempted": 1
+          },
+          "ROYCE_ONEALE_1_NBA": {
+            "points": 0,
+            "fieldGoalsMade": 0,
+            "fieldGoalsAttempted": 2,
+            "fieldGoalPercent": 0,
+            "freeThrowsMade": 0,
+            "freeThrowsAttempted": 0,
+            "freeThrowPercent": 0,
+            "threePointersMade": 0,
+            "threePointersAttempted": 0,
+            "threePointerPercent": 0,
+            "offensiveRebounds": 0,
+            "defensiveRebounds": 2,
+            "rebounds": 2,
+            "assists": 0,
+            "fouls": 1,
+            "steals": 0,
+            "turnovers": 0,
+            "blocks": 0,
+            "plusMinus": 0,
+            "secondsPlayed": 384,
+            "twoPointersMade": 0,
+            "twoPointersAttempted": 2
+          },
+          "COLLIN_GILLESPIE_1_NBA": {
+            "secondsPlayed": 680,
+            "points": 3,
+            "twoPointersMade": 0,
+            "twoPointersAttempted": 1,
+            "threePointersMade": 1,
+            "threePointersAttempted": 6,
+            "freeThrowsMade": 0,
+            "freeThrowsAttempted": 0,
+            "fieldGoalsMade": 1,
+            "fieldGoalsAttempted": 7,
+            "rebounds": 1,
+            "defensiveRebounds": 0,
+            "offensiveRebounds": 1,
+            "turnovers": 0,
+            "blocks": 0,
+            "fouls": 1,
+            "assists": 4,
+            "steals": 1,
+            "plusMinus": -9,
+            "fieldGoalPercent": 14,
+            "freeThrowPercent": 0,
+            "threePointerPercent": 16.7
+          },
+          "ISAIAH_LIVERS_1_NBA": {
+            "secondsPlayed": 510,
+            "points": 5,
+            "twoPointersMade": 1,
+            "twoPointersAttempted": 1,
+            "threePointersMade": 1,
+            "threePointersAttempted": 1,
+            "freeThrowsMade": 0,
+            "freeThrowsAttempted": 0,
+            "fieldGoalsMade": 2,
+            "fieldGoalsAttempted": 2,
+            "rebounds": 0,
+            "defensiveRebounds": 0,
+            "offensiveRebounds": 0,
+            "turnovers": 0,
+            "blocks": 1,
+            "fouls": 1,
+            "assists": 0,
+            "steals": 0,
+            "plusMinus": -7,
+            "fieldGoalPercent": 100,
+            "freeThrowPercent": 0,
+            "threePointerPercent": 100
+          },
+          "JEREMY_SOCHAN_1_NBA": {
+            "points": 2,
+            "fieldGoalsMade": 1,
+            "fieldGoalsAttempted": 2,
+            "fieldGoalPercent": 50,
+            "freeThrowsMade": 0,
+            "freeThrowsAttempted": 0,
+            "freeThrowPercent": 0,
+            "threePointersMade": 0,
+            "threePointersAttempted": 0,
+            "threePointerPercent": 0,
+            "offensiveRebounds": 0,
+            "defensiveRebounds": 0,
+            "rebounds": 0,
+            "assists": 0,
+            "fouls": 0,
+            "steals": 0,
+            "turnovers": 0,
+            "blocks": 0,
+            "plusMinus": -1,
+            "secondsPlayed": 312,
+            "twoPointersMade": 1,
+            "twoPointersAttempted": 2
+          },
+          "KELLY_OLYNYK_1_NBA": {
+            "points": 3,
+            "fieldGoalsMade": 0,
+            "fieldGoalsAttempted": 0,
+            "fieldGoalPercent": 0,
+            "freeThrowsMade": 3,
+            "freeThrowsAttempted": 4,
+            "freeThrowPercent": 75,
+            "threePointersMade": 0,
+            "threePointersAttempted": 0,
+            "threePointerPercent": 0,
+            "offensiveRebounds": 0,
+            "defensiveRebounds": 1,
+            "rebounds": 1,
+            "assists": 0,
+            "fouls": 0,
+            "steals": 0,
+            "turnovers": 2,
+            "blocks": 0,
+            "plusMinus": -1,
+            "secondsPlayed": 308,
+            "twoPointersMade": 0,
+            "twoPointersAttempted": 0
+          },
+          "KELDON_JOHNSON_1_NBA": {
+            "points": 2,
+            "fieldGoalsMade": 1,
+            "fieldGoalsAttempted": 1,
+            "fieldGoalPercent": 100,
+            "freeThrowsMade": 0,
+            "freeThrowsAttempted": 0,
+            "freeThrowPercent": 0,
+            "threePointersMade": 0,
+            "threePointersAttempted": 0,
+            "threePointerPercent": 0,
+            "offensiveRebounds": 0,
+            "defensiveRebounds": 2,
+            "rebounds": 2,
+            "assists": 1,
+            "fouls": 1,
+            "steals": 0,
+            "turnovers": 0,
+            "blocks": 0,
+            "plusMinus": 3,
+            "secondsPlayed": 411,
+            "twoPointersMade": 1,
+            "twoPointersAttempted": 1
+          },
+          "DAVID_JONES_1_NBA": {
+            "secondsPlayed": 314,
+            "points": 0,
+            "twoPointersMade": 0,
+            "twoPointersAttempted": 1,
+            "threePointersMade": 0,
+            "threePointersAttempted": 0,
+            "freeThrowsMade": 0,
+            "freeThrowsAttempted": 0,
+            "fieldGoalsMade": 0,
+            "fieldGoalsAttempted": 1,
+            "rebounds": 1,
+            "defensiveRebounds": 1,
+            "offensiveRebounds": 0,
+            "turnovers": 0,
+            "blocks": 0,
+            "fouls": 0,
+            "assists": 0,
+            "steals": 0,
+            "plusMinus": -1,
+            "fieldGoalPercent": 0,
+            "freeThrowPercent": 0,
+            "threePointerPercent": 0
+          },
+          "OSO_IGHODARO_1_NBA": {
+            "secondsPlayed": 484,
+            "points": 2,
+            "twoPointersMade": 1,
+            "twoPointersAttempted": 1,
+            "threePointersMade": 0,
+            "threePointersAttempted": 0,
+            "freeThrowsMade": 0,
+            "freeThrowsAttempted": 0,
+            "fieldGoalsMade": 1,
+            "fieldGoalsAttempted": 1,
+            "rebounds": 3,
+            "defensiveRebounds": 2,
+            "offensiveRebounds": 1,
+            "turnovers": 0,
+            "blocks": 1,
+            "fouls": 1,
+            "assists": 2,
+            "steals": 0,
+            "plusMinus": -1,
+            "fieldGoalPercent": 100,
+            "freeThrowPercent": 0,
+            "threePointerPercent": 0
+          },
+          "CARTER_BRYANT_1_NBA": {
+            "secondsPlayed": 170,
+            "points": 2,
+            "twoPointersMade": 1,
+            "twoPointersAttempted": 1,
+            "threePointersMade": 0,
+            "threePointersAttempted": 1,
+            "freeThrowsMade": 0,
+            "freeThrowsAttempted": 0,
+            "fieldGoalsMade": 1,
+            "fieldGoalsAttempted": 2,
+            "rebounds": 1,
+            "defensiveRebounds": 1,
+            "offensiveRebounds": 0,
+            "turnovers": 0,
+            "blocks": 0,
+            "fouls": 0,
+            "assists": 0,
+            "steals": 0,
+            "plusMinus": 2,
+            "fieldGoalPercent": 50
+          },
+          "NICK_RICHARDS_1_NBA": {
+            "secondsPlayed": 170,
+            "points": 0,
+            "twoPointersMade": 0,
+            "twoPointersAttempted": 2,
+            "threePointersMade": 0,
+            "threePointersAttempted": 0,
+            "freeThrowsMade": 0,
+            "freeThrowsAttempted": 0,
+            "fieldGoalsMade": 0,
+            "fieldGoalsAttempted": 2,
+            "rebounds": 2,
+            "defensiveRebounds": 2,
+            "offensiveRebounds": 0,
+            "turnovers": 0,
+            "blocks": 0,
+            "fouls": 0,
+            "assists": 0,
+            "steals": 0,
+            "plusMinus": -2,
+            "fieldGoalPercent": 0,
+            "freeThrowPercent": 0,
+            "threePointerPercent": 0
+          }
+        },
+        "1q": {
+          "home": {
+            "points": 25,
+            "assists": 5,
+            "blocks": 3,
+            "defensiveRebounds": 8,
+            "fieldGoalsAttempted": 29,
+            "fieldGoalsMade": 9,
+            "fouls": 7,
+            "freeThrowsAttempted": 6,
+            "freeThrowsMade": 5,
+            "largestLead": 4,
+            "offensiveRebounds": 5,
+            "rebounds": 13,
+            "secondsInLead": 130,
+            "steals": 1,
+            "threePointersAttempted": 13,
+            "threePointersMade": 2,
+            "turnovers": 0,
+            "twoPointersAttempted": 16,
+            "twoPointersMade": 7
+          },
+          "away": {
+            "points": 30,
+            "assists": 4,
+            "blocks": 0,
+            "defensiveRebounds": 13,
+            "fieldGoalsAttempted": 17,
+            "fieldGoalsMade": 9,
+            "fouls": 4,
+            "freeThrowsAttempted": 12,
+            "freeThrowsMade": 10,
+            "largestLead": 8,
+            "offensiveRebounds": 1,
+            "rebounds": 14,
+            "secondsInLead": 427,
+            "steals": 0,
+            "threePointersAttempted": 5,
+            "threePointersMade": 2,
+            "turnovers": 4,
+            "twoPointersAttempted": 12,
+            "twoPointersMade": 7
+          }
+        },
+        "2q": {
+          "home": {
+            "freeThrowsMade": 0,
+            "freeThrowsAttempted": 0,
+            "twoPointersMade": 2,
+            "twoPointersAttempted": 7,
+            "threePointersMade": 0,
+            "threePointersAttempted": 2,
+            "fieldGoalsMade": 2,
+            "fieldGoalsAttempted": 9,
+            "rebounds": 6,
+            "defensiveRebounds": 3,
+            "offensiveRebounds": 3,
+            "assists": 2,
+            "turnovers": 0,
+            "steals": 1,
+            "blocks": 0,
+            "fouls": 1,
+            "secondsInLead": 0,
+            "largestLead": 0,
+            "points": 4
+          },
+          "away": {
+            "freeThrowsMade": 2,
+            "freeThrowsAttempted": 2,
+            "twoPointersMade": 2,
+            "twoPointersAttempted": 2,
+            "threePointersMade": 0,
+            "threePointersAttempted": 3,
+            "fieldGoalsMade": 2,
+            "fieldGoalsAttempted": 5,
+            "rebounds": 4,
+            "defensiveRebounds": 4,
+            "offensiveRebounds": 0,
+            "assists": 0,
+            "turnovers": 1,
+            "steals": 0,
+            "blocks": 1,
+            "fouls": 0,
+            "secondsInLead": 170,
+            "largestLead": 7,
+            "points": 6
+          }
+        }
+      }
+    }
+  ]
+}

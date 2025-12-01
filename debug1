@@ -1,0 +1,31 @@
+import json
+
+path = "ODDS_CACHE/CAVALIERS_RAPTORS_20251124_AWAY_20251124.json"
+
+with open(path, "r", encoding="utf-8") as f:
+    data = json.load(f)
+
+event = data["data"][0]      # unwrap event block
+odds  = event["odds"]        # all props live here
+players = event["players"]   # clean names
+
+print("\n=== CAVALIERS PROPS (GAME O/U only) ===\n")
+
+for key, prop in odds.items():
+
+    # Only OU props for CAVS players
+    if prop.get("betTypeID") != "ou":
+        continue
+    if prop.get("periodID") != "game":
+        continue
+
+    player_id = prop.get("playerID")
+    name = players.get(player_id, {}).get("name", player_id)
+
+    stat = prop.get("statID")
+    side = prop.get("sideID")
+    line = prop.get("bookOverUnder")
+    book = prop.get("bookOdds")
+    fair = prop.get("fairOdds")
+
+    print(f"{name:20s}  {stat:8s} {side:6s} {line:4s}   book {book:>5s}   fair {fair:>5s}")

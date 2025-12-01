@@ -1,0 +1,19 @@
+import asyncio
+from twikit import Client
+
+async def main():
+    client = Client("en-US")
+
+    print("🔐 Loading cookies...")
+    client.load_cookies("session.json")  # your fixed file
+
+    print("📤 Posting tweet...")
+    try:
+        await client.create_tweet(
+            text="🚀 Cookie test — this should FINALLY work!"
+        )
+        print("✅ Tweet posted!")
+    except Exception as e:
+        print("❌ Error:", e)
+
+asyncio.run(main())

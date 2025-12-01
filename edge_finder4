@@ -1,0 +1,393 @@
+# edge_finder_final.py
+# Produces a single "Top 10" prop list for today's slate using only caches.
+# - Reads ODDS_CACHE/* (SGO format)
+# - Reads CACHE/* for player game logs
+# - Computes hit-rate for each prop from last 10 games at that exact line/side
+# - Computes edge from bookOdds vs fairOdds
+# - Score = HitRate% + (Edge% * EDGE_WEIGHT)
+# - Outputs one file: TWEETS/Top10_Props_<DATE>.txt
+
+import os
+import json
+import glob
+import re
+from datetime import datetime, timedelta
+
+ODDS_DIR    = "ODDS_CACHE"
+CACHE_DIR   = "CACHE"
+OUTPUT_DIR  = "TWEETS"
+
+TOP_N           = 10
+EDGE_WEIGHT     = 40.0      # Score = Hit% + (Edge% * 40)
+LOOKBACK_GAMES  = 10
+MAX_JUICE       = -600
+MIN_EDGE_SCREEN = 0.00      # Set >0 (e.g., 0.02) to require edge >= 2%
+
+# ---------------------------------------------------
+# Odds Helpers
+# ---------------------------------------------------
+def american_to_prob(odds_str):
+    if odds_str is None:
+        return None
+    s = str(odds_str).strip()
+    try:
+        if s.startswith("+"):
+            v = float(s[1:])
+            return 100.0 / (v + 100.0)
+        if s.startswith("-"):
+            v = float(s[1:])
+            return v / (v + 100.0)
+        v = float(s)
+        if v >= 0:
+            return 100.0 / (v + 100.0)
+        v = abs(v)
+        return v / (v + 100.0)
+    except:
+        return None
+
+def int_book(odds_str):
+    if odds_str is None:
+        return None
+    s = str(odds_str).strip()
+    try:
+        if s.startswith("+"):
+            return int(round(float(s[1:])))
+        return int(round(float(s)))
+    except:
+        return None
+
+def unwrap_event(payload):
+    # Accept {data:[event]} or direct event
+    if isinstance(payload, dict):
+        if "data" in payload and isinstance(payload["data"], list) and payload["data"]:
+            return payload["data"][0]
+        if all(k in payload for k in ("teams","players","odds")):
+            return payload
+    elif isinstance(payload, list) and payload:
+        if isinstance(payload[0], dict) and all(k in payload[0] for k in ("teams","players","odds")):
+            return payload[0]
+    return None
+
+# ---------------------------------------------------
+# Name Normalization & Cache Matching
+# ---------------------------------------------------
+def norm_player_name(s):
+    if not s: return None
+    s = s.strip()
+    s = re.sub(r"_\d+_NBA$", "", s)
+    s = s.replace("_", " ").replace(".", "")
+    s = re.sub(r"[’'`]", "", s)
+    s = re.sub(r"\s+", " ", s).strip()
+    return s
+
+def possible_cache_filenames(player_name):
+    base = norm_player_name(player_name)
+    if not base:
+        return []
+    parts = base.split(" ")
+    cand = []
+
+    title_parts = [p.title() for p in parts]
+    snake = "_".join(title_parts)
+    lower_snake = "_".join([p.lower() for p in parts])
+
+    cand.extend([
+        f"{snake}.json",
+        f"{'_'.join(title_parts)}.json",
+        f"{lower_snake}.json",
+        f"{base}.json",
+        f"{base.title().replace(' ', '_')}.json"
+    ])
+
+    # Handle Jr, Sr, II, III
+    suffixes = {"jr","sr","ii","iii","iv","v"}
+    if parts[-1].lower() in suffixes:
+        trimmed = " ".join(parts[:-1])
+        cand.append(f"{trimmed.title().replace(' ', '_')}.json")
+
+    seen, out = set(), []
+    for c in cand:
+        if c not in seen:
+            seen.add(c)
+            out.append(c)
+    return out
+
+def find_cache_file(player_name):
+    for fname in possible_cache_filenames(player_name):
+        path = os.path.join(CACHE_DIR, fname)
+        if os.path.isfile(path):
+            return path
+
+    # Fallback fuzzy match
+    base = norm_player_name(player_name)
+    if not base:
+        return None
+    base_simple = re.sub(r"[^a-z0-9]","", base.lower())
+    for path in glob.glob(os.path.join(CACHE_DIR, "*.json")):
+        stem = os.path.splitext(os.path.basename(path))[0]
+        stem_norm = norm_player_name(stem) or stem
+        stem_simple = re.sub(r"[^a-z0-9]", "", stem_norm.lower())
+        if stem_simple == base_simple:
+            return path
+    return None
+
+# ---------------------------------------------------
+# Stat Helpers (game logs from CACHE)
+# ---------------------------------------------------
+STAT_KEYS = {
+    "points":   ("PTS","points"),
+    "assists":  ("AST","assists"),
+    "rebounds": ("REB","rebounds"),
+    "steals":   ("STL","steals"),
+    "blocks":   ("BLK","blocks"),
+    "threes":   ("FG3M","threepm"),
+    "turnovers":("TOV","turnovers"),
+    # PRA handled separately
+}
+
+def get_stat_from_game(game, stat_id):
+    if stat_id == "pra":
+        p = get_stat_from_game(game, "points") or 0
+        r = get_stat_from_game(game, "rebounds") or 0
+        a = get_stat_from_game(game, "assists") or 0
+        return float(p)+float(r)+float(a)
+
+    keys = STAT_KEYS.get(stat_id)
+    if not keys:
+        # unknown stat — try direct key
+        v = game.get(stat_id)
+        return float(v) if isinstance(v, (int,float)) else None
+
+    for k in keys:
+        if k in game:
+            try: return float(game[k])
+            except: pass
+
+    for k in keys:
+        kl = k.lower()
+        if kl in game:
+            try: return float(game[kl])
+            except: pass
+
+    return None
+
+def read_recent_games(cache_path, limit=LOOKBACK_GAMES):
+    try:
+        with open(cache_path, "r", encoding="utf-8") as f:
+            data = json.load(f)
+    except:
+        return []
+
+    if isinstance(data, list):
+        games = data
+    elif isinstance(data, dict):
+        for k in ["games","game_logs","recent","logs","data"]:
+            if k in data and isinstance(data[k], list):
+                games = data[k]
+                break
+        else:
+            games = list(data.values()) if all(isinstance(v, dict) for v in data.values()) else []
+    else:
+        games = []
+
+    def gdate(g):
+        for k in ["GAME_DATE","game_date","date"]:
+            if k in g:
+                try: return datetime.fromisoformat(str(g[k]).replace("Z","+00:00"))
+                except: pass
+        return None
+
+    dated = [(g, gdate(g)) for g in games]
+    dated.sort(key=lambda t: (t[1] is None, t[1]), reverse=True)
+
+    return [g for g,_ in dated][:limit]
+
+def compute_hit_rate_from_cache(player, stat_id, line, side, lookback=LOOKBACK_GAMES):
+    path = find_cache_file(player)
+    if not path:
+        return None, 0
+
+    games = read_recent_games(path, lookback)
+    if not games:
+        return None, 0
+
+    hits = 0
+    total = 0
+    for g in games:
+        val = get_stat_from_game(g, stat_id)
+        if val is None:
+            continue
+        total += 1
+        if side == "over":
+            if val >= line: hits += 1
+        else:
+            if val <= line: hits += 1
+
+    if total == 0:
+        return None, 0
+    return hits / total, total
+
+# ---------------------------------------------------
+# MAIN
+# ---------------------------------------------------
+def main():
+    os.makedirs(OUTPUT_DIR, exist_ok=True)
+
+    files = glob.glob(os.path.join(ODDS_DIR, "*"))
+    print(f"[DEBUG] Found {len(files)} odds files")
+
+    today_utc = datetime.utcnow().date()
+    all_props = []
+
+    # -----------------------
+    # Process each odds file
+    # -----------------------
+    for fp in files:
+        try:
+            with open(fp, "r", encoding="utf-8") as f:
+                payload = json.load(f)
+        except:
+            continue
+
+        ev = unwrap_event(payload)
+        if not isinstance(ev, dict) or "odds" not in ev or "players" not in ev:
+            continue
+
+        # Filter for today's slate (UTC or UTC+1)
+        starts_at = (ev.get("status") or {}).get("startsAt")
+        if not starts_at:
+            continue
+
+        try:
+            game_dt = datetime.fromisoformat(starts_at.replace("Z","+00:00"))
+            game_date = game_dt.date()
+        except:
+            continue
+
+        if not (game_date == today_utc or game_date == today_utc + timedelta(days=1)):
+            continue
+
+        odds_block = ev.get("odds", {})
+        players = ev.get("players", {})
+
+        # Process props
+        for oid, o in odds_block.items():
+            if not isinstance(o, dict): continue
+            if (o.get("betTypeID") or "").lower() != "ou": continue
+            if (o.get("periodID") or "").lower() != "game": continue
+
+            stat_id = (o.get("statID") or "").lower()
+            side    = (o.get("sideID") or "").lower()
+            if side not in ("over","under"): continue
+
+            book = o.get("bookOdds")
+            fair = o.get("fairOdds")
+            line_raw = o.get("bookOverUnder") or o.get("fairOverUnder")
+            if not (book and fair and line_raw):
+                continue
+
+            book_int = int_book(book)
+            if book.startswith("-") and book_int is not None and book_int < abs(MAX_JUICE):
+                continue
+
+            # Edge
+            p_book = american_to_prob(book)
+            p_fair = american_to_prob(fair)
+            if p_book is None or p_fair is None: continue
+
+            edge = p_fair - p_book
+            if edge < MIN_EDGE_SCREEN:
+                continue
+
+            # Player name
+            pid = o.get("playerID") or o.get("statEntityID")
+            disp = None
+            if pid in players:
+                disp = players[pid].get("name")
+            if not disp:
+                disp = norm_player_name(pid)
+
+            # Clean stat id
+            stat_alias = {
+                "3pm":"threes", "3pointers":"threes",
+                "three_pointers_made":"threes",
+                "pts":"points", "reb":"rebounds",
+                "ast":"assists", "stl":"steals",
+                "blk":"blocks", "to":"turnovers"
+            }
+            stat_core = stat_alias.get(stat_id, stat_id)
+
+            # Convert line
+            try:
+                line_f = float(str(line_raw))
+            except:
+                m = re.search(r"[-+]?\d+(\.\d+)?", str(line_raw))
+                if not m: continue
+                line_f = float(m.group(0))
+
+            # Hit-rate
+            hit_rate, sample = compute_hit_rate_from_cache(disp, stat_core, line_f, side)
+            if hit_rate is None or sample == 0:
+                continue
+
+            # Score
+            score = (hit_rate * 100.0) + ((edge * 100.0) * EDGE_WEIGHT)
+
+            all_props.append({
+                "player": disp,
+                "stat": stat_core,
+                "side": side,
+                "line": line_f,
+                "book": str(book),
+                "fair": str(fair),
+                "edge": edge,
+                "hit_rate": hit_rate,
+                "score": score,
+                "sample": sample
+            })
+
+    # -----------------------
+    # Produce Top N
+    # -----------------------
+    if not all_props:
+        print("[INFO] No props for today.")
+        date_str = datetime.utcnow().strftime("%Y-%m-%d")
+        path = os.path.join(OUTPUT_DIR, f"Top10_Props_{date_str}.txt")
+        with open(path, "w", encoding="utf-8") as f:
+            f.write(f"Top {TOP_N} Props — {date_str}\n\nNo qualifying props.")
+        print(f"[OK] Wrote: {path}")
+        return
+
+    all_props.sort(key=lambda x: x["score"], reverse=True)
+    top = all_props[:TOP_N]
+
+    date_str = datetime.utcnow().strftime("%Y-%m-%d")
+
+    def stat_label(s):
+        labels = {
+            "points":"Points","assists":"Assists","rebounds":"Rebounds",
+            "steals":"Steals","blocks":"Blocks","threes":"3PM",
+            "turnovers":"Turnovers","pra":"PRA"
+        }
+        return labels.get(s, s.upper())
+
+    lines = [f"Top {TOP_N} Props — {date_str}\n"]
+    for i, p in enumerate(top, 1):
+        side_char = "O" if p["side"] == "over" else "U"
+        edge_pct = f"{p['edge']*100:.1f}%"
+        hit_pct  = f"{p['hit_rate']*100:.0f}%"
+
+        lines.append(
+            f"{i}. {p['player']} — {stat_label(p['stat'])} {side_char}{p['line']}\n"
+            f"   Score: {p['score']:.1f} | HitRate: {hit_pct} | Edge: +{edge_pct} | Book {p['book']} (fair {p['fair']})"
+        )
+
+    os.makedirs(OUTPUT_DIR, exist_ok=True)
+    path = os.path.join(OUTPUT_DIR, f"Top10_Props_{date_str}.txt")
+    with open(path, "w", encoding="utf-8") as f:
+        f.write("\n".join(lines))
+
+    print(f"[OK] Wrote Top {TOP_N}: {path}")
+
+if __name__ == "__main__":
+    main()

@@ -1,0 +1,18 @@
+import asyncio
+from twikit import Client
+
+async def main():
+    client = Client("en-US")
+
+    email = input("Email/Username: ")
+    password = input("Password: ")
+
+    await client.login(
+        auth_info_1=email,
+        password=password
+    )
+
+    await client.save_cookies("session.json")
+    print("✅ Cookies saved to session.json")
+
+asyncio.run(main())

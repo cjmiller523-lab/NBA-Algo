@@ -1,0 +1,288 @@
+# make_game_tweets_all_props.py
+# Loops through ODDS_CACHE/*, reads each event's O/U props from data[0]["odds"],
+# compares fairOdds vs bookOdds -> value edge, and writes 1 tweet per game to TWEETS/.
+# No API calls. Robust to +110 / -125 strings, list/dict wrappers, etc.
+
+import os, json, glob, re
+from datetime import datetime
+from datetime import datetime, timedelta
+
+
+ODDS_DIR   = "ODDS_CACHE"
+OUTPUT_DIR = "TWEETS"
+
+MAX_PROPS_PER_GAME = 3     # tweet top N props per game
+MIN_EDGE           = 0.03  # min value edge (fair_prob - book_prob), e.g. 3%
+MAX_JUICE          = -600  # drop very juiced lines with book <= -600
+MAX_TWEET_LEN      = 240   # conservative tweet length
+
+# ---------- helpers ----------
+def american_to_prob(odds_str):
+    """Convert American odds to implied probability (0..1)."""
+    if odds_str is None:
+        return None
+    s = str(odds_str).strip()
+    try:
+        if s.startswith("+"):
+            v = float(s[1:])
+            return 100.0 / (v + 100.0)
+        if s.startswith("-"):
+            v = float(s[1:])
+            return v / (v + 100.0)
+        # no sign -> assume positive
+        v = float(s)
+        if v >= 0:
+            return 100.0 / (v + 100.0)
+        v = abs(v)
+        return v / (v + 100.0)
+    except:
+        return None
+
+def int_book(odds_str):
+    """Convert odds like '+110' or '-125' to integer (110, -125)."""
+    if odds_str is None:
+        return None
+    s = str(odds_str).strip()
+    try:
+        if s.startswith("+"):
+            return int(round(float(s[1:])))
+        return int(round(float(s)))
+    except:
+        return None
+
+def norm_pid_to_name(pid):
+    """SGO IDs like 'EVAN_MOBLEY_1_NBA' -> 'Evan Mobley'"""
+    if not pid:
+        return None
+    name = re.sub(r"_\d+_NBA$", "", str(pid))
+    name = name.replace("_", " ").title()
+    return re.sub(r"\s+", " ", name).strip()
+
+def short_team(team):
+    """Build a compact team name from event['teams'] block."""
+    names = team.get("names", {}) if isinstance(team, dict) else {}
+    loc   = names.get("location") or ""
+    short = names.get("short") or ""
+    full  = names.get("long") or ""
+    if loc and short and short not in loc:
+        return f"{loc} {short}"
+    return full or (loc or "Unknown")
+
+def unwrap_event(payload):
+    """Return the event dict that contains 'teams','players','odds'."""
+    # Your files are { "nextCursor":..., "success":..., "data":[{event}] }
+    if isinstance(payload, dict):
+        if "data" in payload and isinstance(payload["data"], list) and payload["data"]:
+            return payload["data"][0]
+        # also accept single-event dumps
+        if all(k in payload for k in ("teams","players","odds")):
+            return payload
+    elif isinstance(payload, list) and payload:
+        if isinstance(payload[0], dict) and all(k in payload[0] for k in ("teams","players","odds")):
+            return payload[0]
+    return None
+
+# ---------- core ----------
+def pick_top_value_props(event, max_props=3, min_edge=0.03, max_juice=-600):
+    """
+    From one event, pull all O/U props in event['odds'], compute value edge
+    using fairOdds - bookOdds (converted to probability), filter and rank.
+    """
+    odds_block = event.get("odds", {})
+    players    = event.get("players", {})
+
+    picks = []
+    for key, o in odds_block.items():
+        if not isinstance(o, dict):
+            continue
+        # Only O/U markets (everything in C that is O/U is fair game)
+        if (o.get("betTypeID") or "").lower() != "ou":
+            continue
+        # Only full game props
+        if (o.get("periodID") or "").lower() != "game":
+            continue
+        # Require both odds
+        book = o.get("bookOdds")
+        fair = o.get("fairOdds")
+        if not book or not fair:
+            continue
+
+        # Exclude ultra-juiced
+        book_int = int_book(book)
+        if book.startswith("-") and book_int is not None and book_int < abs(max_juice):
+            continue
+
+        p_book = american_to_prob(book)
+        p_fair = american_to_prob(fair)
+        if p_book is None or p_fair is None:
+            continue
+
+        edge = p_fair - p_book
+        if edge < min_edge:
+            continue
+
+        stat = (o.get("statID") or "").lower()  # can be points, assists, rebounds, steals, blocks, 3pm, pra, to, etc.
+        side = (o.get("sideID") or "").lower()  # 'over'/'under'
+        line = o.get("bookOverUnder") or o.get("fairOverUnder") or ""
+        pid  = o.get("playerID") or o.get("statEntityID")
+
+        # Prefer clean display name from players map
+        disp = None
+        if pid and pid in players and isinstance(players[pid], dict):
+            disp = players[pid].get("name")
+        if not disp:
+            disp = norm_pid_to_name(pid)
+
+        picks.append({
+            "player": disp or (pid or "Unknown"),
+            "stat":   stat,
+            "side":   side,
+            "line":   str(line),
+            "book":   str(book),
+            "fair":   str(fair),
+            "edge":   float(edge)
+        })
+
+    # Rank by edge descending; mild tie-breaker: prefer plus-money / smaller juice
+    picks.sort(key=lambda x: (x["edge"], -(int_book(x["book"]) or 0) if x["book"].startswith("+") else 0), reverse=True)
+    return picks[:max_props]
+
+def build_tweet(event, picks, max_len=240):
+    home = event["teams"]["home"]
+    away = event["teams"]["away"]
+    hdr_home = short_team(home)
+    hdr_away = short_team(away)
+
+    starts_at = (event.get("status", {}) or {}).get("startsAt")
+    try:
+        dt = datetime.fromisoformat(starts_at.replace("Z","+00:00"))
+        date_str = dt.strftime("%-m/%-d")
+    except:
+        date_str = ""
+
+    # Header
+    header = f"{hdr_away} @ {hdr_home} — {date_str}".strip(" —")
+
+    # stat abbrevs (fallback to first 3 chars upper)
+    stat_map = {
+        "points":"Pts","assists":"Ast","rebounds":"Reb","steals":"Stl","blocks":"Blk",
+        "threes":"3PM","3pm":"3PM","3pointers":"3PM","turnovers":"TO","pra":"PRA",
+    }
+
+    def fmt_pick(p):
+        abbr = stat_map.get(p["stat"], p["stat"].upper()[:3])
+        side = "O" if p["side"] == "over" else ("U" if p["side"] == "under" else p["side"][:1].upper())
+        edge_pct = f"{p['edge']*100:.1f}%"
+        return f"{p['player']} {abbr} {side}{p['line']} {p['book']} (fair {p['fair']}) +{edge_pct}"
+
+    parts = [fmt_pick(p) for p in picks]
+    body  = " | ".join(parts) if parts else "No value props found."
+    tweet = f"{header}\n{body}\n#NBA"
+
+    if len(tweet) <= max_len:
+        return tweet
+
+    # Try again without "(fair …)"
+    parts2 = [re.sub(r"\s*\(fair\s+[+-]?\d+\)\s*", " ", t).strip() for t in parts]
+    tweet2 = f"{header}\n{' | '.join(parts2)}\n#NBA"
+    if len(tweet2) <= max_len:
+        return tweet2
+
+    # Final fallback: first two props only
+    short = " | ".join(parts2[:2])
+    return f"{header}\n{short}\n#NBA"[:max_len]
+
+def main():
+    os.makedirs(OUTPUT_DIR, exist_ok=True)
+
+    files = glob.glob(os.path.join(ODDS_DIR, "*"))
+    print(f"[DEBUG] Found {len(files)} games")
+
+    count_events = 0
+    count_props  = 0
+
+    for fp in files:
+
+        # ------------------------
+        # LOAD JSON FILE
+        # ------------------------
+        try:
+            with open(fp, "r", encoding="utf-8") as f:
+                payload = json.load(f)
+        except Exception:
+            print(f"[WARN] Bad JSON, skipping: {fp}")
+            continue
+
+        # ------------------------
+        # UNWRAP EVENT BLOCK
+        # ------------------------
+        ev = unwrap_event(payload)
+        if (
+            not isinstance(ev, dict)
+            or "odds" not in ev
+            or "teams" not in ev
+        ):
+            # Not a valid odds event
+            print(f"[SKIP: invalid event block] {fp}")
+            continue
+
+        # ------------------------
+        # FILTER: ONLY TODAY'S GAMES (UTC)
+        # ------------------------
+        starts_at = (ev.get("status") or {}).get("startsAt")
+
+        if not starts_at:
+            print(f"[SKIP: no startsAt] {fp}")
+            continue
+
+        try:
+            game_dt = datetime.fromisoformat(starts_at.replace("Z", "+00:00"))
+            game_date = game_dt.date()  # Use UTC date
+        except Exception:
+            print(f"[SKIP: bad startsAt format] {fp}  value={starts_at}")
+            continue
+
+        today_utc = datetime.utcnow().date()
+
+        if not (game_date == today_utc or game_date == today_utc + timedelta(days=1)):
+            print(f"[SKIP: not today] {fp} (game_date={game_date}, today={today_utc})")
+            continue
+
+        # ------------------------
+        # SELECT TOP VALUE PROPS
+        # ------------------------
+        picks = pick_top_value_props(
+            ev,
+            max_props=MAX_PROPS_PER_GAME,
+            min_edge=MIN_EDGE,
+            max_juice=MAX_JUICE,
+        )
+
+        tweet = build_tweet(ev, picks, max_len=MAX_TWEET_LEN)
+
+        # ------------------------
+        # WRITE OUTPUT FILE
+        # ------------------------
+        out_name = f"Tweet_{os.path.basename(fp).rsplit('.',1)[0]}.txt"
+        out_path = os.path.join(OUTPUT_DIR, out_name)
+
+        try:
+            with open(out_path, "w", encoding="utf-8") as out:
+                out.write(tweet)
+        except Exception as e:
+            print(f"[ERROR] Failed to write {out_path}: {e}")
+            continue
+
+        print(f"[OK] {os.path.basename(fp)} -> {out_path}")
+
+        count_events += 1
+        count_props  += len(picks)
+
+    # ------------------------
+    # SUMMARY
+    # ------------------------
+    print(f"\n[SUMMARY] Wrote tweets for {count_events} games; total props selected = {count_props}")
+
+
+if __name__ == "__main__":
+    main()

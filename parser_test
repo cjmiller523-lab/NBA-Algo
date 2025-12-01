@@ -1,0 +1,88 @@
+import os, json, glob, re
+
+ODDS_DIR = "ODDS_CACHE"
+
+def norm_name(n):
+    if not n:
+        return None
+    n = re.sub(r"_\d+_NBA$", "", n)
+    n = n.replace("_", " ").title()
+    return n
+
+def load_props():
+    props = []
+    files = glob.glob(os.path.join(ODDS_DIR, "*"))
+    print(f"[DEBUG] Found {len(files)} odds files")
+
+    for fp in files:
+        if os.path.isdir(fp):
+            continue
+
+        try:
+            with open(fp, "r", encoding="utf-8") as f:
+                payload = json.load(f)
+        except:
+            print(f"[WARNING] Could not read {fp}")
+            continue
+
+        # Your real files ALWAYS have props here:
+        odds_block = payload.get("odds")
+        if not isinstance(odds_block, dict):
+            continue
+
+        for key, m in odds_block.items():
+            if not isinstance(m, dict):
+                continue
+
+            stat = (m.get("statID") or "").lower()
+            if stat not in ("points", "assists", "rebounds"):
+                continue
+
+            if (m.get("periodID") or "").lower() != "game":
+                continue
+
+            if (m.get("betTypeID") or "").lower() != "ou":
+                continue
+
+            side = (m.get("sideID") or "").lower()
+            if side not in ("over", "under"):
+                continue
+
+            # Extract odds
+            raw_odds = m.get("bookOdds")
+            if raw_odds is None:
+                continue
+
+            try:
+                odds = int(raw_odds)
+            except:
+                try:
+                    odds = int(raw_odds.replace("+", ""))
+                except:
+                    continue
+
+            # Extract line
+            raw_line = m.get("bookOverUnder")
+            try:
+                line = float(raw_line)
+            except:
+                continue
+
+            # Extract name from playerID
+            pid = m.get("playerID") or m.get("statEntityID")
+            if not pid:
+                continue
+
+            name = norm_name(pid)
+
+            props.append((name, stat, line, side, odds))
+
+    return props
+
+
+props = load_props()
+
+print(f"\nFOUND {len(props)} props\n")
+
+for p in props[:20]:
+    print(p)
