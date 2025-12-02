@@ -1,0 +1,53 @@
+import requests
+
+DATE = "20251130"   # <-- December 2, 2025 (matches your screenshot)
+URL = f"https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/scoreboard?dates={DATE}"
+
+print(f"Fetching ESPN NCAA Odds for {DATE}...\n")
+
+try:
+    r = requests.get(URL, timeout=10)
+    r.raise_for_status()
+    data = r.json()
+except Exception as e:
+    print("❌ Failed to fetch ESPN data:", e)
+    exit()
+
+events = data.get("events", [])
+print(f"Found {len(events)} games for {DATE}.\n")
+
+for ev in events:
+    name = ev.get("name", "UNKNOWN MATCHUP")
+    print(f"📌 {name}")
+
+    # teams
+    comp = ev.get("competitions", [{}])[0]
+    competitors = comp.get("competitors", [])
+
+    home = None
+    away = None
+    for c in competitors:
+        team = c.get("team", {}).get("displayName")
+        ha = c.get("homeAway")
+        if ha == "home":
+            home = team
+        else:
+            away = team
+
+    print(f"   Matchup: {away} @ {home}")
+
+    # odds
+    odds = ev.get("odds", [])
+    if not odds:
+        print("   ❌ No odds posted yet.\n")
+        continue
+
+    o = odds[0]
+
+    provider = o.get("provider", {}).get("name", "N/A")
+    spread = o.get("details", "N/A")
+    total = o.get("overUnder", "N/A")
+
+    print(f"   Provider: {provider}")
+    print(f"   Spread:   {spread}")
+    print(f"   Total:    {total}\n")

@@ -1,0 +1,428 @@
+# ncaa_edges_v1.py
+# NCAA Edge Finder v1 — OddsAPI (live lines) + CollegeBasketballData (efficiency/tempo)
+# Output: terminal Top-10 edges (spreads & totals) + tweet text files in OUTPUT_NCAA/
+
+import os, json, math, datetime as dt
+from typing import Dict, List, Any, Tuple
+import requests
+import pandas as pd
+
+# =========================
+# CONFIG — set your keys
+# =========================
+ODDSAPI_KEY = "14c69a8949d71a1094f9f229aa93f604"  # you provided this
+CBD_API_KEY = os.environ.get("CBD_API_KEY", "").strip()  # recommended: set as env var
+
+# Folders
+CACHE_DIR = "CACHE_NCAA"
+OUT_DIR = "OUTPUT_NCAA"
+os.makedirs(CACHE_DIR, exist_ok=True)
+os.makedirs(OUT_DIR, exist_ok=True)
+
+# OddsAPI settings
+ODDS_SPORT = "basketball_ncaab"
+ODDS_REGIONS = "us"
+ODDS_MARKETS = "spreads,totals"
+
+# Books to emphasize for consensus (others still included if present)
+PRIORITY_BOOKS = {
+    "DraftKings","FanDuel","BetMGM","Caesars","BetRivers",
+    "BetOnline.ag","Bovada","BetUS","LowVig.ag","PointsBet"
+}
+
+LOOKAHEAD_DAYS = 0  # 0 = today only (OddsAPI already returns live/near-term)
+
+# =========================
+# Utilities
+# =========================
+def cache_path(name: str) -> str:
+    return os.path.join(CACHE_DIR, name)
+
+def jload(path: str):
+    with open(path, "r", encoding="utf-8") as f:
+        return json.load(f)
+
+def jdump(path: str, data: Any):
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=2)
+
+def today_et() -> dt.date:
+    # simple: system local; adjust if you prefer pytz zone
+    return dt.date.today()
+
+def slug(s: str) -> str:
+    return "".join(ch.lower() if ch.isalnum() else " " for ch in s).split()
+
+STOP = {
+    "university","the","of","and","at","city","college","inst","institute",
+    "saint","st","st.","state","a&m","&","u","tech"
+}
+
+def normalize_team_name(name: str) -> str:
+    """
+    Normalize team names so OddsAPI (e.g., 'Duke Blue Devils') can match CBD ('Duke').
+    Strategy: lowercase tokens, drop punctuation + stopwords + mascot heuristics by truncating long tails.
+    """
+    # parenthesis cleanup: "Loyola (Chi)" -> "Loyola"
+    if "(" in name and ")" in name:
+        name = name.split("(")[0].strip()
+    tokens = slug(name)
+    # drop last token if it clearly looks like a mascot (very rough heuristic):
+    # keep up to first 3 informative tokens
+    filt = [t for t in tokens if t not in STOP]
+    if len(filt) >= 1:
+        # special join rules
+        return " ".join(filt[:3])
+    return " ".join(tokens[:3])
+
+def jaccard(a: List[str], b: List[str]) -> float:
+    sa, sb = set(a), set(b)
+    if not sa or not sb: return 0.0
+    return len(sa & sb) / len(sa | sb)
+
+# =========================
+# CBD FETCHERS (ratings & tempo)
+# =========================
+CBD_BASE = "https://api.collegebasketballdata.com"
+
+def cbd_headers() -> Dict[str,str]:
+    if not CBD_API_KEY:
+        raise RuntimeError("CBD_API_KEY env var not set. Export CBD_API_KEY to run.")
+    return {"Authorization": f"Bearer {CBD_API_KEY}"}
+
+def fetch_adjusted_ratings(season: int) -> List[Dict[str,Any]]:
+    url = f"{CBD_BASE}/ratings/adjusted"
+    params = {"season": season}
+    r = requests.get(url, params=params, headers=cbd_headers(), timeout=20)
+    r.raise_for_status()
+    data = r.json()
+    jdump(cache_path(f"ratings_adjusted_{season}.json"), data)
+    return data
+
+def index_ratings(rows: List[Dict[str, Any]]) -> Dict[str, Dict[str, float]]:
+    out = {}
+    for r in rows:
+        team = r.get("team")
+        if not team: continue
+        key = normalize_team_name(team)
+        adj_o = r.get("offensiveRating")
+        adj_d = r.get("defensiveRating")
+        if adj_o is None or adj_d is None: continue
+        try:
+            out[key] = {
+                "team": team,
+                "adj_o": float(adj_o),
+                "adj_d": float(adj_d),
+                "tempo": None,
+            }
+        except:
+            pass
+    return out
+
+def fetch_season_tempo(season: int) -> List[Dict[str, Any]]:
+    url = f"{CBD_BASE}/stats/team/season"
+    params = {"season": season}
+    r = requests.get(url, params=params, headers=cbd_headers(), timeout=30)
+    r.raise_for_status()
+    data = r.json()
+    jdump(cache_path(f"tempo_{season}.json"), data)
+    return data
+
+def index_tempo(rows: List[Dict[str, Any]]) -> Dict[str, float]:
+    out = {}
+    for r in rows:
+        team = r.get("team")
+        if not team: continue
+        key = normalize_team_name(team)
+        pace = r.get("pace")
+        poss = (r.get("teamStats") or {}).get("possessions")
+        games = r.get("games")
+        tempo = None
+        if isinstance(pace, (int,float)):
+            tempo = float(pace)
+        elif poss and games:
+            try:
+                tempo = float(poss)/float(games)
+            except:
+                pass
+        if tempo is not None:
+            out[key] = tempo
+    return out
+
+# =========================
+# ODDSAPI FETCHER
+# =========================
+def fetch_oddsapi_games() -> List[Dict[str,Any]]:
+    url = (
+        f"https://api.the-odds-api.com/v4/sports/{ODDS_SPORT}/odds/"
+        f"?regions={ODDS_REGIONS}&markets={ODDS_MARKETS}&apiKey={ODDSAPI_KEY}"
+    )
+    r = requests.get(url, timeout=20)
+    r.raise_for_status()
+    data = r.json()
+    jdump(cache_path("oddsapi_raw.json"), data)
+    return data
+
+def consensus_spread_total(game: Dict[str,Any], home_name: str, away_name: str) -> Tuple[float, float, int]:
+    """
+    Returns (home_spread_consensus, total_consensus, books_seen).
+    We average across PRIORITY_BOOKS if available; otherwise across all books that have the market.
+    Spread: we take the 'point' for the home team outcome (home is favorite if negative).
+    Total: average 'point' for Over/Under (they're equal on most books).
+    """
+    home_line_points = []
+    total_points = []
+    books_count = 0
+
+    for book in game.get("bookmakers", []):
+        title = book.get("title") or ""
+        markets = book.get("markets", [])
+        # simple filter: include all, but weight later by selection (here we just count)
+        spread_point_found = False
+        total_point_found = False
+
+        for m in markets:
+            if m.get("key") == "spreads":
+                # find home team outcome
+                for o in m.get("outcomes", []):
+                    nm = o.get("name","")
+                    if nm and nm.lower() == home_name.lower():
+                        try:
+                            home_line_points.append(float(o["point"]))
+                            spread_point_found = True
+                        except:
+                            pass
+            elif m.get("key") == "totals":
+                # total point
+                for o in m.get("outcomes", []):
+                    if "point" in o:
+                        try:
+                            total_points.append(float(o["point"]))
+                            total_point_found = True
+                        except:
+                            pass
+
+        if spread_point_found or total_point_found:
+            books_count += 1
+
+    # Consensus: priority subset if present; but we didn't separate above by book.
+    # For v1: simple mean of collected points
+    home_spread_cons = sum(home_line_points)/len(home_line_points) if home_line_points else None
+    total_cons = sum(total_points)/len(total_points) if total_points else None
+
+    return home_spread_cons, total_cons, books_count
+
+# =========================
+# PROJECTION MODEL
+# =========================
+def project_matchup(home, away, hca_pts=1.7):
+    """
+    Convert CBD Adjusted Ratings (which are not per-possession) 
+    into KenPom-like AdjOE/AdjDE per 100 possessions, 
+    then project totals using standard tempo math.
+    """
+
+    # CBD adjusted ratings center around ~112
+    CBD_AVG = 112.0
+
+    # Convert to per-possession efficiencies (KenPom scale)
+    home_adj_oe = (home["adj_o"] / CBD_AVG) * 100
+    home_adj_de = (home["adj_d"] / CBD_AVG) * 100
+
+    away_adj_oe = (away["adj_o"] / CBD_AVG) * 100
+    away_adj_de = (away["adj_d"] / CBD_AVG) * 100
+
+    # Combine offense vs defense
+    home_eff = (home_adj_oe + away_adj_de) / 2     # Home scoring efficiency
+    away_eff = (away_adj_oe + home_adj_de) / 2     # Away scoring efficiency
+
+    # Tempo in possessions/game
+    tempo = (home["tempo"] + away["tempo"]) / 2
+
+    # Projected points
+    home_pts = (tempo * (home_eff / 100)) + hca_pts
+    away_pts = tempo * (away_eff / 100)
+
+    proj_total = home_pts + away_pts
+    proj_margin = home_pts - away_pts
+
+    return {
+        "tempo": round(tempo, 1),
+        "home_pts": round(home_pts, 1),
+        "away_pts": round(away_pts, 1),
+        "proj_total": round(proj_total, 1),
+        "proj_margin": round(proj_margin, 1),
+    }
+
+
+# =========================
+# MAIN
+# =========================
+def main():
+    season = dt.date.today().year + 1  # e.g., Dec 2025 → 2026 season index for CBD; CBD uses season=2025 per your samples
+    # To match your working season, set explicitly:
+    season = 2025
+
+    # 1) Ratings
+    ratings_cache = cache_path(f"ratings_adjusted_{season}.json")
+    if os.path.exists(ratings_cache):
+        ratings_raw = jload(ratings_cache)
+    else:
+        ratings_raw = fetch_adjusted_ratings(season)
+    ratings_idx = index_ratings(ratings_raw)
+
+    # 2) Tempo
+    tempo_cache = cache_path(f"tempo_{season}.json")
+    if os.path.exists(tempo_cache):
+        tempo_raw = jload(tempo_cache)
+    else:
+        tempo_raw = fetch_season_tempo(season)
+    tempo_idx = index_tempo(tempo_raw)
+
+    # Merge tempo
+    for k in list(ratings_idx.keys()):
+        if k in tempo_idx:
+            ratings_idx[k]["tempo"] = tempo_idx[k]
+        else:
+            del ratings_idx[k]
+
+    if not ratings_idx:
+        raise RuntimeError("All ratings dropped after tempo merge — check CBD tempo indexing.")
+
+    # Build a CBD name map (normalized → canonical team)
+    cbd_norm_to_team = {normalize_team_name(v["team"]): v["team"] for v in ratings_idx.values()}
+
+    # 3) Odds
+    odds_games = fetch_oddsapi_games()
+    rows = []
+
+    for g in odds_games:
+        home_raw = g.get("home_team","")
+        away_raw = g.get("away_team","")
+        if not home_raw or not away_raw:
+            continue
+
+        home_norm = normalize_team_name(home_raw)
+        away_norm = normalize_team_name(away_raw)
+
+        # match to CBD teams via simple token Jaccard if exact norm not present
+        def best_match(norm: str) -> str:
+            if norm in cbd_norm_to_team:
+                return cbd_norm_to_team[norm]
+            # find closest by jaccard
+            n_tokens = set(norm.split())
+            best, best_sc = None, 0.0
+            for k, full in cbd_norm_to_team.items():
+                sc = jaccard(norm.split(), k.split())
+                if sc > best_sc:
+                    best_sc, best = sc, full
+            return best
+
+        home_cbd = best_match(home_norm)
+        away_cbd = best_match(away_norm)
+        if not home_cbd or not away_cbd:
+            continue
+
+        home_key = normalize_team_name(home_cbd)
+        away_key = normalize_team_name(away_cbd)
+
+        home = ratings_idx.get(home_key)
+        away = ratings_idx.get(away_key)
+        if not home or not away:
+            continue
+
+        # consensus market lines
+        home_spread, market_total, books_seen = consensus_spread_total(g, home_raw, away_raw)
+
+        proj = project_matchup(home, away, hca_pts=1.7)
+
+        edge_spread = None
+        if home_spread is not None:
+            edge_spread = round(proj["proj_margin"] - float(home_spread), 2)
+
+        edge_total = None
+        if market_total is not None:
+            edge_total = round(proj["proj_total"] - float(market_total), 2)
+
+        rows.append({
+            "matchup": f"{away_raw} @ {home_raw}",
+            "home_team": home_raw,
+            "away_team": away_raw,
+            "home_spread_cons": home_spread,
+            "market_total_cons": market_total,
+            "books_seen": books_seen,
+            **proj,
+            "EDGE_spread": edge_spread,
+            "EDGE_total": edge_total,
+            "home_cbd": home["team"],
+            "away_cbd": away["team"],
+        })
+
+    if not rows:
+        print("No games matched to CBD ratings or no odds available.")
+        return
+
+    df = pd.DataFrame(rows)
+
+    # Top 10 by absolute edge (spreads and totals)
+    def topn(df_, col, n=10):
+        return df_.dropna(subset=[col]).assign(abs_edge=lambda x: x[col].abs()) \
+                 .sort_values("abs_edge", ascending=False).head(n)
+
+    top_spreads = topn(df, "EDGE_spread", 10)
+    top_totals  = topn(df, "EDGE_total", 10)
+
+    # ============ PRINT =============
+    today = dt.date.today().isoformat()
+    print("\n====================================")
+    print(f"NCAA Edge Finder — {today}")
+    print("Using OddsAPI (spreads/totals) + CBD (AdjO/AdjD/pace)")
+    print("====================================")
+
+    print("\nTOP 10 SPREAD EDGES (consensus vs model):")
+    if not top_spreads.empty:
+        print(top_spreads[[
+            "matchup","home_spread_cons","proj_margin","EDGE_spread","books_seen"
+        ]].to_string(index=False))
+    else:
+        print("No spread edges available.")
+
+    print("\nTOP 10 TOTAL EDGES (consensus vs model):")
+    if not top_totals.empty:
+        print(top_totals[[
+            "matchup","market_total_cons","proj_total","EDGE_total","books_seen"
+        ]].to_string(index=False))
+    else:
+        print("No total edges available.")
+
+    # ============ SAVE TWEET FILES =============
+    # one-line per pick, under ~240 chars, keep it tight
+    spread_lines = []
+    for _, r in top_spreads.iterrows():
+        spread_lines.append(
+            f"{r['matchup']} | Market: {r['home_spread_cons']:+.1f} | Model: {r['proj_margin']:+.1f} | EDGE {r['EDGE_spread']:+.1f} | {int(r['books_seen'])} books"
+        )
+    total_lines = []
+    for _, r in top_totals.iterrows():
+        total_lines.append(
+            f"{r['matchup']} | Market Tot: {r['market_total_cons']:.1f} | Model Tot: {r['proj_total']:.1f} | EDGE {r['EDGE_total']:+.1f} | {int(r['books_seen'])} books"
+        )
+
+    tweets_spread = os.path.join(OUT_DIR, f"tweets_spreads_{today}.txt")
+    tweets_total  = os.path.join(OUT_DIR, f"tweets_totals_{today}.txt")
+
+    with open(tweets_spread, "w", encoding="utf-8") as f:
+        f.write("Top NCAA Spread Edges:\n" + "\n".join(spread_lines))
+    with open(tweets_total, "w", encoding="utf-8") as f:
+        f.write("Top NCAA Total Edges:\n" + "\n".join(total_lines))
+
+    # Also save full CSV
+    csv_path = os.path.join(OUT_DIR, f"ncaa_edges_{today}.csv")
+    df.to_csv(csv_path, index=False, encoding="utf-8-sig")
+
+    print(f"\n✅ Saved: {csv_path}")
+    print(f"📝 Tweet files: {tweets_spread}  /  {tweets_total}\n")
+
+
+if __name__ == "__main__":
+    main()

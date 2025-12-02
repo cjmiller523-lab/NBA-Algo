@@ -1,0 +1,43 @@
+import requests
+
+API_KEY = "14c69a8949d71a1094f9f229aa93f604"
+SPORT = "basketball_ncaab"
+
+url = f"https://api.the-odds-api.com/v4/sports/{SPORT}/odds/?regions=us&markets=spreads,totals&apiKey={API_KEY}"
+
+print("Fetching NCAA odds from OddsAPI...\n")
+
+try:
+    r = requests.get(url, timeout=10)
+    r.raise_for_status()
+    games = r.json()
+except Exception as e:
+    print("❌ Error:", e)
+    quit()
+
+print(f"Found {len(games)} games\n")
+
+for g in games:
+    home = g["home_team"]
+    away = g["away_team"]
+    print(f"📌 {away} @ {home}")
+
+    if not g.get("bookmakers"):
+        print("   ❌ No bookmakers for this game.\n")
+        continue
+
+    for book in g["bookmakers"]:
+        title = book["title"]
+
+        for market in book["markets"]:
+            if market["key"] == "spreads":
+                print(f"   {title} SPREADS:")
+                for o in market["outcomes"]:
+                    print(f"      {o['name']}: {o['point']} ({o['price']})")
+
+            if market["key"] == "totals":
+                print(f"   {title} TOTALS:")
+                for o in market["outcomes"]:
+                    print(f"      {o['name']}: {o['point']} ({o['price']})")
+
+    print("\n")

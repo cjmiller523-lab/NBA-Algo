@@ -1,0 +1,59 @@
+import requests
+
+URL = "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/scoreboard"
+
+print("Fetching ESPN NCAA Men's Basketball Odds...\n")
+
+try:
+    r = requests.get(URL, timeout=10)
+    r.raise_for_status()
+    data = r.json()
+except Exception as e:
+    print("❌ Failed to fetch ESPN data:", e)
+    exit()
+
+events = data.get("events", [])
+if not events:
+    print("❌ No events found.")
+    exit()
+
+print(f"Found {len(events)} games.\n")
+
+for ev in events:
+    name = ev.get("name")
+    print(f"📌 {name}")
+
+    competitions = ev.get("competitions", [])
+    if not competitions:
+        print("   ❌ No competition data.\n")
+        continue
+
+    comp = competitions[0]
+    competitors = comp.get("competitors", [])
+
+    home = None
+    away = None
+    for c in competitors:
+        team = c.get("team", {}).get("displayName")
+        side = c.get("homeAway")
+        if side == "home":
+            home = team
+        elif side == "away":
+            away = team
+
+    print(f"   Matchup: {away} @ {home}")
+
+    odds = ev.get("odds", [])
+    if not odds:
+        print("   ❌ No odds posted yet.\n")
+        continue
+
+    o = odds[0]  # ESPN usually puts primary provider first
+
+    provider = o.get("provider", {}).get("name", "unknown")
+    spread = o.get("details")         # Example: "Duke -4.5"
+    total = o.get("overUnder")        # Example: 151.5
+
+    print(f"   Provider: {provider}")
+    print(f"   Spread:   {spread}")
+    print(f"   Total:    {total}\n")

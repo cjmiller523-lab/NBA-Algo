@@ -676,20 +676,20 @@ def save_twitter_text(results):
             )
 
                 # ---- ADD GLOBAL BOUNCE-BACK ----
-            lines.append("🔁 Bounce-Back Candidates (Missed Last Game, ≥80%)")
-            lines.append("-----------------------------------")
+    lines.append("🔁 Bounce-Back Candidates (Missed Last Game, ≥80%)")
+    lines.append("-----------------------------------")
 
-            global_bounce = collect_global_bounce(results)
+    global_bounce = collect_global_bounce(results)
 
-            if not global_bounce:
-                lines.append("No bounce-back players today.")
-            else:
-                for r in global_bounce:
-                    short_name = format_player_name(r["player"])
-                    lines.append(
-                        f"{short_name} - {r['stat']} {int(r['threshold'])}+ "
-                        f"| {r['hits']}/{r['total']} | Last: {r['last_val']}"
-                    )
+    if not global_bounce:
+        lines.append("No bounce-back players today.")
+    else:
+        for r in global_bounce:
+            short_name = format_player_name(r["player"])
+            lines.append(
+                f"{short_name} - {r['stat']} {int(r['threshold'])}+ "
+                f"| {r['hits']}/{r['total']} | Last: {r['last_val']}"
+            )
 
     # Write output
     with open(path, "w", encoding="utf-8") as f:

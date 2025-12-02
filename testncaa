@@ -1,0 +1,43 @@
+import requests
+
+ENDPOINTS = [
+    # Old-style V2
+    "https://site.web.api.espn.com/apis/v2/sports/basketball/mens-college-basketball/scoreboard",
+
+    # Newer core scoreboard API
+    "https://sports.core.api.espn.com/v2/sports/basketball/leagues/mens-college-basketball/events",
+
+    # Competitions endpoint
+    "https://sports.core.api.espn.com/v2/sports/basketball/leagues/mens-college-basketball/scoreboards",
+
+    # V1 style
+    "https://sports.core.api.espn.com/v1/sports/basketball/mens-college-basketball/scoreboard",
+
+    # Generic NCAA basketball grouping
+    "https://site.web.api.espn.com/apis/v2/sports/basketball/college-basketball/scoreboard",
+
+    # Another observed ESPN format
+    "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/scoreboard",
+
+    # Extremely stable fallback used by many devs
+    "https://site.api.espn.com/apis/site/v2/sports/basketball/college-basketball/scoreboard",
+]
+
+print("\n🔍 Testing ESPN NCAA basketball endpoints...\n")
+
+for url in ENDPOINTS:
+    print(f"Trying: {url}")
+    try:
+        r = requests.get(url, timeout=10)
+        print(f"  Status: {r.status_code}")
+        if r.status_code == 200:
+            data = r.json()
+            # ESPN scoreboard always has 'events'
+            if "events" in data:
+                print(f"  ✔ SUCCESS: Found {len(data['events'])} events.\n")
+            else:
+                print(f"  ✔ SUCCESS (no 'events' key): keys = {list(data.keys())}\n")
+        else:
+            print("  ❌ NOT 200 OK\n")
+    except Exception as e:
+        print(f"  ❌ Error: {e}\n")
