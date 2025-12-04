@@ -1,0 +1,496 @@
+import warnings
+warnings.filterwarnings("ignore")
+
+import os, json, time, math, re
+from datetime import datetime
+from typing import Dict, List, Optional, Tuple
+
+import requests
+import pandas as pd
+
+# ==============================
+# SETTINGS (NBA combined24 vibe)
+# ==============================
+NUM_GAMES = 10                         # last-N window
+SEASONS_DISPLAY = ["2025-26", "2024-25"]  # converted to YYYYYYYY
+GAME_TYPE = 2                          # 2 = regular season
+MAX_RETRIES = 3
+REQUEST_TIMEOUT = 15
+
+# markets to include (C: Shots + Points + Goals)
+MARKETS = ["shots", "points", "goals"]
+
+# Threshold menus (used for hit-rate calc + matching alts)
+SHOT_THRESHOLDS  = [2, 3, 4, 5, 6, 7, 8]
+POINT_THRESHOLDS = [1, 2, 3, 4]
+GOAL_THRESHOLDS  = [1, 2, 3]
+THRESHOLDS_MAP = {
+    "shots": SHOT_THRESHOLDS,
+    "points": POINT_THRESHOLDS,
+    "goals": GOAL_THRESHOLDS,
+}
+
+# Files & dirs
+OUTPUT_DIR = "output_nhl_txt"
+CACHE_DIR = "cache_nhl"
+PLAYERLOG_CACHE_DIR = os.path.join(CACHE_DIR, "player_logs")
+ROSTER_CACHE = os.path.join(CACHE_DIR, "rosters.json")
+TEAMS_CACHE = os.path.join(CACHE_DIR, "teams.json")
+SCHEDULE_CACHE = os.path.join(CACHE_DIR, "schedule_today.json")
+
+# >>>>>>>>>>>> IMPORTANT: your local odds cache path <<<<<<<<<<<<<
+ODDS_CACHE_PATH = os.path.join(CACHE_DIR, "odds_cache_nhl.json")
+
+# Speed filters (optional)
+FILTER_TEAM_CODES: List[str] = []      # e.g., ["TOR","BOS"]
+FILTER_PLAYER_NAMES: List[str] = []    # e.g., ["Auston Matthews"]
+
+os.makedirs(OUTPUT_DIR, exist_ok=True)
+os.makedirs(CACHE_DIR, exist_ok=True)
+os.makedirs(PLAYERLOG_CACHE_DIR, exist_ok=True)
+
+# ==============================
+# Helpers
+# ==============================
+def season_human_to_api(s: str) -> str:
+    a, b = s.split("-")
+    start = int(a)
+    end = int(a[:2] + b) if len(b) == 2 else int(b)
+    return f"{start}{end}"
+
+SEASONS = [season_human_to_api(s) for s in SEASONS_DISPLAY]
+
+def http_get_json(url: str, retries: int = MAX_RETRIES) -> dict:
+    for i in range(retries):
+        try:
+            r = requests.get(url, timeout=REQUEST_TIMEOUT, headers={"User-Agent":"nhl-combined24/1.0"})
+            if r.status_code == 200:
+                return r.json()
+            time.sleep(0.4 + i*0.3)
+        except requests.RequestException:
+            time.sleep(0.4 + i*0.3)
+    return {}
+
+def load_json(path: str) -> Optional[dict]:
+    if os.path.exists(path):
+        try:
+            with open(path, "r", encoding="utf-8") as f:
+                return json.load(f)
+        except Exception:
+            return None
+    return None
+
+def save_json(path: str, data: dict):
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False)
+
+def implied_prob_from_american(odds: int) -> float:
+    # returns probability in [0,1]
+    if odds is None:
+        return 0.0
+    try:
+        o = int(odds)
+    except:
+        return 0.0
+    if o < 0:
+        return (-o) / ((-o) + 100.0)
+    else:
+        return 100.0 / (o + 100.0)
+
+def norm_stat_name(s: str) -> str:
+    s = (s or "").strip().lower()
+    if s in ("sog","shots on goal","shot","shots"):
+        return "shots"
+    if s in ("goal","goals"):
+        return "goals"
+    if s in ("point","points","pts"):
+        return "points"
+    return s
+
+def coerce_threshold(x) -> Optional[float]:
+    if x is None:
+        return None
+    if isinstance(x, (int,float)):
+        return float(x)
+    s = str(x).strip()
+    m = re.match(r"^(\d+)(\+)?$", s)
+    if m:
+        return float(m.group(1))
+    try:
+        return float(s)
+    except:
+        return None
+
+def american_str(x: Optional[int]) -> str:
+    if x is None:
+        return "N/A"
+    return f"{int(x):+d}"
+
+# ==============================
+# Teams / Schedule / Rosters
+# ==============================
+def fetch_teams_df() -> pd.DataFrame:
+    # cache teams
+    cached = load_json(TEAMS_CACHE)
+    if cached:
+        return pd.DataFrame(cached["rows"])
+    url = "https://statsapi.web.nhl.com/api/v1/teams"
+    data = http_get_json(url)
+    rows = []
+    for t in data.get("teams", []):
+        rows.append({
+            "team_id": t["id"],
+            "name": t.get("name",""),
+            "abbrev": t.get("abbreviation", t.get("teamName","")),
+        })
+    df = pd.DataFrame(rows)
+    save_json(TEAMS_CACHE, {"rows": df.to_dict(orient="records")})
+    return df
+
+def fetch_today_schedule() -> List[dict]:
+    # NHL api-web "now" schedule
+    cached = load_json(SCHEDULE_CACHE)
+    today_str = datetime.now().strftime("%Y-%m-%d")
+    if cached and cached.get("_dt") == today_str:
+        return cached.get("games", [])
+    url = "https://api-web.nhle.com/v1/schedule/now"
+    data = http_get_json(url)
+    # Normalize: take today's games list if present
+    games = data.get("gameWeek", [{}])[0].get("games", []) if "gameWeek" in data else data.get("games", [])
+    save_json(SCHEDULE_CACHE, {"_dt": today_str, "games": games})
+    return games
+
+def fetch_team_roster(team_id: int) -> List[dict]:
+    url = f"https://statsapi.web.nhl.com/api/v1/teams/{team_id}/roster"
+    data = http_get_json(url)
+    return data.get("roster", [])
+
+def build_roster_book(filter_team_codes: List[str]) -> pd.DataFrame:
+    teams = fetch_teams_df()
+
+    # If user specified team codes but none match today's slate, clear filter.
+    if filter_team_codes:
+        teams = teams[teams["abbrev"].str.upper().isin([c.upper() for c in filter_team_codes])]
+        if teams.empty:
+            print("⚠️ FILTER_TEAM_CODES excluded all teams — loading full league rosters.")
+            teams = fetch_teams_df()
+
+    # Fix inconsistent NHL abbreviations → normalize to standard 3-letter codes
+    NHL_TEAM_FIX = {
+        # New Jersey
+        "N.J": "NJD", "N.J.": "NJD", "NJ": "NJD",
+
+        # Montreal
+        "MON": "MTL", "MONT": "MTL", "MTL": "MTL",
+
+        # Winnipeg
+        "WPG": "WPG", "Wpg": "WPG",
+
+        # Philadelphia
+        "PHI": "PHI", "Phi": "PHI",
+
+        # Anaheim
+        "ANA": "ANA", "Ana": "ANA",
+
+        # San Jose
+        "SJ": "SJS", "S.J": "SJS", "SJS": "SJS",
+
+        # Dallas
+        "DAL": "DAL", "Dal": "DAL",
+
+        # Washington (NHL API sometimes uses WAS, sometimes WSH)
+        "WAS": "WSH", "WASH": "WSH", "WSH": "WSH",
+
+        # Utah Hockey Club
+        "UHC": "UTA", "UTAH": "UTA", "Utah": "UTA", "UTA": "UTA",
+    }
+
+    rows = []
+    for _, t in teams.iterrows():
+        tid = int(t["team_id"])
+        raw_abbr = str(t["abbrev"]).upper()
+        fixed_abbr = NHL_TEAM_FIX.get(raw_abbr, raw_abbr)
+
+        roster = fetch_team_roster(tid)
+        for r in roster:
+            p = r.get("person", {})
+            if not p:
+                continue
+            rows.append({
+                "player_id": p.get("id"),
+                "player_name": p.get("fullName"),
+                "team_id": tid,
+                "team_abbrev": fixed_abbr,
+                "position": r.get("position", {}).get("abbreviation", "")
+            })
+
+    df = pd.DataFrame(rows)
+
+    if df.empty or "player_id" not in df.columns:
+        print("❌ Roster book is empty after building.")
+        return pd.DataFrame(columns=["player_id","player_name","team_id","team_abbrev","position"])
+
+    # Print all abbreviations to confirm they now match the schedule
+    print("DEBUG unique team_abbrev values in roster_df:", df["team_abbrev"].unique().tolist())
+
+    return df.dropna(subset=["player_id"])
+
+
+
+
+def maybe_load_rosters_from_cache(filter_team_codes: List[str]) -> pd.DataFrame:
+    key = {"teams": sorted([c.upper() for c in filter_team_codes])}
+    cached = load_json(ROSTER_CACHE)
+    if cached and cached.get("_key")==key:
+        return pd.DataFrame(cached["rows"])
+    df = build_roster_book(filter_team_codes)
+    save_json(ROSTER_CACHE, {"_key": key, "rows": df.to_dict(orient="records")})
+    return df
+
+# ==============================
+# Player logs & hit rates
+# ==============================
+def player_log_cache_path(player_id: int, season_api: str) -> str:
+    return os.path.join(PLAYERLOG_CACHE_DIR, f"{player_id}_{season_api}_{GAME_TYPE}.json")
+
+def fetch_player_game_log(player_id: int, season_api: str) -> List[dict]:
+    path = player_log_cache_path(player_id, season_api)
+    cached = load_json(path)
+    if cached:
+        return cached.get("games", [])
+    url = f"https://api-web.nhle.com/v1/player/{player_id}/game-log/{season_api}/{GAME_TYPE}"
+    data = http_get_json(url)
+    games = data.get("gameLog", data.get("games", [])) or []
+    if isinstance(games, dict):
+        games = games.get("gameLog", [])
+    save_json(path, {"games": games})
+    return games
+
+def extract_stats_from_game(g: dict) -> Dict[str, int]:
+    goals = int(g.get("goals", g.get("goalsInGame", 0) or 0))
+    assists = int(g.get("assists", g.get("assistsInGame", 0) or 0))
+    points = int(g.get("points", goals + assists))
+    shots  = int(g.get("shots", g.get("shotsOnGoal", 0) or 0))
+    # blocks not used in Option C
+    return {"goals": goals, "points": points, "shots": shots}
+
+def sort_key_game_date(g: dict) -> str:
+    for k in ["gameDate","gameDateTimeUTC","gameDateUTC","date","gameDateIso"]:
+        if k in g:
+            return g[k]
+    return ""
+
+def aggregate_player_games(player_id: int, seasons_api: List[str]) -> List[dict]:
+    allg = []
+    for s in seasons_api:
+        allg.extend(fetch_player_game_log(player_id, s))
+    allg.sort(key=lambda x: sort_key_game_date(x), reverse=True)
+    return [extract_stats_from_game(g) for g in allg]
+
+def hit_rate(vals: List[int], th: float, last_n: int) -> Tuple[float,int]:
+    window = vals[:last_n]
+    if not window:
+        return 0.0, 0
+    hits = sum(1 for v in window if v >= th)
+    return round(hits/len(window)*100.0, 1), len(window)
+
+# ==============================
+# Odds cache ingestion
+# ==============================
+def load_odds_cache() -> pd.DataFrame:
+    if not os.path.exists(ODDS_CACHE_PATH):
+        return pd.DataFrame(columns=["game_key","date","player","team","stat","threshold","american_odds","type","book"])
+    data = load_json(ODDS_CACHE_PATH)
+    if isinstance(data, dict):  # allow dict{"rows":[...]}
+        rows = data.get("rows", [])
+    else:
+        rows = data or []
+    norm_rows = []
+    for r in rows:
+        stat = norm_stat_name(r.get("stat",""))
+        if stat not in MARKETS:
+            continue
+        thr = coerce_threshold(r.get("threshold"))
+        if thr is None:
+            continue
+        away = (r.get("game",{}).get("away") or r.get("away") or "").upper()
+        home = (r.get("game",{}).get("home") or r.get("home") or "").upper()
+        date = r.get("game",{}).get("date") or r.get("date")
+        game_key = f"{away}@{home}"
+        norm_rows.append({
+            "game_key": game_key,
+            "date": date,
+            "player": r.get("player",""),
+            "team": (r.get("team","") or "").upper(),
+            "stat": stat,
+            "threshold": float(thr),
+            "american_odds": int(r.get("american_odds")) if str(r.get("american_odds","")).strip().lstrip("+-").isdigit() else None,
+            "type": r.get("type","line"),
+            "book": r.get("book",""),
+        })
+    return pd.DataFrame(norm_rows)
+
+# ==============================
+# Main assembly
+# ==============================
+def build_matchups_today(teams_df: pd.DataFrame) -> List[dict]:
+    sched = fetch_today_schedule()
+    out = []
+    for g in sched:
+        # api-web returns triCodes as "awayTeam", "homeTeam" objects
+        away = (g.get("awayTeam",{}).get("abbrev") or g.get("awayTeam",{}).get("triCode") or "").upper()
+        home = (g.get("homeTeam",{}).get("abbrev") or g.get("homeTeam",{}).get("triCode") or "").upper()
+        if not away or not home:
+            continue
+        if FILTER_TEAM_CODES and (away not in [c.upper() for c in FILTER_TEAM_CODES] and home not in [c.upper() for c in FILTER_TEAM_CODES]):
+            continue
+        out.append({"away": away, "home": home, "game_key": f"{away}@{home}"})
+    return out
+
+def main():
+    date_label = datetime.now().strftime("%Y-%m-%d")
+
+    teams_df = fetch_teams_df()
+    # Build today slate
+    matchups = build_matchups_today(teams_df)
+    if not matchups:
+        print("No games found for today (schedule/filters).")
+        return
+
+    # Build rosters and narrow to players in today’s games
+    roster_df = maybe_load_rosters_from_cache(FILTER_TEAM_CODES)
+    in_slate = [m["away"] for m in matchups] + [m["home"] for m in matchups]
+    print("DEBUG — Today’s Slate Teams:", in_slate)
+    print("DEBUG — Matchups:", matchups)
+    print("DEBUG roster_df columns:", roster_df.columns.tolist())
+    print("DEBUG roster_df head:", roster_df.head())
+
+    roster_df = roster_df[roster_df["team_abbrev"].str.upper().isin(in_slate)]
+    if FILTER_PLAYER_NAMES:
+        roster_df = roster_df[roster_df["player_name"].isin(FILTER_PLAYER_NAMES)]
+    if roster_df.empty:
+        print("No roster players after filters.")
+        return
+
+    # Load odds cache and restrict to today's slate
+    odds_df = load_odds_cache()
+    if not odds_df.empty:
+        odds_df = odds_df[odds_df["game_key"].isin([m["game_key"] for m in matchups])]
+    else:
+        print("⚠️  No odds cache found or it is empty. You’ll still get hit-rates, but no odds/edges.")
+
+    # Preload player logs → compute per-player stat arrays
+    player_games: Dict[int, List[dict]] = {}
+    for pid in roster_df["player_id"].unique():
+        player_games[pid] = aggregate_player_games(int(pid), SEASONS)
+
+    # Compute per-game output
+    hundred_lines = []  # global 100% list
+    for m in matchups:
+        gkey = m["game_key"]
+        block_lines = []
+        block_lines.append("="*27)
+        block_lines.append(f"{m['away']} @ {m['home']}")
+        block_lines.append("="*27)
+        block_lines.append("")
+        block_lines.append("Top Props Today (Shots / Points / Goals):")
+
+        # candidates: only players with listed odds for this game (so we don't spam)
+        game_odds = odds_df[odds_df["game_key"] == gkey] if not odds_df.empty else pd.DataFrame()
+        if game_odds.empty:
+            block_lines.append("  (No odds found in cache for this game.)")
+            out_path = os.path.join(OUTPUT_DIR, f"{gkey.replace('@','_')}.txt")
+            with open(out_path, "w", encoding="utf-8") as f:
+                f.write("\n".join(block_lines))
+            print("\n".join(block_lines))
+            print(f"📝 Saved: {out_path}\n")
+            continue
+
+        rows_out = []
+
+        # Build quick lookup: name+team → pid
+        name_team_to_pid = { (row.player_name, row.team_abbrev): int(row.player_id)
+                             for _, row in roster_df.iterrows() }
+
+        for _, r in game_odds.iterrows():
+            player = r["player"]
+            team = r["team"]
+            stat = r["stat"]            # shots|points|goals
+            thr  = r["threshold"]       # 3.5 or 4
+            odds = r["american_odds"]
+
+            pid = name_team_to_pid.get((player, team))
+            if not pid:
+                # Try soft match on name only (fallback)
+                candidates = roster_df[roster_df["player_name"].str.lower()==str(player).lower()]
+                if len(candidates)==1:
+                    pid = int(candidates.iloc[0]["player_id"])
+                else:
+                    continue  # skip if ambiguous
+
+            gseries = player_games.get(pid, [])
+            if not gseries:
+                continue
+
+            vals = [g[stat] for g in gseries if stat in g]
+            if not vals:
+                continue
+
+            # For alt thresholds like 4+, we treat thr as integer; for lines like 3.5, use float
+            hr, sample = hit_rate(vals, thr, NUM_GAMES)
+
+            # implied & edge
+            imp = implied_prob_from_american(odds)
+            edge = round(hr - imp*100.0, 1) if odds is not None else None
+
+            # human formatting of threshold/line
+            thr_label = f"{int(thr)}+" if float(thr).is_integer() else f"{thr:.1f}"
+            line_txt = f"{stat.capitalize()} {thr_label} @ {american_str(odds)} | Hit {hr:.1f}% ({sample}/{NUM_GAMES})"
+            if edge is not None:
+                line_txt += f" | Edge {edge:+.1f}%"
+
+            rows_out.append((hr, edge if edge is not None else -999, stat, player, team, line_txt))
+
+            # 100% bucket (hit == 100 over last N)
+            if sample >= NUM_GAMES and abs(hr - 100.0) < 1e-9:
+                hundred_lines.append(f"{player} ({team}) — {stat.capitalize()} {thr_label} @ {american_str(odds)} | 10/10")
+
+        # sort by hr desc then edge desc
+        rows_out.sort(key=lambda x: (x[0], x[1]), reverse=True)
+
+        # print top 10 (like NBA blocks)
+        top_n = rows_out[:10] if len(rows_out)>10 else rows_out
+        if not top_n:
+            block_lines.append("  (No matching props after filters.)")
+        else:
+            for _, _, _, player, team, txt in top_n:
+                block_lines.append(f"{player} ({team}) – {txt}")
+
+        # write per-game file
+        out_path = os.path.join(OUTPUT_DIR, f"{gkey.replace('@','_')}.txt")
+        with open(out_path, "w", encoding="utf-8") as f:
+            f.write("\n".join(block_lines))
+
+        # echo to terminal
+        print("\n".join(block_lines))
+        print(f"📝 Saved: {out_path}\n")
+
+    # Global 100% list
+    if hundred_lines:
+        header = [
+            "==============================",
+            "🔥 NHL — 100% Hit-Rate Props",
+            f"Date: {date_label}",
+            "==============================",
+            "",
+        ]
+        path_100 = os.path.join(OUTPUT_DIR, f"NHL_100_percent_{date_label}.txt")
+        with open(path_100, "w", encoding="utf-8") as f:
+            f.write("\n".join(header + hundred_lines))
+        print("\n".join(header + hundred_lines))
+        print(f"📝 Saved: {path_100}\n")
+    else:
+        print("No 100% props today based on last-N window.")
+
+if __name__ == "__main__":
+    main()
