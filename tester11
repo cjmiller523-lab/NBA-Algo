@@ -1,0 +1,20 @@
+import requests
+
+API_KEY = "7243468c02f981445249730c03b426c1"
+
+r = requests.get(
+    "https://api.sportsgameodds.com/v2/events",
+    params={
+        "apiKey": API_KEY,
+        "leagueID": "NBA",
+        "oddsAvailable": "true",
+        "bookmakerID": "fanduel",
+        "limit": 50,
+    },
+    timeout=20,
+)
+
+js = r.json()
+print("RAW SGO RESPONSE:")
+print(js)
+print("\nNumber of games:", len(js.get("data", [])))

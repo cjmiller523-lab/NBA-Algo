@@ -1,0 +1,145 @@
+import requests
+
+HEADERS = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6099.225 Safari/537.36",
+    "Accept": "application/json, text/plain, */*",
+}
+
+TIMEOUT = 10
+
+
+def get_json(url):
+    try:
+        r = requests.get(url, headers=HEADERS, timeout=TIMEOUT)
+        if r.status_code == 200:
+            return r.json()
+        else:
+            print(f"HTTP {r.status_code} for URL: {url}")
+    except Exception as e:
+        print("Request failed:", e)
+    return {}
+
+
+# ============================================================
+# STEP 1 — FETCH NHL TEAMS (working ESPN endpoint)
+# ============================================================
+
+def fetch_teams():
+    url = "https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/teams"
+    data = get_json(url)
+
+    print("\nDEBUG TEAMS RESPONSE KEYS:", list(data.keys()))
+
+    teams = []
+    try:
+        leagues = data["sports"][0]["leagues"][0]["teams"]
+        for t in leagues:
+            info = t["team"]
+            teams.append({
+                "team_id": info["id"],
+                "team_abbrev": info["abbreviation"],
+                "team_name": info["displayName"]
+            })
+    except Exception as e:
+        print("ERROR parsing ESPN teams:", e)
+
+    return teams
+
+
+# ============================================================
+# STEP 2 — FETCH ROSTER FOR A TEAM
+# ============================================================
+
+def fetch_team_roster(team_id):
+    url = f"https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/teams/{team_id}/roster"
+    data = get_json(url)
+
+    print("\nDEBUG ROSTER KEYS:", list(data.keys()))
+
+    # Team fallback abbreviation
+    team_header = data.get("team", {})
+    team_abbrev_main = team_header.get("abbreviation", "")
+
+    roster = []
+
+    try:
+        athletes = data.get("athletes", [])
+
+        if isinstance(athletes, dict):
+            groups = athletes.values()
+        elif isinstance(athletes, list):
+            groups = athletes
+        else:
+            return roster
+
+        for group in groups:
+            items = group.get("items", [])
+            for p in items:
+                # Try team abbreviation inside player object
+                team_obj = p.get("team", {})
+                team_abbrev = ""
+
+                if isinstance(team_obj, dict):
+                    team_abbrev = team_obj.get("abbreviation", "")
+
+                # Fallback to team header
+                if not team_abbrev:
+                    team_abbrev = team_abbrev_main
+
+                roster.append({
+                    "player_id": p["id"],
+                    "player_name": p["fullName"],
+                    "position": p.get("position", {}).get("abbreviation", ""),
+                    "team_abbrev": team_abbrev
+                })
+
+    except Exception as e:
+        print(f"ERROR parsing roster for team {team_id}: {e}")
+
+    return roster
+
+
+# ============================================================
+# STEP 3 — FETCH PLAYER GAME LOGS
+# ============================================================
+
+def fetch_player_logs(player_id, season=2025):
+    url = f"https://sports.core.api.espn.com/v2/sports/hockey/leagues/nhl/seasons/{season}/athletes/{player_id}/gamelog"
+    data = get_json(url)
+
+    # If ESPN returns empty dict or 404-type JSON
+    if not data or "events" not in data:
+        return []
+
+    games = []
+    try:
+        for event in data.get("events", []):
+            stats = event.get("stats", {})
+            games.append({
+                "shots": stats.get("shots", 0),
+                "goals": stats.get("goals", 0),
+                "assists": stats.get("assists", 0),
+                "points": stats.get("points", 0)
+            })
+    except Exception as e:
+        print(f"ERROR parsing logs for player {player_id}: {e}")
+
+    return games
+
+
+# ============================================================
+# TEST RUN
+# ============================================================
+if __name__ == "__main__":
+    teams = fetch_teams()
+    print("\nTeams:", teams[:5])
+
+    if teams:
+        tid = teams[0]["team_id"]
+        roster = fetch_team_roster(tid)
+        print(f"\nRoster for team {tid}:", roster[:5])
+
+        # Test logs for a known star: Connor McDavid
+        print("\nTESTING KNOWN PLAYER WITH LOGS (Connor McDavid):")
+        mcdavid_logs = fetch_player_logs("4267918")
+        print("McDavid logs (first 5):", mcdavid_logs[:5])

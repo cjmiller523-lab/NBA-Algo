@@ -1,0 +1,9 @@
+import requests
+
+name = "Connor McDavid"
+url = f"https://search.d3.nhle.com/api/v1/search/player?culture=en-us&limit=10&q={name.replace(' ', '%20')}"
+
+print("URL:", url)
+data = requests.get(url).json()
+
+print(data)

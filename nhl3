@@ -1,0 +1,490 @@
+# nhl3.py
+# NHL hit-rate engine (shots/goals/assists/points/blocks/hits) with "+1" shots thresholds.
+# Uses: ESPN (teams/rosters), NHL search (ID map), NHL stats (game logs).
+# Outputs terminal + a single .txt for the day in twitter_posts/.
+
+import os
+import json
+import time
+from datetime import datetime, timedelta
+from collections import defaultdict
+
+import requests
+
+# ==============================
+# SETTINGS
+# ==============================
+NUM_GAMES_WINDOW = 10  # last N games window for hit rates
+
+# Thresholds (as you requested)
+SHOTS_THRESHOLDS   = [1, 2, 3, 4, 5, 6]  # "shots +1" interpreted as full 1..6 ladder
+GOALS_THRESHOLDS   = [1, 2]
+ASSISTS_THRESHOLDS = [1, 2]
+POINTS_THRESHOLDS  = [1, 2, 3]
+BLOCKS_THRESHOLDS  = [1, 2, 3]
+HITS_THRESHOLDS    = [1, 2, 3, 4]
+
+# Output path
+OUT_DIR = "twitter_posts"
+os.makedirs(OUT_DIR, exist_ok=True)
+
+# Cache paths
+CACHE_ROOT = "cache_nhl"
+CACHE_TEAMS = os.path.join(CACHE_ROOT, "teams.json")
+CACHE_ROSTERS = os.path.join(CACHE_ROOT, "rosters")
+CACHE_NHL_ID_MAP = os.path.join(CACHE_ROOT, "nhl_id_map.json")
+CACHE_LOGS = os.path.join(CACHE_ROOT, "logs")
+for p in [CACHE_ROOT, CACHE_ROSTERS, CACHE_LOGS]:
+    os.makedirs(p, exist_ok=True)
+
+# HTTP defaults
+HEADERS_ESPN = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+                  "(KHTML, like Gecko) Chrome/120.0.6099.225 Safari/537.36",
+    "Accept": "application/json, text/plain, */*",
+}
+HEADERS_NHL = {
+    "User-Agent": "nhl-hit-rates/1.0",
+    "Accept": "application/json",
+}
+TIMEOUT = 12
+
+
+def http_get_json(url, headers=None):
+    try:
+        r = requests.get(url, headers=headers or HEADERS_ESPN, timeout=TIMEOUT)
+        if r.status_code == 200:
+            return r.json()
+        # print(f"HTTP {r.status_code} — {url}")
+        return {}
+    except Exception as e:
+        # print("Request failed:", e)
+        return {}
+
+
+# ==============================
+# DATE / SLATE
+# ==============================
+def today_str():
+    # Use local date in America/New_York (your default). If your machine uses ET, this is fine.
+    return datetime.now().strftime("%Y-%m-%d")
+
+
+def get_today_matchups(date_str):
+    """
+    Returns list of dicts: [{away:'XXX', home:'YYY', game_key:'XXX@YYY'}, ...]
+    from NHL's schedule endpoint.
+    """
+    url = f"https://api-web.nhle.com/v1/schedule/{date_str}"
+    data = http_get_json(url, headers=HEADERS_NHL)
+    matchups = []
+    for day in data.get("gameWeek", []):
+        for g in day.get("games", []):
+            away = g.get("awayTeam", {}).get("abbrev", "")
+            home = g.get("homeTeam", {}).get("abbrev", "")
+            if away and home:
+                matchups.append({
+                    "away": away,
+                    "home": home,
+                    "game_key": f"{away}@{home}"
+                })
+    return matchups
+
+
+# ==============================
+# ESPN TEAMS / ROSTERS
+# ==============================
+def load_cached(path):
+    if os.path.exists(path):
+        try:
+            with open(path, "r", encoding="utf-8") as f:
+                return json.load(f)
+        except:
+            return None
+    return None
+
+
+def save_json(path, obj):
+    try:
+        with open(path, "w", encoding="utf-8") as f:
+            json.dump(obj, f, ensure_ascii=False, indent=2)
+    except:
+        pass
+
+
+def fetch_teams_espn():
+    """
+    ESPN team list is unreliable on some networks.
+    Replace with NHL standings 'now' endpoint which always works.
+    """
+    cached = load_cached(CACHE_TEAMS)
+    if cached:
+        return cached
+
+    url = "https://api-web.nhle.com/v1/standings/now"
+    data = http_get_json(url, headers=HEADERS_NHL)
+
+    teams = []
+    try:
+        for div in data.get("standings", []):
+            for t in div.get("teamRecords", []):
+                team = t.get("team", {})
+                teams.append({
+                    "team_id": str(team.get("id")),
+                    "team_abbrev": team.get("abbrev"),
+                    "team_name": team.get("fullName"),
+                })
+    except:
+        pass
+
+    save_json(CACHE_TEAMS, teams)
+    return teams
+
+
+
+def fetch_team_roster_espn(team_id):
+    """
+    ESPN roster for a team. Merge grouped 'athletes' into a flat list.
+    Cache per team id.
+    """
+    cache_path = os.path.join(CACHE_ROSTERS, f"{team_id}.json")
+    cached = load_cached(cache_path)
+    if cached:
+        return cached
+
+    url = f"https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/teams/{team_id}/roster"
+    data = http_get_json(url, headers=HEADERS_ESPN)
+    team_abbrev = data.get("team", {}).get("abbreviation", "")
+
+    roster = []
+    try:
+        athletes = data.get("athletes", [])
+        groups = athletes.values() if isinstance(athletes, dict) else athletes
+        for group in groups:
+            for p in group.get("items", []):
+                # Fallback team abbrev from header if missing in player
+                p_team = p.get("team", {})
+                ta = p_team.get("abbreviation", "") if isinstance(p_team, dict) else ""
+                if not ta:
+                    ta = team_abbrev
+                roster.append({
+                    "player_id_espn": p.get("id"),
+                    "player_name": p.get("fullName"),
+                    "position": (p.get("position") or {}).get("abbreviation", ""),
+                    "team_abbrev": ta
+                })
+    except:
+        pass
+
+    save_json(cache_path, roster)
+    return roster
+
+
+# ==============================
+# NHL PLAYER SEARCH (for NHL playerId)
+# ==============================
+def normalize_name(n):
+    return (n or "").strip().lower()
+
+
+def map_name_team_to_nhl_id(player_name, team_abbrev):
+    """
+    Use NHL search API to map display name -> NHL playerId.
+    Cache in a single mapping file for speed.
+    """
+    name_key = f"{normalize_name(player_name)}|{team_abbrev.upper()}"
+    mapping = load_cached(CACHE_NHL_ID_MAP) or {}
+    if name_key in mapping:
+        return mapping[name_key]
+
+    q = player_name.replace(" ", "%20")
+    url = f"https://search.d3.nhle.com/api/v1/search/player?culture=en-us&limit=10&q={q}"
+    res = http_get_json(url, headers=HEADERS_NHL)
+    nhl_id = None
+
+    # Try to match exact name first, then same team (if present)
+    if isinstance(res, list):
+        # Exact name match + same team
+        for cand in res:
+            if normalize_name(cand.get("name")) == normalize_name(player_name):
+                if team_abbrev and cand.get("teamAbbrev"):
+                    if cand["teamAbbrev"].upper() == team_abbrev.upper():
+                        nhl_id = str(cand.get("playerId"))
+                        break
+        # Fallback: exact name (ignore team)
+        if not nhl_id:
+            for cand in res:
+                if normalize_name(cand.get("name")) == normalize_name(player_name):
+                    nhl_id = str(cand.get("playerId"))
+                    break
+        # Fallback: first active match
+        if not nhl_id:
+            for cand in res:
+                if cand.get("active"):
+                    nhl_id = str(cand.get("playerId"))
+                    break
+        # Last resort: first result
+        if not nhl_id and res:
+            nhl_id = str(res[0].get("playerId"))
+
+    # Cache & return
+    if nhl_id:
+        mapping[name_key] = nhl_id
+        save_json(CACHE_NHL_ID_MAP, mapping)
+    return nhl_id
+
+
+# ==============================
+# NHL GAME LOGS
+# ==============================
+def fetch_player_logs_nhl(nhl_player_id, limit=200):
+    """
+    Fetch per-game NHL stats for a skater from official NHL API.
+    Cached by NHL playerId.
+    """
+    cache_path = os.path.join(CACHE_LOGS, f"{nhl_player_id}.json")
+    cached = load_cached(cache_path)
+    if cached:
+        return cached
+
+    url = (
+        "https://api.nhle.com/stats/rest/en/skater/summary"
+        f"?isAggregate=false&isGame=true&start=0&limit={limit}&cayenneExp=playerId={nhl_player_id}"
+    )
+    data = http_get_json(url, headers=HEADERS_NHL)
+    games = []
+    for g in data.get("data", []):
+        games.append({
+            "date": g.get("gameDate"),
+            "team": g.get("teamAbbrev"),
+            "opp": g.get("opponentAbbrev"),
+            "home_road": g.get("homeRoad"),
+            "shots": g.get("shots", 0),
+            "goals": g.get("goals", 0),
+            "assists": g.get("assists", 0),
+            "points": g.get("points", 0),
+            "blocks": g.get("blockedShots", 0),
+            "hits": g.get("hits", 0),
+        })
+
+    # Sort by date ascending, then cache
+    def _key(g):
+        try:
+            return datetime.strptime(g["date"], "%Y-%m-%d")
+        except Exception:
+            return datetime(1970, 1, 1)
+
+    games.sort(key=_key)
+    save_json(cache_path, games)
+    return games
+
+
+# ==============================
+# HIT-RATE ENGINE
+# ==============================
+def last_n(games, n):
+    return games[-n:] if n and len(games) > n else games
+
+
+def compute_hit_rates_for_player(games_last_n):
+    """
+    Given last N games list of dicts (with shots/goals/etc.), return
+    { 'shots': {3: '7/10 (70.0%)', ...}, 'goals': {...}, ... }
+    """
+    results = {
+        "shots": {},
+        "goals": {},
+        "assists": {},
+        "points": {},
+        "blocks": {},
+        "hits": {},
+    }
+
+    if not games_last_n:
+        return results
+
+    total = len(games_last_n)
+
+    def count_hits(stat_key, threshold):
+        hits = sum(1 for g in games_last_n if (g.get(stat_key) or 0) >= threshold)
+        pct = 100.0 * hits / total if total else 0.0
+        return hits, total, pct
+
+    for t in SHOTS_THRESHOLDS:
+        h, tot, pct = count_hits("shots", t)
+        results["shots"][t] = (h, tot, pct)
+
+    for t in GOALS_THRESHOLDS:
+        h, tot, pct = count_hits("goals", t)
+        results["goals"][t] = (h, tot, pct)
+
+    for t in ASSISTS_THRESHOLDS:
+        h, tot, pct = count_hits("assists", t)
+        results["assists"][t] = (h, tot, pct)
+
+    for t in POINTS_THRESHOLDS:
+        h, tot, pct = count_hits("points", t)
+        results["points"][t] = (h, tot, pct)
+
+    for t in BLOCKS_THRESHOLDS:
+        h, tot, pct = count_hits("blocks", t)
+        results["blocks"][t] = (h, tot, pct)
+
+    for t in HITS_THRESHOLDS:
+        h, tot, pct = count_hits("hits", t)
+        results["hits"][t] = (h, tot, pct)
+
+    return results
+
+
+def format_hr_line(stat_name, thresholds_dict, max_lines=3):
+    """
+    thresholds_dict: {threshold: (hits, total, pct)}
+    Returns up to max_lines best thresholds sorted by pct desc then threshold desc.
+    """
+    items = []
+    for th, (h, tot, pct) in thresholds_dict.items():
+        # Keep only non-trivial totals
+        if tot > 0 and h > 0:
+            items.append((pct, th, h, tot))
+    items.sort(key=lambda x: (x[0], x[1]), reverse=True)
+    out = []
+    for i, (pct, th, h, tot) in enumerate(items[:max_lines]):
+        out.append(f"{stat_name} {th}+ | {h}/{tot} ({pct:.1f}%)")
+    return out
+
+
+# ==============================
+# MAIN FLOW
+# ==============================
+def main():
+    date_str = today_str()
+    print(f"🔍 Building NHL hit rates for {date_str} (last {NUM_GAMES_WINDOW} games window)\n")
+
+    # 1) Today's slate
+    matchups = get_today_matchups(date_str)
+    if not matchups:
+        print("No NHL games found for today.")
+        return
+    print("Matchups:", [m["game_key"] for m in matchups], "\n")
+
+    # 2) Teams + quick abbrev->team_id lookup (for rosters)
+    teams = fetch_teams_espn()
+    abbrev_to_id = {t["team_abbrev"].upper(): t["team_id"] for t in teams if t.get("team_abbrev") and t.get("team_id")}
+
+    # 3) Build a set of team abbrevs in today's slate
+    slate_teams = set()
+    for m in matchups:
+        slate_teams.add(m["away"].upper())
+        slate_teams.add(m["home"].upper())
+
+    # 4) Load rosters for only slate teams
+    slate_rosters = {}
+    for ta in sorted(slate_teams):
+        tid = abbrev_to_id.get(ta)
+        if not tid:
+            continue
+        roster = fetch_team_roster_espn(tid)
+        slate_rosters[ta] = roster
+
+    # 5) For each matchup, build per-game outputs
+    lines_out = []
+    lines_out.append(f"{date_str} — NHL Hit Rates (Last {NUM_GAMES_WINDOW})")
+    lines_out.append("")
+
+    for m in matchups:
+        away = m["away"].upper()
+        home = m["home"].upper()
+        game_key = m["game_key"]
+
+        lines_out.append("=" * 30)
+        lines_out.append(f"{away} @ {home}")
+        lines_out.append("=" * 30)
+
+        # Combine both team rosters for this matchup
+        players = (slate_rosters.get(away, []) or []) + (slate_rosters.get(home, []) or [])
+
+        # For each player → map NHL id → fetch logs → compute hit rates
+        # Keep a few best lines per stat for the game
+        game_best = defaultdict(list)
+
+        for p in players:
+            name = p.get("player_name")
+            team_abbrev = p.get("team_abbrev")
+            if not name:
+                continue
+
+            nhl_id = map_name_team_to_nhl_id(name, team_abbrev)
+            if not nhl_id:
+                continue
+
+            logs = fetch_player_logs_nhl(nhl_id)
+            if not logs:
+                continue
+
+            # Take last N
+            window = last_n(logs, NUM_GAMES_WINDOW)
+            if not window:
+                continue
+
+            hrs = compute_hit_rates_for_player(window)
+
+            # Build compact lines
+            shots_lines = format_hr_line("SOG", hrs["shots"], max_lines=1)
+            goals_lines = format_hr_line("G", hrs["goals"], max_lines=1)
+            assists_lines = format_hr_line("A", hrs["assists"], max_lines=1)
+            points_lines = format_hr_line("PTS", hrs["points"], max_lines=1)
+            blocks_lines = format_hr_line("BLK", hrs["blocks"], max_lines=1)
+            hits_lines = format_hr_line("HIT", hrs["hits"], max_lines=1)
+
+            # Only keep players with at least one non-empty
+            buckets = [shots_lines, goals_lines, assists_lines, points_lines, blocks_lines, hits_lines]
+            if any(buckets):
+                # Prepend player name and team
+                packed = []
+                for blk in buckets:
+                    for L in blk:
+                        packed.append(L)
+                if packed:
+                    game_best["entries"].append((name, team_abbrev, packed))
+
+        # Sort entries by best SOG pct then PTS pct then name
+        def best_pct_of(lines, label):
+            # find label in lines; return pct
+            # line looks like: "SOG 4+ | 7/10 (70.0%)"
+            for s in lines:
+                if s.startswith(label):
+                    try:
+                        pct_part = s.split("(")[-1].replace(")%", "").replace("%", "").replace(")", "")
+                        return float(pct_part)
+                    except:
+                        return 0.0
+            return 0.0
+
+        entries = game_best.get("entries", [])
+        entries.sort(key=lambda tup: (best_pct_of(tup[2], "SOG"), best_pct_of(tup[2], "PTS"), tup[0]), reverse=True)
+
+        # Limit output per game to keep tweetable
+        max_players_to_show = 10
+        for (name, ta, packed) in entries[:max_players_to_show]:
+            lines_out.append(f"{name} ({ta})")
+            for s in packed:
+                lines_out.append(f"  • {s}")
+        lines_out.append("")
+
+    # 6) Save a single .txt for the day
+    out_path = os.path.join(OUT_DIR, f"{date_str}_NHL.txt")
+    with open(out_path, "w", encoding="utf-8") as f:
+        f.write("\n".join(lines_out))
+
+    # 7) Terminal echo
+    print("\n".join(lines_out))
+    print(f"\n✅ Saved: {out_path}")
+
+    # ====== ODDS STUB (wire in later exactly like NBA) ======
+    # You can add a function load_odds_cache() and merge here, matching on player_name + stat + threshold.
+    # For now, we keep odds out per your earlier request and will integrate once SGO/FD path is ready.
+
+
+if __name__ == "__main__":
+    main()

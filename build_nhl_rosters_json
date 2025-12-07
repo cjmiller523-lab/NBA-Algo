@@ -1,0 +1,59 @@
+import os, json, requests, time
+
+OUT_DIR = "cache_nhl3"
+OUT_PATH = os.path.join(OUT_DIR, "nhl_rosters.json")
+REQUEST_TIMEOUT = 10
+
+os.makedirs(OUT_DIR, exist_ok=True)
+
+def http_get_json(url):
+    try:
+        r = requests.get(url, timeout=REQUEST_TIMEOUT, headers={"User-Agent": "nhl-roster-builder/1.0"})
+        if r.status_code == 200:
+            return r.json()
+    except:
+        pass
+    return {}
+
+def fetch_teams():
+    data = http_get_json("https://statsapi.web.nhl.com/api/v1/teams")
+    return data.get("teams", [])
+
+def fetch_roster_by_team_id(team_id):
+    data = http_get_json(f"https://statsapi.web.nhl.com/api/v1/teams/{team_id}?expand=team.roster")
+    try:
+        return data["teams"][0]["roster"]["roster"]
+    except:
+        return []
+
+players = []
+
+teams = fetch_teams()
+print(f"Found {len(teams)} NHL teams.")
+
+for t in teams:
+    team_id = t["id"]
+    team_abbrev = (t.get("abbreviation") or t.get("teamName") or "").upper()
+    print(f"Fetching roster for {team_abbrev} ({team_id})...")
+    
+    roster = fetch_roster_by_team_id(team_id)
+    for r in roster:
+        p = r.get("person", {})
+        pos = r.get("position", {}).get("abbreviation", "")
+        pid = p.get("id")
+        name = p.get("fullName", "")
+
+        if pid and name:
+            players.append({
+                "player_id": pid,
+                "player_name": name,
+                "team_abbrev": team_abbrev,
+                "position": pos
+            })
+
+    time.sleep(0.15)  # be polite to NHL servers
+
+with open(OUT_PATH, "w", encoding="utf-8") as f:
+    json.dump({"players": players}, f, ensure_ascii=False, indent=2)
+
+print(f"\n✅ Wrote {len(players)} players to {OUT_PATH}")

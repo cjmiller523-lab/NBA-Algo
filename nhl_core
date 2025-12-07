@@ -1,0 +1,101 @@
+import requests
+import json
+import time
+
+REQUEST_TIMEOUT = 10
+
+def http_get_json(url):
+    headers = {"User-Agent": "nhl-espm-client/1.0"}
+    try:
+        r = requests.get(url, headers=headers, timeout=REQUEST_TIMEOUT)
+        if r.status_code == 200:
+            return r.json()
+    except Exception as e:
+        print(f"Request failed: {e}")
+    return {}
+
+# ============================================
+# STEP 1: Fetch NHL Teams
+# ============================================
+
+def fetch_nhl_teams():
+    url = "https://site.web.api.espn.com/apis/v2/sports/hockey/nhl/teams"
+    data = http_get_json(url)
+
+    teams = []
+    try:
+        for t in data["sports"][0]["leagues"][0]["teams"]:
+            info = t["team"]
+            teams.append({
+                "team_id": info["id"],
+                "team_abbrev": info["abbreviation"],
+                "team_name": info["displayName"]
+            })
+    except:
+        print("ERROR: Unable to parse team list.")
+
+    return teams
+
+# ============================================
+# STEP 2: Fetch Team Roster
+# ============================================
+
+def fetch_team_roster(team_id):
+    url = f"https://site.web.api.espn.com/apis/v2/sports/hockey/nhl/teams/{team_id}/roster"
+    data = http_get_json(url)
+
+    roster = []
+    try:
+        for p in data["athletes"]:
+            roster.append({
+                "player_id": p["id"],
+                "player_name": p["fullName"],
+                "position": p.get("position", {}).get("abbreviation", ""),
+                "team_abbrev": p["team"]["abbreviation"],
+            })
+    except:
+        print(f"ERROR parsing roster for team {team_id}")
+
+    return roster
+
+# ============================================
+# STEP 3: Fetch Player Game Logs
+# ============================================
+
+def fetch_player_game_log(player_id, season=2025):
+    url = f"https://sports.core.api.espn.com/v2/sports/hockey/leagues/nhl/seasons/{season}/athletes/{player_id}/gamelog"
+    data = http_get_json(url)
+
+    games = []
+    try:
+        for event in data["events"]:
+            stats = event.get("stats", {})
+            games.append({
+                "shots": stats.get("shots", 0),
+                "goals": stats.get("goals", 0),
+                "assists": stats.get("assists", 0),
+                "points": stats.get("points", 0),
+                "toi": stats.get("timeOnIce", "0:00")
+            })
+    except:
+        print(f"ERROR parsing logs for player {player_id}")
+
+    return games
+
+# ============================================
+# TEST RUN
+# ============================================
+
+if __name__ == "__main__":
+    teams = fetch_nhl_teams()
+    print("Teams:", teams[:5])  # print first 5
+
+    if teams:
+        tid = teams[0]["team_id"]
+        roster = fetch_team_roster(tid)
+        print(f"\nRoster for {tid}:", roster[:5])
+
+        if roster:
+            pid = roster[0]["player_id"]
+            logs = fetch_player_game_log(pid)
+            print(f"\nLogs for {pid}:", logs[:5])
