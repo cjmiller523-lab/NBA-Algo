@@ -1,0 +1,1994 @@
+{
+  "nextCursor": "n.1765240200000.WmQ7g0Pm0LAYQLnXSYDR",
+  "success": true,
+  "data": [
+    {
+      "eventID": "WmQ7g0Pm0LAYQLnXSYDR",
+      "sportID": "BASKETBALL",
+      "leagueID": "NBA",
+      "type": "match",
+      "teams": {
+        "home": {
+          "teamID": "MINNESOTA_TIMBERWOLVES_NBA",
+          "names": {
+            "long": "Minnesota Timberwolves",
+            "medium": "Timberwolves",
+            "short": "MIN",
+            "location": "Minnesota"
+          },
+          "colors": {
+            "primary": "#005083",
+            "secondary": "",
+            "primaryContrast": "#FFFFFF",
+            "secondaryContrast": ""
+          },
+          "statEntityID": "home"
+        },
+        "away": {
+          "teamID": "PHOENIX_SUNS_NBA",
+          "names": {
+            "long": "Phoenix Suns",
+            "medium": "Suns",
+            "short": "PHX",
+            "location": "Phoenix"
+          },
+          "colors": {
+            "primary": "#E56020",
+            "secondary": "#1D1160",
+            "primaryContrast": "#000000",
+            "secondaryContrast": "#E56020"
+          },
+          "statEntityID": "away"
+        }
+      },
+      "status": {
+        "started": false,
+        "completed": false,
+        "cancelled": false,
+        "ended": false,
+        "live": false,
+        "delayed": false,
+        "currentPeriodID": "",
+        "previousPeriodID": "",
+        "displayShort": "",
+        "displayLong": "Upcoming",
+        "inBreak": false,
+        "startsAt": "2025-12-09T00:30:00.000Z",
+        "previousStartsAt": [
+          "2025-12-09T01:00:00.000Z"
+        ],
+        "hardStart": true,
+        "periods": {
+          "started": [],
+          "ended": []
+        },
+        "oddsPresent": true,
+        "oddsAvailable": true,
+        "finalized": false
+      },
+      "info": {
+        "seasonWeek": "NBA 25/26"
+      },
+      "links": {
+        "bookmakers": {
+          "fanduel": "https://sportsbook.fanduel.com/basketball/-/35036256",
+          "betonline": "https://sports.betonline.ag/sportsbook/basketball/nba/game/490904601",
+          "lowvig": "https://sports.lowvig.ag/sportsbook/basketball/nba/game/490904601",
+          "sportsbet": "https://www.sportsbet.com.au/betting/basketball---us/nba/phoenix-suns-at-minnesota-timberwolves-9925192",
+          "pointsbet": "https://pointsbet.com.au/sports/basketball/NBA/2533179",
+          "ladbrokes": "https://www.ladbrokes.com.au/sports/-/-/-/528fd721-3763-4888-9d55-f10965caf6d6",
+          "neds": "https://www.neds.com.au/sports/-/-/-/528fd721-3763-4888-9d55-f10965caf6d6",
+          "paddypower": "https://www.paddypower.com/basketball/nba/phoenix-suns-@-minnesota-timberwolves-35036256",
+          "888sport": "https://www.888sport.com/basketball/united-states-of-america/nba/phoenix-suns-minnesota-timberwolves-e-6821471",
+          "boombet": "https://www.boombet.com.au/sport-menu/Sport/Basketball/NBA/39602714",
+          "boylesports": "https://www.boylesports.com/sports/basketball/event/usa-nba/minnesota-timberwolves-v-phoenix-suns",
+          "draftkings": "https://sportsbook.draftkings.com/event/33264484",
+          "tab": "https://www.tab.com.au/sports/betting/Basketball/competitions/NBA/matches/Minnesota%20v%20Phoenix",
+          "betfairsportsbook": "https://www.betfair.com/betting/basketball/nba/phoenix-suns-@-minnesota-timberwolves/e-35036256",
+          "betrsportsbook": "https://www.betr.com.au/sports/Basketball/107/United-States-of-America/NBA/Phoenix-Suns-@-Minnesota-Timberwolves/1930720/All-Markets",
+          "coolbet": "https://www.coolbet.com/en/sports/match/4739651",
+          "1xbet": "https://1xbet.com/en/line/football/13589-nba/291221478-minnesota-timberwolves-phoenix-suns",
+          "caesars": "https://sportsbook.caesars.com/us/nj/bet/basketball/3afb94f5-87b2-4579-97a1-c6503e303d5f/phoenix-suns-at-minnesota-timberwolves",
+          "fliff": "https://sports.getfliff.com/markets/351199_c_p_204_prematch",
+          "williamhill": "https://sports.williamhill.com/betting/en-gb/basketball/OB_EV37943534/phoenix-suns-at-minnesota-timberwolves",
+          "matchbook": "https://www.matchbook.com/events/basketball/united-states-of-america/nba/31919674999700045",
+          "espnbet": "https://espnbet.com/sport/basketball/organization/united-states/competition/nba/event/095c3b35-25d1-4ae2-8cc6-a225e1a17e6c",
+          "thescorebet": "https://thescore.bet/sport/basketball/organization/united-states/competition/nba/event/095c3b35-25d1-4ae2-8cc6-a225e1a17e6c",
+          "betsson": "https://www.betsson.com/en/sportsbook/basketball/nba/nba?eventId=f-jCvDGccxf02ImvTPLsVgKw",
+          "nordicbet": "https://www.nordicbet.com/en/sportsbook/basketball/nba/nba/minnesota-timberwolves-phoenix-suns-",
+          "ballybet": "https://play.ballybet.com/sports#event/1024652832",
+          "betmgm": "https://sports.nj.betmgm.com/en/sports/events/18570117",
+          "betrivers": "https://nj.betrivers.com/?page=sportsbook#event/1024652832",
+          "casumo": "https://www.casumo.com/en-gb/sports#event/1024652832",
+          "grosvenor": "https://www.grosvenorcasinos.com/sport#event/1024652832",
+          "leovegas": "https://www.leovegas.co.uk/betting#event/1024652832",
+          "livescorebet": "https://www.livescorebet.com/uk/sports/basketball/nba/minnesota-timberwolves-phoenix-suns/SBTE_2_1024652832",
+          "tabtouch": "https://www.tabtouch.mobi/tabtouch-sports/event/1024652832",
+          "unibet": "https://www.unibet.com/betting/sports/event/1024652832",
+          "virginbet": "https://www.virginbet.com/sports/basketball/nba/minnesota-timberwolves-phoenix-suns/SBTE_2_1024652832",
+          "betparx": "https://nj.betparx.com/kambi#event/1024652832",
+          "coral": "https://sports.coral.co.uk/event/basketball/basketball-usa/nba/min-timberwolves-v-phx-suns/40766270",
+          "playup": "https://www.playup.com.au/betting/sports/nba/minnesota-timberwolves-v-phoenix-suns/1738847",
+          "hardrockbet": "https://app.hardrock.bet/home/competition/nba/4399460076306039028",
+          "bovada": "https://www.bovada.lv/sports/basketball/nba/phoenix-suns-minnesota-timberwolves-202512081930",
+          "pinnacle": "https://www.pinnacle.com/en/basketball/nba/phoenix-suns-vs-minnesota-timberwolves/1620612113",
+          "everygame": "https://sports.everygame.eu/en/Bets/Basketball/NBA-Lines/Phoenix-Suns-at-Minnesota-Timberwolves/2761866",
+          "betway": "https://betway.com/en/sports/evt/16116771"
+        }
+      },
+      "odds": {
+        "assists-COLLIN_GILLESPIE_1_NBA-game-ou-over": {
+          "oddID": "assists-COLLIN_GILLESPIE_1_NBA-game-ou-over",
+          "opposingOddID": "assists-COLLIN_GILLESPIE_1_NBA-game-ou-under",
+          "statID": "assists",
+          "statEntityID": "COLLIN_GILLESPIE_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "COLLIN_GILLESPIE_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+120",
+          "bookOdds": "+105",
+          "fairOverUnder": "5.5",
+          "bookOverUnder": "5.5",
+          "openFairOdds": "+120",
+          "openBookOdds": "+105",
+          "openFairOverUnder": "5.5",
+          "openBookOverUnder": "5.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+104",
+              "overUnder": "5.5",
+              "lastUpdatedAt": "2025-12-08T11:02:20.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.545035369&selectionId=43026356",
+              "altLines": [
+                {
+                  "odds": "-430",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2025-12-08T11:02:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+350",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2025-12-08T11:02:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1000",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2025-12-08T11:02:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+3000",
+                  "overUnder": "11.5",
+                  "lastUpdatedAt": "2025-12-08T11:02:20.000Z",
+                  "available": true
+                }
+              ]
+            }
+          },
+          "marketName": "Collin Gillespie Assists Over/Under"
+        },
+        "assists-COLLIN_GILLESPIE_1_NBA-game-ou-under": {
+          "oddID": "assists-COLLIN_GILLESPIE_1_NBA-game-ou-under",
+          "opposingOddID": "assists-COLLIN_GILLESPIE_1_NBA-game-ou-over",
+          "statID": "assists",
+          "statEntityID": "COLLIN_GILLESPIE_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "COLLIN_GILLESPIE_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-120",
+          "bookOdds": "-141",
+          "fairOverUnder": "5.5",
+          "bookOverUnder": "5.5",
+          "openFairOdds": "-120",
+          "openBookOdds": "-141",
+          "openFairOverUnder": "5.5",
+          "openBookOverUnder": "5.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-138",
+              "overUnder": "5.5",
+              "lastUpdatedAt": "2025-12-08T11:02:20.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.545035369&selectionId=43026355"
+            }
+          },
+          "marketName": "Collin Gillespie Assists Over/Under"
+        },
+        "assists-DILLON_BROOKS_1_NBA-game-ou-over": {
+          "oddID": "assists-DILLON_BROOKS_1_NBA-game-ou-over",
+          "opposingOddID": "assists-DILLON_BROOKS_1_NBA-game-ou-under",
+          "statID": "assists",
+          "statEntityID": "DILLON_BROOKS_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "DILLON_BROOKS_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+162",
+          "bookOdds": "+146",
+          "fairOverUnder": "2.5",
+          "bookOverUnder": "2.5",
+          "openFairOdds": "+162",
+          "openBookOdds": "+146",
+          "openFairOverUnder": "2.5",
+          "openBookOverUnder": "2.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+154",
+              "overUnder": "2.5",
+              "lastUpdatedAt": "2025-12-08T11:02:20.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.545035367&selectionId=12798648",
+              "altLines": [
+                {
+                  "odds": "-194",
+                  "overUnder": "1.5",
+                  "lastUpdatedAt": "2025-12-08T11:02:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+400",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2025-12-08T11:02:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1500",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2025-12-08T05:22:13.000Z",
+                  "available": false
+                }
+              ]
+            }
+          },
+          "marketName": "Dillon Brooks Assists Over/Under"
+        },
+        "assists-DILLON_BROOKS_1_NBA-game-ou-under": {
+          "oddID": "assists-DILLON_BROOKS_1_NBA-game-ou-under",
+          "opposingOddID": "assists-DILLON_BROOKS_1_NBA-game-ou-over",
+          "statID": "assists",
+          "statEntityID": "DILLON_BROOKS_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "DILLON_BROOKS_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-162",
+          "bookOdds": "-200",
+          "fairOverUnder": "2.5",
+          "bookOverUnder": "2.5",
+          "openFairOdds": "-162",
+          "openBookOdds": "-200",
+          "openFairOverUnder": "2.5",
+          "openBookOverUnder": "2.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-215",
+              "overUnder": "2.5",
+              "lastUpdatedAt": "2025-12-08T11:02:20.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.545035367&selectionId=12798647"
+            }
+          },
+          "marketName": "Dillon Brooks Assists Over/Under"
+        },
+        "assists-GRAYSON_ALLEN_1_NBA-game-ou-over": {
+          "oddID": "assists-GRAYSON_ALLEN_1_NBA-game-ou-over",
+          "opposingOddID": "assists-GRAYSON_ALLEN_1_NBA-game-ou-under",
+          "statID": "assists",
+          "statEntityID": "GRAYSON_ALLEN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "GRAYSON_ALLEN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+117",
+          "bookOdds": "+104",
+          "fairOverUnder": "3.5",
+          "bookOverUnder": "3.5",
+          "openFairOdds": "+117",
+          "openBookOdds": "+104",
+          "openFairOverUnder": "3.5",
+          "openBookOverUnder": "3.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+102",
+              "overUnder": "3.5",
+              "lastUpdatedAt": "2025-12-08T11:02:20.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.545035368&selectionId=37819081",
+              "altLines": [
+                {
+                  "odds": "-850",
+                  "overUnder": "1.5",
+                  "lastUpdatedAt": "2025-12-08T11:02:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+460",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2025-12-08T11:02:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1500",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2025-12-08T11:02:20.000Z",
+                  "available": true
+                }
+              ]
+            }
+          },
+          "marketName": "Grayson Allen Assists Over/Under"
+        },
+        "assists-GRAYSON_ALLEN_1_NBA-game-ou-under": {
+          "oddID": "assists-GRAYSON_ALLEN_1_NBA-game-ou-under",
+          "opposingOddID": "assists-GRAYSON_ALLEN_1_NBA-game-ou-over",
+          "statID": "assists",
+          "statEntityID": "GRAYSON_ALLEN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "GRAYSON_ALLEN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-117",
+          "bookOdds": "-135",
+          "fairOverUnder": "3.5",
+          "bookOverUnder": "3.5",
+          "openFairOdds": "-117",
+          "openBookOdds": "-135",
+          "openFairOverUnder": "3.5",
+          "openBookOverUnder": "3.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-136",
+              "overUnder": "3.5",
+              "lastUpdatedAt": "2025-12-08T11:02:20.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.545035368&selectionId=37819080"
+            }
+          },
+          "marketName": "Grayson Allen Assists Over/Under"
+        },
+        "assists-MARK_WILLIAMS_1_NBA-game-ou-over": {
+          "oddID": "assists-MARK_WILLIAMS_1_NBA-game-ou-over",
+          "opposingOddID": "assists-MARK_WILLIAMS_1_NBA-game-ou-under",
+          "statID": "assists",
+          "statEntityID": "MARK_WILLIAMS_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "MARK_WILLIAMS_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "bookOdds": "-177",
+          "bookOverUnder": "0.5",
+          "openBookOdds": "-177",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {},
+          "marketName": "Mark Williams Assists Over/Under",
+          "fairOdds": "-179",
+          "fairOverUnder": "0.5",
+          "openFairOdds": "-179",
+          "openFairOverUnder": "0.5"
+        },
+        "blocks-COLLIN_GILLESPIE_1_NBA-game-ou-over": {
+          "oddID": "blocks-COLLIN_GILLESPIE_1_NBA-game-ou-over",
+          "opposingOddID": "blocks-COLLIN_GILLESPIE_1_NBA-game-ou-under",
+          "statID": "blocks",
+          "statEntityID": "COLLIN_GILLESPIE_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "COLLIN_GILLESPIE_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+305",
+          "bookOdds": "+275",
+          "fairOverUnder": "0.5",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "+305",
+          "openBookOdds": "+275",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {},
+          "marketName": "Collin Gillespie Blocks Over/Under"
+        },
+        "blocks-COLLIN_GILLESPIE_1_NBA-game-ou-under": {
+          "oddID": "blocks-COLLIN_GILLESPIE_1_NBA-game-ou-under",
+          "opposingOddID": "blocks-COLLIN_GILLESPIE_1_NBA-game-ou-over",
+          "statID": "blocks",
+          "statEntityID": "COLLIN_GILLESPIE_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "COLLIN_GILLESPIE_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-305",
+          "fairOverUnder": "0.5",
+          "openFairOdds": "-305",
+          "openFairOverUnder": "0.5",
+          "scoringSupported": true,
+          "bookOdds": "-435",
+          "bookOverUnder": "0.5",
+          "byBookmaker": {},
+          "marketName": "Collin Gillespie Blocks Over/Under",
+          "openBookOdds": "-435",
+          "openBookOverUnder": "0.5"
+        },
+        "blocks-DILLON_BROOKS_1_NBA-game-ou-over": {
+          "oddID": "blocks-DILLON_BROOKS_1_NBA-game-ou-over",
+          "opposingOddID": "blocks-DILLON_BROOKS_1_NBA-game-ou-under",
+          "statID": "blocks",
+          "statEntityID": "DILLON_BROOKS_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "DILLON_BROOKS_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+487",
+          "bookOdds": "+450",
+          "fairOverUnder": "0.5",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "+487",
+          "openBookOdds": "+450",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {},
+          "marketName": "Dillon Brooks Blocks Over/Under"
+        },
+        "blocks-DILLON_BROOKS_1_NBA-game-ou-under": {
+          "oddID": "blocks-DILLON_BROOKS_1_NBA-game-ou-under",
+          "opposingOddID": "blocks-DILLON_BROOKS_1_NBA-game-ou-over",
+          "statID": "blocks",
+          "statEntityID": "DILLON_BROOKS_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "DILLON_BROOKS_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-487",
+          "fairOverUnder": "0.5",
+          "openFairOdds": "-487",
+          "openFairOverUnder": "0.5",
+          "scoringSupported": true,
+          "bookOdds": "-769",
+          "bookOverUnder": "0.5",
+          "byBookmaker": {},
+          "marketName": "Dillon Brooks Blocks Over/Under",
+          "openBookOdds": "-769",
+          "openBookOverUnder": "0.5"
+        },
+        "blocks-GRAYSON_ALLEN_1_NBA-game-ou-over": {
+          "oddID": "blocks-GRAYSON_ALLEN_1_NBA-game-ou-over",
+          "opposingOddID": "blocks-GRAYSON_ALLEN_1_NBA-game-ou-under",
+          "statID": "blocks",
+          "statEntityID": "GRAYSON_ALLEN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "GRAYSON_ALLEN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+328",
+          "bookOdds": "+300",
+          "fairOverUnder": "0.5",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "+328",
+          "openBookOdds": "+300",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {},
+          "marketName": "Grayson Allen Blocks Over/Under"
+        },
+        "blocks-GRAYSON_ALLEN_1_NBA-game-ou-under": {
+          "oddID": "blocks-GRAYSON_ALLEN_1_NBA-game-ou-under",
+          "opposingOddID": "blocks-GRAYSON_ALLEN_1_NBA-game-ou-over",
+          "statID": "blocks",
+          "statEntityID": "GRAYSON_ALLEN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "GRAYSON_ALLEN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-328",
+          "fairOverUnder": "0.5",
+          "openFairOdds": "-328",
+          "openFairOverUnder": "0.5",
+          "scoringSupported": true,
+          "bookOdds": "-455",
+          "bookOverUnder": "0.5",
+          "byBookmaker": {},
+          "marketName": "Grayson Allen Blocks Over/Under",
+          "openBookOdds": "-455",
+          "openBookOverUnder": "0.5"
+        },
+        "blocks-MARK_WILLIAMS_1_NBA-game-ou-over": {
+          "oddID": "blocks-MARK_WILLIAMS_1_NBA-game-ou-over",
+          "opposingOddID": "blocks-MARK_WILLIAMS_1_NBA-game-ou-under",
+          "statID": "blocks",
+          "statEntityID": "MARK_WILLIAMS_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "MARK_WILLIAMS_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-114",
+          "bookOdds": "-136",
+          "fairOverUnder": "0.5",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "-114",
+          "openBookOdds": "-136",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {},
+          "marketName": "Mark Williams Blocks Over/Under"
+        },
+        "blocks-MARK_WILLIAMS_1_NBA-game-ou-under": {
+          "oddID": "blocks-MARK_WILLIAMS_1_NBA-game-ou-under",
+          "opposingOddID": "blocks-MARK_WILLIAMS_1_NBA-game-ou-over",
+          "statID": "blocks",
+          "statEntityID": "MARK_WILLIAMS_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "MARK_WILLIAMS_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+114",
+          "fairOverUnder": "0.5",
+          "openFairOdds": "+114",
+          "openFairOverUnder": "0.5",
+          "scoringSupported": true,
+          "bookOdds": "-102",
+          "bookOverUnder": "0.5",
+          "byBookmaker": {},
+          "marketName": "Mark Williams Blocks Over/Under",
+          "openBookOdds": "-102",
+          "openBookOverUnder": "0.5"
+        },
+        "points-COLLIN_GILLESPIE_1_NBA-game-ou-over": {
+          "oddID": "points-COLLIN_GILLESPIE_1_NBA-game-ou-over",
+          "opposingOddID": "points-COLLIN_GILLESPIE_1_NBA-game-ou-under",
+          "statID": "points",
+          "statEntityID": "COLLIN_GILLESPIE_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "COLLIN_GILLESPIE_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+104",
+          "bookOdds": "-110",
+          "fairOverUnder": "16.5",
+          "bookOverUnder": "16.5",
+          "openFairOdds": "+104",
+          "openBookOdds": "-110",
+          "openFairOverUnder": "16.5",
+          "openBookOverUnder": "16.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-108",
+              "overUnder": "16.5",
+              "lastUpdatedAt": "2025-12-08T11:02:20.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.545035348&selectionId=43026356",
+              "altLines": [
+                {
+                  "odds": "-800",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2025-12-08T11:02:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-178",
+                  "overUnder": "14.5",
+                  "lastUpdatedAt": "2025-12-08T11:02:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-132",
+                  "overUnder": "15.5",
+                  "lastUpdatedAt": "2025-12-08T05:30:33.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "+186",
+                  "overUnder": "19.5",
+                  "lastUpdatedAt": "2025-12-08T11:02:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+500",
+                  "overUnder": "24.5",
+                  "lastUpdatedAt": "2025-12-08T11:02:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1300",
+                  "overUnder": "29.5",
+                  "lastUpdatedAt": "2025-12-08T11:02:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+3500",
+                  "overUnder": "34.5",
+                  "lastUpdatedAt": "2025-12-08T11:02:20.000Z",
+                  "available": true
+                }
+              ]
+            }
+          },
+          "marketName": "Collin Gillespie Points Over/Under"
+        },
+        "points-COLLIN_GILLESPIE_1_NBA-game-ou-under": {
+          "oddID": "points-COLLIN_GILLESPIE_1_NBA-game-ou-under",
+          "opposingOddID": "points-COLLIN_GILLESPIE_1_NBA-game-ou-over",
+          "statID": "points",
+          "statEntityID": "COLLIN_GILLESPIE_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "COLLIN_GILLESPIE_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-104",
+          "bookOdds": "-120",
+          "fairOverUnder": "16.5",
+          "bookOverUnder": "16.5",
+          "openFairOdds": "-104",
+          "openBookOdds": "-120",
+          "openFairOverUnder": "16.5",
+          "openBookOverUnder": "16.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-122",
+              "overUnder": "16.5",
+              "lastUpdatedAt": "2025-12-08T11:02:20.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.545035348&selectionId=43026355",
+              "altLines": [
+                {
+                  "odds": "+100",
+                  "overUnder": "15.5",
+                  "lastUpdatedAt": "2025-12-08T05:30:33.000Z",
+                  "available": false
+                }
+              ]
+            }
+          },
+          "marketName": "Collin Gillespie Points Over/Under"
+        },
+        "points-DILLON_BROOKS_1_NBA-game-ou-over": {
+          "oddID": "points-DILLON_BROOKS_1_NBA-game-ou-over",
+          "opposingOddID": "points-DILLON_BROOKS_1_NBA-game-ou-under",
+          "statID": "points",
+          "statEntityID": "DILLON_BROOKS_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "DILLON_BROOKS_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+121",
+          "bookOdds": "-115",
+          "fairOverUnder": "23.5",
+          "bookOverUnder": "22.5",
+          "openFairOdds": "+121",
+          "openBookOdds": "-115",
+          "openFairOverUnder": "23.5",
+          "openBookOverUnder": "22.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-114",
+              "overUnder": "22.5",
+              "lastUpdatedAt": "2025-12-08T11:02:20.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.545035346&selectionId=12798648",
+              "altLines": [
+                {
+                  "odds": "-7000",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2025-12-08T11:02:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-800",
+                  "overUnder": "14.5",
+                  "lastUpdatedAt": "2025-12-08T11:02:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-215",
+                  "overUnder": "19.5",
+                  "lastUpdatedAt": "2025-12-08T11:02:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+136",
+                  "overUnder": "24.5",
+                  "lastUpdatedAt": "2025-12-08T11:02:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+340",
+                  "overUnder": "29.5",
+                  "lastUpdatedAt": "2025-12-08T11:02:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+800",
+                  "overUnder": "34.5",
+                  "lastUpdatedAt": "2025-12-08T11:02:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1500",
+                  "overUnder": "39.5",
+                  "lastUpdatedAt": "2025-12-08T11:02:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+4000",
+                  "overUnder": "44.5",
+                  "lastUpdatedAt": "2025-12-08T11:02:20.000Z",
+                  "available": true
+                }
+              ]
+            }
+          },
+          "marketName": "Dillon Brooks Points Over/Under"
+        },
+        "points-DILLON_BROOKS_1_NBA-game-ou-under": {
+          "oddID": "points-DILLON_BROOKS_1_NBA-game-ou-under",
+          "opposingOddID": "points-DILLON_BROOKS_1_NBA-game-ou-over",
+          "statID": "points",
+          "statEntityID": "DILLON_BROOKS_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "DILLON_BROOKS_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-121",
+          "bookOdds": "-115",
+          "fairOverUnder": "23.5",
+          "bookOverUnder": "22.5",
+          "openFairOdds": "-121",
+          "openBookOdds": "-115",
+          "openFairOverUnder": "23.5",
+          "openBookOverUnder": "22.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-114",
+              "overUnder": "22.5",
+              "lastUpdatedAt": "2025-12-08T11:02:20.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.545035346&selectionId=12798647"
+            }
+          },
+          "marketName": "Dillon Brooks Points Over/Under"
+        },
+        "points-GRAYSON_ALLEN_1_NBA-game-ou-over": {
+          "oddID": "points-GRAYSON_ALLEN_1_NBA-game-ou-over",
+          "opposingOddID": "points-GRAYSON_ALLEN_1_NBA-game-ou-under",
+          "statID": "points",
+          "statEntityID": "GRAYSON_ALLEN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "GRAYSON_ALLEN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+129",
+          "bookOdds": "-113",
+          "fairOverUnder": "17.5",
+          "bookOverUnder": "16.5",
+          "openFairOdds": "+129",
+          "openBookOdds": "-113",
+          "openFairOverUnder": "17.5",
+          "openBookOverUnder": "16.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-112",
+              "overUnder": "16.5",
+              "lastUpdatedAt": "2025-12-08T11:02:20.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.545035347&selectionId=37819081",
+              "altLines": [
+                {
+                  "odds": "-900",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2025-12-08T11:02:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-186",
+                  "overUnder": "14.5",
+                  "lastUpdatedAt": "2025-12-08T11:02:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+176",
+                  "overUnder": "19.5",
+                  "lastUpdatedAt": "2025-12-08T11:02:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+470",
+                  "overUnder": "24.5",
+                  "lastUpdatedAt": "2025-12-08T11:02:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1100",
+                  "overUnder": "29.5",
+                  "lastUpdatedAt": "2025-12-08T11:02:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+2500",
+                  "overUnder": "34.5",
+                  "lastUpdatedAt": "2025-12-08T11:02:20.000Z",
+                  "available": true
+                }
+              ]
+            }
+          },
+          "marketName": "Grayson Allen Points Over/Under"
+        },
+        "points-GRAYSON_ALLEN_1_NBA-game-ou-under": {
+          "oddID": "points-GRAYSON_ALLEN_1_NBA-game-ou-under",
+          "opposingOddID": "points-GRAYSON_ALLEN_1_NBA-game-ou-over",
+          "statID": "points",
+          "statEntityID": "GRAYSON_ALLEN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "GRAYSON_ALLEN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-129",
+          "bookOdds": "-117",
+          "fairOverUnder": "17.5",
+          "bookOverUnder": "16.5",
+          "openFairOdds": "-129",
+          "openBookOdds": "-117",
+          "openFairOverUnder": "17.5",
+          "openBookOverUnder": "16.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-118",
+              "overUnder": "16.5",
+              "lastUpdatedAt": "2025-12-08T11:02:20.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.545035347&selectionId=37819080"
+            }
+          },
+          "marketName": "Grayson Allen Points Over/Under"
+        },
+        "points-MARK_WILLIAMS_1_NBA-game-ou-over": {
+          "oddID": "points-MARK_WILLIAMS_1_NBA-game-ou-over",
+          "opposingOddID": "points-MARK_WILLIAMS_1_NBA-game-ou-under",
+          "statID": "points",
+          "statEntityID": "MARK_WILLIAMS_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "MARK_WILLIAMS_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "-118",
+          "fairOverUnder": "12",
+          "bookOverUnder": "11.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "-118",
+          "openFairOverUnder": "12",
+          "openBookOverUnder": "11.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-118",
+              "overUnder": "11.5",
+              "lastUpdatedAt": "2025-12-08T11:02:20.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.545035349&selectionId=43036898",
+              "altLines": [
+                {
+                  "odds": "-220",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2025-12-08T11:02:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+200",
+                  "overUnder": "14.5",
+                  "lastUpdatedAt": "2025-12-08T11:02:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+680",
+                  "overUnder": "19.5",
+                  "lastUpdatedAt": "2025-12-08T11:02:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1800",
+                  "overUnder": "24.5",
+                  "lastUpdatedAt": "2025-12-08T11:02:20.000Z",
+                  "available": true
+                }
+              ]
+            }
+          },
+          "marketName": "Mark Williams Points Over/Under"
+        },
+        "points-MARK_WILLIAMS_1_NBA-game-ou-under": {
+          "oddID": "points-MARK_WILLIAMS_1_NBA-game-ou-under",
+          "opposingOddID": "points-MARK_WILLIAMS_1_NBA-game-ou-over",
+          "statID": "points",
+          "statEntityID": "MARK_WILLIAMS_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "MARK_WILLIAMS_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "-112",
+          "fairOverUnder": "12",
+          "bookOverUnder": "11.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "-112",
+          "openFairOverUnder": "12",
+          "openBookOverUnder": "11.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-112",
+              "overUnder": "11.5",
+              "lastUpdatedAt": "2025-12-08T11:02:20.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.545035349&selectionId=43036899"
+            }
+          },
+          "marketName": "Mark Williams Points Over/Under"
+        },
+        "rebounds-COLLIN_GILLESPIE_1_NBA-game-ou-over": {
+          "oddID": "rebounds-COLLIN_GILLESPIE_1_NBA-game-ou-over",
+          "opposingOddID": "rebounds-COLLIN_GILLESPIE_1_NBA-game-ou-under",
+          "statID": "rebounds",
+          "statEntityID": "COLLIN_GILLESPIE_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "COLLIN_GILLESPIE_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "-136",
+          "fairOverUnder": "4",
+          "bookOverUnder": "3.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "-136",
+          "openFairOverUnder": "4",
+          "openBookOverUnder": "3.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-136",
+              "overUnder": "3.5",
+              "lastUpdatedAt": "2025-12-08T11:02:20.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.545035359&selectionId=43026356",
+              "altLines": [
+                {
+                  "odds": "+350",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2025-12-08T11:02:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1200",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2025-12-08T11:02:20.000Z",
+                  "available": true
+                }
+              ]
+            }
+          },
+          "marketName": "Collin Gillespie Rebounds Over/Under"
+        },
+        "rebounds-COLLIN_GILLESPIE_1_NBA-game-ou-under": {
+          "oddID": "rebounds-COLLIN_GILLESPIE_1_NBA-game-ou-under",
+          "opposingOddID": "rebounds-COLLIN_GILLESPIE_1_NBA-game-ou-over",
+          "statID": "rebounds",
+          "statEntityID": "COLLIN_GILLESPIE_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "COLLIN_GILLESPIE_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "+101",
+          "fairOverUnder": "4",
+          "bookOverUnder": "3.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "+101",
+          "openFairOverUnder": "4",
+          "openBookOverUnder": "3.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+102",
+              "overUnder": "3.5",
+              "lastUpdatedAt": "2025-12-08T11:02:20.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.545035359&selectionId=43026355"
+            }
+          },
+          "marketName": "Collin Gillespie Rebounds Over/Under"
+        },
+        "rebounds-DILLON_BROOKS_1_NBA-game-ou-over": {
+          "oddID": "rebounds-DILLON_BROOKS_1_NBA-game-ou-over",
+          "opposingOddID": "rebounds-DILLON_BROOKS_1_NBA-game-ou-under",
+          "statID": "rebounds",
+          "statEntityID": "DILLON_BROOKS_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "DILLON_BROOKS_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+121",
+          "bookOdds": "+106",
+          "fairOverUnder": "3.5",
+          "bookOverUnder": "3.5",
+          "openFairOdds": "+121",
+          "openBookOdds": "+106",
+          "openFairOverUnder": "3.5",
+          "openBookOverUnder": "3.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+104",
+              "overUnder": "3.5",
+              "lastUpdatedAt": "2025-12-08T11:02:20.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.545035357&selectionId=12798648",
+              "altLines": [
+                {
+                  "odds": "+480",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2025-12-08T11:02:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1500",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2025-12-08T10:05:03.000Z",
+                  "available": false
+                }
+              ]
+            }
+          },
+          "marketName": "Dillon Brooks Rebounds Over/Under"
+        },
+        "rebounds-DILLON_BROOKS_1_NBA-game-ou-under": {
+          "oddID": "rebounds-DILLON_BROOKS_1_NBA-game-ou-under",
+          "opposingOddID": "rebounds-DILLON_BROOKS_1_NBA-game-ou-over",
+          "statID": "rebounds",
+          "statEntityID": "DILLON_BROOKS_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "DILLON_BROOKS_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-121",
+          "bookOdds": "-141",
+          "fairOverUnder": "3.5",
+          "bookOverUnder": "3.5",
+          "openFairOdds": "-121",
+          "openBookOdds": "-141",
+          "openFairOverUnder": "3.5",
+          "openBookOverUnder": "3.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-138",
+              "overUnder": "3.5",
+              "lastUpdatedAt": "2025-12-08T11:02:20.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.545035357&selectionId=12798647"
+            }
+          },
+          "marketName": "Dillon Brooks Rebounds Over/Under"
+        },
+        "rebounds-GRAYSON_ALLEN_1_NBA-game-ou-over": {
+          "oddID": "rebounds-GRAYSON_ALLEN_1_NBA-game-ou-over",
+          "opposingOddID": "rebounds-GRAYSON_ALLEN_1_NBA-game-ou-under",
+          "statID": "rebounds",
+          "statEntityID": "GRAYSON_ALLEN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "GRAYSON_ALLEN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-129",
+          "bookOdds": "-150",
+          "fairOverUnder": "2.5",
+          "bookOverUnder": "2.5",
+          "openFairOdds": "-129",
+          "openBookOdds": "-150",
+          "openFairOverUnder": "2.5",
+          "openBookOverUnder": "2.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-154",
+              "overUnder": "2.5",
+              "lastUpdatedAt": "2025-12-08T11:02:20.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.545035358&selectionId=37819081",
+              "altLines": [
+                {
+                  "odds": "+164",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2025-12-08T11:02:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+800",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2025-12-08T11:02:20.000Z",
+                  "available": true
+                }
+              ]
+            }
+          },
+          "marketName": "Grayson Allen Rebounds Over/Under"
+        },
+        "rebounds-GRAYSON_ALLEN_1_NBA-game-ou-under": {
+          "oddID": "rebounds-GRAYSON_ALLEN_1_NBA-game-ou-under",
+          "opposingOddID": "rebounds-GRAYSON_ALLEN_1_NBA-game-ou-over",
+          "statID": "rebounds",
+          "statEntityID": "GRAYSON_ALLEN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "GRAYSON_ALLEN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+129",
+          "bookOdds": "+115",
+          "fairOverUnder": "2.5",
+          "bookOverUnder": "2.5",
+          "openFairOdds": "+129",
+          "openBookOdds": "+115",
+          "openFairOverUnder": "2.5",
+          "openBookOverUnder": "2.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+116",
+              "overUnder": "2.5",
+              "lastUpdatedAt": "2025-12-08T11:02:20.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.545035358&selectionId=37819080"
+            }
+          },
+          "marketName": "Grayson Allen Rebounds Over/Under"
+        },
+        "rebounds-MARK_WILLIAMS_1_NBA-game-ou-over": {
+          "oddID": "rebounds-MARK_WILLIAMS_1_NBA-game-ou-over",
+          "opposingOddID": "rebounds-MARK_WILLIAMS_1_NBA-game-ou-under",
+          "statID": "rebounds",
+          "statEntityID": "MARK_WILLIAMS_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "MARK_WILLIAMS_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+115",
+          "bookOdds": "+100",
+          "fairOverUnder": "8.5",
+          "bookOverUnder": "8.5",
+          "openFairOdds": "+115",
+          "openBookOdds": "+100",
+          "openFairOverUnder": "8.5",
+          "openBookOverUnder": "8.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+104",
+              "overUnder": "8.5",
+              "lastUpdatedAt": "2025-12-08T11:02:20.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.545035360&selectionId=43036898",
+              "altLines": [
+                {
+                  "odds": "-3500",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2025-12-08T11:02:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-500",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2025-12-08T11:02:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-158",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2025-12-08T11:02:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+144",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2025-12-08T11:02:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+350",
+                  "overUnder": "11.5",
+                  "lastUpdatedAt": "2025-12-08T11:02:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+870",
+                  "overUnder": "13.5",
+                  "lastUpdatedAt": "2025-12-08T11:02:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1700",
+                  "overUnder": "15.5",
+                  "lastUpdatedAt": "2025-12-08T11:02:20.000Z",
+                  "available": true
+                }
+              ]
+            }
+          },
+          "marketName": "Mark Williams Rebounds Over/Under"
+        },
+        "rebounds-MARK_WILLIAMS_1_NBA-game-ou-under": {
+          "oddID": "rebounds-MARK_WILLIAMS_1_NBA-game-ou-under",
+          "opposingOddID": "rebounds-MARK_WILLIAMS_1_NBA-game-ou-over",
+          "statID": "rebounds",
+          "statEntityID": "MARK_WILLIAMS_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "MARK_WILLIAMS_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-115",
+          "bookOdds": "-134",
+          "fairOverUnder": "8.5",
+          "bookOverUnder": "8.5",
+          "openFairOdds": "-115",
+          "openBookOdds": "-134",
+          "openFairOverUnder": "8.5",
+          "openBookOverUnder": "8.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-138",
+              "overUnder": "8.5",
+              "lastUpdatedAt": "2025-12-08T11:02:20.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.545035360&selectionId=43036899"
+            }
+          },
+          "marketName": "Mark Williams Rebounds Over/Under"
+        },
+        "steals-COLLIN_GILLESPIE_1_NBA-game-ou-over": {
+          "oddID": "steals-COLLIN_GILLESPIE_1_NBA-game-ou-over",
+          "opposingOddID": "steals-COLLIN_GILLESPIE_1_NBA-game-ou-under",
+          "statID": "steals",
+          "statEntityID": "COLLIN_GILLESPIE_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "COLLIN_GILLESPIE_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+153",
+          "bookOdds": "+136",
+          "fairOverUnder": "1.5",
+          "bookOverUnder": "1.5",
+          "openFairOdds": "+153",
+          "openBookOdds": "+136",
+          "openFairOverUnder": "1.5",
+          "openBookOverUnder": "1.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+138",
+              "overUnder": "1.5",
+              "lastUpdatedAt": "2025-12-08T11:02:20.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.545042746&selectionId=43026356",
+              "altLines": [
+                {
+                  "odds": "-350",
+                  "overUnder": "0.5",
+                  "lastUpdatedAt": "2025-12-08T11:02:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+430",
+                  "overUnder": "2.5",
+                  "lastUpdatedAt": "2025-12-08T11:02:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1000",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2025-12-08T06:47:44.000Z",
+                  "available": false
+                }
+              ]
+            }
+          },
+          "marketName": "Collin Gillespie Steals Over/Under"
+        },
+        "steals-COLLIN_GILLESPIE_1_NBA-game-ou-under": {
+          "oddID": "steals-COLLIN_GILLESPIE_1_NBA-game-ou-under",
+          "opposingOddID": "steals-COLLIN_GILLESPIE_1_NBA-game-ou-over",
+          "statID": "steals",
+          "statEntityID": "COLLIN_GILLESPIE_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "COLLIN_GILLESPIE_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-153",
+          "fairOverUnder": "1.5",
+          "openFairOdds": "-153",
+          "openFairOverUnder": "1.5",
+          "scoringSupported": true,
+          "bookOdds": "-186",
+          "bookOverUnder": "1.5",
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-186",
+              "overUnder": "1.5",
+              "lastUpdatedAt": "2025-12-08T11:02:20.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.545042746&selectionId=43026355"
+            }
+          },
+          "marketName": "Collin Gillespie Steals Over/Under",
+          "openBookOdds": "-186",
+          "openBookOverUnder": "1.5"
+        },
+        "steals-DILLON_BROOKS_1_NBA-game-ou-over": {
+          "oddID": "steals-DILLON_BROOKS_1_NBA-game-ou-over",
+          "opposingOddID": "steals-DILLON_BROOKS_1_NBA-game-ou-under",
+          "statID": "steals",
+          "statEntityID": "DILLON_BROOKS_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "DILLON_BROOKS_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+143",
+          "bookOdds": "+125",
+          "fairOverUnder": "1.5",
+          "bookOverUnder": "1.5",
+          "openFairOdds": "+143",
+          "openBookOdds": "+125",
+          "openFairOverUnder": "1.5",
+          "openBookOverUnder": "1.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+126",
+              "overUnder": "1.5",
+              "lastUpdatedAt": "2025-12-08T11:02:20.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.545042727&selectionId=12798648",
+              "altLines": [
+                {
+                  "odds": "-400",
+                  "overUnder": "0.5",
+                  "lastUpdatedAt": "2025-12-08T11:02:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+400",
+                  "overUnder": "2.5",
+                  "lastUpdatedAt": "2025-12-08T11:02:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+920",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2025-12-08T07:00:11.000Z",
+                  "available": false
+                }
+              ]
+            }
+          },
+          "marketName": "Dillon Brooks Steals Over/Under"
+        },
+        "steals-DILLON_BROOKS_1_NBA-game-ou-under": {
+          "oddID": "steals-DILLON_BROOKS_1_NBA-game-ou-under",
+          "opposingOddID": "steals-DILLON_BROOKS_1_NBA-game-ou-over",
+          "statID": "steals",
+          "statEntityID": "DILLON_BROOKS_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "DILLON_BROOKS_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-143",
+          "fairOverUnder": "1.5",
+          "openFairOdds": "-143",
+          "openFairOverUnder": "1.5",
+          "scoringSupported": true,
+          "bookOdds": "-174",
+          "bookOverUnder": "1.5",
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-168",
+              "overUnder": "1.5",
+              "lastUpdatedAt": "2025-12-08T11:02:20.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.545042727&selectionId=12798647"
+            }
+          },
+          "marketName": "Dillon Brooks Steals Over/Under",
+          "openBookOdds": "-174",
+          "openBookOverUnder": "1.5"
+        },
+        "steals-GRAYSON_ALLEN_1_NBA-game-ou-over": {
+          "oddID": "steals-GRAYSON_ALLEN_1_NBA-game-ou-over",
+          "opposingOddID": "steals-GRAYSON_ALLEN_1_NBA-game-ou-under",
+          "statID": "steals",
+          "statEntityID": "GRAYSON_ALLEN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "GRAYSON_ALLEN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-201",
+          "bookOdds": "-240",
+          "fairOverUnder": "0.5",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "-201",
+          "openBookOdds": "-240",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {},
+          "marketName": "Grayson Allen Steals Over/Under"
+        },
+        "steals-GRAYSON_ALLEN_1_NBA-game-ou-under": {
+          "oddID": "steals-GRAYSON_ALLEN_1_NBA-game-ou-under",
+          "opposingOddID": "steals-GRAYSON_ALLEN_1_NBA-game-ou-over",
+          "statID": "steals",
+          "statEntityID": "GRAYSON_ALLEN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "GRAYSON_ALLEN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+201",
+          "fairOverUnder": "0.5",
+          "openFairOdds": "+201",
+          "openFairOverUnder": "0.5",
+          "scoringSupported": true,
+          "bookOdds": "+185",
+          "bookOverUnder": "0.5",
+          "byBookmaker": {},
+          "marketName": "Grayson Allen Steals Over/Under",
+          "openBookOdds": "+185",
+          "openBookOverUnder": "0.5"
+        },
+        "steals-MARK_WILLIAMS_1_NBA-game-ou-over": {
+          "oddID": "steals-MARK_WILLIAMS_1_NBA-game-ou-over",
+          "opposingOddID": "steals-MARK_WILLIAMS_1_NBA-game-ou-under",
+          "statID": "steals",
+          "statEntityID": "MARK_WILLIAMS_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "MARK_WILLIAMS_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-165",
+          "bookOdds": "-195",
+          "fairOverUnder": "0.5",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "-165",
+          "openBookOdds": "-195",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {},
+          "marketName": "Mark Williams Steals Over/Under"
+        },
+        "steals-MARK_WILLIAMS_1_NBA-game-ou-under": {
+          "oddID": "steals-MARK_WILLIAMS_1_NBA-game-ou-under",
+          "opposingOddID": "steals-MARK_WILLIAMS_1_NBA-game-ou-over",
+          "statID": "steals",
+          "statEntityID": "MARK_WILLIAMS_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "MARK_WILLIAMS_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+165",
+          "fairOverUnder": "0.5",
+          "openFairOdds": "+165",
+          "openFairOverUnder": "0.5",
+          "scoringSupported": true,
+          "bookOdds": "+150",
+          "bookOverUnder": "0.5",
+          "byBookmaker": {},
+          "marketName": "Mark Williams Steals Over/Under",
+          "openBookOdds": "+150",
+          "openBookOverUnder": "0.5"
+        },
+        "assists-MARK_WILLIAMS_1_NBA-game-ou-under": {
+          "oddID": "assists-MARK_WILLIAMS_1_NBA-game-ou-under",
+          "opposingOddID": "assists-MARK_WILLIAMS_1_NBA-game-ou-over",
+          "marketName": "Mark Williams Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "MARK_WILLIAMS_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "MARK_WILLIAMS_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+179",
+          "bookOdds": "+180",
+          "fairOverUnder": "0.5",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "+179",
+          "openBookOdds": "+180",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        },
+        "points-OSO_IGHODARO_1_NBA-game-ou-over": {
+          "oddID": "points-OSO_IGHODARO_1_NBA-game-ou-over",
+          "opposingOddID": "points-OSO_IGHODARO_1_NBA-game-ou-under",
+          "statID": "points",
+          "statEntityID": "OSO_IGHODARO_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "OSO_IGHODARO_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "-115",
+          "fairOverUnder": "4.5",
+          "bookOverUnder": "4.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "-115",
+          "openFairOverUnder": "4.5",
+          "openBookOverUnder": "4.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-114",
+              "overUnder": "4.5",
+              "lastUpdatedAt": "2025-12-08T11:02:20.000Z",
+              "available": true,
+              "altLines": [
+                {
+                  "odds": "+600",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2025-12-08T11:02:20.000Z",
+                  "available": true
+                }
+              ],
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.545042611&selectionId=50184535"
+            }
+          },
+          "marketName": "Oso Ighodaro Points Over/Under"
+        },
+        "points-OSO_IGHODARO_1_NBA-game-ou-under": {
+          "oddID": "points-OSO_IGHODARO_1_NBA-game-ou-under",
+          "opposingOddID": "points-OSO_IGHODARO_1_NBA-game-ou-over",
+          "statID": "points",
+          "statEntityID": "OSO_IGHODARO_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "OSO_IGHODARO_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "fairOverUnder": "4.5",
+          "openFairOdds": "+100",
+          "openFairOverUnder": "4.5",
+          "scoringSupported": true,
+          "bookOdds": "-115",
+          "bookOverUnder": "4.5",
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-114",
+              "overUnder": "4.5",
+              "lastUpdatedAt": "2025-12-08T11:02:20.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.545042611&selectionId=50184532"
+            }
+          },
+          "marketName": "Oso Ighodaro Points Over/Under",
+          "openBookOdds": "-115",
+          "openBookOverUnder": "4.5"
+        },
+        "rebounds-OSO_IGHODARO_1_NBA-game-ou-over": {
+          "oddID": "rebounds-OSO_IGHODARO_1_NBA-game-ou-over",
+          "opposingOddID": "rebounds-OSO_IGHODARO_1_NBA-game-ou-under",
+          "statID": "rebounds",
+          "statEntityID": "OSO_IGHODARO_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "OSO_IGHODARO_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+132",
+          "bookOdds": "-157",
+          "fairOverUnder": "4.5",
+          "bookOverUnder": "3.5",
+          "openFairOdds": "+132",
+          "openBookOdds": "-157",
+          "openFairOverUnder": "4.5",
+          "openBookOverUnder": "3.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-158",
+              "overUnder": "3.5",
+              "lastUpdatedAt": "2025-12-08T11:02:20.000Z",
+              "available": true,
+              "altLines": [
+                {
+                  "odds": "+240",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2025-12-08T11:02:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+750",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2025-12-08T11:02:20.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1500",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2025-12-08T11:02:20.000Z",
+                  "available": true
+                }
+              ],
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.545042612&selectionId=50184535"
+            }
+          },
+          "marketName": "Oso Ighodaro Rebounds Over/Under"
+        },
+        "rebounds-OSO_IGHODARO_1_NBA-game-ou-under": {
+          "oddID": "rebounds-OSO_IGHODARO_1_NBA-game-ou-under",
+          "opposingOddID": "rebounds-OSO_IGHODARO_1_NBA-game-ou-over",
+          "statID": "rebounds",
+          "statEntityID": "OSO_IGHODARO_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "OSO_IGHODARO_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-132",
+          "fairOverUnder": "4.5",
+          "openFairOdds": "-132",
+          "openFairOverUnder": "4.5",
+          "scoringSupported": true,
+          "bookOdds": "+120",
+          "bookOverUnder": "3.5",
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+118",
+              "overUnder": "3.5",
+              "lastUpdatedAt": "2025-12-08T11:02:20.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.545042612&selectionId=50184532"
+            }
+          },
+          "marketName": "Oso Ighodaro Rebounds Over/Under",
+          "openBookOdds": "+120",
+          "openBookOverUnder": "3.5"
+        }
+      },
+      "results": {},
+      "players": {
+        "JADEN_MCDANIELS_1_NBA": {
+          "playerID": "JADEN_MCDANIELS_1_NBA",
+          "teamID": "MINNESOTA_TIMBERWOLVES_NBA",
+          "firstName": "Jaden",
+          "lastName": "McDaniels",
+          "name": "Jaden McDaniels"
+        },
+        "ANTHONY_EDWARDS_1_NBA": {
+          "playerID": "ANTHONY_EDWARDS_1_NBA",
+          "teamID": "MINNESOTA_TIMBERWOLVES_NBA",
+          "firstName": "Anthony",
+          "lastName": "Edwards",
+          "name": "Anthony Edwards"
+        },
+        "COLLIN_GILLESPIE_1_NBA": {
+          "playerID": "COLLIN_GILLESPIE_1_NBA",
+          "teamID": "PHOENIX_SUNS_NBA",
+          "firstName": "Collin",
+          "lastName": "Gillespie",
+          "name": "Collin Gillespie"
+        },
+        "GRAYSON_ALLEN_1_NBA": {
+          "playerID": "GRAYSON_ALLEN_1_NBA",
+          "teamID": "PHOENIX_SUNS_NBA",
+          "firstName": "Grayson",
+          "lastName": "Allen",
+          "name": "Grayson Allen"
+        },
+        "DILLON_BROOKS_1_NBA": {
+          "playerID": "DILLON_BROOKS_1_NBA",
+          "teamID": "PHOENIX_SUNS_NBA",
+          "firstName": "Dillon",
+          "lastName": "Brooks",
+          "name": "Dillon Brooks"
+        },
+        "ROYCE_ONEALE_1_NBA": {
+          "playerID": "ROYCE_ONEALE_1_NBA",
+          "teamID": "PHOENIX_SUNS_NBA",
+          "firstName": "Royce",
+          "lastName": "O'Neale",
+          "name": "Royce O'Neale"
+        },
+        "DONTE_DIVINCENZO_1_NBA": {
+          "playerID": "DONTE_DIVINCENZO_1_NBA",
+          "teamID": "MINNESOTA_TIMBERWOLVES_NBA",
+          "firstName": "Donte",
+          "lastName": "DiVincenzo",
+          "name": "Donte DiVincenzo"
+        },
+        "JULIUS_RANDLE_1_NBA": {
+          "playerID": "JULIUS_RANDLE_1_NBA",
+          "teamID": "MINNESOTA_TIMBERWOLVES_NBA",
+          "firstName": "Julius",
+          "lastName": "Randle",
+          "name": "Julius Randle"
+        },
+        "MARK_WILLIAMS_1_NBA": {
+          "playerID": "MARK_WILLIAMS_1_NBA",
+          "teamID": "PHOENIX_SUNS_NBA",
+          "firstName": "Mark",
+          "lastName": "Williams",
+          "name": "Mark Williams"
+        },
+        "RUDY_GOBERT_1_NBA": {
+          "playerID": "RUDY_GOBERT_1_NBA",
+          "teamID": "MINNESOTA_TIMBERWOLVES_NBA",
+          "firstName": "Rudy",
+          "lastName": "Gobert",
+          "name": "Rudy Gobert"
+        },
+        "NAZ_REID_1_NBA": {
+          "playerID": "NAZ_REID_1_NBA",
+          "teamID": "MINNESOTA_TIMBERWOLVES_NBA",
+          "firstName": "Naz",
+          "lastName": "Reid",
+          "name": "Naz Reid"
+        },
+        "MIKE_CONLEY_1_NBA": {
+          "playerID": "MIKE_CONLEY_1_NBA",
+          "teamID": "MINNESOTA_TIMBERWOLVES_NBA",
+          "firstName": "Mike",
+          "lastName": "Conley",
+          "name": "Mike Conley"
+        },
+        "RYAN_DUNN_1_NBA": {
+          "playerID": "RYAN_DUNN_1_NBA",
+          "teamID": "PHOENIX_SUNS_NBA",
+          "firstName": "Ryan",
+          "lastName": "Dunn",
+          "name": "Ryan Dunn"
+        },
+        "OSO_IGHODARO_1_NBA": {
+          "playerID": "OSO_IGHODARO_1_NBA",
+          "teamID": "PHOENIX_SUNS_NBA",
+          "firstName": "Oso",
+          "lastName": "Ighodaro",
+          "name": "Oso Ighodaro"
+        }
+      }
+    }
+  ]
+}

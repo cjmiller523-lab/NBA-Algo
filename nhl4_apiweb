@@ -1,0 +1,345 @@
+# nhl4_apiweb_v2.py — auto-rebuilding roster version
+import os
+import json
+import time
+import argparse
+from datetime import datetime
+from collections import defaultdict
+
+import requests
+
+# =========================
+# SETTINGS
+# =========================
+LAST_N_GAMES = 10
+SEASON = "20242025"
+GAME_TYPE = "2"  # 2 = Regular Season
+MAX_RETRIES = 3
+RETRY_SLEEP = 0.7
+
+CACHE_DIR = "cache_nhl"
+LOGS_DIR = os.path.join(CACHE_DIR, "logs", SEASON)
+ROSTERS_PATH = "nhl_rosters.json"
+INJURIES_PATH = "nhl_out_statuses.json"
+ODDS_CACHE_DIR = "odds_cache"
+TWITTER_DIR = "twitter_posts"
+
+MARKETS = ["SOG", "PTS", "AST", "GLS"]
+THRESHOLDS = {
+    "SOG": [1, 2, 3, 4, 5, 6, 7],
+    "PTS": [0.5, 1.5, 2.5, 3.5],
+    "AST": [0.5, 1.5, 2.5],
+    "GLS": [0.5, 1.5, 2.5],
+}
+ODDS_WINDOW = (-1500, -150)
+REQUIRE_100 = True
+TOP_K_PER_GAME = 3
+
+# =========================
+# UTILS
+# =========================
+def ensure_dirs():
+    os.makedirs(LOGS_DIR, exist_ok=True)
+    os.makedirs(TWITTER_DIR, exist_ok=True)
+    os.makedirs(ODDS_CACHE_DIR, exist_ok=True)
+
+def http_get(url, params=None, retries=MAX_RETRIES, sleep=RETRY_SLEEP):
+    last = None
+    for i in range(retries):
+        try:
+            r = requests.get(url, params=params, timeout=15)
+            if r.status_code == 200:
+                return r.json()
+            last = f"HTTP {r.status_code}: {url}"
+        except Exception as e:
+            last = str(e)
+        time.sleep(sleep)
+    raise RuntimeError(last or "GET failed")
+
+def fmt_american(odds):
+    if odds is None: return "N/A"
+    return f"+{odds}" if odds > 0 else str(odds)
+
+def american_in_window(o):
+    return o is not None and ODDS_WINDOW[0] <= o <= ODDS_WINDOW[1]
+
+def pick_best_price(entries):
+    if not entries: return None
+    best = entries[0]
+    for e in entries[1:]:
+        if e.get("odds") is None: continue
+        if best.get("odds") is None or e["odds"] < best["odds"]:
+            best = e
+    return best
+
+# =========================
+# API-WEB ENDPOINTS
+# =========================
+def apiweb_score_date(date_str):
+    return http_get(f"https://api-web.nhle.com/v1/score/{date_str}")
+
+def apiweb_roster(team_abbr):
+    return http_get(f"https://api-web.nhle.com/v1/roster/{team_abbr}/{SEASON}", params={"site": "en_nhl"})
+
+def apiweb_player_log(pid):
+    return http_get(f"https://api-web.nhle.com/v1/player/{pid}/game-log/{SEASON}/{GAME_TYPE}")
+
+# =========================
+# DATA PIPELINE
+# =========================
+def load_injuries():
+    if os.path.exists(INJURIES_PATH):
+        try:
+            with open(INJURIES_PATH, "r", encoding="utf-8") as f:
+                d = json.load(f)
+            return set(d) if isinstance(d, list) else set()
+        except: return set()
+    return set()
+
+def load_odds_cache(date_str):
+    fp = os.path.join(ODDS_CACHE_DIR, f"nhl_{date_str}.json")
+    if not os.path.exists(fp): return {}
+    with open(fp, "r", encoding="utf-8") as f:
+        root = json.load(f)
+    return root.get(date_str, {})
+
+def schedule(date_str):
+    try:
+        data = apiweb_score_date(date_str)
+    except:
+        return []
+
+    games = []
+    for g in data.get("games", []):
+        away = g.get("awayTeam", {}).get("abbrev")
+        home = g.get("homeTeam", {}).get("abbrev")
+        gid = g.get("id")
+        if away and home:
+            games.append({"away": away, "home": home, "id": gid})
+    return games
+
+def player_log_cached(pid):
+    fp = os.path.join(LOGS_DIR, f"{pid}.json")
+    if os.path.exists(fp):
+        with open(fp, "r", encoding="utf-8") as f:
+            return json.load(f)
+    return None
+
+def save_player_log(pid, data):
+    fp = os.path.join(LOGS_DIR, f"{pid}.json")
+    with open(fp, "w", encoding="utf-8") as f:
+        json.dump(data, f, indent=2)
+
+def extract_recent(gamelog, last_n):
+    logs = gamelog.get("gameLog", []) or []
+    out = []
+    for s in logs:
+        bs = s.get("boxscore", {}) or s
+        sog = bs.get("shots", 0)
+        g = bs.get("goals", 0)
+        a = bs.get("assists", 0)
+        pts = g + a
+        out.append({"SOG": sog, "GLS": g, "AST": a, "PTS": pts})
+    return out[:last_n]
+
+# =========================
+# ROSTERS (auto rebuild)
+# =========================
+def build_rosters(teams):
+    print("🔧 Rebuilding nhl_rosters.json…")
+    mapping = {}
+    for t in teams:
+        try:
+            roster = apiweb_roster(t)
+            for bucket in ("forwards", "defensemen", "goalies"):
+                for p in roster.get(bucket, []):
+                    pid = p.get("playerId")
+                    name = p.get("firstName", {}).get("default", "") + " " + p.get("lastName", {}).get("default", "")
+                    name = name.strip()
+                    pos = p.get("position", {}).get("code")
+                    if pid and name:
+                        mapping[name] = {"id": pid, "team": t, "pos": pos}
+            time.sleep(0.05)
+        except Exception as e:
+            print(f"  ⚠ ROSTER FAILED {t}: {e}")
+
+    with open(ROSTERS_PATH, "w", encoding="utf-8") as f:
+        json.dump(mapping, f, indent=2)
+    return mapping
+
+def load_or_build_rosters(teams_today):
+    # If file missing → build
+    if not os.path.exists(ROSTERS_PATH):
+        return build_rosters(teams_today)
+
+    # Load file
+    try:
+        with open(ROSTERS_PATH, "r", encoding="utf-8") as f:
+            data = json.load(f)
+    except:
+        return build_rosters(teams_today)
+
+    # Empty file? → rebuild
+    if not data:
+        print("⚠ Empty roster file detected — rebuilding")
+        return build_rosters(teams_today)
+
+    # Missing teams? → rebuild
+    teams_found = set(v["team"] for v in data.values())
+    if not teams_today.issubset(teams_found):
+        print("⚠ Missing roster data for today’s teams — rebuilding")
+        return build_rosters(teams_today)
+
+    return data
+
+# =========================
+# HIT-RATE + BOUNCE
+# =========================
+def compute_hit(recent, market, th):
+    hits = sum(1 for r in recent if r[market] >= th)
+    total = len(recent)
+    return hits, total
+
+def best_threshold(recent, market):
+    best = None
+    for th in THRESHOLDS[market]:
+        hits, total = compute_hit(recent, market, th)
+        ratio = hits/total if total else 0
+        candidate = (ratio, th, hits, total)
+        if best is None or candidate > best:
+            best = candidate
+    return best
+
+def bounce_back(recent, market):
+    if not recent: return False
+    default = THRESHOLDS[market][0]
+    last = recent[0][market]
+    last_hit = last >= default
+    h, t = compute_hit(recent, market, default)
+    overall = h/t if t else 0
+    return (not last_hit) and overall >= 0.8
+
+# =========================
+# MAIN
+# =========================
+def main():
+    ensure_dirs()
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--date", default=datetime.now().strftime("%Y-%m-%d"))
+    args = parser.parse_args()
+
+    date_str = args.date
+    games = schedule(date_str)
+    print("🔍 Fetching NHL schedule…")
+    print(f"Number of games: {len(games)}")
+
+    if not games:
+        print("No games today.")
+        return
+
+    teams_today = {g["away"] for g in games} | {g["home"] for g in games}
+
+    # Load/rebuild rosters
+    rosters = load_or_build_rosters(teams_today)
+
+    injuries = load_injuries()
+    odds_map = load_odds_cache(date_str)
+
+    team_to_players = defaultdict(list)
+    for name, meta in rosters.items():
+        team_to_players[meta["team"]].append((name, meta["id"]))
+
+    per_game = defaultdict(lambda: defaultdict(list))
+    global_100 = []
+    bounce_list = []
+
+    print("📥 Pulling player logs (cache-first)…")
+
+    for team in sorted(teams_today):
+        for (name, pid) in team_to_players.get(team, []):
+            if name in injuries: continue
+
+            cached = player_log_cached(pid)
+            if cached is None:
+                try:
+                    cached = apiweb_player_log(pid)
+                    save_player_log(pid, cached)
+                    time.sleep(0.05)
+                except:
+                    continue
+
+            recent = extract_recent(cached, LAST_N_GAMES)
+            if not recent: continue
+
+            # find today's game key
+            gk = None
+            for g in games:
+                if team == g["home"]:
+                    gk = f"{g['away']}@{g['home']}"
+                if team == g["away"]:
+                    gk = f"{g['away']}@{g['home']}"
+            if not gk: continue
+
+            player_odds = odds_map.get(name, {})
+
+            for M in MARKETS:
+                ratio, th, hits, total = best_threshold(recent, M)
+                best_odds = pick_best_price(player_odds.get(M, []))
+                american = best_odds.get("odds") if best_odds else None
+
+                per_game[gk][M].append({
+                    "player": name,
+                    "team": team,
+                    "threshold": th,
+                    "hits": hits,
+                    "total": total,
+                    "hitrate": round(100*ratio, 1),
+                    "odds": american,
+                })
+
+                if hits == total == LAST_N_GAMES and american_in_window(american):
+                    global_100.append((name, team, M, th, hits, total, american, gk))
+
+                if bounce_back(recent, M):
+                    bounce_list.append((name, team, M, gk))
+
+    # sort + trim
+    for gk in per_game:
+        for M in per_game[gk]:
+            per_game[gk][M].sort(key=lambda r: (r["hits"]/max(r["total"],1), r["threshold"]), reverse=True)
+            per_game[gk][M] = per_game[gk][M][:TOP_K_PER_GAME]
+
+    # OUTPUT
+    print("\n==============================")
+    print(f"🏒 NHL Props — {date_str}")
+    print("==============================\n")
+
+    for g in games:
+        gk = f"{g['away']}@{g['home']}"
+        print(f"==============================\n{gk}\n==============================")
+        for M in MARKETS:
+            arr = per_game[gk][M]
+            if not arr: continue
+            label = {"SOG":"Shots on Goal","PTS":"Points","AST":"Assists","GLS":"Goals"}[M]
+            print(f"\n{label}")
+            for r in arr:
+                print(f"{r['player']} {label} {r['threshold']}+ @ {fmt_american(r['odds'])} | {r['hits']}/{r['total']} ({r['hitrate']}%)")
+        print()
+
+    print("\n🔥 100% Locks (odds window)")
+    if not global_100:
+        print("None.")
+    else:
+        for rec in global_100:
+            (nm, team, M, th, h, t, o, gk) = rec
+            print(f"{nm} {M} {th}+ @ {fmt_american(o)} — {gk}")
+
+    print("\n🔁 Bounce-Back")
+    if not bounce_list:
+        print("None.")
+    else:
+        for (nm, team, M, gk) in bounce_list:
+            print(f"{nm} {team} {M} — {gk}")
+
+if __name__ == "__main__":
+    main()

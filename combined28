@@ -949,7 +949,7 @@ def build_bank_builder_parlay(all_rows, bounce_rows, target_low_dec=2.00, target
         if r["stat"] not in ("Points", "Rebounds", "Assists"):
             return False
         # accept a broad stable window
-        return _within(r.get("odds", -99999), -400, -120)
+        return _within(r.get("odds", -99999), -900, -120)
 
     pool = [r for r in all_rows if eligible(r)]
     if not pool:
