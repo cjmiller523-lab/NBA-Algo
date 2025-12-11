@@ -1,0 +1,69 @@
+import json
+import time
+import requests
+
+SEASON_ID = "20242025"
+ROSTER_FILE = "nhl_rosters.json"
+
+TEAM_LIST = [
+    "ANA","ARI","BOS","BUF","CAR","CBJ","CGY","CHI","COL","DAL","DET","EDM",
+    "FLA","LAK","MIN","MTL","NJD","NSH","NYI","NYR","OTT","PHI","PIT","SEA",
+    "SJS","STL","TBL","TOR","UTA","VAN","VGK","WPG","WSH"
+]
+
+def get(url):
+    for i in range(4):
+        r = requests.get(url)
+        if r.status_code == 200:
+            return r.json()
+        if r.status_code == 429:
+            wait = (i+1) * 1.5
+            print(f"⏳ Rate limit — waiting {wait:.1f}s")
+            time.sleep(wait)
+            continue
+        r.raise_for_status()
+    raise Exception("Failed after retries")
+
+def build_rosters():
+    all_rosters = {}
+
+    for abbr in TEAM_LIST:
+        print(f"→ Fetching roster for {abbr}...")
+
+        url = f"https://api-web.nhle.com/v1/roster/{abbr}/{SEASON_ID}"
+
+        try:
+            data = get(url)
+        except Exception as e:
+            print(f"⚠️ Failed roster for {abbr}: {e}")
+            all_rosters[abbr] = {"team_name": abbr, "roster": []}
+            continue
+
+        roster = []
+
+        # Pull forwards, defensemen, goalies
+        for section in ["forwards", "defensemen", "goalies"]:
+            for p in data.get(section, []):
+                roster.append({
+                    "player_id": p.get("id"),  # FIXED HERE
+                    "first_name": p.get("firstName", {}).get("default"),
+                    "last_name": p.get("lastName", {}).get("default"),
+                    "position": p.get("positionCode"),
+                    "number": p.get("sweaterNumber")
+                })
+
+        all_rosters[abbr] = {
+            "team_name": abbr,
+            "roster": roster
+        }
+
+        time.sleep(0.15)
+
+    with open(ROSTER_FILE, "w", encoding="utf-8") as f:
+        json.dump(all_rosters, f, indent=2)
+
+    print(f"\n✅ Saved: nhl_rosters.json")
+
+
+if __name__ == "__main__":
+    build_rosters()

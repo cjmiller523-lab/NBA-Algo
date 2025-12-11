@@ -1,0 +1,170 @@
+import os
+import json
+import time
+from datetime import datetime, timedelta
+import requests
+
+# ==============================
+# SETTINGS
+# ==============================
+SEASON_ID = "20242025"  # current NHL season id
+GAME_TYPE = 2           # 2 = Regular Season, 3 = Playoffs
+ROSTERS_FILE = "nhl_rosters.json"
+
+CACHE_ROOT = "nhl_cache"
+PLAYER_LOGS_DIR = os.path.join(CACHE_ROOT, "player_logs")
+MAX_AGE_HOURS = 12      # refresh logs if cache older than this
+REQUEST_DELAY = 0.20    # seconds between requests to avoid 429s
+RETRIES = 4
+BACKOFF_BASE = 1.5      # seconds backoff multiplier for 429
+
+
+# ==============================
+# HTTP with retry / rate limit
+# ==============================
+def safe_get(url, retries=RETRIES, delay=BACKOFF_BASE):
+    for i in range(retries):
+        r = requests.get(url)
+        if r.status_code == 200:
+            return r
+        if r.status_code == 429:
+            wait = delay * (i + 1)
+            print(f"⏳ 429 rate limit at {url} — waiting {wait:.1f}s...")
+            time.sleep(wait)
+            continue
+        # other errors: try to show & continue retrying lightly
+        try:
+            r.raise_for_status()
+        except Exception as e:
+            print(f"⚠️ HTTP Error for {url}: {e}")
+            time.sleep(1.0)
+    raise Exception(f"❌ Failed GET after retries: {url}")
+
+
+# ==============================
+# File / cache helpers
+# ==============================
+def ensure_dirs():
+    os.makedirs(PLAYER_LOGS_DIR, exist_ok=True)
+
+def is_stale(path, max_age_hours=MAX_AGE_HOURS):
+    if not os.path.exists(path):
+        return True
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            data = json.load(f)
+        ts = data.get("updated_at")
+        if not ts:
+            return True
+        updated = datetime.fromisoformat(ts)
+        return datetime.now() - updated > timedelta(hours=max_age_hours)
+    except Exception:
+        return True
+
+
+# ==============================
+# Load rosters (from Step A)
+# ==============================
+def load_rosters(path=ROSTERS_FILE):
+    if not os.path.exists(path):
+        raise FileNotFoundError(f"Roster file not found: {path}")
+    with open(path, "r", encoding="utf-8") as f:
+        return json.load(f)
+
+
+# ==============================
+# Fetch player logs
+# ==============================
+def fetch_player_logs(player_id, season_id=SEASON_ID, game_type=GAME_TYPE):
+    url = f"https://api-web.nhle.com/v1/player/{player_id}/game-log/{season_id}/{game_type}"
+    r = safe_get(url)
+    data = r.json()
+
+    # The NHL API returns a list of game objects.
+    # We’ll store them raw as "logs" and also derive a "last10".
+    # Try to sort by date if "gameDate" present; otherwise keep given order.
+    logs = data if isinstance(data, list) else data.get("gameLog") or data.get("games") or []
+
+    # Normalize date key and sort descending by date if possible
+    def parse_date(g):
+        d = g.get("gameDate") or g.get("date") or g.get("gameDateTime")
+        try:
+            return datetime.fromisoformat(str(d).replace("Z", "+00:00"))
+        except Exception:
+            return None
+
+    # If any dates parse, sort by desc date
+    dates = [parse_date(g) for g in logs]
+    if any(d is not None for d in dates):
+        logs = [g for _, g in sorted(zip(dates, logs), key=lambda t: (t[0] is None, t[0]), reverse=True)]
+
+    last10 = logs[:10]
+
+    return {
+        "updated_at": datetime.now().isoformat(timespec="seconds"),
+        "logs": logs,
+        "last10": last10
+    }
+
+
+# ==============================
+# Main pipeline
+# ==============================
+def build_player_logs(limit_players=None, team_filter=None):
+    ensure_dirs()
+    rosters = load_rosters()
+
+    # Build unique set of player_ids from rosters (avoid duplicates/traded players)
+    player_ids = []
+    seen = set()
+
+    teams_iter = rosters.items()
+    if team_filter:
+        team_filter = {t.strip().upper() for t in team_filter}
+        teams_iter = ((abbr, rosters[abbr]) for abbr in rosters if abbr.upper() in team_filter)
+
+    for abbr, team_info in teams_iter:
+        for p in team_info.get("roster", []):
+            pid = int(p.get("player_id")) if p.get("player_id") not in (None, "", "None") else None
+            if pid and pid not in seen:
+                seen.add(pid)
+                player_ids.append(pid)
+
+    if limit_players:
+        player_ids = player_ids[:limit_players]
+
+    print(f"Found {len(player_ids)} unique players to process.")
+
+    # Loop players with caching
+    processed = 0
+    for pid in player_ids:
+        cache_path = os.path.join(PLAYER_LOGS_DIR, f"{pid}.json")
+
+        if is_stale(cache_path):
+            try:
+                data = fetch_player_logs(pid)
+                with open(cache_path, "w", encoding="utf-8") as f:
+                    json.dump(data, f, ensure_ascii=False)
+                print(f"✅ Cached logs for player {pid} ({len(data['last10'])} in last10).")
+            except Exception as e:
+                print(f"❌ Failed for player {pid}: {e}")
+        else:
+            print(f"✔️ Using cached logs for player {pid}.")
+
+        processed += 1
+        # Gentle throttle to avoid hammering API
+        time.sleep(REQUEST_DELAY)
+
+    print(f"\nDone. Processed {processed} players.")
+    print(f"Logs saved under: {PLAYER_LOGS_DIR}")
+
+
+if __name__ == "__main__":
+    # Examples:
+    #   python nhl_player_logs.py
+    #   (optional quick tests)
+    # You can also tweak limit/team filters below while developing.
+    build_player_logs(
+        limit_players=None,     # e.g., 200 during first run, then None
+        team_filter=None        # e.g., {"BOS", "CBJ"} to test a couple teams
+    )

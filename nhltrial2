@@ -1,0 +1,178 @@
+import requests
+import json
+import time
+
+OUTPUT_FILE = "nhl_rosters.json"
+
+
+# ============================================================
+# Rate-limit safe GET request (handles 429 Too Many Requests)
+# ============================================================
+def safe_get(url, retries=4, delay=1.5):
+    for i in range(retries):
+        r = requests.get(url)
+
+        # Success
+        if r.status_code == 200:
+            return r
+
+        # 429 rate limit
+        if r.status_code == 429:
+            wait = delay * (i + 1)
+            print(f"⏳ 429 rate limit at {url}, waiting {wait:.1f} seconds...")
+            time.sleep(wait)
+            continue
+
+        # Other errors
+        try:
+            r.raise_for_status()
+        except Exception as e:
+            print(f"⚠️ HTTP Error for {url}: {e}")
+            time.sleep(1)
+
+    raise Exception(f"❌ Failed GET after retries: {url}")
+
+
+# ============================================================
+# Step 1: Fetch ALL NHL teams from /standings/now
+# ============================================================
+def fetch_teams():
+    url = "https://api-web.nhle.com/v1/standings/now"
+    r = safe_get(url)
+    data = r.json()
+
+    teams = {}
+
+    for team in data["standings"]:
+        # Extract abbreviation (might be string or dict)
+        raw_abbr = team.get("teamAbbrev")
+        if isinstance(raw_abbr, dict):
+            abbr = raw_abbr.get("default")
+        else:
+            abbr = raw_abbr
+
+        if not abbr or not isinstance(abbr, str):
+            continue
+
+        # Extract name
+        raw_name = team.get("teamName")
+        if isinstance(raw_name, dict):
+            name = raw_name.get("default")
+        else:
+            name = raw_name
+
+        teams[abbr] = {
+            "team_id": team.get("teamId"),
+            "team_name": name
+        }
+
+    return teams
+
+
+# ============================================================
+# Correct roster URL mapping — NHL requires full team names
+# ============================================================
+ROSTER_ABBREV = {
+    "ANA": "DUCKS",
+    "ARI": "COYOTES",
+    "BOS": "BRUINS",
+    "BUF": "SABRES",
+    "CGY": "FLAMES",
+    "CAR": "HURRICANES",
+    "CHI": "BLACKHAWKS",
+    "COL": "AVALANCHE",
+    "CBJ": "BLUEJACKETS",
+    "DAL": "STARS",
+    "DET": "REDWINGS",
+    "EDM": "OILERS",
+    "FLA": "PANTHERS",
+    "LAK": "KINGS",
+    "MIN": "WILD",
+    "MTL": "CANADIENS",
+    "NJD": "DEVILS",
+    "NSH": "PREDATORS",
+    "NYI": "ISLANDERS",
+    "NYR": "RANGERS",
+    "OTT": "SENATORS",
+    "PHI": "FLYERS",
+    "PIT": "PENGUINS",
+    "SEA": "KRAKEN",
+    "SJS": "SHARKS",
+    "STL": "BLUES",
+    "TBL": "LIGHTNING",
+    "TOR": "MAPLELEAFS",
+    "UTA": "UTAH",
+    "VAN": "CANUCKS",
+    "VGK": "GOLDENKNIGHTS",
+    "WPG": "JETS",
+    "WSH": "CAPITALS"
+}
+
+
+# ============================================================
+# Step 2: Fetch roster for a single team
+# ============================================================
+SEASON_ID = "20242025"
+
+def fetch_team_roster(team_abbr):
+
+    url = f"https://api-web.nhle.com/v1/roster/{team_abbr}/{SEASON_ID}"
+
+    r = safe_get(url)
+    if r.status_code != 200:
+        print(f"⚠️ Could not fetch roster for {team_abbr}")
+        return []
+
+    data = r.json()
+
+    roster = []
+
+    for group in ["forwards", "defensemen", "goalies"]:
+        if group in data:
+            for p in data[group]:
+                roster.append({
+                    "player_id": p.get("playerId"),
+                    "first_name": p.get("firstName", {}).get("default"),
+                    "last_name": p.get("lastName", {}).get("default"),
+                    "position": p.get("positionCode"),
+                    "number": p.get("sweaterNumber")
+                })
+
+    return roster
+
+
+
+# ============================================================
+# Step 3: Build full NHL roster JSON
+# ============================================================
+def build_all_rosters():
+    print("Fetching team list...")
+    teams = fetch_teams()
+    print(f"Found {len(teams)} teams.\n")
+
+    full_data = {}
+
+    for abbr, info in teams.items():
+        print(f"→ Fetching roster for {abbr}...")
+        roster = fetch_team_roster(abbr)
+
+        full_data[abbr] = {
+            "team_id": info["team_id"],
+            "team_name": info["team_name"],
+            "roster": roster
+        }
+
+        time.sleep(0.30)  # throttle to avoid 429
+
+    # Save file
+    with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
+        json.dump(full_data, f, indent=4)
+
+    print(f"\n✅ Roster file saved as: {OUTPUT_FILE}")
+
+
+# ============================================================
+# Run script
+# ============================================================
+if __name__ == "__main__":
+    build_all_rosters()

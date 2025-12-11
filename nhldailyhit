@@ -1,0 +1,153 @@
+import os
+import json
+from datetime import date
+
+# ============================
+# PATHS
+# ============================
+ROSTERS_FILE = "nhl_rosters.json"
+PLAYER_LOGS_DIR = os.path.join("nhl_cache", "player_logs")
+SGO_CACHE_DIR = os.path.join("nhl_cache", "sgo_cache")
+
+# ============================
+# LOAD ROSTERS
+# ============================
+def load_rosters():
+    with open(ROSTERS_FILE, "r", encoding="utf-8") as f:
+        return json.load(f)
+
+# ============================
+# LOAD PLAYER LOGS
+# ============================
+def load_player_logs(player_id):
+    path = os.path.join(PLAYER_LOGS_DIR, f"{player_id}.json")
+    if not os.path.exists(path):
+        return None
+
+    with open(path, "r", encoding="utf-8") as f:
+        return json.load(f)
+
+# ============================
+# LOAD TODAY’S SGO CACHE
+# ============================
+def load_sgo_cache():
+    today = date.today().isoformat()
+    games = {}
+
+    for fn in os.listdir(SGO_CACHE_DIR):
+        if not fn.startswith(today):
+            continue
+
+        path = os.path.join(SGO_CACHE_DIR, fn)
+        with open(path, "r", encoding="utf-8") as f:
+            games[fn.replace(".json", "")] = json.load(f)
+
+    return games
+
+# ============================
+# HIT RATE CALCULATION
+# ============================
+def calculate_hit_rate(last10, stat, line):
+    hits = 0
+    total = 0
+
+    for g in last10:
+        val = g.get(stat)
+        if val is None:
+            continue
+
+        total += 1
+        if val >= line:
+            hits += 1
+
+    return hits, total
+
+# ============================
+# MAIN LOGIC
+# ============================
+def process_game(game_key, sgo_data, rosters):
+    result = {
+        "game": game_key,
+        "players": []
+    }
+
+    # Extract away/home from filename: YYYY-MM-DD_AWAY@HOME
+    _, matchup = game_key.split("_", 1)
+    away, home = matchup.split("@")
+
+    # Flatten roster to map name -> player_id
+    name_to_id = {}
+    for team_abbr in (away, home):
+        team = rosters.get(team_abbr, {})
+        for p in team.get("roster", []):
+            full = f"{p['first_name']} {p['last_name']}".upper()
+            if p.get("player_id"):
+                name_to_id[full] = int(p["player_id"])
+
+    # Loop SGO props
+    players = sgo_data.get("players", {})
+
+    for name, props in players.items():
+        name_key = name.upper()
+
+        if name_key not in name_to_id:
+            continue  # player not in roster
+
+        pid = name_to_id[name_key]
+        logs = load_player_logs(pid)
+        if not logs:
+            continue
+
+        last10 = logs.get("last10", [])
+
+        for stat, info in props.items():
+            line = info.get("line")
+            if line is None:
+                continue
+
+            hits, total = calculate_hit_rate(last10, stat, line)
+
+            result["players"].append({
+                "player": name,
+                "stat": stat,
+                "line": line,
+                "hits": hits,
+                "total": total,
+                "hit_rate": f"{hits}/{total}"
+            })
+
+    return result
+
+# ============================
+# MAIN PROGRAM
+# ============================
+def main():
+    print("Loading rosters...")
+    rosters = load_rosters()
+
+    print("Loading cached SGO odds...")
+    games = load_sgo_cache()
+
+    if not games:
+        print("⚠️ No cached SGO files for today!")
+        return
+
+    print(f"Found {len(games)} cached matchups.\n")
+
+    all_results = []
+
+    for game_key, sgo_data in games.items():
+        print(f"Processing {game_key}...")
+        result = process_game(game_key, sgo_data, rosters)
+        all_results.append(result)
+
+    # Pretty output
+    for g in all_results:
+        print("\n============================")
+        print(g["game"])
+        print("============================")
+        for p in g["players"]:
+            print(f"{p['player']} – {p['stat']} {p['line']} | {p['hit_rate']}")
+
+if __name__ == "__main__":
+    main()

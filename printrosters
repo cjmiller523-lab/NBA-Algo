@@ -1,0 +1,11 @@
+import json
+
+with open("nhl_rosters.json", "r", encoding="utf-8") as f:
+    data = json.load(f)
+
+print("Top-level keys (teams):")
+print(list(data.keys())[:10])
+
+first_team = next(iter(data))
+print("\nExample team:", first_team)
+print("Team data:", data[first_team])

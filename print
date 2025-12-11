@@ -1,0 +1,17 @@
+import json
+
+data = json.load(open("nhl_rosters.json"))
+
+for team, info in data.items():
+    print("\nTEAM:", team)
+    print("Keys:", info.keys())
+
+    roster = info.get("roster", [])
+    print("Roster count:", len(roster))
+
+    if roster:
+        print("First player raw:", roster[0])
+    else:
+        print("Roster EMPTY")
+
+    break

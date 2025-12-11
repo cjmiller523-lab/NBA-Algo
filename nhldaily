@@ -1,0 +1,85 @@
+import os
+import json
+import time
+from datetime import date
+import requests
+
+SGO_CACHE_DIR = os.path.join("nhl_cache", "sgo_cache")
+os.makedirs(SGO_CACHE_DIR, exist_ok=True)
+
+def get_json(url):
+    r = requests.get(url)
+    r.raise_for_status()
+    return r.json()
+
+def get_todays_games():
+    data = get_json("https://api-web.nhle.com/v1/schedule/now")
+    games = []
+    today = date.today().isoformat()
+
+    for block in data.get("gameWeek", []):
+        for g in block.get("games", []):
+            gd = (g.get("gameDate") or "").split("T")[0]
+            if gd != today:
+                continue
+
+            away = g.get("awayTeam", {}).get("abbrev")
+            home = g.get("homeTeam", {}).get("abbrev")
+
+            if away and home:
+                games.append((away, home, today))
+
+    return games
+
+# ==============================
+# MODIFY THIS FUNCTION ONLY
+# Put your SGO event fetcher here
+# ==============================
+def fetch_sgo_for_game(away, home):
+    """
+    Fetch the FULL SGO event odds for a single matchup.
+    Must return a dict shaped like:
+    {
+        "players": {
+            "Nathan MacKinnon": {
+                "shots": {"line": 3.5, "odds_over": -135, "odds_under": +110},
+                "points": {...},
+                ...
+            }
+        }
+    }
+    """
+    # TODO: Replace this placeholder with your SGO call:
+    odds = {
+        "players": {}
+    }
+    return odds
+
+# ==============================
+# MAIN FETCH ROUTINE
+# ==============================
+def main():
+    games = get_todays_games()
+    if not games:
+        print("No games today.")
+        return
+
+    print(f"Found {len(games)} games today.")
+    for away, home, gd in games:
+        print(f"Fetching SGO odds for {away} @ {home}...")
+
+        odds = fetch_sgo_for_game(away, home)
+
+        filename = f"{gd}_{away}@{home}.json"
+        path = os.path.join(SGO_CACHE_DIR, filename)
+
+        with open(path, "w", encoding="utf-8") as f:
+            json.dump(odds, f, indent=2)
+
+        print(f"Saved: {path}")
+        time.sleep(0.2)  # LOW frequency, safe
+
+    print("\nAll SGO odds cached safely.")
+
+if __name__ == "__main__":
+    main()
