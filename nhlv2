@@ -1,0 +1,254 @@
+import os
+import json
+import requests
+from datetime import datetime
+
+# ==========================================================
+# CONFIG
+# ==========================================================
+
+NUM_GAMES = 10                  # rolling window
+MIN_AVG_TOI = 10.0              # minutes
+SEASON_ID = "20242025"
+GAME_TYPE = 2                   # 2 = regular season
+
+SOG_THRESHOLDS = [2, 3, 4, 5, 6]
+
+CACHE_DIR = "nhl_cache/player_logs"
+TWITTER_DIR = "twitter_posts"
+
+os.makedirs(CACHE_DIR, exist_ok=True)
+os.makedirs(TWITTER_DIR, exist_ok=True)
+
+# ==========================================================
+# HELPERS
+# ==========================================================
+
+def debug(msg):
+    print(f"[DEBUG] {msg}")
+
+# ==========================================================
+# NHL API FETCHERS
+# ==========================================================
+
+def get_todays_games():
+    today = datetime.now().strftime("%Y-%m-%d")
+    url = f"https://api-web.nhle.com/v1/schedule/{today}"
+
+    debug(f"Fetching schedule for {today}")
+    r = requests.get(url, timeout=10)
+    r.raise_for_status()
+    data = r.json()
+
+    games = []
+
+    for day in data.get("gameWeek", []):
+        if day.get("date") != today:
+            continue
+
+        for g in day.get("games", []):
+            games.append({
+                "home": g["homeTeam"]["abbrev"],
+                "away": g["awayTeam"]["abbrev"],
+            })
+
+    debug(f"Found {len(games)} games TODAY")
+    return games
+
+
+
+def get_team_roster(team_abbrev):
+    url = f"https://api-web.nhle.com/v1/roster/{team_abbrev}/current"
+
+    debug(f"Fetching roster for {team_abbrev}")
+    r = requests.get(url, timeout=10)
+    r.raise_for_status()
+    data = r.json()
+
+    players = []
+
+    for p in data.get("forwards", []) + data.get("defensemen", []):
+
+        # Robust name handling
+        if "fullName" in p:
+            name = p["fullName"]
+        elif "defaultName" in p:
+            name = p["defaultName"]
+        else:
+            first = p.get("firstName", "")
+            last = p.get("lastName", "")
+            name = f"{first} {last}".strip()
+
+        players.append({
+            "id": p["id"],
+            "name": name,
+            "team": team_abbrev
+        })
+
+    debug(f"{team_abbrev}: {len(players)} skaters")
+    return players
+
+
+
+def get_player_log(player_id):
+    cache_path = f"{CACHE_DIR}/{player_id}.json"
+
+    if os.path.exists(cache_path):
+        debug(f"Cache hit for player {player_id}")
+        with open(cache_path, "r") as f:
+            return json.load(f)
+
+    url = (
+        f"https://api-web.nhle.com/v1/player/"
+        f"{player_id}/game-log/{SEASON_ID}/{GAME_TYPE}"
+    )
+
+    debug(f"Fetching game log for player {player_id}")
+    r = requests.get(url, timeout=10)
+    r.raise_for_status()
+    data = r.json()
+
+    with open(cache_path, "w") as f:
+        json.dump(data, f)
+
+    return data
+
+# ==========================================================
+# STATS LOGIC
+# ==========================================================
+
+def get_last_n_games(player_log, n=NUM_GAMES):
+    games = player_log.get("gameLog", [])
+    games = sorted(games, key=lambda x: x["gameDate"], reverse=True)
+    return games[:n]
+
+
+def parse_toi(toi_str):
+    if not toi_str or ":" not in toi_str:
+        return 0.0
+    mins, secs = toi_str.split(":")
+    return int(mins) + int(secs) / 60
+
+
+def avg_toi_last_n(player_log, n=NUM_GAMES):
+    games = get_last_n_games(player_log, n)
+    if len(games) < n:
+        return 0.0
+
+    tois = [parse_toi(g.get("toi", "0:00")) for g in games]
+    return sum(tois) / len(tois)
+
+
+def get_last_n_shots(player_log, n=NUM_GAMES):
+    games = get_last_n_games(player_log, n)
+    return [g.get("shots", 0) for g in games]
+
+
+def hit_rate(values, threshold):
+    hits = sum(v >= threshold for v in values)
+    return hits, len(values)
+
+# ==========================================================
+# PLAYER POOL BUILDER
+# ==========================================================
+
+def get_todays_players():
+    games = get_todays_games()
+    seen = set()
+    players = []
+
+    for g in games:
+        for team in [g["home"], g["away"]]:
+            roster = get_team_roster(team)
+            for p in roster:
+                if p["id"] in seen:
+                    continue
+                seen.add(p["id"])
+                players.append(p)
+
+    debug(f"Total unique skaters today: {len(players)}")
+    return players
+
+# ==========================================================
+# OUTPUT
+# ==========================================================
+
+def save_twitter_text(results):
+    path = f"{TWITTER_DIR}/nhl_sog_{datetime.now().strftime('%Y-%m-%d')}.txt"
+
+    lines = []
+    lines.append("🔥 NHL Shots on Goal Trends (Last 10)")
+    lines.append("")
+
+    if not results:
+        lines.append("No strong SOG trends today.")
+
+    for r in results:
+        lines.append(
+            f"{r['player']} — SOG {r['threshold']}+ | "
+            f"{r['hits']}/{r['total']}"
+        )
+
+    with open(path, "w", encoding="utf-8") as f:
+        f.write("\n".join(lines))
+
+    debug(f"Twitter text saved to {path}")
+
+# ==========================================================
+# MAIN
+# ==========================================================
+
+def main():
+    debug("===== NHL SOG DAILY RUN START =====")
+
+    all_results = []
+    players = get_todays_players()
+
+    debug(f"Processing {len(players)} players")
+
+    for p in players:
+        try:
+            log = get_player_log(p["id"])
+
+            avg_toi = avg_toi_last_n(log)
+            if avg_toi < MIN_AVG_TOI:
+                debug(f"Skipping {p['name']} (avg TOI {avg_toi:.1f})")
+                continue
+
+            shots = get_last_n_shots(log)
+            if len(shots) < NUM_GAMES:
+                debug(f"Skipping {p['name']} (not enough games)")
+                continue
+
+            debug(f"{p['name']} shots last {NUM_GAMES}: {shots}")
+
+            for t in SOG_THRESHOLDS:
+                hits, total = hit_rate(shots, t)
+                if hits >= 7:
+                    debug(f"  HIT: {p['name']} SOG {t}+ = {hits}/{total}")
+                    all_results.append({
+                        "player": p["name"],
+                        "threshold": t,
+                        "hits": hits,
+                        "total": total
+                    })
+
+        except Exception as e:
+            print(f"[ERROR] {p['name']} failed: {e}")
+
+    all_results.sort(key=lambda x: (x["hits"], x["threshold"]), reverse=True)
+
+    print("\n===== FINAL RESULTS =====")
+    for r in all_results:
+        print(
+            f"{r['player']} — SOG {r['threshold']}+ | "
+            f"{r['hits']}/{r['total']}"
+        )
+
+    save_twitter_text(all_results)
+
+    debug("===== NHL SOG DAILY RUN END =====")
+
+
+if __name__ == "__main__":
+    main()

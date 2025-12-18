@@ -1,0 +1,384 @@
+import os
+import json
+import time
+import requests
+from datetime import datetime
+from collections import defaultdict
+from bs4 import BeautifulSoup
+
+# ==========================================================
+# CONFIG
+# ==========================================================
+
+NUM_GAMES = 10
+MIN_AVG_TOI = 10.0
+SEASON_ID = "20252026"
+GAME_TYPE = 2
+
+SOG_THRESHOLDS = [2, 3, 4, 5, 6]
+BEST_BETS_PER_GAME = 4   # 🔥 CHANGED FROM 2 → 4
+
+CACHE_DIR = "nhl_cache/player_logs"
+TWITTER_DIR = "twitter_posts"
+
+os.makedirs(CACHE_DIR, exist_ok=True)
+os.makedirs(TWITTER_DIR, exist_ok=True)
+
+# ==========================================================
+# TEAM SLUGS FOR NHL.COM INJURY SCRAPING
+# ==========================================================
+
+TEAM_SLUGS = {
+    "ANA": "ducks",
+    "ARI": "coyotes",
+    "BOS": "bruins",
+    "BUF": "sabres",
+    "CAR": "hurricanes",
+    "CBJ": "bluejackets",
+    "CGY": "flames",
+    "CHI": "blackhawks",
+    "COL": "avalanche",
+    "DAL": "stars",
+    "DET": "redwings",
+    "EDM": "oilers",
+    "FLA": "panthers",
+    "LAK": "kings",
+    "MIN": "wild",
+    "MTL": "canadiens",
+    "NJD": "devils",
+    "NSH": "predators",
+    "NYI": "islanders",
+    "NYR": "rangers",
+    "OTT": "senators",
+    "PHI": "flyers",
+    "PIT": "penguins",
+    "SEA": "kraken",
+    "SJS": "sharks",
+    "STL": "blues",
+    "TBL": "lightning",
+    "TOR": "mapleleafs",
+    "UTA": "utah",
+    "VAN": "canucks",
+    "VGK": "goldenknights",
+    "WPG": "jets",
+    "WSH": "capitals",
+}
+
+# ==========================================================
+# HELPERS
+# ==========================================================
+
+def debug(msg):
+    print(f"[DEBUG] {msg}")
+
+def get_tier(hits):
+    if hits == 10:
+        return "LOCK"
+    elif hits == 9:
+        return "T1"
+    elif hits == 8:
+        return "T2"
+    return None
+
+def normalize_name(val):
+    if isinstance(val, dict):
+        return val.get("default", "")
+    return val or ""
+
+# ==========================================================
+# NHL API FETCHERS
+# ==========================================================
+
+def get_todays_games():
+    today = datetime.now().strftime("%Y-%m-%d")
+    url = f"https://api-web.nhle.com/v1/schedule/{today}"
+
+    debug(f"Fetching schedule for {today}")
+    r = requests.get(url, timeout=10)
+    r.raise_for_status()
+    data = r.json()
+
+    games = []
+
+    for day in data.get("gameWeek", []):
+        if day.get("date") != today:
+            continue
+
+        for g in day.get("games", []):
+            games.append({
+                "home": g["homeTeam"]["abbrev"],
+                "away": g["awayTeam"]["abbrev"],
+                "game_id": g["id"]
+            })
+
+    debug(f"Found {len(games)} games TODAY")
+    return games
+
+def get_active_skaters_for_game(game_id):
+    url = f"https://api-web.nhle.com/v1/gamecenter/{game_id}/boxscore"
+
+    r = requests.get(url, timeout=10)
+    r.raise_for_status()
+    data = r.json()
+
+    active_ids = set()
+
+    for side in ["homeTeam", "awayTeam"]:
+        team = data.get(side, {})
+        for pid in team.get("skaters", {}).keys():
+            active_ids.add(int(pid))
+
+    if not active_ids:
+        debug(f"Lineups not live yet for game {game_id} — using roster fallback")
+        return None
+
+    return active_ids
+
+# ==========================================================
+# NHL.COM INJURY SCRAPER (KEY FIX)
+# ==========================================================
+
+def get_injured_players_for_team(team_abbrev):
+    slug = TEAM_SLUGS.get(team_abbrev)
+    if not slug:
+        return set()
+
+    url = f"https://www.nhl.com/{slug}/injuries"
+
+    try:
+        r = requests.get(url, timeout=10)
+        r.raise_for_status()
+    except Exception as e:
+        debug(f"Failed to fetch injuries for {team_abbrev}: {e}")
+        return set()
+
+    soup = BeautifulSoup(r.text, "html.parser")
+    injured = set()
+
+    for row in soup.select("table tbody tr"):
+        cols = row.find_all("td")
+        if not cols:
+            continue
+
+        name = cols[0].get_text(strip=True)
+        status = cols[-1].get_text(strip=True).lower()
+
+        if "out" in status or "injured" in status:
+            injured.add(name)
+
+    if injured:
+        debug(f"{team_abbrev} injuries scraped: {injured}")
+
+    return injured
+
+# ==========================================================
+# ROSTERS + PLAYER LOGS
+# ==========================================================
+
+def get_team_roster(team_abbrev):
+    url = f"https://api-web.nhle.com/v1/roster/{team_abbrev}/current"
+
+    debug(f"Fetching roster for {team_abbrev}")
+    r = requests.get(url, timeout=10)
+    r.raise_for_status()
+    data = r.json()
+
+    players = []
+
+    for p in data.get("forwards", []) + data.get("defensemen", []):
+        if "fullName" in p:
+            name = normalize_name(p["fullName"])
+        elif "defaultName" in p:
+            name = normalize_name(p["defaultName"])
+        else:
+            name = f"{normalize_name(p.get('firstName'))} {normalize_name(p.get('lastName'))}".strip()
+
+        players.append({
+            "id": p["id"],
+            "name": name,
+            "team": team_abbrev
+        })
+
+    return players
+
+def get_player_log(player_id):
+    cache_path = f"{CACHE_DIR}/{player_id}.json"
+
+    if os.path.exists(cache_path):
+        with open(cache_path, "r") as f:
+            return json.load(f)
+
+    url = f"https://api-web.nhle.com/v1/player/{player_id}/game-log/{SEASON_ID}/{GAME_TYPE}"
+    r = requests.get(url, timeout=10)
+    r.raise_for_status()
+    data = r.json()
+
+    with open(cache_path, "w") as f:
+        json.dump(data, f)
+
+    time.sleep(0.15)
+    return data
+
+# ==========================================================
+# STATS LOGIC
+# ==========================================================
+
+def get_last_n_games(player_log):
+    games = sorted(player_log.get("gameLog", []), key=lambda x: x["gameDate"], reverse=True)
+    return games[:NUM_GAMES]
+
+def parse_toi(toi):
+    if not toi or ":" not in toi:
+        return 0.0
+    m, s = toi.split(":")
+    return int(m) + int(s) / 60
+
+def avg_toi_last_n(player_log):
+    games = get_last_n_games(player_log)
+    if len(games) < NUM_GAMES:
+        return 0.0
+    tois = [parse_toi(g.get("toi") or g.get("timeOnIce")) for g in games]
+    return sum(tois) / len(tois)
+
+def get_last_n_shots(player_log):
+    return [g.get("shots", 0) for g in get_last_n_games(player_log)]
+
+def hit_rate(values, threshold):
+    return sum(v >= threshold for v in values), len(values)
+
+# ==========================================================
+# PLAYER POOL BUILDER
+# ==========================================================
+
+def get_todays_players():
+    games = get_todays_games()
+    seen = set()
+    players = []
+
+    for g in games:
+        matchup = f"{g['away']} @ {g['home']}"
+        active_ids = get_active_skaters_for_game(g["game_id"])
+        use_active = active_ids is not None
+
+        for team in [g["home"], g["away"]]:
+            injured_names = get_injured_players_for_team(team)
+            roster = get_team_roster(team)
+
+            for p in roster:
+                if p["name"] in injured_names:
+                    debug(f"Skipping injured (scraped): {p['name']}")
+                    continue
+
+                if use_active and p["id"] not in active_ids:
+                    continue
+
+                if p["id"] in seen:
+                    continue
+
+                seen.add(p["id"])
+                p["matchup"] = matchup
+                players.append(p)
+
+    debug(f"Total eligible players today: {len(players)}")
+    return players
+
+# ==========================================================
+# OUTPUT + BEST BETS
+# ==========================================================
+
+def best_bets_per_game(results):
+    games = defaultdict(list)
+
+    for r in results:
+        games[r["matchup"]].append(r)
+
+    tier_rank = {"LOCK": 3, "T1": 2, "T2": 1}
+    final = {}
+
+    for matchup, props in games.items():
+        props.sort(
+            key=lambda x: (
+                tier_rank.get(x["tier"], 0),
+                x["threshold"],
+                x["hits"]
+            ),
+            reverse=True
+        )
+
+        best = []
+        used = set()
+
+        for p in props:
+            if p["player"] in used:
+                continue
+            best.append(p)
+            used.add(p["player"])
+            if len(best) == BEST_BETS_PER_GAME:
+                break
+
+        final[matchup] = best
+
+    return final
+
+def save_best_bets_twitter(best_bets):
+    path = f"{TWITTER_DIR}/nhl_best_bets_{datetime.now().strftime('%Y-%m-%d')}.txt"
+
+    lines = ["🔥 NHL BEST BETS — Shots on Goal", ""]
+
+    for matchup, bets in best_bets.items():
+        if not bets:
+            continue
+        lines.append(matchup)
+        for b in bets:
+            icon = "🔥" if b["tier"] == "LOCK" else "⭐"
+            lines.append(f"{icon} {b['player']} — SOG {b['threshold']}+ | {b['hits']}/{b['total']}")
+        lines.append("")
+
+    with open(path, "w", encoding="utf-8") as f:
+        f.write("\n".join(lines))
+
+    debug(f"Best bets Twitter text saved to {path}")
+
+# ==========================================================
+# MAIN
+# ==========================================================
+
+def main():
+    debug("===== NHL SOG DAILY RUN START =====")
+
+    players = get_todays_players()
+    all_results = []
+
+    for p in players:
+        log = get_player_log(p["id"])
+        if len(log.get("gameLog", [])) < NUM_GAMES:
+            continue
+
+        if avg_toi_last_n(log) < MIN_AVG_TOI:
+            continue
+
+        shots = get_last_n_shots(log)
+
+        for t in SOG_THRESHOLDS:
+            hits, total = hit_rate(shots, t)
+            tier = get_tier(hits)
+            if not tier:
+                continue
+
+            all_results.append({
+                "player": p["name"],
+                "team": p["team"],
+                "matchup": p["matchup"],
+                "threshold": t,
+                "hits": hits,
+                "total": total,
+                "tier": tier
+            })
+
+    best_bets = best_bets_per_game(all_results)
+    save_best_bets_twitter(best_bets)
+
+    debug("===== NHL SOG DAILY RUN END =====")
+
+if __name__ == "__main__":
+    main()

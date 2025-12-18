@@ -1,0 +1,35 @@
+import requests
+from datetime import datetime
+
+headers = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+                  "(KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "Accept": "application/json,text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"
+}
+
+today = datetime.now().date().isoformat()
+url = f"https://api-web.nhle.com/v1/schedule/{today}"
+
+print("Trying with browser headers...")
+print("URL:", url)
+
+r = requests.get(url, headers=headers)
+print("\nStatus:", r.status_code)
+
+try:
+    data = r.json()
+except:
+    print("❌ Response not JSON.")
+    print(r.text[:500])
+    exit()
+
+games_found = 0
+for block in data.get("gameWeek", []):
+    for g in block.get("games", []):
+        gd = g.get("gameDate", "")
+        away = g.get("awayTeam", {}).get("abbrev")
+        home = g.get("homeTeam", {}).get("abbrev")
+        print(f"{away} @ {home} — {gd}")
+        games_found += 1
+
+print(f"\nFound: {games_found} games")

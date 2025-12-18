@@ -1,0 +1,30 @@
+import requests
+from datetime import datetime
+
+def main():
+    today = datetime.now().date().isoformat()
+    url = f"https://api-web.nhle.com/v1/schedule/{today}"
+
+    print(f"Checking NHL API for games on {today} ...\n")
+    r = requests.get(url)
+    r.raise_for_status()
+    data = r.json()
+
+    games = []
+
+    for block in data.get("gameWeek", []):
+        for g in block.get("games", []):
+            game_date = g.get("gameDate", "").split("T")[0]
+            away = g.get("awayTeam", {}).get("abbrev")
+            home = g.get("homeTeam", {}).get("abbrev")
+
+            games.append((away, home, game_date))
+            print(f"Game: {away} @ {home} on {game_date}")
+
+    if not games:
+        print("⚠️ No games found for today.")
+
+    print(f"\nTotal games found: {len(games)}")
+
+if __name__ == "__main__":
+    main()
