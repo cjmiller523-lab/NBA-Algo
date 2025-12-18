@@ -215,6 +215,40 @@ def get_points(log):
 def hit_rate(vals, t):
     return sum(v >= t for v in vals), len(vals)
 
+def save_twitter_best_bets(best_sog, best_pts):
+    path = f"{TWITTER_DIR}/nhl_best_bets_{datetime.now().strftime('%Y-%m-%d')}.txt"
+
+    lines = []
+    lines.append("🔥 NHL BEST BETS — Shots & Points")
+    lines.append("")
+
+    for matchup in sorted(set(list(best_sog.keys()) + list(best_pts.keys()))):
+        lines.append(matchup)
+
+        if best_sog.get(matchup):
+            lines.append("SOG:")
+            for r in best_sog[matchup]:
+                lines.append(
+                    f"⭐ {r['player']} — SOG {r['threshold']}+ | "
+                    f"{r['hits']}/10"
+                )
+
+        if best_pts.get(matchup):
+            lines.append("PTS:")
+            for r in best_pts[matchup]:
+                lines.append(
+                    f"⭐ {r['player']} — PTS {r['threshold']}+ | "
+                    f"{r['hits']}/10"
+                )
+
+        lines.append("")
+
+    with open(path, "w", encoding="utf-8") as f:
+        f.write("\n".join(lines))
+
+    debug(f"Twitter text saved to {path}")
+
+
 # ==========================================================
 # MAIN
 # ==========================================================
@@ -324,6 +358,7 @@ def main():
 
     best_sog = best_per_game(results_sog)
     best_pts = best_per_game(results_pts)
+    save_twitter_best_bets(best_sog, best_pts)
 
     print("\n🔥 BEST BETS BY GAME\n")
     for m in best_sog:
@@ -333,6 +368,8 @@ def main():
         for r in best_pts.get(m, []):
             print(f" ⭐ {r['player']} — PTS {r['threshold']}+ | {r['hits']}/10 | Conf {r['conf']}")
         print("")
+    
+
 
     debug("===== NHLV10 END =====")
 
