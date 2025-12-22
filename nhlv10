@@ -8,6 +8,8 @@ from datetime import datetime
 from collections import defaultdict
 from io import StringIO
 
+TEAM_LIST_URL = "https://statsapi.web.nhl.com/api/v1/teams"
+
 # ==========================================================
 # CONFIG
 # ==========================================================
@@ -260,7 +262,124 @@ def save_twitter_best_bets(best_sog, best_pts):
     with open(path, "w", encoding="utf-8") as f:
         f.write("\n".join(lines))
 
+    # Append yesterday's graded recap to the twitter post (if available)
+    try:
+        picks = load_yesterdays_nhl_picks()
+        picks = dedup_picks_keep_highest(picks)  # Keep only highest threshold per player+market
+        if picks:
+            recap_lines = ["", "📊 YESTERDAY RECAP", "--------------------"]
+            graded = []
+            for p in picks:
+                g = grade_nhl_yesterdays_pick(p)
+                if g:
+                    graded.append(g)
+
+            if not graded:
+                recap_lines.append("No yesterday picks graded.")
+            else:
+                for g in graded:
+                    emoji = "✅" if g['hit'] else "❌"
+                    recap_lines.append(f"{emoji} {g['player']} - {g['market']} {g['threshold']}+ → {g['value']}")
+
+            with open(path, "a", encoding="utf-8") as f:
+                f.write("\n" + "\n".join(recap_lines))
+    except Exception:
+        # don't fail the main flow if recap can't be generated
+        pass
+
     debug(f"Twitter text saved to {path}")
+
+
+def load_yesterdays_nhl_picks():
+    """
+    Parse yesterday's nhl_best_bets_YYYY-MM-DD.txt and return list of picks
+    each pick: {player, market, threshold, matchup}
+    """
+    yday = (datetime.now() - pd.Timedelta(days=1)).strftime('%Y-%m-%d')
+    path = f"{TWITTER_DIR}/nhl_best_bets_{yday}.txt"
+    if not os.path.exists(path):
+        return []
+
+    picks = []
+    with open(path, 'r', encoding='utf-8') as f:
+        for raw in f:
+            line = raw.strip()
+            if not line or not line.startswith('⭐'):
+                continue
+            # Examples:
+            # ⭐ {player} — SOG {threshold}+ | {hits}/10
+            # ⭐ {player} — PTS {threshold}+ | {hits}/10
+            m = re.search(r'^⭐\s+(.*?)\s+—\s+(SOG|PTS)\s+(\d+)\+\s+\|', line)
+            if m:
+                picks.append({
+                    'player': m.group(1).strip(),
+                    'market': m.group(2),
+                    'threshold': int(m.group(3)),
+                })
+    return picks
+
+
+def get_all_team_abbrevs():
+    try:
+        r = requests.get(TEAM_LIST_URL, headers=HTTP_HEADERS, timeout=10)
+        r.raise_for_status()
+        data = r.json()
+        return [t.get('abbreviation') for t in data.get('teams', []) if t.get('abbreviation')]
+    except Exception:
+        # fallback to common list
+        return ['ANA','ARI','BOS','BUF','CGY','CAR','CHI','COL','CBJ','DAL','DET','EDM','FLA','LAK',
+                'MIN','MTL','NSH','NJD','NYI','NYR','OTT','PHI','PIT','SJS','SEA','STL','TBL','TOR','VAN','VGK','WPG','WSH']
+
+
+def resolve_player_to_id(player_name):
+    """Try to resolve a player full name to an NHL player id by scanning team rosters."""
+    target = name_key(player_name)
+    for team in get_all_team_abbrevs():
+        try:
+            roster = get_team_roster(team)
+            for p in roster:
+                if name_key(p['name']) == target:
+                    return p['id']
+        except Exception:
+            continue
+    return None
+
+
+def grade_nhl_yesterdays_pick(pick):
+    pid = resolve_player_to_id(pick['player'])
+    if not pid:
+        return None
+    log = get_player_log(pid)
+    games = get_last_games(log)
+    if not games:
+        return None
+
+    last = games[0]
+    if pick['market'] == 'SOG':
+        val = int(last.get('shots', 0))
+    else:
+        val = int(last.get('goals', 0)) + int(last.get('assists', 0))
+
+    return {
+        'player': pick['player'],
+        'market': pick['market'],
+        'threshold': pick['threshold'],
+        'value': val,
+        'hit': val >= pick['threshold']
+    }
+
+
+def dedup_picks_keep_highest(picks):
+    """
+    Deduplicate picks by (player, market).
+    Keep only the highest threshold for each combo.
+    """
+    by_combo = {}
+    for p in picks:
+        key = (p['player'], p['market'])
+        if key not in by_combo or p['threshold'] > by_combo[key]['threshold']:
+            by_combo[key] = p
+    return list(by_combo.values())
 
 
 # ==========================================================
@@ -361,6 +480,15 @@ def main():
 
         final = {}
         for m, rows in out.items():
+            # Deduplicate by (player, market) — keep only highest threshold
+            by_combo = {}
+            for r in rows:
+                key = (r["player"], r["market"])
+                if key not in by_combo or r["threshold"] > by_combo[key]["threshold"]:
+                    by_combo[key] = r
+            rows = list(by_combo.values())
+            
+            # Rank and select top 4
             rows = sorted(
                 rows,
                 key=lambda x: (rank[x["tier"]], x["conf"], x["threshold"]),
@@ -382,10 +510,29 @@ def main():
         for r in best_pts.get(m, []):
             print(f" ⭐ {r['player']} — PTS {r['threshold']}+ | {r['hits']}/10 | Conf {r['conf']}")
         print("")
-    
 
+    # --------------------------------------------------
+    # Grade yesterday's picks (if file exists)
+    # --------------------------------------------------
+    picks = load_yesterdays_nhl_picks()
+    picks = dedup_picks_keep_highest(picks)  # Keep only highest threshold per player+market
+    if picks:
+        print('\n📊 YESTERDAY RECAP')
+        graded = []
+        for p in picks:
+            g = grade_nhl_yesterdays_pick(p)
+            if g:
+                graded.append(g)
+
+        if not graded:
+            print('No yesterday picks graded.')
+        else:
+            for g in graded:
+                emoji = '✅' if g['hit'] else '❌'
+                print(f"{emoji} {g['player']} - {g['market']} {g['threshold']}+ → {g['value']}")
 
     debug("===== NHLV10 END =====")
 
 if __name__ == "__main__":
     main()
+
