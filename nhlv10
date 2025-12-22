@@ -17,6 +17,8 @@ MIN_AVG_TOI = 10.0
 SEASON_ID = "20252026"
 GAME_TYPE = 2
 
+CACHE_TTL_HOURS = 0
+
 SOG_THRESHOLDS = [2, 3, 4, 5, 6]
 PTS_THRESHOLDS = [1, 2, 3]
 
@@ -133,19 +135,31 @@ def get_team_roster(team):
 
     return players
 
-def get_player_log(pid):
+def get_player_log(pid, force_refresh=False):
     path = f"{CACHE_DIR}/{pid}.json"
-    if os.path.exists(path):
-        with open(path, "r", encoding="utf-8") as f:
-            return json.load(f)
+    # Use cached file if it exists and is fresh (unless force_refresh=True).
+    if os.path.exists(path) and not force_refresh:
+        try:
+            mtime = os.path.getmtime(path)
+            age = time.time() - mtime
+            if age < CACHE_TTL_HOURS * 3600:
+                with open(path, "r", encoding="utf-8") as f:
+                    return json.load(f)
+        except Exception:
+            # If cache read fails for any reason, fall through and re-fetch.
+            pass
 
     url = f"https://api-web.nhle.com/v1/player/{pid}/game-log/{SEASON_ID}/{GAME_TYPE}"
     r = requests.get(url, headers=HTTP_HEADERS, timeout=10)
     r.raise_for_status()
     data = r.json()
 
-    with open(path, "w", encoding="utf-8") as f:
-        json.dump(data, f)
+    try:
+        with open(path, "w", encoding="utf-8") as f:
+            json.dump(data, f)
+    except Exception:
+        # Don't fail if writing cache fails; still return fresh data.
+        pass
 
     time.sleep(0.15)
     return data
