@@ -1,0 +1,1446 @@
+{
+  "nextCursor": "n.1766682000000.OafcomHT4bW82I2LcsiC",
+  "success": true,
+  "data": [
+    {
+      "eventID": "OafcomHT4bW82I2LcsiC",
+      "sportID": "BASKETBALL",
+      "leagueID": "NBA",
+      "type": "match",
+      "teams": {
+        "home": {
+          "teamID": "NEW_YORK_KNICKS_NBA",
+          "names": {
+            "long": "New York Knicks",
+            "medium": "Knicks",
+            "short": "NYK",
+            "location": "New York"
+          },
+          "colors": {
+            "primary": "#006BB6",
+            "secondary": "#F58426",
+            "primaryContrast": "#FFFFFF",
+            "secondaryContrast": "#006BB6"
+          },
+          "statEntityID": "home"
+        },
+        "away": {
+          "teamID": "CLEVELAND_CAVALIERS_NBA",
+          "names": {
+            "long": "Cleveland Cavaliers",
+            "medium": "Cavaliers",
+            "short": "CLE",
+            "location": "Cleveland"
+          },
+          "colors": {
+            "primary": "#871539",
+            "secondary": "#000000",
+            "primaryContrast": "#FFFFFF",
+            "secondaryContrast": "#871539"
+          },
+          "statEntityID": "away"
+        }
+      },
+      "status": {
+        "started": false,
+        "completed": false,
+        "cancelled": false,
+        "ended": false,
+        "live": false,
+        "delayed": false,
+        "currentPeriodID": "",
+        "previousPeriodID": "",
+        "displayShort": "",
+        "displayLong": "Upcoming",
+        "inBreak": false,
+        "startsAt": "2025-12-25T17:00:00.000Z",
+        "previousStartsAt": [
+          "2025-12-25T23:00:00.000Z"
+        ],
+        "hardStart": true,
+        "periods": {
+          "started": [],
+          "ended": []
+        },
+        "oddsPresent": true,
+        "oddsAvailable": true,
+        "finalized": false
+      },
+      "info": {
+        "seasonWeek": "NBA 25/26"
+      },
+      "links": {
+        "bookmakers": {
+          "draftkings": "https://sportsbook.draftkings.com/event/32631675",
+          "paddypower": "https://www.paddypower.com/basketball/nba/cleveland-cavaliers-@-new-york-knicks-34602911",
+          "ladbrokes": "https://sports.ladbrokes.com/event/basketball/-/-/-/251742058",
+          "coral": "https://sports.coral.co.uk/event/basketball/basketball-usa/nba/ny-knicks-v-cle-cavaliers/38814910",
+          "sportsbet": "https://www.sportsbet.com.au/betting/basketball---us/nba/cleveland-cavaliers-at-new-york-knicks-9498525",
+          "betfairsportsbook": "https://www.betfair.com/betting/basketball/nba/cleveland-cavaliers-@-new-york-knicks/e-34602911",
+          "fanduel": "https://sportsbook.fanduel.com/basketball/-/34602911",
+          "tab": "https://www.tab.com.au/sports/betting/Basketball/competitions/NBA/matches/New%20York%20v%20Cleveland",
+          "espnbet": "https://espnbet.com/sport/basketball/organization/united-states/competition/nba/event/9b78f108-2989-4ec7-ac56-68fec1377d46",
+          "caesars": "https://sportsbook.caesars.com/us/nj/bet/basketball/0444d473-2a8e-4144-a97d-5740b83f8564/cleveland-cavaliers-at-new-york-knicks",
+          "lowvig": "https://sports.lowvig.ag/sportsbook/basketball/nba/game/490779086",
+          "bovada": "https://www.bovada.lv/sports/basketball/nba/cleveland-cavaliers-new-york-knicks-202512251300",
+          "betonline": "https://sports.betonline.ag/sportsbook/basketball/nba/game/490779086",
+          "neds": "https://www.neds.com.au/sports/-/-/-/b5cd724c-d6b3-48b1-a514-d375c9185080",
+          "nordicbet": "https://www.nordicbet.com/en/sportsbook/basketball/nba/nba/new-york-knicks-cleveland-cavaliers",
+          "betsson": "https://www.betsson.com/en/sportsbook/basketball/nba/nba?eventId=f-rRw6ddBIrkulL_fcrviYJg",
+          "betmgm": "https://sports.nj.betmgm.com/en/sports/events/17976903",
+          "1xbet": "https://1xbet.com/en/line/football/13589-nba/273717654-new-york-knicks-cleveland-cavaliers",
+          "ballybet": "https://play.ballybet.com/sports#event/1024671038",
+          "tabtouch": "https://www.tabtouch.mobi/tabtouch-sports/event/1024671038",
+          "betparx": "https://nj.betparx.com/kambi#event/1024671038",
+          "betrivers": "https://nj.betrivers.com/?page=sportsbook#event/1024671038",
+          "casumo": "https://www.casumo.com/en-gb/sports#event/1024671038",
+          "grosvenor": "https://www.grosvenorcasinos.com/sport#event/1024671038",
+          "leovegas": "https://www.leovegas.co.uk/betting#event/1024671038",
+          "unibet": "https://www.unibet.com/betting/sports/event/1024671038",
+          "livescorebet": "https://www.livescorebet.com/uk/sports/basketball/nba/new-york-knicks-cleveland-cavaliers/SBTE_2_1024671038",
+          "virginbet": "https://www.virginbet.com/sports/basketball/nba/new-york-knicks-cleveland-cavaliers/SBTE_2_1024671038",
+          "thescorebet": "https://thescore.bet/sport/basketball/organization/united-states/competition/nba/event/9b78f108-2989-4ec7-ac56-68fec1377d46",
+          "888sport": "https://www.888sport.com/basketball/united-states-of-america/nba/cleveland-cavaliers-new-york-knicks-e-6331847",
+          "pointsbet": "https://pointsbet.com.au/sports/basketball/NBA/2423657",
+          "betrsportsbook": "https://www.betr.com.au/sports/Basketball/107/United-States-of-America/NBA-Matches/Cleveland-Cavaliers-@-New-York-Knicks/1836102/All-Markets",
+          "williamhill": "https://sports.williamhill.com/betting/en-gb/basketball/OB_EV36798092/cleveland-cavaliers-at-new-york-knicks",
+          "betway": "https://betway.com/en/sports/evt/16142853",
+          "playup": "https://www.playup.com.au/betting/sports/nba/new-york-knicks-v-cleveland-cavaliers/1754074",
+          "boylesports": "https://www.boylesports.com/sports/basketball/event/usa-nba/new-york-knicks-v-cleveland-cavaliers",
+          "hardrockbet": "https://app.hardrock.bet/home/competition/nba/1218837513502458120",
+          "fliff": "https://sports.getfliff.com/markets/330542_c_p_204_prematch",
+          "coolbet": "https://www.coolbet.com/en/sports/match/4254884",
+          "boombet": "https://www.boombet.com.au/sport-menu/Sport/Basketball/NBA/39626706",
+          "everygame": "https://sports.everygame.eu/en/Bets/Basketball/NBA-Lines/Cleveland-Cavaliers-at-New-York-Knicks/2769294"
+        }
+      },
+      "odds": {
+        "assists-DARIUS_GARLAND_1_NBA-game-ou-over": {
+          "oddID": "assists-DARIUS_GARLAND_1_NBA-game-ou-over",
+          "opposingOddID": "assists-DARIUS_GARLAND_1_NBA-game-ou-under",
+          "marketName": "Darius Garland Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "DARIUS_GARLAND_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "DARIUS_GARLAND_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+114",
+          "bookOdds": "+100",
+          "fairOverUnder": "7.5",
+          "bookOverUnder": "7.5",
+          "openFairOdds": "+114",
+          "openBookOdds": "+100",
+          "openFairOverUnder": "7.5",
+          "openBookOverUnder": "7.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-104",
+              "overUnder": "7.5",
+              "lastUpdatedAt": "2025-12-24T06:01:29.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.547406878&selectionId=26610065",
+              "altLines": [
+                {
+                  "odds": "-3000",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2025-12-24T06:01:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-360",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2025-12-24T06:01:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+250",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2025-12-24T06:01:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+680",
+                  "overUnder": "11.5",
+                  "lastUpdatedAt": "2025-12-24T06:01:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1500",
+                  "overUnder": "13.5",
+                  "lastUpdatedAt": "2025-12-24T06:01:29.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "assists-DARIUS_GARLAND_1_NBA-game-ou-under": {
+          "oddID": "assists-DARIUS_GARLAND_1_NBA-game-ou-under",
+          "opposingOddID": "assists-DARIUS_GARLAND_1_NBA-game-ou-over",
+          "marketName": "Darius Garland Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "DARIUS_GARLAND_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "DARIUS_GARLAND_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-114",
+          "bookOdds": "-133",
+          "fairOverUnder": "7.5",
+          "bookOverUnder": "7.5",
+          "openFairOdds": "-114",
+          "openBookOdds": "-133",
+          "openFairOverUnder": "7.5",
+          "openBookOverUnder": "7.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-128",
+              "overUnder": "7.5",
+              "lastUpdatedAt": "2025-12-24T06:01:29.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.547406878&selectionId=26610066"
+            }
+          }
+        },
+        "assists-DONOVAN_MITCHELL_1_NBA-game-ou-over": {
+          "oddID": "assists-DONOVAN_MITCHELL_1_NBA-game-ou-over",
+          "opposingOddID": "assists-DONOVAN_MITCHELL_1_NBA-game-ou-under",
+          "marketName": "Donovan Mitchell Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "DONOVAN_MITCHELL_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "DONOVAN_MITCHELL_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "-109",
+          "fairOverUnder": "6",
+          "bookOverUnder": "5.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "-109",
+          "openFairOverUnder": "6",
+          "openBookOverUnder": "5.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-102",
+              "overUnder": "5.5",
+              "lastUpdatedAt": "2025-12-24T06:01:29.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.547406877&selectionId=15907303",
+              "altLines": [
+                {
+                  "odds": "-480",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2025-12-24T06:01:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+350",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2025-12-24T06:01:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1000",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2025-12-24T06:01:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+3000",
+                  "overUnder": "11.5",
+                  "lastUpdatedAt": "2025-12-24T06:01:29.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "assists-DONOVAN_MITCHELL_1_NBA-game-ou-under": {
+          "oddID": "assists-DONOVAN_MITCHELL_1_NBA-game-ou-under",
+          "opposingOddID": "assists-DONOVAN_MITCHELL_1_NBA-game-ou-over",
+          "marketName": "Donovan Mitchell Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "DONOVAN_MITCHELL_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "DONOVAN_MITCHELL_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "-121",
+          "fairOverUnder": "6",
+          "bookOverUnder": "5.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "-121",
+          "openFairOverUnder": "6",
+          "openBookOverUnder": "5.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-130",
+              "overUnder": "5.5",
+              "lastUpdatedAt": "2025-12-24T06:01:29.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.547406877&selectionId=15907304"
+            }
+          }
+        },
+        "assists-JARRETT_ALLEN_1_NBA-game-ou-over": {
+          "oddID": "assists-JARRETT_ALLEN_1_NBA-game-ou-over",
+          "opposingOddID": "assists-JARRETT_ALLEN_1_NBA-game-ou-under",
+          "marketName": "Jarrett Allen Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "JARRETT_ALLEN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "JARRETT_ALLEN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "-250",
+          "fairOverUnder": "2.5",
+          "bookOverUnder": "1.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "-250",
+          "openFairOverUnder": "2.5",
+          "openBookOverUnder": "1.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-250",
+              "overUnder": "1.5",
+              "lastUpdatedAt": "2025-12-24T06:01:29.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.547406948&selectionId=17008025",
+              "altLines": [
+                {
+                  "odds": "+320",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2025-12-24T06:01:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1500",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2025-12-24T06:01:29.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "assists-JARRETT_ALLEN_1_NBA-game-ou-under": {
+          "oddID": "assists-JARRETT_ALLEN_1_NBA-game-ou-under",
+          "opposingOddID": "assists-JARRETT_ALLEN_1_NBA-game-ou-over",
+          "marketName": "Jarrett Allen Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "JARRETT_ALLEN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "JARRETT_ALLEN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": false,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "fairOverUnder": "2.5",
+          "openFairOdds": "+100",
+          "openFairOverUnder": "2.5",
+          "scoringSupported": true
+        },
+        "points-DARIUS_GARLAND_1_NBA-game-ou-over": {
+          "oddID": "points-DARIUS_GARLAND_1_NBA-game-ou-over",
+          "opposingOddID": "points-DARIUS_GARLAND_1_NBA-game-ou-under",
+          "marketName": "Darius Garland Points Over/Under",
+          "statID": "points",
+          "statEntityID": "DARIUS_GARLAND_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "DARIUS_GARLAND_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+114",
+          "bookOdds": "-102",
+          "fairOverUnder": "20.5",
+          "bookOverUnder": "20.5",
+          "openFairOdds": "+114",
+          "openBookOdds": "-102",
+          "openFairOverUnder": "20.5",
+          "openBookOverUnder": "20.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+104",
+              "overUnder": "20.5",
+              "lastUpdatedAt": "2025-12-24T06:01:29.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.547406851&selectionId=26610065",
+              "altLines": [
+                {
+                  "odds": "-3000",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2025-12-24T06:01:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-390",
+                  "overUnder": "14.5",
+                  "lastUpdatedAt": "2025-12-24T06:01:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-115",
+                  "overUnder": "19.5",
+                  "lastUpdatedAt": "2025-12-24T06:01:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+235",
+                  "overUnder": "24.5",
+                  "lastUpdatedAt": "2025-12-24T06:01:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+600",
+                  "overUnder": "29.5",
+                  "lastUpdatedAt": "2025-12-24T06:01:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1400",
+                  "overUnder": "34.5",
+                  "lastUpdatedAt": "2025-12-24T06:01:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+3500",
+                  "overUnder": "39.5",
+                  "lastUpdatedAt": "2025-12-24T06:01:29.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "points-DARIUS_GARLAND_1_NBA-game-ou-under": {
+          "oddID": "points-DARIUS_GARLAND_1_NBA-game-ou-under",
+          "opposingOddID": "points-DARIUS_GARLAND_1_NBA-game-ou-over",
+          "marketName": "Darius Garland Points Over/Under",
+          "statID": "points",
+          "statEntityID": "DARIUS_GARLAND_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "DARIUS_GARLAND_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-114",
+          "bookOdds": "-133",
+          "fairOverUnder": "20.5",
+          "bookOverUnder": "20.5",
+          "openFairOdds": "-114",
+          "openBookOdds": "-133",
+          "openFairOverUnder": "20.5",
+          "openBookOverUnder": "20.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-138",
+              "overUnder": "20.5",
+              "lastUpdatedAt": "2025-12-24T06:01:29.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.547406851&selectionId=26610066"
+            }
+          }
+        },
+        "points-DEANDRE_HUNTER_1_NBA-game-ou-over": {
+          "oddID": "points-DEANDRE_HUNTER_1_NBA-game-ou-over",
+          "opposingOddID": "points-DEANDRE_HUNTER_1_NBA-game-ou-under",
+          "statID": "points",
+          "statEntityID": "DEANDRE_HUNTER_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "DEANDRE_HUNTER_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+105",
+          "bookOdds": "-110",
+          "fairOverUnder": "13.5",
+          "bookOverUnder": "13.5",
+          "openFairOdds": "+105",
+          "openBookOdds": "-110",
+          "openFairOverUnder": "13.5",
+          "openBookOverUnder": "13.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-110",
+              "overUnder": "13.5",
+              "lastUpdatedAt": "2025-12-24T06:01:29.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.547406853&selectionId=26624379",
+              "altLines": [
+                {
+                  "odds": "-340",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2025-12-24T06:01:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+124",
+                  "overUnder": "14.5",
+                  "lastUpdatedAt": "2025-12-24T06:01:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+400",
+                  "overUnder": "19.5",
+                  "lastUpdatedAt": "2025-12-24T06:01:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1100",
+                  "overUnder": "24.5",
+                  "lastUpdatedAt": "2025-12-24T06:01:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+3000",
+                  "overUnder": "29.5",
+                  "lastUpdatedAt": "2025-12-24T05:38:22.000Z",
+                  "available": false
+                }
+              ]
+            }
+          },
+          "marketName": "De'Andre Hunter Points Over/Under"
+        },
+        "points-DEANDRE_HUNTER_1_NBA-game-ou-under": {
+          "oddID": "points-DEANDRE_HUNTER_1_NBA-game-ou-under",
+          "opposingOddID": "points-DEANDRE_HUNTER_1_NBA-game-ou-over",
+          "statID": "points",
+          "statEntityID": "DEANDRE_HUNTER_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "DEANDRE_HUNTER_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-105",
+          "bookOdds": "-122",
+          "fairOverUnder": "13.5",
+          "bookOverUnder": "13.5",
+          "openFairOdds": "-105",
+          "openBookOdds": "-122",
+          "openFairOverUnder": "13.5",
+          "openBookOverUnder": "13.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-120",
+              "overUnder": "13.5",
+              "lastUpdatedAt": "2025-12-24T06:01:29.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.547406853&selectionId=26624380"
+            }
+          },
+          "marketName": "De'Andre Hunter Points Over/Under"
+        },
+        "points-DEAN_WADE_1_NBA-game-ou-over": {
+          "oddID": "points-DEAN_WADE_1_NBA-game-ou-over",
+          "opposingOddID": "points-DEAN_WADE_1_NBA-game-ou-under",
+          "marketName": "Dean Wade Points Over/Under",
+          "statID": "points",
+          "statEntityID": "DEAN_WADE_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "DEAN_WADE_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "-114",
+          "fairOverUnder": "6",
+          "bookOverUnder": "5.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "-114",
+          "openFairOverUnder": "6",
+          "openBookOverUnder": "5.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-114",
+              "overUnder": "5.5",
+              "lastUpdatedAt": "2025-12-24T06:01:29.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.547406856&selectionId=39063644",
+              "altLines": [
+                {
+                  "odds": "-160",
+                  "overUnder": "4.5",
+                  "lastUpdatedAt": "2025-12-24T06:03:27.328Z",
+                  "available": true
+                },
+                {
+                  "odds": "+420",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2025-12-24T06:01:29.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "points-DEAN_WADE_1_NBA-game-ou-under": {
+          "oddID": "points-DEAN_WADE_1_NBA-game-ou-under",
+          "opposingOddID": "points-DEAN_WADE_1_NBA-game-ou-over",
+          "marketName": "Dean Wade Points Over/Under",
+          "statID": "points",
+          "statEntityID": "DEAN_WADE_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "DEAN_WADE_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "-114",
+          "fairOverUnder": "6",
+          "bookOverUnder": "5.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "-114",
+          "openFairOverUnder": "6",
+          "openBookOverUnder": "5.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-114",
+              "overUnder": "5.5",
+              "lastUpdatedAt": "2025-12-24T06:01:29.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.547406856&selectionId=39063643"
+            }
+          }
+        },
+        "points-DONOVAN_MITCHELL_1_NBA-game-ou-over": {
+          "oddID": "points-DONOVAN_MITCHELL_1_NBA-game-ou-over",
+          "opposingOddID": "points-DONOVAN_MITCHELL_1_NBA-game-ou-under",
+          "marketName": "Donovan Mitchell Points Over/Under",
+          "statID": "points",
+          "statEntityID": "DONOVAN_MITCHELL_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "DONOVAN_MITCHELL_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+110",
+          "bookOdds": "-118",
+          "fairOverUnder": "30.5",
+          "bookOverUnder": "29.5",
+          "openFairOdds": "+110",
+          "openBookOdds": "-118",
+          "openFairOverUnder": "30.5",
+          "openBookOverUnder": "29.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-118",
+              "overUnder": "29.5",
+              "lastUpdatedAt": "2025-12-24T06:01:29.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.547406850&selectionId=15907303",
+              "altLines": [
+                {
+                  "odds": "-6000",
+                  "overUnder": "14.5",
+                  "lastUpdatedAt": "2025-12-24T06:01:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-1000",
+                  "overUnder": "19.5",
+                  "lastUpdatedAt": "2025-12-24T06:01:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-310",
+                  "overUnder": "24.5",
+                  "lastUpdatedAt": "2025-12-24T06:01:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-102",
+                  "overUnder": "30.5",
+                  "lastUpdatedAt": "2025-12-24T03:43:34.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "+200",
+                  "overUnder": "34.5",
+                  "lastUpdatedAt": "2025-12-24T06:01:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+440",
+                  "overUnder": "39.5",
+                  "lastUpdatedAt": "2025-12-24T06:01:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+900",
+                  "overUnder": "44.5",
+                  "lastUpdatedAt": "2025-12-24T06:01:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1700",
+                  "overUnder": "49.5",
+                  "lastUpdatedAt": "2025-12-24T06:01:29.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "points-DONOVAN_MITCHELL_1_NBA-game-ou-under": {
+          "oddID": "points-DONOVAN_MITCHELL_1_NBA-game-ou-under",
+          "opposingOddID": "points-DONOVAN_MITCHELL_1_NBA-game-ou-over",
+          "marketName": "Donovan Mitchell Points Over/Under",
+          "statID": "points",
+          "statEntityID": "DONOVAN_MITCHELL_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "DONOVAN_MITCHELL_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-110",
+          "bookOdds": "-111",
+          "fairOverUnder": "30.5",
+          "bookOverUnder": "29.5",
+          "openFairOdds": "-110",
+          "openBookOdds": "-111",
+          "openFairOverUnder": "30.5",
+          "openBookOverUnder": "29.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-112",
+              "overUnder": "29.5",
+              "lastUpdatedAt": "2025-12-24T06:01:29.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.547406850&selectionId=15907304",
+              "altLines": [
+                {
+                  "odds": "-130",
+                  "overUnder": "30.5",
+                  "lastUpdatedAt": "2025-12-24T03:43:34.000Z",
+                  "available": false
+                }
+              ]
+            }
+          }
+        },
+        "points-JARRETT_ALLEN_1_NBA-game-ou-over": {
+          "oddID": "points-JARRETT_ALLEN_1_NBA-game-ou-over",
+          "opposingOddID": "points-JARRETT_ALLEN_1_NBA-game-ou-under",
+          "marketName": "Jarrett Allen Points Over/Under",
+          "statID": "points",
+          "statEntityID": "JARRETT_ALLEN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "JARRETT_ALLEN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+123",
+          "bookOdds": "-118",
+          "fairOverUnder": "14.5",
+          "bookOverUnder": "13.5",
+          "openFairOdds": "+123",
+          "openBookOdds": "-118",
+          "openFairOverUnder": "14.5",
+          "openBookOverUnder": "13.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-120",
+              "overUnder": "13.5",
+              "lastUpdatedAt": "2025-12-24T06:01:29.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.547406852&selectionId=21174117",
+              "altLines": [
+                {
+                  "odds": "-400",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2025-12-24T06:01:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+110",
+                  "overUnder": "14.5",
+                  "lastUpdatedAt": "2025-12-24T06:01:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+350",
+                  "overUnder": "19.5",
+                  "lastUpdatedAt": "2025-12-24T06:01:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1100",
+                  "overUnder": "24.5",
+                  "lastUpdatedAt": "2025-12-24T06:01:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+3000",
+                  "overUnder": "29.5",
+                  "lastUpdatedAt": "2025-12-24T05:38:22.000Z",
+                  "available": false
+                }
+              ]
+            }
+          }
+        },
+        "points-JARRETT_ALLEN_1_NBA-game-ou-under": {
+          "oddID": "points-JARRETT_ALLEN_1_NBA-game-ou-under",
+          "opposingOddID": "points-JARRETT_ALLEN_1_NBA-game-ou-over",
+          "marketName": "Jarrett Allen Points Over/Under",
+          "statID": "points",
+          "statEntityID": "JARRETT_ALLEN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "JARRETT_ALLEN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-123",
+          "bookOdds": "-112",
+          "fairOverUnder": "14.5",
+          "bookOverUnder": "13.5",
+          "openFairOdds": "-123",
+          "openBookOdds": "-112",
+          "openFairOverUnder": "14.5",
+          "openBookOverUnder": "13.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-110",
+              "overUnder": "13.5",
+              "lastUpdatedAt": "2025-12-24T06:01:29.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.547406852&selectionId=21174118",
+              "altLines": [
+                {
+                  "odds": "-136",
+                  "overUnder": "14.5",
+                  "lastUpdatedAt": "2025-12-24T03:43:34.000Z",
+                  "available": false
+                }
+              ]
+            }
+          }
+        },
+        "rebounds-DARIUS_GARLAND_1_NBA-game-ou-over": {
+          "oddID": "rebounds-DARIUS_GARLAND_1_NBA-game-ou-over",
+          "opposingOddID": "rebounds-DARIUS_GARLAND_1_NBA-game-ou-under",
+          "marketName": "Darius Garland Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "DARIUS_GARLAND_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "DARIUS_GARLAND_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+150",
+          "bookOdds": "-164",
+          "fairOverUnder": "3.5",
+          "bookOverUnder": "2.5",
+          "openFairOdds": "+150",
+          "openBookOdds": "-164",
+          "openFairOverUnder": "3.5",
+          "openBookOverUnder": "2.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+128",
+              "overUnder": "3.5",
+              "lastUpdatedAt": "2025-12-24T06:01:29.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.547406866&selectionId=26610065",
+              "altLines": [
+                {
+                  "odds": "+560",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2025-12-24T06:01:29.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "rebounds-DARIUS_GARLAND_1_NBA-game-ou-under": {
+          "oddID": "rebounds-DARIUS_GARLAND_1_NBA-game-ou-under",
+          "opposingOddID": "rebounds-DARIUS_GARLAND_1_NBA-game-ou-over",
+          "marketName": "Darius Garland Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "DARIUS_GARLAND_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "DARIUS_GARLAND_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-150",
+          "bookOdds": "+120",
+          "fairOverUnder": "3.5",
+          "bookOverUnder": "2.5",
+          "openFairOdds": "-150",
+          "openBookOdds": "+120",
+          "openFairOverUnder": "3.5",
+          "openBookOverUnder": "2.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-172",
+              "overUnder": "3.5",
+              "lastUpdatedAt": "2025-12-24T06:01:29.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.547406866&selectionId=26610066"
+            }
+          }
+        },
+        "rebounds-DEANDRE_HUNTER_1_NBA-game-ou-over": {
+          "oddID": "rebounds-DEANDRE_HUNTER_1_NBA-game-ou-over",
+          "opposingOddID": "rebounds-DEANDRE_HUNTER_1_NBA-game-ou-under",
+          "statID": "rebounds",
+          "statEntityID": "DEANDRE_HUNTER_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "DEANDRE_HUNTER_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "-167",
+          "fairOverUnder": "4",
+          "bookOverUnder": "3.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "-167",
+          "openFairOverUnder": "4",
+          "openBookOverUnder": "3.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-172",
+              "overUnder": "3.5",
+              "lastUpdatedAt": "2025-12-24T06:01:29.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.547406868&selectionId=26624379",
+              "altLines": [
+                {
+                  "odds": "+265",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2025-12-24T06:01:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+900",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2025-12-24T06:01:29.000Z",
+                  "available": true
+                }
+              ]
+            }
+          },
+          "marketName": "De'Andre Hunter Rebounds Over/Under"
+        },
+        "rebounds-DEANDRE_HUNTER_1_NBA-game-ou-under": {
+          "oddID": "rebounds-DEANDRE_HUNTER_1_NBA-game-ou-under",
+          "opposingOddID": "rebounds-DEANDRE_HUNTER_1_NBA-game-ou-over",
+          "statID": "rebounds",
+          "statEntityID": "DEANDRE_HUNTER_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "DEANDRE_HUNTER_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "+128",
+          "fairOverUnder": "4",
+          "bookOverUnder": "3.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "+128",
+          "openFairOverUnder": "4",
+          "openBookOverUnder": "3.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+128",
+              "overUnder": "3.5",
+              "lastUpdatedAt": "2025-12-24T06:01:29.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.547406868&selectionId=26624380"
+            }
+          },
+          "marketName": "De'Andre Hunter Rebounds Over/Under"
+        },
+        "rebounds-DEAN_WADE_1_NBA-game-ou-over": {
+          "oddID": "rebounds-DEAN_WADE_1_NBA-game-ou-over",
+          "opposingOddID": "rebounds-DEAN_WADE_1_NBA-game-ou-under",
+          "marketName": "Dean Wade Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "DEAN_WADE_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "DEAN_WADE_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "+200",
+          "fairOverUnder": "4.5",
+          "bookOverUnder": "5.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "+200",
+          "openFairOverUnder": "4.5",
+          "openBookOverUnder": "5.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+200",
+              "overUnder": "5.5",
+              "lastUpdatedAt": "2025-12-24T06:01:29.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.547406942&selectionId=38607568",
+              "altLines": [
+                {
+                  "odds": "-210",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2025-12-24T06:01:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+680",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2025-12-24T06:01:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1500",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2025-12-24T06:01:29.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "rebounds-DEAN_WADE_1_NBA-game-ou-under": {
+          "oddID": "rebounds-DEAN_WADE_1_NBA-game-ou-under",
+          "opposingOddID": "rebounds-DEAN_WADE_1_NBA-game-ou-over",
+          "marketName": "Dean Wade Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "DEAN_WADE_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "DEAN_WADE_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": false,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "fairOverUnder": "4.5",
+          "openFairOdds": "+100",
+          "openFairOverUnder": "4.5",
+          "scoringSupported": true
+        },
+        "rebounds-DONOVAN_MITCHELL_1_NBA-game-ou-over": {
+          "oddID": "rebounds-DONOVAN_MITCHELL_1_NBA-game-ou-over",
+          "opposingOddID": "rebounds-DONOVAN_MITCHELL_1_NBA-game-ou-under",
+          "marketName": "Donovan Mitchell Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "DONOVAN_MITCHELL_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "DONOVAN_MITCHELL_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "+102",
+          "fairOverUnder": "5",
+          "bookOverUnder": "4.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "+102",
+          "openFairOverUnder": "5",
+          "openBookOverUnder": "4.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+102",
+              "overUnder": "4.5",
+              "lastUpdatedAt": "2025-12-24T06:01:29.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.547406865&selectionId=15907303",
+              "altLines": [
+                {
+                  "odds": "-215",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2025-12-24T06:01:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+215",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2025-12-24T06:01:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+800",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2025-12-24T06:01:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1800",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2025-12-24T06:01:29.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "rebounds-DONOVAN_MITCHELL_1_NBA-game-ou-under": {
+          "oddID": "rebounds-DONOVAN_MITCHELL_1_NBA-game-ou-under",
+          "opposingOddID": "rebounds-DONOVAN_MITCHELL_1_NBA-game-ou-over",
+          "marketName": "Donovan Mitchell Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "DONOVAN_MITCHELL_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "DONOVAN_MITCHELL_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "-137",
+          "fairOverUnder": "5",
+          "bookOverUnder": "4.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "-137",
+          "openFairOverUnder": "5",
+          "openBookOverUnder": "4.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-136",
+              "overUnder": "4.5",
+              "lastUpdatedAt": "2025-12-24T06:01:29.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.547406865&selectionId=15907304"
+            }
+          }
+        },
+        "rebounds-JARRETT_ALLEN_1_NBA-game-ou-over": {
+          "oddID": "rebounds-JARRETT_ALLEN_1_NBA-game-ou-over",
+          "opposingOddID": "rebounds-JARRETT_ALLEN_1_NBA-game-ou-under",
+          "marketName": "Jarrett Allen Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "JARRETT_ALLEN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "JARRETT_ALLEN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+120",
+          "bookOdds": "-136",
+          "fairOverUnder": "9.5",
+          "bookOverUnder": "8.5",
+          "openFairOdds": "+120",
+          "openBookOdds": "-136",
+          "openFairOverUnder": "9.5",
+          "openBookOverUnder": "8.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-128",
+              "overUnder": "8.5",
+              "lastUpdatedAt": "2025-12-24T06:01:29.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.547406867&selectionId=21174117",
+              "altLines": [
+                {
+                  "odds": "-720",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2025-12-24T06:01:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-210",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2025-12-24T06:01:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+114",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2025-12-24T06:01:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+285",
+                  "overUnder": "11.5",
+                  "lastUpdatedAt": "2025-12-24T06:01:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+630",
+                  "overUnder": "13.5",
+                  "lastUpdatedAt": "2025-12-24T06:01:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1400",
+                  "overUnder": "15.5",
+                  "lastUpdatedAt": "2025-12-24T06:01:29.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "rebounds-JARRETT_ALLEN_1_NBA-game-ou-under": {
+          "oddID": "rebounds-JARRETT_ALLEN_1_NBA-game-ou-under",
+          "opposingOddID": "rebounds-JARRETT_ALLEN_1_NBA-game-ou-over",
+          "marketName": "Jarrett Allen Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "JARRETT_ALLEN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "JARRETT_ALLEN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-120",
+          "bookOdds": "-104",
+          "fairOverUnder": "9.5",
+          "bookOverUnder": "8.5",
+          "openFairOdds": "-120",
+          "openBookOdds": "-104",
+          "openFairOverUnder": "9.5",
+          "openBookOverUnder": "8.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-104",
+              "overUnder": "8.5",
+              "lastUpdatedAt": "2025-12-24T06:01:29.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.547406867&selectionId=21174118"
+            }
+          }
+        }
+      },
+      "results": {},
+      "players": {
+        "JALEN_BRUNSON_1_NBA": {
+          "playerID": "JALEN_BRUNSON_1_NBA",
+          "teamID": "NEW_YORK_KNICKS_NBA",
+          "firstName": "Jalen",
+          "lastName": "Brunson",
+          "name": "Jalen Brunson"
+        },
+        "DONOVAN_MITCHELL_1_NBA": {
+          "playerID": "DONOVAN_MITCHELL_1_NBA",
+          "teamID": "CLEVELAND_CAVALIERS_NBA",
+          "firstName": "Donovan",
+          "lastName": "Mitchell",
+          "name": "Donovan Mitchell"
+        },
+        "KARLANTHONY_TOWNS_1_NBA": {
+          "playerID": "KARLANTHONY_TOWNS_1_NBA",
+          "teamID": "NEW_YORK_KNICKS_NBA",
+          "firstName": "Karl-Anthony",
+          "lastName": "Towns",
+          "name": "Karl-Anthony Towns"
+        },
+        "JARRETT_ALLEN_1_NBA": {
+          "playerID": "JARRETT_ALLEN_1_NBA",
+          "teamID": "CLEVELAND_CAVALIERS_NBA",
+          "firstName": "Jarrett",
+          "lastName": "Allen",
+          "name": "Jarrett Allen"
+        },
+        "MIKAL_BRIDGES_1_NBA": {
+          "playerID": "MIKAL_BRIDGES_1_NBA",
+          "teamID": "NEW_YORK_KNICKS_NBA",
+          "firstName": "Mikal",
+          "lastName": "Bridges",
+          "name": "Mikal Bridges"
+        },
+        "JAYLON_TYSON_1_NBA": {
+          "playerID": "JAYLON_TYSON_1_NBA",
+          "teamID": "CLEVELAND_CAVALIERS_NBA",
+          "firstName": "Jaylon",
+          "lastName": "Tyson",
+          "name": "Jaylon Tyson"
+        },
+        "DARIUS_GARLAND_1_NBA": {
+          "playerID": "DARIUS_GARLAND_1_NBA",
+          "teamID": "CLEVELAND_CAVALIERS_NBA",
+          "firstName": "Darius",
+          "lastName": "Garland",
+          "name": "Darius Garland"
+        },
+        "OG_ANUNOBY_1_NBA": {
+          "playerID": "OG_ANUNOBY_1_NBA",
+          "teamID": "NEW_YORK_KNICKS_NBA",
+          "firstName": "OG",
+          "lastName": "Anunoby",
+          "name": "OG Anunoby"
+        },
+        "DEAN_WADE_1_NBA": {
+          "playerID": "DEAN_WADE_1_NBA",
+          "teamID": "CLEVELAND_CAVALIERS_NBA",
+          "firstName": "Dean",
+          "lastName": "Wade",
+          "name": "Dean Wade"
+        },
+        "JOSH_HART_1_NBA": {
+          "playerID": "JOSH_HART_1_NBA",
+          "teamID": "NEW_YORK_KNICKS_NBA",
+          "firstName": "Josh",
+          "lastName": "Hart",
+          "name": "Josh Hart"
+        },
+        "DEANDRE_HUNTER_1_NBA": {
+          "playerID": "DEANDRE_HUNTER_1_NBA",
+          "teamID": "CLEVELAND_CAVALIERS_NBA",
+          "firstName": "De'Andre",
+          "lastName": "Hunter",
+          "name": "De'Andre Hunter"
+        },
+        "JORDAN_CLARKSON_1_NBA": {
+          "playerID": "JORDAN_CLARKSON_1_NBA",
+          "teamID": "NEW_YORK_KNICKS_NBA",
+          "firstName": "Jordan",
+          "lastName": "Clarkson",
+          "name": "Jordan Clarkson"
+        },
+        "MITCHELL_ROBINSON_1_NBA": {
+          "playerID": "MITCHELL_ROBINSON_1_NBA",
+          "teamID": "NEW_YORK_KNICKS_NBA",
+          "firstName": "Mitchell",
+          "lastName": "Robinson",
+          "name": "Mitchell Robinson"
+        },
+        "SAM_MERRILL_1_NBA": {
+          "playerID": "SAM_MERRILL_1_NBA",
+          "teamID": "CLEVELAND_CAVALIERS_NBA",
+          "firstName": "Sam",
+          "lastName": "Merrill",
+          "name": "Sam Merrill"
+        }
+      }
+    }
+  ]
+}
