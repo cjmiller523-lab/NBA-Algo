@@ -1,0 +1,133 @@
+import json
+from datetime import datetime
+
+DATE = datetime.now().strftime("%Y-%m-%d")
+INPUT = f"nhl_cache/nhl_full_{DATE}.json"
+OUTPUT = f"twitter_posts/nhl_growth_{DATE}.txt"
+
+MAX_ICE_LOCKS = 4
+
+STAR_PLAYERS = {
+    "Connor McDavid",
+    "Leon Draisaitl",
+    "Kirill Kaprizov",
+    "David Pastrnak",
+    "Nathan MacKinnon",
+    "Nikita Kucherov",
+    "Auston Matthews",
+}
+
+# ------------------------------
+# SCORING / FILTERING
+# ------------------------------
+
+def is_ice_lock(r):
+    if r["hits"] == 10:
+        return True
+    if r["hits"] == 9:
+        if r["market"] == "PTS":
+            return True
+        if r["market"] == "SOG" and r["threshold"] >= 3:
+            return True
+        if r["market"] == "BLK" and r["threshold"] >= 2:
+            return True
+    return False
+
+def score(r):
+    s = r["hits"] * 10 + r["conf"]
+    s += r["threshold"] * 2
+    if r["player"] in STAR_PLAYERS:
+        s += 5
+    return s
+
+# ------------------------------
+# LOAD + PREP
+# ------------------------------
+
+with open(INPUT, "r", encoding="utf-8") as f:
+    data = json.load(f)
+
+rows = data["sog"] + data["pts"] + data["blk"]
+
+# Dedup by player + market (keep highest threshold)
+dedup = {}
+for r in rows:
+    key = (r["player"], r["market"])
+    if key not in dedup or r["threshold"] > dedup[key]["threshold"]:
+        dedup[key] = r
+
+rows = sorted(dedup.values(), key=score, reverse=True)
+
+# ------------------------------
+# ICE LOCKS
+# ------------------------------
+
+ice_locks = [r for r in rows if is_ice_lock(r)][:MAX_ICE_LOCKS]
+
+# ------------------------------
+# SAFE PARLAY (2–3 LEGS)
+# ------------------------------
+
+safe_parlay = []
+for r in ice_locks:
+    if r["market"] == "PTS" and r["threshold"] == 1:
+        safe_parlay.append(r)
+    elif r["market"] == "SOG" and r["threshold"] <= 2:
+        safe_parlay.append(r)
+
+safe_parlay = safe_parlay[:3]
+
+# ------------------------------
+# ONE STRAIGHT BET
+# ------------------------------
+
+straight_bet = None
+for r in rows:
+    if r["market"] == "SOG" and r["threshold"] >= 3 and r["hits"] >= 9:
+        straight_bet = r
+        break
+
+# ------------------------------
+# LADDER (STAR PLAYER)
+# ------------------------------
+
+ladder = []
+for r in rows:
+    if r["player"] in STAR_PLAYERS and r["market"] == "SOG":
+        ladder.append(r)
+
+ladder = sorted(ladder, key=lambda x: x["threshold"])[:3]
+
+# ------------------------------
+# OUTPUT
+# ------------------------------
+
+lines = []
+lines.append(f"🧊 NHL ICE LOCKS — {DATE}")
+lines.append("")
+
+for r in ice_locks:
+    lines.append(f"⭐ {r['player']} — {r['market']} {r['threshold']}+ | {r['hits']}/10")
+
+lines.append("")
+lines.append("🧱 SAFE PARLAY (Target ~-110 to +120)")
+for r in safe_parlay:
+    lines.append(f"• {r['player']} — {r['market']} {r['threshold']}+")
+
+if straight_bet:
+    lines.append("")
+    lines.append("🔥 STRAIGHT BET I LIKE")
+    lines.append(
+        f"{straight_bet['player']} — {straight_bet['market']} {straight_bet['threshold']}+"
+    )
+
+if ladder:
+    lines.append("")
+    lines.append("🎯 LADDER PLAY")
+    for r in ladder:
+        lines.append(f"{r['player']} — {r['market']} {r['threshold']}+")
+
+with open(OUTPUT, "w", encoding="utf-8") as f:
+    f.write("\n".join(lines))
+
+print(f"[OK] NHL growth content saved → {OUTPUT}")
