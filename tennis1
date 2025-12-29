@@ -1,0 +1,277 @@
+import os
+import json
+import requests
+import pandas as pd
+from io import StringIO
+from datetime import datetime
+from dataclasses import dataclass
+from typing import List, Tuple, Optional
+
+# ==========================================================
+# CONFIG
+# ==========================================================
+CACHE_DIR = "tennis_cache"
+PLAYERS_DIR = os.path.join(CACHE_DIR, "players")
+OUTPUT_DIR = "twitter_posts_tennis"
+
+WINDOW = 20
+ALT_TOTALS = [18.5, 20.5, 22.5]
+MIN_BUCKET_MATCHES = 12
+
+LOCK_MIN_CONF = 78
+LOCK_MIN_COMBINED_HOLD = 0.78
+LOCK_MIN_BUCKET_HIT = 0.78
+
+os.makedirs(PLAYERS_DIR, exist_ok=True)
+os.makedirs(OUTPUT_DIR, exist_ok=True)
+
+HEADERS = {"User-Agent": "Mozilla/5.0 tennis-model/1.0"}
+
+# ==========================================================
+# DATA MODELS
+# ==========================================================
+@dataclass
+class MatchRow:
+    date: str
+    surface: str
+    opp: str
+    hold_pct: float
+    break_pct: float
+    total_games: int
+
+@dataclass
+class PlayerStats:
+    hold: float
+    brk: float
+    n: int
+
+@dataclass
+class MatchupFeatures:
+    exp_hold_a: float
+    exp_hold_b: float
+    combined_hold: float
+    tb_signal: int
+
+@dataclass
+class Pick:
+    match: str
+    surface: str
+    alt_total: float
+    bucket_matches: int
+    bucket_hit_rate: float
+    combined_hold: float
+    tb_signal: int
+    confidence: int
+
+# ==========================================================
+# HELPERS
+# ==========================================================
+def normalize_surface(s):
+    s = s.lower()
+    if "indoor" in s: return "Indoor Hard"
+    if "hard" in s: return "Hard"
+    if "clay" in s: return "Clay"
+    if "grass" in s: return "Grass"
+    return "Other"
+
+def player_cache_path(player):
+    return os.path.join(PLAYERS_DIR, player.replace(" ", "_") + ".json")
+
+# ==========================================================
+# TENNISABSTRACT — TODAY'S MATCHES
+# ==========================================================
+def get_todays_matches():
+    matches = []
+
+    urls = [
+        ("ATP", "https://www.tennisabstract.com/cgi-bin/scores.cgi"),
+        ("WTA", "https://www.tennisabstract.com/cgi-bin/wta-scores.cgi"),
+    ]
+
+    session = requests.Session()
+    session.headers.update({
+        "User-Agent": (
+            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+            "AppleWebKit/537.36 (KHTML, like Gecko) "
+            "Chrome/121.0.0.0 Safari/537.36"
+        ),
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Language": "en-US,en;q=0.9",
+        "Connection": "keep-alive",
+    })
+
+    for tour, url in urls:
+        resp = session.get(url, timeout=20)
+        html = resp.text
+
+        try:
+            tables = pd.read_html(StringIO(html))
+        except ValueError:
+            # ✅ This is NORMAL on days with no matches
+            print(f"[INFO] No {tour} matches found today.")
+            continue
+
+        for df in tables:
+            if not {"Winner", "Loser", "Surface"}.issubset(df.columns):
+                continue
+
+            for _, r in df.iterrows():
+                matches.append({
+                    "player_a": r["Winner"],
+                    "player_b": r["Loser"],
+                    "surface": normalize_surface(r["Surface"])
+                })
+
+    return matches
+
+
+# ==========================================================
+# TENNISABSTRACT — PLAYER HISTORY
+# ==========================================================
+def refresh_player_history(player):
+    path = player_cache_path(player)
+    if os.path.exists(path):
+        return
+
+    slug = player.replace(" ", "")
+    url = f"https://www.tennisabstract.com/cgi-bin/player.cgi?p={slug}&f=ACareer"
+    html = requests.get(url, headers=HEADERS, timeout=15).text
+    tables = pd.read_html(StringIO(html))
+
+    df = max(tables, key=len)
+    rows = []
+
+    for _, r in df.iterrows():
+        try:
+            sg = int(r["SvG"])
+            rbp = int(r["RtBP"])
+            rg = int(r["RtG"])
+            total_games = int(r["W1"]) + int(r["L1"])
+            hold = (sg - int(r["SvBP"])) / sg if sg else 0.75
+            brk = rbp / rg if rg else 0.20
+        except:
+            continue
+
+        rows.append({
+            "date": str(r["Date"]),
+            "surface": normalize_surface(r["Surface"]),
+            "opp": r["Opponent"],
+            "hold_pct": hold,
+            "break_pct": brk,
+            "total_games": total_games
+        })
+
+    with open(path, "w") as f:
+        json.dump(rows, f, indent=2)
+
+# ==========================================================
+# MODEL CORE
+# ==========================================================
+def weighted_stats(rows, surface):
+    rows = rows[-WINDOW:]
+    if not rows:
+        return PlayerStats(0.75, 0.20, 0)
+
+    h, b, n = 0, 0, 0
+    for r in rows:
+        if r["surface"] == surface:
+            h += r["hold_pct"]
+            b += r["break_pct"]
+            n += 1
+
+    if n == 0:
+        return PlayerStats(0.75, 0.20, 0)
+
+    return PlayerStats(h / n, b / n, n)
+
+def matchup_features(a, b):
+    exp_a = (a.hold + (1 - b.brk)) / 2
+    exp_b = (b.hold + (1 - a.brk)) / 2
+    tb = int(exp_a >= 0.82) + int(exp_b >= 0.82)
+    return MatchupFeatures(exp_a, exp_b, (exp_a + exp_b) / 2, tb)
+
+def bucket_hit_rate(a_rows, b_rows, surface, alt):
+    rows = [r for r in a_rows[-WINDOW:] + b_rows[-WINDOW:] if r["surface"] == surface]
+    if len(rows) < 5:
+        return 0, 0.0
+    hits = sum(1 for r in rows if r["total_games"] > alt)
+    return len(rows), hits / len(rows)
+
+def pick_alt(match, surface, feats, a_rows, b_rows):
+    best = None
+    for alt in ALT_TOTALS:
+        n, hr = bucket_hit_rate(a_rows, b_rows, surface, alt)
+
+        base = hr if n >= MIN_BUCKET_MATCHES else (feats.combined_hold - 0.70) / 0.20
+        bonus = (0.06 if feats.tb_signal == 2 else 0.03 if feats.tb_signal == 1 else 0)
+        conf = int(max(1, min(99, (base + bonus) * 100)))
+
+        p = Pick(match, surface, alt, n, hr, feats.combined_hold, feats.tb_signal, conf)
+        if not best or conf > best.confidence:
+            best = p
+    return best
+
+def is_lock(p):
+    if p.confidence < LOCK_MIN_CONF: return False
+    if p.combined_hold < LOCK_MIN_COMBINED_HOLD: return False
+    if p.bucket_matches >= MIN_BUCKET_MATCHES and p.bucket_hit_rate < LOCK_MIN_BUCKET_HIT:
+        return False
+    return True
+
+# ==========================================================
+# MAIN
+# ==========================================================
+def main():
+    today = datetime.now().strftime("%Y-%m-%d")
+    slate = get_todays_matches()
+
+    if not slate:
+        print("No ATP/WTA matches found today.")
+        return
+
+    core, locks = [], []
+
+    for m in slate:
+        a, b, surface = m["player_a"], m["player_b"], m["surface"]
+
+        refresh_player_history(a)
+        refresh_player_history(b)
+
+        a_rows = json.load(open(player_cache_path(a)))
+        b_rows = json.load(open(player_cache_path(b)))
+
+        a_stats = weighted_stats(a_rows, surface)
+        b_stats = weighted_stats(b_rows, surface)
+
+        feats = matchup_features(a_stats, b_stats)
+        pick = pick_alt(f"{a} vs {b}", surface, feats, a_rows, b_rows)
+
+        if pick:
+            core.append(pick)
+            if is_lock(pick):
+                locks.append(pick)
+
+    core.sort(key=lambda x: x.confidence, reverse=True)
+    locks.sort(key=lambda x: x.confidence, reverse=True)
+
+    out = [f"🎾 TOTAL GAMES MODEL — {today}\n"]
+
+    if locks:
+        out.append("🔥 LOCKS\n-------------------")
+        for p in locks:
+            out.append(f"{p.match} — Over {p.alt_total} | Conf {p.confidence}%")
+        out.append("")
+
+    out.append("✅ CORE PLAYS\n-------------------")
+    for p in core[:10]:
+        out.append(f"{p.match} — Over {p.alt_total} | Conf {p.confidence}%")
+
+    text = "\n".join(out)
+    path = os.path.join(OUTPUT_DIR, f"{today}.txt")
+    open(path, "w").write(text)
+
+    print(text)
+    print(f"\nSaved → {path}")
+
+if __name__ == "__main__":
+    main()
