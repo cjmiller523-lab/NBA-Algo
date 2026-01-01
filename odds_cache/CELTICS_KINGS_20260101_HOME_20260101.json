@@ -1,0 +1,1739 @@
+{
+  "nextCursor": "n.1767322800000.UkxwIKjWF6ymRS4ruKBg",
+  "success": true,
+  "data": [
+    {
+      "eventID": "UkxwIKjWF6ymRS4ruKBg",
+      "sportID": "BASKETBALL",
+      "leagueID": "NBA",
+      "type": "match",
+      "teams": {
+        "home": {
+          "teamID": "SACRAMENTO_KINGS_NBA",
+          "names": {
+            "long": "Sacramento Kings",
+            "medium": "Kings",
+            "short": "SAC",
+            "location": "Sacramento"
+          },
+          "colors": {
+            "primary": "#724C9F",
+            "secondary": "#8E9090",
+            "primaryContrast": "#FFFFFF",
+            "secondaryContrast": "#724C9F"
+          },
+          "statEntityID": "home"
+        },
+        "away": {
+          "teamID": "BOSTON_CELTICS_NBA",
+          "names": {
+            "long": "Boston Celtics",
+            "medium": "Celtics",
+            "short": "BOS",
+            "location": "Boston"
+          },
+          "colors": {
+            "primary": "#008348",
+            "secondary": "",
+            "primaryContrast": "#FFFFFF",
+            "secondaryContrast": ""
+          },
+          "statEntityID": "away"
+        }
+      },
+      "status": {
+        "started": false,
+        "completed": false,
+        "cancelled": false,
+        "ended": false,
+        "live": false,
+        "delayed": false,
+        "currentPeriodID": "",
+        "previousPeriodID": "",
+        "displayShort": "",
+        "displayLong": "Upcoming",
+        "inBreak": false,
+        "startsAt": "2026-01-02T03:00:00.000Z",
+        "previousStartsAt": [],
+        "hardStart": true,
+        "periods": {
+          "started": [],
+          "ended": []
+        },
+        "oddsPresent": true,
+        "oddsAvailable": true,
+        "finalized": false
+      },
+      "info": {
+        "seasonWeek": "NBA 25/26"
+      },
+      "links": {
+        "bookmakers": {
+          "betmgm": "https://sports.nj.betmgm.com/en/sports/events/18705388",
+          "1xbet": "https://1xbet.com/en/line/football/13589-nba/294679433-sacramento-kings-boston-celtics",
+          "888sport": "https://www.888sport.com/basketball/united-states-of-america/nba/boston-celtics-sacramento-kings-e-6921205",
+          "betonline": "https://sports.betonline.ag/sportsbook/basketball/nba/game/490924386",
+          "betrsportsbook": "https://www.betr.com.au/sports/Basketball/107/United-States-of-America/NBA/Boston-Celtics-@-Sacramento-Kings/1945055/All-Markets",
+          "betsson": "https://www.betsson.com/en/sportsbook/basketball/nba/nba?eventId=f--N4BQQgWUUyMv_Sq3YIxkg",
+          "coolbet": "https://www.coolbet.com/en/sports/match/4836773",
+          "coral": "https://sports.coral.co.uk/event/basketball/basketball-usa/nba/sac-kings-v-bos-celtics/41141827",
+          "fanduel": "https://sportsbook.fanduel.com/basketball/-/35099488",
+          "fliff": "https://sports.getfliff.com/markets/356208_c_p_204_prematch",
+          "ladbrokes": "https://www.ladbrokes.com.au/sports/-/-/-/1b7d9ce7-befd-4c9a-b1ea-37a21a8dbb3f",
+          "lowvig": "https://sports.lowvig.ag/sportsbook/basketball/nba/game/490924386",
+          "neds": "https://www.neds.com.au/sports/-/-/-/1b7d9ce7-befd-4c9a-b1ea-37a21a8dbb3f",
+          "paddypower": "https://www.paddypower.com/basketball/nba/boston-celtics-@-sacramento-kings-35099488",
+          "pinnacle": "https://www.pinnacle.com/en/basketball/nba/boston-celtics-vs-sacramento-kings/1621670797",
+          "playup": "https://www.playup.com.au/betting/sports/nba/sacramento-kings-v-boston-celtics/1762863",
+          "pointsbet": "https://pointsbet.com.au/sports/basketball/NBA/2554551",
+          "sportsbet": "https://www.sportsbet.com.au/betting/basketball---us/nba/boston-celtics-at-sacramento-kings-9994387",
+          "williamhill": "https://sports.williamhill.com/betting/en-gb/basketball/OB_EV38216971/boston-celtics-at-sacramento-kings",
+          "bovada": "https://www.bovada.lv/sports/basketball/nba/boston-celtics-sacramento-kings-202601012200",
+          "boylesports": "https://www.boylesports.com/sports/basketball/event/usa-nba/sacramento-kings-v-boston-celtics",
+          "caesars": "https://sportsbook.caesars.com/us/nj/bet/basketball/d87bce04-7ea9-42eb-a98c-5c2718056fc7/boston-celtics-at-sacramento-kings",
+          "draftkings": "https://sportsbook.draftkings.com/event/33371020",
+          "nordicbet": "https://www.nordicbet.com/en/sportsbook/basketball/nba/nba/sacramento-kings-boston-celtics",
+          "boombet": "https://www.boombet.com.au/sport-menu/Sport/Basketball/NBA/39634250",
+          "ballybet": "https://play.ballybet.com/sports#event/1024653098",
+          "betfairsportsbook": "https://www.betfair.com/betting/basketball/nba/boston-celtics-@-sacramento-kings/e-35099488",
+          "betparx": "https://nj.betparx.com/kambi#event/1024653098",
+          "betrivers": "https://nj.betrivers.com/?page=sportsbook#event/1024653098",
+          "casumo": "https://www.casumo.com/en-gb/sports#event/1024653098",
+          "grosvenor": "https://www.grosvenorcasinos.com/sport#event/1024653098",
+          "leovegas": "https://www.leovegas.co.uk/betting#event/1024653098",
+          "livescorebet": "https://www.livescorebet.com/uk/sports/basketball/nba/sacramento-kings-boston-celtics/SBTE_2_1024653098",
+          "tabtouch": "https://www.tabtouch.mobi/tabtouch-sports/event/1024653098",
+          "unibet": "https://www.unibet.com/betting/sports/event/1024653098",
+          "virginbet": "https://www.virginbet.com/sports/basketball/nba/sacramento-kings-boston-celtics/SBTE_2_1024653098",
+          "matchbook": "https://www.matchbook.com/events/basketball/united-states-of-america/nba/32127511212300045",
+          "hardrockbet": "https://app.hardrock.bet/home/competition/nba/4609995043111698691",
+          "tab": "https://www.tab.com.au/sports/betting/Basketball/competitions/NBA/matches/Sacramento%20v%20Boston",
+          "espnbet": "https://espnbet.com/sport/basketball/organization/united-states/competition/nba/event/b571eb2b-d560-4332-a07f-99d30fee2325",
+          "thescorebet": "https://thescore.bet/sport/basketball/organization/united-states/competition/nba/event/b571eb2b-d560-4332-a07f-99d30fee2325",
+          "everygame": "https://sports.everygame.eu/en/Bets/Basketball/NBA-Lines/Boston-Celtics-at-Sacramento-Kings/2772620"
+        }
+      },
+      "odds": {
+        "points-DEMAR_DEROZAN_1_NBA-game-ou-over": {
+          "oddID": "points-DEMAR_DEROZAN_1_NBA-game-ou-over",
+          "opposingOddID": "points-DEMAR_DEROZAN_1_NBA-game-ou-under",
+          "statID": "points",
+          "statEntityID": "DEMAR_DEROZAN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "DEMAR_DEROZAN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+129",
+          "bookOdds": "-126",
+          "fairOverUnder": "20.5",
+          "bookOverUnder": "18.5",
+          "openFairOdds": "+129",
+          "openBookOdds": "-126",
+          "openFairOverUnder": "20.5",
+          "openBookOverUnder": "18.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-132",
+              "overUnder": "18.5",
+              "lastUpdatedAt": "2026-01-01T06:15:52.000Z",
+              "available": true,
+              "altLines": [
+                {
+                  "odds": "-3000",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-01-01T06:15:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-370",
+                  "overUnder": "14.5",
+                  "lastUpdatedAt": "2026-01-01T06:15:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-102",
+                  "overUnder": "19.5",
+                  "lastUpdatedAt": "2026-01-01T06:15:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+285",
+                  "overUnder": "24.5",
+                  "lastUpdatedAt": "2026-01-01T06:15:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+800",
+                  "overUnder": "29.5",
+                  "lastUpdatedAt": "2026-01-01T06:15:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1700",
+                  "overUnder": "34.5",
+                  "lastUpdatedAt": "2026-01-01T06:15:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+5000",
+                  "overUnder": "39.5",
+                  "lastUpdatedAt": "2026-01-01T04:31:33.000Z",
+                  "available": false
+                }
+              ],
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.548266175&selectionId=12234472"
+            }
+          },
+          "marketName": "DeMar DeRozan Points Over/Under"
+        },
+        "points-DEMAR_DEROZAN_1_NBA-game-ou-under": {
+          "oddID": "points-DEMAR_DEROZAN_1_NBA-game-ou-under",
+          "opposingOddID": "points-DEMAR_DEROZAN_1_NBA-game-ou-over",
+          "statID": "points",
+          "statEntityID": "DEMAR_DEROZAN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "DEMAR_DEROZAN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-129",
+          "bookOdds": "-105",
+          "fairOverUnder": "20.5",
+          "bookOverUnder": "18.5",
+          "openFairOdds": "-129",
+          "openBookOdds": "-105",
+          "openFairOverUnder": "20.5",
+          "openBookOverUnder": "18.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+100",
+              "overUnder": "18.5",
+              "lastUpdatedAt": "2026-01-01T06:15:52.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.548266175&selectionId=12234473"
+            }
+          },
+          "marketName": "DeMar DeRozan Points Over/Under"
+        },
+        "points-MAXIME_RAYNAUD_1_NBA-game-ou-over": {
+          "oddID": "points-MAXIME_RAYNAUD_1_NBA-game-ou-over",
+          "opposingOddID": "points-MAXIME_RAYNAUD_1_NBA-game-ou-under",
+          "statID": "points",
+          "statEntityID": "MAXIME_RAYNAUD_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "MAXIME_RAYNAUD_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+131",
+          "bookOdds": "-113",
+          "fairOverUnder": "14.5",
+          "bookOverUnder": "13.5",
+          "openFairOdds": "+131",
+          "openBookOdds": "-113",
+          "openFairOverUnder": "14.5",
+          "openBookOverUnder": "13.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-112",
+              "overUnder": "13.5",
+              "lastUpdatedAt": "2026-01-01T06:15:52.000Z",
+              "available": true,
+              "altLines": [
+                {
+                  "odds": "-390",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-01-01T06:15:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+122",
+                  "overUnder": "14.5",
+                  "lastUpdatedAt": "2026-01-01T06:15:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+420",
+                  "overUnder": "19.5",
+                  "lastUpdatedAt": "2026-01-01T06:15:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1300",
+                  "overUnder": "24.5",
+                  "lastUpdatedAt": "2026-01-01T06:15:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+3000",
+                  "overUnder": "29.5",
+                  "lastUpdatedAt": "2026-01-01T04:42:24.000Z",
+                  "available": false
+                }
+              ],
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.548266404&selectionId=52494482"
+            }
+          },
+          "marketName": "Maxime Raynaud Points Over/Under"
+        },
+        "points-MAXIME_RAYNAUD_1_NBA-game-ou-under": {
+          "oddID": "points-MAXIME_RAYNAUD_1_NBA-game-ou-under",
+          "opposingOddID": "points-MAXIME_RAYNAUD_1_NBA-game-ou-over",
+          "statID": "points",
+          "statEntityID": "MAXIME_RAYNAUD_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "MAXIME_RAYNAUD_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-131",
+          "bookOdds": "-116",
+          "fairOverUnder": "14.5",
+          "bookOverUnder": "13.5",
+          "openFairOdds": "-131",
+          "openBookOdds": "-116",
+          "openFairOverUnder": "14.5",
+          "openBookOverUnder": "13.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-118",
+              "overUnder": "13.5",
+              "lastUpdatedAt": "2026-01-01T06:15:52.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.548266404&selectionId=52494483"
+            }
+          },
+          "marketName": "Maxime Raynaud Points Over/Under"
+        },
+        "rebounds-KEEGAN_MURRAY_1_NBA-game-ou-over": {
+          "oddID": "rebounds-KEEGAN_MURRAY_1_NBA-game-ou-over",
+          "opposingOddID": "rebounds-KEEGAN_MURRAY_1_NBA-game-ou-under",
+          "statID": "rebounds",
+          "statEntityID": "KEEGAN_MURRAY_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "KEEGAN_MURRAY_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+126",
+          "bookOdds": "+107",
+          "fairOverUnder": "5.5",
+          "bookOverUnder": "5.5",
+          "openFairOdds": "+126",
+          "openBookOdds": "+107",
+          "openFairOverUnder": "5.5",
+          "openBookOverUnder": "5.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+122",
+              "overUnder": "5.5",
+              "lastUpdatedAt": "2026-01-01T06:15:52.000Z",
+              "available": true,
+              "altLines": [
+                {
+                  "odds": "-390",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2026-01-01T06:15:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+400",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2026-01-01T06:15:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1000",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-01-01T06:15:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+2500",
+                  "overUnder": "11.5",
+                  "lastUpdatedAt": "2026-01-01T05:05:07.000Z",
+                  "available": false
+                }
+              ],
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.548266294&selectionId=43026005"
+            }
+          },
+          "marketName": "Keegan Murray Rebounds Over/Under"
+        },
+        "rebounds-KEEGAN_MURRAY_1_NBA-game-ou-under": {
+          "oddID": "rebounds-KEEGAN_MURRAY_1_NBA-game-ou-under",
+          "opposingOddID": "rebounds-KEEGAN_MURRAY_1_NBA-game-ou-over",
+          "statID": "rebounds",
+          "statEntityID": "KEEGAN_MURRAY_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "KEEGAN_MURRAY_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-126",
+          "bookOdds": "-154",
+          "fairOverUnder": "5.5",
+          "bookOverUnder": "5.5",
+          "openFairOdds": "-126",
+          "openBookOdds": "-154",
+          "openFairOverUnder": "5.5",
+          "openBookOverUnder": "5.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-158",
+              "overUnder": "5.5",
+              "lastUpdatedAt": "2026-01-01T06:15:49.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.548266294&selectionId=43026003"
+            }
+          },
+          "marketName": "Keegan Murray Rebounds Over/Under"
+        },
+        "points-KEEGAN_MURRAY_1_NBA-game-ou-over": {
+          "oddID": "points-KEEGAN_MURRAY_1_NBA-game-ou-over",
+          "opposingOddID": "points-KEEGAN_MURRAY_1_NBA-game-ou-under",
+          "marketName": "Keegan Murray Points Over/Under",
+          "statID": "points",
+          "statEntityID": "KEEGAN_MURRAY_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "KEEGAN_MURRAY_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+106",
+          "bookOdds": "-108",
+          "fairOverUnder": "15.5",
+          "bookOverUnder": "15.5",
+          "openFairOdds": "+106",
+          "openBookOdds": "-108",
+          "openFairOverUnder": "15.5",
+          "openBookOverUnder": "15.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-132",
+              "overUnder": "14.5",
+              "lastUpdatedAt": "2026-01-01T06:15:52.000Z",
+              "available": true,
+              "altLines": [
+                {
+                  "odds": "-560",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-01-01T06:15:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+260",
+                  "overUnder": "19.5",
+                  "lastUpdatedAt": "2026-01-01T06:15:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+800",
+                  "overUnder": "24.5",
+                  "lastUpdatedAt": "2026-01-01T06:15:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+2000",
+                  "overUnder": "29.5",
+                  "lastUpdatedAt": "2026-01-01T06:15:52.000Z",
+                  "available": true
+                }
+              ],
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.548266293&selectionId=43026005"
+            }
+          }
+        },
+        "points-KEEGAN_MURRAY_1_NBA-game-ou-under": {
+          "oddID": "points-KEEGAN_MURRAY_1_NBA-game-ou-under",
+          "opposingOddID": "points-KEEGAN_MURRAY_1_NBA-game-ou-over",
+          "marketName": "Keegan Murray Points Over/Under",
+          "statID": "points",
+          "statEntityID": "KEEGAN_MURRAY_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "KEEGAN_MURRAY_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-106",
+          "bookOdds": "-122",
+          "fairOverUnder": "15.5",
+          "bookOverUnder": "15.5",
+          "openFairOdds": "-106",
+          "openBookOdds": "-122",
+          "openFairOverUnder": "15.5",
+          "openBookOverUnder": "15.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+100",
+              "overUnder": "14.5",
+              "lastUpdatedAt": "2026-01-01T06:15:52.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.548266293&selectionId=43026003"
+            }
+          }
+        },
+        "rebounds-MAXIME_RAYNAUD_1_NBA-game-ou-over": {
+          "oddID": "rebounds-MAXIME_RAYNAUD_1_NBA-game-ou-over",
+          "opposingOddID": "rebounds-MAXIME_RAYNAUD_1_NBA-game-ou-under",
+          "marketName": "Maxime Raynaud Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "MAXIME_RAYNAUD_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "MAXIME_RAYNAUD_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+120",
+          "bookOdds": "+100",
+          "fairOverUnder": "8.5",
+          "bookOverUnder": "8.5",
+          "openFairOdds": "+120",
+          "openBookOdds": "+100",
+          "openFairOverUnder": "8.5",
+          "openBookOverUnder": "8.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-140",
+              "overUnder": "7.5",
+              "lastUpdatedAt": "2026-01-01T06:15:52.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.548266405&selectionId=52494482",
+              "altLines": [
+                {
+                  "odds": "-4000",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2026-01-01T06:15:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-480",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2026-01-01T06:15:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+168",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-01-01T06:15:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+430",
+                  "overUnder": "11.5",
+                  "lastUpdatedAt": "2026-01-01T06:15:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1000",
+                  "overUnder": "13.5",
+                  "lastUpdatedAt": "2026-01-01T06:15:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+2000",
+                  "overUnder": "15.5",
+                  "lastUpdatedAt": "2026-01-01T06:15:52.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "rebounds-MAXIME_RAYNAUD_1_NBA-game-ou-under": {
+          "oddID": "rebounds-MAXIME_RAYNAUD_1_NBA-game-ou-under",
+          "opposingOddID": "rebounds-MAXIME_RAYNAUD_1_NBA-game-ou-over",
+          "marketName": "Maxime Raynaud Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "MAXIME_RAYNAUD_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "MAXIME_RAYNAUD_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-120",
+          "bookOdds": "-145",
+          "fairOverUnder": "8.5",
+          "bookOverUnder": "8.5",
+          "openFairOdds": "-120",
+          "openBookOdds": "-145",
+          "openFairOverUnder": "8.5",
+          "openBookOverUnder": "8.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+108",
+              "overUnder": "7.5",
+              "lastUpdatedAt": "2026-01-01T06:15:49.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.548266405&selectionId=52494483"
+            }
+          }
+        },
+        "assists-DEMAR_DEROZAN_1_NBA-game-ou-over": {
+          "oddID": "assists-DEMAR_DEROZAN_1_NBA-game-ou-over",
+          "opposingOddID": "assists-DEMAR_DEROZAN_1_NBA-game-ou-under",
+          "marketName": "DeMar DeRozan Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "DEMAR_DEROZAN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "DEMAR_DEROZAN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-121",
+          "bookOdds": "-144",
+          "fairOverUnder": "3.5",
+          "bookOverUnder": "3.5",
+          "openFairOdds": "-121",
+          "openBookOdds": "-144",
+          "openFairOverUnder": "3.5",
+          "openBookOverUnder": "3.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-148",
+              "overUnder": "3.5",
+              "lastUpdatedAt": "2026-01-01T06:15:52.000Z",
+              "available": true,
+              "altLines": [
+                {
+                  "odds": "-1600",
+                  "overUnder": "1.5",
+                  "lastUpdatedAt": "2026-01-01T06:15:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+330",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2026-01-01T06:15:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1200",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2026-01-01T06:15:52.000Z",
+                  "available": true
+                }
+              ],
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.548266177&selectionId=12234472"
+            }
+          }
+        },
+        "assists-DEMAR_DEROZAN_1_NBA-game-ou-under": {
+          "oddID": "assists-DEMAR_DEROZAN_1_NBA-game-ou-under",
+          "opposingOddID": "assists-DEMAR_DEROZAN_1_NBA-game-ou-over",
+          "marketName": "DeMar DeRozan Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "DEMAR_DEROZAN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "DEMAR_DEROZAN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+121",
+          "bookOdds": "+105",
+          "fairOverUnder": "3.5",
+          "bookOverUnder": "3.5",
+          "openFairOdds": "+121",
+          "openBookOdds": "+105",
+          "openFairOverUnder": "3.5",
+          "openBookOverUnder": "3.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+112",
+              "overUnder": "3.5",
+              "lastUpdatedAt": "2026-01-01T06:15:52.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.548266177&selectionId=12234473"
+            }
+          }
+        },
+        "assists-KEEGAN_MURRAY_1_NBA-game-ou-over": {
+          "oddID": "assists-KEEGAN_MURRAY_1_NBA-game-ou-over",
+          "opposingOddID": "assists-KEEGAN_MURRAY_1_NBA-game-ou-under",
+          "marketName": "Keegan Murray Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "KEEGAN_MURRAY_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "KEEGAN_MURRAY_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+145",
+          "bookOdds": "+150",
+          "fairOverUnder": "1.5",
+          "bookOverUnder": "1.5",
+          "openFairOdds": "+145",
+          "openBookOdds": "+150",
+          "openFairOverUnder": "1.5",
+          "openBookOverUnder": "1.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        },
+        "assists-KEEGAN_MURRAY_1_NBA-game-ou-under": {
+          "oddID": "assists-KEEGAN_MURRAY_1_NBA-game-ou-under",
+          "opposingOddID": "assists-KEEGAN_MURRAY_1_NBA-game-ou-over",
+          "marketName": "Keegan Murray Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "KEEGAN_MURRAY_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "KEEGAN_MURRAY_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-145",
+          "bookOdds": "-137",
+          "fairOverUnder": "1.5",
+          "bookOverUnder": "1.5",
+          "openFairOdds": "-145",
+          "openBookOdds": "-137",
+          "openFairOverUnder": "1.5",
+          "openBookOverUnder": "1.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        },
+        "assists-MAXIME_RAYNAUD_1_NBA-game-ou-over": {
+          "oddID": "assists-MAXIME_RAYNAUD_1_NBA-game-ou-over",
+          "opposingOddID": "assists-MAXIME_RAYNAUD_1_NBA-game-ou-under",
+          "marketName": "Maxime Raynaud Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "MAXIME_RAYNAUD_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "MAXIME_RAYNAUD_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+151",
+          "bookOdds": "+156",
+          "fairOverUnder": "1.5",
+          "bookOverUnder": "1.5",
+          "openFairOdds": "+151",
+          "openBookOdds": "+156",
+          "openFairOverUnder": "1.5",
+          "openBookOverUnder": "1.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        },
+        "assists-MAXIME_RAYNAUD_1_NBA-game-ou-under": {
+          "oddID": "assists-MAXIME_RAYNAUD_1_NBA-game-ou-under",
+          "opposingOddID": "assists-MAXIME_RAYNAUD_1_NBA-game-ou-over",
+          "marketName": "Maxime Raynaud Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "MAXIME_RAYNAUD_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "MAXIME_RAYNAUD_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-151",
+          "bookOdds": "-144",
+          "fairOverUnder": "1.5",
+          "bookOverUnder": "1.5",
+          "openFairOdds": "-151",
+          "openBookOdds": "-144",
+          "openFairOverUnder": "1.5",
+          "openBookOverUnder": "1.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        },
+        "blocks-KEEGAN_MURRAY_1_NBA-game-ou-over": {
+          "oddID": "blocks-KEEGAN_MURRAY_1_NBA-game-ou-over",
+          "opposingOddID": "blocks-KEEGAN_MURRAY_1_NBA-game-ou-under",
+          "marketName": "Keegan Murray Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "KEEGAN_MURRAY_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "KEEGAN_MURRAY_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+150",
+          "bookOdds": "+131",
+          "fairOverUnder": "1.5",
+          "bookOverUnder": "1.5",
+          "openFairOdds": "+150",
+          "openBookOdds": "+131",
+          "openFairOverUnder": "1.5",
+          "openBookOverUnder": "1.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+138",
+              "overUnder": "1.5",
+              "lastUpdatedAt": "2026-01-01T06:15:52.000Z",
+              "available": true,
+              "altLines": [
+                {
+                  "odds": "-340",
+                  "overUnder": "0.5",
+                  "lastUpdatedAt": "2026-01-01T06:15:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+400",
+                  "overUnder": "2.5",
+                  "lastUpdatedAt": "2026-01-01T06:15:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1000",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2026-01-01T06:15:52.000Z",
+                  "available": true
+                }
+              ],
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.548267444&selectionId=43026005"
+            }
+          }
+        },
+        "blocks-KEEGAN_MURRAY_1_NBA-game-ou-under": {
+          "oddID": "blocks-KEEGAN_MURRAY_1_NBA-game-ou-under",
+          "opposingOddID": "blocks-KEEGAN_MURRAY_1_NBA-game-ou-over",
+          "marketName": "Keegan Murray Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "KEEGAN_MURRAY_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "KEEGAN_MURRAY_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-150",
+          "bookOdds": "-186",
+          "fairOverUnder": "1.5",
+          "bookOverUnder": "1.5",
+          "openFairOdds": "-150",
+          "openBookOdds": "-186",
+          "openFairOverUnder": "1.5",
+          "openBookOverUnder": "1.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-186",
+              "overUnder": "1.5",
+              "lastUpdatedAt": "2026-01-01T06:15:52.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.548267444&selectionId=43026003"
+            }
+          }
+        },
+        "blocks-MAXIME_RAYNAUD_1_NBA-game-ou-over": {
+          "oddID": "blocks-MAXIME_RAYNAUD_1_NBA-game-ou-over",
+          "opposingOddID": "blocks-MAXIME_RAYNAUD_1_NBA-game-ou-under",
+          "marketName": "Maxime Raynaud Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "MAXIME_RAYNAUD_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "MAXIME_RAYNAUD_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-110",
+          "bookOdds": "-128",
+          "fairOverUnder": "0.5",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "-110",
+          "openBookOdds": "-128",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        },
+        "blocks-MAXIME_RAYNAUD_1_NBA-game-ou-under": {
+          "oddID": "blocks-MAXIME_RAYNAUD_1_NBA-game-ou-under",
+          "opposingOddID": "blocks-MAXIME_RAYNAUD_1_NBA-game-ou-over",
+          "marketName": "Maxime Raynaud Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "MAXIME_RAYNAUD_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "MAXIME_RAYNAUD_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+110",
+          "bookOdds": "-105",
+          "fairOverUnder": "0.5",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "+110",
+          "openBookOdds": "-105",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        },
+        "rebounds-DEMAR_DEROZAN_1_NBA-game-ou-over": {
+          "oddID": "rebounds-DEMAR_DEROZAN_1_NBA-game-ou-over",
+          "opposingOddID": "rebounds-DEMAR_DEROZAN_1_NBA-game-ou-under",
+          "marketName": "DeMar DeRozan Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "DEMAR_DEROZAN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "DEMAR_DEROZAN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+125",
+          "bookOdds": "+110",
+          "fairOverUnder": "3.5",
+          "bookOverUnder": "3.5",
+          "openFairOdds": "+125",
+          "openBookOdds": "+110",
+          "openFairOverUnder": "3.5",
+          "openBookOverUnder": "3.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+118",
+              "overUnder": "3.5",
+              "lastUpdatedAt": "2026-01-01T06:15:52.000Z",
+              "available": true,
+              "altLines": [
+                {
+                  "odds": "+560",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2026-01-01T06:15:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1500",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2026-01-01T05:13:39.000Z",
+                  "available": false
+                }
+              ],
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.548266176&selectionId=12234472"
+            }
+          }
+        },
+        "rebounds-DEMAR_DEROZAN_1_NBA-game-ou-under": {
+          "oddID": "rebounds-DEMAR_DEROZAN_1_NBA-game-ou-under",
+          "opposingOddID": "rebounds-DEMAR_DEROZAN_1_NBA-game-ou-over",
+          "marketName": "DeMar DeRozan Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "DEMAR_DEROZAN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "DEMAR_DEROZAN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-125",
+          "bookOdds": "-148",
+          "fairOverUnder": "3.5",
+          "bookOverUnder": "3.5",
+          "openFairOdds": "-125",
+          "openBookOdds": "-148",
+          "openFairOverUnder": "3.5",
+          "openBookOverUnder": "3.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-154",
+              "overUnder": "3.5",
+              "lastUpdatedAt": "2026-01-01T06:15:49.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.548266176&selectionId=12234473"
+            }
+          }
+        },
+        "steals-DEMAR_DEROZAN_1_NBA-game-ou-over": {
+          "oddID": "steals-DEMAR_DEROZAN_1_NBA-game-ou-over",
+          "opposingOddID": "steals-DEMAR_DEROZAN_1_NBA-game-ou-under",
+          "marketName": "DeMar DeRozan Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "DEMAR_DEROZAN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "DEMAR_DEROZAN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+168",
+          "bookOdds": "+150",
+          "fairOverUnder": "1.5",
+          "bookOverUnder": "1.5",
+          "openFairOdds": "+168",
+          "openBookOdds": "+150",
+          "openFairOverUnder": "1.5",
+          "openBookOverUnder": "1.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+152",
+              "overUnder": "1.5",
+              "lastUpdatedAt": "2026-01-01T06:15:52.000Z",
+              "available": true,
+              "altLines": [
+                {
+                  "odds": "-330",
+                  "overUnder": "0.5",
+                  "lastUpdatedAt": "2026-01-01T06:15:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+450",
+                  "overUnder": "2.5",
+                  "lastUpdatedAt": "2026-01-01T06:15:52.000Z",
+                  "available": true
+                }
+              ],
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.548267276&selectionId=12234472"
+            }
+          }
+        },
+        "steals-DEMAR_DEROZAN_1_NBA-game-ou-under": {
+          "oddID": "steals-DEMAR_DEROZAN_1_NBA-game-ou-under",
+          "opposingOddID": "steals-DEMAR_DEROZAN_1_NBA-game-ou-over",
+          "marketName": "DeMar DeRozan Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "DEMAR_DEROZAN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "DEMAR_DEROZAN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-168",
+          "bookOdds": "-205",
+          "fairOverUnder": "1.5",
+          "bookOverUnder": "1.5",
+          "openFairOdds": "-168",
+          "openBookOdds": "-205",
+          "openFairOverUnder": "1.5",
+          "openBookOverUnder": "1.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-205",
+              "overUnder": "1.5",
+              "lastUpdatedAt": "2026-01-01T06:15:52.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.548267276&selectionId=12234473"
+            }
+          }
+        },
+        "blocks-DEMAR_DEROZAN_1_NBA-game-ou-over": {
+          "oddID": "blocks-DEMAR_DEROZAN_1_NBA-game-ou-over",
+          "opposingOddID": "blocks-DEMAR_DEROZAN_1_NBA-game-ou-under",
+          "marketName": "DeMar DeRozan Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "DEMAR_DEROZAN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "DEMAR_DEROZAN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+276",
+          "bookOdds": "+250",
+          "fairOverUnder": "0.5",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "+276",
+          "openBookOdds": "+250",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        },
+        "blocks-DEMAR_DEROZAN_1_NBA-game-ou-under": {
+          "oddID": "blocks-DEMAR_DEROZAN_1_NBA-game-ou-under",
+          "opposingOddID": "blocks-DEMAR_DEROZAN_1_NBA-game-ou-over",
+          "marketName": "DeMar DeRozan Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "DEMAR_DEROZAN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "DEMAR_DEROZAN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-276",
+          "fairOverUnder": "0.5",
+          "openFairOdds": "-276",
+          "openFairOverUnder": "0.5",
+          "scoringSupported": true,
+          "bookOdds": "-370",
+          "bookOverUnder": "0.5",
+          "byBookmaker": {},
+          "openBookOdds": "-370",
+          "openBookOverUnder": "0.5"
+        },
+        "steals-KEEGAN_MURRAY_1_NBA-game-ou-over": {
+          "oddID": "steals-KEEGAN_MURRAY_1_NBA-game-ou-over",
+          "opposingOddID": "steals-KEEGAN_MURRAY_1_NBA-game-ou-under",
+          "marketName": "Keegan Murray Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "KEEGAN_MURRAY_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "KEEGAN_MURRAY_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-170",
+          "bookOdds": "-200",
+          "fairOverUnder": "0.5",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "-170",
+          "openBookOdds": "-200",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-188",
+              "overUnder": "0.5",
+              "lastUpdatedAt": "2026-01-01T06:15:52.000Z",
+              "available": true,
+              "altLines": [
+                {
+                  "odds": "+240",
+                  "overUnder": "1.5",
+                  "lastUpdatedAt": "2026-01-01T06:15:52.000Z",
+                  "available": true
+                }
+              ],
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.548267270&selectionId=41472489"
+            }
+          }
+        },
+        "steals-KEEGAN_MURRAY_1_NBA-game-ou-under": {
+          "oddID": "steals-KEEGAN_MURRAY_1_NBA-game-ou-under",
+          "opposingOddID": "steals-KEEGAN_MURRAY_1_NBA-game-ou-over",
+          "marketName": "Keegan Murray Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "KEEGAN_MURRAY_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "KEEGAN_MURRAY_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+170",
+          "fairOverUnder": "0.5",
+          "openFairOdds": "+170",
+          "openFairOverUnder": "0.5",
+          "scoringSupported": true,
+          "bookOdds": "+155",
+          "bookOverUnder": "0.5",
+          "byBookmaker": {},
+          "openBookOdds": "+155",
+          "openBookOverUnder": "0.5"
+        },
+        "steals-MAXIME_RAYNAUD_1_NBA-game-ou-over": {
+          "oddID": "steals-MAXIME_RAYNAUD_1_NBA-game-ou-over",
+          "opposingOddID": "steals-MAXIME_RAYNAUD_1_NBA-game-ou-under",
+          "marketName": "Maxime Raynaud Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "MAXIME_RAYNAUD_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "MAXIME_RAYNAUD_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+120",
+          "bookOdds": "+105",
+          "fairOverUnder": "0.5",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "+120",
+          "openBookOdds": "+105",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        },
+        "steals-MAXIME_RAYNAUD_1_NBA-game-ou-under": {
+          "oddID": "steals-MAXIME_RAYNAUD_1_NBA-game-ou-under",
+          "opposingOddID": "steals-MAXIME_RAYNAUD_1_NBA-game-ou-over",
+          "marketName": "Maxime Raynaud Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "MAXIME_RAYNAUD_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "MAXIME_RAYNAUD_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-120",
+          "fairOverUnder": "0.5",
+          "openFairOdds": "-120",
+          "openFairOverUnder": "0.5",
+          "scoringSupported": true,
+          "bookOdds": "-141",
+          "bookOverUnder": "0.5",
+          "byBookmaker": {},
+          "openBookOdds": "-141",
+          "openBookOverUnder": "0.5"
+        },
+        "assists-DENNIS_SCHRODER_1_NBA-game-ou-over": {
+          "oddID": "assists-DENNIS_SCHRODER_1_NBA-game-ou-over",
+          "opposingOddID": "assists-DENNIS_SCHRODER_1_NBA-game-ou-under",
+          "statID": "assists",
+          "statEntityID": "DENNIS_SCHRODER_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "DENNIS_SCHRODER_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+112",
+          "bookOdds": "-101",
+          "fairOverUnder": "4.5",
+          "bookOverUnder": "4.5",
+          "openFairOdds": "+112",
+          "openBookOdds": "-101",
+          "openFairOverUnder": "4.5",
+          "openBookOverUnder": "4.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-106",
+              "overUnder": "4.5",
+              "lastUpdatedAt": "2026-01-01T06:15:52.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.548266720&selectionId=12257237",
+              "altLines": [
+                {
+                  "odds": "-2500",
+                  "overUnder": "1.5",
+                  "lastUpdatedAt": "2026-01-01T06:15:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-225",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2026-01-01T06:15:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+190",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2026-01-01T06:15:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+600",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2026-01-01T06:15:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1500",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-01-01T06:15:52.000Z",
+                  "available": true
+                }
+              ]
+            }
+          },
+          "marketName": "Dennis Schr\u00f6der Assists Over/Under"
+        },
+        "assists-DENNIS_SCHRODER_1_NBA-game-ou-under": {
+          "oddID": "assists-DENNIS_SCHRODER_1_NBA-game-ou-under",
+          "opposingOddID": "assists-DENNIS_SCHRODER_1_NBA-game-ou-over",
+          "statID": "assists",
+          "statEntityID": "DENNIS_SCHRODER_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "DENNIS_SCHRODER_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-112",
+          "bookOdds": "-130",
+          "fairOverUnder": "4.5",
+          "bookOverUnder": "4.5",
+          "openFairOdds": "-112",
+          "openBookOdds": "-130",
+          "openFairOverUnder": "4.5",
+          "openBookOverUnder": "4.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-125",
+              "overUnder": "4.5",
+              "lastUpdatedAt": "2026-01-01T06:15:52.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.548266720&selectionId=12257236"
+            }
+          },
+          "marketName": "Dennis Schr\u00f6der Assists Over/Under"
+        },
+        "points-DENNIS_SCHRODER_1_NBA-game-ou-over": {
+          "oddID": "points-DENNIS_SCHRODER_1_NBA-game-ou-over",
+          "opposingOddID": "points-DENNIS_SCHRODER_1_NBA-game-ou-under",
+          "statID": "points",
+          "statEntityID": "DENNIS_SCHRODER_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "DENNIS_SCHRODER_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+137",
+          "bookOdds": "-108",
+          "fairOverUnder": "12.5",
+          "bookOverUnder": "11.5",
+          "openFairOdds": "+137",
+          "openBookOdds": "-108",
+          "openFairOverUnder": "12.5",
+          "openBookOverUnder": "11.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-132",
+              "overUnder": "10.5",
+              "lastUpdatedAt": "2026-01-01T06:15:52.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.548266718&selectionId=12257237",
+              "altLines": [
+                {
+                  "odds": "-174",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-01-01T06:15:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+235",
+                  "overUnder": "14.5",
+                  "lastUpdatedAt": "2026-01-01T06:15:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+800",
+                  "overUnder": "19.5",
+                  "lastUpdatedAt": "2026-01-01T06:15:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+2000",
+                  "overUnder": "24.5",
+                  "lastUpdatedAt": "2026-01-01T06:15:52.000Z",
+                  "available": true
+                }
+              ]
+            }
+          },
+          "marketName": "Dennis Schr\u00f6der Points Over/Under"
+        },
+        "points-DENNIS_SCHRODER_1_NBA-game-ou-under": {
+          "oddID": "points-DENNIS_SCHRODER_1_NBA-game-ou-under",
+          "opposingOddID": "points-DENNIS_SCHRODER_1_NBA-game-ou-over",
+          "statID": "points",
+          "statEntityID": "DENNIS_SCHRODER_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "DENNIS_SCHRODER_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-137",
+          "bookOdds": "-124",
+          "fairOverUnder": "12.5",
+          "bookOverUnder": "11.5",
+          "openFairOdds": "-137",
+          "openBookOdds": "-124",
+          "openFairOverUnder": "12.5",
+          "openBookOverUnder": "11.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+100",
+              "overUnder": "10.5",
+              "lastUpdatedAt": "2026-01-01T06:15:52.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.548266718&selectionId=12257236"
+            }
+          },
+          "marketName": "Dennis Schr\u00f6der Points Over/Under"
+        },
+        "rebounds-DENNIS_SCHRODER_1_NBA-game-ou-over": {
+          "oddID": "rebounds-DENNIS_SCHRODER_1_NBA-game-ou-over",
+          "opposingOddID": "rebounds-DENNIS_SCHRODER_1_NBA-game-ou-under",
+          "statID": "rebounds",
+          "statEntityID": "DENNIS_SCHRODER_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "DENNIS_SCHRODER_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+313",
+          "bookOdds": "+285",
+          "fairOverUnder": "3.5",
+          "bookOverUnder": "3.5",
+          "openFairOdds": "+313",
+          "openBookOdds": "+285",
+          "openFairOverUnder": "3.5",
+          "openBookOverUnder": "3.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+285",
+              "overUnder": "3.5",
+              "lastUpdatedAt": "2026-01-01T06:15:52.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.548265722&selectionId=9237937"
+            }
+          },
+          "marketName": "Dennis Schr\u00f6der Rebounds Over/Under"
+        },
+        "rebounds-DENNIS_SCHRODER_1_NBA-game-ou-under": {
+          "oddID": "rebounds-DENNIS_SCHRODER_1_NBA-game-ou-under",
+          "opposingOddID": "rebounds-DENNIS_SCHRODER_1_NBA-game-ou-over",
+          "statID": "rebounds",
+          "statEntityID": "DENNIS_SCHRODER_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "DENNIS_SCHRODER_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": false,
+          "fairOddsAvailable": true,
+          "fairOdds": "-313",
+          "fairOverUnder": "3.5",
+          "openFairOdds": "-313",
+          "openFairOverUnder": "3.5",
+          "scoringSupported": true,
+          "marketName": "Dennis Schr\u00f6der Rebounds Over/Under"
+        },
+        "points-MALIK_MONK_1_NBA-game-ou-over": {
+          "oddID": "points-MALIK_MONK_1_NBA-game-ou-over",
+          "opposingOddID": "points-MALIK_MONK_1_NBA-game-ou-under",
+          "statID": "points",
+          "statEntityID": "MALIK_MONK_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "MALIK_MONK_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-115",
+          "bookOdds": "-133",
+          "fairOverUnder": "5.5",
+          "bookOverUnder": "5.5",
+          "openFairOdds": "-115",
+          "openBookOdds": "-133",
+          "openFairOverUnder": "5.5",
+          "openBookOverUnder": "5.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-136",
+              "overUnder": "5.5",
+              "lastUpdatedAt": "2026-01-01T06:15:52.000Z",
+              "available": true,
+              "altLines": [
+                {
+                  "odds": "-182",
+                  "overUnder": "4.5",
+                  "lastUpdatedAt": "2026-01-01T06:16:54.673Z",
+                  "available": true
+                },
+                {
+                  "odds": "+280",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-01-01T06:15:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1000",
+                  "overUnder": "14.5",
+                  "lastUpdatedAt": "2026-01-01T06:15:52.000Z",
+                  "available": true
+                }
+              ],
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.548266968&selectionId=22280387"
+            }
+          },
+          "marketName": "Malik Monk Points Over/Under"
+        },
+        "points-MALIK_MONK_1_NBA-game-ou-under": {
+          "oddID": "points-MALIK_MONK_1_NBA-game-ou-under",
+          "opposingOddID": "points-MALIK_MONK_1_NBA-game-ou-over",
+          "statID": "points",
+          "statEntityID": "MALIK_MONK_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "MALIK_MONK_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+115",
+          "fairOverUnder": "5.5",
+          "openFairOdds": "+115",
+          "openFairOverUnder": "5.5",
+          "scoringSupported": true,
+          "bookOdds": "+101",
+          "bookOverUnder": "5.5",
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+102",
+              "overUnder": "5.5",
+              "lastUpdatedAt": "2026-01-01T06:15:52.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.548266968&selectionId=22280388"
+            }
+          },
+          "marketName": "Malik Monk Points Over/Under",
+          "openBookOdds": "+101",
+          "openBookOverUnder": "5.5"
+        }
+      },
+      "results": {},
+      "players": {
+        "DERRICK_WHITE_1_NBA": {
+          "playerID": "DERRICK_WHITE_1_NBA",
+          "teamID": "BOSTON_CELTICS_NBA",
+          "firstName": "Derrick",
+          "lastName": "White",
+          "name": "Derrick White"
+        },
+        "JAYLEN_BROWN_1_NBA": {
+          "playerID": "JAYLEN_BROWN_1_NBA",
+          "teamID": "BOSTON_CELTICS_NBA",
+          "firstName": "Jaylen",
+          "lastName": "Brown",
+          "name": "Jaylen Brown"
+        },
+        "DEMAR_DEROZAN_1_NBA": {
+          "playerID": "DEMAR_DEROZAN_1_NBA",
+          "teamID": "SACRAMENTO_KINGS_NBA",
+          "firstName": "DeMar",
+          "lastName": "DeRozan",
+          "name": "DeMar DeRozan"
+        },
+        "RUSSELL_WESTBROOK_1_NBA": {
+          "playerID": "RUSSELL_WESTBROOK_1_NBA",
+          "teamID": "SACRAMENTO_KINGS_NBA",
+          "firstName": "Russell",
+          "lastName": "Westbrook",
+          "name": "Russell Westbrook"
+        },
+        "PAYTON_PRITCHARD_1_NBA": {
+          "playerID": "PAYTON_PRITCHARD_1_NBA",
+          "teamID": "BOSTON_CELTICS_NBA",
+          "firstName": "Payton",
+          "lastName": "Pritchard",
+          "name": "Payton Pritchard"
+        },
+        "NIQUE_CLIFFORD_1_NBA": {
+          "playerID": "NIQUE_CLIFFORD_1_NBA",
+          "teamID": "SACRAMENTO_KINGS_NBA",
+          "firstName": "Nique",
+          "lastName": "Clifford",
+          "name": "Nique Clifford"
+        },
+        "MAXIME_RAYNAUD_1_NBA": {
+          "playerID": "MAXIME_RAYNAUD_1_NBA",
+          "teamID": "SACRAMENTO_KINGS_NBA",
+          "firstName": "Maxime",
+          "lastName": "Raynaud",
+          "name": "Maxime Raynaud"
+        },
+        "KEEGAN_MURRAY_1_NBA": {
+          "playerID": "KEEGAN_MURRAY_1_NBA",
+          "teamID": "SACRAMENTO_KINGS_NBA",
+          "firstName": "Keegan",
+          "lastName": "Murray",
+          "name": "Keegan Murray"
+        },
+        "PRECIOUS_ACHIUWA_1_NBA": {
+          "playerID": "PRECIOUS_ACHIUWA_1_NBA",
+          "teamID": "SACRAMENTO_KINGS_NBA",
+          "firstName": "Precious",
+          "lastName": "Achiuwa",
+          "name": "Precious Achiuwa"
+        },
+        "NEEMIAS_QUETA_1_NBA": {
+          "playerID": "NEEMIAS_QUETA_1_NBA",
+          "teamID": "BOSTON_CELTICS_NBA",
+          "firstName": "Neemias",
+          "lastName": "Queta",
+          "name": "Neemias Queta"
+        },
+        "JORDAN_WALSH_1_NBA": {
+          "playerID": "JORDAN_WALSH_1_NBA",
+          "teamID": "BOSTON_CELTICS_NBA",
+          "firstName": "Jordan",
+          "lastName": "Walsh",
+          "name": "Jordan Walsh"
+        },
+        "ANFERNEE_SIMONS_1_NBA": {
+          "playerID": "ANFERNEE_SIMONS_1_NBA",
+          "teamID": "BOSTON_CELTICS_NBA",
+          "firstName": "Anfernee",
+          "lastName": "Simons",
+          "name": "Anfernee Simons"
+        },
+        "DENNIS_SCHRODER_1_NBA": {
+          "playerID": "DENNIS_SCHRODER_1_NBA",
+          "teamID": "SACRAMENTO_KINGS_NBA",
+          "firstName": "Dennis",
+          "lastName": "Schroder",
+          "name": "Dennis Schr\u00f6der"
+        },
+        "SAM_HAUSER_1_NBA": {
+          "playerID": "SAM_HAUSER_1_NBA",
+          "teamID": "BOSTON_CELTICS_NBA",
+          "firstName": "Sam",
+          "lastName": "Hauser",
+          "name": "Sam Hauser"
+        },
+        "MALIK_MONK_1_NBA": {
+          "playerID": "MALIK_MONK_1_NBA",
+          "teamID": "SACRAMENTO_KINGS_NBA",
+          "firstName": "Malik",
+          "lastName": "Monk",
+          "name": "Malik Monk"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,544 @@
+import os
+import re
+import json
+import time
+import random
+from datetime import datetime, timedelta
+
+import pandas as pd
+import numpy as np
+import requests
+
+# =====================================
+# SETTINGS
+# =====================================
+LEAGUE_NAME = "Premier League"
+COMP_ID = 9  # FBref comp id for Premier League
+DAYS_AHEAD = 3            # ✅ how many days forward to build slate for (1 = tomorrow only)
+START_OFFSET_DAYS = 1     # ✅ 0=today, 1=tomorrow, etc.
+NUM_GAMES = 10
+CACHE_GAMES = 15
+
+WINDOWS = [5, 10, 15]
+WINDOW_WEIGHTS = {5: 0.45, 10: 0.35, 15: 0.20}
+
+MIN_STARTER_AVG_MIN = 70  # avg minutes over last 8 matches
+
+REQUEST_SLEEP_RANGE = (0.8, 1.5)  # be kind to FBref
+
+OUT_DIR = "twitter_posts"
+CACHE_DIR = "soccer_cache/players"
+os.makedirs(OUT_DIR, exist_ok=True)
+os.makedirs(CACHE_DIR, exist_ok=True)
+
+# =====================================
+# STAT CONFIG
+# =====================================
+STAT_META = {
+    "shots": {
+        "label": "Shots",
+        "df_col": "shots",
+        "thresholds": [1, 2, 3, 4, 5],
+    },
+    "sot": {
+        "label": "SOT",
+        "df_col": "shots_on_target",
+        "thresholds": [1, 2],
+    },
+}
+STATS = list(STAT_META.keys())
+
+# =====================================
+# FBref URLs
+# =====================================
+PL_STATS_URL = f"https://fbref.com/en/comps/{COMP_ID}/Premier-League-Stats"
+PL_FIXTURES_URL = f"https://fbref.com/en/comps/{COMP_ID}/schedule/Premier-League-Scores-and-Fixtures"
+FBREF_BASE = "https://fbref.com"
+
+# =====================================
+# HTTP
+# =====================================
+HEADERS = {
+    "User-Agent": "Mozilla/5.0 (compatible; pl-shots-model/1.0)"
+}
+
+def _sleep():
+    time.sleep(random.uniform(*REQUEST_SLEEP_RANGE))
+
+def _safe(name: str) -> str:
+    return name.replace(" ", "_").replace(".", "").replace("'", "").replace("/", "_")
+
+# =====================================
+# CORE METRICS
+# =====================================
+def hit_rate(series, thr):
+    series = pd.to_numeric(series, errors="coerce").dropna()
+    if len(series) == 0:
+        return 0.0, 0, 0
+    hits = int((series >= thr).sum())
+    pct = hits / len(series) * 100
+    return round(pct, 1), hits, int(len(series))
+
+def multi_window_hit_rates(df, col, thr):
+    out = {}
+    series = pd.to_numeric(df[col], errors="coerce").dropna()
+
+    for w in WINDOWS:
+        sub = series.head(w)
+        if len(sub) < w:
+            out[w] = {"pct": 0.0, "hits": 0}
+            continue
+        hits = int((sub >= thr).sum())
+        out[w] = {"pct": round(hits / w * 100, 1), "hits": hits}
+    return out
+
+def stability_score(multi):
+    score = 0.0
+    for w, d in multi.items():
+        score += WINDOW_WEIGHTS[w] * (d["pct"] / 100.0)
+    return round(score, 3)
+
+def is_regular_starter(df):
+    mins = pd.to_numeric(df["MIN"], errors="coerce").dropna()
+    if mins.empty:
+        return False
+    return mins.head(8).mean() >= MIN_STARTER_AVG_MIN
+
+# =====================================
+# CACHE
+# =====================================
+def cache_path(player_name):
+    return os.path.join(CACHE_DIR, f"{_safe(player_name)}.json")
+
+def load_player_cache(player_name):
+    path = cache_path(player_name)
+    if not os.path.exists(path):
+        return pd.DataFrame()
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            data = json.load(f)
+        df = pd.DataFrame(data)
+        if not df.empty and "GAME_DATE" in df.columns:
+            df["GAME_DATE"] = pd.to_datetime(df["GAME_DATE"], errors="coerce")
+        return df
+    except:
+        return pd.DataFrame()
+
+def save_player_cache(player_name, df):
+    path = cache_path(player_name)
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(df.to_dict(orient="records"), f, indent=2, default=str)
+
+# =====================================
+# FBREF SCRAPING HELPERS (NO bs4 DEP REQUIRED)
+# We pull hrefs by regex from the page HTML and then use read_html for tables.
+# =====================================
+def fetch_html(url):
+    _sleep()
+    r = requests.get(url, headers=HEADERS, timeout=25)
+    r.raise_for_status()
+    return r.text
+
+def build_player_matchlogs_url(player_href):
+    """
+    player_href example:
+      /en/players/123abcde/Bukayo-Saka
+    We convert to:
+      https://fbref.com/en/players/123abcde/matchlogs/all_comps/summary/Bukayo-Saka-Match-Logs
+    """
+    # player_href ends with /<slug>
+    slug = player_href.strip("/").split("/")[-1]
+    pid = player_href.strip("/").split("/")[-2]
+    return f"{FBREF_BASE}/en/players/{pid}/matchlogs/all_comps/summary/{slug}-Match-Logs"
+
+def fetch_premier_league_player_index():
+    """
+    Returns list of dicts: {name, team, matchlogs_url}
+    Pulls from Premier League stats page, extracting player links + team names.
+    """
+    print("🔍 Fetching Premier League player index (FBref)...")
+    html = fetch_html(PL_STATS_URL)
+
+    # The standard stats table contains rows with player links: /en/players/<pid>/<slug>
+    # We'll extract all occurrences, then map to the rows from the table.
+    # NOTE: pandas read_html won't preserve links; we stitch via row order best-effort.
+    tables = pd.read_html(PL_STATS_URL)
+    if not tables:
+        raise RuntimeError("Could not read player stats table from FBref.")
+
+    # Heuristic: the first table on PL stats page is usually the "Standard Stats" player table.
+    df = tables[0].copy()
+    if "Player" not in df.columns or "Squad" not in df.columns:
+        # try to find a table that has Player & Squad
+        found = None
+        for t in tables:
+            if "Player" in t.columns and "Squad" in t.columns:
+                found = t.copy()
+                break
+        if found is None:
+            raise RuntimeError("Could not locate Player/Squad columns in FBref tables.")
+        df = found
+
+    # Extract player hrefs from html (unique, preserve order)
+    # FBref has many player links; we’ll keep those that look like /en/players/<id>/<slug>
+    hrefs = re.findall(r'href="(/en/players/[^"]+)"', html)
+    player_hrefs = []
+    seen = set()
+    for h in hrefs:
+        if h.count("/") < 4:
+            continue
+        if not re.match(r"^/en/players/[A-Za-z0-9]+/[A-Za-z0-9\-]+$", h):
+            continue
+        if h in seen:
+            continue
+        seen.add(h)
+        player_hrefs.append(h)
+
+    # Build a name->href map by matching slug to Player name (best-effort)
+    # FBref player slug uses hyphens; player name in table uses spaces.
+    slug_to_href = {}
+    for h in player_hrefs:
+        slug = h.split("/")[-1]  # Bukayo-Saka
+        slug_to_href[slug.lower()] = h
+
+    players = []
+    for _, row in df.iterrows():
+        name = str(row.get("Player", "")).strip()
+        team = str(row.get("Squad", "")).strip()
+        if not name or name == "nan" or not team or team == "nan":
+            continue
+
+        # Convert name -> slug for lookup
+        slug_guess = re.sub(r"\s+", "-", name).replace("’", "").replace("'", "").strip("-")
+        href = slug_to_href.get(slug_guess.lower())
+
+        # If not found, skip (keeps script robust)
+        if not href:
+            continue
+
+        matchlogs_url = build_player_matchlogs_url(href)
+        players.append({"name": name, "team": team, "matchlogs_url": matchlogs_url})
+
+    # Deduplicate by name+team
+    uniq = {}
+    for p in players:
+        key = (p["name"], p["team"])
+        if key not in uniq:
+            uniq[key] = p
+    players = list(uniq.values())
+
+    print(f"✅ Indexed {len(players)} PL players with matchlogs URLs.")
+    return players
+
+def fetch_player_matchlogs(matchlogs_url):
+    """
+    Reads FBref player matchlogs summary table.
+    Expected columns include Date, Min, Sh, SoT (varies a bit); we normalize.
+    """
+    _sleep()
+    tables = pd.read_html(matchlogs_url)
+    if not tables:
+        raise RuntimeError("No matchlog tables found.")
+
+    df = tables[0].copy()
+    df.columns = [str(c).strip().lower() for c in df.columns]
+
+    # Try common FBref column names
+    # Shots: 'sh' often, SOT: 'sot' often
+    col_map = {}
+
+    # Date
+    if "date" in df.columns:
+        col_map["date"] = "GAME_DATE"
+    else:
+        raise RuntimeError("No Date column in matchlogs table.")
+
+    # Minutes
+    if "min" in df.columns:
+        col_map["min"] = "MIN"
+    else:
+        # sometimes "minutes" etc.
+        for c in df.columns:
+            if "min" in c:
+                col_map[c] = "MIN"
+                break
+        if "MIN" not in col_map.values():
+            raise RuntimeError("No minutes column in matchlogs table.")
+
+    # Shots
+    if "sh" in df.columns:
+        col_map["sh"] = "shots"
+    elif "shots" in df.columns:
+        col_map["shots"] = "shots"
+    else:
+        # some tables use "sh" only; if not present, bail
+        raise RuntimeError("No shots column (Sh/Shots) in matchlogs table.")
+
+    # Shots on target
+    if "sot" in df.columns:
+        col_map["sot"] = "shots_on_target"
+    elif "shots on target" in df.columns:
+        col_map["shots on target"] = "shots_on_target"
+    else:
+        # Not all competitions have SOT in the same table; we can still run shots-only.
+        # We'll fill shots_on_target as NaN if missing.
+        pass
+
+    df = df.rename(columns=col_map)
+
+    # Ensure required columns exist
+    if "shots_on_target" not in df.columns:
+        df["shots_on_target"] = np.nan
+
+    df["GAME_DATE"] = pd.to_datetime(df["GAME_DATE"], errors="coerce")
+    df = df.dropna(subset=["GAME_DATE"])
+
+    # Keep only key cols
+    df = df[["GAME_DATE", "MIN", "shots", "shots_on_target"]].copy()
+    df = df.sort_values("GAME_DATE", ascending=False)
+    return df
+
+def get_recent_games_cached(player_name, matchlogs_url):
+    cached = load_player_cache(player_name)
+    try:
+        fresh = fetch_player_matchlogs(matchlogs_url).head(CACHE_GAMES)
+    except:
+        return cached.head(CACHE_GAMES)
+
+    if cached.empty:
+        combined = fresh
+    else:
+        combined = (
+            pd.concat([fresh, cached], ignore_index=True)
+            .drop_duplicates(subset="GAME_DATE")
+            .sort_values("GAME_DATE", ascending=False)
+            .head(CACHE_GAMES)
+        )
+
+    save_player_cache(player_name, combined)
+    return combined
+
+# =====================================
+# FIXTURES (MULTI-DAY)
+# =====================================
+def fetch_fixtures_df():
+    print("📅 Fetching Premier League fixtures (403-safe)...")
+
+    html = fetch_html(PL_FIXTURES_URL)  # uses requests + headers
+    tables = pd.read_html(html)
+
+    if not tables:
+        raise RuntimeError("No tables found on fixtures page.")
+
+    df = tables[0].copy()
+
+    if "Date" not in df.columns:
+        raise RuntimeError("Fixtures table missing Date column.")
+
+    df["Date"] = pd.to_datetime(df["Date"], errors="coerce").dt.date
+
+    keep = [c for c in ["Date", "Home", "Away", "Wk", "Time"] if c in df.columns]
+    df = df[keep].dropna(subset=["Date", "Home", "Away"])
+
+    return df
+
+
+def build_slate_by_date(start_offset_days=1, days_ahead=3):
+    fixtures = fetch_fixtures_df()
+
+    start_date = (datetime.now() + timedelta(days=start_offset_days)).date()
+    end_date = start_date + timedelta(days=days_ahead - 1)
+
+    window = fixtures[(fixtures["Date"] >= start_date) & (fixtures["Date"] <= end_date)].copy()
+    if window.empty:
+        return {}
+
+    slate = {}
+    for d, sub in window.groupby("Date"):
+        games = []
+        teams = set()
+        for _, r in sub.iterrows():
+            home = str(r["Home"]).strip()
+            away = str(r["Away"]).strip()
+            games.append(f"{away} @ {home}")
+            teams.add(home)
+            teams.add(away)
+        slate[d] = {"games": games, "teams": teams}
+
+    return slate
+
+# =====================================
+# PLAYER PROCESSING
+# =====================================
+def process_player(player, date_key=None):
+    """
+    Returns list of candidate rows for a given player.
+    date_key is optional (used only for display grouping).
+    """
+    name = player["name"]
+    team = player["team"]
+    url = player["matchlogs_url"]
+
+    df = get_recent_games_cached(name, url)
+    if df.empty or not is_regular_starter(df):
+        return []
+
+    df_eval = df.head(NUM_GAMES)
+    rows = []
+
+    for stat in STATS:
+        meta = STAT_META[stat]
+        col = meta["df_col"]
+
+        if col not in df_eval.columns:
+            continue
+
+        series = pd.to_numeric(df_eval[col], errors="coerce").dropna()
+        if series.empty:
+            continue
+
+        for thr in meta["thresholds"]:
+            pct, hits, total = hit_rate(series, thr)
+
+            # basic filter: keep only decent hit rates
+            if pct < 70 or total < min(8, NUM_GAMES):
+                continue
+
+            multi = multi_window_hit_rates(df, col, thr)
+            stab = stability_score(multi)
+
+            rows.append({
+                "date": date_key,
+                "team": team,
+                "player": name,
+                "stat": meta["label"],
+                "threshold": int(thr),
+                "hit_rate": pct,
+                "hits": hits,
+                "total": total,
+                "multi": multi,
+                "stability": stab,
+            })
+
+    return rows
+
+def short_player_name(full_name: str) -> str:
+    parts = full_name.split()
+    if len(parts) == 1:
+        return full_name
+    first = parts[0]
+    last = parts[-1]
+    return f"{first[0].upper()}. {last}"
+
+# =====================================
+# OUTPUT
+# =====================================
+def write_twitter_output(all_rows_by_date, slate_by_date):
+    if not all_rows_by_date:
+        print("No qualifying plays found.")
+        return
+
+    start_date = min(all_rows_by_date.keys())
+    end_date = max(all_rows_by_date.keys())
+    out_name = f"PL_{start_date}_to_{end_date}.txt"
+    path = os.path.join(OUT_DIR, out_name)
+
+    with open(path, "w", encoding="utf-8") as f:
+        f.write(f"⚽ {LEAGUE_NAME} — Shots & SOT Hit Rates\n")
+        f.write(f"Window: next {len(all_rows_by_date)} day(s) starting {start_date}\n\n")
+
+        for d in sorted(all_rows_by_date.keys()):
+            f.write(f"==============================\n")
+            f.write(f"{d} — Fixture Slate\n")
+            f.write(f"==============================\n")
+            for g in slate_by_date[d]["games"]:
+                f.write(f"• {g}\n")
+            f.write("\n")
+
+            rows = all_rows_by_date[d]
+            rows = sorted(rows, key=lambda r: (-r["stability"], -r["hit_rate"]))[:30]
+
+            f.write("🔥 Top Plays (Sorted by Stability)\n")
+            f.write("-----------------------------------\n")
+            for r in rows:
+                m = r["multi"]
+                short = short_player_name(r["player"])
+                f.write(
+                    f"{short} ({r['team']}) — {r['stat']} {r['threshold']}+ | "
+                    f"{r['hits']}/{r['total']} ({r['hit_rate']}%) | "
+                    f"L5 {m[5]['hits']}/5 L10 {m[10]['hits']}/10 L15 {m[15]['hits']}/15 | "
+                    f"Stab {r['stability']}\n"
+                )
+            f.write("\n\n")
+
+    print(f"📄 Output saved: {path}")
+
+# =====================================
+# MAIN
+# =====================================
+def main():
+    print("=======================================")
+    print("⚽ PL Shots/SOT Hit Rate Model (Multi-Day)")
+    print("=======================================")
+
+    # Build slate for upcoming days
+    slate_by_date = build_slate_by_date(
+        start_offset_days=START_OFFSET_DAYS,
+        days_ahead=DAYS_AHEAD
+    )
+
+    if not slate_by_date:
+        print("⚠️ No Premier League matches in the selected window.")
+        return
+
+    # Pull player index once
+    players = fetch_premier_league_player_index()
+    if not players:
+        print("⚠️ Could not build player index.")
+        return
+
+    all_rows_by_date = {}
+
+    for d, slate in sorted(slate_by_date.items()):
+        teams_playing = slate["teams"]
+        date_rows = []
+
+        print(f"\n📌 Processing slate for {d} ({len(teams_playing)} teams)...")
+
+        # Only evaluate players from teams playing that date
+        date_players = [p for p in players if p["team"] in teams_playing]
+
+        print(f"   Players to evaluate: {len(date_players)}")
+
+        for p in date_players:
+            try:
+                rows = process_player(p, date_key=d)
+                date_rows.extend(rows)
+            except Exception as e:
+                # keep moving; FBref occasionally changes a table
+                continue
+
+        # Optional: light de-dup (same player/stat/threshold)
+        seen = set()
+        unique = []
+        for r in date_rows:
+            k = (r["player"], r["stat"], r["threshold"])
+            if k in seen:
+                continue
+            seen.add(k)
+            unique.append(r)
+
+        all_rows_by_date[d] = unique
+
+    # Remove empty dates
+    all_rows_by_date = {d: rows for d, rows in all_rows_by_date.items() if rows}
+
+    if not all_rows_by_date:
+        print("No qualifying plays found for any day in the window.")
+        return
+
+    write_twitter_output(all_rows_by_date, slate_by_date)
+    print("✅ Done.")
+
+if __name__ == "__main__":
+    main()
