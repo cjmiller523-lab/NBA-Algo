@@ -209,16 +209,25 @@ def get_recent_games(player, url):
 # ==========================================================
 # ====================== SGO EVENTS ========================
 # ==========================================================
+from datetime import timezone, timedelta
+
 def get_sgo_soccer_events_today():
     print("📅 Fetching today's Premier League events (SGO)...")
+
+    # Build UTC date window for "today"
+    now = datetime.now(timezone.utc)
+    start = now.replace(hour=0, minute=0, second=0, microsecond=0)
+    end = start + timedelta(days=1)
 
     params = {
         "apiKey": SGO_API_KEY,
         "sportID": "SOCCER",
-        "leagueID": LEAGUE_ID,     # <-- REQUIRED
+        "leagueID": LEAGUE_ID,          # ENG_PR
         "oddsAvailable": "true",
         "bookmakerID": BOOKMAKER,
-        "limit": 200
+        "startsAfter": start.isoformat(),
+        "startsBefore": end.isoformat(),
+        "limit": 200,
     }
 
     r = requests.get(BASE_URL, params=params, timeout=25)
@@ -246,6 +255,7 @@ def get_sgo_soccer_events_today():
 
     print(f"✅ Found {len(events)} Premier League matches today")
     return events
+
 
 
 

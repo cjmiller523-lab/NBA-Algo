@@ -1,0 +1,307 @@
+import os
+import re
+import json
+import time
+import random
+from datetime import datetime, timedelta
+from io import StringIO
+
+import pandas as pd
+import numpy as np
+import requests
+
+# ==========================================================
+# ======================= SETTINGS =========================
+# ==========================================================
+NUM_GAMES = 10
+CACHE_GAMES = 15
+MIN_STARTER_AVG_MIN = 70
+
+START_OFFSET = 0      # 0=today, 1=tomorrow
+DAYS_AHEAD = 7        # scan next X days (soccer-friendly)
+
+WINDOWS = [5, 10, 15]
+WINDOW_WEIGHTS = {5: 0.45, 10: 0.35, 15: 0.20}
+
+REQUEST_SLEEP = (0.6, 1.2)
+
+OUT_DIR = "twitter_posts"
+CACHE_DIR = "soccer_cache/players"
+os.makedirs(OUT_DIR, exist_ok=True)
+os.makedirs(CACHE_DIR, exist_ok=True)
+
+HEADERS = {"User-Agent": "Mozilla/5.0"}
+
+# ==========================================================
+# ====================== STAT CONFIG =======================
+# ==========================================================
+STAT_META = {
+    "shots": {
+        "label": "Shots",
+        "df_col": "shots",
+        "thresholds": [1, 2, 3, 4, 5],
+    },
+    "sot": {
+        "label": "SOT",
+        "df_col": "shots_on_target",
+        "thresholds": [1, 2],
+    },
+}
+STATS = list(STAT_META.keys())
+
+# ==========================================================
+# ====================== UTILITIES =========================
+# ==========================================================
+def _sleep():
+    time.sleep(random.uniform(*REQUEST_SLEEP))
+
+def _safe(name):
+    return name.replace(" ", "_").replace(".", "").replace("'", "").replace("/", "_")
+
+def short_name(name):
+    p = name.split()
+    return name if len(p) < 2 else f"{p[0][0]}. {p[-1]}"
+
+def hit_rate(series, thr):
+    s = pd.to_numeric(series, errors="coerce").dropna()
+    if s.empty:
+        return 0.0, 0, 0
+    hits = int((s >= thr).sum())
+    return round(hits / len(s) * 100, 1), hits, len(s)
+
+def multi_window_hit_rates(df, col, thr):
+    out = {}
+    s = pd.to_numeric(df[col], errors="coerce").dropna()
+    for w in WINDOWS:
+        sub = s.head(w)
+        if len(sub) < w:
+            out[w] = {"hits": 0, "pct": 0.0}
+        else:
+            hits = int((sub >= thr).sum())
+            out[w] = {"hits": hits, "pct": round(hits / w * 100, 1)}
+    return out
+
+def stability_score(multi):
+    return round(sum(WINDOW_WEIGHTS[w] * (multi[w]["pct"] / 100) for w in WINDOWS), 3)
+
+def is_regular_starter(df):
+    mins = pd.to_numeric(df["MIN"], errors="coerce").dropna()
+    return not mins.empty and mins.head(8).mean() >= MIN_STARTER_AVG_MIN
+
+# ==========================================================
+# ====================== SEASON / FIXTURES =================
+# ==========================================================
+def current_season_folder():
+    today = datetime.now()
+    if today.month >= 8:
+        return f"{str(today.year)[-2:]}{str(today.year+1)[-2:]}"
+    else:
+        return f"{str(today.year-1)[-2:]}{str(today.year)[-2:]}"
+
+SEASON_FOLDER = current_season_folder()
+FIXTURES_URL = f"https://www.football-data.co.uk/mmz4281/{SEASON_FOLDER}/E0.csv"
+
+def fetch_fixtures():
+    print("📅 Fetching Premier League fixtures (football-data.co.uk)...")
+
+    r = requests.get(
+        FIXTURES_URL,
+        headers={"User-Agent": "Mozilla/5.0"},
+        allow_redirects=True,
+        timeout=20
+    )
+    r.raise_for_status()
+
+    df = pd.read_csv(StringIO(r.text))
+    df["Date"] = pd.to_datetime(df["Date"], dayfirst=True, errors="coerce").dt.date
+
+    wanted = {
+        datetime.now().date() + timedelta(days=i)
+        for i in range(START_OFFSET, START_OFFSET + DAYS_AHEAD)
+    }
+
+    slate = {}
+    for _, row in df.iterrows():
+        if row["Date"] not in wanted:
+            continue
+        slate.setdefault(row["Date"], []).append({
+            "home": row["HomeTeam"],
+            "away": row["AwayTeam"],
+            "label": f"{row['AwayTeam']} @ {row['HomeTeam']}"
+        })
+    print("DEBUG — upcoming fixture dates:")
+    print(sorted(df["Date"].dropna().unique())[:15])
+
+    return slate
+
+# ==========================================================
+# ====================== FBREF PLAYER DATA =================
+# ==========================================================
+FBREF_BASE = "https://fbref.com"
+STATS_URL = "https://fbref.com/en/comps/9/Premier-League-Stats"
+
+def fetch_html(url):
+    _sleep()
+    r = requests.get(url, headers=HEADERS, timeout=20)
+    r.raise_for_status()
+    return r.text
+
+def build_matchlogs_url(href):
+    pid = href.split("/")[-2]
+    slug = href.split("/")[-1]
+    return f"{FBREF_BASE}/en/players/{pid}/matchlogs/all_comps/summary/{slug}-Match-Logs"
+
+def fetch_player_index():
+    print("🔍 Building PL player index (FBref)...")
+    html = fetch_html(STATS_URL)
+    tables = pd.read_html(html)
+
+    df = next(t for t in tables if "Player" in t.columns and "Squad" in t.columns)
+
+    hrefs = re.findall(r'href="(/en/players/[^"]+)"', html)
+    href_map = {h.split("/")[-1].lower(): h for h in hrefs}
+
+    players = []
+    for _, r in df.iterrows():
+        name = str(r["Player"]).strip()
+        team = str(r["Squad"]).strip()
+        slug = name.replace(" ", "-").replace("'", "").lower()
+        if slug in href_map:
+            players.append({
+                "name": name,
+                "team": team,
+                "url": build_matchlogs_url(href_map[slug])
+            })
+
+    print(f"✅ Indexed {len(players)} players")
+    return players
+
+# ==========================================================
+# ====================== MATCH LOG CACHING =================
+# ==========================================================
+def cache_path(name):
+    return os.path.join(CACHE_DIR, f"{_safe(name)}.json")
+
+def load_cache(name):
+    if not os.path.exists(cache_path(name)):
+        return pd.DataFrame()
+    with open(cache_path(name)) as f:
+        df = pd.DataFrame(json.load(f))
+    df["GAME_DATE"] = pd.to_datetime(df["GAME_DATE"])
+    return df
+
+def save_cache(name, df):
+    with open(cache_path(name), "w") as f:
+        json.dump(df.to_dict(orient="records"), f, indent=2, default=str)
+
+def fetch_matchlogs(url):
+    df = pd.read_html(fetch_html(url))[0]
+    df.columns = [c.lower() for c in df.columns]
+
+    df = df.rename(columns={
+        "date": "GAME_DATE",
+        "min": "MIN",
+        "sh": "shots",
+        "sot": "shots_on_target",
+    })
+
+    df["GAME_DATE"] = pd.to_datetime(df["GAME_DATE"], errors="coerce")
+    return df[["GAME_DATE", "MIN", "shots", "shots_on_target"]].dropna(
+        subset=["GAME_DATE"]
+    ).sort_values("GAME_DATE", ascending=False)
+
+def get_recent_games(player):
+    cached = load_cache(player["name"])
+    try:
+        fresh = fetch_matchlogs(player["url"]).head(CACHE_GAMES)
+    except:
+        return cached.head(CACHE_GAMES)
+
+    combined = fresh if cached.empty else (
+        pd.concat([fresh, cached])
+        .drop_duplicates("GAME_DATE")
+        .sort_values("GAME_DATE", ascending=False)
+        .head(CACHE_GAMES)
+    )
+
+    save_cache(player["name"], combined)
+    return combined
+
+# ==========================================================
+# ========================= MAIN ===========================
+# ==========================================================
+def main():
+    print("=======================================")
+    print("⚽ PL Shots / SOT — FINAL MODEL")
+    print("=======================================")
+
+    slate = fetch_fixtures()
+    if not slate:
+        print("⚠️ No matches in window.")
+        return
+
+    players = fetch_player_index()
+
+    for date, games in slate.items():
+        teams = {g["home"] for g in games} | {g["away"] for g in games}
+        rows = []
+
+        for p in players:
+            if p["team"] not in teams:
+                continue
+
+            df = get_recent_games(p)
+            if df.empty or not is_regular_starter(df):
+                continue
+
+            for stat in STATS:
+                meta = STAT_META[stat]
+                for thr in meta["thresholds"]:
+                    pct, hits, total = hit_rate(
+                        df.head(NUM_GAMES)[meta["df_col"]],
+                        thr
+                    )
+                    if pct < 70 or total < 8:
+                        continue
+
+                    multi = multi_window_hit_rates(df, meta["df_col"], thr)
+                    rows.append({
+                        "player": p["name"],
+                        "team": p["team"],
+                        "stat": meta["label"],
+                        "threshold": thr,
+                        "hits": hits,
+                        "total": total,
+                        "hit_rate": pct,
+                        "multi": multi,
+                        "stability": stability_score(multi),
+                    })
+
+        if not rows:
+            continue
+
+        out = os.path.join(OUT_DIR, f"PL_{date}.txt")
+        with open(out, "w", encoding="utf-8") as f:
+            f.write(f"⚽ Premier League — {date}\n\n")
+            for g in games:
+                f.write(f"• {g['label']}\n")
+            f.write("\n")
+
+            for r in sorted(rows, key=lambda x: (-x["stability"], -x["hit_rate"]))[:25]:
+                m = r["multi"]
+                f.write(
+                    f"{short_name(r['player'])} ({r['team']}) — "
+                    f"{r['stat']} {r['threshold']}+ | "
+                    f"{r['hits']}/{r['total']} | "
+                    f"L5 {m[5]['hits']}/5 "
+                    f"L10 {m[10]['hits']}/10 "
+                    f"L15 {m[15]['hits']}/15 | "
+                    f"Stab {r['stability']}\n"
+                )
+
+        print(f"📄 Saved {out}")
+
+    print("\n✅ Done.")
+
+if __name__ == "__main__":
+    main()
