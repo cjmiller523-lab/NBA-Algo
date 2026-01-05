@@ -1,0 +1,23 @@
+import subprocess
+from datetime import date
+
+def run(cmd):
+    print(f"\n▶ Running: {cmd}")
+    result = subprocess.run(cmd, shell=True)
+    if result.returncode != 0:
+        print(f"❌ Failed: {cmd}")
+        exit(1)
+
+today = date.today().isoformat()
+
+# --- Your scripts ---
+run("python combined37")
+run("python nhlv11")
+run("python nhlgrowth1")
+
+# --- Git automation ---
+run("git add .")
+run(f'git commit -m "{today}"')
+run("git push")
+
+print("\n✅ ALL DONE — SAFE TO WALK AWAY")
