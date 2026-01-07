@@ -1,0 +1,455 @@
+import os
+import json
+import time
+import random
+from datetime import datetime
+from collections import defaultdict
+from io import StringIO
+
+import requests
+import pandas as pd
+
+# ==========================================================
+# ========================= MODE ===========================
+# ==========================================================
+# "LIST"  -> prints available competitions/seasons in StatsBomb open data
+# "RUN"   -> runs your model using the manual slate below
+MODE = "RUN"
+
+# ==========================================================
+# ======================= SETTINGS =========================
+# ==========================================================
+HIST_GAMES_PER_TEAM = 15     # last 15 matches per team (your request)
+NUM_GAMES = 10               # evaluation window for base hit-rate
+MIN_SAMPLE_GAMES = 8         # require at least this many games to grade
+MIN_STARTER_AVG_MIN = 60     # starter-ish filter (soccer-appropriate)
+MIN_HIT_RATE_PCT = 60.0      # soccer-appropriate (you can tighten later)
+
+WINDOWS = [5, 10, 15]
+WINDOW_WEIGHTS = {5: 0.45, 10: 0.35, 15: 0.20}
+
+REQUEST_SLEEP = (0.25, 0.7)
+
+OUT_DIR = "twitter_posts"
+CACHE_DIR = "soccer_cache/statsbomb"
+os.makedirs(OUT_DIR, exist_ok=True)
+os.makedirs(CACHE_DIR, exist_ok=True)
+
+# ==========================================================
+# ============ STATSBOMB OPEN DATA CONFIG ==================
+# ==========================================================
+# StatsBomb Open Data is a GitHub repo of JSON files:
+# competitions.json
+# matches/{competition_id}/{season_id}.json
+# events/{match_id}.json
+# lineups/{match_id}.json
+SB_BASE = "https://raw.githubusercontent.com/statsbomb/open-data/master/data"
+
+# You MUST set these after running MODE="LIST"
+# Example values depend on what's available in open data.
+COMPETITION_ID = 2   # placeholder
+SEASON_ID = 44       # placeholder
+
+# ==========================================================
+# ===================== MANUAL SLATE =======================
+# ==========================================================
+# Put tomorrow's games here. Team names MUST match StatsBomb names in matches JSON.
+# If they don't match exactly, this script includes fuzzy cleanup helpers.
+MANUAL_FIXTURES = [
+    {"label": "Tottenham @ Bournemouth", "home": "Bournemouth", "away": "Tottenham Hotspur"},
+    {"label": "Sunderland @ Brentford", "home": "Brentford", "away": "Sunderland"},
+    {"label": "Aston Villa @ Crystal Palace", "home": "Crystal Palace", "away": "Aston Villa"},
+    {"label": "Wolves @ Everton", "home": "Everton", "away": "Wolverhampton Wanderers"},
+    {"label": "Chelsea @ Fulham", "home": "Fulham", "away": "Chelsea"},
+    {"label": "Brighton @ Man City", "home": "Manchester City", "away": "Brighton & Hove Albion"},
+    {"label": "Man United @ Burnley", "home": "Burnley", "away": "Manchester United"},
+    {"label": "Leeds @ Newcastle", "home": "Newcastle United", "away": "Leeds United"},
+]
+
+# ==========================================================
+# ======================= UTILITIES =========================
+# ==========================================================
+def _sleep():
+    time.sleep(random.uniform(*REQUEST_SLEEP))
+
+def _safe(s: str) -> str:
+    return "".join(ch if ch.isalnum() or ch in ("-", "_") else "_" for ch in s)
+
+def short_name(name: str) -> str:
+    p = name.split()
+    return name if len(p) < 2 else f"{p[0][0]}. {p[-1]}"
+
+def stability_score(multi):
+    return round(sum(WINDOW_WEIGHTS[w] * (multi[w]["pct"] / 100) for w in WINDOWS), 3)
+
+def multi_window_hit_rates(values, thr):
+    out = {}
+    for w in WINDOWS:
+        sub = values[:w]
+        if len(sub) < w:
+            out[w] = {"hits": 0, "pct": 0.0}
+        else:
+            hits = sum(v >= thr for v in sub)
+            out[w] = {"hits": hits, "pct": round(hits / w * 100, 1)}
+    return out
+
+def is_regular_starter(minutes_list):
+    mins = [m for m in minutes_list if isinstance(m, (int, float))]
+    if len(mins) < 5:
+        return False
+    return (sum(mins[:8]) / len(mins[:8])) >= MIN_STARTER_AVG_MIN
+
+def sb_cache_path(kind, key):
+    return os.path.join(CACHE_DIR, kind, f"{key}.json")
+
+def sb_load(kind, key):
+    path = sb_cache_path(kind, key)
+    if not os.path.exists(path):
+        return None
+    with open(path, "r", encoding="utf-8") as f:
+        return json.load(f)
+
+def sb_save(kind, key, data):
+    folder = os.path.join(CACHE_DIR, kind)
+    os.makedirs(folder, exist_ok=True)
+    path = sb_cache_path(kind, key)
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(data, f, indent=2)
+
+def sb_get_json(url, kind=None, key=None):
+    # cached GET
+    if kind and key:
+        cached = sb_load(kind, key)
+        if cached is not None:
+            return cached
+    _sleep()
+    r = requests.get(url, timeout=25)
+    r.raise_for_status()
+    data = r.json()
+    if kind and key:
+        sb_save(kind, key, data)
+    return data
+
+# ==========================================================
+# ============== STATSBOMB DATA LOADERS ====================
+# ==========================================================
+def list_competitions():
+    comps_url = f"{SB_BASE}/competitions.json"
+    comps = sb_get_json(comps_url, kind="meta", key="competitions")
+    df = pd.DataFrame(comps)
+
+    # show useful subset
+    cols = [c for c in ["competition_id", "season_id", "competition_name", "country_name", "season_name"] if c in df.columns]
+    df2 = df[cols].copy() if cols else df
+    print("\n=== AVAILABLE COMPETITIONS / SEASONS (StatsBomb Open Data) ===")
+    print(df2.sort_values(["competition_name", "season_name"]).to_string(index=False))
+    print("\nPick COMPETITION_ID and SEASON_ID from above, set MODE='RUN', rerun.\n")
+
+def load_matches(competition_id, season_id):
+    matches_url = f"{SB_BASE}/matches/{competition_id}/{season_id}.json"
+    key = f"matches_{competition_id}_{season_id}"
+    matches = sb_get_json(matches_url, kind="matches", key=key)
+    return pd.DataFrame(matches)
+
+def load_events(match_id):
+    events_url = f"{SB_BASE}/events/{match_id}.json"
+    key = f"events_{match_id}"
+    return sb_get_json(events_url, kind="events", key=key)
+
+def load_lineups(match_id):
+    lineups_url = f"{SB_BASE}/lineups/{match_id}.json"
+    key = f"lineups_{match_id}"
+    return sb_get_json(lineups_url, kind="lineups", key=key)
+
+# ==========================================================
+# ==================== SOCCER LOGIC ========================
+# ==========================================================
+def normalize_team_name(name: str) -> str:
+    # minimal normalization (keep it conservative)
+    return name.strip()
+
+def build_team_last_matches(matches_df, team_name, n=15):
+    team_name = normalize_team_name(team_name)
+
+    def _team_in_row(row):
+        try:
+            h = row.get("home_team", {}).get("home_team_name")
+            a = row.get("away_team", {}).get("away_team_name")
+            return (h == team_name) or (a == team_name)
+        except Exception:
+            return False
+
+    # StatsBomb matches rows have nested dicts; ensure parsed
+    # matches_df loaded from JSON already as dict-like objects in columns
+    rows = []
+    for _, r in matches_df.iterrows():
+        if _team_in_row(r):
+            match_id = r.get("match_id")
+            match_date = r.get("match_date")  # YYYY-MM-DD
+            competition_stage = (r.get("competition_stage") or {}).get("name", "")
+            rows.append((match_date, match_id, competition_stage))
+
+    rows = [x for x in rows if x[0] and x[1]]
+    rows.sort(key=lambda x: x[0])  # chronological
+    return rows[-n:]  # last n
+
+def compute_minutes_from_lineups(lineups_json):
+    """
+    Returns:
+      minutes_by_player_id: {player_id: minutes_played}
+      name_by_player_id:    {player_id: player_name}
+      team_by_player_id:    {player_id: team_name}
+    """
+    minutes = {}
+    names = {}
+    teams = {}
+
+    # lineups_json is list of teams
+    for team_block in lineups_json:
+        team_name = team_block.get("team_name")
+        for pl in team_block.get("lineup", []):
+            pid = pl.get("player_id")
+            pname = pl.get("player_name")
+            if pid is None:
+                continue
+
+            names[pid] = pname
+            teams[pid] = team_name
+
+            # Positions list contains "from" and "to" timestamps
+            # We'll approximate minutes by summing (to-from) across segments.
+            total_min = 0.0
+            segments = pl.get("positions", []) or []
+            if not segments:
+                # if no segments, assume played 0
+                minutes[pid] = 0
+                continue
+
+            for seg in segments:
+                frm = seg.get("from")  # "00:00:00"
+                to = seg.get("to")     # "90:00:00" or None
+                if not frm:
+                    continue
+
+                def t_to_min(t):
+                    if not t:
+                        return 90.0
+                    parts = t.split(":")
+                    if len(parts) != 3:
+                        return 90.0
+                    h, m, s = parts
+                    return float(h) * 60.0 + float(m) + float(s) / 60.0
+
+                fmin = t_to_min(frm)
+                tmin = t_to_min(to)
+                if tmin < fmin:
+                    continue
+                total_min += (tmin - fmin)
+
+            minutes[pid] = int(round(total_min))
+
+    return minutes, names, teams
+
+def is_shot_on_target(shot_outcome_name: str) -> bool:
+    # StatsBomb shot outcomes: Goal, Saved, Off T, Blocked, Wayward, Post, Saved to Post
+    # On target typically includes Goal, Saved, Saved to Post.
+    if not shot_outcome_name:
+        return False
+    return shot_outcome_name in ("Goal", "Saved", "Saved to Post")
+
+def build_player_game_logs_for_match(match_id):
+    """
+    Returns list of per-player records for this match:
+      {player_id, player_name, team_name, minutes, shots, sot}
+    """
+    events = load_events(match_id)
+    lineups = load_lineups(match_id)
+
+    mins_by_pid, name_by_pid, team_by_pid = compute_minutes_from_lineups(lineups)
+
+    # count shots & SOT from events
+    shots_by_pid = defaultdict(int)
+    sot_by_pid = defaultdict(int)
+
+    for e in events:
+        if e.get("type", {}).get("name") != "Shot":
+            continue
+        pid = e.get("player", {}).get("id")
+        if pid is None:
+            continue
+        shots_by_pid[pid] += 1
+
+        outcome = (e.get("shot", {}).get("outcome") or {}).get("name")
+        if is_shot_on_target(outcome):
+            sot_by_pid[pid] += 1
+
+    records = []
+    for pid, mins in mins_by_pid.items():
+        records.append({
+            "match_id": match_id,
+            "player_id": pid,
+            "player_name": name_by_pid.get(pid, f"Player {pid}"),
+            "team": team_by_pid.get(pid, "Unknown"),
+            "minutes": mins,
+            "shots": shots_by_pid.get(pid, 0),
+            "sot": sot_by_pid.get(pid, 0),
+        })
+
+    return records
+
+def cache_player_logs_from_matches(match_ids):
+    """
+    Builds/updates local cache:
+      soccer_cache/statsbomb/player_logs/{player_id}.json
+    Each record keyed by match_id (dedupe).
+    """
+    for mid in match_ids:
+        print(f"   📥 match {mid} events/lineups...")
+        recs = build_player_game_logs_for_match(mid)
+
+        for r in recs:
+            pid = str(r["player_id"])
+            cached = sb_load("player_logs", pid) or []
+            existing = {str(x.get("match_id")) for x in cached}
+
+            if str(r["match_id"]) not in existing:
+                cached.insert(0, r)
+
+            # keep most recent 25
+            sb_save("player_logs", pid, cached[:25])
+
+def load_player_log(pid: str):
+    return sb_load("player_logs", str(pid)) or []
+
+# ==========================================================
+# ========================= RUN ============================
+# ==========================================================
+def run_model():
+    print("=======================================")
+    print("⚽ Shots / SOT — StatsBomb (Manual Slate)")
+    print("=======================================")
+
+    # 1) Load matches for the competition/season you selected
+    matches_df = load_matches(COMPETITION_ID, SEASON_ID)
+
+    # 2) Build team list from manual slate
+    slate_teams = set()
+    for g in MANUAL_FIXTURES:
+        slate_teams.add(normalize_team_name(g["home"]))
+        slate_teams.add(normalize_team_name(g["away"]))
+
+    # 3) Collect last 15 matches per team
+    all_match_ids = set()
+    for t in sorted(slate_teams):
+        last_rows = build_team_last_matches(matches_df, t, n=HIST_GAMES_PER_TEAM)
+        print(f"📦 {t}: found {len(last_rows)} matches in dataset")
+        for d, mid, stage in last_rows:
+            all_match_ids.add(mid)
+
+    if not all_match_ids:
+        print("⚠️ No historical matches found for your slate teams in this StatsBomb competition/season.")
+        print("   Switch MODE='LIST' to pick a dataset that includes those teams.")
+        return
+
+    # 4) Cache player logs from those matches (one-time heavy step)
+    print(f"\n🔄 Caching player logs from {len(all_match_ids)} unique matches...")
+    cache_player_logs_from_matches(sorted(all_match_ids))
+
+    # 5) Score players (restrict to teams in tomorrow’s slate)
+    rows = []
+
+    # collect all cached player ids from cache folder
+    player_cache_dir = os.path.join(CACHE_DIR, "player_logs")
+    if not os.path.exists(player_cache_dir):
+        print("⚠️ No player logs cached.")
+        return
+
+    for fn in os.listdir(player_cache_dir):
+        if not fn.endswith(".json"):
+            continue
+        pid = fn.replace(".json", "")
+        games = load_player_log(pid)
+
+        # filter to only games where the player’s team is in slate_teams
+        games = [g for g in games if g.get("team") in slate_teams]
+
+        # sort by match recency (we don’t always have match_date, so trust cache insertion order)
+        # take up to 15
+        games = games[:15]
+
+        if len(games) < MIN_SAMPLE_GAMES:
+            continue
+
+        minutes_list = [g.get("minutes", 0) for g in games]
+        if not is_regular_starter(minutes_list):
+            continue
+
+        # most recent first
+        shots_vals = [int(g.get("shots", 0)) for g in games[:NUM_GAMES]]
+        sot_vals = [int(g.get("sot", 0)) for g in games[:NUM_GAMES]]
+
+        # player meta
+        pname = games[0].get("player_name", f"Player {pid}")
+        team = games[0].get("team", "Unknown")
+
+        # thresholds
+        for label, values, thresholds in [
+            ("Shots", shots_vals, [1, 2, 3, 4]),
+            ("SOT", sot_vals, [1, 2]),
+        ]:
+            for thr in thresholds:
+                if len(values) < MIN_SAMPLE_GAMES:
+                    continue
+                hits = sum(v >= thr for v in values)
+                pct = round(hits / len(values) * 100, 1)
+                if pct < MIN_HIT_RATE_PCT:
+                    continue
+
+                multi = multi_window_hit_rates(values, thr)
+                rows.append({
+                    "player": pname,
+                    "team": team,
+                    "stat": label,
+                    "thr": thr,
+                    "hits": hits,
+                    "total": len(values),
+                    "multi": multi,
+                    "stability": stability_score(multi),
+                })
+
+    if not rows:
+        print("\n⚠️ No qualifying props (after filters).")
+        print("   Try lowering MIN_HIT_RATE_PCT to 55 or MIN_STARTER_AVG_MIN to 55 for soccer variance.")
+        return
+
+    # 6) Output
+    out = os.path.join(OUT_DIR, "SB_manual.txt")
+    with open(out, "w", encoding="utf-8") as f:
+        f.write("⚽ Soccer — StatsBomb Open Data (Manual Slate)\n\n")
+        for g in MANUAL_FIXTURES:
+            f.write(f"• {g['label']}\n")
+        f.write("\n")
+
+        for r in sorted(rows, key=lambda x: (-x["stability"], -x["hits"]))[:25]:
+            m = r["multi"]
+            f.write(
+                f"{short_name(r['player'])} ({r['team']}) — "
+                f"{r['stat']} {r['thr']}+ | "
+                f"{r['hits']}/{r['total']} | "
+                f"L5 {m[5]['hits']}/5 "
+                f"L10 {m[10]['hits']}/10 "
+                f"L15 {m[15]['hits']}/15 | "
+                f"Stab {r['stability']}\n"
+            )
+
+    print(f"\n📄 Saved {out}")
+    print("✅ Done.")
+
+def main():
+    if MODE.upper() == "LIST":
+        list_competitions()
+    else:
+        run_model()
+
+if __name__ == "__main__":
+    main()

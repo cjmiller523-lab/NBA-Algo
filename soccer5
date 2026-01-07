@@ -1,0 +1,311 @@
+import os
+import time
+import json
+import random
+from collections import defaultdict
+
+import requests
+import pandas as pd
+
+# ==========================================================
+# ======================= CONFIG ===========================
+# ==========================================================
+API_KEY = os.getenv("API_FOOTBALL_KEY")
+if not API_KEY:
+    raise RuntimeError("API_FOOTBALL_KEY env var not set")
+
+BASE_URL = "https://v3.football.api-sports.io"
+LEAGUE_ID = 39        # Premier League
+SEASON = 2024        # 2025–26 season
+
+NUM_GAMES = 10
+MIN_STARTER_AVG_MIN = 70
+
+WINDOWS = [5, 10, 15]
+WINDOW_WEIGHTS = {5: 0.45, 10: 0.35, 15: 0.20}
+
+REQUEST_SLEEP = (0.4, 0.8)
+
+OUT_DIR = "twitter_posts"
+CACHE_DIR = "soccer_cache/api_players"
+os.makedirs(OUT_DIR, exist_ok=True)
+os.makedirs(CACHE_DIR, exist_ok=True)
+
+HEADERS = {
+    "x-apisports-key": API_KEY
+}
+
+# ==========================================================
+# ===================== MANUAL SLATE =======================
+# ==========================================================
+# ==========================================================
+# ===================== MANUAL SLATE =======================
+# ==========================================================
+# Fixture + Team IDs from API-Football (one-time lookup)
+
+MANUAL_FIXTURES = [
+    {
+        "fixture_id": 1035046,
+        "label": "Tottenham @ Bournemouth",
+        "home_id": 35,   # Bournemouth
+        "away_id": 47    # Tottenham
+    },
+    {
+        "fixture_id": 1035047,
+        "label": "Sunderland @ Brentford",
+        "home_id": 55,   # Brentford
+        "away_id": 71    # Sunderland
+    },
+    {
+        "fixture_id": 1035048,
+        "label": "Aston Villa @ Crystal Palace",
+        "home_id": 52,   # Crystal Palace
+        "away_id": 66    # Aston Villa
+    },
+    {
+        "fixture_id": 1035049,
+        "label": "Wolves @ Everton",
+        "home_id": 45,   # Everton
+        "away_id": 39    # Wolves
+    },
+    {
+        "fixture_id": 1035050,
+        "label": "Chelsea @ Fulham",
+        "home_id": 36,   # Fulham
+        "away_id": 49    # Chelsea
+    },
+    {
+        "fixture_id": 1035051,
+        "label": "Brighton @ Man City",
+        "home_id": 50,   # Man City
+        "away_id": 51    # Brighton
+    },
+    {
+        "fixture_id": 1035052,
+        "label": "Man United @ Burnley",
+        "home_id": 44,   # Burnley
+        "away_id": 33    # Man United
+    },
+    {
+        "fixture_id": 1035053,
+        "label": "Leeds @ Newcastle",
+        "home_id": 34,   # Newcastle
+        "away_id": 63    # Leeds
+    },
+]
+
+
+# ==========================================================
+# ======================= UTIL =============================
+# ==========================================================
+def _sleep():
+    time.sleep(random.uniform(*REQUEST_SLEEP))
+
+def api_get(endpoint, params):
+    _sleep()
+    r = requests.get(
+        f"{BASE_URL}{endpoint}",
+        headers=HEADERS,
+        params=params,
+        timeout=20
+    )
+    r.raise_for_status()
+    return r.json()["response"]
+
+def cache_path(pid):
+    return os.path.join(CACHE_DIR, f"{pid}.json")
+
+def load_cache(pid):
+    if not os.path.exists(cache_path(pid)):
+        return []
+    with open(cache_path(pid)) as f:
+        return json.load(f)
+
+def save_cache(pid, data):
+    with open(cache_path(pid), "w") as f:
+        json.dump(data, f, indent=2)
+
+def stability_score(multi):
+    return round(sum(WINDOW_WEIGHTS[w] * (multi[w]["pct"] / 100) for w in WINDOWS), 3)
+
+def multi_window(values, thr):
+    out = {}
+    for w in WINDOWS:
+        sub = values[:w]
+        if len(sub) < w:
+            out[w] = {"hits": 0, "pct": 0.0}
+        else:
+            hits = sum(v >= thr for v in sub)
+            out[w] = {"hits": hits, "pct": round(hits / w * 100, 1)}
+    return out
+
+def backfill_team_history(team_id, team_name, max_games=15):
+    """
+    Pull last N fixtures for a team across ALL competitions
+    """
+    print(f"📦 Backfilling {team_name} (last {max_games})")
+
+    fixtures = api_get(
+        "/fixtures",
+        {
+            "team": team_id,
+            "last": max_games
+        }
+    )
+
+    print(f"   ↳ found {len(fixtures)} fixtures")
+
+    for fx in fixtures:
+        fid = fx["fixture"]["id"]
+        teams = api_get("/fixtures/players", {"fixture": fid})
+
+        for team in teams:
+            for p in team["players"]:
+                stats = p["statistics"][0]
+                minutes = stats["games"]["minutes"]
+
+                if not minutes:
+                    continue
+
+                pid = p["player"]["id"]
+
+                record = {
+                    "fixture_id": fid,
+                    "minutes": minutes,
+                    "shots": stats["shots"]["total"] or 0,
+                    "sot": stats["shots"]["on"] or 0
+                }
+
+                cached = load_cache(pid)
+                existing_ids = {g["fixture_id"] for g in cached}
+
+                if record["fixture_id"] not in existing_ids:
+                    cached.insert(0, record)
+
+                save_cache(pid, cached[:20])
+
+
+def main():
+    print("=======================================")
+    print("⚽ PL Shots / SOT — MANUAL SLATE MODEL")
+    print("=======================================")
+
+    # --------------------------------------------------
+    # 1️⃣ BACKFILL LAST 15 MATCHES PER TEAM (ONCE)
+    # --------------------------------------------------
+    seen_teams = set()
+
+    for fx in MANUAL_FIXTURES:
+        for tid in (fx["home_id"], fx["away_id"]):
+            if tid not in seen_teams:
+                backfill_team_history(
+                    team_id=tid,
+                    team_name=f"Team {tid}",
+                    max_games=15
+                )
+                seen_teams.add(tid)
+
+    # --------------------------------------------------
+    # 2️⃣ PROCESS TOMORROW'S FIXTURES
+    # --------------------------------------------------
+    player_logs = defaultdict(list)
+
+    for fx in MANUAL_FIXTURES:
+        print(f"🔍 Processing {fx['label']}")
+        teams = api_get("/fixtures/players", {"fixture": fx["fixture_id"]})
+
+        for team in teams:
+            for p in team["players"]:
+                stats = p["statistics"][0]
+                minutes = stats["games"]["minutes"]
+
+                if not minutes:
+                    continue
+
+                pid = p["player"]["id"]
+                record = {
+                    "fixture_id": fx["fixture_id"],
+                    "minutes": minutes,
+                    "shots": stats["shots"]["total"] or 0,
+                    "sot": stats["shots"]["on"] or 0
+                }
+
+                player_logs[pid].append(record)
+
+    # --------------------------------------------------
+    # 3️⃣ MERGE WITH CACHE + APPLY MODEL
+    # --------------------------------------------------
+    rows = []
+
+    for pid, new_games in player_logs.items():
+        cached = load_cache(pid)
+        existing_ids = {g["fixture_id"] for g in cached}
+        for g in new_games:
+            if g["fixture_id"] not in existing_ids:
+                cached.insert(0, g)
+
+        save_cache(pid, cached[:20])
+        combined = cached
+
+        mins = [g["minutes"] for g in combined[:8]]
+        if not mins or sum(mins) / len(mins) < MIN_STARTER_AVG_MIN:
+            continue
+
+        shots = [g["shots"] for g in combined[:NUM_GAMES]]
+        sots = [g["sot"] for g in combined[:NUM_GAMES]]
+
+        for label, values, thresholds in [
+            ("Shots", shots, [1, 2, 3, 4]),
+            ("SOT", sots, [1, 2]),
+        ]:
+            for thr in thresholds:
+                if len(values) < 4:
+                    continue
+
+                hits = sum(v >= thr for v in values)
+                pct = hits / len(values) * 100
+
+                if pct < 60:
+                    continue
+
+                multi = multi_window(values, thr)
+
+                rows.append({
+                    "player_id": pid,
+                    "stat": label,
+                    "thr": thr,
+                    "hits": hits,
+                    "total": len(values),
+                    "multi": multi,
+                    "stability": stability_score(multi),
+                })
+
+    # --------------------------------------------------
+    # 4️⃣ OUTPUT
+    # --------------------------------------------------
+    if not rows:
+        print("⚠️ No qualifying props.")
+        return
+
+    out = os.path.join(OUT_DIR, "PL_manual.txt")
+    with open(out, "w", encoding="utf-8") as f:
+        f.write("⚽ Premier League — Manual Slate\n\n")
+        for fx in MANUAL_FIXTURES:
+            f.write(f"• {fx['label']}\n")
+        f.write("\n")
+
+        for r in sorted(rows, key=lambda x: (-x["stability"], -x["hits"]))[:25]:
+            m = r["multi"]
+            f.write(
+                f"Player {r['player_id']} — {r['stat']} {r['thr']}+ | "
+                f"{r['hits']}/{r['total']} | "
+                f"L5 {m[5]['hits']}/5 "
+                f"L10 {m[10]['hits']}/10 "
+                f"L15 {m[15]['hits']}/15 | "
+                f"Stab {r['stability']}\n"
+            )
+
+    print(f"📄 Saved {out}")
+    print("✅ Done.")
+if __name__ == "__main__":
+    main()
