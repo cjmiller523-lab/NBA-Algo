@@ -80,47 +80,55 @@ def player_cache_path(player):
 # ==========================================================
 # TENNISABSTRACT — TODAY'S MATCHES
 # ==========================================================
+from bs4 import BeautifulSoup
+import requests
+
+import requests
+import time
+
 def get_todays_matches():
     matches = []
 
-    urls = [
-        ("ATP", "https://www.tennisabstract.com/cgi-bin/scores.cgi"),
-        ("WTA", "https://www.tennisabstract.com/cgi-bin/wta-scores.cgi"),
-    ]
+    url = "https://www.flashscore.com/x/feed/f_4_0_3_en_1"
 
-    session = requests.Session()
-    session.headers.update({
+    headers = {
         "User-Agent": (
             "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
             "AppleWebKit/537.36 (KHTML, like Gecko) "
             "Chrome/121.0.0.0 Safari/537.36"
         ),
-        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-        "Accept-Language": "en-US,en;q=0.9",
-        "Connection": "keep-alive",
-    })
+        "X-Requested-With": "XMLHttpRequest",
+        "Accept": "*/*",
+        "Referer": "https://www.flashscore.com/tennis/"
+    }
 
-    for tour, url in urls:
-        resp = session.get(url, timeout=20)
-        html = resp.text
+    resp = requests.get(url, headers=headers, timeout=20)
+    text = resp.text
 
-        try:
-            tables = pd.read_html(StringIO(html))
-        except ValueError:
-            # ✅ This is NORMAL on days with no matches
-            print(f"[INFO] No {tour} matches found today.")
+    # Flashscore uses ~ as a delimiter
+    rows = text.split("~")
+
+    for r in rows:
+        # singles only
+        if "TENNIS" not in r:
             continue
 
-        for df in tables:
-            if not {"Winner", "Loser", "Surface"}.issubset(df.columns):
-                continue
+        # player delimiter: ¬AA / ¬AB
+        if "¬AA" not in r or "¬AB" not in r:
+            continue
 
-            for _, r in df.iterrows():
-                matches.append({
-                    "player_a": r["Winner"],
-                    "player_b": r["Loser"],
-                    "surface": normalize_surface(r["Surface"])
-                })
+        try:
+            p1 = r.split("¬AA")[1].split("¬")[0]
+            p2 = r.split("¬AB")[1].split("¬")[0]
+        except:
+            continue
+
+        # crude surface default (Australia swing = hard)
+        matches.append({
+            "player_a": p1,
+            "player_b": p2,
+            "surface": "Hard"
+        })
 
     return matches
 

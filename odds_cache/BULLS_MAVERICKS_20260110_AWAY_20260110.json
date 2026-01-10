@@ -1,0 +1,3214 @@
+{
+  "nextCursor": "n.1768093200000.TpdzkIUzHdJ48VXu4AF1",
+  "success": true,
+  "data": [
+    {
+      "eventID": "TpdzkIUzHdJ48VXu4AF1",
+      "sportID": "BASKETBALL",
+      "leagueID": "NBA",
+      "type": "match",
+      "teams": {
+        "home": {
+          "teamID": "CHICAGO_BULLS_NBA",
+          "names": {
+            "long": "Chicago Bulls",
+            "medium": "Bulls",
+            "short": "CHI",
+            "location": "Chicago"
+          },
+          "colors": {
+            "primary": "#CE1141",
+            "secondary": "#000000",
+            "primaryContrast": "#FFFFFF",
+            "secondaryContrast": "#CE1141"
+          },
+          "statEntityID": "home"
+        },
+        "away": {
+          "teamID": "DALLAS_MAVERICKS_NBA",
+          "names": {
+            "long": "Dallas Mavericks",
+            "medium": "Mavericks",
+            "short": "DAL",
+            "location": "Dallas"
+          },
+          "colors": {
+            "primary": "#007DC5",
+            "secondary": "#20385B",
+            "primaryContrast": "#000000",
+            "secondaryContrast": "#007DC5"
+          },
+          "statEntityID": "away"
+        }
+      },
+      "status": {
+        "started": false,
+        "completed": false,
+        "cancelled": false,
+        "ended": false,
+        "live": false,
+        "delayed": false,
+        "currentPeriodID": "",
+        "previousPeriodID": "",
+        "displayShort": "",
+        "displayLong": "Upcoming",
+        "inBreak": false,
+        "startsAt": "2026-01-11T01:00:00.000Z",
+        "previousStartsAt": [],
+        "hardStart": true,
+        "periods": {
+          "started": [],
+          "ended": []
+        },
+        "oddsPresent": true,
+        "oddsAvailable": true,
+        "finalized": false
+      },
+      "info": {
+        "seasonWeek": "NBA 25/26"
+      },
+      "links": {
+        "bookmakers": {
+          "fanduel": "https://sportsbook.fanduel.com/basketball/-/35126474",
+          "sportsbet": "https://www.sportsbet.com.au/betting/basketball---us/nba/dallas-mavericks-at-chicago-bulls-10021781",
+          "ladbrokes": "https://www.ladbrokes.com.au/sports/-/-/-/fe1f8aa4-4e02-4a31-9786-372b488aa04b",
+          "neds": "https://www.neds.com.au/sports/-/-/-/fe1f8aa4-4e02-4a31-9786-372b488aa04b",
+          "paddypower": "https://www.paddypower.com/basketball/nba/dallas-mavericks-@-chicago-bulls-35126474",
+          "boombet": "https://www.boombet.com.au/sport-menu/Sport/Basketball/NBA/39646930",
+          "boylesports": "https://www.boylesports.com/sports/basketball/event/usa-nba/chicago-bulls-v-dallas-mavericks",
+          "pointsbet": "https://pointsbet.com.au/sports/basketball/NBA/2563214",
+          "1xbet": "https://1xbet.com/en/line/football/13589-nba/296010031-chicago-bulls-dallas-mavericks",
+          "fliff": "https://sports.getfliff.com/markets/358306_c_p_204_prematch",
+          "williamhill": "https://sports.williamhill.com/betting/en-gb/basketball/OB_EV38315869/dallas-mavericks-at-chicago-bulls",
+          "betonline": "https://sports.betonline.ag/sportsbook/basketball/nba/game/490931218",
+          "lowvig": "https://sports.lowvig.ag/sportsbook/basketball/nba/game/490931218",
+          "888sport": "https://www.888sport.com/basketball/united-states-of-america/nba/dallas-mavericks-chicago-bulls-e-6960522",
+          "betrsportsbook": "https://www.betr.com.au/sports/Basketball/107/United-States-of-America/NBA/Dallas-Mavericks-@-Chicago-Bulls/1951216/All-Markets",
+          "coolbet": "https://www.coolbet.com/en/sports/match/4872220",
+          "matchbook": "https://www.matchbook.com/events/basketball/united-states-of-america/nba/32204994235900045",
+          "betsson": "https://www.betsson.com/en/sportsbook/basketball/nba/nba?eventId=f-fX8mP6_h9kmxbnjA9CgOdA",
+          "hardrockbet": "https://app.hardrock.bet/home/competition/nba/3334678996477280507",
+          "nordicbet": "https://www.nordicbet.com/en/sportsbook/basketball/nba/nba/chicago-bulls-dallas-mavericks",
+          "playup": "https://www.playup.com.au/betting/sports/nba/chicago-bulls-v-dallas-mavericks/1772929",
+          "draftkings": "https://sportsbook.draftkings.com/event/33427745",
+          "tab": "https://www.tab.com.au/sports/betting/Basketball/competitions/NBA/matches/Chicago%20v%20Dallas",
+          "caesars": "https://sportsbook.caesars.com/us/nj/bet/basketball/dc692310-4380-4b04-ad7a-eed8cafc6787/dallas-mavericks-at-chicago-bulls",
+          "espnbet": "https://espnbet.com/sport/basketball/organization/united-states/competition/nba/event/5a30806e-1858-45c0-85a0-dcaaeb91f87f",
+          "thescorebet": "https://thescore.bet/sport/basketball/organization/united-states/competition/nba/event/5a30806e-1858-45c0-85a0-dcaaeb91f87f",
+          "betparx": "https://nj.betparx.com/kambi#event/1024653017",
+          "casumo": "https://www.casumo.com/en-gb/sports#event/1024653017",
+          "ballybet": "https://play.ballybet.com/sports#event/1024653017",
+          "betrivers": "https://nj.betrivers.com/?page=sportsbook#event/1024653017",
+          "grosvenor": "https://www.grosvenorcasinos.com/sport#event/1024653017",
+          "leovegas": "https://www.leovegas.co.uk/betting#event/1024653017",
+          "livescorebet": "https://www.livescorebet.com/uk/sports/basketball/nba/chicago-bulls-dallas-mavericks/SBTE_2_1024653017",
+          "tabtouch": "https://www.tabtouch.mobi/tabtouch-sports/event/1024653017",
+          "unibet": "https://www.unibet.com/betting/sports/event/1024653017",
+          "virginbet": "https://www.virginbet.com/sports/basketball/nba/chicago-bulls-dallas-mavericks/SBTE_2_1024653017",
+          "betmgm": "https://sports.nj.betmgm.com/en/sports/events/18705588",
+          "coral": "https://sports.coral.co.uk/event/basketball/basketball-usa/nba/chi-bulls-v-dal-mavericks/41285472",
+          "betfairsportsbook": "https://www.betfair.com/betting/basketball/nba/dallas-mavericks-@-chicago-bulls/e-35126474",
+          "bovada": "https://www.bovada.lv/sports/basketball/nba/dallas-mavericks-chicago-bulls-202601102000",
+          "pinnacle": "https://www.pinnacle.com/en/basketball/nba/dallas-mavericks-vs-chicago-bulls/1621991626",
+          "betway": "https://betway.com/en/sports/evt/16226956",
+          "everygame": "https://sports.everygame.eu/en/Bets/Basketball/NBA-Lines/Dallas-Mavericks-at-Chicago-Bulls/2777245"
+        }
+      },
+      "odds": {
+        "assists-C_FLAGG_1_NBA-game-ou-over": {
+          "oddID": "assists-C_FLAGG_1_NBA-game-ou-over",
+          "opposingOddID": "assists-C_FLAGG_1_NBA-game-ou-under",
+          "marketName": "Cooper Flagg Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "C_FLAGG_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "C_FLAGG_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+122",
+          "bookOdds": "+108",
+          "fairOverUnder": "5.5",
+          "bookOverUnder": "5.5",
+          "openFairOdds": "+122",
+          "openBookOdds": "+108",
+          "openFairOverUnder": "5.5",
+          "openBookOverUnder": "5.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+112",
+              "overUnder": "5.5",
+              "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.549785525&selectionId=75811240",
+              "altLines": [
+                {
+                  "odds": "-1400",
+                  "overUnder": "2.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-420",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-188",
+                  "overUnder": "4.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+200",
+                  "overUnder": "6.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+350",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+900",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+2000",
+                  "overUnder": "11.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "assists-C_FLAGG_1_NBA-game-ou-under": {
+          "oddID": "assists-C_FLAGG_1_NBA-game-ou-under",
+          "opposingOddID": "assists-C_FLAGG_1_NBA-game-ou-over",
+          "marketName": "Cooper Flagg Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "C_FLAGG_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "C_FLAGG_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-122",
+          "bookOdds": "-143",
+          "fairOverUnder": "5.5",
+          "bookOverUnder": "5.5",
+          "openFairOdds": "-122",
+          "openBookOdds": "-143",
+          "openFairOverUnder": "5.5",
+          "openBookOverUnder": "5.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-142",
+              "overUnder": "5.5",
+              "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.549785525&selectionId=75811222",
+              "altLines": [
+                {
+                  "odds": "+280",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+140",
+                  "overUnder": "4.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-280",
+                  "overUnder": "6.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-550",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-1200",
+                  "overUnder": "8.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "assists-DANIEL_GAFFORD_1_NBA-game-ou-over": {
+          "oddID": "assists-DANIEL_GAFFORD_1_NBA-game-ou-over",
+          "opposingOddID": "assists-DANIEL_GAFFORD_1_NBA-game-ou-under",
+          "marketName": "Daniel Gafford Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "DANIEL_GAFFORD_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "DANIEL_GAFFORD_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-120",
+          "bookOdds": "-142",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "-120",
+          "openBookOdds": "-142",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {},
+          "fairOverUnder": "0.5",
+          "openFairOverUnder": "0.5"
+        },
+        "assists-DANIEL_GAFFORD_1_NBA-game-ou-under": {
+          "oddID": "assists-DANIEL_GAFFORD_1_NBA-game-ou-under",
+          "opposingOddID": "assists-DANIEL_GAFFORD_1_NBA-game-ou-over",
+          "marketName": "Daniel Gafford Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "DANIEL_GAFFORD_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "DANIEL_GAFFORD_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+120",
+          "openFairOdds": "+120",
+          "scoringSupported": true,
+          "fairOverUnder": "0.5",
+          "openFairOverUnder": "0.5",
+          "bookOdds": "+105",
+          "bookOverUnder": "0.5",
+          "byBookmaker": {},
+          "openBookOdds": "+105",
+          "openBookOverUnder": "0.5"
+        },
+        "assists-KLAY_THOMPSON_1_NBA-game-ou-over": {
+          "oddID": "assists-KLAY_THOMPSON_1_NBA-game-ou-over",
+          "opposingOddID": "assists-KLAY_THOMPSON_1_NBA-game-ou-under",
+          "marketName": "Klay Thompson Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "KLAY_THOMPSON_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "KLAY_THOMPSON_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-108",
+          "bookOdds": "-125",
+          "fairOverUnder": "1.5",
+          "bookOverUnder": "1.5",
+          "openFairOdds": "-108",
+          "openBookOdds": "-125",
+          "openFairOverUnder": "1.5",
+          "openBookOverUnder": "1.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        },
+        "assists-KLAY_THOMPSON_1_NBA-game-ou-under": {
+          "oddID": "assists-KLAY_THOMPSON_1_NBA-game-ou-under",
+          "opposingOddID": "assists-KLAY_THOMPSON_1_NBA-game-ou-over",
+          "marketName": "Klay Thompson Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "KLAY_THOMPSON_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "KLAY_THOMPSON_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+108",
+          "fairOverUnder": "1.5",
+          "openFairOdds": "+108",
+          "openFairOverUnder": "1.5",
+          "scoringSupported": true,
+          "bookOdds": "-105",
+          "bookOverUnder": "1.5",
+          "byBookmaker": {},
+          "openBookOdds": "-105",
+          "openBookOverUnder": "1.5"
+        },
+        "assists-MAX_CHRISTIE_1_NBA-game-ou-over": {
+          "oddID": "assists-MAX_CHRISTIE_1_NBA-game-ou-over",
+          "opposingOddID": "assists-MAX_CHRISTIE_1_NBA-game-ou-under",
+          "marketName": "Max Christie Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "MAX_CHRISTIE_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "MAX_CHRISTIE_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+105",
+          "bookOdds": "-109",
+          "fairOverUnder": "2.5",
+          "bookOverUnder": "2.5",
+          "openFairOdds": "+105",
+          "openBookOdds": "-109",
+          "openFairOverUnder": "2.5",
+          "openBookOverUnder": "2.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-110",
+              "overUnder": "2.5",
+              "lastUpdatedAt": "2026-01-10T21:27:28.969Z",
+              "available": false,
+              "altLines": [
+                {
+                  "odds": "-330",
+                  "overUnder": "1.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+235",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1060",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "assists-MAX_CHRISTIE_1_NBA-game-ou-under": {
+          "oddID": "assists-MAX_CHRISTIE_1_NBA-game-ou-under",
+          "opposingOddID": "assists-MAX_CHRISTIE_1_NBA-game-ou-over",
+          "marketName": "Max Christie Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "MAX_CHRISTIE_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "MAX_CHRISTIE_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-105",
+          "bookOdds": "-122",
+          "fairOverUnder": "2.5",
+          "bookOverUnder": "2.5",
+          "openFairOdds": "-105",
+          "openBookOdds": "-122",
+          "openFairOverUnder": "2.5",
+          "openBookOverUnder": "2.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-120",
+              "overUnder": "2.5",
+              "lastUpdatedAt": "2026-01-10T21:27:28.969Z",
+              "available": false
+            }
+          }
+        },
+        "assists-NAJI_MARSHALL_1_NBA-game-ou-over": {
+          "oddID": "assists-NAJI_MARSHALL_1_NBA-game-ou-over",
+          "opposingOddID": "assists-NAJI_MARSHALL_1_NBA-game-ou-under",
+          "marketName": "Naji Marshall Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "NAJI_MARSHALL_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "NAJI_MARSHALL_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+134",
+          "bookOdds": "+119",
+          "fairOverUnder": "3.5",
+          "bookOverUnder": "3.5",
+          "openFairOdds": "+134",
+          "openBookOdds": "+119",
+          "openFairOverUnder": "3.5",
+          "openBookOverUnder": "3.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+118",
+              "overUnder": "3.5",
+              "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.549785527&selectionId=39295949",
+              "altLines": [
+                {
+                  "odds": "-700",
+                  "overUnder": "1.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-220",
+                  "overUnder": "2.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+250",
+                  "overUnder": "4.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+520",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1700",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "assists-NAJI_MARSHALL_1_NBA-game-ou-under": {
+          "oddID": "assists-NAJI_MARSHALL_1_NBA-game-ou-under",
+          "opposingOddID": "assists-NAJI_MARSHALL_1_NBA-game-ou-over",
+          "marketName": "Naji Marshall Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "NAJI_MARSHALL_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "NAJI_MARSHALL_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-134",
+          "bookOdds": "-159",
+          "fairOverUnder": "3.5",
+          "bookOverUnder": "3.5",
+          "openFairOdds": "-134",
+          "openBookOdds": "-159",
+          "openFairOverUnder": "3.5",
+          "openBookOverUnder": "3.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-150",
+              "overUnder": "3.5",
+              "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.549785527&selectionId=39295948",
+              "altLines": [
+                {
+                  "odds": "+410",
+                  "overUnder": "1.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+162",
+                  "overUnder": "2.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-360",
+                  "overUnder": "4.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-1000",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "blocks-C_FLAGG_1_NBA-game-ou-over": {
+          "oddID": "blocks-C_FLAGG_1_NBA-game-ou-over",
+          "opposingOddID": "blocks-C_FLAGG_1_NBA-game-ou-under",
+          "marketName": "Cooper Flagg Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "C_FLAGG_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "C_FLAGG_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+159",
+          "bookOdds": "+165",
+          "fairOverUnder": "1.5",
+          "bookOverUnder": "1.5",
+          "openFairOdds": "+159",
+          "openBookOdds": "+165",
+          "openFairOverUnder": "1.5",
+          "openBookOverUnder": "1.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        },
+        "blocks-C_FLAGG_1_NBA-game-ou-under": {
+          "oddID": "blocks-C_FLAGG_1_NBA-game-ou-under",
+          "opposingOddID": "blocks-C_FLAGG_1_NBA-game-ou-over",
+          "marketName": "Cooper Flagg Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "C_FLAGG_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "C_FLAGG_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-159",
+          "fairOverUnder": "1.5",
+          "openFairOdds": "-159",
+          "openFairOverUnder": "1.5",
+          "scoringSupported": true,
+          "bookOdds": "-150",
+          "bookOverUnder": "1.5",
+          "byBookmaker": {},
+          "openBookOdds": "-150",
+          "openBookOverUnder": "1.5"
+        },
+        "blocks-DANIEL_GAFFORD_1_NBA-game-ou-over": {
+          "oddID": "blocks-DANIEL_GAFFORD_1_NBA-game-ou-over",
+          "opposingOddID": "blocks-DANIEL_GAFFORD_1_NBA-game-ou-under",
+          "marketName": "Daniel Gafford Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "DANIEL_GAFFORD_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "DANIEL_GAFFORD_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "-140",
+          "fairOverUnder": "2",
+          "bookOverUnder": "1.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "-140",
+          "openFairOverUnder": "2",
+          "openBookOverUnder": "1.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-138",
+              "overUnder": "1.5",
+              "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.549813852&selectionId=27543227",
+              "altLines": [
+                {
+                  "odds": "-700",
+                  "overUnder": "0.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+225",
+                  "overUnder": "2.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+630",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "blocks-DANIEL_GAFFORD_1_NBA-game-ou-under": {
+          "oddID": "blocks-DANIEL_GAFFORD_1_NBA-game-ou-under",
+          "opposingOddID": "blocks-DANIEL_GAFFORD_1_NBA-game-ou-over",
+          "marketName": "Daniel Gafford Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "DANIEL_GAFFORD_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "DANIEL_GAFFORD_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "fairOverUnder": "2",
+          "openFairOdds": "+100",
+          "openFairOverUnder": "2",
+          "scoringSupported": true,
+          "bookOdds": "+100",
+          "bookOverUnder": "1.5",
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+104",
+              "overUnder": "1.5",
+              "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.549813852&selectionId=27543228"
+            }
+          },
+          "openBookOdds": "+100",
+          "openBookOverUnder": "1.5"
+        },
+        "blocks-KLAY_THOMPSON_1_NBA-game-ou-over": {
+          "oddID": "blocks-KLAY_THOMPSON_1_NBA-game-ou-over",
+          "opposingOddID": "blocks-KLAY_THOMPSON_1_NBA-game-ou-under",
+          "marketName": "Klay Thompson Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "KLAY_THOMPSON_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "KLAY_THOMPSON_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+233",
+          "bookOdds": "+210",
+          "fairOverUnder": "0.5",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "+233",
+          "openBookOdds": "+210",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        },
+        "blocks-KLAY_THOMPSON_1_NBA-game-ou-under": {
+          "oddID": "blocks-KLAY_THOMPSON_1_NBA-game-ou-under",
+          "opposingOddID": "blocks-KLAY_THOMPSON_1_NBA-game-ou-over",
+          "marketName": "Klay Thompson Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "KLAY_THOMPSON_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "KLAY_THOMPSON_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-233",
+          "fairOverUnder": "0.5",
+          "openFairOdds": "-233",
+          "openFairOverUnder": "0.5",
+          "scoringSupported": true,
+          "bookOdds": "-303",
+          "bookOverUnder": "0.5",
+          "byBookmaker": {},
+          "openBookOdds": "-303",
+          "openBookOverUnder": "0.5"
+        },
+        "blocks-MAX_CHRISTIE_1_NBA-game-ou-over": {
+          "oddID": "blocks-MAX_CHRISTIE_1_NBA-game-ou-over",
+          "opposingOddID": "blocks-MAX_CHRISTIE_1_NBA-game-ou-under",
+          "marketName": "Max Christie Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "MAX_CHRISTIE_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "MAX_CHRISTIE_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+163",
+          "bookOdds": "+145",
+          "fairOverUnder": "0.5",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "+163",
+          "openBookOdds": "+145",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        },
+        "blocks-MAX_CHRISTIE_1_NBA-game-ou-under": {
+          "oddID": "blocks-MAX_CHRISTIE_1_NBA-game-ou-under",
+          "opposingOddID": "blocks-MAX_CHRISTIE_1_NBA-game-ou-over",
+          "marketName": "Max Christie Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "MAX_CHRISTIE_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "MAX_CHRISTIE_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-163",
+          "fairOverUnder": "0.5",
+          "openFairOdds": "-163",
+          "openFairOverUnder": "0.5",
+          "scoringSupported": true,
+          "bookOdds": "-200",
+          "bookOverUnder": "0.5",
+          "byBookmaker": {},
+          "openBookOdds": "-200",
+          "openBookOverUnder": "0.5"
+        },
+        "blocks-NAJI_MARSHALL_1_NBA-game-ou-over": {
+          "oddID": "blocks-NAJI_MARSHALL_1_NBA-game-ou-over",
+          "opposingOddID": "blocks-NAJI_MARSHALL_1_NBA-game-ou-under",
+          "marketName": "Naji Marshall Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "NAJI_MARSHALL_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "NAJI_MARSHALL_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+476",
+          "bookOdds": "+437",
+          "fairOverUnder": "0.5",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "+476",
+          "openBookOdds": "+437",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        },
+        "blocks-NAJI_MARSHALL_1_NBA-game-ou-under": {
+          "oddID": "blocks-NAJI_MARSHALL_1_NBA-game-ou-under",
+          "opposingOddID": "blocks-NAJI_MARSHALL_1_NBA-game-ou-over",
+          "marketName": "Naji Marshall Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "NAJI_MARSHALL_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "NAJI_MARSHALL_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-476",
+          "fairOverUnder": "0.5",
+          "openFairOdds": "-476",
+          "openFairOverUnder": "0.5",
+          "scoringSupported": true,
+          "bookOdds": "-784",
+          "bookOverUnder": "0.5",
+          "byBookmaker": {},
+          "openBookOdds": "-784",
+          "openBookOverUnder": "0.5"
+        },
+        "points-C_FLAGG_1_NBA-game-ou-over": {
+          "oddID": "points-C_FLAGG_1_NBA-game-ou-over",
+          "opposingOddID": "points-C_FLAGG_1_NBA-game-ou-under",
+          "marketName": "Cooper Flagg Points Over/Under",
+          "statID": "points",
+          "statEntityID": "C_FLAGG_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "C_FLAGG_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+115",
+          "bookOdds": "-118",
+          "fairOverUnder": "24.5",
+          "bookOverUnder": "23.5",
+          "openFairOdds": "+115",
+          "openBookOdds": "-118",
+          "openFairOverUnder": "24.5",
+          "openBookOverUnder": "23.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-120",
+              "overUnder": "23.5",
+              "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.549785504&selectionId=75811240",
+              "altLines": [
+                {
+                  "odds": "-1800",
+                  "overUnder": "14.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-1100",
+                  "overUnder": "15.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-750",
+                  "overUnder": "16.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-580",
+                  "overUnder": "17.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-420",
+                  "overUnder": "18.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-320",
+                  "overUnder": "19.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-250",
+                  "overUnder": "20.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-200",
+                  "overUnder": "21.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-154",
+                  "overUnder": "22.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+104",
+                  "overUnder": "24.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+128",
+                  "overUnder": "25.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+158",
+                  "overUnder": "26.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+194",
+                  "overUnder": "27.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+235",
+                  "overUnder": "28.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+300",
+                  "overUnder": "29.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+350",
+                  "overUnder": "30.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+410",
+                  "overUnder": "31.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+490",
+                  "overUnder": "32.5",
+                  "lastUpdatedAt": "2026-01-10T20:19:12.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "+800",
+                  "overUnder": "34.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1700",
+                  "overUnder": "39.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+5000",
+                  "overUnder": "44.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "points-C_FLAGG_1_NBA-game-ou-under": {
+          "oddID": "points-C_FLAGG_1_NBA-game-ou-under",
+          "opposingOddID": "points-C_FLAGG_1_NBA-game-ou-over",
+          "marketName": "Cooper Flagg Points Over/Under",
+          "statID": "points",
+          "statEntityID": "C_FLAGG_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "C_FLAGG_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-115",
+          "bookOdds": "-110",
+          "fairOverUnder": "24.5",
+          "bookOverUnder": "23.5",
+          "openFairOdds": "-115",
+          "openBookOdds": "-110",
+          "openFairOverUnder": "24.5",
+          "openBookOverUnder": "23.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-106",
+              "overUnder": "23.5",
+              "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.549785504&selectionId=75811222",
+              "altLines": [
+                {
+                  "odds": "+430",
+                  "overUnder": "16.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+360",
+                  "overUnder": "17.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+280",
+                  "overUnder": "18.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+225",
+                  "overUnder": "19.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+182",
+                  "overUnder": "20.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+148",
+                  "overUnder": "21.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+116",
+                  "overUnder": "22.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-136",
+                  "overUnder": "24.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-172",
+                  "overUnder": "25.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-220",
+                  "overUnder": "26.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-270",
+                  "overUnder": "27.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-340",
+                  "overUnder": "28.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-440",
+                  "overUnder": "29.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-550",
+                  "overUnder": "30.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-700",
+                  "overUnder": "31.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-1000",
+                  "overUnder": "32.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-1400",
+                  "overUnder": "33.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "points-DANIEL_GAFFORD_1_NBA-game-ou-over": {
+          "oddID": "points-DANIEL_GAFFORD_1_NBA-game-ou-over",
+          "opposingOddID": "points-DANIEL_GAFFORD_1_NBA-game-ou-under",
+          "marketName": "Daniel Gafford Points Over/Under",
+          "statID": "points",
+          "statEntityID": "DANIEL_GAFFORD_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "DANIEL_GAFFORD_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+106",
+          "bookOdds": "-109",
+          "fairOverUnder": "11.5",
+          "bookOverUnder": "11.5",
+          "openFairOdds": "+106",
+          "openBookOdds": "-109",
+          "openFairOverUnder": "11.5",
+          "openBookOverUnder": "11.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-102",
+              "overUnder": "11.5",
+              "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.549785508&selectionId=27543227",
+              "altLines": [
+                {
+                  "odds": "-600",
+                  "overUnder": "6.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-400",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-280",
+                  "overUnder": "8.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-194",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-144",
+                  "overUnder": "10.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+134",
+                  "overUnder": "12.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+174",
+                  "overUnder": "13.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+235",
+                  "overUnder": "14.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+290",
+                  "overUnder": "15.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+870",
+                  "overUnder": "19.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+2500",
+                  "overUnder": "24.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "points-DANIEL_GAFFORD_1_NBA-game-ou-under": {
+          "oddID": "points-DANIEL_GAFFORD_1_NBA-game-ou-under",
+          "opposingOddID": "points-DANIEL_GAFFORD_1_NBA-game-ou-over",
+          "marketName": "Daniel Gafford Points Over/Under",
+          "statID": "points",
+          "statEntityID": "DANIEL_GAFFORD_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "DANIEL_GAFFORD_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-106",
+          "bookOdds": "-123",
+          "fairOverUnder": "11.5",
+          "bookOverUnder": "11.5",
+          "openFairOdds": "-106",
+          "openBookOdds": "-123",
+          "openFairOverUnder": "11.5",
+          "openBookOverUnder": "11.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-125",
+              "overUnder": "11.5",
+              "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.549785508&selectionId=27543228",
+              "altLines": [
+                {
+                  "odds": "+390",
+                  "overUnder": "6.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+270",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+200",
+                  "overUnder": "8.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+148",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+108",
+                  "overUnder": "10.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-180",
+                  "overUnder": "12.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-240",
+                  "overUnder": "13.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-320",
+                  "overUnder": "14.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-440",
+                  "overUnder": "15.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "points-KLAY_THOMPSON_1_NBA-game-ou-over": {
+          "oddID": "points-KLAY_THOMPSON_1_NBA-game-ou-over",
+          "opposingOddID": "points-KLAY_THOMPSON_1_NBA-game-ou-under",
+          "marketName": "Klay Thompson Points Over/Under",
+          "statID": "points",
+          "statEntityID": "KLAY_THOMPSON_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "KLAY_THOMPSON_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+109",
+          "bookOdds": "-105",
+          "fairOverUnder": "14.5",
+          "bookOverUnder": "14.5",
+          "openFairOdds": "+109",
+          "openBookOdds": "-105",
+          "openFairOverUnder": "14.5",
+          "openBookOverUnder": "14.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+100",
+              "overUnder": "14.5",
+              "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.549785507&selectionId=12260608",
+              "altLines": [
+                {
+                  "odds": "-650",
+                  "overUnder": "8.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-430",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-320",
+                  "overUnder": "10.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-240",
+                  "overUnder": "11.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-180",
+                  "overUnder": "12.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-136",
+                  "overUnder": "13.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+124",
+                  "overUnder": "15.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+158",
+                  "overUnder": "16.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+200",
+                  "overUnder": "17.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+240",
+                  "overUnder": "18.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+320",
+                  "overUnder": "19.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+390",
+                  "overUnder": "20.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+900",
+                  "overUnder": "24.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+2500",
+                  "overUnder": "29.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "points-KLAY_THOMPSON_1_NBA-game-ou-under": {
+          "oddID": "points-KLAY_THOMPSON_1_NBA-game-ou-under",
+          "opposingOddID": "points-KLAY_THOMPSON_1_NBA-game-ou-over",
+          "marketName": "Klay Thompson Points Over/Under",
+          "statID": "points",
+          "statEntityID": "KLAY_THOMPSON_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "KLAY_THOMPSON_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-109",
+          "bookOdds": "-127",
+          "fairOverUnder": "14.5",
+          "bookOverUnder": "14.5",
+          "openFairOdds": "-109",
+          "openBookOdds": "-127",
+          "openFairOverUnder": "14.5",
+          "openBookOverUnder": "14.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-128",
+              "overUnder": "14.5",
+              "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.549785507&selectionId=12260607",
+              "altLines": [
+                {
+                  "odds": "+390",
+                  "overUnder": "8.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+290",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+225",
+                  "overUnder": "10.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+174",
+                  "overUnder": "11.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+134",
+                  "overUnder": "12.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+102",
+                  "overUnder": "13.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-166",
+                  "overUnder": "15.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-220",
+                  "overUnder": "16.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-280",
+                  "overUnder": "17.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-350",
+                  "overUnder": "18.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-470",
+                  "overUnder": "19.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-650",
+                  "overUnder": "20.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "points-MAX_CHRISTIE_1_NBA-game-ou-over": {
+          "oddID": "points-MAX_CHRISTIE_1_NBA-game-ou-over",
+          "opposingOddID": "points-MAX_CHRISTIE_1_NBA-game-ou-under",
+          "marketName": "Max Christie Points Over/Under",
+          "statID": "points",
+          "statEntityID": "MAX_CHRISTIE_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "MAX_CHRISTIE_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+124",
+          "bookOdds": "-113",
+          "fairOverUnder": "16.5",
+          "bookOverUnder": "15.5",
+          "openFairOdds": "+124",
+          "openBookOdds": "-113",
+          "openFairOverUnder": "16.5",
+          "openBookOverUnder": "15.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-106",
+              "overUnder": "15.5",
+              "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.549785505&selectionId=43025877",
+              "altLines": [
+                {
+                  "odds": "-670",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-450",
+                  "overUnder": "10.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-330",
+                  "overUnder": "11.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-250",
+                  "overUnder": "12.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-188",
+                  "overUnder": "13.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-144",
+                  "overUnder": "14.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+120",
+                  "overUnder": "16.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+152",
+                  "overUnder": "17.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+188",
+                  "overUnder": "18.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+230",
+                  "overUnder": "19.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+300",
+                  "overUnder": "20.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+370",
+                  "overUnder": "21.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+750",
+                  "overUnder": "24.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1800",
+                  "overUnder": "29.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "points-MAX_CHRISTIE_1_NBA-game-ou-under": {
+          "oddID": "points-MAX_CHRISTIE_1_NBA-game-ou-under",
+          "opposingOddID": "points-MAX_CHRISTIE_1_NBA-game-ou-over",
+          "marketName": "Max Christie Points Over/Under",
+          "statID": "points",
+          "statEntityID": "MAX_CHRISTIE_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "MAX_CHRISTIE_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-124",
+          "bookOdds": "-116",
+          "fairOverUnder": "16.5",
+          "bookOverUnder": "15.5",
+          "openFairOdds": "-124",
+          "openBookOdds": "-116",
+          "openFairOverUnder": "16.5",
+          "openBookOverUnder": "15.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-120",
+              "overUnder": "15.5",
+              "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.549785505&selectionId=43025876",
+              "altLines": [
+                {
+                  "odds": "+400",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+300",
+                  "overUnder": "10.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+230",
+                  "overUnder": "11.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+182",
+                  "overUnder": "12.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+140",
+                  "overUnder": "13.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+108",
+                  "overUnder": "14.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-160",
+                  "overUnder": "16.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-205",
+                  "overUnder": "17.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-260",
+                  "overUnder": "18.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-330",
+                  "overUnder": "19.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-450",
+                  "overUnder": "20.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-600",
+                  "overUnder": "21.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "points-NAJI_MARSHALL_1_NBA-game-ou-over": {
+          "oddID": "points-NAJI_MARSHALL_1_NBA-game-ou-over",
+          "opposingOddID": "points-NAJI_MARSHALL_1_NBA-game-ou-under",
+          "marketName": "Naji Marshall Points Over/Under",
+          "statID": "points",
+          "statEntityID": "NAJI_MARSHALL_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "NAJI_MARSHALL_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+111",
+          "bookOdds": "-127",
+          "fairOverUnder": "17.5",
+          "bookOverUnder": "16.5",
+          "openFairOdds": "+111",
+          "openBookOdds": "-127",
+          "openFairOverUnder": "17.5",
+          "openBookOverUnder": "16.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-125",
+              "overUnder": "16.5",
+              "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.549785506&selectionId=39295949",
+              "altLines": [
+                {
+                  "odds": "-1400",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-800",
+                  "overUnder": "10.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-550",
+                  "overUnder": "11.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-400",
+                  "overUnder": "12.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-290",
+                  "overUnder": "13.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-215",
+                  "overUnder": "14.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-166",
+                  "overUnder": "15.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+102",
+                  "overUnder": "17.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+130",
+                  "overUnder": "18.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+164",
+                  "overUnder": "19.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+205",
+                  "overUnder": "20.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+260",
+                  "overUnder": "21.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+320",
+                  "overUnder": "22.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+400",
+                  "overUnder": "23.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+500",
+                  "overUnder": "24.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1400",
+                  "overUnder": "29.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+4000",
+                  "overUnder": "34.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "points-NAJI_MARSHALL_1_NBA-game-ou-under": {
+          "oddID": "points-NAJI_MARSHALL_1_NBA-game-ou-under",
+          "opposingOddID": "points-NAJI_MARSHALL_1_NBA-game-ou-over",
+          "marketName": "Naji Marshall Points Over/Under",
+          "statID": "points",
+          "statEntityID": "NAJI_MARSHALL_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "NAJI_MARSHALL_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-111",
+          "bookOdds": "-101",
+          "fairOverUnder": "17.5",
+          "bookOverUnder": "16.5",
+          "openFairOdds": "-111",
+          "openBookOdds": "-101",
+          "openFairOverUnder": "17.5",
+          "openBookOverUnder": "16.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-102",
+              "overUnder": "16.5",
+              "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.549785506&selectionId=39295948",
+              "altLines": [
+                {
+                  "odds": "+450",
+                  "overUnder": "10.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+350",
+                  "overUnder": "11.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+270",
+                  "overUnder": "12.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+205",
+                  "overUnder": "13.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+162",
+                  "overUnder": "14.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+124",
+                  "overUnder": "15.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-136",
+                  "overUnder": "17.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-174",
+                  "overUnder": "18.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-220",
+                  "overUnder": "19.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-290",
+                  "overUnder": "20.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-380",
+                  "overUnder": "21.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-490",
+                  "overUnder": "22.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-670",
+                  "overUnder": "23.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "rebounds-C_FLAGG_1_NBA-game-ou-over": {
+          "oddID": "rebounds-C_FLAGG_1_NBA-game-ou-over",
+          "opposingOddID": "rebounds-C_FLAGG_1_NBA-game-ou-under",
+          "marketName": "Cooper Flagg Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "C_FLAGG_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "C_FLAGG_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "-108",
+          "fairOverUnder": "8",
+          "bookOverUnder": "7.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "-108",
+          "openFairOverUnder": "8",
+          "openBookOverUnder": "7.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-102",
+              "overUnder": "7.5",
+              "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.549785515&selectionId=75811240",
+              "altLines": [
+                {
+                  "odds": "-2500",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-750",
+                  "overUnder": "4.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-340",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-188",
+                  "overUnder": "6.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+162",
+                  "overUnder": "8.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+220",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+350",
+                  "overUnder": "10.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+600",
+                  "overUnder": "11.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1400",
+                  "overUnder": "13.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+3000",
+                  "overUnder": "15.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "rebounds-C_FLAGG_1_NBA-game-ou-under": {
+          "oddID": "rebounds-C_FLAGG_1_NBA-game-ou-under",
+          "opposingOddID": "rebounds-C_FLAGG_1_NBA-game-ou-over",
+          "marketName": "Cooper Flagg Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "C_FLAGG_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "C_FLAGG_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "-123",
+          "fairOverUnder": "8",
+          "bookOverUnder": "7.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "-123",
+          "openFairOverUnder": "8",
+          "openBookOverUnder": "7.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-125",
+              "overUnder": "7.5",
+              "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.549785515&selectionId=75811222",
+              "altLines": [
+                {
+                  "odds": "+430",
+                  "overUnder": "4.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+235",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+140",
+                  "overUnder": "6.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-220",
+                  "overUnder": "8.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-310",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-550",
+                  "overUnder": "10.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "rebounds-DANIEL_GAFFORD_1_NBA-game-ou-over": {
+          "oddID": "rebounds-DANIEL_GAFFORD_1_NBA-game-ou-over",
+          "opposingOddID": "rebounds-DANIEL_GAFFORD_1_NBA-game-ou-under",
+          "marketName": "Daniel Gafford Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "DANIEL_GAFFORD_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "DANIEL_GAFFORD_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+123",
+          "bookOdds": "+108",
+          "fairOverUnder": "8.5",
+          "bookOverUnder": "8.5",
+          "openFairOdds": "+123",
+          "openBookOdds": "+108",
+          "openFairOverUnder": "8.5",
+          "openBookOverUnder": "8.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+114",
+              "overUnder": "8.5",
+              "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.549785519&selectionId=27543227",
+              "altLines": [
+                {
+                  "odds": "-4500",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-1450",
+                  "overUnder": "4.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-580",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-290",
+                  "overUnder": "6.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-158",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+154",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+250",
+                  "overUnder": "10.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+390",
+                  "overUnder": "11.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1000",
+                  "overUnder": "13.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+2000",
+                  "overUnder": "15.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "rebounds-DANIEL_GAFFORD_1_NBA-game-ou-under": {
+          "oddID": "rebounds-DANIEL_GAFFORD_1_NBA-game-ou-under",
+          "opposingOddID": "rebounds-DANIEL_GAFFORD_1_NBA-game-ou-over",
+          "marketName": "Daniel Gafford Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "DANIEL_GAFFORD_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "DANIEL_GAFFORD_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-123",
+          "bookOdds": "-145",
+          "fairOverUnder": "8.5",
+          "bookOverUnder": "8.5",
+          "openFairOdds": "-123",
+          "openBookOdds": "-145",
+          "openFairOverUnder": "8.5",
+          "openBookOverUnder": "8.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-146",
+              "overUnder": "8.5",
+              "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.549785519&selectionId=27543228",
+              "altLines": [
+                {
+                  "odds": "+360",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+205",
+                  "overUnder": "6.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+118",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-210",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-360",
+                  "overUnder": "10.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-650",
+                  "overUnder": "11.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-1400",
+                  "overUnder": "12.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "rebounds-KLAY_THOMPSON_1_NBA-game-ou-over": {
+          "oddID": "rebounds-KLAY_THOMPSON_1_NBA-game-ou-over",
+          "opposingOddID": "rebounds-KLAY_THOMPSON_1_NBA-game-ou-under",
+          "marketName": "Klay Thompson Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "KLAY_THOMPSON_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "KLAY_THOMPSON_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+140",
+          "bookOdds": "+122",
+          "fairOverUnder": "3.5",
+          "bookOverUnder": "3.5",
+          "openFairOdds": "+140",
+          "openBookOdds": "+122",
+          "openFairOverUnder": "3.5",
+          "openBookOverUnder": "3.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+130",
+              "overUnder": "3.5",
+              "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.549785518&selectionId=12260608",
+              "altLines": [
+                {
+                  "odds": "-670",
+                  "overUnder": "1.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-205",
+                  "overUnder": "2.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+280",
+                  "overUnder": "4.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+600",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "rebounds-KLAY_THOMPSON_1_NBA-game-ou-under": {
+          "oddID": "rebounds-KLAY_THOMPSON_1_NBA-game-ou-under",
+          "opposingOddID": "rebounds-KLAY_THOMPSON_1_NBA-game-ou-over",
+          "marketName": "Klay Thompson Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "KLAY_THOMPSON_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "KLAY_THOMPSON_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-140",
+          "bookOdds": "-165",
+          "fairOverUnder": "3.5",
+          "bookOverUnder": "3.5",
+          "openFairOdds": "-140",
+          "openBookOdds": "-165",
+          "openFairOverUnder": "3.5",
+          "openBookOverUnder": "3.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-166",
+              "overUnder": "3.5",
+              "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.549785518&selectionId=12260607",
+              "altLines": [
+                {
+                  "odds": "+400",
+                  "overUnder": "1.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+152",
+                  "overUnder": "2.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-420",
+                  "overUnder": "4.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-1200",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "rebounds-MAX_CHRISTIE_1_NBA-game-ou-over": {
+          "oddID": "rebounds-MAX_CHRISTIE_1_NBA-game-ou-over",
+          "opposingOddID": "rebounds-MAX_CHRISTIE_1_NBA-game-ou-under",
+          "marketName": "Max Christie Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "MAX_CHRISTIE_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "MAX_CHRISTIE_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+136",
+          "bookOdds": "+120",
+          "fairOverUnder": "4.5",
+          "bookOverUnder": "4.5",
+          "openFairOdds": "+136",
+          "openBookOdds": "+120",
+          "openFairOverUnder": "4.5",
+          "openBookOverUnder": "4.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+130",
+              "overUnder": "4.5",
+              "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.549785516&selectionId=43025877",
+              "altLines": [
+                {
+                  "odds": "-470",
+                  "overUnder": "2.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-180",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+270",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+490",
+                  "overUnder": "6.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+900",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+2000",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-01-10T17:43:02.000Z",
+                  "available": false
+                }
+              ]
+            }
+          }
+        },
+        "rebounds-MAX_CHRISTIE_1_NBA-game-ou-under": {
+          "oddID": "rebounds-MAX_CHRISTIE_1_NBA-game-ou-under",
+          "opposingOddID": "rebounds-MAX_CHRISTIE_1_NBA-game-ou-over",
+          "marketName": "Max Christie Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "MAX_CHRISTIE_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "MAX_CHRISTIE_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-136",
+          "bookOdds": "-162",
+          "fairOverUnder": "4.5",
+          "bookOverUnder": "4.5",
+          "openFairOdds": "-136",
+          "openBookOdds": "-162",
+          "openFairOverUnder": "4.5",
+          "openBookOverUnder": "4.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-166",
+              "overUnder": "4.5",
+              "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.549785516&selectionId=43025876",
+              "altLines": [
+                {
+                  "odds": "+310",
+                  "overUnder": "2.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+134",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-400",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-900",
+                  "overUnder": "6.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "rebounds-NAJI_MARSHALL_1_NBA-game-ou-over": {
+          "oddID": "rebounds-NAJI_MARSHALL_1_NBA-game-ou-over",
+          "opposingOddID": "rebounds-NAJI_MARSHALL_1_NBA-game-ou-under",
+          "marketName": "Naji Marshall Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "NAJI_MARSHALL_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "NAJI_MARSHALL_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+154",
+          "bookOdds": "-130",
+          "fairOverUnder": "6.5",
+          "bookOverUnder": "5.5",
+          "openFairOdds": "+154",
+          "openBookOdds": "-130",
+          "openFairOverUnder": "6.5",
+          "openBookOverUnder": "5.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-130",
+              "overUnder": "5.5",
+              "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.549785517&selectionId=39295949",
+              "altLines": [
+                {
+                  "odds": "-650",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-275",
+                  "overUnder": "4.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+146",
+                  "overUnder": "6.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+260",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+430",
+                  "overUnder": "8.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+700",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1700",
+                  "overUnder": "11.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "rebounds-NAJI_MARSHALL_1_NBA-game-ou-under": {
+          "oddID": "rebounds-NAJI_MARSHALL_1_NBA-game-ou-under",
+          "opposingOddID": "rebounds-NAJI_MARSHALL_1_NBA-game-ou-over",
+          "marketName": "Naji Marshall Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "NAJI_MARSHALL_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "NAJI_MARSHALL_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-154",
+          "bookOdds": "+100",
+          "fairOverUnder": "6.5",
+          "bookOverUnder": "5.5",
+          "openFairOdds": "-154",
+          "openBookOdds": "+100",
+          "openFairOverUnder": "6.5",
+          "openBookOverUnder": "5.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+102",
+              "overUnder": "5.5",
+              "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.549785517&selectionId=39295948",
+              "altLines": [
+                {
+                  "odds": "+390",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+198",
+                  "overUnder": "4.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-198",
+                  "overUnder": "6.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-380",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-750",
+                  "overUnder": "8.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "steals-C_FLAGG_1_NBA-game-ou-over": {
+          "oddID": "steals-C_FLAGG_1_NBA-game-ou-over",
+          "opposingOddID": "steals-C_FLAGG_1_NBA-game-ou-under",
+          "marketName": "Cooper Flagg Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "C_FLAGG_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "C_FLAGG_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+195",
+          "bookOdds": "+174",
+          "fairOverUnder": "1.5",
+          "bookOverUnder": "1.5",
+          "openFairOdds": "+195",
+          "openBookOdds": "+174",
+          "openFairOverUnder": "1.5",
+          "openBookOverUnder": "1.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+178",
+              "overUnder": "1.5",
+              "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.549813848&selectionId=75811240",
+              "altLines": [
+                {
+                  "odds": "-280",
+                  "overUnder": "0.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+550",
+                  "overUnder": "2.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "steals-C_FLAGG_1_NBA-game-ou-under": {
+          "oddID": "steals-C_FLAGG_1_NBA-game-ou-under",
+          "opposingOddID": "steals-C_FLAGG_1_NBA-game-ou-over",
+          "marketName": "Cooper Flagg Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "C_FLAGG_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "C_FLAGG_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-195",
+          "fairOverUnder": "1.5",
+          "openFairOdds": "-195",
+          "openFairOverUnder": "1.5",
+          "scoringSupported": true,
+          "bookOdds": "-245",
+          "bookOverUnder": "1.5",
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-245",
+              "overUnder": "1.5",
+              "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.549813848&selectionId=75811222"
+            }
+          },
+          "openBookOdds": "-245",
+          "openBookOverUnder": "1.5"
+        },
+        "steals-DANIEL_GAFFORD_1_NBA-game-ou-over": {
+          "oddID": "steals-DANIEL_GAFFORD_1_NBA-game-ou-over",
+          "opposingOddID": "steals-DANIEL_GAFFORD_1_NBA-game-ou-under",
+          "marketName": "Daniel Gafford Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "DANIEL_GAFFORD_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "DANIEL_GAFFORD_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "-148",
+          "fairOverUnder": "1",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "-148",
+          "openFairOverUnder": "1",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        },
+        "steals-DANIEL_GAFFORD_1_NBA-game-ou-under": {
+          "oddID": "steals-DANIEL_GAFFORD_1_NBA-game-ou-under",
+          "opposingOddID": "steals-DANIEL_GAFFORD_1_NBA-game-ou-over",
+          "marketName": "Daniel Gafford Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "DANIEL_GAFFORD_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "DANIEL_GAFFORD_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "fairOverUnder": "1",
+          "openFairOdds": "+100",
+          "openFairOverUnder": "1",
+          "scoringSupported": true,
+          "bookOdds": "+110",
+          "bookOverUnder": "0.5",
+          "byBookmaker": {},
+          "openBookOdds": "+110",
+          "openBookOverUnder": "0.5"
+        },
+        "steals-KLAY_THOMPSON_1_NBA-game-ou-over": {
+          "oddID": "steals-KLAY_THOMPSON_1_NBA-game-ou-over",
+          "opposingOddID": "steals-KLAY_THOMPSON_1_NBA-game-ou-under",
+          "marketName": "Klay Thompson Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "KLAY_THOMPSON_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "KLAY_THOMPSON_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+103",
+          "bookOdds": "-112",
+          "fairOverUnder": "0.5",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "+103",
+          "openBookOdds": "-112",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        },
+        "steals-KLAY_THOMPSON_1_NBA-game-ou-under": {
+          "oddID": "steals-KLAY_THOMPSON_1_NBA-game-ou-under",
+          "opposingOddID": "steals-KLAY_THOMPSON_1_NBA-game-ou-over",
+          "marketName": "Klay Thompson Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "KLAY_THOMPSON_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "KLAY_THOMPSON_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-103",
+          "fairOverUnder": "0.5",
+          "openFairOdds": "-103",
+          "openFairOverUnder": "0.5",
+          "scoringSupported": true,
+          "bookOdds": "-120",
+          "bookOverUnder": "0.5",
+          "byBookmaker": {},
+          "openBookOdds": "-120",
+          "openBookOverUnder": "0.5"
+        },
+        "steals-MAX_CHRISTIE_1_NBA-game-ou-over": {
+          "oddID": "steals-MAX_CHRISTIE_1_NBA-game-ou-over",
+          "opposingOddID": "steals-MAX_CHRISTIE_1_NBA-game-ou-under",
+          "marketName": "Max Christie Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "MAX_CHRISTIE_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "MAX_CHRISTIE_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "-137",
+          "fairOverUnder": "1",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "-137",
+          "openFairOverUnder": "1",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        },
+        "steals-MAX_CHRISTIE_1_NBA-game-ou-under": {
+          "oddID": "steals-MAX_CHRISTIE_1_NBA-game-ou-under",
+          "opposingOddID": "steals-MAX_CHRISTIE_1_NBA-game-ou-over",
+          "marketName": "Max Christie Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "MAX_CHRISTIE_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "MAX_CHRISTIE_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "fairOverUnder": "1",
+          "openFairOdds": "+100",
+          "openFairOverUnder": "1",
+          "scoringSupported": true,
+          "bookOdds": "+103",
+          "bookOverUnder": "0.5",
+          "byBookmaker": {},
+          "openBookOdds": "+103",
+          "openBookOverUnder": "0.5"
+        },
+        "steals-NAJI_MARSHALL_1_NBA-game-ou-over": {
+          "oddID": "steals-NAJI_MARSHALL_1_NBA-game-ou-over",
+          "opposingOddID": "steals-NAJI_MARSHALL_1_NBA-game-ou-under",
+          "marketName": "Naji Marshall Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "NAJI_MARSHALL_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "NAJI_MARSHALL_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-181",
+          "bookOdds": "-230",
+          "fairOverUnder": "0.5",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "-181",
+          "openBookOdds": "-230",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-245",
+              "overUnder": "0.5",
+              "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.549813854&selectionId=26799210",
+              "altLines": [
+                {
+                  "odds": "+194",
+                  "overUnder": "1.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+630",
+                  "overUnder": "2.5",
+                  "lastUpdatedAt": "2026-01-10T21:26:52.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "steals-NAJI_MARSHALL_1_NBA-game-ou-under": {
+          "oddID": "steals-NAJI_MARSHALL_1_NBA-game-ou-under",
+          "opposingOddID": "steals-NAJI_MARSHALL_1_NBA-game-ou-over",
+          "marketName": "Naji Marshall Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "NAJI_MARSHALL_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "NAJI_MARSHALL_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+181",
+          "fairOverUnder": "0.5",
+          "openFairOdds": "+181",
+          "openFairOverUnder": "0.5",
+          "scoringSupported": true,
+          "bookOdds": "+160",
+          "bookOverUnder": "0.5",
+          "byBookmaker": {},
+          "openBookOdds": "+160",
+          "openBookOverUnder": "0.5"
+        }
+      },
+      "results": {},
+      "players": {
+        "C_FLAGG_1_NBA": {
+          "playerID": "C_FLAGG_1_NBA",
+          "teamID": "DALLAS_MAVERICKS_NBA",
+          "firstName": "Cooper",
+          "lastName": "Flagg",
+          "name": "Cooper Flagg"
+        },
+        "NIKOLA_VUCEVIC_1_NBA": {
+          "playerID": "NIKOLA_VUCEVIC_1_NBA",
+          "teamID": "CHICAGO_BULLS_NBA",
+          "firstName": "Nikola",
+          "lastName": "Vucevic",
+          "name": "Nikola Vu\u010devi\u0107"
+        },
+        "MATAS_BUZELIS_1_NBA": {
+          "playerID": "MATAS_BUZELIS_1_NBA",
+          "teamID": "CHICAGO_BULLS_NBA",
+          "firstName": "Matas",
+          "lastName": "Buzelis",
+          "name": "Matas Buzelis"
+        },
+        "COBY_WHITE_1_NBA": {
+          "playerID": "COBY_WHITE_1_NBA",
+          "teamID": "CHICAGO_BULLS_NBA",
+          "firstName": "Coby",
+          "lastName": "White",
+          "name": "Coby White"
+        },
+        "NAJI_MARSHALL_1_NBA": {
+          "playerID": "NAJI_MARSHALL_1_NBA",
+          "teamID": "DALLAS_MAVERICKS_NBA",
+          "firstName": "Naji",
+          "lastName": "Marshall",
+          "name": "Naji Marshall"
+        },
+        "DANIEL_GAFFORD_1_NBA": {
+          "playerID": "DANIEL_GAFFORD_1_NBA",
+          "teamID": "DALLAS_MAVERICKS_NBA",
+          "firstName": "Daniel",
+          "lastName": "Gafford",
+          "name": "Daniel Gafford"
+        },
+        "KLAY_THOMPSON_1_NBA": {
+          "playerID": "KLAY_THOMPSON_1_NBA",
+          "teamID": "DALLAS_MAVERICKS_NBA",
+          "firstName": "Klay",
+          "lastName": "Thompson",
+          "name": "Klay Thompson"
+        },
+        "TRE_JONES_1_NBA": {
+          "playerID": "TRE_JONES_1_NBA",
+          "teamID": "CHICAGO_BULLS_NBA",
+          "firstName": "Tre",
+          "lastName": "Jones",
+          "name": "Tre Jones"
+        },
+        "ISAAC_OKORO_1_NBA": {
+          "playerID": "ISAAC_OKORO_1_NBA",
+          "teamID": "CHICAGO_BULLS_NBA",
+          "firstName": "Isaac",
+          "lastName": "Okoro",
+          "name": "Isaac Okoro"
+        },
+        "MAX_CHRISTIE_1_NBA": {
+          "playerID": "MAX_CHRISTIE_1_NBA",
+          "teamID": "DALLAS_MAVERICKS_NBA",
+          "firstName": "Max",
+          "lastName": "Christie",
+          "name": "Max Christie"
+        },
+        "RYAN_NEMBHARD_1_NBA": {
+          "playerID": "RYAN_NEMBHARD_1_NBA",
+          "teamID": "DALLAS_MAVERICKS_NBA",
+          "firstName": "Ryan",
+          "lastName": "Nembhard",
+          "name": "Ryan Nembhard"
+        },
+        "JALEN_SMITH_1_NBA": {
+          "playerID": "JALEN_SMITH_1_NBA",
+          "teamID": "CHICAGO_BULLS_NBA",
+          "firstName": "Jalen",
+          "lastName": "Smith",
+          "name": "Jalen Smith"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+import requests
+import pandas as pd
+from io import StringIO
+
+PLAYER = "Sebastian Korda"
+WINDOW = 20
+
+URL = f"https://www.tennisabstract.com/cgi-bin/player.cgi?p={PLAYER.replace(' ', '')}&f=ACareer"
+
+def main():
+    html = requests.get(URL, timeout=20).text
+    tables = pd.read_html(StringIO(html))
+
+    # Career match table is the largest one
+    df = max(tables, key=len)
+
+    df = df.head(WINDOW)
+
+    def pct(col):
+        s = pd.to_numeric(df[col], errors="coerce").dropna()
+        return round((s >= s.mean()).mean() * 100, 1)
+
+    hold = []
+    breakp = []
+    games = []
+    tiebreak = 0
+    three_set = 0
+
+    for _, r in df.iterrows():
+        try:
+            sg = int(r["SvG"])
+            sbp = int(r["SvBP"])
+            rg = int(r["RtG"])
+            rbp = int(r["RtBP"])
+            g = int(r["W1"]) + int(r["L1"])
+
+            hold.append((sg - sbp) / sg if sg else None)
+            breakp.append(rbp / rg if rg else None)
+            games.append(g)
+
+            if "7-6" in str(r.get("Score", "")):
+                tiebreak += 1
+            if g >= 30:
+                three_set += 1
+        except:
+            continue
+
+    print(f"\n🎾 PLAYER PROFILE — {PLAYER}")
+    print("--------------------------------")
+    print(f"Avg Hold %:        {round(sum(h for h in hold if h)/len(hold)*100,1)}%")
+    print(f"Avg Break %:       {round(sum(b for b in breakp if b)/len(breakp)*100,1)}%")
+    print(f"Avg Games/Match:   {round(sum(games)/len(games),1)}")
+    print(f"Tiebreak Matches:  {tiebreak}/{WINDOW}")
+    print(f"3-Set Matches:     {three_set}/{WINDOW}")
+
+if __name__ == "__main__":
+    main()

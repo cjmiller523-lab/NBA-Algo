@@ -1,0 +1,185 @@
+import os
+import json
+import re
+import requests
+import pandas as pd
+from io import StringIO
+from datetime import datetime
+
+# ==========================================================
+# CONFIG
+# ==========================================================
+CACHE_DIR = "tennis_cache"
+PLAYERS_DIR = os.path.join(CACHE_DIR, "players")
+OUTPUT_DIR = "twitter_posts_tennis"
+
+WINDOWS = [5, 10]
+GAME_THRESHOLDS = [20, 22, 24]
+
+os.makedirs(PLAYERS_DIR, exist_ok=True)
+os.makedirs(OUTPUT_DIR, exist_ok=True)
+
+HEADERS = {"User-Agent": "tennis-hit-rates/1.0"}
+
+# ==========================================================
+# MANUAL SLATE (EDIT DAILY)
+# ==========================================================
+SLATE = [
+    ("Aleksandar Kovacevic", "Giovanni Mpetshi Perricard", "Hard"),
+    ("Sebastian Korda", "Alex Michelsen", "Hard"),
+]
+
+# ==========================================================
+# HELPERS
+# ==========================================================
+def player_cache_path(player):
+    return os.path.join(PLAYERS_DIR, player.replace(" ", "_") + ".json")
+
+
+def tennisabstract_id(player):
+    parts = re.sub(r"[^A-Za-z ]", "", player).split()
+    return f"{''.join(parts[1:])}{parts[0][0]}" if len(parts) >= 2 else None
+
+
+# ==========================================================
+# SCRAPE MATCH RESULTS (STABLE)
+# ==========================================================
+def refresh_player_history(player):
+    path = player_cache_path(player)
+    if os.path.exists(path):
+        return
+
+    pid = tennisabstract_id(player)
+    if not pid:
+        json.dump([], open(path, "w"))
+        return
+
+    url = f"https://www.tennisabstract.com/cgi-bin/player.cgi?p={pid}"
+    html = requests.get(url, headers=HEADERS, timeout=20).text
+
+    try:
+        tables = pd.read_html(StringIO(html))
+    except ValueError:
+        json.dump([], open(path, "w"))
+        return
+
+    # Match results table always has "Score"
+    df = None
+    for t in tables:
+        if "Score" in t.columns and "Surface" in t.columns:
+            df = t
+            break
+
+    if df is None:
+        json.dump([], open(path, "w"))
+        return
+
+    rows = []
+
+    for _, r in df.iterrows():
+        score = str(r.get("Score", ""))
+        surface = str(r.get("Surface", ""))
+
+        if not score or "-" not in score:
+            continue
+
+        sets = score.split()
+        sets_played = len(sets)
+
+        tiebreak = 1 if "(" in score else 0
+
+        games = 0
+        for s in sets:
+            nums = re.findall(r"\d+", s)
+            if len(nums) >= 2:
+                games += int(nums[0]) + int(nums[1])
+
+        rows.append({
+            "surface": surface,
+            "sets": sets_played,
+            "tiebreak": tiebreak,
+            "games": games,
+            "won_set": 1 if any(
+                int(a) > int(b)
+                for a, b in [re.findall(r"\d+", s)[:2] for s in sets if len(re.findall(r"\d+", s)) >= 2]
+            ) else 0
+        })
+
+    json.dump(rows, open(path, "w"), indent=2)
+
+
+# ==========================================================
+# HIT RATE LOGIC
+# ==========================================================
+def hit_rate(vals):
+    return sum(vals), len(vals)
+
+
+def compute_hit_rates(rows, surface):
+    rows = [r for r in rows if surface.lower() in r["surface"].lower()]
+    rows = list(reversed(rows))
+
+    out = {}
+
+    for w in WINDOWS:
+        sub = rows[:w]
+        if len(sub) < max(4, w // 2):
+            continue
+
+        out[w] = {
+            "3_sets": hit_rate([r["sets"] == 3 for r in sub]),
+            "tiebreak": hit_rate([r["tiebreak"] == 1 for r in sub]),
+            "won_set": hit_rate([r["won_set"] == 1 for r in sub]),
+            "games": {
+                g: hit_rate([r["games"] >= g for r in sub])
+                for g in GAME_THRESHOLDS
+            }
+        }
+
+    return out
+
+
+# ==========================================================
+# MAIN
+# ==========================================================
+def main():
+    today = datetime.now().strftime("%Y-%m-%d")
+    lines = [f"TENNIS HIT RATES — {today}\n"]
+
+    for p1, p2, surface in SLATE:
+        refresh_player_history(p1)
+        refresh_player_history(p2)
+
+        r1 = json.load(open(player_cache_path(p1)))
+        r2 = json.load(open(player_cache_path(p2)))
+
+        lines.append(f"{p1} vs {p2}")
+        lines.append("-" * 20)
+
+        for name, rows in [(p1, r1), (p2, r2)]:
+            stats = compute_hit_rates(rows, surface)
+            if not stats:
+                continue
+
+            lines.append(name)
+            for w, s in stats.items():
+                lines.append(f"  L{w}:")
+                lines.append(f"    3 Sets: {s['3_sets'][0]}/{s['3_sets'][1]}")
+                lines.append(f"    Tiebreak: {s['tiebreak'][0]}/{s['tiebreak'][1]}")
+                lines.append(f"    Won Set: {s['won_set'][0]}/{s['won_set'][1]}")
+                for g, (h, t) in s["games"].items():
+                    lines.append(f"    Games ≥ {g}: {h}/{t}")
+            lines.append("")
+
+        lines.append("")
+
+    text = "\n".join(lines)
+    path = os.path.join(OUTPUT_DIR, f"{today}_hit_rates.txt")
+    open(path, "w", encoding="utf-8").write(text)
+
+    print(text)
+    print(f"\nSaved → {path}")
+
+
+if __name__ == "__main__":
+    main()

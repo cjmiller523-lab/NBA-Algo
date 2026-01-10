@@ -1,0 +1,234 @@
+import os
+import json
+import requests
+import pandas as pd
+from io import StringIO
+from datetime import datetime
+from dataclasses import dataclass
+from typing import List
+
+# ==========================================================
+# CONFIG
+# ==========================================================
+SGO_API_KEY = os.getenv("SGO_API_KEY", "d281b2722448cc5ca4b575f2d28352a9")
+SGO_BASE = "https://api.sportsgameodds.com/v2/events"
+
+CACHE_DIR = "tennis_cache"
+PLAYERS_DIR = os.path.join(CACHE_DIR, "players")
+OUTPUT_DIR = "twitter_posts_tennis"
+
+WINDOW = 20
+LOCK_MIN_CONF = 78
+LOCK_MIN_COMBINED_HOLD = 0.78
+
+os.makedirs(PLAYERS_DIR, exist_ok=True)
+os.makedirs(OUTPUT_DIR, exist_ok=True)
+
+
+# ==========================================================
+# DATA MODELS
+# ==========================================================
+@dataclass
+class PlayerStats:
+    hold: float
+    brk: float
+    n: int
+
+@dataclass
+class MatchupFeatures:
+    exp_hold_a: float
+    exp_hold_b: float
+    combined_hold: float
+    tb_signal: int
+
+@dataclass
+class Pick:
+    match: str
+    side: str        # Over / Under
+    line: float
+    confidence: int
+    combined_hold: float
+    tb_signal: int
+
+# ==========================================================
+# HELPERS
+# ==========================================================
+def normalize_surface(s):
+    if not s:
+        return "Hard"
+    s = s.lower()
+    if "clay" in s: return "Clay"
+    if "grass" in s: return "Grass"
+    if "indoor" in s: return "Indoor Hard"
+    return "Hard"
+
+def player_cache_path(player):
+    return os.path.join(PLAYERS_DIR, player.replace(" ", "_") + ".json")
+
+# ==========================================================
+# SGO — TENNIS SLATE (ONE REQUEST)
+# ==========================================================
+def get_sgo_tennis_events():
+    url = "https://api.sportsgameodds.com/v2/events"
+    params = {
+        "apiKey": SGO_API_KEY,
+        "limit": 50
+    }
+
+    r = requests.get(url, params=params, timeout=20)
+    print("[DEBUG] status:", r.status_code)
+    print("[DEBUG] body:", r.text[:500])
+    return []
+
+
+
+# ==========================================================
+# TENNISABSTRACT — PLAYER HISTORY (CACHED)
+# ==========================================================
+def refresh_player_history(player):
+    path = player_cache_path(player)
+    if os.path.exists(path):
+        return
+
+    slug = player.replace(" ", "")
+    url = f"https://www.tennisabstract.com/cgi-bin/player.cgi?p={slug}&f=ACareer"
+
+    html = requests.get(url, timeout=20).text
+    try:
+        tables = pd.read_html(StringIO(html))
+    except ValueError:
+        return
+
+    df = max(tables, key=len)
+    rows = []
+
+    for _, r in df.iterrows():
+        try:
+            sg = int(r["SvG"])
+            rg = int(r["RtG"])
+            rbp = int(r["RtBP"])
+            total_games = int(r["W1"]) + int(r["L1"])
+            hold = (sg - int(r["SvBP"])) / sg if sg else 0.75
+            brk = rbp / rg if rg else 0.20
+        except:
+            continue
+
+        rows.append({
+            "surface": normalize_surface(r["Surface"]),
+            "hold_pct": hold,
+            "break_pct": brk,
+            "total_games": total_games
+        })
+
+    with open(path, "w") as f:
+        json.dump(rows, f, indent=2)
+
+# ==========================================================
+# MODEL CORE
+# ==========================================================
+def weighted_stats(rows, surface):
+    rows = rows[-WINDOW:]
+    if not rows:
+        return PlayerStats(0.75, 0.20, 0)
+
+    h = b = n = 0
+    for r in rows:
+        if r["surface"] == surface:
+            h += r["hold_pct"]
+            b += r["break_pct"]
+            n += 1
+
+    if n == 0:
+        return PlayerStats(0.75, 0.20, 0)
+
+    return PlayerStats(h / n, b / n, n)
+
+def matchup_features(a, b):
+    exp_a = (a.hold + (1 - b.brk)) / 2
+    exp_b = (b.hold + (1 - a.brk)) / 2
+    tb = int(exp_a >= 0.82) + int(exp_b >= 0.82)
+    return MatchupFeatures(exp_a, exp_b, (exp_a + exp_b) / 2, tb)
+
+def model_confidence(feats, side):
+    """
+    Over favored when combined hold is high.
+    Under favored when low.
+    """
+    base = (feats.combined_hold - 0.70) / 0.20
+    base = max(0.01, min(0.99, base))
+
+    if side == "Under":
+        base = 1 - base
+
+    bonus = 0.06 if feats.tb_signal == 2 else 0.03 if feats.tb_signal == 1 else 0
+    return int(max(1, min(99, (base + bonus) * 100)))
+
+# ==========================================================
+# MAIN
+# ==========================================================
+def main():
+    today = datetime.now().strftime("%Y-%m-%d")
+    events = get_sgo_tennis_events()
+
+    if not events:
+        print("No SGO tennis events found.")
+        return
+
+    picks = []
+
+    for ev in events:
+        a, b = ev["player_a"], ev["player_b"]
+
+        refresh_player_history(a)
+        refresh_player_history(b)
+
+        try:
+            a_rows = json.load(open(player_cache_path(a)))
+            b_rows = json.load(open(player_cache_path(b)))
+        except:
+            continue
+
+        a_stats = weighted_stats(a_rows, ev["surface"])
+        b_stats = weighted_stats(b_rows, ev["surface"])
+        feats = matchup_features(a_stats, b_stats)
+
+        conf = model_confidence(feats, ev["side"])
+
+        picks.append(Pick(
+            match=f"{a} vs {b}",
+            side=ev["side"],
+            line=ev["line"],
+            confidence=conf,
+            combined_hold=feats.combined_hold,
+            tb_signal=feats.tb_signal
+        ))
+
+    picks.sort(key=lambda x: x.confidence, reverse=True)
+
+    locks = [
+        p for p in picks
+        if p.confidence >= LOCK_MIN_CONF
+        and p.combined_hold >= LOCK_MIN_COMBINED_HOLD
+    ]
+
+    out = [f"🎾 TENNIS TOTAL GAMES — {today}\n"]
+
+    if locks:
+        out.append("🔥 LOCKS\n-------------------")
+        for p in locks[:5]:
+            out.append(f"{p.match} — {p.side} {p.line} | Conf {p.confidence}%")
+        out.append("")
+
+    out.append("✅ CORE PLAYS\n-------------------")
+    for p in picks[:10]:
+        out.append(f"{p.match} — {p.side} {p.line} | Conf {p.confidence}%")
+
+    text = "\n".join(out)
+    path = os.path.join(OUTPUT_DIR, f"{today}.txt")
+    open(path, "w").write(text)
+
+    print(text)
+    print(f"\nSaved → {path}")
+
+if __name__ == "__main__":
+    main()

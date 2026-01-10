@@ -1,0 +1,244 @@
+import os
+import json
+import requests
+import pandas as pd
+from io import StringIO
+from datetime import datetime
+from dataclasses import dataclass
+
+# ==========================================================
+# CONFIG
+# ==========================================================
+CACHE_DIR = "tennis_cache"
+PLAYERS_DIR = os.path.join(CACHE_DIR, "players")
+OUTPUT_DIR = "twitter_posts_tennis"
+
+WINDOW = 20
+
+MIN_CONF_OUTPUT = 55
+LOCK_MIN_CONF = 80
+LOCK_MIN_COMBINED_HOLD = 0.78
+
+ALT_TOTALS = [18.5, 20.5, 22.5, 24.5]
+
+os.makedirs(PLAYERS_DIR, exist_ok=True)
+os.makedirs(OUTPUT_DIR, exist_ok=True)
+
+HEADERS = {"User-Agent": "tennis-model/1.2"}
+
+# ==========================================================
+# 👉 MANUAL MATCH INPUT (EDIT THIS DAILY)
+# ==========================================================
+MANUAL_MATCHES = [
+    ("Aleksandar Kovacevic", "Giovanni Mpetshi Perricard", "Hard"),
+    ("Sebastian Korda", "Alex Michelsen", "Hard"),
+
+    ("Marta Kostyuk", "Amanda Anisimova", "Hard"),
+    ("Mirra Andreeva", "Linda Noskova", "Hard"),
+    ("Elena Rybakina", "Karolina Muchova", "Hard"),
+    ("Aryna Sabalenka", "Madison Keys", "Hard"),
+    ("Liudmila Samsonova", "Jessica Pegula", "Hard"),
+]
+
+# ==========================================================
+# DATA MODELS
+# ==========================================================
+@dataclass
+class PlayerStats:
+    hold: float
+    brk: float
+    avg_games: float
+    n: int
+
+@dataclass
+class Pick:
+    match: str
+    side: str
+    line: float
+    confidence: int
+    expected_games: float
+    combined_hold: float
+    tier: str
+
+# ==========================================================
+# HELPERS
+# ==========================================================
+def normalize_surface(s):
+    s = s.lower()
+    if "clay" in s: return "Clay"
+    if "grass" in s: return "Grass"
+    if "indoor" in s: return "Indoor Hard"
+    return "Hard"
+
+def player_cache_path(player):
+    return os.path.join(PLAYERS_DIR, player.replace(" ", "_") + ".json")
+
+# ==========================================================
+# TENNISABSTRACT — PLAYER HISTORY
+# ==========================================================
+def refresh_player_history(player):
+    path = player_cache_path(player)
+    if os.path.exists(path):
+        return
+
+    slug = player.replace(" ", "")
+    url = f"https://www.tennisabstract.com/cgi-bin/player.cgi?p={slug}&f=ACareer"
+    html = requests.get(url, headers=HEADERS, timeout=20).text
+
+    try:
+        tables = pd.read_html(StringIO(html))
+    except:
+        return
+
+    df = max(tables, key=len)
+    rows = []
+
+    for _, r in df.iterrows():
+        try:
+            sg = int(r["SvG"])
+            rg = int(r["RtG"])
+            rbp = int(r["RtBP"])
+            total_games = int(r["W1"]) + int(r["L1"])
+
+            hold = (sg - int(r["SvBP"])) / sg if sg else 0.75
+            brk = rbp / rg if rg else 0.20
+        except:
+            continue
+
+        rows.append({
+            "surface": normalize_surface(r["Surface"]),
+            "hold_pct": hold,
+            "break_pct": brk,
+            "total_games": total_games
+        })
+
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(rows, f, indent=2)
+
+# ==========================================================
+# MODEL CORE
+# ==========================================================
+def weighted_stats(rows, surface):
+    rows = rows[-WINDOW:]
+
+    h = b = g = n = 0
+    for r in rows:
+        if r["surface"] == surface:
+            h += r["hold_pct"]
+            b += r["break_pct"]
+            g += r["total_games"]
+            n += 1
+
+    if n == 0:
+        return PlayerStats(0.75, 0.20, 22.0, 0)
+
+    return PlayerStats(h / n, b / n, g / n, n)
+
+def evaluate_best_line(a_stats, b_stats):
+    expected = (a_stats.avg_games + b_stats.avg_games) / 2
+    combined_hold = (a_stats.hold + b_stats.hold) / 2
+
+    best = None
+
+    for line in ALT_TOTALS:
+        side = "Over" if expected > line else "Under"
+
+        # tennis-scaled distance penalty
+        dist = abs(expected - line)
+        dist_penalty = max(0, 1 - dist / 2.5)
+
+        # environment strength
+        env = (combined_hold - 0.70) / 0.20
+        env = max(0.05, min(0.95, env))
+
+        conf = (env * 0.75 + dist_penalty * 0.25) * 100
+        conf = int(max(1, min(99, conf)))
+
+        if not best or conf > best.confidence:
+            best = Pick(
+                match="",
+                side=side,
+                line=line,
+                confidence=conf,
+                expected_games=round(expected, 1),
+                combined_hold=combined_hold,
+                tier=""
+            )
+
+    return best
+
+def assign_tier(p):
+    if p.confidence >= LOCK_MIN_CONF and p.combined_hold >= LOCK_MIN_COMBINED_HOLD:
+        return "LOCK"
+    if p.confidence >= 65:
+        return "PLAY"
+    return "LEAN"
+
+# ==========================================================
+# MAIN
+# ==========================================================
+def main():
+    today = datetime.now().strftime("%Y-%m-%d")
+    core = []
+    locks = []
+
+    for a, b, surface in MANUAL_MATCHES:
+        refresh_player_history(a)
+        refresh_player_history(b)
+
+        try:
+            a_rows = json.load(open(player_cache_path(a)))
+            b_rows = json.load(open(player_cache_path(b)))
+        except:
+            continue
+
+        a_stats = weighted_stats(a_rows, surface)
+        b_stats = weighted_stats(b_rows, surface)
+
+        best = evaluate_best_line(a_stats, b_stats)
+        best.match = f"{a} vs {b}"
+        best.tier = assign_tier(best)
+
+        if best.confidence >= MIN_CONF_OUTPUT:
+            core.append(best)
+
+        if best.tier == "LOCK":
+            locks.append(best)
+
+    core.sort(key=lambda x: x.confidence, reverse=True)
+    locks.sort(key=lambda x: x.confidence, reverse=True)
+
+    out = [f"🎾 TENNIS TOTAL GAMES MODEL — {today}\n"]
+
+    if locks:
+        out.append("🔥 LOCKS")
+        out.append("-------------------")
+        for p in locks:
+            out.append(
+                f"{p.match} — {p.side} {p.line} "
+                f"| Conf {p.confidence}% | Exp {p.expected_games}"
+            )
+        out.append("")
+
+    if core:
+        out.append("✅ CORE PLAYS")
+        out.append("-------------------")
+        for p in core:
+            out.append(
+                f"{p.match} — {p.side} {p.line} "
+                f"| {p.tier} | Conf {p.confidence}% | Exp {p.expected_games}"
+            )
+    else:
+        out.append("No qualified plays today (correct behavior).")
+
+    text = "\n".join(out)
+    path = os.path.join(OUTPUT_DIR, f"{today}.txt")
+
+    with open(path, "w", encoding="utf-8") as f:
+        f.write(text)
+
+    print(text)
+    print(f"\nSaved → {path}")
+
+if __name__ == "__main__":
+    main()
