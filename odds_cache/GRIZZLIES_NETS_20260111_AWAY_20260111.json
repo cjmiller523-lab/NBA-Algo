@@ -1,0 +1,1842 @@
+{
+  "nextCursor": "n.1768163400000.v85B9z98sCe6lqoNk3vU",
+  "success": true,
+  "data": [
+    {
+      "eventID": "v85B9z98sCe6lqoNk3vU",
+      "sportID": "BASKETBALL",
+      "leagueID": "NBA",
+      "type": "match",
+      "teams": {
+        "home": {
+          "teamID": "MEMPHIS_GRIZZLIES_NBA",
+          "names": {
+            "long": "Memphis Grizzlies",
+            "medium": "Grizzlies",
+            "short": "MEM",
+            "location": "Memphis"
+          },
+          "colors": {
+            "primary": "#23375B",
+            "secondary": "#6189B9",
+            "primaryContrast": "#FFFFFF",
+            "secondaryContrast": "#23375B"
+          },
+          "statEntityID": "home"
+        },
+        "away": {
+          "teamID": "BROOKLYN_NETS_NBA",
+          "names": {
+            "long": "Brooklyn Nets",
+            "medium": "Nets",
+            "short": "BKN",
+            "location": "Brooklyn"
+          },
+          "colors": {
+            "primary": "#FFFFFF",
+            "secondary": "",
+            "primaryContrast": "#000000",
+            "secondaryContrast": ""
+          },
+          "statEntityID": "away"
+        }
+      },
+      "status": {
+        "started": false,
+        "completed": false,
+        "cancelled": false,
+        "ended": false,
+        "live": false,
+        "delayed": false,
+        "currentPeriodID": "",
+        "previousPeriodID": "",
+        "displayShort": "",
+        "displayLong": "Upcoming",
+        "inBreak": false,
+        "startsAt": "2026-01-11T20:30:00.000Z",
+        "previousStartsAt": [],
+        "hardStart": true,
+        "periods": {
+          "started": [],
+          "ended": []
+        },
+        "oddsPresent": true,
+        "oddsAvailable": true,
+        "finalized": false
+      },
+      "info": {
+        "seasonWeek": "NBA 25/26"
+      },
+      "links": {
+        "bookmakers": {
+          "fanduel": "https://sportsbook.fanduel.com/basketball/-/35129533",
+          "ladbrokes": "https://www.ladbrokes.com.au/sports/-/-/-/7651a621-2a50-47aa-a643-a84dec390d17",
+          "neds": "https://www.neds.com.au/sports/-/-/-/7651a621-2a50-47aa-a643-a84dec390d17",
+          "paddypower": "https://www.paddypower.com/basketball/nba/brooklyn-nets-@-memphis-grizzlies-35129533",
+          "sportsbet": "https://www.sportsbet.com.au/betting/basketball---us/nba/brooklyn-nets-at-memphis-grizzlies-10025032",
+          "1xbet": "https://1xbet.com/en/line/football/13589-nba/296132058-memphis-grizzlies-brooklyn-nets",
+          "888sport": "https://www.888sport.com/basketball/united-states-of-america/nba/brooklyn-nets-memphis-grizzlies-e-6964887",
+          "betrsportsbook": "https://www.betr.com.au/sports/Basketball/107/United-States-of-America/NBA/Brooklyn-Nets-@-Memphis-Grizzlies/1952475/All-Markets",
+          "coolbet": "https://www.coolbet.com/en/sports/match/4876173",
+          "pointsbet": "https://pointsbet.com.au/sports/basketball/NBA/2564138",
+          "betfairsportsbook": "https://www.betfair.com/betting/basketball/nba/brooklyn-nets-@-memphis-grizzlies/e-35129533",
+          "fliff": "https://sports.getfliff.com/markets/358750_c_p_204_prematch",
+          "williamhill": "https://sports.williamhill.com/betting/en-gb/basketball/OB_EV38322958/brooklyn-nets-at-memphis-grizzlies",
+          "nordicbet": "https://www.nordicbet.com/en/sportsbook/basketball/nba/nba/memphis-grizzlies-brooklyn-nets",
+          "betsson": "https://www.betsson.com/en/sportsbook/basketball/nba/nba?eventId=f-Zp-HYotpoUCmahWuG1dYfA",
+          "playup": "https://www.playup.com.au/betting/sports/nba/memphis-grizzlies-v-brooklyn-nets/1773839",
+          "boylesports": "https://www.boylesports.com/sports/basketball/event/usa-nba/memphis-grizzlies-v-brooklyn-nets",
+          "matchbook": "https://www.matchbook.com/events/basketball/united-states-of-america/nba/32211580952000045",
+          "hardrockbet": "https://app.hardrock.bet/home/competition/nba/4995860402542477571",
+          "draftkings": "https://sportsbook.draftkings.com/event/33428513",
+          "tab": "https://www.tab.com.au/sports/betting/Basketball/competitions/NBA/matches/Memphis%20v%20Brooklyn",
+          "caesars": "https://sportsbook.caesars.com/us/nj/bet/basketball/ed171b6d-7be0-409d-a8b9-ae6e0986d32c/brooklyn-nets-at-memphis-grizzlies",
+          "betway": "https://betway.com/en/sports/evt/16230451",
+          "betonline": "https://sports.betonline.ag/sportsbook/basketball/nba/game/490932285",
+          "lowvig": "https://sports.lowvig.ag/sportsbook/basketball/nba/game/490932285",
+          "espnbet": "https://espnbet.com/sport/basketball/organization/united-states/competition/nba/event/4f6b14aa-7097-48c3-9990-0dbf9245fa99",
+          "thescorebet": "https://thescore.bet/sport/basketball/organization/united-states/competition/nba/event/4f6b14aa-7097-48c3-9990-0dbf9245fa99",
+          "betmgm": "https://sports.nj.betmgm.com/en/sports/events/18705591",
+          "coral": "https://sports.coral.co.uk/event/basketball/basketball-usa/nba/mem-grizzlies-v-bro-nets/41300189",
+          "bovada": "https://www.bovada.lv/sports/basketball/nba/brooklyn-nets-memphis-grizzlies-202601111530",
+          "pinnacle": "https://www.pinnacle.com/en/basketball/nba/brooklyn-nets-vs-memphis-grizzlies/1622012902",
+          "ballybet": "https://play.ballybet.com/sports#event/1024653018",
+          "betparx": "https://nj.betparx.com/kambi#event/1024653018",
+          "betrivers": "https://nj.betrivers.com/?page=sportsbook#event/1024653018",
+          "casumo": "https://www.casumo.com/en-gb/sports#event/1024653018",
+          "grosvenor": "https://www.grosvenorcasinos.com/sport#event/1024653018",
+          "leovegas": "https://www.leovegas.co.uk/betting#event/1024653018",
+          "livescorebet": "https://www.livescorebet.com/uk/sports/basketball/nba/memphis-grizzlies-brooklyn-nets/SBTE_2_1024653018",
+          "tabtouch": "https://www.tabtouch.mobi/tabtouch-sports/event/1024653018",
+          "unibet": "https://www.unibet.com/betting/sports/event/1024653018",
+          "virginbet": "https://www.virginbet.com/sports/basketball/nba/memphis-grizzlies-brooklyn-nets/SBTE_2_1024653018",
+          "everygame": "https://sports.everygame.eu/en/Bets/Basketball/NBA-Lines/Brooklyn-Nets-at-Memphis-Grizzlies/2777663"
+        }
+      },
+      "odds": {
+        "assists-CAM_THOMAS_1_NBA-game-ou-over": {
+          "oddID": "assists-CAM_THOMAS_1_NBA-game-ou-over",
+          "opposingOddID": "assists-CAM_THOMAS_1_NBA-game-ou-under",
+          "statID": "assists",
+          "statEntityID": "CAM_THOMAS_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "CAM_THOMAS_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+113",
+          "bookOdds": "+100",
+          "fairOverUnder": "2.5",
+          "bookOverUnder": "2.5",
+          "openFairOdds": "+113",
+          "openBookOdds": "+100",
+          "openFairOverUnder": "2.5",
+          "openBookOverUnder": "2.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-102",
+              "overUnder": "2.5",
+              "lastUpdatedAt": "2026-01-11T07:53:52.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.550005559&selectionId=42069706",
+              "altLines": [
+                {
+                  "odds": "-320",
+                  "overUnder": "1.5",
+                  "lastUpdatedAt": "2026-01-11T07:53:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+235",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2026-01-11T07:53:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1060",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2026-01-11T07:53:52.000Z",
+                  "available": true
+                }
+              ]
+            }
+          },
+          "marketName": "Cam Thomas Assists Over/Under"
+        },
+        "assists-CAM_THOMAS_1_NBA-game-ou-under": {
+          "oddID": "assists-CAM_THOMAS_1_NBA-game-ou-under",
+          "opposingOddID": "assists-CAM_THOMAS_1_NBA-game-ou-over",
+          "statID": "assists",
+          "statEntityID": "CAM_THOMAS_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "CAM_THOMAS_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-113",
+          "bookOdds": "-130",
+          "fairOverUnder": "2.5",
+          "bookOverUnder": "2.5",
+          "openFairOdds": "-113",
+          "openBookOdds": "-130",
+          "openFairOverUnder": "2.5",
+          "openBookOverUnder": "2.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-130",
+              "overUnder": "2.5",
+              "lastUpdatedAt": "2026-01-11T07:53:52.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.550005559&selectionId=42069693"
+            }
+          },
+          "marketName": "Cam Thomas Assists Over/Under"
+        },
+        "assists-EGOR_DEMIN_1_NBA-game-ou-over": {
+          "oddID": "assists-EGOR_DEMIN_1_NBA-game-ou-over",
+          "opposingOddID": "assists-EGOR_DEMIN_1_NBA-game-ou-under",
+          "statID": "assists",
+          "statEntityID": "EGOR_DEMIN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "EGOR_DEMIN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "-143",
+          "fairOverUnder": "4",
+          "bookOverUnder": "3.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "-143",
+          "openFairOverUnder": "4",
+          "openBookOverUnder": "3.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+122",
+              "overUnder": "4.5",
+              "lastUpdatedAt": "2026-01-11T07:53:52.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.550005560&selectionId=77126552",
+              "altLines": [
+                {
+                  "odds": "-2000",
+                  "overUnder": "1.5",
+                  "lastUpdatedAt": "2026-01-11T07:53:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-178",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2026-01-11T07:53:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+250",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2026-01-11T07:53:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+900",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2026-01-11T07:53:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+2000",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-01-11T07:53:52.000Z",
+                  "available": true
+                }
+              ]
+            }
+          },
+          "marketName": "Egor Demin Assists Over/Under"
+        },
+        "assists-EGOR_DEMIN_1_NBA-game-ou-under": {
+          "oddID": "assists-EGOR_DEMIN_1_NBA-game-ou-under",
+          "opposingOddID": "assists-EGOR_DEMIN_1_NBA-game-ou-over",
+          "statID": "assists",
+          "statEntityID": "EGOR_DEMIN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "EGOR_DEMIN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "+113",
+          "fairOverUnder": "4",
+          "bookOverUnder": "3.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "+113",
+          "openFairOverUnder": "4",
+          "openBookOverUnder": "3.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-162",
+              "overUnder": "4.5",
+              "lastUpdatedAt": "2026-01-11T07:53:52.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.550005560&selectionId=77126553"
+            }
+          },
+          "marketName": "Egor Demin Assists Over/Under"
+        },
+        "assists-NIC_CLAXTON_1_NBA-game-ou-over": {
+          "oddID": "assists-NIC_CLAXTON_1_NBA-game-ou-over",
+          "opposingOddID": "assists-NIC_CLAXTON_1_NBA-game-ou-under",
+          "statID": "assists",
+          "statEntityID": "NIC_CLAXTON_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "NIC_CLAXTON_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+129",
+          "bookOdds": "+114",
+          "fairOverUnder": "3.5",
+          "bookOverUnder": "3.5",
+          "openFairOdds": "+129",
+          "openBookOdds": "+114",
+          "openFairOverUnder": "3.5",
+          "openBookOverUnder": "3.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+120",
+              "overUnder": "3.5",
+              "lastUpdatedAt": "2026-01-11T07:53:52.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.550005561&selectionId=50236314",
+              "altLines": [
+                {
+                  "odds": "-700",
+                  "overUnder": "1.5",
+                  "lastUpdatedAt": "2026-01-11T07:53:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+560",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2026-01-11T07:53:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1800",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2026-01-11T07:53:52.000Z",
+                  "available": true
+                }
+              ]
+            }
+          },
+          "marketName": "Nic Claxton Assists Over/Under"
+        },
+        "assists-NIC_CLAXTON_1_NBA-game-ou-under": {
+          "oddID": "assists-NIC_CLAXTON_1_NBA-game-ou-under",
+          "opposingOddID": "assists-NIC_CLAXTON_1_NBA-game-ou-over",
+          "statID": "assists",
+          "statEntityID": "NIC_CLAXTON_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "NIC_CLAXTON_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-129",
+          "bookOdds": "-151",
+          "fairOverUnder": "3.5",
+          "bookOverUnder": "3.5",
+          "openFairOdds": "-129",
+          "openBookOdds": "-151",
+          "openFairOverUnder": "3.5",
+          "openBookOverUnder": "3.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-160",
+              "overUnder": "3.5",
+              "lastUpdatedAt": "2026-01-11T07:53:52.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.550005561&selectionId=50236313"
+            }
+          },
+          "marketName": "Nic Claxton Assists Over/Under"
+        },
+        "blocks-CAM_THOMAS_1_NBA-game-ou-over": {
+          "oddID": "blocks-CAM_THOMAS_1_NBA-game-ou-over",
+          "opposingOddID": "blocks-CAM_THOMAS_1_NBA-game-ou-under",
+          "statID": "blocks",
+          "statEntityID": "CAM_THOMAS_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "CAM_THOMAS_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+192",
+          "bookOdds": "+175",
+          "fairOverUnder": "0.5",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "+192",
+          "openBookOdds": "+175",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {},
+          "marketName": "Cam Thomas Blocks Over/Under"
+        },
+        "blocks-CAM_THOMAS_1_NBA-game-ou-under": {
+          "oddID": "blocks-CAM_THOMAS_1_NBA-game-ou-under",
+          "opposingOddID": "blocks-CAM_THOMAS_1_NBA-game-ou-over",
+          "statID": "blocks",
+          "statEntityID": "CAM_THOMAS_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "CAM_THOMAS_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": false,
+          "fairOddsAvailable": true,
+          "fairOdds": "-192",
+          "fairOverUnder": "0.5",
+          "openFairOdds": "-192",
+          "openFairOverUnder": "0.5",
+          "scoringSupported": true,
+          "marketName": "Cam Thomas Blocks Over/Under"
+        },
+        "blocks-EGOR_DEMIN_1_NBA-game-ou-over": {
+          "oddID": "blocks-EGOR_DEMIN_1_NBA-game-ou-over",
+          "opposingOddID": "blocks-EGOR_DEMIN_1_NBA-game-ou-under",
+          "statID": "blocks",
+          "statEntityID": "EGOR_DEMIN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "EGOR_DEMIN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+233",
+          "bookOdds": "+210",
+          "fairOverUnder": "0.5",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "+233",
+          "openBookOdds": "+210",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {},
+          "marketName": "Egor Demin Blocks Over/Under"
+        },
+        "blocks-EGOR_DEMIN_1_NBA-game-ou-under": {
+          "oddID": "blocks-EGOR_DEMIN_1_NBA-game-ou-under",
+          "opposingOddID": "blocks-EGOR_DEMIN_1_NBA-game-ou-over",
+          "statID": "blocks",
+          "statEntityID": "EGOR_DEMIN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "EGOR_DEMIN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-233",
+          "fairOverUnder": "0.5",
+          "openFairOdds": "-233",
+          "openFairOverUnder": "0.5",
+          "scoringSupported": true,
+          "marketName": "Egor Demin Blocks Over/Under",
+          "bookOdds": "-303",
+          "bookOverUnder": "0.5",
+          "byBookmaker": {},
+          "openBookOdds": "-303",
+          "openBookOverUnder": "0.5"
+        },
+        "blocks-NIC_CLAXTON_1_NBA-game-ou-over": {
+          "oddID": "blocks-NIC_CLAXTON_1_NBA-game-ou-over",
+          "opposingOddID": "blocks-NIC_CLAXTON_1_NBA-game-ou-under",
+          "statID": "blocks",
+          "statEntityID": "NIC_CLAXTON_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "NIC_CLAXTON_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+154",
+          "bookOdds": "+155",
+          "fairOverUnder": "1.5",
+          "bookOverUnder": "1.5",
+          "openFairOdds": "+154",
+          "openBookOdds": "+155",
+          "openFairOverUnder": "1.5",
+          "openBookOverUnder": "1.5",
+          "scoringSupported": true,
+          "byBookmaker": {},
+          "marketName": "Nic Claxton Blocks Over/Under"
+        },
+        "blocks-NIC_CLAXTON_1_NBA-game-ou-under": {
+          "oddID": "blocks-NIC_CLAXTON_1_NBA-game-ou-under",
+          "opposingOddID": "blocks-NIC_CLAXTON_1_NBA-game-ou-over",
+          "statID": "blocks",
+          "statEntityID": "NIC_CLAXTON_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "NIC_CLAXTON_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-154",
+          "fairOverUnder": "1.5",
+          "openFairOdds": "-154",
+          "openFairOverUnder": "1.5",
+          "scoringSupported": true,
+          "marketName": "Nic Claxton Blocks Over/Under",
+          "bookOdds": "-153",
+          "bookOverUnder": "1.5",
+          "byBookmaker": {},
+          "openBookOdds": "-153",
+          "openBookOverUnder": "1.5"
+        },
+        "points-CAM_THOMAS_1_NBA-game-ou-over": {
+          "oddID": "points-CAM_THOMAS_1_NBA-game-ou-over",
+          "opposingOddID": "points-CAM_THOMAS_1_NBA-game-ou-under",
+          "statID": "points",
+          "statEntityID": "CAM_THOMAS_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "CAM_THOMAS_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+113",
+          "bookOdds": "-115",
+          "fairOverUnder": "20.5",
+          "bookOverUnder": "19.5",
+          "openFairOdds": "+113",
+          "openBookOdds": "-115",
+          "openFairOverUnder": "20.5",
+          "openBookOverUnder": "19.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-104",
+              "overUnder": "20.5",
+              "lastUpdatedAt": "2026-01-11T07:53:52.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.550005532&selectionId=42069706",
+              "altLines": [
+                {
+                  "odds": "-2000",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-01-11T07:53:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-390",
+                  "overUnder": "14.5",
+                  "lastUpdatedAt": "2026-01-11T07:53:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-128",
+                  "overUnder": "19.5",
+                  "lastUpdatedAt": "2026-01-11T07:53:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+215",
+                  "overUnder": "24.5",
+                  "lastUpdatedAt": "2026-01-11T07:53:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+500",
+                  "overUnder": "29.5",
+                  "lastUpdatedAt": "2026-01-11T07:53:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1100",
+                  "overUnder": "34.5",
+                  "lastUpdatedAt": "2026-01-11T07:53:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+2500",
+                  "overUnder": "39.5",
+                  "lastUpdatedAt": "2026-01-11T07:53:52.000Z",
+                  "available": true
+                }
+              ]
+            }
+          },
+          "marketName": "Cam Thomas Points Over/Under"
+        },
+        "points-CAM_THOMAS_1_NBA-game-ou-under": {
+          "oddID": "points-CAM_THOMAS_1_NBA-game-ou-under",
+          "opposingOddID": "points-CAM_THOMAS_1_NBA-game-ou-over",
+          "statID": "points",
+          "statEntityID": "CAM_THOMAS_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "CAM_THOMAS_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-113",
+          "bookOdds": "-107",
+          "fairOverUnder": "20.5",
+          "bookOverUnder": "19.5",
+          "openFairOdds": "-113",
+          "openBookOdds": "-107",
+          "openFairOverUnder": "20.5",
+          "openBookOverUnder": "19.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-128",
+              "overUnder": "20.5",
+              "lastUpdatedAt": "2026-01-11T07:53:52.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.550005532&selectionId=42069693",
+              "altLines": [
+                {
+                  "odds": "-102",
+                  "overUnder": "19.5",
+                  "lastUpdatedAt": "2026-01-11T05:41:07.000Z",
+                  "available": false
+                }
+              ]
+            }
+          },
+          "marketName": "Cam Thomas Points Over/Under"
+        },
+        "points-EGOR_DEMIN_1_NBA-game-ou-over": {
+          "oddID": "points-EGOR_DEMIN_1_NBA-game-ou-over",
+          "opposingOddID": "points-EGOR_DEMIN_1_NBA-game-ou-under",
+          "statID": "points",
+          "statEntityID": "EGOR_DEMIN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "EGOR_DEMIN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+111",
+          "bookOdds": "+100",
+          "fairOverUnder": "13.5",
+          "bookOverUnder": "13.5",
+          "openFairOdds": "+111",
+          "openBookOdds": "+100",
+          "openFairOverUnder": "13.5",
+          "openBookOverUnder": "13.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+100",
+              "overUnder": "13.5",
+              "lastUpdatedAt": "2026-01-11T07:53:52.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.550005534&selectionId=77126552",
+              "altLines": [
+                {
+                  "odds": "-310",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-01-11T07:53:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+134",
+                  "overUnder": "14.5",
+                  "lastUpdatedAt": "2026-01-11T07:53:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+420",
+                  "overUnder": "19.5",
+                  "lastUpdatedAt": "2026-01-11T07:53:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1100",
+                  "overUnder": "24.5",
+                  "lastUpdatedAt": "2026-01-11T07:53:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+3000",
+                  "overUnder": "29.5",
+                  "lastUpdatedAt": "2026-01-11T05:22:16.000Z",
+                  "available": false
+                }
+              ]
+            }
+          },
+          "marketName": "Egor Demin Points Over/Under"
+        },
+        "points-EGOR_DEMIN_1_NBA-game-ou-under": {
+          "oddID": "points-EGOR_DEMIN_1_NBA-game-ou-under",
+          "opposingOddID": "points-EGOR_DEMIN_1_NBA-game-ou-over",
+          "statID": "points",
+          "statEntityID": "EGOR_DEMIN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "EGOR_DEMIN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-111",
+          "bookOdds": "-125",
+          "fairOverUnder": "13.5",
+          "bookOverUnder": "13.5",
+          "openFairOdds": "-111",
+          "openBookOdds": "-125",
+          "openFairOverUnder": "13.5",
+          "openBookOverUnder": "13.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-132",
+              "overUnder": "13.5",
+              "lastUpdatedAt": "2026-01-11T07:53:52.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.550005534&selectionId=77126553"
+            }
+          },
+          "marketName": "Egor Demin Points Over/Under"
+        },
+        "points-NIC_CLAXTON_1_NBA-game-ou-over": {
+          "oddID": "points-NIC_CLAXTON_1_NBA-game-ou-over",
+          "opposingOddID": "points-NIC_CLAXTON_1_NBA-game-ou-under",
+          "statID": "points",
+          "statEntityID": "NIC_CLAXTON_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "NIC_CLAXTON_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+112",
+          "bookOdds": "-102",
+          "fairOverUnder": "12.5",
+          "bookOverUnder": "12.5",
+          "openFairOdds": "+112",
+          "openBookOdds": "-102",
+          "openFairOverUnder": "12.5",
+          "openBookOverUnder": "12.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-102",
+              "overUnder": "12.5",
+              "lastUpdatedAt": "2026-01-11T07:53:52.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.550005535&selectionId=50236314",
+              "altLines": [
+                {
+                  "odds": "-265",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-01-11T07:53:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+176",
+                  "overUnder": "14.5",
+                  "lastUpdatedAt": "2026-01-11T07:53:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+600",
+                  "overUnder": "19.5",
+                  "lastUpdatedAt": "2026-01-11T07:53:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1700",
+                  "overUnder": "24.5",
+                  "lastUpdatedAt": "2026-01-11T07:53:52.000Z",
+                  "available": true
+                }
+              ]
+            }
+          },
+          "marketName": "Nic Claxton Points Over/Under"
+        },
+        "points-NIC_CLAXTON_1_NBA-game-ou-under": {
+          "oddID": "points-NIC_CLAXTON_1_NBA-game-ou-under",
+          "opposingOddID": "points-NIC_CLAXTON_1_NBA-game-ou-over",
+          "statID": "points",
+          "statEntityID": "NIC_CLAXTON_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "NIC_CLAXTON_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-112",
+          "bookOdds": "-130",
+          "fairOverUnder": "12.5",
+          "bookOverUnder": "12.5",
+          "openFairOdds": "-112",
+          "openBookOdds": "-130",
+          "openFairOverUnder": "12.5",
+          "openBookOverUnder": "12.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-130",
+              "overUnder": "12.5",
+              "lastUpdatedAt": "2026-01-11T07:53:52.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.550005535&selectionId=50236313"
+            }
+          },
+          "marketName": "Nic Claxton Points Over/Under"
+        },
+        "rebounds-CAM_THOMAS_1_NBA-game-ou-over": {
+          "oddID": "rebounds-CAM_THOMAS_1_NBA-game-ou-over",
+          "opposingOddID": "rebounds-CAM_THOMAS_1_NBA-game-ou-under",
+          "statID": "rebounds",
+          "statEntityID": "CAM_THOMAS_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "CAM_THOMAS_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+126",
+          "bookOdds": "+107",
+          "fairOverUnder": "2.5",
+          "bookOverUnder": "2.5",
+          "openFairOdds": "+126",
+          "openBookOdds": "+107",
+          "openFairOverUnder": "2.5",
+          "openBookOverUnder": "2.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+116",
+              "overUnder": "2.5",
+              "lastUpdatedAt": "2026-01-11T07:54:06.265Z",
+              "available": false,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.550005546&selectionId=42069706",
+              "altLines": [
+                {
+                  "odds": "+285",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2026-01-11T07:53:52.000Z",
+                  "available": true
+                }
+              ]
+            }
+          },
+          "marketName": "Cam Thomas Rebounds Over/Under"
+        },
+        "rebounds-CAM_THOMAS_1_NBA-game-ou-under": {
+          "oddID": "rebounds-CAM_THOMAS_1_NBA-game-ou-under",
+          "opposingOddID": "rebounds-CAM_THOMAS_1_NBA-game-ou-over",
+          "statID": "rebounds",
+          "statEntityID": "CAM_THOMAS_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "CAM_THOMAS_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-126",
+          "bookOdds": "-155",
+          "fairOverUnder": "2.5",
+          "bookOverUnder": "2.5",
+          "openFairOdds": "-126",
+          "openBookOdds": "-155",
+          "openFairOverUnder": "2.5",
+          "openBookOverUnder": "2.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-154",
+              "overUnder": "2.5",
+              "lastUpdatedAt": "2026-01-11T07:54:06.265Z",
+              "available": false,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.550005546&selectionId=42069693"
+            }
+          },
+          "marketName": "Cam Thomas Rebounds Over/Under"
+        },
+        "rebounds-EGOR_DEMIN_1_NBA-game-ou-over": {
+          "oddID": "rebounds-EGOR_DEMIN_1_NBA-game-ou-over",
+          "opposingOddID": "rebounds-EGOR_DEMIN_1_NBA-game-ou-under",
+          "statID": "rebounds",
+          "statEntityID": "EGOR_DEMIN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "EGOR_DEMIN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+125",
+          "bookOdds": "-160",
+          "fairOverUnder": "4.5",
+          "bookOverUnder": "3.5",
+          "openFairOdds": "+125",
+          "openBookOdds": "-160",
+          "openFairOverUnder": "4.5",
+          "openBookOverUnder": "3.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-162",
+              "overUnder": "3.5",
+              "lastUpdatedAt": "2026-01-11T07:53:52.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.550005548&selectionId=77126552",
+              "altLines": [
+                {
+                  "odds": "+280",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2026-01-11T07:53:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1000",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2026-01-11T07:53:52.000Z",
+                  "available": true
+                }
+              ]
+            }
+          },
+          "marketName": "Egor Demin Rebounds Over/Under"
+        },
+        "rebounds-EGOR_DEMIN_1_NBA-game-ou-under": {
+          "oddID": "rebounds-EGOR_DEMIN_1_NBA-game-ou-under",
+          "opposingOddID": "rebounds-EGOR_DEMIN_1_NBA-game-ou-over",
+          "statID": "rebounds",
+          "statEntityID": "EGOR_DEMIN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "EGOR_DEMIN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-125",
+          "bookOdds": "+120",
+          "fairOverUnder": "4.5",
+          "bookOverUnder": "3.5",
+          "openFairOdds": "-125",
+          "openBookOdds": "+120",
+          "openFairOverUnder": "4.5",
+          "openBookOverUnder": "3.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+122",
+              "overUnder": "3.5",
+              "lastUpdatedAt": "2026-01-11T07:53:52.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.550005548&selectionId=77126553"
+            }
+          },
+          "marketName": "Egor Demin Rebounds Over/Under"
+        },
+        "rebounds-NIC_CLAXTON_1_NBA-game-ou-over": {
+          "oddID": "rebounds-NIC_CLAXTON_1_NBA-game-ou-over",
+          "opposingOddID": "rebounds-NIC_CLAXTON_1_NBA-game-ou-under",
+          "statID": "rebounds",
+          "statEntityID": "NIC_CLAXTON_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "NIC_CLAXTON_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+122",
+          "bookOdds": "+106",
+          "fairOverUnder": "8.5",
+          "bookOverUnder": "8.5",
+          "openFairOdds": "+122",
+          "openBookOdds": "+106",
+          "openFairOverUnder": "8.5",
+          "openBookOverUnder": "8.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+110",
+              "overUnder": "8.5",
+              "lastUpdatedAt": "2026-01-11T07:53:52.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.550005549&selectionId=50236314",
+              "altLines": [
+                {
+                  "odds": "-4500",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2026-01-11T07:53:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-520",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2026-01-11T07:53:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-156",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2026-01-11T07:53:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+158",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-01-11T07:53:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+420",
+                  "overUnder": "11.5",
+                  "lastUpdatedAt": "2026-01-11T07:53:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1000",
+                  "overUnder": "13.5",
+                  "lastUpdatedAt": "2026-01-11T07:53:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+2000",
+                  "overUnder": "15.5",
+                  "lastUpdatedAt": "2026-01-11T07:53:52.000Z",
+                  "available": true
+                }
+              ]
+            }
+          },
+          "marketName": "Nic Claxton Rebounds Over/Under"
+        },
+        "rebounds-NIC_CLAXTON_1_NBA-game-ou-under": {
+          "oddID": "rebounds-NIC_CLAXTON_1_NBA-game-ou-under",
+          "opposingOddID": "rebounds-NIC_CLAXTON_1_NBA-game-ou-over",
+          "statID": "rebounds",
+          "statEntityID": "NIC_CLAXTON_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "NIC_CLAXTON_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-122",
+          "bookOdds": "-142",
+          "fairOverUnder": "8.5",
+          "bookOverUnder": "8.5",
+          "openFairOdds": "-122",
+          "openBookOdds": "-142",
+          "openFairOverUnder": "8.5",
+          "openBookOverUnder": "8.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-146",
+              "overUnder": "8.5",
+              "lastUpdatedAt": "2026-01-11T07:53:52.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.550005549&selectionId=50236313",
+              "altLines": [
+                {
+                  "odds": "+112",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2026-01-11T05:48:20.000Z",
+                  "available": false
+                }
+              ]
+            }
+          },
+          "marketName": "Nic Claxton Rebounds Over/Under"
+        },
+        "steals-CAM_THOMAS_1_NBA-game-ou-over": {
+          "oddID": "steals-CAM_THOMAS_1_NBA-game-ou-over",
+          "opposingOddID": "steals-CAM_THOMAS_1_NBA-game-ou-under",
+          "statID": "steals",
+          "statEntityID": "CAM_THOMAS_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "CAM_THOMAS_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+115",
+          "bookOdds": "+104",
+          "fairOverUnder": "0.5",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "+115",
+          "openBookOdds": "+104",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {},
+          "marketName": "Cam Thomas Steals Over/Under"
+        },
+        "steals-CAM_THOMAS_1_NBA-game-ou-under": {
+          "oddID": "steals-CAM_THOMAS_1_NBA-game-ou-under",
+          "opposingOddID": "steals-CAM_THOMAS_1_NBA-game-ou-over",
+          "statID": "steals",
+          "statEntityID": "CAM_THOMAS_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "CAM_THOMAS_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": false,
+          "fairOddsAvailable": true,
+          "fairOdds": "-115",
+          "fairOverUnder": "0.5",
+          "openFairOdds": "-115",
+          "openFairOverUnder": "0.5",
+          "scoringSupported": true,
+          "marketName": "Cam Thomas Steals Over/Under"
+        },
+        "steals-EGOR_DEMIN_1_NBA-game-ou-over": {
+          "oddID": "steals-EGOR_DEMIN_1_NBA-game-ou-over",
+          "opposingOddID": "steals-EGOR_DEMIN_1_NBA-game-ou-under",
+          "statID": "steals",
+          "statEntityID": "EGOR_DEMIN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "EGOR_DEMIN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+140",
+          "bookOdds": "+140",
+          "fairOverUnder": "1.5",
+          "bookOverUnder": "1.5",
+          "openFairOdds": "+140",
+          "openBookOdds": "+140",
+          "openFairOverUnder": "1.5",
+          "openBookOverUnder": "1.5",
+          "scoringSupported": true,
+          "byBookmaker": {},
+          "marketName": "Egor Demin Steals Over/Under"
+        },
+        "steals-EGOR_DEMIN_1_NBA-game-ou-under": {
+          "oddID": "steals-EGOR_DEMIN_1_NBA-game-ou-under",
+          "opposingOddID": "steals-EGOR_DEMIN_1_NBA-game-ou-over",
+          "statID": "steals",
+          "statEntityID": "EGOR_DEMIN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "EGOR_DEMIN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-140",
+          "fairOverUnder": "1.5",
+          "openFairOdds": "-140",
+          "openFairOverUnder": "1.5",
+          "scoringSupported": true,
+          "marketName": "Egor Demin Steals Over/Under",
+          "bookOdds": "-140",
+          "bookOverUnder": "1.5",
+          "byBookmaker": {},
+          "openBookOdds": "-140",
+          "openBookOverUnder": "1.5"
+        },
+        "steals-NIC_CLAXTON_1_NBA-game-ou-over": {
+          "oddID": "steals-NIC_CLAXTON_1_NBA-game-ou-over",
+          "opposingOddID": "steals-NIC_CLAXTON_1_NBA-game-ou-under",
+          "statID": "steals",
+          "statEntityID": "NIC_CLAXTON_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "NIC_CLAXTON_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-154",
+          "bookOdds": "-180",
+          "fairOverUnder": "0.5",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "-154",
+          "openBookOdds": "-180",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {},
+          "marketName": "Nic Claxton Steals Over/Under"
+        },
+        "steals-NIC_CLAXTON_1_NBA-game-ou-under": {
+          "oddID": "steals-NIC_CLAXTON_1_NBA-game-ou-under",
+          "opposingOddID": "steals-NIC_CLAXTON_1_NBA-game-ou-over",
+          "statID": "steals",
+          "statEntityID": "NIC_CLAXTON_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "NIC_CLAXTON_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+154",
+          "fairOverUnder": "0.5",
+          "openFairOdds": "+154",
+          "openFairOverUnder": "0.5",
+          "scoringSupported": true,
+          "marketName": "Nic Claxton Steals Over/Under",
+          "bookOdds": "+140",
+          "bookOverUnder": "0.5",
+          "byBookmaker": {},
+          "openBookOdds": "+140",
+          "openBookOverUnder": "0.5"
+        },
+        "assists-DANIEL_WOLF_1_NBA-game-ou-over": {
+          "oddID": "assists-DANIEL_WOLF_1_NBA-game-ou-over",
+          "opposingOddID": "assists-DANIEL_WOLF_1_NBA-game-ou-under",
+          "marketName": "Danny Wolf Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "DANIEL_WOLF_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "DANIEL_WOLF_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "-115",
+          "fairOverUnder": "2.5",
+          "bookOverUnder": "2.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "-115",
+          "openFairOverUnder": "2.5",
+          "openBookOverUnder": "2.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-114",
+              "overUnder": "2.5",
+              "lastUpdatedAt": "2026-01-11T07:54:06.265Z",
+              "available": false,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.550005562&selectionId=67169465",
+              "altLines": [
+                {
+                  "odds": "-340",
+                  "overUnder": "1.5",
+                  "lastUpdatedAt": "2026-01-11T07:53:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+220",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2026-01-11T07:53:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1000",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2026-01-11T07:53:52.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "assists-DANIEL_WOLF_1_NBA-game-ou-under": {
+          "oddID": "assists-DANIEL_WOLF_1_NBA-game-ou-under",
+          "opposingOddID": "assists-DANIEL_WOLF_1_NBA-game-ou-over",
+          "marketName": "Danny Wolf Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "DANIEL_WOLF_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "DANIEL_WOLF_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "-115",
+          "fairOverUnder": "2.5",
+          "bookOverUnder": "2.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "-115",
+          "openFairOverUnder": "2.5",
+          "openBookOverUnder": "2.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-114",
+              "overUnder": "2.5",
+              "lastUpdatedAt": "2026-01-11T07:54:06.265Z",
+              "available": false,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.550005562&selectionId=67169462"
+            }
+          }
+        },
+        "points-DANIEL_WOLF_1_NBA-game-ou-over": {
+          "oddID": "points-DANIEL_WOLF_1_NBA-game-ou-over",
+          "opposingOddID": "points-DANIEL_WOLF_1_NBA-game-ou-under",
+          "marketName": "Danny Wolf Points Over/Under",
+          "statID": "points",
+          "statEntityID": "DANIEL_WOLF_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "DANIEL_WOLF_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "-103",
+          "fairOverUnder": "10",
+          "bookOverUnder": "9.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "-103",
+          "openFairOverUnder": "10",
+          "openBookOverUnder": "9.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-102",
+              "overUnder": "9.5",
+              "lastUpdatedAt": "2026-01-11T07:53:52.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.550005536&selectionId=67169465",
+              "altLines": [
+                {
+                  "odds": "+440",
+                  "overUnder": "14.5",
+                  "lastUpdatedAt": "2026-01-11T07:53:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1400",
+                  "overUnder": "19.5",
+                  "lastUpdatedAt": "2026-01-11T07:53:52.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "points-DANIEL_WOLF_1_NBA-game-ou-under": {
+          "oddID": "points-DANIEL_WOLF_1_NBA-game-ou-under",
+          "opposingOddID": "points-DANIEL_WOLF_1_NBA-game-ou-over",
+          "marketName": "Danny Wolf Points Over/Under",
+          "statID": "points",
+          "statEntityID": "DANIEL_WOLF_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "DANIEL_WOLF_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "-130",
+          "fairOverUnder": "10",
+          "bookOverUnder": "9.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "-130",
+          "openFairOverUnder": "10",
+          "openBookOverUnder": "9.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-130",
+              "overUnder": "9.5",
+              "lastUpdatedAt": "2026-01-11T07:53:52.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.550005536&selectionId=67169462"
+            }
+          }
+        },
+        "points-DAYRON_SHARPE_1_NBA-game-ou-over": {
+          "oddID": "points-DAYRON_SHARPE_1_NBA-game-ou-over",
+          "opposingOddID": "points-DAYRON_SHARPE_1_NBA-game-ou-under",
+          "statID": "points",
+          "statEntityID": "DAYRON_SHARPE_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "DAYRON_SHARPE_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-108",
+          "bookOdds": "-125",
+          "fairOverUnder": "6.5",
+          "bookOverUnder": "6.5",
+          "openFairOdds": "-108",
+          "openBookOdds": "-125",
+          "openFairOverUnder": "6.5",
+          "openBookOverUnder": "6.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-130",
+              "overUnder": "6.5",
+              "lastUpdatedAt": "2026-01-11T07:53:52.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.550005538&selectionId=42351813",
+              "altLines": [
+                {
+                  "odds": "+230",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-01-11T07:53:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1000",
+                  "overUnder": "14.5",
+                  "lastUpdatedAt": "2026-01-11T07:53:52.000Z",
+                  "available": true
+                }
+              ]
+            }
+          },
+          "marketName": "Day'Ron Sharpe Points Over/Under"
+        },
+        "points-DAYRON_SHARPE_1_NBA-game-ou-under": {
+          "oddID": "points-DAYRON_SHARPE_1_NBA-game-ou-under",
+          "opposingOddID": "points-DAYRON_SHARPE_1_NBA-game-ou-over",
+          "statID": "points",
+          "statEntityID": "DAYRON_SHARPE_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "DAYRON_SHARPE_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+108",
+          "bookOdds": "-106",
+          "fairOverUnder": "6.5",
+          "bookOverUnder": "6.5",
+          "openFairOdds": "+108",
+          "openBookOdds": "-106",
+          "openFairOverUnder": "6.5",
+          "openBookOverUnder": "6.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-102",
+              "overUnder": "6.5",
+              "lastUpdatedAt": "2026-01-11T07:53:52.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.550005538&selectionId=42351812"
+            }
+          },
+          "marketName": "Day'Ron Sharpe Points Over/Under"
+        },
+        "rebounds-DANIEL_WOLF_1_NBA-game-ou-over": {
+          "oddID": "rebounds-DANIEL_WOLF_1_NBA-game-ou-over",
+          "opposingOddID": "rebounds-DANIEL_WOLF_1_NBA-game-ou-under",
+          "marketName": "Danny Wolf Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "DANIEL_WOLF_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "DANIEL_WOLF_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "-133",
+          "fairOverUnder": "5",
+          "bookOverUnder": "4.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "-133",
+          "openFairOverUnder": "5",
+          "openBookOverUnder": "4.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-136",
+              "overUnder": "4.5",
+              "lastUpdatedAt": "2026-01-11T07:53:52.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.550005550&selectionId=67169465",
+              "altLines": [
+                {
+                  "odds": "-290",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2026-01-11T07:53:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+154",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2026-01-11T07:53:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+500",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2026-01-11T07:53:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1200",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-01-11T07:53:52.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "rebounds-DANIEL_WOLF_1_NBA-game-ou-under": {
+          "oddID": "rebounds-DANIEL_WOLF_1_NBA-game-ou-under",
+          "opposingOddID": "rebounds-DANIEL_WOLF_1_NBA-game-ou-over",
+          "marketName": "Danny Wolf Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "DANIEL_WOLF_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "DANIEL_WOLF_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "+101",
+          "fairOverUnder": "5",
+          "bookOverUnder": "4.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "+101",
+          "openFairOverUnder": "5",
+          "openBookOverUnder": "4.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+102",
+              "overUnder": "4.5",
+              "lastUpdatedAt": "2026-01-11T07:53:52.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.550005550&selectionId=67169462"
+            }
+          }
+        },
+        "rebounds-DAYRON_SHARPE_1_NBA-game-ou-over": {
+          "oddID": "rebounds-DAYRON_SHARPE_1_NBA-game-ou-over",
+          "opposingOddID": "rebounds-DAYRON_SHARPE_1_NBA-game-ou-under",
+          "statID": "rebounds",
+          "statEntityID": "DAYRON_SHARPE_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "DAYRON_SHARPE_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-117",
+          "bookOdds": "-135",
+          "fairOverUnder": "6.5",
+          "bookOverUnder": "6.5",
+          "openFairOdds": "-117",
+          "openBookOdds": "-135",
+          "openFairOverUnder": "6.5",
+          "openBookOverUnder": "6.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-140",
+              "overUnder": "6.5",
+              "lastUpdatedAt": "2026-01-11T07:53:52.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.550005552&selectionId=42351813",
+              "altLines": [
+                {
+                  "odds": "-1000",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2026-01-11T07:53:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-235",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2026-01-11T07:53:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+124",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2026-01-11T07:53:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+280",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-01-11T07:53:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+630",
+                  "overUnder": "11.5",
+                  "lastUpdatedAt": "2026-01-11T07:53:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1400",
+                  "overUnder": "13.5",
+                  "lastUpdatedAt": "2026-01-11T07:53:52.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+3500",
+                  "overUnder": "15.5",
+                  "lastUpdatedAt": "2026-01-11T07:53:52.000Z",
+                  "available": true
+                }
+              ]
+            }
+          },
+          "marketName": "Day'Ron Sharpe Rebounds Over/Under"
+        },
+        "rebounds-DAYRON_SHARPE_1_NBA-game-ou-under": {
+          "oddID": "rebounds-DAYRON_SHARPE_1_NBA-game-ou-under",
+          "opposingOddID": "rebounds-DAYRON_SHARPE_1_NBA-game-ou-over",
+          "statID": "rebounds",
+          "statEntityID": "DAYRON_SHARPE_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "DAYRON_SHARPE_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+117",
+          "bookOdds": "+103",
+          "fairOverUnder": "6.5",
+          "bookOverUnder": "6.5",
+          "openFairOdds": "+117",
+          "openBookOdds": "+103",
+          "openFairOverUnder": "6.5",
+          "openBookOverUnder": "6.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+106",
+              "overUnder": "6.5",
+              "lastUpdatedAt": "2026-01-11T07:53:52.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.550005552&selectionId=42351812"
+            }
+          },
+          "marketName": "Day'Ron Sharpe Rebounds Over/Under"
+        }
+      },
+      "results": {},
+      "players": {
+        "EGOR_DEMIN_1_NBA": {
+          "playerID": "EGOR_DEMIN_1_NBA",
+          "teamID": "BROOKLYN_NETS_NBA",
+          "firstName": "Egor",
+          "lastName": "Demin",
+          "name": "Egor Demin"
+        },
+        "TERANCE_MANN_1_NBA": {
+          "playerID": "TERANCE_MANN_1_NBA",
+          "teamID": "BROOKLYN_NETS_NBA",
+          "firstName": "Terance",
+          "lastName": "Mann",
+          "name": "Terance Mann"
+        },
+        "CAM_SPENCER_1_NBA": {
+          "playerID": "CAM_SPENCER_1_NBA",
+          "teamID": "MEMPHIS_GRIZZLIES_NBA",
+          "firstName": "Cam",
+          "lastName": "Spencer",
+          "name": "Cam Spencer"
+        },
+        "SANTI_ALDAMA_1_NBA": {
+          "playerID": "SANTI_ALDAMA_1_NBA",
+          "teamID": "MEMPHIS_GRIZZLIES_NBA",
+          "firstName": "Santi",
+          "lastName": "Aldama",
+          "name": "Santi Aldama"
+        },
+        "NIC_CLAXTON_1_NBA": {
+          "playerID": "NIC_CLAXTON_1_NBA",
+          "teamID": "BROOKLYN_NETS_NBA",
+          "firstName": "Nic",
+          "lastName": "Claxton",
+          "name": "Nic Claxton"
+        },
+        "CAM_THOMAS_1_NBA": {
+          "playerID": "CAM_THOMAS_1_NBA",
+          "teamID": "BROOKLYN_NETS_NBA",
+          "firstName": "Cam",
+          "lastName": "Thomas",
+          "name": "Cam Thomas"
+        },
+        "CEDRIC_COWARD_1_NBA": {
+          "playerID": "CEDRIC_COWARD_1_NBA",
+          "teamID": "MEMPHIS_GRIZZLIES_NBA",
+          "firstName": "Cedric",
+          "lastName": "Coward",
+          "name": "Cedric Coward"
+        },
+        "NOAH_CLOWNEY_1_NBA": {
+          "playerID": "NOAH_CLOWNEY_1_NBA",
+          "teamID": "BROOKLYN_NETS_NBA",
+          "firstName": "Noah",
+          "lastName": "Clowney",
+          "name": "Noah Clowney"
+        },
+        "JAYLEN_WELLS_1_NBA": {
+          "playerID": "JAYLEN_WELLS_1_NBA",
+          "teamID": "MEMPHIS_GRIZZLIES_NBA",
+          "firstName": "Jaylen",
+          "lastName": "Wells",
+          "name": "Jaylen Wells"
+        },
+        "JAREN_JACKSON_JR_1_NBA": {
+          "playerID": "JAREN_JACKSON_JR_1_NBA",
+          "teamID": "MEMPHIS_GRIZZLIES_NBA",
+          "firstName": "Jaren",
+          "lastName": "Jackson",
+          "name": "Jaren Jackson Jr."
+        },
+        "JOCK_LANDALE_1_NBA": {
+          "playerID": "JOCK_LANDALE_1_NBA",
+          "teamID": "MEMPHIS_GRIZZLIES_NBA",
+          "firstName": "Jock",
+          "lastName": "Landale",
+          "name": "Jock Landale"
+        },
+        "DANIEL_WOLF_1_NBA": {
+          "playerID": "DANIEL_WOLF_1_NBA",
+          "teamID": "BROOKLYN_NETS_NBA",
+          "firstName": "Danny",
+          "lastName": "Wolf",
+          "name": "Danny Wolf"
+        },
+        "DAYRON_SHARPE_1_NBA": {
+          "playerID": "DAYRON_SHARPE_1_NBA",
+          "teamID": "BROOKLYN_NETS_NBA",
+          "firstName": "Day'Ron",
+          "lastName": "Sharpe",
+          "name": "Day'Ron Sharpe"
+        }
+      }
+    }
+  ]
+}
