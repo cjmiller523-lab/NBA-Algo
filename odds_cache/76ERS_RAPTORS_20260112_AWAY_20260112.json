@@ -1,0 +1,2143 @@
+{
+  "nextCursor": "n.1768264200000.bk4IKU8fLcBEPdqQyr9I",
+  "success": true,
+  "data": [
+    {
+      "eventID": "bk4IKU8fLcBEPdqQyr9I",
+      "sportID": "BASKETBALL",
+      "leagueID": "NBA",
+      "type": "match",
+      "teams": {
+        "home": {
+          "teamID": "TORONTO_RAPTORS_NBA",
+          "names": {
+            "long": "Toronto Raptors",
+            "medium": "Raptors",
+            "short": "TOR",
+            "location": "Toronto"
+          },
+          "colors": {
+            "primary": "#CE1141",
+            "secondary": "#000000",
+            "primaryContrast": "#FFFFFF",
+            "secondaryContrast": "#CE1141"
+          },
+          "statEntityID": "home"
+        },
+        "away": {
+          "teamID": "PHILADELPHIA_76ERS_NBA",
+          "names": {
+            "long": "Philadelphia 76ers",
+            "medium": "76ers",
+            "short": "PHI",
+            "location": "Philadelphia"
+          },
+          "colors": {
+            "primary": "#006BB6",
+            "secondary": "#ED174C",
+            "primaryContrast": "#FFFFFF",
+            "secondaryContrast": "#000000"
+          },
+          "statEntityID": "away"
+        }
+      },
+      "status": {
+        "started": false,
+        "completed": false,
+        "cancelled": false,
+        "ended": false,
+        "live": false,
+        "delayed": false,
+        "currentPeriodID": "",
+        "previousPeriodID": "",
+        "displayShort": "",
+        "displayLong": "Upcoming",
+        "inBreak": false,
+        "startsAt": "2026-01-13T00:30:00.000Z",
+        "previousStartsAt": [],
+        "hardStart": true,
+        "periods": {
+          "started": [],
+          "ended": []
+        },
+        "oddsPresent": true,
+        "oddsAvailable": true,
+        "finalized": false
+      },
+      "info": {
+        "seasonWeek": "NBA 25/26"
+      },
+      "links": {
+        "bookmakers": {
+          "fanduel": "https://sportsbook.fanduel.com/basketball/-/35133599",
+          "neds": "https://www.neds.com.au/sports/-/-/-/d1a9733b-bd09-4516-a625-ca683a407465",
+          "sportsbet": "https://www.sportsbet.com.au/betting/basketball---us/nba/philadelphia-76ers-at-toronto-raptors-10029128",
+          "paddypower": "https://www.paddypower.com/basketball/nba/philadelphia-76ers-@-toronto-raptors-35133599",
+          "ladbrokes": "https://www.ladbrokes.com.au/sports/-/-/-/d1a9733b-bd09-4516-a625-ca683a407465",
+          "boylesports": "https://www.boylesports.com/sports/basketball/event/usa-nba/toronto-raptors-v-philadelphia-76ers",
+          "betfairsportsbook": "https://www.betfair.com/betting/basketball/nba/philadelphia-76ers-@-toronto-raptors/e-35133599",
+          "boombet": "https://www.boombet.com.au/sport-menu/Sport/Basketball/NBA/39650384",
+          "pointsbet": "https://pointsbet.com.au/sports/basketball/NBA/2565467",
+          "888sport": "https://www.888sport.com/basketball/united-states-of-america/nba/philadelphia-76ers-toronto-raptors-e-6970344",
+          "betrsportsbook": "https://www.betr.com.au/sports/Basketball/107/United-States-of-America/NBA/Philadelphia-76ers-@-Toronto-Raptors/1953104/All-Markets",
+          "coolbet": "https://www.coolbet.com/en/sports/match/4881037",
+          "matchbook": "https://www.matchbook.com/events/basketball/united-states-of-america/nba/32222094167500045",
+          "draftkings": "https://sportsbook.draftkings.com/event/33440500",
+          "tab": "https://www.tab.com.au/sports/betting/Basketball/competitions/NBA/matches/Toronto%20v%20Philadelphia",
+          "1xbet": "https://1xbet.com/en/line/football/13589-nba/296331162-toronto-raptors-philadelphia-76ers",
+          "betsson": "https://www.betsson.com/en/sportsbook/basketball/nba/nba?eventId=f-XgYDvblxYU-2fqnVRuJ03Q",
+          "nordicbet": "https://www.nordicbet.com/en/sportsbook/basketball/nba/nba/toronto-raptors-philadelphia-76ers-",
+          "playup": "https://www.playup.com.au/betting/sports/nba/toronto-raptors-v-philadelphia-76ers/1775150",
+          "fliff": "https://sports.getfliff.com/markets/358744_c_p_204_prematch",
+          "espnbet": "https://espnbet.com/sport/basketball/organization/united-states/competition/nba/event/22605091-ab74-45f8-8d20-094fa5f6d67b",
+          "thescorebet": "https://thescore.bet/sport/basketball/organization/united-states/competition/nba/event/22605091-ab74-45f8-8d20-094fa5f6d67b",
+          "hardrockbet": "https://app.hardrock.bet/home/competition/nba/7644771757326585",
+          "caesars": "https://sportsbook.caesars.com/us/nj/bet/basketball/8d3e97a6-8b28-4b24-a4b3-0c1c7b792836/philadelphia-76ers-at-toronto-raptors",
+          "williamhill": "https://sports.williamhill.com/betting/en-gb/basketball/OB_EV38341940/philadelphia-76ers-at-toronto-raptors",
+          "lowvig": "https://sports.lowvig.ag/sportsbook/basketball/nba/game/490932291",
+          "betonline": "https://sports.betonline.ag/sportsbook/basketball/nba/game/490932291",
+          "betmgm": "https://sports.nj.betmgm.com/en/sports/events/18705742",
+          "coral": "https://sports.coral.co.uk/event/basketball/basketball-usa/nba/tor-raptors-v-phi-76ers/41317068",
+          "ballybet": "https://play.ballybet.com/sports#event/1024653020",
+          "betparx": "https://nj.betparx.com/kambi#event/1024653020",
+          "betrivers": "https://nj.betrivers.com/?page=sportsbook#event/1024653020",
+          "casumo": "https://www.casumo.com/en-gb/sports#event/1024653020",
+          "grosvenor": "https://www.grosvenorcasinos.com/sport#event/1024653020",
+          "leovegas": "https://www.leovegas.co.uk/betting#event/1024653020",
+          "livescorebet": "https://www.livescorebet.com/uk/sports/basketball/nba/toronto-raptors-philadelphia-76ers/SBTE_2_1024653020",
+          "tabtouch": "https://www.tabtouch.mobi/tabtouch-sports/event/1024653020",
+          "unibet": "https://www.unibet.com/betting/sports/event/1024653020",
+          "virginbet": "https://www.virginbet.com/sports/basketball/nba/toronto-raptors-philadelphia-76ers/SBTE_2_1024653020",
+          "betway": "https://betway.com/en/sports/evt/16234362",
+          "bovada": "https://www.bovada.lv/sports/basketball/nba/philadelphia-76ers-toronto-raptors-202601121930",
+          "pinnacle": "https://www.pinnacle.com/en/basketball/nba/philadelphia-76ers-vs-toronto-raptors/1622037119",
+          "everygame": "https://sports.everygame.eu/en/Bets/Basketball/NBA-Lines/Philadelphia-76ers-at-Toronto-Raptors/2778299"
+        }
+      },
+      "odds": {
+        "assists-JOEL_EMBIID_1_NBA-game-ou-over": {
+          "oddID": "assists-JOEL_EMBIID_1_NBA-game-ou-over",
+          "opposingOddID": "assists-JOEL_EMBIID_1_NBA-game-ou-under",
+          "statID": "assists",
+          "statEntityID": "JOEL_EMBIID_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "JOEL_EMBIID_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+117",
+          "bookOdds": "+101",
+          "fairOverUnder": "3.5",
+          "bookOverUnder": "3.5",
+          "openFairOdds": "+117",
+          "openBookOdds": "+101",
+          "openFairOverUnder": "3.5",
+          "openBookOverUnder": "3.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+100",
+              "overUnder": "3.5",
+              "lastUpdatedAt": "2026-01-12T11:13:15.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.550204871&selectionId=12260618",
+              "altLines": [
+                {
+                  "odds": "-900",
+                  "overUnder": "1.5",
+                  "lastUpdatedAt": "2026-01-12T11:13:15.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-180",
+                  "overUnder": "2.5",
+                  "lastUpdatedAt": "2026-01-12T06:35:07.208Z",
+                  "available": false
+                },
+                {
+                  "odds": "+500",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2026-01-12T11:13:15.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1700",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2026-01-12T11:13:15.000Z",
+                  "available": true
+                }
+              ]
+            }
+          },
+          "marketName": "Joel Embiid Assists Over/Under"
+        },
+        "assists-JOEL_EMBIID_1_NBA-game-ou-under": {
+          "oddID": "assists-JOEL_EMBIID_1_NBA-game-ou-under",
+          "opposingOddID": "assists-JOEL_EMBIID_1_NBA-game-ou-over",
+          "statID": "assists",
+          "statEntityID": "JOEL_EMBIID_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "JOEL_EMBIID_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-117",
+          "bookOdds": "-138",
+          "fairOverUnder": "3.5",
+          "bookOverUnder": "3.5",
+          "openFairOdds": "-117",
+          "openBookOdds": "-138",
+          "openFairOverUnder": "3.5",
+          "openBookOverUnder": "3.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-132",
+              "overUnder": "3.5",
+              "lastUpdatedAt": "2026-01-12T11:13:15.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.550204871&selectionId=12260619",
+              "altLines": [
+                {
+                  "odds": "+134",
+                  "overUnder": "2.5",
+                  "lastUpdatedAt": "2026-01-12T06:35:07.208Z",
+                  "available": false
+                }
+              ]
+            }
+          },
+          "marketName": "Joel Embiid Assists Over/Under"
+        },
+        "assists-PAUL_GEORGE_1_NBA-game-ou-over": {
+          "oddID": "assists-PAUL_GEORGE_1_NBA-game-ou-over",
+          "opposingOddID": "assists-PAUL_GEORGE_1_NBA-game-ou-under",
+          "statID": "assists",
+          "statEntityID": "PAUL_GEORGE_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "PAUL_GEORGE_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+125",
+          "bookOdds": "+110",
+          "fairOverUnder": "3.5",
+          "bookOverUnder": "3.5",
+          "openFairOdds": "+125",
+          "openBookOdds": "+110",
+          "openFairOverUnder": "3.5",
+          "openBookOverUnder": "3.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+110",
+              "overUnder": "3.5",
+              "lastUpdatedAt": "2026-01-12T11:13:15.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.550204954&selectionId=12234250",
+              "altLines": [
+                {
+                  "odds": "-770",
+                  "overUnder": "1.5",
+                  "lastUpdatedAt": "2026-01-12T11:13:15.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+540",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2026-01-12T11:13:15.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1700",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2026-01-12T11:13:15.000Z",
+                  "available": true
+                }
+              ]
+            }
+          },
+          "marketName": "Paul George Assists Over/Under"
+        },
+        "assists-PAUL_GEORGE_1_NBA-game-ou-under": {
+          "oddID": "assists-PAUL_GEORGE_1_NBA-game-ou-under",
+          "opposingOddID": "assists-PAUL_GEORGE_1_NBA-game-ou-over",
+          "statID": "assists",
+          "statEntityID": "PAUL_GEORGE_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "PAUL_GEORGE_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-125",
+          "bookOdds": "-146",
+          "fairOverUnder": "3.5",
+          "bookOverUnder": "3.5",
+          "openFairOdds": "-125",
+          "openBookOdds": "-146",
+          "openFairOverUnder": "3.5",
+          "openBookOverUnder": "3.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-146",
+              "overUnder": "3.5",
+              "lastUpdatedAt": "2026-01-12T11:13:15.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.550204954&selectionId=12234251"
+            }
+          },
+          "marketName": "Paul George Assists Over/Under"
+        },
+        "assists-TYRESE_MAXEY_1_NBA-game-ou-over": {
+          "oddID": "assists-TYRESE_MAXEY_1_NBA-game-ou-over",
+          "opposingOddID": "assists-TYRESE_MAXEY_1_NBA-game-ou-under",
+          "statID": "assists",
+          "statEntityID": "TYRESE_MAXEY_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "TYRESE_MAXEY_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+119",
+          "bookOdds": "+104",
+          "fairOverUnder": "6.5",
+          "bookOverUnder": "6.5",
+          "openFairOdds": "+119",
+          "openBookOdds": "+104",
+          "openFairOverUnder": "6.5",
+          "openBookOverUnder": "6.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+108",
+              "overUnder": "6.5",
+              "lastUpdatedAt": "2026-01-12T11:13:15.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.550204785&selectionId=38185448",
+              "altLines": [
+                {
+                  "odds": "-1100",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2026-01-12T11:13:15.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-186",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2026-01-12T11:13:15.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+210",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2026-01-12T11:13:15.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+560",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-01-12T11:13:15.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1500",
+                  "overUnder": "11.5",
+                  "lastUpdatedAt": "2026-01-12T11:13:15.000Z",
+                  "available": true
+                }
+              ]
+            }
+          },
+          "marketName": "Tyrese Maxey Assists Over/Under"
+        },
+        "assists-TYRESE_MAXEY_1_NBA-game-ou-under": {
+          "oddID": "assists-TYRESE_MAXEY_1_NBA-game-ou-under",
+          "opposingOddID": "assists-TYRESE_MAXEY_1_NBA-game-ou-over",
+          "statID": "assists",
+          "statEntityID": "TYRESE_MAXEY_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "TYRESE_MAXEY_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-119",
+          "bookOdds": "-139",
+          "fairOverUnder": "6.5",
+          "bookOverUnder": "6.5",
+          "openFairOdds": "-119",
+          "openBookOdds": "-139",
+          "openFairOverUnder": "6.5",
+          "openBookOverUnder": "6.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-144",
+              "overUnder": "6.5",
+              "lastUpdatedAt": "2026-01-12T11:13:15.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.550204785&selectionId=38185450"
+            }
+          },
+          "marketName": "Tyrese Maxey Assists Over/Under"
+        },
+        "blocks-JOEL_EMBIID_1_NBA-game-ou-over": {
+          "oddID": "blocks-JOEL_EMBIID_1_NBA-game-ou-over",
+          "opposingOddID": "blocks-JOEL_EMBIID_1_NBA-game-ou-under",
+          "statID": "blocks",
+          "statEntityID": "JOEL_EMBIID_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "JOEL_EMBIID_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+138",
+          "bookOdds": "+120",
+          "fairOverUnder": "1.5",
+          "bookOverUnder": "1.5",
+          "openFairOdds": "+138",
+          "openBookOdds": "+120",
+          "openFairOverUnder": "1.5",
+          "openBookOverUnder": "1.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+126",
+              "overUnder": "1.5",
+              "lastUpdatedAt": "2026-01-12T11:13:15.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.550217994&selectionId=12260618",
+              "altLines": [
+                {
+                  "odds": "-400",
+                  "overUnder": "0.5",
+                  "lastUpdatedAt": "2026-01-12T11:13:15.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+390",
+                  "overUnder": "2.5",
+                  "lastUpdatedAt": "2026-01-12T11:13:15.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+920",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2026-01-12T11:13:15.000Z",
+                  "available": true
+                }
+              ]
+            }
+          },
+          "marketName": "Joel Embiid Blocks Over/Under"
+        },
+        "blocks-JOEL_EMBIID_1_NBA-game-ou-under": {
+          "oddID": "blocks-JOEL_EMBIID_1_NBA-game-ou-under",
+          "opposingOddID": "blocks-JOEL_EMBIID_1_NBA-game-ou-over",
+          "statID": "blocks",
+          "statEntityID": "JOEL_EMBIID_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "JOEL_EMBIID_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-138",
+          "fairOverUnder": "1.5",
+          "openFairOdds": "-138",
+          "openFairOverUnder": "1.5",
+          "scoringSupported": true,
+          "marketName": "Joel Embiid Blocks Over/Under",
+          "bookOdds": "-167",
+          "bookOverUnder": "1.5",
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-168",
+              "overUnder": "1.5",
+              "lastUpdatedAt": "2026-01-12T11:13:15.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.550217994&selectionId=12260619"
+            }
+          },
+          "openBookOdds": "-167",
+          "openBookOverUnder": "1.5"
+        },
+        "blocks-PAUL_GEORGE_1_NBA-game-ou-over": {
+          "oddID": "blocks-PAUL_GEORGE_1_NBA-game-ou-over",
+          "opposingOddID": "blocks-PAUL_GEORGE_1_NBA-game-ou-under",
+          "statID": "blocks",
+          "statEntityID": "PAUL_GEORGE_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "PAUL_GEORGE_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+120",
+          "bookOdds": "+105",
+          "fairOverUnder": "0.5",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "+120",
+          "openBookOdds": "+105",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {},
+          "marketName": "Paul George Blocks Over/Under"
+        },
+        "blocks-PAUL_GEORGE_1_NBA-game-ou-under": {
+          "oddID": "blocks-PAUL_GEORGE_1_NBA-game-ou-under",
+          "opposingOddID": "blocks-PAUL_GEORGE_1_NBA-game-ou-over",
+          "statID": "blocks",
+          "statEntityID": "PAUL_GEORGE_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "PAUL_GEORGE_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-120",
+          "fairOverUnder": "0.5",
+          "openFairOdds": "-120",
+          "openFairOverUnder": "0.5",
+          "scoringSupported": true,
+          "marketName": "Paul George Blocks Over/Under",
+          "bookOdds": "-141",
+          "bookOverUnder": "0.5",
+          "byBookmaker": {},
+          "openBookOdds": "-141",
+          "openBookOverUnder": "0.5"
+        },
+        "blocks-TYRESE_MAXEY_1_NBA-game-ou-over": {
+          "oddID": "blocks-TYRESE_MAXEY_1_NBA-game-ou-over",
+          "opposingOddID": "blocks-TYRESE_MAXEY_1_NBA-game-ou-under",
+          "statID": "blocks",
+          "statEntityID": "TYRESE_MAXEY_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "TYRESE_MAXEY_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-140",
+          "bookOdds": "-165",
+          "fairOverUnder": "0.5",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "-140",
+          "openBookOdds": "-165",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {},
+          "marketName": "Tyrese Maxey Blocks Over/Under"
+        },
+        "blocks-TYRESE_MAXEY_1_NBA-game-ou-under": {
+          "oddID": "blocks-TYRESE_MAXEY_1_NBA-game-ou-under",
+          "opposingOddID": "blocks-TYRESE_MAXEY_1_NBA-game-ou-over",
+          "statID": "blocks",
+          "statEntityID": "TYRESE_MAXEY_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "TYRESE_MAXEY_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+140",
+          "fairOverUnder": "0.5",
+          "openFairOdds": "+140",
+          "openFairOverUnder": "0.5",
+          "scoringSupported": true,
+          "marketName": "Tyrese Maxey Blocks Over/Under",
+          "bookOdds": "+125",
+          "bookOverUnder": "0.5",
+          "byBookmaker": {},
+          "openBookOdds": "+125",
+          "openBookOverUnder": "0.5"
+        },
+        "points-JOEL_EMBIID_1_NBA-game-ou-over": {
+          "oddID": "points-JOEL_EMBIID_1_NBA-game-ou-over",
+          "opposingOddID": "points-JOEL_EMBIID_1_NBA-game-ou-under",
+          "statID": "points",
+          "statEntityID": "JOEL_EMBIID_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "JOEL_EMBIID_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+102",
+          "bookOdds": "-112",
+          "fairOverUnder": "25.5",
+          "bookOverUnder": "25.5",
+          "openFairOdds": "+102",
+          "openBookOdds": "-112",
+          "openFairOverUnder": "25.5",
+          "openBookOverUnder": "25.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-114",
+              "overUnder": "25.5",
+              "lastUpdatedAt": "2026-01-12T11:13:15.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.550204869&selectionId=12260618",
+              "altLines": [
+                {
+                  "odds": "-2500",
+                  "overUnder": "14.5",
+                  "lastUpdatedAt": "2026-01-12T11:13:15.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-440",
+                  "overUnder": "19.5",
+                  "lastUpdatedAt": "2026-01-12T11:13:15.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-130",
+                  "overUnder": "23.5",
+                  "lastUpdatedAt": "2026-01-12T06:33:47.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "-140",
+                  "overUnder": "24.5",
+                  "lastUpdatedAt": "2026-01-12T11:13:15.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+200",
+                  "overUnder": "29.5",
+                  "lastUpdatedAt": "2026-01-12T11:13:15.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+520",
+                  "overUnder": "34.5",
+                  "lastUpdatedAt": "2026-01-12T11:13:15.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1200",
+                  "overUnder": "39.5",
+                  "lastUpdatedAt": "2026-01-12T11:13:15.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+3000",
+                  "overUnder": "44.5",
+                  "lastUpdatedAt": "2026-01-12T11:13:15.000Z",
+                  "available": true
+                }
+              ]
+            }
+          },
+          "marketName": "Joel Embiid Points Over/Under"
+        },
+        "points-JOEL_EMBIID_1_NBA-game-ou-under": {
+          "oddID": "points-JOEL_EMBIID_1_NBA-game-ou-under",
+          "opposingOddID": "points-JOEL_EMBIID_1_NBA-game-ou-over",
+          "statID": "points",
+          "statEntityID": "JOEL_EMBIID_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "JOEL_EMBIID_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-102",
+          "bookOdds": "-116",
+          "fairOverUnder": "25.5",
+          "bookOverUnder": "25.5",
+          "openFairOdds": "-102",
+          "openBookOdds": "-116",
+          "openFairOverUnder": "25.5",
+          "openBookOverUnder": "25.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-114",
+              "overUnder": "25.5",
+              "lastUpdatedAt": "2026-01-12T11:13:15.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.550204869&selectionId=12260619",
+              "altLines": [
+                {
+                  "odds": "-102",
+                  "overUnder": "23.5",
+                  "lastUpdatedAt": "2026-01-12T06:33:47.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "-118",
+                  "overUnder": "24.5",
+                  "lastUpdatedAt": "2026-01-12T10:00:40.248Z",
+                  "available": false
+                }
+              ]
+            }
+          },
+          "marketName": "Joel Embiid Points Over/Under"
+        },
+        "points-PAUL_GEORGE_1_NBA-game-ou-over": {
+          "oddID": "points-PAUL_GEORGE_1_NBA-game-ou-over",
+          "opposingOddID": "points-PAUL_GEORGE_1_NBA-game-ou-under",
+          "statID": "points",
+          "statEntityID": "PAUL_GEORGE_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "PAUL_GEORGE_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+107",
+          "bookOdds": "-120",
+          "fairOverUnder": "15.5",
+          "bookOverUnder": "14.5",
+          "openFairOdds": "+107",
+          "openBookOdds": "-120",
+          "openFairOverUnder": "15.5",
+          "openBookOverUnder": "14.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-132",
+              "overUnder": "14.5",
+              "lastUpdatedAt": "2026-01-12T11:13:15.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.550204952&selectionId=12234250",
+              "altLines": [
+                {
+                  "odds": "-620",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-01-12T11:13:15.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+280",
+                  "overUnder": "19.5",
+                  "lastUpdatedAt": "2026-01-12T11:13:15.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+830",
+                  "overUnder": "24.5",
+                  "lastUpdatedAt": "2026-01-12T11:13:15.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1800",
+                  "overUnder": "29.5",
+                  "lastUpdatedAt": "2026-01-12T11:13:15.000Z",
+                  "available": true
+                }
+              ]
+            }
+          },
+          "marketName": "Paul George Points Over/Under"
+        },
+        "points-PAUL_GEORGE_1_NBA-game-ou-under": {
+          "oddID": "points-PAUL_GEORGE_1_NBA-game-ou-under",
+          "opposingOddID": "points-PAUL_GEORGE_1_NBA-game-ou-over",
+          "statID": "points",
+          "statEntityID": "PAUL_GEORGE_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "PAUL_GEORGE_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-107",
+          "bookOdds": "-109",
+          "fairOverUnder": "15.5",
+          "bookOverUnder": "14.5",
+          "openFairOdds": "-107",
+          "openBookOdds": "-109",
+          "openFairOverUnder": "15.5",
+          "openBookOverUnder": "14.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+100",
+              "overUnder": "14.5",
+              "lastUpdatedAt": "2026-01-12T11:13:15.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.550204952&selectionId=12234251"
+            }
+          },
+          "marketName": "Paul George Points Over/Under"
+        },
+        "points-TYRESE_MAXEY_1_NBA-game-ou-over": {
+          "oddID": "points-TYRESE_MAXEY_1_NBA-game-ou-over",
+          "opposingOddID": "points-TYRESE_MAXEY_1_NBA-game-ou-under",
+          "statID": "points",
+          "statEntityID": "TYRESE_MAXEY_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "TYRESE_MAXEY_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+104",
+          "bookOdds": "-110",
+          "fairOverUnder": "27.5",
+          "bookOverUnder": "27.5",
+          "openFairOdds": "+104",
+          "openBookOdds": "-110",
+          "openFairOverUnder": "27.5",
+          "openBookOverUnder": "27.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-110",
+              "overUnder": "27.5",
+              "lastUpdatedAt": "2026-01-12T11:13:15.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.550204782&selectionId=38185448",
+              "altLines": [
+                {
+                  "odds": "-5000",
+                  "overUnder": "14.5",
+                  "lastUpdatedAt": "2026-01-12T11:13:15.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-700",
+                  "overUnder": "19.5",
+                  "lastUpdatedAt": "2026-01-12T11:13:15.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-210",
+                  "overUnder": "24.5",
+                  "lastUpdatedAt": "2026-01-12T11:13:15.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+140",
+                  "overUnder": "29.5",
+                  "lastUpdatedAt": "2026-01-12T11:13:15.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+350",
+                  "overUnder": "34.5",
+                  "lastUpdatedAt": "2026-01-12T11:13:15.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+900",
+                  "overUnder": "39.5",
+                  "lastUpdatedAt": "2026-01-12T11:13:15.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1700",
+                  "overUnder": "44.5",
+                  "lastUpdatedAt": "2026-01-12T11:13:15.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+5000",
+                  "overUnder": "49.5",
+                  "lastUpdatedAt": "2026-01-12T11:13:15.000Z",
+                  "available": true
+                }
+              ]
+            }
+          },
+          "marketName": "Tyrese Maxey Points Over/Under"
+        },
+        "points-TYRESE_MAXEY_1_NBA-game-ou-under": {
+          "oddID": "points-TYRESE_MAXEY_1_NBA-game-ou-under",
+          "opposingOddID": "points-TYRESE_MAXEY_1_NBA-game-ou-over",
+          "statID": "points",
+          "statEntityID": "TYRESE_MAXEY_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "TYRESE_MAXEY_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-104",
+          "bookOdds": "-120",
+          "fairOverUnder": "27.5",
+          "bookOverUnder": "27.5",
+          "openFairOdds": "-104",
+          "openBookOdds": "-120",
+          "openFairOverUnder": "27.5",
+          "openBookOverUnder": "27.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-120",
+              "overUnder": "27.5",
+              "lastUpdatedAt": "2026-01-12T11:13:15.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.550204782&selectionId=38185450"
+            }
+          },
+          "marketName": "Tyrese Maxey Points Over/Under"
+        },
+        "rebounds-JOEL_EMBIID_1_NBA-game-ou-over": {
+          "oddID": "rebounds-JOEL_EMBIID_1_NBA-game-ou-over",
+          "opposingOddID": "rebounds-JOEL_EMBIID_1_NBA-game-ou-under",
+          "statID": "rebounds",
+          "statEntityID": "JOEL_EMBIID_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "JOEL_EMBIID_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "-115",
+          "fairOverUnder": "8.5",
+          "bookOverUnder": "8.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "-115",
+          "openFairOverUnder": "8.5",
+          "openBookOverUnder": "8.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-114",
+              "overUnder": "8.5",
+              "lastUpdatedAt": "2026-01-12T11:13:15.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.550204870&selectionId=12260618",
+              "altLines": [
+                {
+                  "odds": "-750",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2026-01-12T11:13:15.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-188",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2026-01-12T11:13:15.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+126",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-01-12T11:13:15.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+340",
+                  "overUnder": "11.5",
+                  "lastUpdatedAt": "2026-01-12T11:13:15.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+870",
+                  "overUnder": "13.5",
+                  "lastUpdatedAt": "2026-01-12T11:13:15.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1700",
+                  "overUnder": "15.5",
+                  "lastUpdatedAt": "2026-01-12T11:13:15.000Z",
+                  "available": true
+                }
+              ]
+            }
+          },
+          "marketName": "Joel Embiid Rebounds Over/Under"
+        },
+        "rebounds-JOEL_EMBIID_1_NBA-game-ou-under": {
+          "oddID": "rebounds-JOEL_EMBIID_1_NBA-game-ou-under",
+          "opposingOddID": "rebounds-JOEL_EMBIID_1_NBA-game-ou-over",
+          "statID": "rebounds",
+          "statEntityID": "JOEL_EMBIID_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "JOEL_EMBIID_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "-114",
+          "fairOverUnder": "8.5",
+          "bookOverUnder": "8.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "-114",
+          "openFairOverUnder": "8.5",
+          "openBookOverUnder": "8.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-114",
+              "overUnder": "8.5",
+              "lastUpdatedAt": "2026-01-12T11:13:15.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.550204870&selectionId=12260619"
+            }
+          },
+          "marketName": "Joel Embiid Rebounds Over/Under"
+        },
+        "rebounds-PAUL_GEORGE_1_NBA-game-ou-over": {
+          "oddID": "rebounds-PAUL_GEORGE_1_NBA-game-ou-over",
+          "opposingOddID": "rebounds-PAUL_GEORGE_1_NBA-game-ou-under",
+          "statID": "rebounds",
+          "statEntityID": "PAUL_GEORGE_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "PAUL_GEORGE_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+143",
+          "bookOdds": "-148",
+          "fairOverUnder": "5.5",
+          "bookOverUnder": "4.5",
+          "openFairOdds": "+143",
+          "openBookOdds": "-148",
+          "openFairOverUnder": "5.5",
+          "openBookOverUnder": "4.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+128",
+              "overUnder": "5.5",
+              "lastUpdatedAt": "2026-01-12T11:13:15.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.550204953&selectionId=12234250",
+              "altLines": [
+                {
+                  "odds": "-390",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2026-01-12T11:13:15.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+450",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2026-01-12T11:13:15.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1100",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-01-12T11:13:15.000Z",
+                  "available": true
+                }
+              ]
+            }
+          },
+          "marketName": "Paul George Rebounds Over/Under"
+        },
+        "rebounds-PAUL_GEORGE_1_NBA-game-ou-under": {
+          "oddID": "rebounds-PAUL_GEORGE_1_NBA-game-ou-under",
+          "opposingOddID": "rebounds-PAUL_GEORGE_1_NBA-game-ou-over",
+          "statID": "rebounds",
+          "statEntityID": "PAUL_GEORGE_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "PAUL_GEORGE_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-143",
+          "bookOdds": "+110",
+          "fairOverUnder": "5.5",
+          "bookOverUnder": "4.5",
+          "openFairOdds": "-143",
+          "openBookOdds": "+110",
+          "openFairOverUnder": "5.5",
+          "openBookOverUnder": "4.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-172",
+              "overUnder": "5.5",
+              "lastUpdatedAt": "2026-01-12T11:13:15.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.550204953&selectionId=12234251"
+            }
+          },
+          "marketName": "Paul George Rebounds Over/Under"
+        },
+        "rebounds-TYRESE_MAXEY_1_NBA-game-ou-over": {
+          "oddID": "rebounds-TYRESE_MAXEY_1_NBA-game-ou-over",
+          "opposingOddID": "rebounds-TYRESE_MAXEY_1_NBA-game-ou-under",
+          "statID": "rebounds",
+          "statEntityID": "TYRESE_MAXEY_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "TYRESE_MAXEY_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-121",
+          "bookOdds": "-143",
+          "fairOverUnder": "3.5",
+          "bookOverUnder": "3.5",
+          "openFairOdds": "-121",
+          "openBookOdds": "-143",
+          "openFairOverUnder": "3.5",
+          "openBookOverUnder": "3.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-144",
+              "overUnder": "3.5",
+              "lastUpdatedAt": "2026-01-12T11:13:15.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.550204784&selectionId=38185448",
+              "altLines": [
+                {
+                  "odds": "+340",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2026-01-12T11:13:15.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1300",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2026-01-12T11:13:15.000Z",
+                  "available": true
+                }
+              ]
+            }
+          },
+          "marketName": "Tyrese Maxey Rebounds Over/Under"
+        },
+        "rebounds-TYRESE_MAXEY_1_NBA-game-ou-under": {
+          "oddID": "rebounds-TYRESE_MAXEY_1_NBA-game-ou-under",
+          "opposingOddID": "rebounds-TYRESE_MAXEY_1_NBA-game-ou-over",
+          "statID": "rebounds",
+          "statEntityID": "TYRESE_MAXEY_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "TYRESE_MAXEY_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+121",
+          "bookOdds": "+105",
+          "fairOverUnder": "3.5",
+          "bookOverUnder": "3.5",
+          "openFairOdds": "+121",
+          "openBookOdds": "+105",
+          "openFairOverUnder": "3.5",
+          "openBookOverUnder": "3.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+108",
+              "overUnder": "3.5",
+              "lastUpdatedAt": "2026-01-12T11:13:15.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.550204784&selectionId=38185450"
+            }
+          },
+          "marketName": "Tyrese Maxey Rebounds Over/Under"
+        },
+        "steals-JOEL_EMBIID_1_NBA-game-ou-over": {
+          "oddID": "steals-JOEL_EMBIID_1_NBA-game-ou-over",
+          "opposingOddID": "steals-JOEL_EMBIID_1_NBA-game-ou-under",
+          "statID": "steals",
+          "statEntityID": "JOEL_EMBIID_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "JOEL_EMBIID_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-109",
+          "bookOdds": "-127",
+          "fairOverUnder": "0.5",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "-109",
+          "openBookOdds": "-127",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {},
+          "marketName": "Joel Embiid Steals Over/Under"
+        },
+        "steals-JOEL_EMBIID_1_NBA-game-ou-under": {
+          "oddID": "steals-JOEL_EMBIID_1_NBA-game-ou-under",
+          "opposingOddID": "steals-JOEL_EMBIID_1_NBA-game-ou-over",
+          "statID": "steals",
+          "statEntityID": "JOEL_EMBIID_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "JOEL_EMBIID_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+109",
+          "fairOverUnder": "0.5",
+          "openFairOdds": "+109",
+          "openFairOverUnder": "0.5",
+          "scoringSupported": true,
+          "marketName": "Joel Embiid Steals Over/Under",
+          "bookOdds": "-105",
+          "bookOverUnder": "0.5",
+          "byBookmaker": {},
+          "openBookOdds": "-105",
+          "openBookOverUnder": "0.5"
+        },
+        "steals-PAUL_GEORGE_1_NBA-game-ou-over": {
+          "oddID": "steals-PAUL_GEORGE_1_NBA-game-ou-over",
+          "opposingOddID": "steals-PAUL_GEORGE_1_NBA-game-ou-under",
+          "statID": "steals",
+          "statEntityID": "PAUL_GEORGE_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "PAUL_GEORGE_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+135",
+          "bookOdds": "+117",
+          "fairOverUnder": "1.5",
+          "bookOverUnder": "1.5",
+          "openFairOdds": "+135",
+          "openBookOdds": "+117",
+          "openFairOverUnder": "1.5",
+          "openBookOverUnder": "1.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+126",
+              "overUnder": "1.5",
+              "lastUpdatedAt": "2026-01-12T11:13:15.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.550217991&selectionId=12234250",
+              "altLines": [
+                {
+                  "odds": "-400",
+                  "overUnder": "0.5",
+                  "lastUpdatedAt": "2026-01-12T11:13:15.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+390",
+                  "overUnder": "2.5",
+                  "lastUpdatedAt": "2026-01-12T11:13:15.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+920",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2026-01-12T11:13:15.000Z",
+                  "available": true
+                }
+              ]
+            }
+          },
+          "marketName": "Paul George Steals Over/Under"
+        },
+        "steals-PAUL_GEORGE_1_NBA-game-ou-under": {
+          "oddID": "steals-PAUL_GEORGE_1_NBA-game-ou-under",
+          "opposingOddID": "steals-PAUL_GEORGE_1_NBA-game-ou-over",
+          "statID": "steals",
+          "statEntityID": "PAUL_GEORGE_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "PAUL_GEORGE_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-135",
+          "fairOverUnder": "1.5",
+          "openFairOdds": "-135",
+          "openFairOverUnder": "1.5",
+          "scoringSupported": true,
+          "marketName": "Paul George Steals Over/Under",
+          "bookOdds": "-166",
+          "bookOverUnder": "1.5",
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-168",
+              "overUnder": "1.5",
+              "lastUpdatedAt": "2026-01-12T11:13:15.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.550217991&selectionId=12234251"
+            }
+          },
+          "openBookOdds": "-166",
+          "openBookOverUnder": "1.5"
+        },
+        "steals-TYRESE_MAXEY_1_NBA-game-ou-over": {
+          "oddID": "steals-TYRESE_MAXEY_1_NBA-game-ou-over",
+          "opposingOddID": "steals-TYRESE_MAXEY_1_NBA-game-ou-under",
+          "statID": "steals",
+          "statEntityID": "TYRESE_MAXEY_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "TYRESE_MAXEY_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-137",
+          "bookOdds": "-166",
+          "fairOverUnder": "1.5",
+          "bookOverUnder": "1.5",
+          "openFairOdds": "-137",
+          "openBookOdds": "-166",
+          "openFairOverUnder": "1.5",
+          "openBookOverUnder": "1.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-166",
+              "overUnder": "1.5",
+              "lastUpdatedAt": "2026-01-12T11:13:15.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.550217989&selectionId=38185448",
+              "altLines": [
+                {
+                  "odds": "-900",
+                  "overUnder": "0.5",
+                  "lastUpdatedAt": "2026-01-12T11:13:15.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+194",
+                  "overUnder": "2.5",
+                  "lastUpdatedAt": "2026-01-12T11:13:15.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+520",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2026-01-12T11:13:15.000Z",
+                  "available": true
+                }
+              ]
+            }
+          },
+          "marketName": "Tyrese Maxey Steals Over/Under"
+        },
+        "steals-TYRESE_MAXEY_1_NBA-game-ou-under": {
+          "oddID": "steals-TYRESE_MAXEY_1_NBA-game-ou-under",
+          "opposingOddID": "steals-TYRESE_MAXEY_1_NBA-game-ou-over",
+          "statID": "steals",
+          "statEntityID": "TYRESE_MAXEY_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "TYRESE_MAXEY_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+137",
+          "fairOverUnder": "1.5",
+          "openFairOdds": "+137",
+          "openFairOverUnder": "1.5",
+          "scoringSupported": true,
+          "marketName": "Tyrese Maxey Steals Over/Under",
+          "bookOdds": "+120",
+          "bookOverUnder": "1.5",
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+124",
+              "overUnder": "1.5",
+              "lastUpdatedAt": "2026-01-12T11:13:15.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.550217989&selectionId=38185450"
+            }
+          },
+          "openBookOdds": "+120",
+          "openBookOverUnder": "1.5"
+        },
+        "assists-QUENTIN_GRIMES_1_NBA-game-ou-over": {
+          "oddID": "assists-QUENTIN_GRIMES_1_NBA-game-ou-over",
+          "opposingOddID": "assists-QUENTIN_GRIMES_1_NBA-game-ou-under",
+          "statID": "assists",
+          "statEntityID": "QUENTIN_GRIMES_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "QUENTIN_GRIMES_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+143",
+          "bookOdds": "+127",
+          "fairOverUnder": "3.5",
+          "bookOverUnder": "3.5",
+          "openFairOdds": "+143",
+          "openBookOdds": "+127",
+          "openFairOverUnder": "3.5",
+          "openBookOverUnder": "3.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+142",
+              "overUnder": "3.5",
+              "lastUpdatedAt": "2026-01-12T11:13:15.000Z",
+              "available": true,
+              "altLines": [
+                {
+                  "odds": "-530",
+                  "overUnder": "1.5",
+                  "lastUpdatedAt": "2026-01-12T11:13:15.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+630",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2026-01-12T11:13:15.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1800",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2026-01-12T11:13:15.000Z",
+                  "available": true
+                }
+              ],
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.550205743&selectionId=42067800"
+            }
+          },
+          "marketName": "Quentin Grimes Assists Over/Under"
+        },
+        "assists-QUENTIN_GRIMES_1_NBA-game-ou-under": {
+          "oddID": "assists-QUENTIN_GRIMES_1_NBA-game-ou-under",
+          "opposingOddID": "assists-QUENTIN_GRIMES_1_NBA-game-ou-over",
+          "statID": "assists",
+          "statEntityID": "QUENTIN_GRIMES_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "QUENTIN_GRIMES_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-143",
+          "bookOdds": "-169",
+          "fairOverUnder": "3.5",
+          "bookOverUnder": "3.5",
+          "openFairOdds": "-143",
+          "openBookOdds": "-169",
+          "openFairOverUnder": "3.5",
+          "openBookOverUnder": "3.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-192",
+              "overUnder": "3.5",
+              "lastUpdatedAt": "2026-01-12T11:13:15.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.550205743&selectionId=42067801"
+            }
+          },
+          "marketName": "Quentin Grimes Assists Over/Under"
+        },
+        "blocks-QUENTIN_GRIMES_1_NBA-game-ou-over": {
+          "oddID": "blocks-QUENTIN_GRIMES_1_NBA-game-ou-over",
+          "opposingOddID": "blocks-QUENTIN_GRIMES_1_NBA-game-ou-under",
+          "statID": "blocks",
+          "statEntityID": "QUENTIN_GRIMES_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "QUENTIN_GRIMES_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+179",
+          "bookOdds": "+160",
+          "fairOverUnder": "0.5",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "+179",
+          "openBookOdds": "+160",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {},
+          "marketName": "Quentin Grimes Blocks Over/Under"
+        },
+        "blocks-QUENTIN_GRIMES_1_NBA-game-ou-under": {
+          "oddID": "blocks-QUENTIN_GRIMES_1_NBA-game-ou-under",
+          "opposingOddID": "blocks-QUENTIN_GRIMES_1_NBA-game-ou-over",
+          "statID": "blocks",
+          "statEntityID": "QUENTIN_GRIMES_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "QUENTIN_GRIMES_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-179",
+          "fairOverUnder": "0.5",
+          "openFairOdds": "-179",
+          "openFairOverUnder": "0.5",
+          "scoringSupported": true,
+          "marketName": "Quentin Grimes Blocks Over/Under",
+          "bookOdds": "-222",
+          "bookOverUnder": "0.5",
+          "byBookmaker": {},
+          "openBookOdds": "-222",
+          "openBookOverUnder": "0.5"
+        },
+        "points-QUENTIN_GRIMES_1_NBA-game-ou-over": {
+          "oddID": "points-QUENTIN_GRIMES_1_NBA-game-ou-over",
+          "opposingOddID": "points-QUENTIN_GRIMES_1_NBA-game-ou-under",
+          "statID": "points",
+          "statEntityID": "QUENTIN_GRIMES_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "QUENTIN_GRIMES_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+145",
+          "bookOdds": "-105",
+          "fairOverUnder": "11.5",
+          "bookOverUnder": "10.5",
+          "openFairOdds": "+145",
+          "openBookOdds": "-105",
+          "openFairOverUnder": "11.5",
+          "openBookOverUnder": "10.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-102",
+              "overUnder": "10.5",
+              "lastUpdatedAt": "2026-01-12T11:13:15.000Z",
+              "available": true,
+              "altLines": [
+                {
+                  "odds": "-138",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-01-12T11:13:15.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+285",
+                  "overUnder": "14.5",
+                  "lastUpdatedAt": "2026-01-12T11:13:15.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1000",
+                  "overUnder": "19.5",
+                  "lastUpdatedAt": "2026-01-12T11:13:15.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+2500",
+                  "overUnder": "24.5",
+                  "lastUpdatedAt": "2026-01-12T07:32:30.000Z",
+                  "available": false
+                }
+              ],
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.550205741&selectionId=42067800"
+            }
+          },
+          "marketName": "Quentin Grimes Points Over/Under"
+        },
+        "points-QUENTIN_GRIMES_1_NBA-game-ou-under": {
+          "oddID": "points-QUENTIN_GRIMES_1_NBA-game-ou-under",
+          "opposingOddID": "points-QUENTIN_GRIMES_1_NBA-game-ou-over",
+          "statID": "points",
+          "statEntityID": "QUENTIN_GRIMES_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "QUENTIN_GRIMES_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-145",
+          "bookOdds": "-125",
+          "fairOverUnder": "11.5",
+          "bookOverUnder": "10.5",
+          "openFairOdds": "-145",
+          "openBookOdds": "-125",
+          "openFairOverUnder": "11.5",
+          "openBookOverUnder": "10.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-130",
+              "overUnder": "10.5",
+              "lastUpdatedAt": "2026-01-12T11:13:15.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.550205741&selectionId=42067801"
+            }
+          },
+          "marketName": "Quentin Grimes Points Over/Under"
+        },
+        "rebounds-QUENTIN_GRIMES_1_NBA-game-ou-over": {
+          "oddID": "rebounds-QUENTIN_GRIMES_1_NBA-game-ou-over",
+          "opposingOddID": "rebounds-QUENTIN_GRIMES_1_NBA-game-ou-under",
+          "statID": "rebounds",
+          "statEntityID": "QUENTIN_GRIMES_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "QUENTIN_GRIMES_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-104",
+          "bookOdds": "-120",
+          "fairOverUnder": "3.5",
+          "bookOverUnder": "3.5",
+          "openFairOdds": "-104",
+          "openBookOdds": "-120",
+          "openFairOverUnder": "3.5",
+          "openBookOverUnder": "3.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-120",
+              "overUnder": "3.5",
+              "lastUpdatedAt": "2026-01-12T11:13:15.000Z",
+              "available": true,
+              "altLines": [
+                {
+                  "odds": "+370",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2026-01-12T11:13:15.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1300",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2026-01-12T11:13:15.000Z",
+                  "available": true
+                }
+              ],
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.550205742&selectionId=42067800"
+            }
+          },
+          "marketName": "Quentin Grimes Rebounds Over/Under"
+        },
+        "rebounds-QUENTIN_GRIMES_1_NBA-game-ou-under": {
+          "oddID": "rebounds-QUENTIN_GRIMES_1_NBA-game-ou-under",
+          "opposingOddID": "rebounds-QUENTIN_GRIMES_1_NBA-game-ou-over",
+          "statID": "rebounds",
+          "statEntityID": "QUENTIN_GRIMES_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "QUENTIN_GRIMES_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+104",
+          "bookOdds": "-110",
+          "fairOverUnder": "3.5",
+          "bookOverUnder": "3.5",
+          "openFairOdds": "+104",
+          "openBookOdds": "-110",
+          "openFairOverUnder": "3.5",
+          "openBookOverUnder": "3.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-110",
+              "overUnder": "3.5",
+              "lastUpdatedAt": "2026-01-12T11:13:15.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.550205742&selectionId=42067801"
+            }
+          },
+          "marketName": "Quentin Grimes Rebounds Over/Under"
+        },
+        "steals-QUENTIN_GRIMES_1_NBA-game-ou-over": {
+          "oddID": "steals-QUENTIN_GRIMES_1_NBA-game-ou-over",
+          "opposingOddID": "steals-QUENTIN_GRIMES_1_NBA-game-ou-under",
+          "statID": "steals",
+          "statEntityID": "QUENTIN_GRIMES_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "QUENTIN_GRIMES_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-167",
+          "bookOdds": "-200",
+          "fairOverUnder": "0.5",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "-167",
+          "openBookOdds": "-200",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {},
+          "marketName": "Quentin Grimes Steals Over/Under"
+        },
+        "steals-QUENTIN_GRIMES_1_NBA-game-ou-under": {
+          "oddID": "steals-QUENTIN_GRIMES_1_NBA-game-ou-under",
+          "opposingOddID": "steals-QUENTIN_GRIMES_1_NBA-game-ou-over",
+          "statID": "steals",
+          "statEntityID": "QUENTIN_GRIMES_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "QUENTIN_GRIMES_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+167",
+          "fairOverUnder": "0.5",
+          "openFairOdds": "+167",
+          "openFairOverUnder": "0.5",
+          "scoringSupported": true,
+          "marketName": "Quentin Grimes Steals Over/Under",
+          "bookOdds": "+150",
+          "bookOverUnder": "0.5",
+          "byBookmaker": {},
+          "openBookOdds": "+150",
+          "openBookOverUnder": "0.5"
+        },
+        "points-DOMINICK_BARLOW_1_NBA-game-ou-over": {
+          "oddID": "points-DOMINICK_BARLOW_1_NBA-game-ou-over",
+          "opposingOddID": "points-DOMINICK_BARLOW_1_NBA-game-ou-under",
+          "statID": "points",
+          "statEntityID": "DOMINICK_BARLOW_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "DOMINICK_BARLOW_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "+100",
+          "fairOverUnder": "7.5",
+          "bookOverUnder": "7.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "+100",
+          "openFairOverUnder": "7.5",
+          "openBookOverUnder": "7.5",
+          "scoringSupported": true,
+          "byBookmaker": {},
+          "marketName": "Dominick Barlow Points Over/Under"
+        },
+        "points-DOMINICK_BARLOW_1_NBA-game-ou-under": {
+          "oddID": "points-DOMINICK_BARLOW_1_NBA-game-ou-under",
+          "opposingOddID": "points-DOMINICK_BARLOW_1_NBA-game-ou-over",
+          "statID": "points",
+          "statEntityID": "DOMINICK_BARLOW_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "DOMINICK_BARLOW_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "+100",
+          "fairOverUnder": "7.5",
+          "bookOverUnder": "7.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "+100",
+          "openFairOverUnder": "7.5",
+          "openBookOverUnder": "7.5",
+          "scoringSupported": true,
+          "byBookmaker": {},
+          "marketName": "Dominick Barlow Points Over/Under"
+        },
+        "rebounds-DOMINICK_BARLOW_1_NBA-game-ou-over": {
+          "oddID": "rebounds-DOMINICK_BARLOW_1_NBA-game-ou-over",
+          "opposingOddID": "rebounds-DOMINICK_BARLOW_1_NBA-game-ou-under",
+          "statID": "rebounds",
+          "statEntityID": "DOMINICK_BARLOW_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "DOMINICK_BARLOW_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "+100",
+          "fairOverUnder": "6",
+          "bookOverUnder": "5.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "+100",
+          "openFairOverUnder": "6",
+          "openBookOverUnder": "5.5",
+          "scoringSupported": true,
+          "byBookmaker": {},
+          "marketName": "Dominick Barlow Rebounds Over/Under"
+        },
+        "rebounds-DOMINICK_BARLOW_1_NBA-game-ou-under": {
+          "oddID": "rebounds-DOMINICK_BARLOW_1_NBA-game-ou-under",
+          "opposingOddID": "rebounds-DOMINICK_BARLOW_1_NBA-game-ou-over",
+          "statID": "rebounds",
+          "statEntityID": "DOMINICK_BARLOW_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "DOMINICK_BARLOW_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "+100",
+          "fairOverUnder": "6",
+          "bookOverUnder": "5.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "+100",
+          "openFairOverUnder": "6",
+          "openBookOverUnder": "5.5",
+          "scoringSupported": true,
+          "byBookmaker": {},
+          "marketName": "Dominick Barlow Rebounds Over/Under"
+        },
+        "steals-DOMINICK_BARLOW_1_NBA-game-ou-over": {
+          "oddID": "steals-DOMINICK_BARLOW_1_NBA-game-ou-over",
+          "opposingOddID": "steals-DOMINICK_BARLOW_1_NBA-game-ou-under",
+          "marketName": "Dominick Barlow Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "DOMINICK_BARLOW_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "DOMINICK_BARLOW_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "+100",
+          "fairOverUnder": "0.5",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "+100",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        },
+        "steals-DOMINICK_BARLOW_1_NBA-game-ou-under": {
+          "oddID": "steals-DOMINICK_BARLOW_1_NBA-game-ou-under",
+          "opposingOddID": "steals-DOMINICK_BARLOW_1_NBA-game-ou-over",
+          "marketName": "Dominick Barlow Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "DOMINICK_BARLOW_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "DOMINICK_BARLOW_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "+100",
+          "fairOverUnder": "0.5",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "+100",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        },
+        "blocks-DOMINICK_BARLOW_1_NBA-game-ou-over": {
+          "oddID": "blocks-DOMINICK_BARLOW_1_NBA-game-ou-over",
+          "opposingOddID": "blocks-DOMINICK_BARLOW_1_NBA-game-ou-under",
+          "marketName": "Dominick Barlow Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "DOMINICK_BARLOW_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "DOMINICK_BARLOW_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": false,
+          "fairOddsAvailable": false,
+          "fairOdds": "+100",
+          "bookOdds": "+100",
+          "fairOverUnder": "0.5",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "+100",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        },
+        "blocks-DOMINICK_BARLOW_1_NBA-game-ou-under": {
+          "oddID": "blocks-DOMINICK_BARLOW_1_NBA-game-ou-under",
+          "opposingOddID": "blocks-DOMINICK_BARLOW_1_NBA-game-ou-over",
+          "marketName": "Dominick Barlow Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "DOMINICK_BARLOW_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "DOMINICK_BARLOW_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": false,
+          "fairOddsAvailable": false,
+          "fairOdds": "+100",
+          "bookOdds": "+100",
+          "fairOverUnder": "0.5",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "+100",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        },
+        "assists-DOMINICK_BARLOW_1_NBA-game-ou-over": {
+          "oddID": "assists-DOMINICK_BARLOW_1_NBA-game-ou-over",
+          "opposingOddID": "assists-DOMINICK_BARLOW_1_NBA-game-ou-under",
+          "marketName": "Dominick Barlow Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "DOMINICK_BARLOW_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "DOMINICK_BARLOW_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": false,
+          "bookOdds": "+800",
+          "bookOverUnder": "2.5",
+          "openBookOdds": "+800",
+          "openBookOverUnder": "2.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        }
+      },
+      "results": {},
+      "players": {
+        "SCOTTIE_BARNES_1_NBA": {
+          "playerID": "SCOTTIE_BARNES_1_NBA",
+          "teamID": "TORONTO_RAPTORS_NBA",
+          "firstName": "Scottie",
+          "lastName": "Barnes",
+          "name": "Scottie Barnes"
+        },
+        "RJ_BARRETT_1_NBA": {
+          "playerID": "RJ_BARRETT_1_NBA",
+          "teamID": "TORONTO_RAPTORS_NBA",
+          "firstName": "RJ",
+          "lastName": "Barrett",
+          "name": "RJ Barrett"
+        },
+        "COLLIN_MURRAYBOYLES_1_NBA": {
+          "playerID": "COLLIN_MURRAYBOYLES_1_NBA",
+          "teamID": "TORONTO_RAPTORS_NBA",
+          "firstName": "Collin",
+          "lastName": "Murray-Boyles",
+          "name": "Collin Murray-Boyles"
+        },
+        "BRANDON_INGRAM_1_NBA": {
+          "playerID": "BRANDON_INGRAM_1_NBA",
+          "teamID": "TORONTO_RAPTORS_NBA",
+          "firstName": "Brandon",
+          "lastName": "Ingram",
+          "name": "Brandon Ingram"
+        },
+        "JOEL_EMBIID_1_NBA": {
+          "playerID": "JOEL_EMBIID_1_NBA",
+          "teamID": "PHILADELPHIA_76ERS_NBA",
+          "firstName": "Joel",
+          "lastName": "Embiid",
+          "name": "Joel Embiid"
+        },
+        "TYRESE_MAXEY_1_NBA": {
+          "playerID": "TYRESE_MAXEY_1_NBA",
+          "teamID": "PHILADELPHIA_76ERS_NBA",
+          "firstName": "Tyrese",
+          "lastName": "Maxey",
+          "name": "Tyrese Maxey"
+        },
+        "PAUL_GEORGE_1_NBA": {
+          "playerID": "PAUL_GEORGE_1_NBA",
+          "teamID": "PHILADELPHIA_76ERS_NBA",
+          "firstName": "Paul",
+          "lastName": "George",
+          "name": "Paul George"
+        },
+        "IMMANUEL_QUICKLEY_1_NBA": {
+          "playerID": "IMMANUEL_QUICKLEY_1_NBA",
+          "teamID": "TORONTO_RAPTORS_NBA",
+          "firstName": "Immanuel",
+          "lastName": "Quickley",
+          "name": "Immanuel Quickley"
+        },
+        "VJ_EDGECOMBE_1_NBA": {
+          "playerID": "VJ_EDGECOMBE_1_NBA",
+          "teamID": "PHILADELPHIA_76ERS_NBA",
+          "firstName": "VJ",
+          "lastName": "Edgecombe",
+          "name": "VJ Edgecombe"
+        },
+        "SANDRO_MAMUKELASHVILI_1_NBA": {
+          "playerID": "SANDRO_MAMUKELASHVILI_1_NBA",
+          "teamID": "TORONTO_RAPTORS_NBA",
+          "firstName": "Sandro",
+          "lastName": "Mamukelashvili",
+          "name": "Sandro Mamukelashvili"
+        },
+        "QUENTIN_GRIMES_1_NBA": {
+          "playerID": "QUENTIN_GRIMES_1_NBA",
+          "teamID": "PHILADELPHIA_76ERS_NBA",
+          "firstName": "Quentin",
+          "lastName": "Grimes",
+          "name": "Quentin Grimes"
+        },
+        "DOMINICK_BARLOW_1_NBA": {
+          "playerID": "DOMINICK_BARLOW_1_NBA",
+          "teamID": "PHILADELPHIA_76ERS_NBA",
+          "firstName": "Dominick",
+          "lastName": "Barlow",
+          "name": "Dominick Barlow"
+        },
+        "OCHAI_AGBAJI_1_NBA": {
+          "playerID": "OCHAI_AGBAJI_1_NBA",
+          "teamID": "TORONTO_RAPTORS_NBA",
+          "firstName": "Ochai",
+          "lastName": "Agbaji",
+          "name": "Ochai Agbaji"
+        }
+      }
+    }
+  ]
+}
