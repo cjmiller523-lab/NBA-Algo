@@ -1,0 +1,32 @@
+import pandas as pd
+import requests
+from io import BytesIO
+
+# 2026 live season data from Tennis-Data.co.uk
+url = "http://www.tennis-data.co.uk/2026/2026.xlsx" 
+headers = {'User-Agent': 'Mozilla/5.0'}
+
+try:
+    print("Connecting to 2026 Betting Database...")
+    response = requests.get(url, headers=headers)
+    response.raise_for_status()
+    
+    # Use the 'openpyxl' engine we just installed
+    df = pd.read_excel(BytesIO(response.content), engine='openpyxl')
+    
+    # Filter for Tommy Paul (listed as Paul T. in this database)
+    # Also works for Alcaraz C.
+    player_query = "Paul T."
+    matches = df[(df['Winner'] == player_query) | (df['Loser'] == player_query)].copy()
+    
+    if not matches.empty:
+        print(f"\n✅ Found {len(matches)} matches for {player_query} in 2026")
+        # B365W = Bet365 Winner Odds | B365L = Bet365 Loser Odds
+        cols = ['Date', 'Tournament', 'Winner', 'Loser', 'B365W', 'B365L']
+        print(matches[cols])
+    else:
+        print(f"No official ATP results for {player_query} in the 2026 file yet.")
+        print("Note: Matches usually appear 24h after the round finishes.")
+
+except Exception as e:
+    print(f"❌ Error: {e}")
