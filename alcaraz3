@@ -1,0 +1,111 @@
+import requests
+import pandas as pd
+import re
+
+# =============================
+# CONFIG
+# =============================
+PLAYER = "Tommy Paul"
+PLAYER_ID = "TP35"   # ✅ Tommy Paul ATP ID
+MATCHES = 30
+
+HEADERS = {
+    "User-Agent": "Mozilla/5.0"
+}
+
+# =============================
+# HELPERS
+# =============================
+def normalize_surface(s):
+    s = str(s).lower()
+    if "clay" in s:
+        return "Clay"
+    if "grass" in s:
+        return "Grass"
+    if "indoor" in s:
+        return "Indoor Hard"
+    return "Hard"
+
+def parse_total_games(score):
+    """
+    Parses scorelines like:
+    6-4 3-6 7-6(5)
+    """
+    if not isinstance(score, str):
+        return None
+
+    sets = re.findall(r"(\d+)-(\d+)", score)
+    if not sets:
+        return None
+
+    return sum(int(a) + int(b) for a, b in sets)
+
+def has_tiebreak(score):
+    return isinstance(score, str) and "(" in score
+
+# =============================
+# FETCH MATCH DATA
+# =============================
+def fetch_match_results(player_id):
+    url = (
+        "https://www.atptour.com/-/ajax/player-match-history"
+        f"?playerId={player_id}&matchType=singles"
+    )
+
+    resp = requests.get(url, headers=HEADERS, timeout=20)
+    html = resp.text
+
+    tables = pd.read_html(html)
+
+    # Match history is always the largest table
+    df = max(tables, key=len).copy()
+    return df
+
+# =============================
+# MAIN
+# =============================
+def main():
+    print(f"\n🎾 Fetching recent matches for {PLAYER}...\n")
+
+    df = fetch_match_results(PLAYER_ID)
+    df = df.head(MATCHES)
+
+    rows = []
+
+    for _, r in df.iterrows():
+        score = r.get("Score")
+        total_games = parse_total_games(score)
+
+        if total_games is None:
+            continue
+
+        rows.append({
+            "date": r.get("Date"),
+            "tournament": r.get("Tournament"),
+            "surface": normalize_surface(r.get("Surface")),
+            "opponent": r.get("Opponent"),
+            "score": score,
+            "total_games": total_games,
+            "tiebreak": has_tiebreak(score)
+        })
+
+    out = pd.DataFrame(rows)
+
+    if out.empty:
+        print("❌ No usable match data")
+        return
+
+    print(f"\n🎾 LAST {len(out)} MATCHES — {PLAYER}\n")
+    print(out.to_string(index=False))
+
+    print("\n📊 TOTALS HIT RATE SNAPSHOT")
+    print("--------------------------")
+    print(f"22+ games: {(out['total_games'] >= 22).sum()} / {len(out)}")
+    print(f"25+ games: {(out['total_games'] >= 25).sum()} / {len(out)}")
+    print(f"Tiebreak matches: {out['tiebreak'].sum()} / {len(out)}")
+
+# =============================
+# RUN
+# =============================
+if __name__ == "__main__":
+    main()
