@@ -1,0 +1,1793 @@
+{
+  "nextCursor": "n.1768784400000.n7Re13WLoKEic6zMWiMo",
+  "success": true,
+  "data": [
+    {
+      "eventID": "n7Re13WLoKEic6zMWiMo",
+      "sportID": "BASKETBALL",
+      "leagueID": "NBA",
+      "type": "match",
+      "teams": {
+        "home": {
+          "teamID": "DENVER_NUGGETS_NBA",
+          "names": {
+            "long": "Denver Nuggets",
+            "medium": "Nuggets",
+            "short": "DEN",
+            "location": "Denver"
+          },
+          "colors": {
+            "primary": "#4FA8FF",
+            "secondary": "#F3BB4B",
+            "primaryContrast": "#000000",
+            "secondaryContrast": "#000000"
+          },
+          "statEntityID": "home"
+        },
+        "away": {
+          "teamID": "CHARLOTTE_HORNETS_NBA",
+          "names": {
+            "long": "Charlotte Hornets",
+            "medium": "Hornets",
+            "short": "CHA",
+            "location": "Charlotte"
+          },
+          "colors": {
+            "primary": "#008CA8",
+            "secondary": "#1D1160",
+            "primaryContrast": "#000000",
+            "secondaryContrast": "#008CA8"
+          },
+          "statEntityID": "away"
+        }
+      },
+      "status": {
+        "started": false,
+        "completed": false,
+        "cancelled": false,
+        "ended": false,
+        "live": false,
+        "delayed": false,
+        "currentPeriodID": "",
+        "previousPeriodID": "",
+        "displayShort": "",
+        "displayLong": "Upcoming",
+        "inBreak": false,
+        "startsAt": "2026-01-19T01:00:00.000Z",
+        "previousStartsAt": [],
+        "hardStart": true,
+        "periods": {
+          "started": [],
+          "ended": []
+        },
+        "oddsPresent": true,
+        "oddsAvailable": true,
+        "finalized": false
+      },
+      "info": {
+        "seasonWeek": "NBA 25/26"
+      },
+      "links": {
+        "bookmakers": {
+          "fanduel": "https://sportsbook.fanduel.com/basketball/-/35155990",
+          "sportsbet": "https://www.sportsbet.com.au/betting/basketball---us/nba/charlotte-hornets-at-denver-nuggets-10050145",
+          "paddypower": "https://www.paddypower.com/basketball/nba/charlotte-hornets-@-denver-nuggets-35155990",
+          "boylesports": "https://www.boylesports.com/sports/basketball/event/usa-nba/denver-nuggets-v-charlotte-hornets",
+          "888sport": "https://www.888sport.com/basketball/united-states-of-america/nba/charlotte-hornets-denver-nuggets-e-7001870",
+          "coolbet": "https://www.coolbet.com/en/sports/match/4907823",
+          "pointsbet": "https://pointsbet.com.au/sports/basketball/NBA/2573143",
+          "1xbet": "https://1xbet.com/en/line/football/13589-nba/297252390-denver-nuggets-charlotte-hornets",
+          "ladbrokes": "https://www.ladbrokes.com.au/sports/-/-/-/76a1e0d0-508f-4928-a170-271207c5950e",
+          "neds": "https://www.neds.com.au/sports/-/-/-/76a1e0d0-508f-4928-a170-271207c5950e",
+          "williamhill": "https://sports.williamhill.com/betting/en-gb/basketball/OB_EV38410665/charlotte-hornets-at-denver-nuggets",
+          "draftkings": "https://sportsbook.draftkings.com/event/33471271",
+          "caesars": "https://sportsbook.caesars.com/us/nj/bet/basketball/bea9e910-d2d9-4636-bb11-45deb431b0cb/charlotte-hornets-at-denver-nuggets",
+          "tab": "https://www.tab.com.au/sports/betting/Basketball/competitions/NBA/matches/Denver%20v%20Charlotte",
+          "boombet": "https://www.boombet.com.au/sport-menu/Sport/Basketball/NBA/39661065",
+          "matchbook": "https://www.matchbook.com/events/basketball/united-states-of-america/nba/32273685972600045",
+          "betrsportsbook": "https://www.betr.com.au/sports/Basketball/107/United-States-of-America/NBA/Charlotte-Hornets-@-Denver-Nuggets/1958828/All-Markets",
+          "fliff": "https://sports.getfliff.com/markets/358666_c_p_204_prematch",
+          "espnbet": "https://espnbet.com/sport/basketball/organization/united-states/competition/nba/event/0d7af782-a457-4dfb-9b04-35b64f495e15",
+          "thescorebet": "https://thescore.bet/sport/basketball/organization/united-states/competition/nba/event/0d7af782-a457-4dfb-9b04-35b64f495e15",
+          "hardrockbet": "https://app.hardrock.bet/home/competition/nba/1339692207677636946",
+          "betfairsportsbook": "https://www.betfair.com/betting/basketball/nba/charlotte-hornets-@-denver-nuggets/e-35155990",
+          "ballybet": "https://play.ballybet.com/sports#event/1024653038",
+          "betparx": "https://nj.betparx.com/kambi#event/1024653038",
+          "betrivers": "https://nj.betrivers.com/?page=sportsbook#event/1024653038",
+          "casumo": "https://www.casumo.com/en-gb/sports#event/1024653038",
+          "grosvenor": "https://www.grosvenorcasinos.com/sport#event/1024653038",
+          "leovegas": "https://www.leovegas.co.uk/betting#event/1024653038",
+          "livescorebet": "https://www.livescorebet.com/uk/sports/basketball/nba/denver-nuggets-charlotte-hornets/SBTE_2_1024653038",
+          "tabtouch": "https://www.tabtouch.mobi/tabtouch-sports/event/1024653038",
+          "virginbet": "https://www.virginbet.com/sports/basketball/nba/denver-nuggets-charlotte-hornets/SBTE_2_1024653038",
+          "unibet": "https://www.unibet.com/betting/sports/event/1024653038",
+          "betmgm": "https://sports.nj.betmgm.com/en/sports/events/18737675",
+          "coral": "https://sports.coral.co.uk/event/basketball/basketball-usa/nba/den-nuggets-v-cha-hornets/41415412",
+          "betway": "https://betway.com/en/sports/evt/16257980",
+          "betsson": "https://www.betsson.com/en/sportsbook/basketball/nba/nba?eventId=f-Ux3EHyT_vUOtrLhGDKXPyQ",
+          "nordicbet": "https://www.nordicbet.com/en/sportsbook/basketball/nba/nba/denver-nuggets-charlotte-hornets",
+          "playup": "https://www.playup.com.au/betting/sports/nba/denver-nuggets-v-charlotte-hornets/1783195",
+          "everygame": "https://sports.everygame.eu/en/Bets/Basketball/NBA-Lines/Charlotte-Hornets-at-Denver-Nuggets/2782091",
+          "lowvig": "https://sports.lowvig.ag/sportsbook/basketball/nba/game/490939039",
+          "betonline": "https://sports.betonline.ag/sportsbook/basketball/nba/game/490939039",
+          "pinnacle": "https://www.pinnacle.com/en/basketball/nba/charlotte-hornets-vs-denver-nuggets/1622273317",
+          "bovada": "https://www.bovada.lv/sports/basketball/nba/charlotte-hornets-denver-nuggets-202601182000"
+        }
+      },
+      "odds": {
+        "assists-JAMAL_MURRAY_1_NBA-game-ou-over": {
+          "oddID": "assists-JAMAL_MURRAY_1_NBA-game-ou-over",
+          "opposingOddID": "assists-JAMAL_MURRAY_1_NBA-game-ou-under",
+          "marketName": "Jamal Murray Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "JAMAL_MURRAY_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "JAMAL_MURRAY_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+124",
+          "bookOdds": "-129",
+          "fairOverUnder": "9.5",
+          "bookOverUnder": "8.5",
+          "openFairOdds": "-112",
+          "openBookOdds": "-130",
+          "openFairOverUnder": "8.5",
+          "openBookOverUnder": "8.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-130",
+              "overUnder": "8.5",
+              "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.551368861&selectionId=16127791",
+              "altLines": [
+                {
+                  "odds": "-950",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-225",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+122",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+330",
+                  "overUnder": "11.5",
+                  "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+870",
+                  "overUnder": "13.5",
+                  "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "assists-JAMAL_MURRAY_1_NBA-game-ou-under": {
+          "oddID": "assists-JAMAL_MURRAY_1_NBA-game-ou-under",
+          "opposingOddID": "assists-JAMAL_MURRAY_1_NBA-game-ou-over",
+          "marketName": "Jamal Murray Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "JAMAL_MURRAY_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "JAMAL_MURRAY_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-124",
+          "bookOdds": "-102",
+          "fairOverUnder": "9.5",
+          "bookOverUnder": "8.5",
+          "openFairOdds": "+112",
+          "openBookOdds": "-102",
+          "openFairOverUnder": "8.5",
+          "openBookOverUnder": "8.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-102",
+              "overUnder": "8.5",
+              "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.551368861&selectionId=16127792"
+            }
+          }
+        },
+        "points-JAMAL_MURRAY_1_NBA-game-ou-over": {
+          "oddID": "points-JAMAL_MURRAY_1_NBA-game-ou-over",
+          "opposingOddID": "points-JAMAL_MURRAY_1_NBA-game-ou-under",
+          "marketName": "Jamal Murray Points Over/Under",
+          "statID": "points",
+          "statEntityID": "JAMAL_MURRAY_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "JAMAL_MURRAY_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+105",
+          "bookOdds": "-108",
+          "fairOverUnder": "28.5",
+          "bookOverUnder": "28.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "-118",
+          "openFairOverUnder": "28.5",
+          "openBookOverUnder": "27.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-102",
+              "overUnder": "28.5",
+              "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.551368858&selectionId=16127791",
+              "altLines": [
+                {
+                  "odds": "-6000",
+                  "overUnder": "14.5",
+                  "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-800",
+                  "overUnder": "19.5",
+                  "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-230",
+                  "overUnder": "24.5",
+                  "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-120",
+                  "overUnder": "27.5",
+                  "lastUpdatedAt": "2026-01-18T05:49:55.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "+120",
+                  "overUnder": "29.5",
+                  "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+290",
+                  "overUnder": "34.5",
+                  "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+750",
+                  "overUnder": "39.5",
+                  "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1500",
+                  "overUnder": "44.5",
+                  "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+3500",
+                  "overUnder": "49.5",
+                  "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "points-JAMAL_MURRAY_1_NBA-game-ou-under": {
+          "oddID": "points-JAMAL_MURRAY_1_NBA-game-ou-under",
+          "opposingOddID": "points-JAMAL_MURRAY_1_NBA-game-ou-over",
+          "marketName": "Jamal Murray Points Over/Under",
+          "statID": "points",
+          "statEntityID": "JAMAL_MURRAY_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "JAMAL_MURRAY_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-105",
+          "bookOdds": "-120",
+          "fairOverUnder": "28.5",
+          "bookOverUnder": "28.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "-112",
+          "openFairOverUnder": "28.5",
+          "openBookOverUnder": "27.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-130",
+              "overUnder": "28.5",
+              "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.551368858&selectionId=16127792",
+              "altLines": [
+                {
+                  "odds": "-110",
+                  "overUnder": "27.5",
+                  "lastUpdatedAt": "2026-01-18T05:49:55.000Z",
+                  "available": false
+                }
+              ]
+            }
+          }
+        },
+        "rebounds-JAMAL_MURRAY_1_NBA-game-ou-over": {
+          "oddID": "rebounds-JAMAL_MURRAY_1_NBA-game-ou-over",
+          "opposingOddID": "rebounds-JAMAL_MURRAY_1_NBA-game-ou-under",
+          "marketName": "Jamal Murray Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "JAMAL_MURRAY_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "JAMAL_MURRAY_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "-110",
+          "fairOverUnder": "5",
+          "bookOverUnder": "4.5",
+          "openFairOdds": "+108",
+          "openBookOdds": "-106",
+          "openFairOverUnder": "4.5",
+          "openBookOverUnder": "4.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-106",
+              "overUnder": "4.5",
+              "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.551368860&selectionId=16127791",
+              "altLines": [
+                {
+                  "odds": "-235",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+200",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+700",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1400",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "rebounds-JAMAL_MURRAY_1_NBA-game-ou-under": {
+          "oddID": "rebounds-JAMAL_MURRAY_1_NBA-game-ou-under",
+          "opposingOddID": "rebounds-JAMAL_MURRAY_1_NBA-game-ou-over",
+          "marketName": "Jamal Murray Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "JAMAL_MURRAY_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "JAMAL_MURRAY_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "-122",
+          "fairOverUnder": "5",
+          "bookOverUnder": "4.5",
+          "openFairOdds": "-108",
+          "openBookOdds": "-125",
+          "openFairOverUnder": "4.5",
+          "openBookOverUnder": "4.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-125",
+              "overUnder": "4.5",
+              "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.551368860&selectionId=16127792"
+            }
+          }
+        },
+        "assists-AARON_GORDON_1_NBA-game-ou-over": {
+          "oddID": "assists-AARON_GORDON_1_NBA-game-ou-over",
+          "opposingOddID": "assists-AARON_GORDON_1_NBA-game-ou-under",
+          "marketName": "Aaron Gordon Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "AARON_GORDON_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "AARON_GORDON_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+111",
+          "bookOdds": "-103",
+          "fairOverUnder": "3.5",
+          "bookOverUnder": "3.5",
+          "openFairOdds": "+616",
+          "openBookOdds": "+560",
+          "openFairOverUnder": "5.5",
+          "openBookOverUnder": "5.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-104",
+              "overUnder": "3.5",
+              "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+              "available": true,
+              "altLines": [
+                {
+                  "odds": "-850",
+                  "overUnder": "1.5",
+                  "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+450",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1500",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+                  "available": true
+                }
+              ],
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.551369587&selectionId=12730307"
+            }
+          }
+        },
+        "assists-AARON_GORDON_1_NBA-game-ou-under": {
+          "oddID": "assists-AARON_GORDON_1_NBA-game-ou-under",
+          "opposingOddID": "assists-AARON_GORDON_1_NBA-game-ou-over",
+          "marketName": "Aaron Gordon Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "AARON_GORDON_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "AARON_GORDON_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-111",
+          "fairOverUnder": "3.5",
+          "openFairOdds": "-616",
+          "openFairOverUnder": "5.5",
+          "scoringSupported": true,
+          "bookOdds": "-129",
+          "bookOverUnder": "3.5",
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-128",
+              "overUnder": "3.5",
+              "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.551369587&selectionId=12730306"
+            }
+          },
+          "openBookOdds": "-172",
+          "openBookOverUnder": "3.5"
+        },
+        "points-AARON_GORDON_1_NBA-game-ou-over": {
+          "oddID": "points-AARON_GORDON_1_NBA-game-ou-over",
+          "opposingOddID": "points-AARON_GORDON_1_NBA-game-ou-under",
+          "marketName": "Aaron Gordon Points Over/Under",
+          "statID": "points",
+          "statEntityID": "AARON_GORDON_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "AARON_GORDON_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+127",
+          "bookOdds": "-107",
+          "fairOverUnder": "19.5",
+          "bookOverUnder": "18.5",
+          "openFairOdds": "+130",
+          "openBookOdds": "+118",
+          "openFairOverUnder": "19.5",
+          "openBookOverUnder": "19.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-106",
+              "overUnder": "18.5",
+              "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+              "available": true,
+              "altLines": [
+                {
+                  "odds": "-1800",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-290",
+                  "overUnder": "14.5",
+                  "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+124",
+                  "overUnder": "19.5",
+                  "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+340",
+                  "overUnder": "24.5",
+                  "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+900",
+                  "overUnder": "29.5",
+                  "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+2000",
+                  "overUnder": "34.5",
+                  "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+                  "available": true
+                }
+              ],
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.551369585&selectionId=12730307"
+            }
+          }
+        },
+        "points-AARON_GORDON_1_NBA-game-ou-under": {
+          "oddID": "points-AARON_GORDON_1_NBA-game-ou-under",
+          "opposingOddID": "points-AARON_GORDON_1_NBA-game-ou-over",
+          "marketName": "Aaron Gordon Points Over/Under",
+          "statID": "points",
+          "statEntityID": "AARON_GORDON_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "AARON_GORDON_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-127",
+          "fairOverUnder": "19.5",
+          "openFairOdds": "-130",
+          "openFairOverUnder": "19.5",
+          "scoringSupported": true,
+          "bookOdds": "-123",
+          "bookOverUnder": "18.5",
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-125",
+              "overUnder": "18.5",
+              "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.551369585&selectionId=12730306"
+            }
+          },
+          "openBookOdds": "-125",
+          "openBookOverUnder": "18.5"
+        },
+        "rebounds-AARON_GORDON_1_NBA-game-ou-over": {
+          "oddID": "rebounds-AARON_GORDON_1_NBA-game-ou-over",
+          "opposingOddID": "rebounds-AARON_GORDON_1_NBA-game-ou-under",
+          "marketName": "Aaron Gordon Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "AARON_GORDON_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "AARON_GORDON_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+142",
+          "bookOdds": "-137",
+          "fairOverUnder": "7.5",
+          "bookOverUnder": "6.5",
+          "openFairOdds": "+156",
+          "openBookOdds": "+142",
+          "openFairOverUnder": "7.5",
+          "openBookOverUnder": "7.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-140",
+              "overUnder": "6.5",
+              "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+              "available": true,
+              "altLines": [
+                {
+                  "odds": "-1800",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-265",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+134",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+330",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+900",
+                  "overUnder": "11.5",
+                  "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1800",
+                  "overUnder": "13.5",
+                  "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+                  "available": true
+                }
+              ],
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.551369586&selectionId=12730307"
+            }
+          }
+        },
+        "rebounds-AARON_GORDON_1_NBA-game-ou-under": {
+          "oddID": "rebounds-AARON_GORDON_1_NBA-game-ou-under",
+          "opposingOddID": "rebounds-AARON_GORDON_1_NBA-game-ou-over",
+          "marketName": "Aaron Gordon Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "AARON_GORDON_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "AARON_GORDON_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-142",
+          "fairOverUnder": "7.5",
+          "openFairOdds": "-156",
+          "openFairOverUnder": "7.5",
+          "scoringSupported": true,
+          "bookOdds": "+100",
+          "bookOverUnder": "6.5",
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+106",
+              "overUnder": "6.5",
+              "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.551369586&selectionId=12730306"
+            }
+          },
+          "openBookOdds": "+100",
+          "openBookOverUnder": "6.5"
+        },
+        "assists-CHRISTIAN_BRAUN_1_NBA-game-ou-over": {
+          "oddID": "assists-CHRISTIAN_BRAUN_1_NBA-game-ou-over",
+          "opposingOddID": "assists-CHRISTIAN_BRAUN_1_NBA-game-ou-under",
+          "marketName": "Christian Braun Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "CHRISTIAN_BRAUN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "CHRISTIAN_BRAUN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "-147",
+          "fairOverUnder": "2",
+          "bookOverUnder": "1.5",
+          "openFairOdds": "-171",
+          "openBookOdds": "-188",
+          "openFairOverUnder": "1.5",
+          "openBookOverUnder": "1.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+158",
+              "overUnder": "2.5",
+              "lastUpdatedAt": "2026-01-18T12:31:13.057Z",
+              "available": false,
+              "altLines": [
+                {
+                  "odds": "-192",
+                  "overUnder": "1.5",
+                  "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+400",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1500",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2026-01-18T05:41:44.000Z",
+                  "available": false
+                }
+              ],
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.551370673&selectionId=43026473"
+            }
+          }
+        },
+        "assists-CHRISTIAN_BRAUN_1_NBA-game-ou-under": {
+          "oddID": "assists-CHRISTIAN_BRAUN_1_NBA-game-ou-under",
+          "opposingOddID": "assists-CHRISTIAN_BRAUN_1_NBA-game-ou-over",
+          "marketName": "Christian Braun Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "CHRISTIAN_BRAUN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "CHRISTIAN_BRAUN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "fairOverUnder": "2",
+          "openFairOdds": "+171",
+          "openFairOverUnder": "1.5",
+          "scoringSupported": true,
+          "bookOdds": "+115",
+          "bookOverUnder": "1.5",
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-215",
+              "overUnder": "2.5",
+              "lastUpdatedAt": "2026-01-18T12:31:13.057Z",
+              "available": false,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.551370673&selectionId=43026472"
+            }
+          },
+          "openBookOdds": "-215",
+          "openBookOverUnder": "2.5"
+        },
+        "points-CHRISTIAN_BRAUN_1_NBA-game-ou-over": {
+          "oddID": "points-CHRISTIAN_BRAUN_1_NBA-game-ou-over",
+          "opposingOddID": "points-CHRISTIAN_BRAUN_1_NBA-game-ou-under",
+          "marketName": "Christian Braun Points Over/Under",
+          "statID": "points",
+          "statEntityID": "CHRISTIAN_BRAUN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "CHRISTIAN_BRAUN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "-102",
+          "fairOverUnder": "10",
+          "bookOverUnder": "9.5",
+          "openFairOdds": "+108",
+          "openBookOdds": "-102",
+          "openFairOverUnder": "9.5",
+          "openBookOverUnder": "9.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+102",
+              "overUnder": "9.5",
+              "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+              "available": true,
+              "altLines": [
+                {
+                  "odds": "+450",
+                  "overUnder": "14.5",
+                  "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1500",
+                  "overUnder": "19.5",
+                  "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+                  "available": true
+                }
+              ],
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.551370671&selectionId=43026473"
+            }
+          }
+        },
+        "points-CHRISTIAN_BRAUN_1_NBA-game-ou-under": {
+          "oddID": "points-CHRISTIAN_BRAUN_1_NBA-game-ou-under",
+          "opposingOddID": "points-CHRISTIAN_BRAUN_1_NBA-game-ou-over",
+          "marketName": "Christian Braun Points Over/Under",
+          "statID": "points",
+          "statEntityID": "CHRISTIAN_BRAUN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "CHRISTIAN_BRAUN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "fairOverUnder": "10",
+          "openFairOdds": "-108",
+          "openFairOverUnder": "9.5",
+          "scoringSupported": true,
+          "bookOdds": "-130",
+          "bookOverUnder": "9.5",
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-136",
+              "overUnder": "9.5",
+              "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.551370671&selectionId=43026472"
+            }
+          },
+          "openBookOdds": "-128",
+          "openBookOverUnder": "9.5"
+        },
+        "rebounds-CHRISTIAN_BRAUN_1_NBA-game-ou-over": {
+          "oddID": "rebounds-CHRISTIAN_BRAUN_1_NBA-game-ou-over",
+          "opposingOddID": "rebounds-CHRISTIAN_BRAUN_1_NBA-game-ou-under",
+          "marketName": "Christian Braun Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "CHRISTIAN_BRAUN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "CHRISTIAN_BRAUN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+129",
+          "bookOdds": "+114",
+          "fairOverUnder": "4.5",
+          "bookOverUnder": "4.5",
+          "openFairOdds": "-178",
+          "openBookOdds": "-196",
+          "openFairOverUnder": "3.5",
+          "openBookOverUnder": "3.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+114",
+              "overUnder": "4.5",
+              "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+              "available": true,
+              "altLines": [
+                {
+                  "odds": "-192",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+230",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+800",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1700",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+                  "available": true
+                }
+              ],
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.551370672&selectionId=43026473"
+            }
+          }
+        },
+        "rebounds-CHRISTIAN_BRAUN_1_NBA-game-ou-under": {
+          "oddID": "rebounds-CHRISTIAN_BRAUN_1_NBA-game-ou-under",
+          "opposingOddID": "rebounds-CHRISTIAN_BRAUN_1_NBA-game-ou-over",
+          "marketName": "Christian Braun Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "CHRISTIAN_BRAUN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "CHRISTIAN_BRAUN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-129",
+          "fairOverUnder": "4.5",
+          "openFairOdds": "+178",
+          "openFairOverUnder": "3.5",
+          "scoringSupported": true,
+          "bookOdds": "-152",
+          "bookOverUnder": "4.5",
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-152",
+              "overUnder": "4.5",
+              "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.551370672&selectionId=43026472"
+            }
+          },
+          "openBookOdds": "-148",
+          "openBookOverUnder": "4.5"
+        },
+        "points-BRUCE_BROWN_1_NBA-game-ou-over": {
+          "oddID": "points-BRUCE_BROWN_1_NBA-game-ou-over",
+          "opposingOddID": "points-BRUCE_BROWN_1_NBA-game-ou-under",
+          "statID": "points",
+          "statEntityID": "BRUCE_BROWN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "BRUCE_BROWN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+113",
+          "bookOdds": "-125",
+          "fairOverUnder": "6.5",
+          "bookOverUnder": "5.5",
+          "openFairOdds": "-108",
+          "openBookOdds": "-125",
+          "openFairOverUnder": "5.5",
+          "openBookOverUnder": "5.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-125",
+              "overUnder": "5.5",
+              "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+              "available": true,
+              "altLines": [
+                {
+                  "odds": "-190",
+                  "overUnder": "4.5",
+                  "lastUpdatedAt": "2026-01-18T12:31:13.057Z",
+                  "available": true
+                },
+                {
+                  "odds": "+360",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1500",
+                  "overUnder": "14.5",
+                  "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+                  "available": true
+                }
+              ],
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.551371281&selectionId=22395141"
+            }
+          },
+          "marketName": "Bruce Brown Points Over/Under"
+        },
+        "points-BRUCE_BROWN_1_NBA-game-ou-under": {
+          "oddID": "points-BRUCE_BROWN_1_NBA-game-ou-under",
+          "opposingOddID": "points-BRUCE_BROWN_1_NBA-game-ou-over",
+          "statID": "points",
+          "statEntityID": "BRUCE_BROWN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "BRUCE_BROWN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-113",
+          "bookOdds": "-102",
+          "fairOverUnder": "6.5",
+          "bookOverUnder": "5.5",
+          "openFairOdds": "+108",
+          "openBookOdds": "-106",
+          "openFairOverUnder": "5.5",
+          "openBookOverUnder": "5.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-106",
+              "overUnder": "5.5",
+              "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.551371281&selectionId=22395142"
+            }
+          },
+          "marketName": "Bruce Brown Points Over/Under"
+        },
+        "rebounds-BRUCE_BROWN_1_NBA-game-ou-over": {
+          "oddID": "rebounds-BRUCE_BROWN_1_NBA-game-ou-over",
+          "opposingOddID": "rebounds-BRUCE_BROWN_1_NBA-game-ou-under",
+          "statID": "rebounds",
+          "statEntityID": "BRUCE_BROWN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "BRUCE_BROWN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+160",
+          "bookOdds": "-135",
+          "fairOverUnder": "4.5",
+          "bookOverUnder": "3.5",
+          "openFairOdds": "-116",
+          "openBookOdds": "-136",
+          "openFairOverUnder": "3.5",
+          "openBookOverUnder": "3.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-136",
+              "overUnder": "3.5",
+              "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.551371282&selectionId=22395141",
+              "altLines": [
+                {
+                  "odds": "+320",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1060",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+                  "available": true
+                }
+              ]
+            }
+          },
+          "marketName": "Bruce Brown Rebounds Over/Under"
+        },
+        "rebounds-BRUCE_BROWN_1_NBA-game-ou-under": {
+          "oddID": "rebounds-BRUCE_BROWN_1_NBA-game-ou-under",
+          "opposingOddID": "rebounds-BRUCE_BROWN_1_NBA-game-ou-over",
+          "statID": "rebounds",
+          "statEntityID": "BRUCE_BROWN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "BRUCE_BROWN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-160",
+          "bookOdds": "+102",
+          "fairOverUnder": "4.5",
+          "bookOverUnder": "3.5",
+          "openFairOdds": "+116",
+          "openBookOdds": "+102",
+          "openFairOverUnder": "3.5",
+          "openBookOverUnder": "3.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+102",
+              "overUnder": "3.5",
+              "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.551371282&selectionId=22395142"
+            }
+          },
+          "marketName": "Bruce Brown Rebounds Over/Under"
+        },
+        "blocks-AARON_GORDON_1_NBA-game-ou-over": {
+          "oddID": "blocks-AARON_GORDON_1_NBA-game-ou-over",
+          "opposingOddID": "blocks-AARON_GORDON_1_NBA-game-ou-under",
+          "marketName": "Aaron Gordon Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "AARON_GORDON_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "AARON_GORDON_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+286",
+          "bookOdds": "+260",
+          "fairOverUnder": "0.5",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "+286",
+          "openBookOdds": "+260",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        },
+        "blocks-AARON_GORDON_1_NBA-game-ou-under": {
+          "oddID": "blocks-AARON_GORDON_1_NBA-game-ou-under",
+          "opposingOddID": "blocks-AARON_GORDON_1_NBA-game-ou-over",
+          "marketName": "Aaron Gordon Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "AARON_GORDON_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "AARON_GORDON_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-286",
+          "fairOverUnder": "0.5",
+          "openFairOdds": "-286",
+          "openFairOverUnder": "0.5",
+          "scoringSupported": true,
+          "bookOdds": "-385",
+          "bookOverUnder": "0.5",
+          "byBookmaker": {},
+          "openBookOdds": "-385",
+          "openBookOverUnder": "0.5"
+        },
+        "blocks-JAMAL_MURRAY_1_NBA-game-ou-over": {
+          "oddID": "blocks-JAMAL_MURRAY_1_NBA-game-ou-over",
+          "opposingOddID": "blocks-JAMAL_MURRAY_1_NBA-game-ou-under",
+          "marketName": "Jamal Murray Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "JAMAL_MURRAY_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "JAMAL_MURRAY_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+206",
+          "bookOdds": "+185",
+          "fairOverUnder": "0.5",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "+198",
+          "openBookOdds": "+180",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        },
+        "blocks-JAMAL_MURRAY_1_NBA-game-ou-under": {
+          "oddID": "blocks-JAMAL_MURRAY_1_NBA-game-ou-under",
+          "opposingOddID": "blocks-JAMAL_MURRAY_1_NBA-game-ou-over",
+          "marketName": "Jamal Murray Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "JAMAL_MURRAY_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "JAMAL_MURRAY_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-206",
+          "fairOverUnder": "0.5",
+          "openFairOdds": "-198",
+          "openFairOverUnder": "0.5",
+          "scoringSupported": true,
+          "bookOdds": "-263",
+          "bookOverUnder": "0.5",
+          "byBookmaker": {},
+          "openBookOdds": "-263",
+          "openBookOverUnder": "0.5"
+        },
+        "steals-AARON_GORDON_1_NBA-game-ou-over": {
+          "oddID": "steals-AARON_GORDON_1_NBA-game-ou-over",
+          "opposingOddID": "steals-AARON_GORDON_1_NBA-game-ou-under",
+          "marketName": "Aaron Gordon Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "AARON_GORDON_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "AARON_GORDON_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "-167",
+          "fairOverUnder": "1",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "-141",
+          "openBookOdds": "-155",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        },
+        "steals-AARON_GORDON_1_NBA-game-ou-under": {
+          "oddID": "steals-AARON_GORDON_1_NBA-game-ou-under",
+          "opposingOddID": "steals-AARON_GORDON_1_NBA-game-ou-over",
+          "marketName": "Aaron Gordon Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "AARON_GORDON_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "AARON_GORDON_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "fairOverUnder": "1",
+          "openFairOdds": "+141",
+          "openFairOverUnder": "0.5",
+          "scoringSupported": true,
+          "bookOdds": "+125",
+          "bookOverUnder": "0.5",
+          "byBookmaker": {},
+          "openBookOdds": "+125",
+          "openBookOverUnder": "0.5"
+        },
+        "steals-JAMAL_MURRAY_1_NBA-game-ou-over": {
+          "oddID": "steals-JAMAL_MURRAY_1_NBA-game-ou-over",
+          "opposingOddID": "steals-JAMAL_MURRAY_1_NBA-game-ou-under",
+          "marketName": "Jamal Murray Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "JAMAL_MURRAY_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "JAMAL_MURRAY_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+183",
+          "bookOdds": "+150",
+          "fairOverUnder": "1.5",
+          "bookOverUnder": "1.5",
+          "openFairOdds": "+181",
+          "openBookOdds": "+165",
+          "openFairOverUnder": "1.5",
+          "openBookOverUnder": "1.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-245",
+              "overUnder": "0.5",
+              "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+              "available": true,
+              "altLines": [
+                {
+                  "odds": "+205",
+                  "overUnder": "1.5",
+                  "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+640",
+                  "overUnder": "2.5",
+                  "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+                  "available": true
+                }
+              ],
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.551425847&selectionId=11339195"
+            }
+          }
+        },
+        "steals-JAMAL_MURRAY_1_NBA-game-ou-under": {
+          "oddID": "steals-JAMAL_MURRAY_1_NBA-game-ou-under",
+          "opposingOddID": "steals-JAMAL_MURRAY_1_NBA-game-ou-over",
+          "marketName": "Jamal Murray Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "JAMAL_MURRAY_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "JAMAL_MURRAY_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-183",
+          "fairOverUnder": "1.5",
+          "openFairOdds": "-181",
+          "openFairOverUnder": "1.5",
+          "scoringSupported": true,
+          "bookOdds": "-238",
+          "bookOverUnder": "1.5",
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+178",
+              "overUnder": "0.5",
+              "lastUpdatedAt": "2026-01-18T12:31:13.057Z",
+              "available": true
+            }
+          },
+          "openBookOdds": "-238",
+          "openBookOverUnder": "1.5"
+        },
+        "assists-BRUCE_BROWN_1_NBA-game-ou-over": {
+          "oddID": "assists-BRUCE_BROWN_1_NBA-game-ou-over",
+          "opposingOddID": "assists-BRUCE_BROWN_1_NBA-game-ou-under",
+          "marketName": "Bruce Brown Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "BRUCE_BROWN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "BRUCE_BROWN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+119",
+          "bookOdds": "+102",
+          "fairOverUnder": "2.5",
+          "bookOverUnder": "2.5",
+          "openFairOdds": "+128",
+          "openBookOdds": "+110",
+          "openFairOverUnder": "2.5",
+          "openBookOverUnder": "2.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        },
+        "assists-BRUCE_BROWN_1_NBA-game-ou-under": {
+          "oddID": "assists-BRUCE_BROWN_1_NBA-game-ou-under",
+          "opposingOddID": "assists-BRUCE_BROWN_1_NBA-game-ou-over",
+          "marketName": "Bruce Brown Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "BRUCE_BROWN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "BRUCE_BROWN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-119",
+          "bookOdds": "-144",
+          "fairOverUnder": "2.5",
+          "bookOverUnder": "2.5",
+          "openFairOdds": "-128",
+          "openBookOdds": "-155",
+          "openFairOverUnder": "2.5",
+          "openBookOverUnder": "2.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        },
+        "blocks-BRUCE_BROWN_1_NBA-game-ou-over": {
+          "oddID": "blocks-BRUCE_BROWN_1_NBA-game-ou-over",
+          "opposingOddID": "blocks-BRUCE_BROWN_1_NBA-game-ou-under",
+          "marketName": "Bruce Brown Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "BRUCE_BROWN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "BRUCE_BROWN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+354",
+          "bookOdds": "+325",
+          "fairOverUnder": "0.5",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "+358",
+          "openBookOdds": "+325",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        },
+        "blocks-BRUCE_BROWN_1_NBA-game-ou-under": {
+          "oddID": "blocks-BRUCE_BROWN_1_NBA-game-ou-under",
+          "opposingOddID": "blocks-BRUCE_BROWN_1_NBA-game-ou-over",
+          "marketName": "Bruce Brown Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "BRUCE_BROWN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "BRUCE_BROWN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-354",
+          "fairOverUnder": "0.5",
+          "openFairOdds": "-358",
+          "openFairOverUnder": "0.5",
+          "scoringSupported": true,
+          "bookOdds": "-500",
+          "bookOverUnder": "0.5",
+          "byBookmaker": {},
+          "openBookOdds": "-500",
+          "openBookOverUnder": "0.5"
+        },
+        "blocks-CHRISTIAN_BRAUN_1_NBA-game-ou-over": {
+          "oddID": "blocks-CHRISTIAN_BRAUN_1_NBA-game-ou-over",
+          "opposingOddID": "blocks-CHRISTIAN_BRAUN_1_NBA-game-ou-under",
+          "marketName": "Christian Braun Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "CHRISTIAN_BRAUN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "CHRISTIAN_BRAUN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+201",
+          "bookOdds": "+182",
+          "fairOverUnder": "0.5",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "+187",
+          "openBookOdds": "+170",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        },
+        "blocks-CHRISTIAN_BRAUN_1_NBA-game-ou-under": {
+          "oddID": "blocks-CHRISTIAN_BRAUN_1_NBA-game-ou-under",
+          "opposingOddID": "blocks-CHRISTIAN_BRAUN_1_NBA-game-ou-over",
+          "marketName": "Christian Braun Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "CHRISTIAN_BRAUN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "CHRISTIAN_BRAUN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-201",
+          "fairOverUnder": "0.5",
+          "openFairOdds": "-187",
+          "openFairOverUnder": "0.5",
+          "scoringSupported": true,
+          "bookOdds": "-250",
+          "bookOverUnder": "0.5",
+          "byBookmaker": {},
+          "openBookOdds": "-250",
+          "openBookOverUnder": "0.5"
+        },
+        "steals-BRUCE_BROWN_1_NBA-game-ou-over": {
+          "oddID": "steals-BRUCE_BROWN_1_NBA-game-ou-over",
+          "opposingOddID": "steals-BRUCE_BROWN_1_NBA-game-ou-under",
+          "marketName": "Bruce Brown Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "BRUCE_BROWN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "BRUCE_BROWN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-148",
+          "bookOdds": "-175",
+          "fairOverUnder": "0.5",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "-150",
+          "openBookOdds": "-165",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        },
+        "steals-BRUCE_BROWN_1_NBA-game-ou-under": {
+          "oddID": "steals-BRUCE_BROWN_1_NBA-game-ou-under",
+          "opposingOddID": "steals-BRUCE_BROWN_1_NBA-game-ou-over",
+          "marketName": "Bruce Brown Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "BRUCE_BROWN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "BRUCE_BROWN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+148",
+          "fairOverUnder": "0.5",
+          "openFairOdds": "+150",
+          "openFairOverUnder": "0.5",
+          "scoringSupported": true,
+          "bookOdds": "+132",
+          "bookOverUnder": "0.5",
+          "byBookmaker": {},
+          "openBookOdds": "+132",
+          "openBookOverUnder": "0.5"
+        },
+        "steals-CHRISTIAN_BRAUN_1_NBA-game-ou-over": {
+          "oddID": "steals-CHRISTIAN_BRAUN_1_NBA-game-ou-over",
+          "opposingOddID": "steals-CHRISTIAN_BRAUN_1_NBA-game-ou-under",
+          "marketName": "Christian Braun Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "CHRISTIAN_BRAUN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "CHRISTIAN_BRAUN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-135",
+          "bookOdds": "-158",
+          "fairOverUnder": "0.5",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "-145",
+          "openBookOdds": "-160",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        },
+        "steals-CHRISTIAN_BRAUN_1_NBA-game-ou-under": {
+          "oddID": "steals-CHRISTIAN_BRAUN_1_NBA-game-ou-under",
+          "opposingOddID": "steals-CHRISTIAN_BRAUN_1_NBA-game-ou-over",
+          "marketName": "Christian Braun Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "CHRISTIAN_BRAUN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "CHRISTIAN_BRAUN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+135",
+          "fairOverUnder": "0.5",
+          "openFairOdds": "+145",
+          "openFairOverUnder": "0.5",
+          "scoringSupported": true,
+          "bookOdds": "+120",
+          "bookOverUnder": "0.5",
+          "byBookmaker": {},
+          "openBookOdds": "+120",
+          "openBookOverUnder": "0.5"
+        }
+      },
+      "results": {},
+      "players": {
+        "JAMAL_MURRAY_1_NBA": {
+          "playerID": "JAMAL_MURRAY_1_NBA",
+          "teamID": "DENVER_NUGGETS_NBA",
+          "firstName": "Jamal",
+          "lastName": "Murray",
+          "name": "Jamal Murray"
+        },
+        "AARON_GORDON_1_NBA": {
+          "playerID": "AARON_GORDON_1_NBA",
+          "teamID": "DENVER_NUGGETS_NBA",
+          "firstName": "Aaron",
+          "lastName": "Gordon",
+          "name": "Aaron Gordon"
+        },
+        "PEYTON_WATSON_1_NBA": {
+          "playerID": "PEYTON_WATSON_1_NBA",
+          "teamID": "DENVER_NUGGETS_NBA",
+          "firstName": "Peyton",
+          "lastName": "Watson",
+          "name": "Peyton Watson"
+        },
+        "JALEN_PICKETT_1_NBA": {
+          "playerID": "JALEN_PICKETT_1_NBA",
+          "teamID": "DENVER_NUGGETS_NBA",
+          "firstName": "Jalen",
+          "lastName": "Pickett",
+          "name": "Jalen Pickett"
+        },
+        "BRANDON_MILLER_1_NBA": {
+          "playerID": "BRANDON_MILLER_1_NBA",
+          "teamID": "CHARLOTTE_HORNETS_NBA",
+          "firstName": "Brandon",
+          "lastName": "Miller",
+          "name": "Brandon Miller"
+        },
+        "KON_KNUEPPEL_1_NBA": {
+          "playerID": "KON_KNUEPPEL_1_NBA",
+          "teamID": "CHARLOTTE_HORNETS_NBA",
+          "firstName": "Kon",
+          "lastName": "Knueppel",
+          "name": "Kon Knueppel"
+        },
+        "LAMELO_BALL_1_NBA": {
+          "playerID": "LAMELO_BALL_1_NBA",
+          "teamID": "CHARLOTTE_HORNETS_NBA",
+          "firstName": "LaMelo",
+          "lastName": "Ball",
+          "name": "LaMelo Ball"
+        },
+        "MILES_BRIDGES_1_NBA": {
+          "playerID": "MILES_BRIDGES_1_NBA",
+          "teamID": "CHARLOTTE_HORNETS_NBA",
+          "firstName": "Miles",
+          "lastName": "Bridges",
+          "name": "Miles Bridges"
+        },
+        "MOUSSA_DIABATE_1_NBA": {
+          "playerID": "MOUSSA_DIABATE_1_NBA",
+          "teamID": "CHARLOTTE_HORNETS_NBA",
+          "firstName": "Moussa",
+          "lastName": "Diabate",
+          "name": "Moussa Diabate"
+        },
+        "CHRISTIAN_BRAUN_1_NBA": {
+          "playerID": "CHRISTIAN_BRAUN_1_NBA",
+          "teamID": "DENVER_NUGGETS_NBA",
+          "firstName": "Christian",
+          "lastName": "Braun",
+          "name": "Christian Braun"
+        },
+        "TIM_HARDAWAY_JR_1_NBA": {
+          "playerID": "TIM_HARDAWAY_JR_1_NBA",
+          "teamID": "DENVER_NUGGETS_NBA",
+          "firstName": "Tim",
+          "lastName": "Hardaway",
+          "name": "Tim Hardaway Jr."
+        },
+        "BRUCE_BROWN_1_NBA": {
+          "playerID": "BRUCE_BROWN_1_NBA",
+          "teamID": "DENVER_NUGGETS_NBA",
+          "firstName": "Bruce",
+          "lastName": "Brown",
+          "name": "Bruce Brown"
+        },
+        "ZEKE_NNAJI_1_NBA": {
+          "playerID": "ZEKE_NNAJI_1_NBA",
+          "teamID": "DENVER_NUGGETS_NBA",
+          "firstName": "Zeke",
+          "lastName": "Nnaji",
+          "name": "Zeke Nnaji"
+        },
+        "COLLIN_SEXTON_1_NBA": {
+          "playerID": "COLLIN_SEXTON_1_NBA",
+          "teamID": "CHARLOTTE_HORNETS_NBA",
+          "firstName": "Collin",
+          "lastName": "Sexton",
+          "name": "Collin Sexton"
+        },
+        "SPENCER_JONES_1_NBA": {
+          "playerID": "SPENCER_JONES_1_NBA",
+          "teamID": "DENVER_NUGGETS_NBA",
+          "firstName": "Spencer",
+          "lastName": "Jones",
+          "name": "Spencer Jones"
+        },
+        "SION_JAMES_1_NBA": {
+          "playerID": "SION_JAMES_1_NBA",
+          "teamID": "CHARLOTTE_HORNETS_NBA",
+          "firstName": "Sion",
+          "lastName": "James",
+          "name": "Sion James"
+        }
+      }
+    }
+  ]
+}

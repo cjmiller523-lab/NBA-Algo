@@ -1,0 +1,2243 @@
+{
+  "nextCursor": "n.1768784400000.n7Re13WLoKEic6zMWiMo",
+  "success": true,
+  "data": [
+    {
+      "eventID": "n7Re13WLoKEic6zMWiMo",
+      "sportID": "BASKETBALL",
+      "leagueID": "NBA",
+      "type": "match",
+      "teams": {
+        "home": {
+          "teamID": "DENVER_NUGGETS_NBA",
+          "names": {
+            "long": "Denver Nuggets",
+            "medium": "Nuggets",
+            "short": "DEN",
+            "location": "Denver"
+          },
+          "colors": {
+            "primary": "#4FA8FF",
+            "secondary": "#F3BB4B",
+            "primaryContrast": "#000000",
+            "secondaryContrast": "#000000"
+          },
+          "statEntityID": "home"
+        },
+        "away": {
+          "teamID": "CHARLOTTE_HORNETS_NBA",
+          "names": {
+            "long": "Charlotte Hornets",
+            "medium": "Hornets",
+            "short": "CHA",
+            "location": "Charlotte"
+          },
+          "colors": {
+            "primary": "#008CA8",
+            "secondary": "#1D1160",
+            "primaryContrast": "#000000",
+            "secondaryContrast": "#008CA8"
+          },
+          "statEntityID": "away"
+        }
+      },
+      "status": {
+        "started": false,
+        "completed": false,
+        "cancelled": false,
+        "ended": false,
+        "live": false,
+        "delayed": false,
+        "currentPeriodID": "",
+        "previousPeriodID": "",
+        "displayShort": "",
+        "displayLong": "Upcoming",
+        "inBreak": false,
+        "startsAt": "2026-01-19T01:00:00.000Z",
+        "previousStartsAt": [],
+        "hardStart": true,
+        "periods": {
+          "started": [],
+          "ended": []
+        },
+        "oddsPresent": true,
+        "oddsAvailable": true,
+        "finalized": false
+      },
+      "info": {
+        "seasonWeek": "NBA 25/26"
+      },
+      "links": {
+        "bookmakers": {
+          "fanduel": "https://sportsbook.fanduel.com/basketball/-/35155990",
+          "sportsbet": "https://www.sportsbet.com.au/betting/basketball---us/nba/charlotte-hornets-at-denver-nuggets-10050145",
+          "paddypower": "https://www.paddypower.com/basketball/nba/charlotte-hornets-@-denver-nuggets-35155990",
+          "boylesports": "https://www.boylesports.com/sports/basketball/event/usa-nba/denver-nuggets-v-charlotte-hornets",
+          "888sport": "https://www.888sport.com/basketball/united-states-of-america/nba/charlotte-hornets-denver-nuggets-e-7001870",
+          "coolbet": "https://www.coolbet.com/en/sports/match/4907823",
+          "pointsbet": "https://pointsbet.com.au/sports/basketball/NBA/2573143",
+          "1xbet": "https://1xbet.com/en/line/football/13589-nba/297252390-denver-nuggets-charlotte-hornets",
+          "ladbrokes": "https://www.ladbrokes.com.au/sports/-/-/-/76a1e0d0-508f-4928-a170-271207c5950e",
+          "neds": "https://www.neds.com.au/sports/-/-/-/76a1e0d0-508f-4928-a170-271207c5950e",
+          "williamhill": "https://sports.williamhill.com/betting/en-gb/basketball/OB_EV38410665/charlotte-hornets-at-denver-nuggets",
+          "draftkings": "https://sportsbook.draftkings.com/event/33471271",
+          "caesars": "https://sportsbook.caesars.com/us/nj/bet/basketball/bea9e910-d2d9-4636-bb11-45deb431b0cb/charlotte-hornets-at-denver-nuggets",
+          "tab": "https://www.tab.com.au/sports/betting/Basketball/competitions/NBA/matches/Denver%20v%20Charlotte",
+          "boombet": "https://www.boombet.com.au/sport-menu/Sport/Basketball/NBA/39661065",
+          "matchbook": "https://www.matchbook.com/events/basketball/united-states-of-america/nba/32273685972600045",
+          "betrsportsbook": "https://www.betr.com.au/sports/Basketball/107/United-States-of-America/NBA/Charlotte-Hornets-@-Denver-Nuggets/1958828/All-Markets",
+          "fliff": "https://sports.getfliff.com/markets/358666_c_p_204_prematch",
+          "espnbet": "https://espnbet.com/sport/basketball/organization/united-states/competition/nba/event/0d7af782-a457-4dfb-9b04-35b64f495e15",
+          "thescorebet": "https://thescore.bet/sport/basketball/organization/united-states/competition/nba/event/0d7af782-a457-4dfb-9b04-35b64f495e15",
+          "hardrockbet": "https://app.hardrock.bet/home/competition/nba/1339692207677636946",
+          "betfairsportsbook": "https://www.betfair.com/betting/basketball/nba/charlotte-hornets-@-denver-nuggets/e-35155990",
+          "ballybet": "https://play.ballybet.com/sports#event/1024653038",
+          "betparx": "https://nj.betparx.com/kambi#event/1024653038",
+          "betrivers": "https://nj.betrivers.com/?page=sportsbook#event/1024653038",
+          "casumo": "https://www.casumo.com/en-gb/sports#event/1024653038",
+          "grosvenor": "https://www.grosvenorcasinos.com/sport#event/1024653038",
+          "leovegas": "https://www.leovegas.co.uk/betting#event/1024653038",
+          "livescorebet": "https://www.livescorebet.com/uk/sports/basketball/nba/denver-nuggets-charlotte-hornets/SBTE_2_1024653038",
+          "tabtouch": "https://www.tabtouch.mobi/tabtouch-sports/event/1024653038",
+          "virginbet": "https://www.virginbet.com/sports/basketball/nba/denver-nuggets-charlotte-hornets/SBTE_2_1024653038",
+          "unibet": "https://www.unibet.com/betting/sports/event/1024653038",
+          "betmgm": "https://sports.nj.betmgm.com/en/sports/events/18737675",
+          "coral": "https://sports.coral.co.uk/event/basketball/basketball-usa/nba/den-nuggets-v-cha-hornets/41415412",
+          "betway": "https://betway.com/en/sports/evt/16257980",
+          "betsson": "https://www.betsson.com/en/sportsbook/basketball/nba/nba?eventId=f-Ux3EHyT_vUOtrLhGDKXPyQ",
+          "nordicbet": "https://www.nordicbet.com/en/sportsbook/basketball/nba/nba/denver-nuggets-charlotte-hornets",
+          "playup": "https://www.playup.com.au/betting/sports/nba/denver-nuggets-v-charlotte-hornets/1783195",
+          "everygame": "https://sports.everygame.eu/en/Bets/Basketball/NBA-Lines/Charlotte-Hornets-at-Denver-Nuggets/2782091",
+          "lowvig": "https://sports.lowvig.ag/sportsbook/basketball/nba/game/490939039",
+          "betonline": "https://sports.betonline.ag/sportsbook/basketball/nba/game/490939039",
+          "pinnacle": "https://www.pinnacle.com/en/basketball/nba/charlotte-hornets-vs-denver-nuggets/1622273317",
+          "bovada": "https://www.bovada.lv/sports/basketball/nba/charlotte-hornets-denver-nuggets-202601182000"
+        }
+      },
+      "odds": {
+        "assists-BRANDON_MILLER_1_NBA-game-ou-over": {
+          "oddID": "assists-BRANDON_MILLER_1_NBA-game-ou-over",
+          "opposingOddID": "assists-BRANDON_MILLER_1_NBA-game-ou-under",
+          "marketName": "Brandon Miller Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "BRANDON_MILLER_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "BRANDON_MILLER_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-120",
+          "bookOdds": "-142",
+          "fairOverUnder": "3.5",
+          "bookOverUnder": "3.5",
+          "openFairOdds": "-133",
+          "openBookOdds": "-146",
+          "openFairOverUnder": "3.5",
+          "openBookOverUnder": "3.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-152",
+              "overUnder": "3.5",
+              "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+              "available": true,
+              "altLines": [
+                {
+                  "odds": "-1450",
+                  "overUnder": "1.5",
+                  "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+320",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1100",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+                  "available": true
+                }
+              ],
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.551370297&selectionId=50113302"
+            }
+          }
+        },
+        "assists-BRANDON_MILLER_1_NBA-game-ou-under": {
+          "oddID": "assists-BRANDON_MILLER_1_NBA-game-ou-under",
+          "opposingOddID": "assists-BRANDON_MILLER_1_NBA-game-ou-over",
+          "marketName": "Brandon Miller Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "BRANDON_MILLER_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "BRANDON_MILLER_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+120",
+          "fairOverUnder": "3.5",
+          "openFairOdds": "+133",
+          "openFairOverUnder": "3.5",
+          "scoringSupported": true,
+          "bookOdds": "+105",
+          "bookOverUnder": "3.5",
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+114",
+              "overUnder": "3.5",
+              "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.551370297&selectionId=50113301"
+            }
+          },
+          "openBookOdds": "+114",
+          "openBookOverUnder": "3.5"
+        },
+        "points-BRANDON_MILLER_1_NBA-game-ou-over": {
+          "oddID": "points-BRANDON_MILLER_1_NBA-game-ou-over",
+          "opposingOddID": "points-BRANDON_MILLER_1_NBA-game-ou-under",
+          "marketName": "Brandon Miller Points Over/Under",
+          "statID": "points",
+          "statEntityID": "BRANDON_MILLER_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "BRANDON_MILLER_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+105",
+          "bookOdds": "-108",
+          "fairOverUnder": "20.5",
+          "bookOverUnder": "20.5",
+          "openFairOdds": "+114",
+          "openBookOdds": "+100",
+          "openFairOverUnder": "20.5",
+          "openBookOverUnder": "20.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-110",
+              "overUnder": "20.5",
+              "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+              "available": true,
+              "altLines": [
+                {
+                  "odds": "-4000",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-500",
+                  "overUnder": "14.5",
+                  "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-136",
+                  "overUnder": "19.5",
+                  "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+215",
+                  "overUnder": "24.5",
+                  "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+560",
+                  "overUnder": "29.5",
+                  "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1200",
+                  "overUnder": "34.5",
+                  "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+3500",
+                  "overUnder": "39.5",
+                  "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+                  "available": true
+                }
+              ],
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.551370295&selectionId=50113302"
+            }
+          }
+        },
+        "points-BRANDON_MILLER_1_NBA-game-ou-under": {
+          "oddID": "points-BRANDON_MILLER_1_NBA-game-ou-under",
+          "opposingOddID": "points-BRANDON_MILLER_1_NBA-game-ou-over",
+          "marketName": "Brandon Miller Points Over/Under",
+          "statID": "points",
+          "statEntityID": "BRANDON_MILLER_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "BRANDON_MILLER_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-105",
+          "bookOdds": "-120",
+          "fairOverUnder": "20.5",
+          "bookOverUnder": "20.5",
+          "openFairOdds": "-114",
+          "openBookOdds": "-132",
+          "openFairOverUnder": "20.5",
+          "openBookOverUnder": "20.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-120",
+              "overUnder": "20.5",
+              "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.551370295&selectionId=50113301"
+            }
+          }
+        },
+        "rebounds-BRANDON_MILLER_1_NBA-game-ou-over": {
+          "oddID": "rebounds-BRANDON_MILLER_1_NBA-game-ou-over",
+          "opposingOddID": "rebounds-BRANDON_MILLER_1_NBA-game-ou-under",
+          "marketName": "Brandon Miller Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "BRANDON_MILLER_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "BRANDON_MILLER_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+133",
+          "bookOdds": "+115",
+          "fairOverUnder": "4.5",
+          "bookOverUnder": "4.5",
+          "openFairOdds": "-158",
+          "openBookOdds": "-174",
+          "openFairOverUnder": "3.5",
+          "openBookOverUnder": "3.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+128",
+              "overUnder": "4.5",
+              "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+              "available": true,
+              "altLines": [
+                {
+                  "odds": "-174",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+255",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1000",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+2000",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-01-18T05:39:19.000Z",
+                  "available": false
+                }
+              ],
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.551370296&selectionId=50113302"
+            }
+          }
+        },
+        "rebounds-BRANDON_MILLER_1_NBA-game-ou-under": {
+          "oddID": "rebounds-BRANDON_MILLER_1_NBA-game-ou-under",
+          "opposingOddID": "rebounds-BRANDON_MILLER_1_NBA-game-ou-over",
+          "marketName": "Brandon Miller Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "BRANDON_MILLER_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "BRANDON_MILLER_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-133",
+          "fairOverUnder": "4.5",
+          "openFairOdds": "+158",
+          "openFairOverUnder": "3.5",
+          "scoringSupported": true,
+          "bookOdds": "-161",
+          "bookOverUnder": "4.5",
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-172",
+              "overUnder": "4.5",
+              "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.551370296&selectionId=50113301"
+            }
+          },
+          "openBookOdds": "-172",
+          "openBookOverUnder": "4.5"
+        },
+        "assists-KON_KNUEPPEL_1_NBA-game-ou-over": {
+          "oddID": "assists-KON_KNUEPPEL_1_NBA-game-ou-over",
+          "opposingOddID": "assists-KON_KNUEPPEL_1_NBA-game-ou-under",
+          "marketName": "Kon Knueppel Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "KON_KNUEPPEL_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "KON_KNUEPPEL_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+111",
+          "bookOdds": "-103",
+          "fairOverUnder": "3.5",
+          "bookOverUnder": "3.5",
+          "openFairOdds": "+110",
+          "openBookOdds": "+100",
+          "openFairOverUnder": "3.5",
+          "openBookOverUnder": "3.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-104",
+              "overUnder": "3.5",
+              "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+              "available": true,
+              "altLines": [
+                {
+                  "odds": "-900",
+                  "overUnder": "1.5",
+                  "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+440",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1500",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+                  "available": true
+                }
+              ],
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.551370484&selectionId=75933389"
+            }
+          }
+        },
+        "assists-KON_KNUEPPEL_1_NBA-game-ou-under": {
+          "oddID": "assists-KON_KNUEPPEL_1_NBA-game-ou-under",
+          "opposingOddID": "assists-KON_KNUEPPEL_1_NBA-game-ou-over",
+          "marketName": "Kon Knueppel Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "KON_KNUEPPEL_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "KON_KNUEPPEL_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-111",
+          "fairOverUnder": "3.5",
+          "openFairOdds": "-110",
+          "openFairOverUnder": "3.5",
+          "scoringSupported": true,
+          "bookOdds": "-128",
+          "bookOverUnder": "3.5",
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-128",
+              "overUnder": "3.5",
+              "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.551370484&selectionId=75933403"
+            }
+          },
+          "openBookOdds": "-130",
+          "openBookOverUnder": "3.5"
+        },
+        "points-KON_KNUEPPEL_1_NBA-game-ou-over": {
+          "oddID": "points-KON_KNUEPPEL_1_NBA-game-ou-over",
+          "opposingOddID": "points-KON_KNUEPPEL_1_NBA-game-ou-under",
+          "marketName": "Kon Knueppel Points Over/Under",
+          "statID": "points",
+          "statEntityID": "KON_KNUEPPEL_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "KON_KNUEPPEL_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+105",
+          "bookOdds": "-108",
+          "fairOverUnder": "17.5",
+          "bookOverUnder": "17.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "-122",
+          "openFairOverUnder": "18",
+          "openBookOverUnder": "17.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-110",
+              "overUnder": "17.5",
+              "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+              "available": true,
+              "altLines": [
+                {
+                  "odds": "-1200",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-230",
+                  "overUnder": "14.5",
+                  "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+148",
+                  "overUnder": "19.5",
+                  "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+400",
+                  "overUnder": "24.5",
+                  "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1060",
+                  "overUnder": "29.5",
+                  "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+2500",
+                  "overUnder": "34.5",
+                  "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+                  "available": true
+                }
+              ],
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.551370482&selectionId=75933389"
+            }
+          }
+        },
+        "points-KON_KNUEPPEL_1_NBA-game-ou-under": {
+          "oddID": "points-KON_KNUEPPEL_1_NBA-game-ou-under",
+          "opposingOddID": "points-KON_KNUEPPEL_1_NBA-game-ou-over",
+          "marketName": "Kon Knueppel Points Over/Under",
+          "statID": "points",
+          "statEntityID": "KON_KNUEPPEL_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "KON_KNUEPPEL_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-105",
+          "bookOdds": "-120",
+          "fairOverUnder": "17.5",
+          "bookOverUnder": "17.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "-108",
+          "openFairOverUnder": "18",
+          "openBookOverUnder": "17.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-120",
+              "overUnder": "17.5",
+              "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.551370482&selectionId=75933403"
+            }
+          }
+        },
+        "rebounds-KON_KNUEPPEL_1_NBA-game-ou-over": {
+          "oddID": "rebounds-KON_KNUEPPEL_1_NBA-game-ou-over",
+          "opposingOddID": "rebounds-KON_KNUEPPEL_1_NBA-game-ou-under",
+          "marketName": "Kon Knueppel Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "KON_KNUEPPEL_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "KON_KNUEPPEL_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+124",
+          "bookOdds": "-135",
+          "fairOverUnder": "5.5",
+          "bookOverUnder": "4.5",
+          "openFairOdds": "-112",
+          "openBookOdds": "-130",
+          "openFairOverUnder": "4.5",
+          "openBookOverUnder": "4.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-130",
+              "overUnder": "4.5",
+              "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+              "available": true,
+              "altLines": [
+                {
+                  "odds": "-290",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+162",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+560",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1400",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+                  "available": true
+                }
+              ],
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.551370483&selectionId=75933389"
+            }
+          }
+        },
+        "rebounds-KON_KNUEPPEL_1_NBA-game-ou-under": {
+          "oddID": "rebounds-KON_KNUEPPEL_1_NBA-game-ou-under",
+          "opposingOddID": "rebounds-KON_KNUEPPEL_1_NBA-game-ou-over",
+          "marketName": "Kon Knueppel Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "KON_KNUEPPEL_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "KON_KNUEPPEL_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-124",
+          "bookOdds": "+100",
+          "fairOverUnder": "5.5",
+          "bookOverUnder": "4.5",
+          "openFairOdds": "+112",
+          "openBookOdds": "-102",
+          "openFairOverUnder": "4.5",
+          "openBookOverUnder": "4.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-102",
+              "overUnder": "4.5",
+              "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.551370483&selectionId=75933403"
+            }
+          }
+        },
+        "assists-LAMELO_BALL_1_NBA-game-ou-over": {
+          "oddID": "assists-LAMELO_BALL_1_NBA-game-ou-over",
+          "opposingOddID": "assists-LAMELO_BALL_1_NBA-game-ou-under",
+          "marketName": "LaMelo Ball Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "LAMELO_BALL_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "LAMELO_BALL_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+108",
+          "bookOdds": "-105",
+          "fairOverUnder": "6.5",
+          "bookOverUnder": "6.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "-108",
+          "openFairOverUnder": "7",
+          "openBookOverUnder": "6.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+100",
+              "overUnder": "6.5",
+              "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.551370713&selectionId=26324737",
+              "altLines": [
+                {
+                  "odds": "-1000",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-186",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+186",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+500",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1300",
+                  "overUnder": "11.5",
+                  "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+3500",
+                  "overUnder": "13.5",
+                  "lastUpdatedAt": "2026-01-18T12:11:43.000Z",
+                  "available": false
+                }
+              ]
+            }
+          }
+        },
+        "assists-LAMELO_BALL_1_NBA-game-ou-under": {
+          "oddID": "assists-LAMELO_BALL_1_NBA-game-ou-under",
+          "opposingOddID": "assists-LAMELO_BALL_1_NBA-game-ou-over",
+          "marketName": "LaMelo Ball Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "LAMELO_BALL_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "LAMELO_BALL_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-108",
+          "bookOdds": "-125",
+          "fairOverUnder": "6.5",
+          "bookOverUnder": "6.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "-122",
+          "openFairOverUnder": "7",
+          "openBookOverUnder": "6.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-132",
+              "overUnder": "6.5",
+              "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.551370713&selectionId=26324736"
+            }
+          }
+        },
+        "points-LAMELO_BALL_1_NBA-game-ou-over": {
+          "oddID": "points-LAMELO_BALL_1_NBA-game-ou-over",
+          "opposingOddID": "points-LAMELO_BALL_1_NBA-game-ou-under",
+          "marketName": "LaMelo Ball Points Over/Under",
+          "statID": "points",
+          "statEntityID": "LAMELO_BALL_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "LAMELO_BALL_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+108",
+          "bookOdds": "-107",
+          "fairOverUnder": "19.5",
+          "bookOverUnder": "19.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "-118",
+          "openFairOverUnder": "21",
+          "openBookOverUnder": "19.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-112",
+              "overUnder": "19.5",
+              "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.551370711&selectionId=26324737",
+              "altLines": [
+                {
+                  "odds": "-2200",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-350",
+                  "overUnder": "14.5",
+                  "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+240",
+                  "overUnder": "24.5",
+                  "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+600",
+                  "overUnder": "29.5",
+                  "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1300",
+                  "overUnder": "34.5",
+                  "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+3500",
+                  "overUnder": "39.5",
+                  "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "points-LAMELO_BALL_1_NBA-game-ou-under": {
+          "oddID": "points-LAMELO_BALL_1_NBA-game-ou-under",
+          "opposingOddID": "points-LAMELO_BALL_1_NBA-game-ou-over",
+          "marketName": "LaMelo Ball Points Over/Under",
+          "statID": "points",
+          "statEntityID": "LAMELO_BALL_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "LAMELO_BALL_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-108",
+          "bookOdds": "-121",
+          "fairOverUnder": "19.5",
+          "bookOverUnder": "19.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "-112",
+          "openFairOverUnder": "21",
+          "openBookOverUnder": "19.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-118",
+              "overUnder": "19.5",
+              "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.551370711&selectionId=26324736"
+            }
+          }
+        },
+        "rebounds-LAMELO_BALL_1_NBA-game-ou-over": {
+          "oddID": "rebounds-LAMELO_BALL_1_NBA-game-ou-over",
+          "opposingOddID": "rebounds-LAMELO_BALL_1_NBA-game-ou-under",
+          "marketName": "LaMelo Ball Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "LAMELO_BALL_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "LAMELO_BALL_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-104",
+          "bookOdds": "-120",
+          "fairOverUnder": "4.5",
+          "bookOverUnder": "4.5",
+          "openFairOdds": "-112",
+          "openBookOdds": "-130",
+          "openFairOverUnder": "4.5",
+          "openBookOverUnder": "4.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-120",
+              "overUnder": "4.5",
+              "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+              "available": true,
+              "altLines": [
+                {
+                  "odds": "-265",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+176",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+600",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1400",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+                  "available": true
+                }
+              ],
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.551370712&selectionId=26324737"
+            }
+          }
+        },
+        "rebounds-LAMELO_BALL_1_NBA-game-ou-under": {
+          "oddID": "rebounds-LAMELO_BALL_1_NBA-game-ou-under",
+          "opposingOddID": "rebounds-LAMELO_BALL_1_NBA-game-ou-over",
+          "marketName": "LaMelo Ball Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "LAMELO_BALL_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "LAMELO_BALL_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+104",
+          "bookOdds": "-110",
+          "fairOverUnder": "4.5",
+          "bookOverUnder": "4.5",
+          "openFairOdds": "+112",
+          "openBookOdds": "-102",
+          "openFairOverUnder": "4.5",
+          "openBookOverUnder": "4.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-110",
+              "overUnder": "4.5",
+              "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.551370712&selectionId=26324736"
+            }
+          }
+        },
+        "assists-MILES_BRIDGES_1_NBA-game-ou-over": {
+          "oddID": "assists-MILES_BRIDGES_1_NBA-game-ou-over",
+          "opposingOddID": "assists-MILES_BRIDGES_1_NBA-game-ou-under",
+          "marketName": "Miles Bridges Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "MILES_BRIDGES_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "MILES_BRIDGES_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-112",
+          "bookOdds": "-129",
+          "fairOverUnder": "3.5",
+          "bookOverUnder": "3.5",
+          "openFairOdds": "-111",
+          "openBookOdds": "-128",
+          "openFairOverUnder": "3.5",
+          "openBookOverUnder": "3.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-130",
+              "overUnder": "3.5",
+              "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+              "available": true,
+              "altLines": [
+                {
+                  "odds": "-1200",
+                  "overUnder": "1.5",
+                  "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+360",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1400",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+                  "available": true
+                }
+              ],
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.551370927&selectionId=23559725"
+            }
+          }
+        },
+        "assists-MILES_BRIDGES_1_NBA-game-ou-under": {
+          "oddID": "assists-MILES_BRIDGES_1_NBA-game-ou-under",
+          "opposingOddID": "assists-MILES_BRIDGES_1_NBA-game-ou-over",
+          "marketName": "Miles Bridges Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "MILES_BRIDGES_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "MILES_BRIDGES_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+112",
+          "bookOdds": "-102",
+          "fairOverUnder": "3.5",
+          "bookOverUnder": "3.5",
+          "openFairOdds": "+111",
+          "openBookOdds": "-102",
+          "openFairOverUnder": "3.5",
+          "openBookOverUnder": "3.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-102",
+              "overUnder": "3.5",
+              "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.551370927&selectionId=23559726"
+            }
+          }
+        },
+        "points-MILES_BRIDGES_1_NBA-game-ou-over": {
+          "oddID": "points-MILES_BRIDGES_1_NBA-game-ou-over",
+          "opposingOddID": "points-MILES_BRIDGES_1_NBA-game-ou-under",
+          "marketName": "Miles Bridges Points Over/Under",
+          "statID": "points",
+          "statEntityID": "MILES_BRIDGES_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "MILES_BRIDGES_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+121",
+          "bookOdds": "-117",
+          "fairOverUnder": "19.5",
+          "bookOverUnder": "18.5",
+          "openFairOdds": "-108",
+          "openBookOdds": "-125",
+          "openFairOverUnder": "18.5",
+          "openBookOverUnder": "18.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-118",
+              "overUnder": "18.5",
+              "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+              "available": true,
+              "altLines": [
+                {
+                  "odds": "-2500",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-340",
+                  "overUnder": "14.5",
+                  "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+110",
+                  "overUnder": "19.5",
+                  "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+310",
+                  "overUnder": "24.5",
+                  "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+830",
+                  "overUnder": "29.5",
+                  "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1700",
+                  "overUnder": "34.5",
+                  "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+                  "available": true
+                }
+              ],
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.551370925&selectionId=23559725"
+            }
+          }
+        },
+        "points-MILES_BRIDGES_1_NBA-game-ou-under": {
+          "oddID": "points-MILES_BRIDGES_1_NBA-game-ou-under",
+          "opposingOddID": "points-MILES_BRIDGES_1_NBA-game-ou-over",
+          "marketName": "Miles Bridges Points Over/Under",
+          "statID": "points",
+          "statEntityID": "MILES_BRIDGES_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "MILES_BRIDGES_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-121",
+          "bookOdds": "-112",
+          "fairOverUnder": "19.5",
+          "bookOverUnder": "18.5",
+          "openFairOdds": "+108",
+          "openBookOdds": "-106",
+          "openFairOverUnder": "18.5",
+          "openBookOverUnder": "18.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-112",
+              "overUnder": "18.5",
+              "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.551370925&selectionId=23559726"
+            }
+          }
+        },
+        "rebounds-MILES_BRIDGES_1_NBA-game-ou-over": {
+          "oddID": "rebounds-MILES_BRIDGES_1_NBA-game-ou-over",
+          "opposingOddID": "rebounds-MILES_BRIDGES_1_NBA-game-ou-under",
+          "marketName": "Miles Bridges Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "MILES_BRIDGES_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "MILES_BRIDGES_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "-110",
+          "fairOverUnder": "7",
+          "bookOverUnder": "6.5",
+          "openFairOdds": "+108",
+          "openBookOdds": "-106",
+          "openFairOverUnder": "6.5",
+          "openBookOverUnder": "6.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-106",
+              "overUnder": "6.5",
+              "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+              "available": true,
+              "altLines": [
+                {
+                  "odds": "-1100",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-200",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+172",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+420",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1200",
+                  "overUnder": "11.5",
+                  "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+2500",
+                  "overUnder": "13.5",
+                  "lastUpdatedAt": "2026-01-18T10:23:23.000Z",
+                  "available": false
+                }
+              ],
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.551370926&selectionId=23559725"
+            }
+          }
+        },
+        "rebounds-MILES_BRIDGES_1_NBA-game-ou-under": {
+          "oddID": "rebounds-MILES_BRIDGES_1_NBA-game-ou-under",
+          "opposingOddID": "rebounds-MILES_BRIDGES_1_NBA-game-ou-over",
+          "marketName": "Miles Bridges Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "MILES_BRIDGES_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "MILES_BRIDGES_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "-120",
+          "fairOverUnder": "7",
+          "bookOverUnder": "6.5",
+          "openFairOdds": "-108",
+          "openBookOdds": "-125",
+          "openFairOverUnder": "6.5",
+          "openBookOverUnder": "6.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-125",
+              "overUnder": "6.5",
+              "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.551370926&selectionId=23559726"
+            }
+          }
+        },
+        "assists-COLLIN_SEXTON_1_NBA-game-ou-over": {
+          "oddID": "assists-COLLIN_SEXTON_1_NBA-game-ou-over",
+          "opposingOddID": "assists-COLLIN_SEXTON_1_NBA-game-ou-under",
+          "statID": "assists",
+          "statEntityID": "COLLIN_SEXTON_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "COLLIN_SEXTON_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+125",
+          "bookOdds": "+105",
+          "fairOverUnder": "3.5",
+          "bookOverUnder": "3.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "-162",
+          "openFairOverUnder": "3",
+          "openBookOverUnder": "2.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-162",
+              "overUnder": "2.5",
+              "lastUpdatedAt": "2026-01-18T12:31:13.057Z",
+              "available": false,
+              "altLines": [
+                {
+                  "odds": "-520",
+                  "overUnder": "1.5",
+                  "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+138",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+600",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1800",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+                  "available": true
+                }
+              ],
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.551375362&selectionId=21175483"
+            }
+          },
+          "marketName": "Collin Sexton Assists Over/Under"
+        },
+        "assists-COLLIN_SEXTON_1_NBA-game-ou-under": {
+          "oddID": "assists-COLLIN_SEXTON_1_NBA-game-ou-under",
+          "opposingOddID": "assists-COLLIN_SEXTON_1_NBA-game-ou-over",
+          "statID": "assists",
+          "statEntityID": "COLLIN_SEXTON_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "COLLIN_SEXTON_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-125",
+          "bookOdds": "-152",
+          "fairOverUnder": "3.5",
+          "bookOverUnder": "3.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "+122",
+          "openFairOverUnder": "3",
+          "openBookOverUnder": "2.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+122",
+              "overUnder": "2.5",
+              "lastUpdatedAt": "2026-01-18T12:31:13.057Z",
+              "available": false,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.551375362&selectionId=21175484"
+            }
+          },
+          "marketName": "Collin Sexton Assists Over/Under"
+        },
+        "points-COLLIN_SEXTON_1_NBA-game-ou-over": {
+          "oddID": "points-COLLIN_SEXTON_1_NBA-game-ou-over",
+          "opposingOddID": "points-COLLIN_SEXTON_1_NBA-game-ou-under",
+          "statID": "points",
+          "statEntityID": "COLLIN_SEXTON_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "COLLIN_SEXTON_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+137",
+          "bookOdds": "-105",
+          "fairOverUnder": "13.5",
+          "bookOverUnder": "12.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "-125",
+          "openFairOverUnder": "12",
+          "openBookOverUnder": "11.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-128",
+              "overUnder": "11.5",
+              "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+              "available": true,
+              "altLines": [
+                {
+                  "odds": "-225",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+186",
+                  "overUnder": "14.5",
+                  "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+600",
+                  "overUnder": "19.5",
+                  "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1700",
+                  "overUnder": "24.5",
+                  "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+                  "available": true
+                }
+              ],
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.551375361&selectionId=21175483"
+            }
+          },
+          "marketName": "Collin Sexton Points Over/Under"
+        },
+        "points-COLLIN_SEXTON_1_NBA-game-ou-under": {
+          "oddID": "points-COLLIN_SEXTON_1_NBA-game-ou-under",
+          "opposingOddID": "points-COLLIN_SEXTON_1_NBA-game-ou-over",
+          "statID": "points",
+          "statEntityID": "COLLIN_SEXTON_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "COLLIN_SEXTON_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-137",
+          "bookOdds": "-123",
+          "fairOverUnder": "13.5",
+          "bookOverUnder": "12.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "-106",
+          "openFairOverUnder": "12",
+          "openBookOverUnder": "11.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-104",
+              "overUnder": "11.5",
+              "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.551375361&selectionId=21175484"
+            }
+          },
+          "marketName": "Collin Sexton Points Over/Under"
+        },
+        "blocks-BRANDON_MILLER_1_NBA-game-ou-over": {
+          "oddID": "blocks-BRANDON_MILLER_1_NBA-game-ou-over",
+          "opposingOddID": "blocks-BRANDON_MILLER_1_NBA-game-ou-under",
+          "marketName": "Brandon Miller Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "BRANDON_MILLER_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "BRANDON_MILLER_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-152",
+          "bookOdds": "-182",
+          "fairOverUnder": "0.5",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "-173",
+          "openBookOdds": "-190",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        },
+        "blocks-BRANDON_MILLER_1_NBA-game-ou-under": {
+          "oddID": "blocks-BRANDON_MILLER_1_NBA-game-ou-under",
+          "opposingOddID": "blocks-BRANDON_MILLER_1_NBA-game-ou-over",
+          "marketName": "Brandon Miller Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "BRANDON_MILLER_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "BRANDON_MILLER_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+152",
+          "fairOverUnder": "0.5",
+          "openFairOdds": "+173",
+          "openFairOverUnder": "0.5",
+          "scoringSupported": true,
+          "bookOdds": "+135",
+          "bookOverUnder": "0.5",
+          "byBookmaker": {},
+          "openBookOdds": "+135",
+          "openBookOverUnder": "0.5"
+        },
+        "steals-BRANDON_MILLER_1_NBA-game-ou-over": {
+          "oddID": "steals-BRANDON_MILLER_1_NBA-game-ou-over",
+          "opposingOddID": "steals-BRANDON_MILLER_1_NBA-game-ou-under",
+          "marketName": "Brandon Miller Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "BRANDON_MILLER_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "BRANDON_MILLER_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-163",
+          "bookOdds": "-181",
+          "fairOverUnder": "0.5",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "-164",
+          "openBookOdds": "-180",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-245",
+              "overUnder": "0.5",
+              "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+              "available": true,
+              "altLines": [
+                {
+                  "odds": "+198",
+                  "overUnder": "1.5",
+                  "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+640",
+                  "overUnder": "2.5",
+                  "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+                  "available": true
+                }
+              ],
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.551425847&selectionId=49763843"
+            }
+          }
+        },
+        "steals-BRANDON_MILLER_1_NBA-game-ou-under": {
+          "oddID": "steals-BRANDON_MILLER_1_NBA-game-ou-under",
+          "opposingOddID": "steals-BRANDON_MILLER_1_NBA-game-ou-over",
+          "marketName": "Brandon Miller Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "BRANDON_MILLER_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "BRANDON_MILLER_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+163",
+          "fairOverUnder": "0.5",
+          "openFairOdds": "+164",
+          "openFairOverUnder": "0.5",
+          "scoringSupported": true,
+          "bookOdds": "+153",
+          "bookOverUnder": "0.5",
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+178",
+              "overUnder": "0.5",
+              "lastUpdatedAt": "2026-01-18T12:31:13.057Z",
+              "available": true
+            }
+          },
+          "openBookOdds": "+132",
+          "openBookOverUnder": "0.5"
+        },
+        "blocks-MILES_BRIDGES_1_NBA-game-ou-over": {
+          "oddID": "blocks-MILES_BRIDGES_1_NBA-game-ou-over",
+          "opposingOddID": "blocks-MILES_BRIDGES_1_NBA-game-ou-under",
+          "marketName": "Miles Bridges Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "MILES_BRIDGES_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "MILES_BRIDGES_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+164",
+          "bookOdds": "+146",
+          "fairOverUnder": "0.5",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "+171",
+          "openBookOdds": "+155",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        },
+        "blocks-MILES_BRIDGES_1_NBA-game-ou-under": {
+          "oddID": "blocks-MILES_BRIDGES_1_NBA-game-ou-under",
+          "opposingOddID": "blocks-MILES_BRIDGES_1_NBA-game-ou-over",
+          "marketName": "Miles Bridges Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "MILES_BRIDGES_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "MILES_BRIDGES_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-164",
+          "fairOverUnder": "0.5",
+          "openFairOdds": "-171",
+          "openFairOverUnder": "0.5",
+          "scoringSupported": true,
+          "bookOdds": "-200",
+          "bookOverUnder": "0.5",
+          "byBookmaker": {},
+          "openBookOdds": "-200",
+          "openBookOverUnder": "0.5"
+        },
+        "steals-MILES_BRIDGES_1_NBA-game-ou-over": {
+          "oddID": "steals-MILES_BRIDGES_1_NBA-game-ou-over",
+          "opposingOddID": "steals-MILES_BRIDGES_1_NBA-game-ou-under",
+          "marketName": "Miles Bridges Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "MILES_BRIDGES_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "MILES_BRIDGES_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-101",
+          "bookOdds": "-113",
+          "fairOverUnder": "0.5",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "+105",
+          "openBookOdds": "-105",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        },
+        "steals-MILES_BRIDGES_1_NBA-game-ou-under": {
+          "oddID": "steals-MILES_BRIDGES_1_NBA-game-ou-under",
+          "opposingOddID": "steals-MILES_BRIDGES_1_NBA-game-ou-over",
+          "marketName": "Miles Bridges Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "MILES_BRIDGES_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "MILES_BRIDGES_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+101",
+          "fairOverUnder": "0.5",
+          "openFairOdds": "-105",
+          "openFairOverUnder": "0.5",
+          "scoringSupported": true,
+          "bookOdds": "-110",
+          "bookOverUnder": "0.5",
+          "byBookmaker": {},
+          "openBookOdds": "+100",
+          "openBookOverUnder": "0.5"
+        },
+        "blocks-KON_KNUEPPEL_1_NBA-game-ou-over": {
+          "oddID": "blocks-KON_KNUEPPEL_1_NBA-game-ou-over",
+          "opposingOddID": "blocks-KON_KNUEPPEL_1_NBA-game-ou-under",
+          "marketName": "Kon Knueppel Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "KON_KNUEPPEL_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "KON_KNUEPPEL_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+286",
+          "bookOdds": "+260",
+          "fairOverUnder": "0.5",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "+302",
+          "openBookOdds": "+275",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        },
+        "blocks-KON_KNUEPPEL_1_NBA-game-ou-under": {
+          "oddID": "blocks-KON_KNUEPPEL_1_NBA-game-ou-under",
+          "opposingOddID": "blocks-KON_KNUEPPEL_1_NBA-game-ou-over",
+          "marketName": "Kon Knueppel Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "KON_KNUEPPEL_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "KON_KNUEPPEL_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-286",
+          "fairOverUnder": "0.5",
+          "openFairOdds": "-302",
+          "openFairOverUnder": "0.5",
+          "scoringSupported": true,
+          "bookOdds": "-385",
+          "bookOverUnder": "0.5",
+          "byBookmaker": {},
+          "openBookOdds": "-385",
+          "openBookOverUnder": "0.5"
+        },
+        "blocks-LAMELO_BALL_1_NBA-game-ou-over": {
+          "oddID": "blocks-LAMELO_BALL_1_NBA-game-ou-over",
+          "opposingOddID": "blocks-LAMELO_BALL_1_NBA-game-ou-under",
+          "marketName": "LaMelo Ball Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "LAMELO_BALL_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "LAMELO_BALL_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+381",
+          "bookOdds": "+350",
+          "fairOverUnder": "0.5",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "+385",
+          "openBookOdds": "+350",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        },
+        "blocks-LAMELO_BALL_1_NBA-game-ou-under": {
+          "oddID": "blocks-LAMELO_BALL_1_NBA-game-ou-under",
+          "opposingOddID": "blocks-LAMELO_BALL_1_NBA-game-ou-over",
+          "marketName": "LaMelo Ball Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "LAMELO_BALL_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "LAMELO_BALL_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-381",
+          "fairOverUnder": "0.5",
+          "openFairOdds": "-385",
+          "openFairOverUnder": "0.5",
+          "scoringSupported": true,
+          "bookOdds": "-556",
+          "bookOverUnder": "0.5",
+          "byBookmaker": {},
+          "openBookOdds": "-556",
+          "openBookOverUnder": "0.5"
+        },
+        "steals-KON_KNUEPPEL_1_NBA-game-ou-over": {
+          "oddID": "steals-KON_KNUEPPEL_1_NBA-game-ou-over",
+          "opposingOddID": "steals-KON_KNUEPPEL_1_NBA-game-ou-under",
+          "marketName": "Kon Knueppel Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "KON_KNUEPPEL_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "KON_KNUEPPEL_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-114",
+          "bookOdds": "-132",
+          "fairOverUnder": "0.5",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "-123",
+          "openBookOdds": "-135",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        },
+        "steals-KON_KNUEPPEL_1_NBA-game-ou-under": {
+          "oddID": "steals-KON_KNUEPPEL_1_NBA-game-ou-under",
+          "opposingOddID": "steals-KON_KNUEPPEL_1_NBA-game-ou-over",
+          "marketName": "Kon Knueppel Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "KON_KNUEPPEL_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "KON_KNUEPPEL_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+114",
+          "fairOverUnder": "0.5",
+          "openFairOdds": "+123",
+          "openFairOverUnder": "0.5",
+          "scoringSupported": true,
+          "bookOdds": "+100",
+          "bookOverUnder": "0.5",
+          "byBookmaker": {},
+          "openBookOdds": "+100",
+          "openBookOverUnder": "0.5"
+        },
+        "steals-LAMELO_BALL_1_NBA-game-ou-over": {
+          "oddID": "steals-LAMELO_BALL_1_NBA-game-ou-over",
+          "opposingOddID": "steals-LAMELO_BALL_1_NBA-game-ou-under",
+          "marketName": "LaMelo Ball Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "LAMELO_BALL_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "LAMELO_BALL_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+165",
+          "bookOdds": "+148",
+          "fairOverUnder": "1.5",
+          "bookOverUnder": "1.5",
+          "openFairOdds": "-164",
+          "openBookOdds": "-180",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+148",
+              "overUnder": "1.5",
+              "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+              "available": true,
+              "altLines": [
+                {
+                  "odds": "-330",
+                  "overUnder": "0.5",
+                  "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+470",
+                  "overUnder": "2.5",
+                  "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+                  "available": true
+                }
+              ],
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.551425842&selectionId=26324737"
+            }
+          }
+        },
+        "steals-LAMELO_BALL_1_NBA-game-ou-under": {
+          "oddID": "steals-LAMELO_BALL_1_NBA-game-ou-under",
+          "opposingOddID": "steals-LAMELO_BALL_1_NBA-game-ou-over",
+          "marketName": "LaMelo Ball Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "LAMELO_BALL_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "LAMELO_BALL_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-165",
+          "fairOverUnder": "1.5",
+          "openFairOdds": "+164",
+          "openFairOverUnder": "0.5",
+          "scoringSupported": true,
+          "bookOdds": "-200",
+          "bookOverUnder": "1.5",
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-200",
+              "overUnder": "1.5",
+              "lastUpdatedAt": "2026-01-18T12:28:53.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.551425842&selectionId=26324736"
+            }
+          },
+          "openBookOdds": "+135",
+          "openBookOverUnder": "0.5"
+        },
+        "blocks-COLLIN_SEXTON_1_NBA-game-ou-over": {
+          "oddID": "blocks-COLLIN_SEXTON_1_NBA-game-ou-over",
+          "opposingOddID": "blocks-COLLIN_SEXTON_1_NBA-game-ou-under",
+          "marketName": "Collin Sexton Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "COLLIN_SEXTON_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "COLLIN_SEXTON_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+591",
+          "bookOdds": "+550",
+          "fairOverUnder": "0.5",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "+578",
+          "openBookOdds": "+525",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        },
+        "blocks-COLLIN_SEXTON_1_NBA-game-ou-under": {
+          "oddID": "blocks-COLLIN_SEXTON_1_NBA-game-ou-under",
+          "opposingOddID": "blocks-COLLIN_SEXTON_1_NBA-game-ou-over",
+          "marketName": "Collin Sexton Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "COLLIN_SEXTON_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "COLLIN_SEXTON_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-591",
+          "fairOverUnder": "0.5",
+          "openFairOdds": "-578",
+          "openFairOverUnder": "0.5",
+          "scoringSupported": true,
+          "bookOdds": "-1000",
+          "bookOverUnder": "0.5",
+          "byBookmaker": {},
+          "openBookOdds": "-1000",
+          "openBookOverUnder": "0.5"
+        },
+        "rebounds-COLLIN_SEXTON_1_NBA-game-ou-over": {
+          "oddID": "rebounds-COLLIN_SEXTON_1_NBA-game-ou-over",
+          "opposingOddID": "rebounds-COLLIN_SEXTON_1_NBA-game-ou-under",
+          "marketName": "Collin Sexton Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "COLLIN_SEXTON_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "COLLIN_SEXTON_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-121",
+          "bookOdds": "+132",
+          "fairOverUnder": "1.5",
+          "bookOverUnder": "2.5",
+          "openFairOdds": "+171",
+          "openBookOdds": "+155",
+          "openFairOverUnder": "2.5",
+          "openBookOverUnder": "2.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        },
+        "rebounds-COLLIN_SEXTON_1_NBA-game-ou-under": {
+          "oddID": "rebounds-COLLIN_SEXTON_1_NBA-game-ou-under",
+          "opposingOddID": "rebounds-COLLIN_SEXTON_1_NBA-game-ou-over",
+          "marketName": "Collin Sexton Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "COLLIN_SEXTON_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "COLLIN_SEXTON_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+121",
+          "fairOverUnder": "1.5",
+          "openFairOdds": "-171",
+          "openFairOverUnder": "2.5",
+          "scoringSupported": true,
+          "bookOdds": "-186",
+          "bookOverUnder": "2.5",
+          "byBookmaker": {},
+          "openBookOdds": "+100",
+          "openBookOverUnder": "1.5"
+        },
+        "steals-COLLIN_SEXTON_1_NBA-game-ou-over": {
+          "oddID": "steals-COLLIN_SEXTON_1_NBA-game-ou-over",
+          "opposingOddID": "steals-COLLIN_SEXTON_1_NBA-game-ou-under",
+          "marketName": "Collin Sexton Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "COLLIN_SEXTON_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "COLLIN_SEXTON_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+115",
+          "bookOdds": "+100",
+          "fairOverUnder": "0.5",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "+110",
+          "openBookOdds": "+100",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        },
+        "steals-COLLIN_SEXTON_1_NBA-game-ou-under": {
+          "oddID": "steals-COLLIN_SEXTON_1_NBA-game-ou-under",
+          "opposingOddID": "steals-COLLIN_SEXTON_1_NBA-game-ou-over",
+          "marketName": "Collin Sexton Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "COLLIN_SEXTON_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "COLLIN_SEXTON_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-115",
+          "fairOverUnder": "0.5",
+          "openFairOdds": "-110",
+          "openFairOverUnder": "0.5",
+          "scoringSupported": true,
+          "bookOdds": "-135",
+          "bookOverUnder": "0.5",
+          "byBookmaker": {},
+          "openBookOdds": "-135",
+          "openBookOverUnder": "0.5"
+        }
+      },
+      "results": {},
+      "players": {
+        "JAMAL_MURRAY_1_NBA": {
+          "playerID": "JAMAL_MURRAY_1_NBA",
+          "teamID": "DENVER_NUGGETS_NBA",
+          "firstName": "Jamal",
+          "lastName": "Murray",
+          "name": "Jamal Murray"
+        },
+        "AARON_GORDON_1_NBA": {
+          "playerID": "AARON_GORDON_1_NBA",
+          "teamID": "DENVER_NUGGETS_NBA",
+          "firstName": "Aaron",
+          "lastName": "Gordon",
+          "name": "Aaron Gordon"
+        },
+        "PEYTON_WATSON_1_NBA": {
+          "playerID": "PEYTON_WATSON_1_NBA",
+          "teamID": "DENVER_NUGGETS_NBA",
+          "firstName": "Peyton",
+          "lastName": "Watson",
+          "name": "Peyton Watson"
+        },
+        "JALEN_PICKETT_1_NBA": {
+          "playerID": "JALEN_PICKETT_1_NBA",
+          "teamID": "DENVER_NUGGETS_NBA",
+          "firstName": "Jalen",
+          "lastName": "Pickett",
+          "name": "Jalen Pickett"
+        },
+        "BRANDON_MILLER_1_NBA": {
+          "playerID": "BRANDON_MILLER_1_NBA",
+          "teamID": "CHARLOTTE_HORNETS_NBA",
+          "firstName": "Brandon",
+          "lastName": "Miller",
+          "name": "Brandon Miller"
+        },
+        "KON_KNUEPPEL_1_NBA": {
+          "playerID": "KON_KNUEPPEL_1_NBA",
+          "teamID": "CHARLOTTE_HORNETS_NBA",
+          "firstName": "Kon",
+          "lastName": "Knueppel",
+          "name": "Kon Knueppel"
+        },
+        "LAMELO_BALL_1_NBA": {
+          "playerID": "LAMELO_BALL_1_NBA",
+          "teamID": "CHARLOTTE_HORNETS_NBA",
+          "firstName": "LaMelo",
+          "lastName": "Ball",
+          "name": "LaMelo Ball"
+        },
+        "MILES_BRIDGES_1_NBA": {
+          "playerID": "MILES_BRIDGES_1_NBA",
+          "teamID": "CHARLOTTE_HORNETS_NBA",
+          "firstName": "Miles",
+          "lastName": "Bridges",
+          "name": "Miles Bridges"
+        },
+        "MOUSSA_DIABATE_1_NBA": {
+          "playerID": "MOUSSA_DIABATE_1_NBA",
+          "teamID": "CHARLOTTE_HORNETS_NBA",
+          "firstName": "Moussa",
+          "lastName": "Diabate",
+          "name": "Moussa Diabate"
+        },
+        "CHRISTIAN_BRAUN_1_NBA": {
+          "playerID": "CHRISTIAN_BRAUN_1_NBA",
+          "teamID": "DENVER_NUGGETS_NBA",
+          "firstName": "Christian",
+          "lastName": "Braun",
+          "name": "Christian Braun"
+        },
+        "TIM_HARDAWAY_JR_1_NBA": {
+          "playerID": "TIM_HARDAWAY_JR_1_NBA",
+          "teamID": "DENVER_NUGGETS_NBA",
+          "firstName": "Tim",
+          "lastName": "Hardaway",
+          "name": "Tim Hardaway Jr."
+        },
+        "BRUCE_BROWN_1_NBA": {
+          "playerID": "BRUCE_BROWN_1_NBA",
+          "teamID": "DENVER_NUGGETS_NBA",
+          "firstName": "Bruce",
+          "lastName": "Brown",
+          "name": "Bruce Brown"
+        },
+        "ZEKE_NNAJI_1_NBA": {
+          "playerID": "ZEKE_NNAJI_1_NBA",
+          "teamID": "DENVER_NUGGETS_NBA",
+          "firstName": "Zeke",
+          "lastName": "Nnaji",
+          "name": "Zeke Nnaji"
+        },
+        "COLLIN_SEXTON_1_NBA": {
+          "playerID": "COLLIN_SEXTON_1_NBA",
+          "teamID": "CHARLOTTE_HORNETS_NBA",
+          "firstName": "Collin",
+          "lastName": "Sexton",
+          "name": "Collin Sexton"
+        },
+        "SPENCER_JONES_1_NBA": {
+          "playerID": "SPENCER_JONES_1_NBA",
+          "teamID": "DENVER_NUGGETS_NBA",
+          "firstName": "Spencer",
+          "lastName": "Jones",
+          "name": "Spencer Jones"
+        },
+        "SION_JAMES_1_NBA": {
+          "playerID": "SION_JAMES_1_NBA",
+          "teamID": "CHARLOTTE_HORNETS_NBA",
+          "firstName": "Sion",
+          "lastName": "James",
+          "name": "Sion James"
+        }
+      }
+    }
+  ]
+}
