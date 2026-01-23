@@ -1,0 +1,2321 @@
+{
+  "nextCursor": "n.1769212800000.8lBg4wk13lCJQM9C7mj5",
+  "success": true,
+  "data": [
+    {
+      "eventID": "8lBg4wk13lCJQM9C7mj5",
+      "sportID": "BASKETBALL",
+      "leagueID": "NBA",
+      "type": "match",
+      "teams": {
+        "home": {
+          "teamID": "DETROIT_PISTONS_NBA",
+          "names": {
+            "long": "Detroit Pistons",
+            "medium": "Pistons",
+            "short": "DET",
+            "location": "Detroit"
+          },
+          "colors": {
+            "primary": "#006BB6",
+            "secondary": "#ED174C",
+            "primaryContrast": "#FFFFFF",
+            "secondaryContrast": "#000000"
+          },
+          "statEntityID": "home"
+        },
+        "away": {
+          "teamID": "HOUSTON_ROCKETS_NBA",
+          "names": {
+            "long": "Houston Rockets",
+            "medium": "Rockets",
+            "short": "HOU",
+            "location": "Houston"
+          },
+          "colors": {
+            "primary": "#CE1141",
+            "secondary": "",
+            "primaryContrast": "#FFFFFF",
+            "secondaryContrast": ""
+          },
+          "statEntityID": "away"
+        }
+      },
+      "status": {
+        "started": false,
+        "completed": false,
+        "cancelled": false,
+        "ended": false,
+        "live": false,
+        "delayed": false,
+        "currentPeriodID": "",
+        "previousPeriodID": "",
+        "displayShort": "",
+        "displayLong": "Upcoming",
+        "inBreak": false,
+        "startsAt": "2026-01-24T00:00:00.000Z",
+        "previousStartsAt": [],
+        "hardStart": true,
+        "periods": {
+          "started": [],
+          "ended": []
+        },
+        "oddsPresent": true,
+        "oddsAvailable": true,
+        "finalized": false
+      },
+      "info": {
+        "seasonWeek": "NBA 25/26"
+      },
+      "links": {
+        "bookmakers": {
+          "fanduel": "https://sportsbook.fanduel.com/basketball/-/35173225",
+          "ladbrokes": "https://www.ladbrokes.com.au/sports/-/-/-/767641b3-30dc-44db-8d0e-149df24cc7a0",
+          "neds": "https://www.neds.com.au/sports/-/-/-/767641b3-30dc-44db-8d0e-149df24cc7a0",
+          "paddypower": "https://www.paddypower.com/basketball/nba/houston-rockets-@-detroit-pistons-35173225",
+          "sportsbet": "https://www.sportsbet.com.au/betting/basketball---us/nba/houston-rockets-at-detroit-pistons-10067786",
+          "boylesports": "https://www.boylesports.com/sports/basketball/event/usa-nba/detroit-pistons-v-houston-rockets",
+          "betfairsportsbook": "https://www.betfair.com/betting/basketball/nba/houston-rockets-@-detroit-pistons/e-35173225",
+          "888sport": "https://www.888sport.com/basketball/united-states-of-america/nba/houston-rockets-detroit-pistons-e-7026973",
+          "pointsbet": "https://pointsbet.com.au/sports/basketball/NBA/2579122",
+          "coolbet": "https://www.coolbet.com/en/sports/match/4929871",
+          "1xbet": "https://1xbet.com/en/line/football/13589-nba/298596736-detroit-pistons-houston-rockets",
+          "betrsportsbook": "https://www.betr.com.au/sports/Basketball/107/United-States-of-America/NBA/Houston-Rockets-@-Detroit-Pistons/1965800/All-Markets",
+          "matchbook": "https://www.matchbook.com/events/basketball/united-states-of-america/nba/32316792391600045",
+          "fliff": "https://sports.getfliff.com/markets/358680_c_p_204_prematch",
+          "williamhill": "https://sports.williamhill.com/betting/en-gb/basketball/OB_EV38460460/houston-rockets-at-detroit-pistons",
+          "hardrockbet": "https://app.hardrock.bet/home/competition/nba/4991001548486869335",
+          "betsson": "https://www.betsson.com/en/sportsbook/basketball/nba/nba?eventId=f-5KzWjlpjGkSHSOf0aMigyg",
+          "nordicbet": "https://www.nordicbet.com/en/sportsbook/basketball/nba/nba/detroit-pistons-houston-rockets-",
+          "draftkings": "https://sportsbook.draftkings.com/event/33500589",
+          "caesars": "https://sportsbook.caesars.com/us/nj/bet/basketball/6bfece8c-f337-4dc2-9d10-a615604854e2/houston-rockets-at-detroit-pistons",
+          "tab": "https://www.tab.com.au/sports/betting/Basketball/competitions/NBA/matches/Detroit%20v%20Houston",
+          "playup": "https://www.playup.com.au/betting/sports/nba/detroit-pistons-v-houston-rockets/1788578",
+          "betonline": "https://sports.betonline.ag/sportsbook/basketball/nba/game/490943249",
+          "espnbet": "https://espnbet.com/sport/basketball/organization/united-states/competition/nba/event/855bd0f9-8b7d-4489-ab28-a07acf97fafb",
+          "lowvig": "https://sports.lowvig.ag/sportsbook/basketball/nba/game/490943249",
+          "thescorebet": "https://thescore.bet/sport/basketball/organization/united-states/competition/nba/event/855bd0f9-8b7d-4489-ab28-a07acf97fafb",
+          "betmgm": "https://sports.nj.betmgm.com/en/sports/events/18739701",
+          "coral": "https://sports.coral.co.uk/event/basketball/basketball-usa/nba/det-pistons-v-hou-rockets/41495162",
+          "betway": "https://betway.com/en/sports/evt/16276529",
+          "everygame": "https://sports.everygame.eu/en/Bets/Basketball/NBA-Lines/Houston-Rockets-at-Detroit-Pistons/2784831",
+          "pinnacle": "https://www.pinnacle.com/en/basketball/nba/houston-rockets-vs-detroit-pistons/1622515816",
+          "ballybet": "https://play.ballybet.com/sports#event/1024652924",
+          "betparx": "https://nj.betparx.com/kambi#event/1024652924",
+          "betrivers": "https://nj.betrivers.com/?page=sportsbook#event/1024652924",
+          "casumo": "https://www.casumo.com/en-gb/sports#event/1024652924",
+          "grosvenor": "https://www.grosvenorcasinos.com/sport#event/1024652924",
+          "leovegas": "https://www.leovegas.co.uk/betting#event/1024652924",
+          "livescorebet": "https://www.livescorebet.com/uk/sports/basketball/nba/detroit-pistons-houston-rockets/SBTE_2_1024652924",
+          "tabtouch": "https://www.tabtouch.mobi/tabtouch-sports/event/1024652924",
+          "unibet": "https://www.unibet.com/betting/sports/event/1024652924",
+          "virginbet": "https://www.virginbet.com/sports/basketball/nba/detroit-pistons-houston-rockets/SBTE_2_1024652924",
+          "bovada": "https://www.bovada.lv/sports/basketball/nba/houston-rockets-detroit-pistons-202601231900"
+        }
+      },
+      "odds": {
+        "assists-KEVIN_DURANT_1_NBA-game-ou-over": {
+          "oddID": "assists-KEVIN_DURANT_1_NBA-game-ou-over",
+          "opposingOddID": "assists-KEVIN_DURANT_1_NBA-game-ou-under",
+          "marketName": "Kevin Durant Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "KEVIN_DURANT_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "KEVIN_DURANT_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+108",
+          "bookOdds": "-105",
+          "fairOverUnder": "4.5",
+          "bookOverUnder": "4.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "-114",
+          "openFairOverUnder": "5",
+          "openBookOverUnder": "4.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-102",
+              "overUnder": "4.5",
+              "lastUpdatedAt": "2026-01-23T11:01:04.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.552307310&selectionId=12260605",
+              "altLines": [
+                {
+                  "odds": "-3500",
+                  "overUnder": "1.5",
+                  "lastUpdatedAt": "2026-01-23T11:01:04.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-225",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2026-01-23T11:01:04.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+210",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2026-01-23T11:01:04.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+800",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2026-01-23T11:01:04.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+2000",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-01-23T11:01:04.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "assists-KEVIN_DURANT_1_NBA-game-ou-under": {
+          "oddID": "assists-KEVIN_DURANT_1_NBA-game-ou-under",
+          "opposingOddID": "assists-KEVIN_DURANT_1_NBA-game-ou-over",
+          "marketName": "Kevin Durant Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "KEVIN_DURANT_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "KEVIN_DURANT_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-108",
+          "bookOdds": "-125",
+          "fairOverUnder": "4.5",
+          "bookOverUnder": "4.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "-114",
+          "openFairOverUnder": "5",
+          "openBookOverUnder": "4.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-130",
+              "overUnder": "4.5",
+              "lastUpdatedAt": "2026-01-23T11:01:04.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.552307310&selectionId=12260606"
+            }
+          }
+        },
+        "points-KEVIN_DURANT_1_NBA-game-ou-over": {
+          "oddID": "points-KEVIN_DURANT_1_NBA-game-ou-over",
+          "opposingOddID": "points-KEVIN_DURANT_1_NBA-game-ou-under",
+          "marketName": "Kevin Durant Points Over/Under",
+          "statID": "points",
+          "statEntityID": "KEVIN_DURANT_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "KEVIN_DURANT_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+127",
+          "bookOdds": "-114",
+          "fairOverUnder": "26.5",
+          "bookOverUnder": "25.5",
+          "openFairOdds": "+108",
+          "openBookOdds": "-130",
+          "openFairOverUnder": "24.5",
+          "openBookOverUnder": "23.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-112",
+              "overUnder": "25.5",
+              "lastUpdatedAt": "2026-01-23T11:01:04.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.552307307&selectionId=12260605",
+              "altLines": [
+                {
+                  "odds": "-3000",
+                  "overUnder": "14.5",
+                  "lastUpdatedAt": "2026-01-23T11:01:04.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-460",
+                  "overUnder": "19.5",
+                  "lastUpdatedAt": "2026-01-23T11:01:04.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-122",
+                  "overUnder": "23.5",
+                  "lastUpdatedAt": "2026-01-23T02:37:41.654Z",
+                  "available": false
+                },
+                {
+                  "odds": "-138",
+                  "overUnder": "24.5",
+                  "lastUpdatedAt": "2026-01-23T11:01:04.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+215",
+                  "overUnder": "29.5",
+                  "lastUpdatedAt": "2026-01-23T11:01:04.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+560",
+                  "overUnder": "34.5",
+                  "lastUpdatedAt": "2026-01-23T11:01:04.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1300",
+                  "overUnder": "39.5",
+                  "lastUpdatedAt": "2026-01-23T11:01:04.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+4000",
+                  "overUnder": "44.5",
+                  "lastUpdatedAt": "2026-01-23T11:01:04.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "points-KEVIN_DURANT_1_NBA-game-ou-under": {
+          "oddID": "points-KEVIN_DURANT_1_NBA-game-ou-under",
+          "opposingOddID": "points-KEVIN_DURANT_1_NBA-game-ou-over",
+          "marketName": "Kevin Durant Points Over/Under",
+          "statID": "points",
+          "statEntityID": "KEVIN_DURANT_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "KEVIN_DURANT_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-127",
+          "bookOdds": "-114",
+          "fairOverUnder": "26.5",
+          "bookOverUnder": "25.5",
+          "openFairOdds": "-108",
+          "openBookOdds": "-102",
+          "openFairOverUnder": "24.5",
+          "openBookOverUnder": "23.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-118",
+              "overUnder": "25.5",
+              "lastUpdatedAt": "2026-01-23T11:01:04.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.552307307&selectionId=12260606",
+              "altLines": [
+                {
+                  "odds": "-108",
+                  "overUnder": "23.5",
+                  "lastUpdatedAt": "2026-01-23T02:37:41.654Z",
+                  "available": false
+                },
+                {
+                  "odds": "-120",
+                  "overUnder": "24.5",
+                  "lastUpdatedAt": "2026-01-23T06:12:42.000Z",
+                  "available": false
+                }
+              ]
+            }
+          }
+        },
+        "rebounds-KEVIN_DURANT_1_NBA-game-ou-over": {
+          "oddID": "rebounds-KEVIN_DURANT_1_NBA-game-ou-over",
+          "opposingOddID": "rebounds-KEVIN_DURANT_1_NBA-game-ou-under",
+          "marketName": "Kevin Durant Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "KEVIN_DURANT_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "KEVIN_DURANT_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+135",
+          "bookOdds": "+120",
+          "fairOverUnder": "5.5",
+          "bookOverUnder": "5.5",
+          "openFairOdds": "+140",
+          "openBookOdds": "+124",
+          "openFairOverUnder": "5.5",
+          "openBookOverUnder": "5.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+122",
+              "overUnder": "5.5",
+              "lastUpdatedAt": "2026-01-23T11:01:04.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.552307309&selectionId=12260605",
+              "altLines": [
+                {
+                  "odds": "-390",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2026-01-23T11:01:04.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+430",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2026-01-23T11:01:04.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1100",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-01-23T11:01:04.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "rebounds-KEVIN_DURANT_1_NBA-game-ou-under": {
+          "oddID": "rebounds-KEVIN_DURANT_1_NBA-game-ou-under",
+          "opposingOddID": "rebounds-KEVIN_DURANT_1_NBA-game-ou-over",
+          "marketName": "Kevin Durant Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "KEVIN_DURANT_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "KEVIN_DURANT_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-135",
+          "bookOdds": "-160",
+          "fairOverUnder": "5.5",
+          "bookOverUnder": "5.5",
+          "openFairOdds": "-140",
+          "openBookOdds": "-166",
+          "openFairOverUnder": "5.5",
+          "openBookOverUnder": "5.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-162",
+              "overUnder": "5.5",
+              "lastUpdatedAt": "2026-01-23T11:01:04.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.552307309&selectionId=12260606"
+            }
+          }
+        },
+        "rebounds-ALPEREN_SENGUN_1_NBA-game-ou-over": {
+          "oddID": "rebounds-ALPEREN_SENGUN_1_NBA-game-ou-over",
+          "opposingOddID": "rebounds-ALPEREN_SENGUN_1_NBA-game-ou-under",
+          "marketName": "Alperen \u015eeng\u00fcn Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "ALPEREN_SENGUN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "ALPEREN_SENGUN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-111",
+          "bookOdds": "-130",
+          "fairOverUnder": "8.5",
+          "bookOverUnder": "8.5",
+          "openFairOdds": "-112",
+          "openBookOdds": "-130",
+          "openFairOverUnder": "8.5",
+          "openBookOverUnder": "8.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-130",
+              "overUnder": "8.5",
+              "lastUpdatedAt": "2026-01-23T11:01:04.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.552307682&selectionId=40296685",
+              "altLines": [
+                {
+                  "odds": "-900",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2026-01-23T11:01:04.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-215",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2026-01-23T11:01:04.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+112",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-01-23T11:01:04.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+290",
+                  "overUnder": "11.5",
+                  "lastUpdatedAt": "2026-01-23T11:01:04.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+750",
+                  "overUnder": "13.5",
+                  "lastUpdatedAt": "2026-01-23T11:01:04.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1500",
+                  "overUnder": "15.5",
+                  "lastUpdatedAt": "2026-01-23T11:01:04.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "rebounds-ALPEREN_SENGUN_1_NBA-game-ou-under": {
+          "oddID": "rebounds-ALPEREN_SENGUN_1_NBA-game-ou-under",
+          "opposingOddID": "rebounds-ALPEREN_SENGUN_1_NBA-game-ou-over",
+          "marketName": "Alperen \u015eeng\u00fcn Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "ALPEREN_SENGUN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "ALPEREN_SENGUN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+111",
+          "bookOdds": "-104",
+          "fairOverUnder": "8.5",
+          "bookOverUnder": "8.5",
+          "openFairOdds": "+112",
+          "openBookOdds": "-102",
+          "openFairOverUnder": "8.5",
+          "openBookOverUnder": "8.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-102",
+              "overUnder": "8.5",
+              "lastUpdatedAt": "2026-01-23T11:01:04.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.552307682&selectionId=40296686"
+            }
+          }
+        },
+        "assists-ALPEREN_SENGUN_1_NBA-game-ou-over": {
+          "oddID": "assists-ALPEREN_SENGUN_1_NBA-game-ou-over",
+          "opposingOddID": "assists-ALPEREN_SENGUN_1_NBA-game-ou-under",
+          "marketName": "Alperen \u015eeng\u00fcn Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "ALPEREN_SENGUN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "ALPEREN_SENGUN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-119",
+          "bookOdds": "-139",
+          "fairOverUnder": "5.5",
+          "bookOverUnder": "5.5",
+          "openFairOdds": "-129",
+          "openBookOdds": "-148",
+          "openFairOverUnder": "5.5",
+          "openBookOverUnder": "5.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-148",
+              "overUnder": "5.5",
+              "lastUpdatedAt": "2026-01-23T11:01:04.000Z",
+              "available": true,
+              "altLines": [
+                {
+                  "odds": "-720",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2026-01-23T11:01:04.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+250",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2026-01-23T11:01:04.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+630",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-01-23T11:01:04.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1700",
+                  "overUnder": "11.5",
+                  "lastUpdatedAt": "2026-01-23T11:01:04.000Z",
+                  "available": true
+                }
+              ],
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.552307683&selectionId=40296685"
+            }
+          }
+        },
+        "assists-ALPEREN_SENGUN_1_NBA-game-ou-under": {
+          "oddID": "assists-ALPEREN_SENGUN_1_NBA-game-ou-under",
+          "opposingOddID": "assists-ALPEREN_SENGUN_1_NBA-game-ou-over",
+          "marketName": "Alperen \u015eeng\u00fcn Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "ALPEREN_SENGUN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "ALPEREN_SENGUN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+119",
+          "bookOdds": "+105",
+          "fairOverUnder": "5.5",
+          "bookOverUnder": "5.5",
+          "openFairOdds": "+129",
+          "openBookOdds": "+116",
+          "openFairOverUnder": "5.5",
+          "openBookOverUnder": "5.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+112",
+              "overUnder": "5.5",
+              "lastUpdatedAt": "2026-01-23T11:01:04.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.552307683&selectionId=40296686"
+            }
+          }
+        },
+        "points-ALPEREN_SENGUN_1_NBA-game-ou-over": {
+          "oddID": "points-ALPEREN_SENGUN_1_NBA-game-ou-over",
+          "opposingOddID": "points-ALPEREN_SENGUN_1_NBA-game-ou-under",
+          "marketName": "Alperen \u015eeng\u00fcn Points Over/Under",
+          "statID": "points",
+          "statEntityID": "ALPEREN_SENGUN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "ALPEREN_SENGUN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "-125",
+          "fairOverUnder": "20",
+          "bookOverUnder": "18.5",
+          "openFairOdds": "+109",
+          "openBookOdds": "-104",
+          "openFairOverUnder": "19.5",
+          "openBookOverUnder": "19.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-102",
+              "overUnder": "19.5",
+              "lastUpdatedAt": "2026-01-23T11:01:04.000Z",
+              "available": true,
+              "altLines": [
+                {
+                  "odds": "-3500",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-01-23T11:01:04.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-390",
+                  "overUnder": "14.5",
+                  "lastUpdatedAt": "2026-01-23T11:01:04.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+300",
+                  "overUnder": "24.5",
+                  "lastUpdatedAt": "2026-01-23T11:01:04.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+900",
+                  "overUnder": "29.5",
+                  "lastUpdatedAt": "2026-01-23T11:01:04.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+2000",
+                  "overUnder": "34.5",
+                  "lastUpdatedAt": "2026-01-23T11:01:04.000Z",
+                  "available": true
+                }
+              ],
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.552307681&selectionId=40296685"
+            }
+          }
+        },
+        "points-ALPEREN_SENGUN_1_NBA-game-ou-under": {
+          "oddID": "points-ALPEREN_SENGUN_1_NBA-game-ou-under",
+          "opposingOddID": "points-ALPEREN_SENGUN_1_NBA-game-ou-over",
+          "marketName": "Alperen \u015eeng\u00fcn Points Over/Under",
+          "statID": "points",
+          "statEntityID": "ALPEREN_SENGUN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "ALPEREN_SENGUN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "-105",
+          "fairOverUnder": "20",
+          "bookOverUnder": "18.5",
+          "openFairOdds": "-109",
+          "openBookOdds": "-125",
+          "openFairOverUnder": "19.5",
+          "openBookOverUnder": "19.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-130",
+              "overUnder": "19.5",
+              "lastUpdatedAt": "2026-01-23T11:01:04.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.552307681&selectionId=40296686"
+            }
+          }
+        },
+        "assists-AMEN_THOMPSON_1_NBA-game-ou-over": {
+          "oddID": "assists-AMEN_THOMPSON_1_NBA-game-ou-over",
+          "opposingOddID": "assists-AMEN_THOMPSON_1_NBA-game-ou-under",
+          "marketName": "Amen Thompson Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "AMEN_THOMPSON_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "AMEN_THOMPSON_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "-146",
+          "fairOverUnder": "5",
+          "bookOverUnder": "4.5",
+          "openFairOdds": "+144",
+          "openBookOdds": "+128",
+          "openFairOverUnder": "5.5",
+          "openBookOverUnder": "5.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-146",
+              "overUnder": "4.5",
+              "lastUpdatedAt": "2026-01-23T11:01:04.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.552307908&selectionId=62134320",
+              "altLines": [
+                {
+                  "odds": "-330",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2026-01-23T11:01:04.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+148",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2026-01-23T11:01:04.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+540",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2026-01-23T11:01:04.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1300",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-01-23T11:01:04.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "assists-AMEN_THOMPSON_1_NBA-game-ou-under": {
+          "oddID": "assists-AMEN_THOMPSON_1_NBA-game-ou-under",
+          "opposingOddID": "assists-AMEN_THOMPSON_1_NBA-game-ou-over",
+          "marketName": "Amen Thompson Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "AMEN_THOMPSON_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "AMEN_THOMPSON_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "+110",
+          "fairOverUnder": "5",
+          "bookOverUnder": "4.5",
+          "openFairOdds": "-144",
+          "openBookOdds": "-172",
+          "openFairOverUnder": "5.5",
+          "openBookOverUnder": "5.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+110",
+              "overUnder": "4.5",
+              "lastUpdatedAt": "2026-01-23T11:01:04.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.552307908&selectionId=62134329",
+              "altLines": [
+                {
+                  "odds": "-172",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2026-01-23T10:00:31.499Z",
+                  "available": false
+                }
+              ]
+            }
+          }
+        },
+        "points-AMEN_THOMPSON_1_NBA-game-ou-over": {
+          "oddID": "points-AMEN_THOMPSON_1_NBA-game-ou-over",
+          "opposingOddID": "points-AMEN_THOMPSON_1_NBA-game-ou-under",
+          "marketName": "Amen Thompson Points Over/Under",
+          "statID": "points",
+          "statEntityID": "AMEN_THOMPSON_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "AMEN_THOMPSON_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "-102",
+          "fairOverUnder": "18",
+          "bookOverUnder": "17.5",
+          "openFairOdds": "+110",
+          "openBookOdds": "-104",
+          "openFairOverUnder": "17.5",
+          "openBookOverUnder": "17.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-102",
+              "overUnder": "17.5",
+              "lastUpdatedAt": "2026-01-23T11:01:04.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.552307906&selectionId=62134320",
+              "altLines": [
+                {
+                  "odds": "-1400",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-01-23T11:01:04.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-230",
+                  "overUnder": "14.5",
+                  "lastUpdatedAt": "2026-01-23T11:01:04.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+164",
+                  "overUnder": "19.5",
+                  "lastUpdatedAt": "2026-01-23T11:01:04.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+520",
+                  "overUnder": "24.5",
+                  "lastUpdatedAt": "2026-01-23T11:01:04.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1400",
+                  "overUnder": "29.5",
+                  "lastUpdatedAt": "2026-01-23T11:01:04.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+4000",
+                  "overUnder": "34.5",
+                  "lastUpdatedAt": "2026-01-23T10:43:06.000Z",
+                  "available": false
+                }
+              ]
+            }
+          }
+        },
+        "points-AMEN_THOMPSON_1_NBA-game-ou-under": {
+          "oddID": "points-AMEN_THOMPSON_1_NBA-game-ou-under",
+          "opposingOddID": "points-AMEN_THOMPSON_1_NBA-game-ou-over",
+          "marketName": "Amen Thompson Points Over/Under",
+          "statID": "points",
+          "statEntityID": "AMEN_THOMPSON_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "AMEN_THOMPSON_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "-130",
+          "fairOverUnder": "18",
+          "bookOverUnder": "17.5",
+          "openFairOdds": "-110",
+          "openBookOdds": "-128",
+          "openFairOverUnder": "17.5",
+          "openBookOverUnder": "17.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-130",
+              "overUnder": "17.5",
+              "lastUpdatedAt": "2026-01-23T11:01:04.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.552307906&selectionId=62134329"
+            }
+          }
+        },
+        "rebounds-AMEN_THOMPSON_1_NBA-game-ou-over": {
+          "oddID": "rebounds-AMEN_THOMPSON_1_NBA-game-ou-over",
+          "opposingOddID": "rebounds-AMEN_THOMPSON_1_NBA-game-ou-under",
+          "marketName": "Amen Thompson Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "AMEN_THOMPSON_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "AMEN_THOMPSON_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+124",
+          "bookOdds": "+109",
+          "fairOverUnder": "7.5",
+          "bookOverUnder": "7.5",
+          "openFairOdds": "+116",
+          "openBookOdds": "+102",
+          "openFairOverUnder": "7.5",
+          "openBookOverUnder": "7.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+110",
+              "overUnder": "7.5",
+              "lastUpdatedAt": "2026-01-23T11:01:04.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.552307907&selectionId=62134320",
+              "altLines": [
+                {
+                  "odds": "-2500",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2026-01-23T11:01:04.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-330",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2026-01-23T11:01:04.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+280",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-01-23T11:01:04.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+830",
+                  "overUnder": "11.5",
+                  "lastUpdatedAt": "2026-01-23T11:01:04.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1800",
+                  "overUnder": "13.5",
+                  "lastUpdatedAt": "2026-01-23T11:01:04.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "rebounds-AMEN_THOMPSON_1_NBA-game-ou-under": {
+          "oddID": "rebounds-AMEN_THOMPSON_1_NBA-game-ou-under",
+          "opposingOddID": "rebounds-AMEN_THOMPSON_1_NBA-game-ou-over",
+          "marketName": "Amen Thompson Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "AMEN_THOMPSON_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "AMEN_THOMPSON_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-124",
+          "bookOdds": "-146",
+          "fairOverUnder": "7.5",
+          "bookOverUnder": "7.5",
+          "openFairOdds": "-116",
+          "openBookOdds": "-136",
+          "openFairOverUnder": "7.5",
+          "openBookOverUnder": "7.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-146",
+              "overUnder": "7.5",
+              "lastUpdatedAt": "2026-01-23T11:01:04.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.552307907&selectionId=62134329"
+            }
+          }
+        },
+        "points-JABARI_SMITH_1_NBA-game-ou-over": {
+          "oddID": "points-JABARI_SMITH_1_NBA-game-ou-over",
+          "opposingOddID": "points-JABARI_SMITH_1_NBA-game-ou-under",
+          "marketName": "Jabari Smith Points Over/Under",
+          "statID": "points",
+          "statEntityID": "JABARI_SMITH_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "JABARI_SMITH_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+115",
+          "bookOdds": "-122",
+          "fairOverUnder": "14.5",
+          "bookOverUnder": "13.5",
+          "openFairOdds": "+112",
+          "openBookOdds": "+102",
+          "openFairOverUnder": "14.5",
+          "openBookOverUnder": "14.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-122",
+              "overUnder": "13.5",
+              "lastUpdatedAt": "2026-01-23T11:01:04.000Z",
+              "available": true,
+              "altLines": [
+                {
+                  "odds": "-400",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-01-23T11:01:04.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+110",
+                  "overUnder": "14.5",
+                  "lastUpdatedAt": "2026-01-23T11:01:04.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+370",
+                  "overUnder": "19.5",
+                  "lastUpdatedAt": "2026-01-23T11:01:04.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1060",
+                  "overUnder": "24.5",
+                  "lastUpdatedAt": "2026-01-23T11:01:04.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+3000",
+                  "overUnder": "29.5",
+                  "lastUpdatedAt": "2026-01-23T11:01:04.000Z",
+                  "available": true
+                }
+              ],
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.552308134&selectionId=43049093"
+            }
+          }
+        },
+        "points-JABARI_SMITH_1_NBA-game-ou-under": {
+          "oddID": "points-JABARI_SMITH_1_NBA-game-ou-under",
+          "opposingOddID": "points-JABARI_SMITH_1_NBA-game-ou-over",
+          "marketName": "Jabari Smith Points Over/Under",
+          "statID": "points",
+          "statEntityID": "JABARI_SMITH_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "JABARI_SMITH_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-115",
+          "fairOverUnder": "14.5",
+          "openFairOdds": "-112",
+          "openFairOverUnder": "14.5",
+          "scoringSupported": true,
+          "bookOdds": "-106",
+          "bookOverUnder": "13.5",
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-108",
+              "overUnder": "13.5",
+              "lastUpdatedAt": "2026-01-23T11:01:04.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.552308134&selectionId=43049094",
+              "altLines": [
+                {
+                  "odds": "-136",
+                  "overUnder": "14.5",
+                  "lastUpdatedAt": "2026-01-23T05:59:33.000Z",
+                  "available": false
+                }
+              ]
+            }
+          },
+          "openBookOdds": "-136",
+          "openBookOverUnder": "14.5"
+        },
+        "rebounds-JABARI_SMITH_1_NBA-game-ou-over": {
+          "oddID": "rebounds-JABARI_SMITH_1_NBA-game-ou-over",
+          "opposingOddID": "rebounds-JABARI_SMITH_1_NBA-game-ou-under",
+          "marketName": "Jabari Smith Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "JABARI_SMITH_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "JABARI_SMITH_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+127",
+          "bookOdds": "+112",
+          "fairOverUnder": "6.5",
+          "bookOverUnder": "6.5",
+          "openFairOdds": "+127",
+          "openBookOdds": "+112",
+          "openFairOverUnder": "6.5",
+          "openBookOverUnder": "6.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+112",
+              "overUnder": "6.5",
+              "lastUpdatedAt": "2026-01-23T11:01:04.000Z",
+              "available": true,
+              "altLines": [
+                {
+                  "odds": "-900",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2026-01-23T11:01:04.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-170",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2026-01-23T11:01:04.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+210",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2026-01-23T11:01:04.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+520",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-01-23T11:01:04.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1400",
+                  "overUnder": "11.5",
+                  "lastUpdatedAt": "2026-01-23T11:01:04.000Z",
+                  "available": true
+                }
+              ],
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.552308135&selectionId=43049093"
+            }
+          }
+        },
+        "rebounds-JABARI_SMITH_1_NBA-game-ou-under": {
+          "oddID": "rebounds-JABARI_SMITH_1_NBA-game-ou-under",
+          "opposingOddID": "rebounds-JABARI_SMITH_1_NBA-game-ou-over",
+          "marketName": "Jabari Smith Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "JABARI_SMITH_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "JABARI_SMITH_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-127",
+          "bookOdds": "-149",
+          "fairOverUnder": "6.5",
+          "bookOverUnder": "6.5",
+          "openFairOdds": "-127",
+          "openBookOdds": "-148",
+          "openFairOverUnder": "6.5",
+          "openBookOverUnder": "6.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-148",
+              "overUnder": "6.5",
+              "lastUpdatedAt": "2026-01-23T11:01:04.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.552308135&selectionId=43049094"
+            }
+          }
+        },
+        "points-JOSH_OKOGIE_1_NBA-game-ou-over": {
+          "oddID": "points-JOSH_OKOGIE_1_NBA-game-ou-over",
+          "opposingOddID": "points-JOSH_OKOGIE_1_NBA-game-ou-under",
+          "marketName": "Josh Okogie Points Over/Under",
+          "statID": "points",
+          "statEntityID": "JOSH_OKOGIE_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "JOSH_OKOGIE_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-108",
+          "bookOdds": "-125",
+          "fairOverUnder": "4.5",
+          "bookOverUnder": "4.5",
+          "openFairOdds": "-112",
+          "openBookOdds": "-130",
+          "openFairOverUnder": "4.5",
+          "openBookOverUnder": "4.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-130",
+              "overUnder": "4.5",
+              "lastUpdatedAt": "2026-01-23T11:01:04.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.552308750&selectionId=21512755",
+              "altLines": [
+                {
+                  "odds": "+500",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-01-23T11:01:04.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "points-JOSH_OKOGIE_1_NBA-game-ou-under": {
+          "oddID": "points-JOSH_OKOGIE_1_NBA-game-ou-under",
+          "opposingOddID": "points-JOSH_OKOGIE_1_NBA-game-ou-over",
+          "marketName": "Josh Okogie Points Over/Under",
+          "statID": "points",
+          "statEntityID": "JOSH_OKOGIE_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "JOSH_OKOGIE_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+108",
+          "bookOdds": "-105",
+          "fairOverUnder": "4.5",
+          "bookOverUnder": "4.5",
+          "openFairOdds": "+112",
+          "openBookOdds": "-102",
+          "openFairOverUnder": "4.5",
+          "openBookOverUnder": "4.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-102",
+              "overUnder": "4.5",
+              "lastUpdatedAt": "2026-01-23T11:01:04.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.552308750&selectionId=21512756"
+            }
+          }
+        },
+        "rebounds-JOSH_OKOGIE_1_NBA-game-ou-over": {
+          "oddID": "rebounds-JOSH_OKOGIE_1_NBA-game-ou-over",
+          "opposingOddID": "rebounds-JOSH_OKOGIE_1_NBA-game-ou-under",
+          "marketName": "Josh Okogie Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "JOSH_OKOGIE_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "JOSH_OKOGIE_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "+105",
+          "fairOverUnder": "2",
+          "bookOverUnder": "2.5",
+          "openFairOdds": "+123",
+          "openBookOdds": "+108",
+          "openFairOverUnder": "2.5",
+          "openBookOverUnder": "2.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+110",
+              "overUnder": "2.5",
+              "lastUpdatedAt": "2026-01-23T11:01:04.000Z",
+              "available": true,
+              "altLines": [
+                {
+                  "odds": "+265",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2026-01-23T11:01:04.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1060",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2026-01-23T05:59:33.000Z",
+                  "available": false
+                }
+              ],
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.552308751&selectionId=21512755"
+            }
+          }
+        },
+        "rebounds-JOSH_OKOGIE_1_NBA-game-ou-under": {
+          "oddID": "rebounds-JOSH_OKOGIE_1_NBA-game-ou-under",
+          "opposingOddID": "rebounds-JOSH_OKOGIE_1_NBA-game-ou-over",
+          "marketName": "Josh Okogie Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "JOSH_OKOGIE_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "JOSH_OKOGIE_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "-144",
+          "fairOverUnder": "2",
+          "bookOverUnder": "2.5",
+          "openFairOdds": "-123",
+          "openBookOdds": "-144",
+          "openFairOverUnder": "2.5",
+          "openBookOverUnder": "2.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-146",
+              "overUnder": "2.5",
+              "lastUpdatedAt": "2026-01-23T11:01:04.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.552308751&selectionId=21512756"
+            }
+          }
+        },
+        "blocks-ALPEREN_SENGUN_1_NBA-game-ou-over": {
+          "oddID": "blocks-ALPEREN_SENGUN_1_NBA-game-ou-over",
+          "opposingOddID": "blocks-ALPEREN_SENGUN_1_NBA-game-ou-under",
+          "marketName": "Alperen \u015eeng\u00fcn Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "ALPEREN_SENGUN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "ALPEREN_SENGUN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+165",
+          "bookOdds": "-245",
+          "fairOverUnder": "1.5",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "-197",
+          "openBookOdds": "-245",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-245",
+              "overUnder": "0.5",
+              "lastUpdatedAt": "2026-01-23T11:01:04.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.552332032&selectionId=40296685",
+              "altLines": [
+                {
+                  "odds": "+194",
+                  "overUnder": "1.5",
+                  "lastUpdatedAt": "2026-01-23T11:01:04.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+630",
+                  "overUnder": "2.5",
+                  "lastUpdatedAt": "2026-01-23T11:01:04.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "blocks-ALPEREN_SENGUN_1_NBA-game-ou-under": {
+          "oddID": "blocks-ALPEREN_SENGUN_1_NBA-game-ou-under",
+          "opposingOddID": "blocks-ALPEREN_SENGUN_1_NBA-game-ou-over",
+          "marketName": "Alperen \u015eeng\u00fcn Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "ALPEREN_SENGUN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "ALPEREN_SENGUN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-165",
+          "bookOdds": "+179",
+          "fairOverUnder": "1.5",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "+197",
+          "openBookOdds": "+178",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+178",
+              "overUnder": "0.5",
+              "lastUpdatedAt": "2026-01-23T11:01:44.165Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.552332032&selectionId=40296686"
+            }
+          }
+        },
+        "blocks-JABARI_SMITH_1_NBA-game-ou-over": {
+          "oddID": "blocks-JABARI_SMITH_1_NBA-game-ou-over",
+          "opposingOddID": "blocks-JABARI_SMITH_1_NBA-game-ou-under",
+          "marketName": "Jabari Smith Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "JABARI_SMITH_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "JABARI_SMITH_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "-174",
+          "fairOverUnder": "1",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "-146",
+          "openBookOdds": "-174",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-174",
+              "overUnder": "0.5",
+              "lastUpdatedAt": "2026-01-23T11:01:04.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.552332033&selectionId=43049093",
+              "altLines": [
+                {
+                  "odds": "+280",
+                  "overUnder": "1.5",
+                  "lastUpdatedAt": "2026-01-23T11:01:04.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "blocks-JABARI_SMITH_1_NBA-game-ou-under": {
+          "oddID": "blocks-JABARI_SMITH_1_NBA-game-ou-under",
+          "opposingOddID": "blocks-JABARI_SMITH_1_NBA-game-ou-over",
+          "marketName": "Jabari Smith Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "JABARI_SMITH_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "JABARI_SMITH_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "+114",
+          "fairOverUnder": "1",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "+146",
+          "openBookOdds": "+130",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+130",
+              "overUnder": "0.5",
+              "lastUpdatedAt": "2026-01-23T11:01:44.165Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.552332033&selectionId=43049094"
+            }
+          }
+        },
+        "blocks-KEVIN_DURANT_1_NBA-game-ou-over": {
+          "oddID": "blocks-KEVIN_DURANT_1_NBA-game-ou-over",
+          "opposingOddID": "blocks-KEVIN_DURANT_1_NBA-game-ou-under",
+          "marketName": "Kevin Durant Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "KEVIN_DURANT_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "KEVIN_DURANT_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+165",
+          "bookOdds": "-245",
+          "fairOverUnder": "1.5",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "+188",
+          "openFairOverUnder": "1",
+          "openBookOverUnder": "1.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-245",
+              "overUnder": "0.5",
+              "lastUpdatedAt": "2026-01-23T11:01:04.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.552332043&selectionId=2387617",
+              "altLines": [
+                {
+                  "odds": "+198",
+                  "overUnder": "1.5",
+                  "lastUpdatedAt": "2026-01-23T11:01:04.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+580",
+                  "overUnder": "2.5",
+                  "lastUpdatedAt": "2026-01-23T11:01:04.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "blocks-KEVIN_DURANT_1_NBA-game-ou-under": {
+          "oddID": "blocks-KEVIN_DURANT_1_NBA-game-ou-under",
+          "opposingOddID": "blocks-KEVIN_DURANT_1_NBA-game-ou-over",
+          "marketName": "Kevin Durant Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "KEVIN_DURANT_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "KEVIN_DURANT_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-165",
+          "fairOverUnder": "1.5",
+          "openFairOdds": "+100",
+          "openFairOverUnder": "1",
+          "scoringSupported": true,
+          "bookOdds": "+140",
+          "bookOverUnder": "0.5",
+          "byBookmaker": {},
+          "openBookOdds": "+135",
+          "openBookOverUnder": "0.5"
+        },
+        "steals-ALPEREN_SENGUN_1_NBA-game-ou-over": {
+          "oddID": "steals-ALPEREN_SENGUN_1_NBA-game-ou-over",
+          "opposingOddID": "steals-ALPEREN_SENGUN_1_NBA-game-ou-under",
+          "marketName": "Alperen \u015eeng\u00fcn Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "ALPEREN_SENGUN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "ALPEREN_SENGUN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+148",
+          "bookOdds": "+130",
+          "fairOverUnder": "1.5",
+          "bookOverUnder": "1.5",
+          "openFairOdds": "+155",
+          "openBookOdds": "+138",
+          "openFairOverUnder": "1.5",
+          "openBookOverUnder": "1.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+138",
+              "overUnder": "1.5",
+              "lastUpdatedAt": "2026-01-23T11:01:04.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.552332023&selectionId=40296685",
+              "altLines": [
+                {
+                  "odds": "-350",
+                  "overUnder": "0.5",
+                  "lastUpdatedAt": "2026-01-23T11:01:04.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+430",
+                  "overUnder": "2.5",
+                  "lastUpdatedAt": "2026-01-23T11:01:04.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "steals-ALPEREN_SENGUN_1_NBA-game-ou-under": {
+          "oddID": "steals-ALPEREN_SENGUN_1_NBA-game-ou-under",
+          "opposingOddID": "steals-ALPEREN_SENGUN_1_NBA-game-ou-over",
+          "marketName": "Alperen \u015eeng\u00fcn Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "ALPEREN_SENGUN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "ALPEREN_SENGUN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-148",
+          "bookOdds": "-180",
+          "fairOverUnder": "1.5",
+          "bookOverUnder": "1.5",
+          "openFairOdds": "-155",
+          "openBookOdds": "-186",
+          "openFairOverUnder": "1.5",
+          "openBookOverUnder": "1.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-186",
+              "overUnder": "1.5",
+              "lastUpdatedAt": "2026-01-23T11:01:04.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.552332023&selectionId=40296686"
+            }
+          }
+        },
+        "steals-AMEN_THOMPSON_1_NBA-game-ou-over": {
+          "oddID": "steals-AMEN_THOMPSON_1_NBA-game-ou-over",
+          "opposingOddID": "steals-AMEN_THOMPSON_1_NBA-game-ou-under",
+          "marketName": "Amen Thompson Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "AMEN_THOMPSON_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "AMEN_THOMPSON_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+130",
+          "bookOdds": "+115",
+          "fairOverUnder": "1.5",
+          "bookOverUnder": "1.5",
+          "openFairOdds": "+132",
+          "openBookOdds": "+116",
+          "openFairOverUnder": "1.5",
+          "openBookOverUnder": "1.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+116",
+              "overUnder": "1.5",
+              "lastUpdatedAt": "2026-01-23T11:01:04.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.552332024&selectionId=62134320",
+              "altLines": [
+                {
+                  "odds": "-420",
+                  "overUnder": "0.5",
+                  "lastUpdatedAt": "2026-01-23T11:01:04.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+360",
+                  "overUnder": "2.5",
+                  "lastUpdatedAt": "2026-01-23T11:01:04.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+920",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2026-01-23T11:01:04.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "steals-AMEN_THOMPSON_1_NBA-game-ou-under": {
+          "oddID": "steals-AMEN_THOMPSON_1_NBA-game-ou-under",
+          "opposingOddID": "steals-AMEN_THOMPSON_1_NBA-game-ou-over",
+          "marketName": "Amen Thompson Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "AMEN_THOMPSON_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "AMEN_THOMPSON_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-130",
+          "bookOdds": "-153",
+          "fairOverUnder": "1.5",
+          "bookOverUnder": "1.5",
+          "openFairOdds": "-132",
+          "openBookOdds": "-158",
+          "openFairOverUnder": "1.5",
+          "openBookOverUnder": "1.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-154",
+              "overUnder": "1.5",
+              "lastUpdatedAt": "2026-01-23T11:01:04.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.552332024&selectionId=62134329"
+            }
+          }
+        },
+        "steals-KEVIN_DURANT_1_NBA-game-ou-over": {
+          "oddID": "steals-KEVIN_DURANT_1_NBA-game-ou-over",
+          "opposingOddID": "steals-KEVIN_DURANT_1_NBA-game-ou-under",
+          "marketName": "Kevin Durant Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "KEVIN_DURANT_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "KEVIN_DURANT_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "-175",
+          "fairOverUnder": "1",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "-144",
+          "openBookOdds": "-158",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-158",
+              "overUnder": "0.5",
+              "lastUpdatedAt": "2026-01-23T11:01:04.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.552332038&selectionId=2387617",
+              "altLines": [
+                {
+                  "odds": "+310",
+                  "overUnder": "1.5",
+                  "lastUpdatedAt": "2026-01-23T11:01:04.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "steals-KEVIN_DURANT_1_NBA-game-ou-under": {
+          "oddID": "steals-KEVIN_DURANT_1_NBA-game-ou-under",
+          "opposingOddID": "steals-KEVIN_DURANT_1_NBA-game-ou-over",
+          "marketName": "Kevin Durant Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "KEVIN_DURANT_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "KEVIN_DURANT_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "fairOverUnder": "1",
+          "openFairOdds": "+144",
+          "openFairOverUnder": "0.5",
+          "scoringSupported": true,
+          "bookOdds": "+135",
+          "bookOverUnder": "0.5",
+          "byBookmaker": {},
+          "openBookOdds": "+135",
+          "openBookOverUnder": "0.5"
+        },
+        "blocks-AMEN_THOMPSON_1_NBA-game-ou-over": {
+          "oddID": "blocks-AMEN_THOMPSON_1_NBA-game-ou-over",
+          "opposingOddID": "blocks-AMEN_THOMPSON_1_NBA-game-ou-under",
+          "marketName": "Amen Thompson Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "AMEN_THOMPSON_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "AMEN_THOMPSON_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-110",
+          "bookOdds": "-146",
+          "fairOverUnder": "0.5",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "-133",
+          "openBookOdds": "-146",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-146",
+              "overUnder": "0.5",
+              "lastUpdatedAt": "2026-01-23T11:01:04.000Z",
+              "available": true,
+              "altLines": [
+                {
+                  "odds": "+320",
+                  "overUnder": "1.5",
+                  "lastUpdatedAt": "2026-01-23T11:01:04.000Z",
+                  "available": true
+                }
+              ],
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.552332043&selectionId=51589521"
+            }
+          }
+        },
+        "blocks-AMEN_THOMPSON_1_NBA-game-ou-under": {
+          "oddID": "blocks-AMEN_THOMPSON_1_NBA-game-ou-under",
+          "opposingOddID": "blocks-AMEN_THOMPSON_1_NBA-game-ou-over",
+          "marketName": "Amen Thompson Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "AMEN_THOMPSON_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "AMEN_THOMPSON_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+110",
+          "fairOverUnder": "0.5",
+          "openFairOdds": "+133",
+          "openFairOverUnder": "0.5",
+          "scoringSupported": true,
+          "bookOdds": "-117",
+          "bookOverUnder": "0.5",
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+110",
+              "overUnder": "0.5",
+              "lastUpdatedAt": "2026-01-23T11:01:44.165Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.552333749&selectionId=62134329"
+            }
+          },
+          "openBookOdds": "+110",
+          "openBookOverUnder": "0.5"
+        },
+        "assists-JABARI_SMITH_1_NBA-game-ou-over": {
+          "oddID": "assists-JABARI_SMITH_1_NBA-game-ou-over",
+          "opposingOddID": "assists-JABARI_SMITH_1_NBA-game-ou-under",
+          "marketName": "Jabari Smith Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "JABARI_SMITH_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "JABARI_SMITH_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "bookOdds": "+125",
+          "bookOverUnder": "1.5",
+          "openBookOdds": "+375",
+          "openBookOverUnder": "2.5",
+          "scoringSupported": true,
+          "byBookmaker": {},
+          "fairOdds": "+100",
+          "fairOverUnder": "0.5",
+          "openFairOdds": "+144",
+          "openFairOverUnder": "1.5"
+        },
+        "assists-JOSH_OKOGIE_1_NBA-game-ou-over": {
+          "oddID": "assists-JOSH_OKOGIE_1_NBA-game-ou-over",
+          "opposingOddID": "assists-JOSH_OKOGIE_1_NBA-game-ou-under",
+          "marketName": "Josh Okogie Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "JOSH_OKOGIE_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "JOSH_OKOGIE_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "bookOdds": "-161",
+          "bookOverUnder": "0.5",
+          "openBookOdds": "+850",
+          "openBookOverUnder": "2.5",
+          "scoringSupported": true,
+          "byBookmaker": {},
+          "fairOdds": "+100",
+          "fairOverUnder": "1",
+          "openFairOdds": "+100",
+          "openFairOverUnder": "1"
+        },
+        "blocks-JOSH_OKOGIE_1_NBA-game-ou-over": {
+          "oddID": "blocks-JOSH_OKOGIE_1_NBA-game-ou-over",
+          "opposingOddID": "blocks-JOSH_OKOGIE_1_NBA-game-ou-under",
+          "marketName": "Josh Okogie Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "JOSH_OKOGIE_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "JOSH_OKOGIE_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+286",
+          "bookOdds": "+260",
+          "fairOverUnder": "0.5",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "+275",
+          "openBookOdds": "+250",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        },
+        "blocks-JOSH_OKOGIE_1_NBA-game-ou-under": {
+          "oddID": "blocks-JOSH_OKOGIE_1_NBA-game-ou-under",
+          "opposingOddID": "blocks-JOSH_OKOGIE_1_NBA-game-ou-over",
+          "marketName": "Josh Okogie Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "JOSH_OKOGIE_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "JOSH_OKOGIE_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-286",
+          "fairOverUnder": "0.5",
+          "openFairOdds": "-275",
+          "openFairOverUnder": "0.5",
+          "scoringSupported": true,
+          "bookOdds": "-385",
+          "bookOverUnder": "0.5",
+          "byBookmaker": {},
+          "openBookOdds": "-370",
+          "openBookOverUnder": "0.5"
+        },
+        "steals-JABARI_SMITH_1_NBA-game-ou-over": {
+          "oddID": "steals-JABARI_SMITH_1_NBA-game-ou-over",
+          "opposingOddID": "steals-JABARI_SMITH_1_NBA-game-ou-under",
+          "marketName": "Jabari Smith Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "JABARI_SMITH_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "JABARI_SMITH_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-131",
+          "bookOdds": "-155",
+          "fairOverUnder": "0.5",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "-141",
+          "openBookOdds": "-155",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        },
+        "steals-JABARI_SMITH_1_NBA-game-ou-under": {
+          "oddID": "steals-JABARI_SMITH_1_NBA-game-ou-under",
+          "opposingOddID": "steals-JABARI_SMITH_1_NBA-game-ou-over",
+          "marketName": "Jabari Smith Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "JABARI_SMITH_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "JABARI_SMITH_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+131",
+          "fairOverUnder": "0.5",
+          "openFairOdds": "+141",
+          "openFairOverUnder": "0.5",
+          "scoringSupported": true,
+          "bookOdds": "+115",
+          "bookOverUnder": "0.5",
+          "byBookmaker": {},
+          "openBookOdds": "+115",
+          "openBookOverUnder": "0.5"
+        },
+        "steals-JOSH_OKOGIE_1_NBA-game-ou-over": {
+          "oddID": "steals-JOSH_OKOGIE_1_NBA-game-ou-over",
+          "opposingOddID": "steals-JOSH_OKOGIE_1_NBA-game-ou-under",
+          "marketName": "Josh Okogie Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "JOSH_OKOGIE_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "JOSH_OKOGIE_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-150",
+          "bookOdds": "-175",
+          "fairOverUnder": "0.5",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "-159",
+          "openBookOdds": "-175",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        },
+        "steals-JOSH_OKOGIE_1_NBA-game-ou-under": {
+          "oddID": "steals-JOSH_OKOGIE_1_NBA-game-ou-under",
+          "opposingOddID": "steals-JOSH_OKOGIE_1_NBA-game-ou-over",
+          "marketName": "Josh Okogie Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "JOSH_OKOGIE_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "JOSH_OKOGIE_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+150",
+          "fairOverUnder": "0.5",
+          "openFairOdds": "+159",
+          "openFairOverUnder": "0.5",
+          "scoringSupported": true,
+          "bookOdds": "+135",
+          "bookOverUnder": "0.5",
+          "byBookmaker": {},
+          "openBookOdds": "+135",
+          "openBookOverUnder": "0.5"
+        },
+        "assists-JABARI_SMITH_1_NBA-game-ou-under": {
+          "oddID": "assists-JABARI_SMITH_1_NBA-game-ou-under",
+          "opposingOddID": "assists-JABARI_SMITH_1_NBA-game-ou-over",
+          "marketName": "Jabari Smith Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "JABARI_SMITH_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "JABARI_SMITH_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "-161",
+          "fairOverUnder": "0.5",
+          "bookOverUnder": "1.5",
+          "openFairOdds": "-144",
+          "openBookOdds": "-167",
+          "openFairOverUnder": "1.5",
+          "openBookOverUnder": "1.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        },
+        "assists-JOSH_OKOGIE_1_NBA-game-ou-under": {
+          "oddID": "assists-JOSH_OKOGIE_1_NBA-game-ou-under",
+          "opposingOddID": "assists-JOSH_OKOGIE_1_NBA-game-ou-over",
+          "marketName": "Josh Okogie Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "JOSH_OKOGIE_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "JOSH_OKOGIE_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "+125",
+          "fairOverUnder": "1",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "+125",
+          "openFairOverUnder": "1",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        }
+      },
+      "results": {},
+      "players": {
+        "CADE_CUNNINGHAM_1_NBA": {
+          "playerID": "CADE_CUNNINGHAM_1_NBA",
+          "teamID": "DETROIT_PISTONS_NBA",
+          "firstName": "Cade",
+          "lastName": "Cunningham",
+          "name": "Cade Cunningham"
+        },
+        "JALEN_DUREN_1_NBA": {
+          "playerID": "JALEN_DUREN_1_NBA",
+          "teamID": "DETROIT_PISTONS_NBA",
+          "firstName": "Jalen",
+          "lastName": "Duren",
+          "name": "Jalen Duren"
+        },
+        "AUSAR_THOMPSON_1_NBA": {
+          "playerID": "AUSAR_THOMPSON_1_NBA",
+          "teamID": "DETROIT_PISTONS_NBA",
+          "firstName": "Ausar",
+          "lastName": "Thompson",
+          "name": "Ausar Thompson"
+        },
+        "TOBIAS_HARRIS_1_NBA": {
+          "playerID": "TOBIAS_HARRIS_1_NBA",
+          "teamID": "DETROIT_PISTONS_NBA",
+          "firstName": "Tobias",
+          "lastName": "Harris",
+          "name": "Tobias Harris"
+        },
+        "DUNCAN_ROBINSON_1_NBA": {
+          "playerID": "DUNCAN_ROBINSON_1_NBA",
+          "teamID": "DETROIT_PISTONS_NBA",
+          "firstName": "Duncan",
+          "lastName": "Robinson",
+          "name": "Duncan Robinson"
+        },
+        "ALPEREN_SENGUN_1_NBA": {
+          "playerID": "ALPEREN_SENGUN_1_NBA",
+          "teamID": "HOUSTON_ROCKETS_NBA",
+          "firstName": "Alperen",
+          "lastName": "Sengun",
+          "name": "Alperen \u015eeng\u00fcn"
+        },
+        "AMEN_THOMPSON_1_NBA": {
+          "playerID": "AMEN_THOMPSON_1_NBA",
+          "teamID": "HOUSTON_ROCKETS_NBA",
+          "firstName": "Amen",
+          "lastName": "Thompson",
+          "name": "Amen Thompson"
+        },
+        "JABARI_SMITH_1_NBA": {
+          "playerID": "JABARI_SMITH_1_NBA",
+          "teamID": "HOUSTON_ROCKETS_NBA",
+          "firstName": "Jabari",
+          "lastName": "Smith",
+          "name": "Jabari Smith"
+        },
+        "JOSH_OKOGIE_1_NBA": {
+          "playerID": "JOSH_OKOGIE_1_NBA",
+          "teamID": "HOUSTON_ROCKETS_NBA",
+          "firstName": "Josh",
+          "lastName": "Okogie",
+          "name": "Josh Okogie"
+        },
+        "KEVIN_DURANT_1_NBA": {
+          "playerID": "KEVIN_DURANT_1_NBA",
+          "teamID": "HOUSTON_ROCKETS_NBA",
+          "firstName": "Kevin",
+          "lastName": "Durant",
+          "name": "Kevin Durant"
+        },
+        "TARI_EASON_1_NBA": {
+          "playerID": "TARI_EASON_1_NBA",
+          "teamID": "HOUSTON_ROCKETS_NBA",
+          "firstName": "Tari",
+          "lastName": "Eason",
+          "name": "Tari Eason"
+        },
+        "REED_SHEPPARD_1_NBA": {
+          "playerID": "REED_SHEPPARD_1_NBA",
+          "teamID": "HOUSTON_ROCKETS_NBA",
+          "firstName": "Reed",
+          "lastName": "Sheppard",
+          "name": "Reed Sheppard"
+        },
+        "JADEN_IVEY_1_NBA": {
+          "playerID": "JADEN_IVEY_1_NBA",
+          "teamID": "DETROIT_PISTONS_NBA",
+          "firstName": "Jaden",
+          "lastName": "Ivey",
+          "name": "Jaden Ivey"
+        },
+        "ISAIAH_STEWART_1_NBA": {
+          "playerID": "ISAIAH_STEWART_1_NBA",
+          "teamID": "DETROIT_PISTONS_NBA",
+          "firstName": "Isaiah",
+          "lastName": "Stewart",
+          "name": "Isaiah Stewart"
+        }
+      }
+    }
+  ]
+}
