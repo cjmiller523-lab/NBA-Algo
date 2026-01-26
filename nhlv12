@@ -259,7 +259,9 @@ def save_twitter_best_bets(best_sog, best_pts, best_blk):
     path = f"{TWITTER_DIR}/nhl_best_bets_{datetime.now().strftime('%Y-%m-%d')}.txt"
 
     lines = []
-    lines.append("🔥 NHL BEST BETS — Shots, Points, Blocks")
+    date_str = datetime.now().strftime("%m/%d/%y").lstrip("0").replace("/0", "/")
+
+    lines.append(f"{date_str} 🏒 NHL BEST BETS — Shots, Points, Blocks")
     lines.append("")
 
     all_matchups = sorted(set(list(best_sog.keys()) + list(best_pts.keys()) + list(best_blk.keys())))
