@@ -1,0 +1,1638 @@
+{
+  "nextCursor": "n.1769646600000.Tm912yGozMmVWKZ9nkFU",
+  "success": true,
+  "data": [
+    {
+      "eventID": "Tm912yGozMmVWKZ9nkFU",
+      "sportID": "BASKETBALL",
+      "leagueID": "NBA",
+      "type": "match",
+      "teams": {
+        "home": {
+          "teamID": "BOSTON_CELTICS_NBA",
+          "names": {
+            "long": "Boston Celtics",
+            "medium": "Celtics",
+            "short": "BOS",
+            "location": "Boston"
+          },
+          "colors": {
+            "primary": "#008348",
+            "secondary": "",
+            "primaryContrast": "#FFFFFF",
+            "secondaryContrast": ""
+          },
+          "statEntityID": "home"
+        },
+        "away": {
+          "teamID": "ATLANTA_HAWKS_NBA",
+          "names": {
+            "long": "Atlanta Hawks",
+            "medium": "Hawks",
+            "short": "ATL",
+            "location": "Atlanta"
+          },
+          "colors": {
+            "primary": "#E03A3E",
+            "secondary": "#FFFFFF",
+            "primaryContrast": "#000000",
+            "secondaryContrast": "#E03A3E"
+          },
+          "statEntityID": "away"
+        }
+      },
+      "status": {
+        "started": false,
+        "completed": false,
+        "cancelled": false,
+        "ended": false,
+        "live": false,
+        "delayed": false,
+        "currentPeriodID": "",
+        "previousPeriodID": "",
+        "displayShort": "",
+        "displayLong": "Upcoming",
+        "inBreak": false,
+        "startsAt": "2026-01-29T00:30:00.000Z",
+        "previousStartsAt": [],
+        "hardStart": true,
+        "periods": {
+          "started": [],
+          "ended": []
+        },
+        "oddsPresent": true,
+        "oddsAvailable": true,
+        "finalized": false
+      },
+      "info": {
+        "seasonWeek": "NBA 25/26",
+        "venue": {
+          "name": "TD Garden",
+          "countryName": "United States",
+          "countryCode": "US",
+          "regionName": "Massachusetts",
+          "regionCode": "MA",
+          "city": "Boston",
+          "address": "100 Legends Way, Boston, MA 02114",
+          "capacity": 19156
+        }
+      },
+      "links": {
+        "bookmakers": {
+          "fanduel": "https://sportsbook.fanduel.com/basketball/-/35190515",
+          "pointsbet": "https://pointsbet.com.au/sports/basketball/NBA/2585404",
+          "1xbet": "https://1xbet.com/en/line/football/13589-nba/300150618-boston-celtics-atlanta-hawks",
+          "paddypower": "https://www.paddypower.com/basketball/nba/atlanta-hawks-@-boston-celtics-35190515",
+          "lowvig": "https://sports.lowvig.ag/sportsbook/basketball/nba/game/490947496",
+          "sportsbet": "https://www.sportsbet.com.au/betting/basketball---us/nba/atlanta-hawks-at-boston-celtics-10085594",
+          "888sport": "https://www.888sport.com/basketball/united-states-of-america/nba/atlanta-hawks-boston-celtics-e-7052612",
+          "betonline": "https://sports.betonline.ag/sportsbook/basketball/nba/game/490947496",
+          "coolbet": "https://www.coolbet.com/en/sports/match/4952793",
+          "ladbrokes": "https://www.ladbrokes.com.au/sports/-/-/-/b382078c-29ac-45df-bca0-7e30f1c574ff",
+          "boylesports": "https://www.boylesports.com/sports/basketball/event/usa-nba/boston-celtics-v-atlanta-hawks",
+          "neds": "https://www.neds.com.au/sports/-/-/-/b382078c-29ac-45df-bca0-7e30f1c574ff",
+          "betsson": "https://www.betsson.com/en/sportsbook/basketball/nba/nba?eventId=f-Kn6aXBt4Iki6OCLNbbPGDA",
+          "nordicbet": "https://www.nordicbet.com/en/sportsbook/basketball/nba/nba/boston-celtics-atlanta-hawks",
+          "playup": "https://www.playup.com.au/betting/sports/nba/boston-celtics-v-atlanta-hawks/1794511",
+          "fliff": "https://sports.getfliff.com/markets/364368_c_p_204_prematch",
+          "caesars": "https://sportsbook.caesars.com/us/nj/bet/basketball/d157aa79-d26d-454a-950c-7a20b2ef03f0/atlanta-hawks-at-boston-celtics",
+          "draftkings": "https://sportsbook.draftkings.com/event/33530659",
+          "betrsportsbook": "https://www.betr.com.au/sports/Basketball/107/United-States-of-America/NBA/Atlanta-Hawks-@-Boston-Celtics/1970291/All-Markets",
+          "tab": "https://www.tab.com.au/sports/betting/Basketball/competitions/NBA/matches/Boston%20v%20Atlanta",
+          "williamhill": "https://sports.williamhill.com/betting/en-gb/basketball/OB_EV38512279/atlanta-hawks-at-boston-celtics",
+          "betmgm": "https://sports.nj.betmgm.com/en/sports/events/18739203",
+          "coral": "https://sports.coral.co.uk/event/basketball/basketball-usa/nba/bos-celtics-v-atl-hawks/41574596",
+          "matchbook": "https://www.matchbook.com/events/basketball/united-states-of-america/nba/32360213754700045",
+          "ballybet": "https://play.ballybet.com/sports#event/1024652899",
+          "betparx": "https://nj.betparx.com/kambi#event/1024652899",
+          "betrivers": "https://nj.betrivers.com/?page=sportsbook#event/1024652899",
+          "casumo": "https://www.casumo.com/en-gb/sports#event/1024652899",
+          "grosvenor": "https://www.grosvenorcasinos.com/sport#event/1024652899",
+          "leovegas": "https://www.leovegas.co.uk/betting#event/1024652899",
+          "livescorebet": "https://www.livescorebet.com/uk/sports/basketball/nba/boston-celtics-atlanta-hawks/SBTE_2_1024652899",
+          "tabtouch": "https://www.tabtouch.mobi/tabtouch-sports/event/1024652899",
+          "unibet": "https://www.unibet.com/betting/sports/event/1024652899",
+          "virginbet": "https://www.virginbet.com/sports/basketball/nba/boston-celtics-atlanta-hawks/SBTE_2_1024652899",
+          "hardrockbet": "https://app.hardrock.bet/home/competition/nba/7181062684760867149",
+          "espnbet": "https://espnbet.com/sport/basketball/organization/united-states/competition/nba/event/bd8d8f52-719f-48cb-8cb3-82032ffc58d2",
+          "pinnacle": "https://www.pinnacle.com/en/basketball/nba/atlanta-hawks-vs-boston-celtics/1622765125",
+          "thescorebet": "https://thescore.bet/sport/basketball/organization/united-states/competition/nba/event/bd8d8f52-719f-48cb-8cb3-82032ffc58d2",
+          "betfairsportsbook": "https://www.betfair.com/betting/basketball/nba/atlanta-hawks-@-boston-celtics/e-35190515",
+          "everygame": "https://sports.everygame.eu/en/Bets/Basketball/NBA-Lines/Atlanta-Hawks-at-Boston-Celtics/2787802",
+          "betway": "https://betway.com/en/sports/evt/16296474"
+        }
+      },
+      "odds": {
+        "assists-ANFERNEE_SIMONS_1_NBA-game-ou-over": {
+          "oddID": "assists-ANFERNEE_SIMONS_1_NBA-game-ou-over",
+          "opposingOddID": "assists-ANFERNEE_SIMONS_1_NBA-game-ou-under",
+          "statID": "assists",
+          "statEntityID": "ANFERNEE_SIMONS_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "ANFERNEE_SIMONS_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "-130",
+          "fairOverUnder": "3",
+          "bookOverUnder": "2.5",
+          "openFairOdds": "-134",
+          "openBookOdds": "-165",
+          "openFairOverUnder": "2.5",
+          "openBookOverUnder": "2.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-128",
+              "overUnder": "2.5",
+              "lastUpdatedAt": "2026-01-28T07:15:03.000Z",
+              "available": true,
+              "altLines": [
+                {
+                  "odds": "-360",
+                  "overUnder": "1.5",
+                  "lastUpdatedAt": "2026-01-28T07:15:03.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+200",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2026-01-28T07:15:03.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+830",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2026-01-28T07:15:03.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+2000",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2026-01-28T05:39:10.000Z",
+                  "available": false
+                }
+              ],
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.553280257&selectionId=26870488"
+            }
+          },
+          "marketName": "Anfernee Simons Assists Over/Under"
+        },
+        "assists-ANFERNEE_SIMONS_1_NBA-game-ou-under": {
+          "oddID": "assists-ANFERNEE_SIMONS_1_NBA-game-ou-under",
+          "opposingOddID": "assists-ANFERNEE_SIMONS_1_NBA-game-ou-over",
+          "statID": "assists",
+          "statEntityID": "ANFERNEE_SIMONS_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "ANFERNEE_SIMONS_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "-102",
+          "fairOverUnder": "3",
+          "bookOverUnder": "2.5",
+          "openFairOdds": "+134",
+          "openBookOdds": "+115",
+          "openFairOverUnder": "2.5",
+          "openBookOverUnder": "2.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-104",
+              "overUnder": "2.5",
+              "lastUpdatedAt": "2026-01-28T07:15:03.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.553280257&selectionId=26870489"
+            }
+          },
+          "marketName": "Anfernee Simons Assists Over/Under"
+        },
+        "assists-DERRICK_WHITE_1_NBA-game-ou-over": {
+          "oddID": "assists-DERRICK_WHITE_1_NBA-game-ou-over",
+          "opposingOddID": "assists-DERRICK_WHITE_1_NBA-game-ou-under",
+          "marketName": "Derrick White Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "DERRICK_WHITE_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "DERRICK_WHITE_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+128",
+          "bookOdds": "+113",
+          "fairOverUnder": "5.5",
+          "bookOverUnder": "5.5",
+          "openFairOdds": "+134",
+          "openBookOdds": "+115",
+          "openFairOverUnder": "5.5",
+          "openBookOverUnder": "5.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+110",
+              "overUnder": "5.5",
+              "lastUpdatedAt": "2026-01-28T07:15:03.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.553279640&selectionId=22613511",
+              "altLines": [
+                {
+                  "odds": "-430",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2026-01-28T07:15:03.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+400",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2026-01-28T07:15:03.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1100",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-01-28T07:15:03.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+3000",
+                  "overUnder": "11.5",
+                  "lastUpdatedAt": "2026-01-28T05:41:21.000Z",
+                  "available": false
+                }
+              ]
+            }
+          }
+        },
+        "assists-DERRICK_WHITE_1_NBA-game-ou-under": {
+          "oddID": "assists-DERRICK_WHITE_1_NBA-game-ou-under",
+          "opposingOddID": "assists-DERRICK_WHITE_1_NBA-game-ou-over",
+          "marketName": "Derrick White Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "DERRICK_WHITE_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "DERRICK_WHITE_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-128",
+          "bookOdds": "-151",
+          "fairOverUnder": "5.5",
+          "bookOverUnder": "5.5",
+          "openFairOdds": "-134",
+          "openBookOdds": "-165",
+          "openFairOverUnder": "5.5",
+          "openBookOverUnder": "5.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-146",
+              "overUnder": "5.5",
+              "lastUpdatedAt": "2026-01-28T07:15:03.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.553279640&selectionId=22613512"
+            }
+          }
+        },
+        "assists-JAYLEN_BROWN_1_NBA-game-ou-over": {
+          "oddID": "assists-JAYLEN_BROWN_1_NBA-game-ou-over",
+          "opposingOddID": "assists-JAYLEN_BROWN_1_NBA-game-ou-under",
+          "marketName": "Jaylen Brown Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "JAYLEN_BROWN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "JAYLEN_BROWN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-114",
+          "bookOdds": "-133",
+          "fairOverUnder": "4.5",
+          "bookOverUnder": "4.5",
+          "openFairOdds": "-112",
+          "openBookOdds": "-135",
+          "openFairOverUnder": "4.5",
+          "openBookOverUnder": "4.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-136",
+              "overUnder": "4.5",
+              "lastUpdatedAt": "2026-01-28T07:15:03.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.553279524&selectionId=15552471",
+              "altLines": [
+                {
+                  "odds": "-4500",
+                  "overUnder": "1.5",
+                  "lastUpdatedAt": "2026-01-28T05:03:57.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "-310",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2026-01-28T07:15:03.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+162",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2026-01-28T07:15:03.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+560",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2026-01-28T07:15:03.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1500",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-01-28T07:15:03.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "assists-JAYLEN_BROWN_1_NBA-game-ou-under": {
+          "oddID": "assists-JAYLEN_BROWN_1_NBA-game-ou-under",
+          "opposingOddID": "assists-JAYLEN_BROWN_1_NBA-game-ou-over",
+          "marketName": "Jaylen Brown Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "JAYLEN_BROWN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "JAYLEN_BROWN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+114",
+          "bookOdds": "+100",
+          "fairOverUnder": "4.5",
+          "bookOverUnder": "4.5",
+          "openFairOdds": "+112",
+          "openBookOdds": "-105",
+          "openFairOverUnder": "4.5",
+          "openBookOverUnder": "4.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+102",
+              "overUnder": "4.5",
+              "lastUpdatedAt": "2026-01-28T07:15:03.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.553279524&selectionId=15552472"
+            }
+          }
+        },
+        "blocks-ANFERNEE_SIMONS_1_NBA-game-ou-over": {
+          "oddID": "blocks-ANFERNEE_SIMONS_1_NBA-game-ou-over",
+          "opposingOddID": "blocks-ANFERNEE_SIMONS_1_NBA-game-ou-under",
+          "statID": "blocks",
+          "statEntityID": "ANFERNEE_SIMONS_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "ANFERNEE_SIMONS_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+360",
+          "bookOdds": "+325",
+          "fairOverUnder": "0.5",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "+358",
+          "openBookOdds": "+325",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {},
+          "marketName": "Anfernee Simons Blocks Over/Under"
+        },
+        "blocks-ANFERNEE_SIMONS_1_NBA-game-ou-under": {
+          "oddID": "blocks-ANFERNEE_SIMONS_1_NBA-game-ou-under",
+          "opposingOddID": "blocks-ANFERNEE_SIMONS_1_NBA-game-ou-over",
+          "statID": "blocks",
+          "statEntityID": "ANFERNEE_SIMONS_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "ANFERNEE_SIMONS_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-360",
+          "fairOverUnder": "0.5",
+          "openFairOdds": "-358",
+          "openFairOverUnder": "0.5",
+          "scoringSupported": true,
+          "marketName": "Anfernee Simons Blocks Over/Under",
+          "bookOdds": "-556",
+          "bookOverUnder": "0.5",
+          "byBookmaker": {},
+          "openBookOdds": "-556",
+          "openBookOverUnder": "0.5"
+        },
+        "blocks-DERRICK_WHITE_1_NBA-game-ou-over": {
+          "oddID": "blocks-DERRICK_WHITE_1_NBA-game-ou-over",
+          "opposingOddID": "blocks-DERRICK_WHITE_1_NBA-game-ou-under",
+          "marketName": "Derrick White Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "DERRICK_WHITE_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "DERRICK_WHITE_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+118",
+          "bookOdds": "+112",
+          "fairOverUnder": "1.5",
+          "bookOverUnder": "1.5",
+          "openFairOdds": "+132",
+          "openBookOdds": "+120",
+          "openFairOverUnder": "1.5",
+          "openBookOverUnder": "1.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        },
+        "blocks-DERRICK_WHITE_1_NBA-game-ou-under": {
+          "oddID": "blocks-DERRICK_WHITE_1_NBA-game-ou-under",
+          "opposingOddID": "blocks-DERRICK_WHITE_1_NBA-game-ou-over",
+          "marketName": "Derrick White Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "DERRICK_WHITE_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "DERRICK_WHITE_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-118",
+          "fairOverUnder": "1.5",
+          "openFairOdds": "-132",
+          "openFairOverUnder": "1.5",
+          "scoringSupported": true,
+          "bookOdds": "-126",
+          "bookOverUnder": "1.5",
+          "byBookmaker": {},
+          "openBookOdds": "+100",
+          "openBookOverUnder": "1.5"
+        },
+        "blocks-JAYLEN_BROWN_1_NBA-game-ou-over": {
+          "oddID": "blocks-JAYLEN_BROWN_1_NBA-game-ou-over",
+          "opposingOddID": "blocks-JAYLEN_BROWN_1_NBA-game-ou-under",
+          "marketName": "Jaylen Brown Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "JAYLEN_BROWN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "JAYLEN_BROWN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+182",
+          "bookOdds": "+160",
+          "fairOverUnder": "0.5",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "+176",
+          "openBookOdds": "+160",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        },
+        "blocks-JAYLEN_BROWN_1_NBA-game-ou-under": {
+          "oddID": "blocks-JAYLEN_BROWN_1_NBA-game-ou-under",
+          "opposingOddID": "blocks-JAYLEN_BROWN_1_NBA-game-ou-over",
+          "marketName": "Jaylen Brown Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "JAYLEN_BROWN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "JAYLEN_BROWN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-182",
+          "fairOverUnder": "0.5",
+          "openFairOdds": "-176",
+          "openFairOverUnder": "0.5",
+          "scoringSupported": true,
+          "bookOdds": "-233",
+          "bookOverUnder": "0.5",
+          "byBookmaker": {},
+          "openBookOdds": "-233",
+          "openBookOverUnder": "0.5"
+        },
+        "points-ANFERNEE_SIMONS_1_NBA-game-ou-over": {
+          "oddID": "points-ANFERNEE_SIMONS_1_NBA-game-ou-over",
+          "opposingOddID": "points-ANFERNEE_SIMONS_1_NBA-game-ou-under",
+          "statID": "points",
+          "statEntityID": "ANFERNEE_SIMONS_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "ANFERNEE_SIMONS_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-101",
+          "bookOdds": "-115",
+          "fairOverUnder": "15.5",
+          "bookOverUnder": "14.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "-125",
+          "openFairOverUnder": "17",
+          "openBookOverUnder": "15.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-114",
+              "overUnder": "14.5",
+              "lastUpdatedAt": "2026-01-28T07:15:03.000Z",
+              "available": true,
+              "altLines": [
+                {
+                  "odds": "-430",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-01-28T07:15:03.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-102",
+                  "overUnder": "15.5",
+                  "lastUpdatedAt": "2026-01-28T05:39:10.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "+280",
+                  "overUnder": "19.5",
+                  "lastUpdatedAt": "2026-01-28T07:15:03.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+800",
+                  "overUnder": "24.5",
+                  "lastUpdatedAt": "2026-01-28T07:15:03.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1700",
+                  "overUnder": "29.5",
+                  "lastUpdatedAt": "2026-01-28T07:15:03.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+3500",
+                  "overUnder": "34.5",
+                  "lastUpdatedAt": "2026-01-28T05:39:10.000Z",
+                  "available": false
+                }
+              ],
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.553280255&selectionId=26870488"
+            }
+          },
+          "marketName": "Anfernee Simons Points Over/Under"
+        },
+        "points-ANFERNEE_SIMONS_1_NBA-game-ou-under": {
+          "oddID": "points-ANFERNEE_SIMONS_1_NBA-game-ou-under",
+          "opposingOddID": "points-ANFERNEE_SIMONS_1_NBA-game-ou-over",
+          "statID": "points",
+          "statEntityID": "ANFERNEE_SIMONS_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "ANFERNEE_SIMONS_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+101",
+          "bookOdds": "-114",
+          "fairOverUnder": "15.5",
+          "bookOverUnder": "14.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "-105",
+          "openFairOverUnder": "17",
+          "openBookOverUnder": "15.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-114",
+              "overUnder": "14.5",
+              "lastUpdatedAt": "2026-01-28T07:15:03.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.553280255&selectionId=26870489",
+              "altLines": [
+                {
+                  "odds": "-130",
+                  "overUnder": "15.5",
+                  "lastUpdatedAt": "2026-01-28T05:39:10.000Z",
+                  "available": false
+                }
+              ]
+            }
+          },
+          "marketName": "Anfernee Simons Points Over/Under"
+        },
+        "points-DERRICK_WHITE_1_NBA-game-ou-over": {
+          "oddID": "points-DERRICK_WHITE_1_NBA-game-ou-over",
+          "opposingOddID": "points-DERRICK_WHITE_1_NBA-game-ou-under",
+          "marketName": "Derrick White Points Over/Under",
+          "statID": "points",
+          "statEntityID": "DERRICK_WHITE_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "DERRICK_WHITE_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+111",
+          "bookOdds": "-102",
+          "fairOverUnder": "18.5",
+          "bookOverUnder": "18.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "-115",
+          "openFairOverUnder": "18.5",
+          "openBookOverUnder": "18.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+100",
+              "overUnder": "18.5",
+              "lastUpdatedAt": "2026-01-28T07:15:03.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.553279638&selectionId=22613511",
+              "altLines": [
+                {
+                  "odds": "-1800",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-01-28T07:15:03.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-290",
+                  "overUnder": "14.5",
+                  "lastUpdatedAt": "2026-01-28T07:15:03.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+128",
+                  "overUnder": "19.5",
+                  "lastUpdatedAt": "2026-01-28T07:15:03.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+360",
+                  "overUnder": "24.5",
+                  "lastUpdatedAt": "2026-01-28T07:15:03.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1060",
+                  "overUnder": "29.5",
+                  "lastUpdatedAt": "2026-01-28T07:15:03.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+2500",
+                  "overUnder": "34.5",
+                  "lastUpdatedAt": "2026-01-28T07:15:03.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "points-DERRICK_WHITE_1_NBA-game-ou-under": {
+          "oddID": "points-DERRICK_WHITE_1_NBA-game-ou-under",
+          "opposingOddID": "points-DERRICK_WHITE_1_NBA-game-ou-over",
+          "marketName": "Derrick White Points Over/Under",
+          "statID": "points",
+          "statEntityID": "DERRICK_WHITE_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "DERRICK_WHITE_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-111",
+          "bookOdds": "-128",
+          "fairOverUnder": "18.5",
+          "bookOverUnder": "18.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "-115",
+          "openFairOverUnder": "18.5",
+          "openBookOverUnder": "18.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-132",
+              "overUnder": "18.5",
+              "lastUpdatedAt": "2026-01-28T07:15:03.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.553279638&selectionId=22613512"
+            }
+          }
+        },
+        "points-JAYLEN_BROWN_1_NBA-game-ou-over": {
+          "oddID": "points-JAYLEN_BROWN_1_NBA-game-ou-over",
+          "opposingOddID": "points-JAYLEN_BROWN_1_NBA-game-ou-under",
+          "marketName": "Jaylen Brown Points Over/Under",
+          "statID": "points",
+          "statEntityID": "JAYLEN_BROWN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "JAYLEN_BROWN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+115",
+          "bookOdds": "-117",
+          "fairOverUnder": "30.5",
+          "bookOverUnder": "29.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "-115",
+          "openFairOverUnder": "31.5",
+          "openBookOverUnder": "30.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-118",
+              "overUnder": "29.5",
+              "lastUpdatedAt": "2026-01-28T07:15:03.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.553279521&selectionId=15552471",
+              "altLines": [
+                {
+                  "odds": "-1450",
+                  "overUnder": "19.5",
+                  "lastUpdatedAt": "2026-01-28T07:15:03.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-340",
+                  "overUnder": "24.5",
+                  "lastUpdatedAt": "2026-01-28T07:15:03.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+230",
+                  "overUnder": "34.5",
+                  "lastUpdatedAt": "2026-01-28T07:15:03.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+560",
+                  "overUnder": "39.5",
+                  "lastUpdatedAt": "2026-01-28T07:15:03.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1300",
+                  "overUnder": "44.5",
+                  "lastUpdatedAt": "2026-01-28T07:15:03.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+3500",
+                  "overUnder": "49.5",
+                  "lastUpdatedAt": "2026-01-28T07:15:03.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "points-JAYLEN_BROWN_1_NBA-game-ou-under": {
+          "oddID": "points-JAYLEN_BROWN_1_NBA-game-ou-under",
+          "opposingOddID": "points-JAYLEN_BROWN_1_NBA-game-ou-over",
+          "marketName": "Jaylen Brown Points Over/Under",
+          "statID": "points",
+          "statEntityID": "JAYLEN_BROWN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "JAYLEN_BROWN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-115",
+          "bookOdds": "-113",
+          "fairOverUnder": "30.5",
+          "bookOverUnder": "29.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "-115",
+          "openFairOverUnder": "31.5",
+          "openBookOverUnder": "30.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-114",
+              "overUnder": "29.5",
+              "lastUpdatedAt": "2026-01-28T07:15:03.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.553279521&selectionId=15552472"
+            }
+          }
+        },
+        "rebounds-ANFERNEE_SIMONS_1_NBA-game-ou-over": {
+          "oddID": "rebounds-ANFERNEE_SIMONS_1_NBA-game-ou-over",
+          "opposingOddID": "rebounds-ANFERNEE_SIMONS_1_NBA-game-ou-under",
+          "statID": "rebounds",
+          "statEntityID": "ANFERNEE_SIMONS_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "ANFERNEE_SIMONS_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+139",
+          "bookOdds": "-161",
+          "fairOverUnder": "3.5",
+          "bookOverUnder": "2.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "+120",
+          "openFairOverUnder": "3",
+          "openBookOverUnder": "3.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-154",
+              "overUnder": "2.5",
+              "lastUpdatedAt": "2026-01-28T07:15:03.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.553280256&selectionId=26870488",
+              "altLines": [
+                {
+                  "odds": "+154",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2026-01-28T07:15:03.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+680",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2026-01-28T07:15:03.000Z",
+                  "available": true
+                }
+              ]
+            }
+          },
+          "marketName": "Anfernee Simons Rebounds Over/Under"
+        },
+        "rebounds-ANFERNEE_SIMONS_1_NBA-game-ou-under": {
+          "oddID": "rebounds-ANFERNEE_SIMONS_1_NBA-game-ou-under",
+          "opposingOddID": "rebounds-ANFERNEE_SIMONS_1_NBA-game-ou-over",
+          "statID": "rebounds",
+          "statEntityID": "ANFERNEE_SIMONS_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "ANFERNEE_SIMONS_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-139",
+          "bookOdds": "+120",
+          "fairOverUnder": "3.5",
+          "bookOverUnder": "2.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "-170",
+          "openFairOverUnder": "3",
+          "openBookOverUnder": "3.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+116",
+              "overUnder": "2.5",
+              "lastUpdatedAt": "2026-01-28T07:15:03.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.553280256&selectionId=26870489"
+            }
+          },
+          "marketName": "Anfernee Simons Rebounds Over/Under"
+        },
+        "rebounds-DERRICK_WHITE_1_NBA-game-ou-over": {
+          "oddID": "rebounds-DERRICK_WHITE_1_NBA-game-ou-over",
+          "opposingOddID": "rebounds-DERRICK_WHITE_1_NBA-game-ou-under",
+          "marketName": "Derrick White Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "DERRICK_WHITE_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "DERRICK_WHITE_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+112",
+          "bookOdds": "-102",
+          "fairOverUnder": "5.5",
+          "bookOverUnder": "5.5",
+          "openFairOdds": "+137",
+          "openBookOdds": "-160",
+          "openFairOverUnder": "5.5",
+          "openBookOverUnder": "4.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-102",
+              "overUnder": "5.5",
+              "lastUpdatedAt": "2026-01-28T07:15:03.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.553279639&selectionId=22613511",
+              "altLines": [
+                {
+                  "odds": "-520",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2026-01-28T07:15:03.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-158",
+                  "overUnder": "4.5",
+                  "lastUpdatedAt": "2026-01-28T04:47:42.995Z",
+                  "available": false
+                },
+                {
+                  "odds": "+340",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2026-01-28T07:15:03.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+900",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-01-28T07:15:03.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+2500",
+                  "overUnder": "11.5",
+                  "lastUpdatedAt": "2026-01-28T05:41:21.000Z",
+                  "available": false
+                }
+              ]
+            }
+          }
+        },
+        "rebounds-DERRICK_WHITE_1_NBA-game-ou-under": {
+          "oddID": "rebounds-DERRICK_WHITE_1_NBA-game-ou-under",
+          "opposingOddID": "rebounds-DERRICK_WHITE_1_NBA-game-ou-over",
+          "marketName": "Derrick White Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "DERRICK_WHITE_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "DERRICK_WHITE_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-112",
+          "bookOdds": "-131",
+          "fairOverUnder": "5.5",
+          "bookOverUnder": "5.5",
+          "openFairOdds": "-137",
+          "openBookOdds": "+110",
+          "openFairOverUnder": "5.5",
+          "openBookOverUnder": "4.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-130",
+              "overUnder": "5.5",
+              "lastUpdatedAt": "2026-01-28T07:15:03.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.553279639&selectionId=22613512",
+              "altLines": [
+                {
+                  "odds": "+118",
+                  "overUnder": "4.5",
+                  "lastUpdatedAt": "2026-01-28T04:47:42.995Z",
+                  "available": false
+                }
+              ]
+            }
+          }
+        },
+        "rebounds-JAYLEN_BROWN_1_NBA-game-ou-over": {
+          "oddID": "rebounds-JAYLEN_BROWN_1_NBA-game-ou-over",
+          "opposingOddID": "rebounds-JAYLEN_BROWN_1_NBA-game-ou-under",
+          "marketName": "Jaylen Brown Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "JAYLEN_BROWN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "JAYLEN_BROWN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-115",
+          "bookOdds": "-135",
+          "fairOverUnder": "7.5",
+          "bookOverUnder": "7.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "-125",
+          "openFairOverUnder": "8",
+          "openBookOverUnder": "7.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-148",
+              "overUnder": "7.5",
+              "lastUpdatedAt": "2026-01-28T07:15:03.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.553279523&selectionId=15552471",
+              "altLines": [
+                {
+                  "odds": "-4000",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2026-01-28T05:03:57.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "-530",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2026-01-28T07:15:03.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+172",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-01-28T07:15:03.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+480",
+                  "overUnder": "11.5",
+                  "lastUpdatedAt": "2026-01-28T07:15:03.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1200",
+                  "overUnder": "13.5",
+                  "lastUpdatedAt": "2026-01-28T07:15:03.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+3500",
+                  "overUnder": "15.5",
+                  "lastUpdatedAt": "2026-01-28T07:15:03.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "rebounds-JAYLEN_BROWN_1_NBA-game-ou-under": {
+          "oddID": "rebounds-JAYLEN_BROWN_1_NBA-game-ou-under",
+          "opposingOddID": "rebounds-JAYLEN_BROWN_1_NBA-game-ou-over",
+          "marketName": "Jaylen Brown Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "JAYLEN_BROWN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "JAYLEN_BROWN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+115",
+          "bookOdds": "+100",
+          "fairOverUnder": "7.5",
+          "bookOverUnder": "7.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "-115",
+          "openFairOverUnder": "8",
+          "openBookOverUnder": "7.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+112",
+              "overUnder": "7.5",
+              "lastUpdatedAt": "2026-01-28T07:15:03.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.553279523&selectionId=15552472"
+            }
+          }
+        },
+        "steals-ANFERNEE_SIMONS_1_NBA-game-ou-over": {
+          "oddID": "steals-ANFERNEE_SIMONS_1_NBA-game-ou-over",
+          "opposingOddID": "steals-ANFERNEE_SIMONS_1_NBA-game-ou-under",
+          "statID": "steals",
+          "statEntityID": "ANFERNEE_SIMONS_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "ANFERNEE_SIMONS_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-126",
+          "bookOdds": "-150",
+          "fairOverUnder": "0.5",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "-132",
+          "openBookOdds": "-145",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {},
+          "marketName": "Anfernee Simons Steals Over/Under"
+        },
+        "steals-ANFERNEE_SIMONS_1_NBA-game-ou-under": {
+          "oddID": "steals-ANFERNEE_SIMONS_1_NBA-game-ou-under",
+          "opposingOddID": "steals-ANFERNEE_SIMONS_1_NBA-game-ou-over",
+          "statID": "steals",
+          "statEntityID": "ANFERNEE_SIMONS_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "ANFERNEE_SIMONS_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+126",
+          "fairOverUnder": "0.5",
+          "openFairOdds": "+132",
+          "openFairOverUnder": "0.5",
+          "scoringSupported": true,
+          "marketName": "Anfernee Simons Steals Over/Under",
+          "bookOdds": "+110",
+          "bookOverUnder": "0.5",
+          "byBookmaker": {},
+          "openBookOdds": "+110",
+          "openBookOverUnder": "0.5"
+        },
+        "steals-DERRICK_WHITE_1_NBA-game-ou-over": {
+          "oddID": "steals-DERRICK_WHITE_1_NBA-game-ou-over",
+          "opposingOddID": "steals-DERRICK_WHITE_1_NBA-game-ou-under",
+          "marketName": "Derrick White Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "DERRICK_WHITE_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "DERRICK_WHITE_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+148",
+          "bookOdds": "+150",
+          "fairOverUnder": "1.5",
+          "bookOverUnder": "1.5",
+          "openFairOdds": "+171",
+          "openBookOdds": "+155",
+          "openFairOverUnder": "1.5",
+          "openBookOverUnder": "1.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        },
+        "steals-DERRICK_WHITE_1_NBA-game-ou-under": {
+          "oddID": "steals-DERRICK_WHITE_1_NBA-game-ou-under",
+          "opposingOddID": "steals-DERRICK_WHITE_1_NBA-game-ou-over",
+          "marketName": "Derrick White Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "DERRICK_WHITE_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "DERRICK_WHITE_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-148",
+          "fairOverUnder": "1.5",
+          "openFairOdds": "-171",
+          "openFairOverUnder": "1.5",
+          "scoringSupported": true,
+          "bookOdds": "-144",
+          "bookOverUnder": "1.5",
+          "byBookmaker": {},
+          "openBookOdds": "+100",
+          "openBookOverUnder": "1.5"
+        },
+        "steals-JAYLEN_BROWN_1_NBA-game-ou-over": {
+          "oddID": "steals-JAYLEN_BROWN_1_NBA-game-ou-over",
+          "opposingOddID": "steals-JAYLEN_BROWN_1_NBA-game-ou-under",
+          "marketName": "Jaylen Brown Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "JAYLEN_BROWN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "JAYLEN_BROWN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+136",
+          "bookOdds": "+135",
+          "fairOverUnder": "1.5",
+          "bookOverUnder": "1.5",
+          "openFairOdds": "+154",
+          "openBookOdds": "+140",
+          "openFairOverUnder": "1.5",
+          "openBookOverUnder": "1.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        },
+        "steals-JAYLEN_BROWN_1_NBA-game-ou-under": {
+          "oddID": "steals-JAYLEN_BROWN_1_NBA-game-ou-under",
+          "opposingOddID": "steals-JAYLEN_BROWN_1_NBA-game-ou-over",
+          "marketName": "Jaylen Brown Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "JAYLEN_BROWN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "JAYLEN_BROWN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-136",
+          "fairOverUnder": "1.5",
+          "openFairOdds": "-154",
+          "openFairOverUnder": "1.5",
+          "scoringSupported": true,
+          "bookOdds": "-137",
+          "bookOverUnder": "1.5",
+          "byBookmaker": {},
+          "openBookOdds": "+100",
+          "openBookOverUnder": "1.5"
+        },
+        "points-LUKA_GARZA_1_NBA-game-ou-over": {
+          "oddID": "points-LUKA_GARZA_1_NBA-game-ou-over",
+          "opposingOddID": "points-LUKA_GARZA_1_NBA-game-ou-under",
+          "statID": "points",
+          "statEntityID": "LUKA_GARZA_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "LUKA_GARZA_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+126",
+          "bookOdds": "-123",
+          "fairOverUnder": "9.5",
+          "bookOverUnder": "8.5",
+          "openFairOdds": "-112",
+          "openBookOdds": "-130",
+          "openFairOverUnder": "8.5",
+          "openBookOverUnder": "8.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-128",
+              "overUnder": "8.5",
+              "lastUpdatedAt": "2026-01-28T07:15:03.000Z",
+              "available": true,
+              "altLines": [
+                {
+                  "odds": "+108",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-01-28T07:15:03.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+400",
+                  "overUnder": "14.5",
+                  "lastUpdatedAt": "2026-01-28T07:15:03.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1100",
+                  "overUnder": "19.5",
+                  "lastUpdatedAt": "2026-01-28T07:15:03.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+2500",
+                  "overUnder": "24.5",
+                  "lastUpdatedAt": "2026-01-28T05:06:23.000Z",
+                  "available": false
+                }
+              ],
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.553280366&selectionId=41844619"
+            }
+          },
+          "marketName": "Luka Garza Points Over/Under"
+        },
+        "points-LUKA_GARZA_1_NBA-game-ou-under": {
+          "oddID": "points-LUKA_GARZA_1_NBA-game-ou-under",
+          "opposingOddID": "points-LUKA_GARZA_1_NBA-game-ou-over",
+          "statID": "points",
+          "statEntityID": "LUKA_GARZA_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "LUKA_GARZA_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-126",
+          "bookOdds": "-109",
+          "fairOverUnder": "9.5",
+          "bookOverUnder": "8.5",
+          "openFairOdds": "+112",
+          "openBookOdds": "-102",
+          "openFairOverUnder": "8.5",
+          "openBookOverUnder": "8.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-104",
+              "overUnder": "8.5",
+              "lastUpdatedAt": "2026-01-28T07:15:03.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.553280366&selectionId=41844620"
+            }
+          },
+          "marketName": "Luka Garza Points Over/Under"
+        },
+        "rebounds-LUKA_GARZA_1_NBA-game-ou-over": {
+          "oddID": "rebounds-LUKA_GARZA_1_NBA-game-ou-over",
+          "opposingOddID": "rebounds-LUKA_GARZA_1_NBA-game-ou-under",
+          "statID": "rebounds",
+          "statEntityID": "LUKA_GARZA_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "LUKA_GARZA_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-124",
+          "bookOdds": "-145",
+          "fairOverUnder": "4.5",
+          "bookOverUnder": "4.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "-146",
+          "openFairOverUnder": "5",
+          "openBookOverUnder": "4.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-146",
+              "overUnder": "4.5",
+              "lastUpdatedAt": "2026-01-28T07:15:03.000Z",
+              "available": true,
+              "altLines": [
+                {
+                  "odds": "-280",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2026-01-28T07:15:03.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+126",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2026-01-28T07:15:03.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+350",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2026-01-28T07:15:03.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+800",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-01-28T07:15:03.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1500",
+                  "overUnder": "11.5",
+                  "lastUpdatedAt": "2026-01-28T07:15:03.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+3000",
+                  "overUnder": "13.5",
+                  "lastUpdatedAt": "2026-01-28T05:39:10.000Z",
+                  "available": false
+                }
+              ],
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.553280367&selectionId=41844619"
+            }
+          },
+          "marketName": "Luka Garza Rebounds Over/Under"
+        },
+        "rebounds-LUKA_GARZA_1_NBA-game-ou-under": {
+          "oddID": "rebounds-LUKA_GARZA_1_NBA-game-ou-under",
+          "opposingOddID": "rebounds-LUKA_GARZA_1_NBA-game-ou-over",
+          "statID": "rebounds",
+          "statEntityID": "LUKA_GARZA_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "LUKA_GARZA_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+124",
+          "bookOdds": "+110",
+          "fairOverUnder": "4.5",
+          "bookOverUnder": "4.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "+110",
+          "openFairOverUnder": "5",
+          "openBookOverUnder": "4.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+110",
+              "overUnder": "4.5",
+              "lastUpdatedAt": "2026-01-28T07:15:03.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.553280367&selectionId=41844620"
+            }
+          },
+          "marketName": "Luka Garza Rebounds Over/Under"
+        }
+      },
+      "players": {
+        "DERRICK_WHITE_1_NBA": {
+          "playerID": "DERRICK_WHITE_1_NBA",
+          "teamID": "BOSTON_CELTICS_NBA",
+          "firstName": "Derrick",
+          "lastName": "White",
+          "name": "Derrick White"
+        },
+        "DYSON_DANIELS_1_NBA": {
+          "playerID": "DYSON_DANIELS_1_NBA",
+          "teamID": "ATLANTA_HAWKS_NBA",
+          "firstName": "Dyson",
+          "lastName": "Daniels",
+          "name": "Dyson Daniels"
+        },
+        "JALEN_JOHNSON_1_NBA": {
+          "playerID": "JALEN_JOHNSON_1_NBA",
+          "teamID": "ATLANTA_HAWKS_NBA",
+          "firstName": "Jalen",
+          "lastName": "Johnson",
+          "name": "Jalen Johnson"
+        },
+        "JAYLEN_BROWN_1_NBA": {
+          "playerID": "JAYLEN_BROWN_1_NBA",
+          "teamID": "BOSTON_CELTICS_NBA",
+          "firstName": "Jaylen",
+          "lastName": "Brown",
+          "name": "Jaylen Brown"
+        },
+        "NEEMIAS_QUETA_1_NBA": {
+          "playerID": "NEEMIAS_QUETA_1_NBA",
+          "teamID": "BOSTON_CELTICS_NBA",
+          "firstName": "Neemias",
+          "lastName": "Queta",
+          "name": "Neemias Queta"
+        },
+        "NICKEIL_ALEXANDERWALKER_1_NBA": {
+          "playerID": "NICKEIL_ALEXANDERWALKER_1_NBA",
+          "teamID": "ATLANTA_HAWKS_NBA",
+          "firstName": "Nickeil",
+          "lastName": "Alexander-Walker",
+          "name": "Nickeil Alexander-Walker"
+        },
+        "ONYEKA_OKONGWU_1_NBA": {
+          "playerID": "ONYEKA_OKONGWU_1_NBA",
+          "teamID": "ATLANTA_HAWKS_NBA",
+          "firstName": "Onyeka",
+          "lastName": "Okongwu",
+          "name": "Onyeka Okongwu"
+        },
+        "PAYTON_PRITCHARD_1_NBA": {
+          "playerID": "PAYTON_PRITCHARD_1_NBA",
+          "teamID": "BOSTON_CELTICS_NBA",
+          "firstName": "Payton",
+          "lastName": "Pritchard",
+          "name": "Payton Pritchard"
+        },
+        "SAM_HAUSER_1_NBA": {
+          "playerID": "SAM_HAUSER_1_NBA",
+          "teamID": "BOSTON_CELTICS_NBA",
+          "firstName": "Sam",
+          "lastName": "Hauser",
+          "name": "Sam Hauser"
+        },
+        "ANFERNEE_SIMONS_1_NBA": {
+          "playerID": "ANFERNEE_SIMONS_1_NBA",
+          "teamID": "BOSTON_CELTICS_NBA",
+          "firstName": "Anfernee",
+          "lastName": "Simons",
+          "name": "Anfernee Simons"
+        },
+        "LUKA_GARZA_1_NBA": {
+          "playerID": "LUKA_GARZA_1_NBA",
+          "teamID": "BOSTON_CELTICS_NBA",
+          "firstName": "Luka",
+          "lastName": "Garza",
+          "name": "Luka Garza"
+        },
+        "LUKE_KENNARD_1_NBA": {
+          "playerID": "LUKE_KENNARD_1_NBA",
+          "teamID": "ATLANTA_HAWKS_NBA",
+          "firstName": "Luke",
+          "lastName": "Kennard",
+          "name": "Luke Kennard"
+        }
+      },
+      "results": {}
+    }
+  ]
+}
