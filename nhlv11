@@ -47,6 +47,7 @@ def normalize_name(val):
         return val.get("default", "")
     return val or ""
 
+
 def name_key(name):
     name = (name or "").lower().strip()
     name = re.sub(r"[^a-z\s\-']", "", name)
