@@ -1,0 +1,2129 @@
+{
+  "nextCursor": "n.1769817600000.hkwVqK6mX5lNUj2WHX0O",
+  "success": true,
+  "data": [
+    {
+      "eventID": "hkwVqK6mX5lNUj2WHX0O",
+      "sportID": "BASKETBALL",
+      "leagueID": "NBA",
+      "type": "match",
+      "teams": {
+        "home": {
+          "teamID": "WASHINGTON_WIZARDS_NBA",
+          "names": {
+            "long": "Washington Wizards",
+            "medium": "Wizards",
+            "short": "WAS",
+            "location": "Washington"
+          },
+          "colors": {
+            "primary": "#F5002F",
+            "secondary": "#002566",
+            "primaryContrast": "#000000",
+            "secondaryContrast": "#F5002F"
+          },
+          "statEntityID": "home"
+        },
+        "away": {
+          "teamID": "LOS_ANGELES_LAKERS_NBA",
+          "names": {
+            "long": "Los Angeles Lakers",
+            "medium": "Lakers",
+            "short": "LAL",
+            "location": "Los Angeles"
+          },
+          "colors": {
+            "primary": "#552582",
+            "secondary": "#FDB927",
+            "primaryContrast": "#FFFFFF",
+            "secondaryContrast": "#552582"
+          },
+          "statEntityID": "away"
+        }
+      },
+      "status": {
+        "started": false,
+        "completed": false,
+        "cancelled": false,
+        "ended": false,
+        "live": false,
+        "delayed": false,
+        "currentPeriodID": "",
+        "previousPeriodID": "",
+        "displayShort": "",
+        "displayLong": "Upcoming",
+        "inBreak": false,
+        "startsAt": "2026-01-31T00:00:00.000Z",
+        "previousStartsAt": [],
+        "hardStart": true,
+        "periods": {
+          "started": [],
+          "ended": []
+        },
+        "oddsPresent": true,
+        "oddsAvailable": true,
+        "finalized": false
+      },
+      "info": {
+        "seasonWeek": "NBA 25/26",
+        "venue": {
+          "name": "Capital One Arena",
+          "countryName": "United States",
+          "countryCode": "US",
+          "regionName": "District of Columbia",
+          "regionCode": "DC",
+          "city": "Washington",
+          "address": "601 F St NW, Washington, DC 20004",
+          "capacity": 20356
+        }
+      },
+      "links": {
+        "bookmakers": {
+          "fanduel": "https://sportsbook.fanduel.com/basketball/-/35198276",
+          "sportsbet": "https://www.sportsbet.com.au/betting/basketball---us/nba/los-angeles-lakers-at-washington-wizards-10093144",
+          "betonline": "https://sports.betonline.ag/sportsbook/basketball/nba/game/490948969",
+          "boylesports": "https://www.boylesports.com/sports/basketball/event/usa-nba/washington-wizards-v-los-angeles-lakers",
+          "ladbrokes": "https://www.ladbrokes.com.au/sports/-/-/-/32610aa3-0de6-4c30-bbdf-4180240b3e08",
+          "lowvig": "https://sports.lowvig.ag/sportsbook/basketball/nba/game/490948969",
+          "neds": "https://www.neds.com.au/sports/-/-/-/32610aa3-0de6-4c30-bbdf-4180240b3e08",
+          "paddypower": "https://www.paddypower.com/basketball/nba/los-angeles-lakers-@-washington-wizards-35198276",
+          "888sport": "https://www.888sport.com/basketball/united-states-of-america/nba/los-angeles-lakers-washington-wizards-e-7063102",
+          "betrsportsbook": "https://www.betr.com.au/sports/Basketball/107/United-States-of-America/NBA/Los-Angeles-Lakers-@-Washington-Wizards/1974449/All-Markets",
+          "coolbet": "https://www.coolbet.com/en/sports/match/4961402",
+          "matchbook": "https://www.matchbook.com/events/basketball/united-states-of-america/nba/32377441997100045",
+          "williamhill": "https://sports.williamhill.com/betting/en-gb/basketball/OB_EV38538027/los-angeles-lakers-at-washington-wizards",
+          "draftkings": "https://sportsbook.draftkings.com/event/33542360",
+          "1xbet": "https://1xbet.com/en/line/football/13589-nba/300829590-washington-wizards-los-angeles-lakers",
+          "betfairsportsbook": "https://www.betfair.com/betting/basketball/nba/los-angeles-lakers-@-washington-wizards/e-35198276",
+          "ballybet": "https://play.ballybet.com/sports#event/1024652881",
+          "betparx": "https://nj.betparx.com/kambi#event/1024652881",
+          "betrivers": "https://nj.betrivers.com/?page=sportsbook#event/1024652881",
+          "casumo": "https://www.casumo.com/en-gb/sports#event/1024652881",
+          "grosvenor": "https://www.grosvenorcasinos.com/sport#event/1024652881",
+          "leovegas": "https://www.leovegas.co.uk/betting#event/1024652881",
+          "livescorebet": "https://www.livescorebet.com/uk/sports/basketball/nba/washington-wizards-los-angeles-lakers/SBTE_2_1024652881",
+          "tabtouch": "https://www.tabtouch.mobi/tabtouch-sports/event/1024652881",
+          "virginbet": "https://www.virginbet.com/sports/basketball/nba/washington-wizards-los-angeles-lakers/SBTE_2_1024652881",
+          "betmgm": "https://sports.nj.betmgm.com/en/sports/events/18740536",
+          "caesars": "https://sportsbook.caesars.com/us/nj/bet/basketball/b40c0185-7a92-441c-993f-ee2ace17c304/los-angeles-lakers-at-washington-wizards",
+          "coral": "https://sports.coral.co.uk/event/basketball/basketball-usa/nba/was-wizards-v-la-lakers/41608522",
+          "fliff": "https://sports.getfliff.com/markets/365160_c_p_204_prematch",
+          "tab": "https://www.tab.com.au/sports/betting/Basketball/competitions/NBA/matches/Washington%20v%20LA%20Lakers",
+          "unibet": "https://www.unibet.com/betting/sports/event/1024652881",
+          "espnbet": "https://espnbet.com/sport/basketball/organization/united-states/competition/nba/event/d25eb414-8733-4c3c-bdcb-402082bbb642",
+          "thescorebet": "https://thescore.bet/sport/basketball/organization/united-states/competition/nba/event/d25eb414-8733-4c3c-bdcb-402082bbb642",
+          "pointsbet": "https://pointsbet.com.au/sports/basketball/NBA/2587887",
+          "hardrockbet": "https://app.hardrock.bet/home/competition/nba/8246666198569976062",
+          "betway": "https://betway.com/en/sports/evt/16304109",
+          "bovada": "https://www.bovada.lv/sports/basketball/nba/los-angeles-lakers-washington-wizards-202601301900",
+          "betsson": "https://www.betsson.com/en/sportsbook/basketball/nba/nba?eventId=f-CfYjE9ksMUK8YWrHm6jP0A",
+          "nordicbet": "https://www.nordicbet.com/en/sportsbook/basketball/nba/nba/washington-wizards-la-lakers",
+          "playup": "https://www.playup.com.au/betting/sports/nba/washington-wizards-v-los-angeles-lakers/1797245",
+          "pinnacle": "https://www.pinnacle.com/en/basketball/nba/los-angeles-lakers-vs-washington-wizards/1622904990",
+          "everygame": "https://sports.everygame.eu/en/Bets/Basketball/NBA-Lines/Los-Angeles-Lakers-at-Washington-Wizards/2789189"
+        }
+      },
+      "odds": {
+        "points-KYSHAWN_GEORGE_1_NBA-game-ou-over": {
+          "oddID": "points-KYSHAWN_GEORGE_1_NBA-game-ou-over",
+          "opposingOddID": "points-KYSHAWN_GEORGE_1_NBA-game-ou-under",
+          "marketName": "Kyshawn George Points Over/Under",
+          "statID": "points",
+          "statEntityID": "KYSHAWN_GEORGE_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "KYSHAWN_GEORGE_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+135",
+          "bookOdds": "-105",
+          "fairOverUnder": "18.5",
+          "bookOverUnder": "17.5",
+          "openFairOdds": "+180",
+          "openBookOdds": "+164",
+          "openFairOverUnder": "19.5",
+          "openBookOverUnder": "19.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-102",
+              "overUnder": "17.5",
+              "lastUpdatedAt": "2026-01-30T10:43:38.000Z",
+              "available": true,
+              "altLines": [
+                {
+                  "odds": "-1000",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-01-30T10:43:39.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-205",
+                  "overUnder": "14.5",
+                  "lastUpdatedAt": "2026-01-30T10:43:39.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-130",
+                  "overUnder": "16.5",
+                  "lastUpdatedAt": "2026-01-30T09:58:11.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "+154",
+                  "overUnder": "19.5",
+                  "lastUpdatedAt": "2026-01-30T10:43:39.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+430",
+                  "overUnder": "24.5",
+                  "lastUpdatedAt": "2026-01-30T10:43:39.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1060",
+                  "overUnder": "29.5",
+                  "lastUpdatedAt": "2026-01-30T10:43:39.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+3000",
+                  "overUnder": "34.5",
+                  "lastUpdatedAt": "2026-01-30T10:43:39.000Z",
+                  "available": true
+                }
+              ],
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.553652258&selectionId=74706441"
+            }
+          }
+        },
+        "points-KYSHAWN_GEORGE_1_NBA-game-ou-under": {
+          "oddID": "points-KYSHAWN_GEORGE_1_NBA-game-ou-under",
+          "opposingOddID": "points-KYSHAWN_GEORGE_1_NBA-game-ou-over",
+          "marketName": "Kyshawn George Points Over/Under",
+          "statID": "points",
+          "statEntityID": "KYSHAWN_GEORGE_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "KYSHAWN_GEORGE_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-135",
+          "fairOverUnder": "18.5",
+          "openFairOdds": "-180",
+          "openFairOverUnder": "19.5",
+          "scoringSupported": true,
+          "bookOdds": "-125",
+          "bookOverUnder": "17.5",
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-130",
+              "overUnder": "17.5",
+              "lastUpdatedAt": "2026-01-30T10:43:38.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.553652258&selectionId=74706439",
+              "altLines": [
+                {
+                  "odds": "-102",
+                  "overUnder": "16.5",
+                  "lastUpdatedAt": "2026-01-30T09:58:11.000Z",
+                  "available": false
+                }
+              ]
+            }
+          },
+          "openBookOdds": "-108",
+          "openBookOverUnder": "16.5"
+        },
+        "rebounds-KYSHAWN_GEORGE_1_NBA-game-ou-over": {
+          "oddID": "rebounds-KYSHAWN_GEORGE_1_NBA-game-ou-over",
+          "opposingOddID": "rebounds-KYSHAWN_GEORGE_1_NBA-game-ou-under",
+          "marketName": "Kyshawn George Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "KYSHAWN_GEORGE_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "KYSHAWN_GEORGE_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+138",
+          "bookOdds": "-144",
+          "fairOverUnder": "6.5",
+          "bookOverUnder": "5.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "-114",
+          "openFairOverUnder": "6",
+          "openBookOverUnder": "5.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-154",
+              "overUnder": "5.5",
+              "lastUpdatedAt": "2026-01-30T10:43:38.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.553652299&selectionId=74706441",
+              "altLines": [
+                {
+                  "odds": "-700",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2026-01-30T10:43:38.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+210",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2026-01-30T10:43:38.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+470",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-01-30T10:43:38.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1200",
+                  "overUnder": "11.5",
+                  "lastUpdatedAt": "2026-01-30T10:43:38.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+3000",
+                  "overUnder": "13.5",
+                  "lastUpdatedAt": "2026-01-30T10:43:38.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "rebounds-KYSHAWN_GEORGE_1_NBA-game-ou-under": {
+          "oddID": "rebounds-KYSHAWN_GEORGE_1_NBA-game-ou-under",
+          "opposingOddID": "rebounds-KYSHAWN_GEORGE_1_NBA-game-ou-over",
+          "marketName": "Kyshawn George Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "KYSHAWN_GEORGE_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "KYSHAWN_GEORGE_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-138",
+          "bookOdds": "+108",
+          "fairOverUnder": "6.5",
+          "bookOverUnder": "5.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "-114",
+          "openFairOverUnder": "6",
+          "openBookOverUnder": "5.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+116",
+              "overUnder": "5.5",
+              "lastUpdatedAt": "2026-01-30T10:43:38.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.553652299&selectionId=74706439"
+            }
+          }
+        },
+        "assists-KYSHAWN_GEORGE_1_NBA-game-ou-over": {
+          "oddID": "assists-KYSHAWN_GEORGE_1_NBA-game-ou-over",
+          "opposingOddID": "assists-KYSHAWN_GEORGE_1_NBA-game-ou-under",
+          "marketName": "Kyshawn George Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "KYSHAWN_GEORGE_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "KYSHAWN_GEORGE_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+160",
+          "bookOdds": "-123",
+          "fairOverUnder": "6.5",
+          "bookOverUnder": "5.5",
+          "openFairOdds": "-101",
+          "openBookOdds": "-111",
+          "openFairOverUnder": "5.5",
+          "openBookOverUnder": "5.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-130",
+              "overUnder": "5.5",
+              "lastUpdatedAt": "2026-01-30T10:43:38.000Z",
+              "available": true,
+              "altLines": [
+                {
+                  "odds": "-590",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2026-01-30T10:43:38.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+255",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2026-01-30T10:43:38.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+630",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-01-30T10:43:38.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1700",
+                  "overUnder": "11.5",
+                  "lastUpdatedAt": "2026-01-30T10:43:38.000Z",
+                  "available": true
+                }
+              ],
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.553652735&selectionId=74706441"
+            }
+          }
+        },
+        "assists-KYSHAWN_GEORGE_1_NBA-game-ou-under": {
+          "oddID": "assists-KYSHAWN_GEORGE_1_NBA-game-ou-under",
+          "opposingOddID": "assists-KYSHAWN_GEORGE_1_NBA-game-ou-over",
+          "marketName": "Kyshawn George Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "KYSHAWN_GEORGE_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "KYSHAWN_GEORGE_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-160",
+          "fairOverUnder": "6.5",
+          "openFairOdds": "+101",
+          "openFairOverUnder": "5.5",
+          "scoringSupported": true,
+          "bookOdds": "-106",
+          "bookOverUnder": "5.5",
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-102",
+              "overUnder": "5.5",
+              "lastUpdatedAt": "2026-01-30T10:43:38.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.553652735&selectionId=74706439"
+            }
+          },
+          "openBookOdds": "-155",
+          "openBookOverUnder": "6.5"
+        },
+        "assists-ALEXANDRE_SARR_1_NBA-game-ou-over": {
+          "oddID": "assists-ALEXANDRE_SARR_1_NBA-game-ou-over",
+          "opposingOddID": "assists-ALEXANDRE_SARR_1_NBA-game-ou-under",
+          "marketName": "Alexandre Sarr Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "ALEXANDRE_SARR_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "ALEXANDRE_SARR_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "-104",
+          "fairOverUnder": "3",
+          "bookOverUnder": "2.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "-170",
+          "openFairOverUnder": "3",
+          "openBookOverUnder": "2.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-102",
+              "overUnder": "2.5",
+              "lastUpdatedAt": "2026-01-30T10:43:38.000Z",
+              "available": true,
+              "altLines": [
+                {
+                  "odds": "-310",
+                  "overUnder": "1.5",
+                  "lastUpdatedAt": "2026-01-30T10:43:38.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+240",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2026-01-30T10:43:38.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1100",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2026-01-30T10:43:38.000Z",
+                  "available": true
+                }
+              ],
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.553653113&selectionId=92784087"
+            }
+          }
+        },
+        "assists-ALEXANDRE_SARR_1_NBA-game-ou-under": {
+          "oddID": "assists-ALEXANDRE_SARR_1_NBA-game-ou-under",
+          "opposingOddID": "assists-ALEXANDRE_SARR_1_NBA-game-ou-over",
+          "marketName": "Alexandre Sarr Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "ALEXANDRE_SARR_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "ALEXANDRE_SARR_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "-130",
+          "fairOverUnder": "3",
+          "bookOverUnder": "2.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "+120",
+          "openFairOverUnder": "3",
+          "openBookOverUnder": "2.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-130",
+              "overUnder": "2.5",
+              "lastUpdatedAt": "2026-01-30T10:43:38.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.553653113&selectionId=92784086"
+            }
+          }
+        },
+        "assists-BILAL_COULIBALY_1_NBA-game-ou-over": {
+          "oddID": "assists-BILAL_COULIBALY_1_NBA-game-ou-over",
+          "opposingOddID": "assists-BILAL_COULIBALY_1_NBA-game-ou-under",
+          "marketName": "Bilal Coulibaly Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "BILAL_COULIBALY_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "BILAL_COULIBALY_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "-115",
+          "fairOverUnder": "3",
+          "bookOverUnder": "2.5",
+          "openFairOdds": "+104",
+          "openBookOdds": "-115",
+          "openFairOverUnder": "2.5",
+          "openBookOverUnder": "2.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-114",
+              "overUnder": "2.5",
+              "lastUpdatedAt": "2026-01-30T10:43:38.000Z",
+              "available": true,
+              "altLines": [
+                {
+                  "odds": "-330",
+                  "overUnder": "1.5",
+                  "lastUpdatedAt": "2026-01-30T10:43:38.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+220",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2026-01-30T10:43:38.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1000",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2026-01-30T10:43:38.000Z",
+                  "available": true
+                }
+              ],
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.553653473&selectionId=62134999"
+            }
+          }
+        },
+        "assists-BILAL_COULIBALY_1_NBA-game-ou-under": {
+          "oddID": "assists-BILAL_COULIBALY_1_NBA-game-ou-under",
+          "opposingOddID": "assists-BILAL_COULIBALY_1_NBA-game-ou-over",
+          "marketName": "Bilal Coulibaly Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "BILAL_COULIBALY_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "BILAL_COULIBALY_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "-114",
+          "fairOverUnder": "3",
+          "bookOverUnder": "2.5",
+          "openFairOdds": "-104",
+          "openBookOdds": "-125",
+          "openFairOverUnder": "2.5",
+          "openBookOverUnder": "2.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-114",
+              "overUnder": "2.5",
+              "lastUpdatedAt": "2026-01-30T10:43:38.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.553653473&selectionId=62135001"
+            }
+          }
+        },
+        "assists-BUB_CARRINGTON_1_NBA-game-ou-over": {
+          "oddID": "assists-BUB_CARRINGTON_1_NBA-game-ou-over",
+          "opposingOddID": "assists-BUB_CARRINGTON_1_NBA-game-ou-under",
+          "marketName": "Carlton Carrington Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "BUB_CARRINGTON_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "BUB_CARRINGTON_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+169",
+          "bookOdds": "-121",
+          "fairOverUnder": "6.5",
+          "bookOverUnder": "5.5",
+          "openFairOdds": "-112",
+          "openBookOdds": "-135",
+          "openFairOverUnder": "5.5",
+          "openBookOverUnder": "5.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-122",
+              "overUnder": "5.5",
+              "lastUpdatedAt": "2026-01-30T10:43:38.000Z",
+              "available": true,
+              "altLines": [
+                {
+                  "odds": "-480",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2026-01-30T10:43:38.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+250",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2026-01-30T10:43:38.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+600",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-01-30T10:43:38.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1500",
+                  "overUnder": "11.5",
+                  "lastUpdatedAt": "2026-01-30T10:43:38.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+3500",
+                  "overUnder": "13.5",
+                  "lastUpdatedAt": "2026-01-30T08:52:28.000Z",
+                  "available": false
+                }
+              ],
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.553653436&selectionId=63114653"
+            }
+          }
+        },
+        "assists-BUB_CARRINGTON_1_NBA-game-ou-under": {
+          "oddID": "assists-BUB_CARRINGTON_1_NBA-game-ou-under",
+          "opposingOddID": "assists-BUB_CARRINGTON_1_NBA-game-ou-over",
+          "marketName": "Carlton Carrington Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "BUB_CARRINGTON_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "BUB_CARRINGTON_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-169",
+          "bookOdds": "-109",
+          "fairOverUnder": "6.5",
+          "bookOverUnder": "5.5",
+          "openFairOdds": "+112",
+          "openBookOdds": "-105",
+          "openFairOverUnder": "5.5",
+          "openBookOverUnder": "5.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-108",
+              "overUnder": "5.5",
+              "lastUpdatedAt": "2026-01-30T10:43:38.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.553653436&selectionId=63114652"
+            }
+          }
+        },
+        "blocks-ALEXANDRE_SARR_1_NBA-game-ou-over": {
+          "oddID": "blocks-ALEXANDRE_SARR_1_NBA-game-ou-over",
+          "opposingOddID": "blocks-ALEXANDRE_SARR_1_NBA-game-ou-under",
+          "marketName": "Alexandre Sarr Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "ALEXANDRE_SARR_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "ALEXANDRE_SARR_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-144",
+          "bookOdds": "-175",
+          "fairOverUnder": "1.5",
+          "bookOverUnder": "1.5",
+          "openFairOdds": "-168",
+          "openBookOdds": "-185",
+          "openFairOverUnder": "1.5",
+          "openBookOverUnder": "1.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-178",
+              "overUnder": "1.5",
+              "lastUpdatedAt": "2026-01-30T10:43:33.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.553662569&selectionId=92784087",
+              "altLines": [
+                {
+                  "odds": "-1000",
+                  "overUnder": "0.5",
+                  "lastUpdatedAt": "2026-01-30T10:43:33.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+178",
+                  "overUnder": "2.5",
+                  "lastUpdatedAt": "2026-01-30T10:43:33.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+470",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2026-01-30T10:43:33.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+920",
+                  "overUnder": "4.5",
+                  "lastUpdatedAt": "2026-01-30T10:43:33.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "blocks-ALEXANDRE_SARR_1_NBA-game-ou-under": {
+          "oddID": "blocks-ALEXANDRE_SARR_1_NBA-game-ou-under",
+          "opposingOddID": "blocks-ALEXANDRE_SARR_1_NBA-game-ou-over",
+          "marketName": "Alexandre Sarr Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "ALEXANDRE_SARR_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "ALEXANDRE_SARR_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+144",
+          "fairOverUnder": "1.5",
+          "openFairOdds": "+168",
+          "openFairOverUnder": "1.5",
+          "scoringSupported": true,
+          "bookOdds": "+127",
+          "bookOverUnder": "1.5",
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+132",
+              "overUnder": "1.5",
+              "lastUpdatedAt": "2026-01-30T10:43:33.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.553662569&selectionId=92784086"
+            }
+          },
+          "openBookOdds": "+132",
+          "openBookOverUnder": "1.5"
+        },
+        "blocks-BILAL_COULIBALY_1_NBA-game-ou-over": {
+          "oddID": "blocks-BILAL_COULIBALY_1_NBA-game-ou-over",
+          "opposingOddID": "blocks-BILAL_COULIBALY_1_NBA-game-ou-under",
+          "marketName": "Bilal Coulibaly Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "BILAL_COULIBALY_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "BILAL_COULIBALY_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-101",
+          "bookOdds": "-123",
+          "fairOverUnder": "0.5",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "-109",
+          "openBookOdds": "-120",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        },
+        "blocks-BILAL_COULIBALY_1_NBA-game-ou-under": {
+          "oddID": "blocks-BILAL_COULIBALY_1_NBA-game-ou-under",
+          "opposingOddID": "blocks-BILAL_COULIBALY_1_NBA-game-ou-over",
+          "marketName": "Bilal Coulibaly Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "BILAL_COULIBALY_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "BILAL_COULIBALY_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+101",
+          "fairOverUnder": "0.5",
+          "openFairOdds": "+109",
+          "openFairOverUnder": "0.5",
+          "scoringSupported": true,
+          "bookOdds": "-120",
+          "bookOverUnder": "0.5",
+          "byBookmaker": {},
+          "openBookOdds": "+100",
+          "openBookOverUnder": "0.5"
+        },
+        "blocks-BUB_CARRINGTON_1_NBA-game-ou-over": {
+          "oddID": "blocks-BUB_CARRINGTON_1_NBA-game-ou-over",
+          "opposingOddID": "blocks-BUB_CARRINGTON_1_NBA-game-ou-under",
+          "marketName": "Carlton Carrington Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "BUB_CARRINGTON_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "BUB_CARRINGTON_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+328",
+          "bookOdds": "+300",
+          "fairOverUnder": "0.5",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "+275",
+          "openBookOdds": "+250",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        },
+        "blocks-BUB_CARRINGTON_1_NBA-game-ou-under": {
+          "oddID": "blocks-BUB_CARRINGTON_1_NBA-game-ou-under",
+          "opposingOddID": "blocks-BUB_CARRINGTON_1_NBA-game-ou-over",
+          "marketName": "Carlton Carrington Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "BUB_CARRINGTON_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "BUB_CARRINGTON_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-328",
+          "fairOverUnder": "0.5",
+          "openFairOdds": "-275",
+          "openFairOverUnder": "0.5",
+          "scoringSupported": true,
+          "bookOdds": "-455",
+          "bookOverUnder": "0.5",
+          "byBookmaker": {},
+          "openBookOdds": "-435",
+          "openBookOverUnder": "0.5"
+        },
+        "blocks-KYSHAWN_GEORGE_1_NBA-game-ou-over": {
+          "oddID": "blocks-KYSHAWN_GEORGE_1_NBA-game-ou-over",
+          "opposingOddID": "blocks-KYSHAWN_GEORGE_1_NBA-game-ou-under",
+          "marketName": "Kyshawn George Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "KYSHAWN_GEORGE_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "KYSHAWN_GEORGE_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-135",
+          "bookOdds": "-192",
+          "fairOverUnder": "0.5",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "-150",
+          "openBookOdds": "-165",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-192",
+              "overUnder": "0.5",
+              "lastUpdatedAt": "2026-01-30T10:43:33.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.553662576&selectionId=65507284",
+              "altLines": [
+                {
+                  "odds": "+260",
+                  "overUnder": "1.5",
+                  "lastUpdatedAt": "2026-01-30T10:43:33.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+750",
+                  "overUnder": "2.5",
+                  "lastUpdatedAt": "2026-01-30T10:37:31.000Z",
+                  "available": false
+                }
+              ]
+            }
+          }
+        },
+        "blocks-KYSHAWN_GEORGE_1_NBA-game-ou-under": {
+          "oddID": "blocks-KYSHAWN_GEORGE_1_NBA-game-ou-under",
+          "opposingOddID": "blocks-KYSHAWN_GEORGE_1_NBA-game-ou-over",
+          "marketName": "Kyshawn George Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "KYSHAWN_GEORGE_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "KYSHAWN_GEORGE_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+135",
+          "fairOverUnder": "0.5",
+          "openFairOdds": "+150",
+          "openFairOverUnder": "0.5",
+          "scoringSupported": true,
+          "bookOdds": "+105",
+          "bookOverUnder": "0.5",
+          "byBookmaker": {},
+          "openBookOdds": "+105",
+          "openBookOverUnder": "0.5"
+        },
+        "points-ALEXANDRE_SARR_1_NBA-game-ou-over": {
+          "oddID": "points-ALEXANDRE_SARR_1_NBA-game-ou-over",
+          "opposingOddID": "points-ALEXANDRE_SARR_1_NBA-game-ou-under",
+          "marketName": "Alexandre Sarr Points Over/Under",
+          "statID": "points",
+          "statEntityID": "ALEXANDRE_SARR_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "ALEXANDRE_SARR_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+124",
+          "bookOdds": "-111",
+          "fairOverUnder": "20.5",
+          "bookOverUnder": "19.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "-112",
+          "openFairOverUnder": "21",
+          "openBookOverUnder": "20.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-111",
+              "overUnder": "19.5",
+              "lastUpdatedAt": "2026-01-30T10:43:39.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.553653111&selectionId=92784087",
+              "altLines": [
+                {
+                  "odds": "-3000",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-01-30T10:43:39.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-390",
+                  "overUnder": "14.5",
+                  "lastUpdatedAt": "2026-01-30T10:43:39.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+260",
+                  "overUnder": "24.5",
+                  "lastUpdatedAt": "2026-01-30T10:43:39.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+680",
+                  "overUnder": "29.5",
+                  "lastUpdatedAt": "2026-01-30T10:43:39.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1500",
+                  "overUnder": "34.5",
+                  "lastUpdatedAt": "2026-01-30T10:43:39.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+5000",
+                  "overUnder": "39.5",
+                  "lastUpdatedAt": "2026-01-30T10:34:08.000Z",
+                  "available": false
+                }
+              ]
+            }
+          }
+        },
+        "points-ALEXANDRE_SARR_1_NBA-game-ou-under": {
+          "oddID": "points-ALEXANDRE_SARR_1_NBA-game-ou-under",
+          "opposingOddID": "points-ALEXANDRE_SARR_1_NBA-game-ou-over",
+          "marketName": "Alexandre Sarr Points Over/Under",
+          "statID": "points",
+          "statEntityID": "ALEXANDRE_SARR_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "ALEXANDRE_SARR_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-124",
+          "bookOdds": "-118",
+          "fairOverUnder": "20.5",
+          "bookOverUnder": "19.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "-115",
+          "openFairOverUnder": "21",
+          "openBookOverUnder": "20.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-118",
+              "overUnder": "19.5",
+              "lastUpdatedAt": "2026-01-30T10:43:38.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.553653111&selectionId=92784086"
+            }
+          }
+        },
+        "points-BILAL_COULIBALY_1_NBA-game-ou-over": {
+          "oddID": "points-BILAL_COULIBALY_1_NBA-game-ou-over",
+          "opposingOddID": "points-BILAL_COULIBALY_1_NBA-game-ou-under",
+          "marketName": "Bilal Coulibaly Points Over/Under",
+          "statID": "points",
+          "statEntityID": "BILAL_COULIBALY_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "BILAL_COULIBALY_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+140",
+          "bookOdds": "-105",
+          "fairOverUnder": "11.5",
+          "bookOverUnder": "10.5",
+          "openFairOdds": "+111",
+          "openBookOdds": "+100",
+          "openFairOverUnder": "10.5",
+          "openBookOverUnder": "10.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-112",
+              "overUnder": "10.5",
+              "lastUpdatedAt": "2026-01-30T10:43:38.000Z",
+              "available": true,
+              "altLines": [
+                {
+                  "odds": "-154",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-01-30T10:43:39.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+290",
+                  "overUnder": "14.5",
+                  "lastUpdatedAt": "2026-01-30T10:43:39.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1060",
+                  "overUnder": "19.5",
+                  "lastUpdatedAt": "2026-01-30T10:43:39.000Z",
+                  "available": true
+                }
+              ],
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.553653471&selectionId=62134999"
+            }
+          }
+        },
+        "points-BILAL_COULIBALY_1_NBA-game-ou-under": {
+          "oddID": "points-BILAL_COULIBALY_1_NBA-game-ou-under",
+          "opposingOddID": "points-BILAL_COULIBALY_1_NBA-game-ou-over",
+          "marketName": "Bilal Coulibaly Points Over/Under",
+          "statID": "points",
+          "statEntityID": "BILAL_COULIBALY_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "BILAL_COULIBALY_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-140",
+          "bookOdds": "-123",
+          "fairOverUnder": "11.5",
+          "bookOverUnder": "10.5",
+          "openFairOdds": "-111",
+          "openBookOdds": "-125",
+          "openFairOverUnder": "10.5",
+          "openBookOverUnder": "10.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-118",
+              "overUnder": "10.5",
+              "lastUpdatedAt": "2026-01-30T10:43:38.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.553653471&selectionId=62135001"
+            }
+          }
+        },
+        "points-BUB_CARRINGTON_1_NBA-game-ou-over": {
+          "oddID": "points-BUB_CARRINGTON_1_NBA-game-ou-over",
+          "opposingOddID": "points-BUB_CARRINGTON_1_NBA-game-ou-under",
+          "marketName": "Carlton Carrington Points Over/Under",
+          "statID": "points",
+          "statEntityID": "BUB_CARRINGTON_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "BUB_CARRINGTON_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+126",
+          "bookOdds": "-114",
+          "fairOverUnder": "14.5",
+          "bookOverUnder": "13.5",
+          "openFairOdds": "+112",
+          "openBookOdds": "-125",
+          "openFairOverUnder": "14.5",
+          "openBookOverUnder": "13.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-118",
+              "overUnder": "13.5",
+              "lastUpdatedAt": "2026-01-30T10:43:38.000Z",
+              "available": true,
+              "altLines": [
+                {
+                  "odds": "-320",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-01-30T10:43:39.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+108",
+                  "overUnder": "14.5",
+                  "lastUpdatedAt": "2026-01-30T10:43:39.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+300",
+                  "overUnder": "19.5",
+                  "lastUpdatedAt": "2026-01-30T10:43:39.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+750",
+                  "overUnder": "24.5",
+                  "lastUpdatedAt": "2026-01-30T10:43:39.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1500",
+                  "overUnder": "29.5",
+                  "lastUpdatedAt": "2026-01-30T10:43:39.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+4000",
+                  "overUnder": "34.5",
+                  "lastUpdatedAt": "2026-01-30T10:43:39.000Z",
+                  "available": true
+                }
+              ],
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.553653434&selectionId=63114653"
+            }
+          }
+        },
+        "points-BUB_CARRINGTON_1_NBA-game-ou-under": {
+          "oddID": "points-BUB_CARRINGTON_1_NBA-game-ou-under",
+          "opposingOddID": "points-BUB_CARRINGTON_1_NBA-game-ou-over",
+          "marketName": "Carlton Carrington Points Over/Under",
+          "statID": "points",
+          "statEntityID": "BUB_CARRINGTON_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "BUB_CARRINGTON_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-126",
+          "bookOdds": "-114",
+          "fairOverUnder": "14.5",
+          "bookOverUnder": "13.5",
+          "openFairOdds": "-112",
+          "openBookOdds": "-105",
+          "openFairOverUnder": "14.5",
+          "openBookOverUnder": "13.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-112",
+              "overUnder": "13.5",
+              "lastUpdatedAt": "2026-01-30T10:43:38.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.553653434&selectionId=63114652"
+            }
+          }
+        },
+        "rebounds-ALEXANDRE_SARR_1_NBA-game-ou-over": {
+          "oddID": "rebounds-ALEXANDRE_SARR_1_NBA-game-ou-over",
+          "opposingOddID": "rebounds-ALEXANDRE_SARR_1_NBA-game-ou-under",
+          "marketName": "Alexandre Sarr Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "ALEXANDRE_SARR_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "ALEXANDRE_SARR_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "+100",
+          "fairOverUnder": "9",
+          "bookOverUnder": "8.5",
+          "openFairOdds": "+104",
+          "openBookOdds": "-115",
+          "openFairOverUnder": "8.5",
+          "openBookOverUnder": "8.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+104",
+              "overUnder": "8.5",
+              "lastUpdatedAt": "2026-01-30T10:43:38.000Z",
+              "available": true,
+              "altLines": [
+                {
+                  "odds": "-4500",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2026-01-30T07:08:44.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "-620",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2026-01-30T10:43:38.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-170",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2026-01-30T10:43:38.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+150",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-01-30T10:43:38.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+370",
+                  "overUnder": "11.5",
+                  "lastUpdatedAt": "2026-01-30T10:43:38.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+900",
+                  "overUnder": "13.5",
+                  "lastUpdatedAt": "2026-01-30T10:43:38.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1800",
+                  "overUnder": "15.5",
+                  "lastUpdatedAt": "2026-01-30T10:43:38.000Z",
+                  "available": true
+                }
+              ],
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.553653112&selectionId=92784087"
+            }
+          }
+        },
+        "rebounds-ALEXANDRE_SARR_1_NBA-game-ou-under": {
+          "oddID": "rebounds-ALEXANDRE_SARR_1_NBA-game-ou-under",
+          "opposingOddID": "rebounds-ALEXANDRE_SARR_1_NBA-game-ou-over",
+          "marketName": "Alexandre Sarr Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "ALEXANDRE_SARR_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "ALEXANDRE_SARR_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "-135",
+          "fairOverUnder": "9",
+          "bookOverUnder": "8.5",
+          "openFairOdds": "-104",
+          "openBookOdds": "-125",
+          "openFairOverUnder": "8.5",
+          "openBookOverUnder": "8.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-138",
+              "overUnder": "8.5",
+              "lastUpdatedAt": "2026-01-30T10:43:38.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.553653112&selectionId=92784086"
+            }
+          }
+        },
+        "rebounds-BILAL_COULIBALY_1_NBA-game-ou-over": {
+          "oddID": "rebounds-BILAL_COULIBALY_1_NBA-game-ou-over",
+          "opposingOddID": "rebounds-BILAL_COULIBALY_1_NBA-game-ou-under",
+          "marketName": "Bilal Coulibaly Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "BILAL_COULIBALY_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "BILAL_COULIBALY_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+161",
+          "bookOdds": "-125",
+          "fairOverUnder": "5.5",
+          "bookOverUnder": "4.5",
+          "openFairOdds": "-108",
+          "openBookOdds": "-130",
+          "openFairOverUnder": "4.5",
+          "openBookOverUnder": "4.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-125",
+              "overUnder": "4.5",
+              "lastUpdatedAt": "2026-01-30T10:43:38.000Z",
+              "available": true,
+              "altLines": [
+                {
+                  "odds": "-265",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2026-01-30T10:43:38.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+164",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2026-01-30T10:43:38.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+540",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2026-01-30T10:43:38.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1400",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-01-30T10:43:38.000Z",
+                  "available": true
+                }
+              ],
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.553653472&selectionId=62134999"
+            }
+          }
+        },
+        "rebounds-BILAL_COULIBALY_1_NBA-game-ou-under": {
+          "oddID": "rebounds-BILAL_COULIBALY_1_NBA-game-ou-under",
+          "opposingOddID": "rebounds-BILAL_COULIBALY_1_NBA-game-ou-over",
+          "marketName": "Bilal Coulibaly Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "BILAL_COULIBALY_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "BILAL_COULIBALY_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-161",
+          "bookOdds": "-105",
+          "fairOverUnder": "5.5",
+          "bookOverUnder": "4.5",
+          "openFairOdds": "+108",
+          "openBookOdds": "-110",
+          "openFairOverUnder": "4.5",
+          "openBookOverUnder": "4.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-106",
+              "overUnder": "4.5",
+              "lastUpdatedAt": "2026-01-30T10:43:38.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.553653472&selectionId=62135001"
+            }
+          }
+        },
+        "rebounds-BUB_CARRINGTON_1_NBA-game-ou-over": {
+          "oddID": "rebounds-BUB_CARRINGTON_1_NBA-game-ou-over",
+          "opposingOddID": "rebounds-BUB_CARRINGTON_1_NBA-game-ou-under",
+          "marketName": "Carlton Carrington Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "BUB_CARRINGTON_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "BUB_CARRINGTON_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-108",
+          "bookOdds": "-124",
+          "fairOverUnder": "3.5",
+          "bookOverUnder": "3.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "-135",
+          "openFairOverUnder": "4",
+          "openBookOverUnder": "3.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-125",
+              "overUnder": "3.5",
+              "lastUpdatedAt": "2026-01-30T10:43:38.000Z",
+              "available": true,
+              "altLines": [
+                {
+                  "odds": "+290",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2026-01-30T10:43:38.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+830",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2026-01-30T10:43:38.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1500",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-01-30T10:43:38.000Z",
+                  "available": true
+                }
+              ],
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.553653435&selectionId=63114653"
+            }
+          }
+        },
+        "rebounds-BUB_CARRINGTON_1_NBA-game-ou-under": {
+          "oddID": "rebounds-BUB_CARRINGTON_1_NBA-game-ou-under",
+          "opposingOddID": "rebounds-BUB_CARRINGTON_1_NBA-game-ou-over",
+          "marketName": "Carlton Carrington Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "BUB_CARRINGTON_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "BUB_CARRINGTON_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+108",
+          "bookOdds": "-106",
+          "fairOverUnder": "3.5",
+          "bookOverUnder": "3.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "-105",
+          "openFairOverUnder": "4",
+          "openBookOverUnder": "3.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-106",
+              "overUnder": "3.5",
+              "lastUpdatedAt": "2026-01-30T10:43:38.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.553653435&selectionId=63114652"
+            }
+          }
+        },
+        "steals-ALEXANDRE_SARR_1_NBA-game-ou-over": {
+          "oddID": "steals-ALEXANDRE_SARR_1_NBA-game-ou-over",
+          "opposingOddID": "steals-ALEXANDRE_SARR_1_NBA-game-ou-under",
+          "marketName": "Alexandre Sarr Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "ALEXANDRE_SARR_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "ALEXANDRE_SARR_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-173",
+          "bookOdds": "-211",
+          "fairOverUnder": "0.5",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "-191",
+          "openBookOdds": "-210",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        },
+        "steals-ALEXANDRE_SARR_1_NBA-game-ou-under": {
+          "oddID": "steals-ALEXANDRE_SARR_1_NBA-game-ou-under",
+          "opposingOddID": "steals-ALEXANDRE_SARR_1_NBA-game-ou-over",
+          "marketName": "Alexandre Sarr Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "ALEXANDRE_SARR_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "ALEXANDRE_SARR_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+173",
+          "fairOverUnder": "0.5",
+          "openFairOdds": "+191",
+          "openFairOverUnder": "0.5",
+          "scoringSupported": true,
+          "bookOdds": "+155",
+          "bookOverUnder": "0.5",
+          "byBookmaker": {},
+          "openBookOdds": "+150",
+          "openBookOverUnder": "0.5"
+        },
+        "steals-BILAL_COULIBALY_1_NBA-game-ou-over": {
+          "oddID": "steals-BILAL_COULIBALY_1_NBA-game-ou-over",
+          "opposingOddID": "steals-BILAL_COULIBALY_1_NBA-game-ou-under",
+          "marketName": "Bilal Coulibaly Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "BILAL_COULIBALY_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "BILAL_COULIBALY_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+162",
+          "bookOdds": "+140",
+          "fairOverUnder": "1.5",
+          "bookOverUnder": "1.5",
+          "openFairOdds": "+132",
+          "openBookOdds": "+120",
+          "openFairOverUnder": "1.5",
+          "openBookOverUnder": "1.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+162",
+              "overUnder": "1.5",
+              "lastUpdatedAt": "2026-01-30T10:43:33.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.553662567&selectionId=62134999",
+              "altLines": [
+                {
+                  "odds": "-300",
+                  "overUnder": "0.5",
+                  "lastUpdatedAt": "2026-01-30T10:43:33.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+520",
+                  "overUnder": "2.5",
+                  "lastUpdatedAt": "2026-01-30T10:43:33.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "steals-BILAL_COULIBALY_1_NBA-game-ou-under": {
+          "oddID": "steals-BILAL_COULIBALY_1_NBA-game-ou-under",
+          "opposingOddID": "steals-BILAL_COULIBALY_1_NBA-game-ou-over",
+          "marketName": "Bilal Coulibaly Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "BILAL_COULIBALY_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "BILAL_COULIBALY_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-162",
+          "fairOverUnder": "1.5",
+          "openFairOdds": "-132",
+          "openFairOverUnder": "1.5",
+          "scoringSupported": true,
+          "bookOdds": "-209",
+          "bookOverUnder": "1.5",
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-220",
+              "overUnder": "1.5",
+              "lastUpdatedAt": "2026-01-30T10:43:33.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.553662567&selectionId=62135001"
+            }
+          },
+          "openBookOdds": "-175",
+          "openBookOverUnder": "1.5"
+        },
+        "steals-BUB_CARRINGTON_1_NBA-game-ou-over": {
+          "oddID": "steals-BUB_CARRINGTON_1_NBA-game-ou-over",
+          "opposingOddID": "steals-BUB_CARRINGTON_1_NBA-game-ou-under",
+          "marketName": "Carlton Carrington Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "BUB_CARRINGTON_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "BUB_CARRINGTON_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-157",
+          "bookOdds": "-188",
+          "fairOverUnder": "0.5",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "-182",
+          "openBookOdds": "-200",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        },
+        "steals-BUB_CARRINGTON_1_NBA-game-ou-under": {
+          "oddID": "steals-BUB_CARRINGTON_1_NBA-game-ou-under",
+          "opposingOddID": "steals-BUB_CARRINGTON_1_NBA-game-ou-over",
+          "marketName": "Carlton Carrington Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "BUB_CARRINGTON_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "BUB_CARRINGTON_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+157",
+          "fairOverUnder": "0.5",
+          "openFairOdds": "+182",
+          "openFairOverUnder": "0.5",
+          "scoringSupported": true,
+          "bookOdds": "+140",
+          "bookOverUnder": "0.5",
+          "byBookmaker": {},
+          "openBookOdds": "+140",
+          "openBookOverUnder": "0.5"
+        },
+        "steals-KYSHAWN_GEORGE_1_NBA-game-ou-over": {
+          "oddID": "steals-KYSHAWN_GEORGE_1_NBA-game-ou-over",
+          "opposingOddID": "steals-KYSHAWN_GEORGE_1_NBA-game-ou-under",
+          "marketName": "Kyshawn George Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "KYSHAWN_GEORGE_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "KYSHAWN_GEORGE_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+173",
+          "bookOdds": "+150",
+          "fairOverUnder": "1.5",
+          "bookOverUnder": "1.5",
+          "openFairOdds": "+143",
+          "openBookOdds": "+130",
+          "openFairOverUnder": "1.5",
+          "openBookOverUnder": "1.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+178",
+              "overUnder": "1.5",
+              "lastUpdatedAt": "2026-01-30T10:43:33.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.553662566&selectionId=74706441",
+              "altLines": [
+                {
+                  "odds": "-280",
+                  "overUnder": "0.5",
+                  "lastUpdatedAt": "2026-01-30T10:43:33.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+550",
+                  "overUnder": "2.5",
+                  "lastUpdatedAt": "2026-01-30T10:43:33.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "steals-KYSHAWN_GEORGE_1_NBA-game-ou-under": {
+          "oddID": "steals-KYSHAWN_GEORGE_1_NBA-game-ou-under",
+          "opposingOddID": "steals-KYSHAWN_GEORGE_1_NBA-game-ou-over",
+          "marketName": "Kyshawn George Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "KYSHAWN_GEORGE_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "KYSHAWN_GEORGE_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-173",
+          "fairOverUnder": "1.5",
+          "openFairOdds": "-143",
+          "openFairOverUnder": "1.5",
+          "scoringSupported": true,
+          "bookOdds": "-226",
+          "bookOverUnder": "1.5",
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-245",
+              "overUnder": "1.5",
+              "lastUpdatedAt": "2026-01-30T10:43:33.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.553662566&selectionId=74706439"
+            }
+          },
+          "openBookOdds": "-192",
+          "openBookOverUnder": "1.5"
+        },
+        "points-JUSTIN_CHAMPAGNIE_1_NBA-game-ou-over": {
+          "oddID": "points-JUSTIN_CHAMPAGNIE_1_NBA-game-ou-over",
+          "opposingOddID": "points-JUSTIN_CHAMPAGNIE_1_NBA-game-ou-under",
+          "marketName": "Justin Champagnie Points Over/Under",
+          "statID": "points",
+          "statEntityID": "JUSTIN_CHAMPAGNIE_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "JUSTIN_CHAMPAGNIE_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+142",
+          "bookOdds": "-105",
+          "fairOverUnder": "9.5",
+          "bookOverUnder": "8.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "+100",
+          "openFairOverUnder": "7.5",
+          "openBookOverUnder": "8.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-102",
+              "overUnder": "8.5",
+              "lastUpdatedAt": "2026-01-30T10:43:38.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.553653248&selectionId=42384517",
+              "altLines": [
+                {
+                  "odds": "+136",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-01-30T10:43:39.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+480",
+                  "overUnder": "14.5",
+                  "lastUpdatedAt": "2026-01-30T10:43:39.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1400",
+                  "overUnder": "19.5",
+                  "lastUpdatedAt": "2026-01-30T10:43:39.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "points-JUSTIN_CHAMPAGNIE_1_NBA-game-ou-under": {
+          "oddID": "points-JUSTIN_CHAMPAGNIE_1_NBA-game-ou-under",
+          "opposingOddID": "points-JUSTIN_CHAMPAGNIE_1_NBA-game-ou-over",
+          "marketName": "Justin Champagnie Points Over/Under",
+          "statID": "points",
+          "statEntityID": "JUSTIN_CHAMPAGNIE_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "JUSTIN_CHAMPAGNIE_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-142",
+          "bookOdds": "-127",
+          "fairOverUnder": "9.5",
+          "bookOverUnder": "8.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "-132",
+          "openFairOverUnder": "7.5",
+          "openBookOverUnder": "8.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-130",
+              "overUnder": "8.5",
+              "lastUpdatedAt": "2026-01-30T10:43:38.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.553653248&selectionId=42384518"
+            }
+          }
+        },
+        "rebounds-JUSTIN_CHAMPAGNIE_1_NBA-game-ou-over": {
+          "oddID": "rebounds-JUSTIN_CHAMPAGNIE_1_NBA-game-ou-over",
+          "opposingOddID": "rebounds-JUSTIN_CHAMPAGNIE_1_NBA-game-ou-under",
+          "marketName": "Justin Champagnie Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "JUSTIN_CHAMPAGNIE_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "JUSTIN_CHAMPAGNIE_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+124",
+          "bookOdds": "+110",
+          "fairOverUnder": "5.5",
+          "bookOverUnder": "5.5",
+          "openFairOdds": "+118",
+          "openBookOdds": "+104",
+          "openFairOverUnder": "5.5",
+          "openBookOverUnder": "5.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+104",
+              "overUnder": "5.5",
+              "lastUpdatedAt": "2026-01-30T10:43:38.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.553653249&selectionId=42384517",
+              "altLines": [
+                {
+                  "odds": "-330",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2026-01-30T10:43:38.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+285",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2026-01-30T10:43:38.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+600",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-01-30T10:43:38.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1200",
+                  "overUnder": "11.5",
+                  "lastUpdatedAt": "2026-01-30T10:43:38.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+2500",
+                  "overUnder": "13.5",
+                  "lastUpdatedAt": "2026-01-30T10:43:38.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "rebounds-JUSTIN_CHAMPAGNIE_1_NBA-game-ou-under": {
+          "oddID": "rebounds-JUSTIN_CHAMPAGNIE_1_NBA-game-ou-under",
+          "opposingOddID": "rebounds-JUSTIN_CHAMPAGNIE_1_NBA-game-ou-over",
+          "marketName": "Justin Champagnie Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "JUSTIN_CHAMPAGNIE_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "JUSTIN_CHAMPAGNIE_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-124",
+          "bookOdds": "-145",
+          "fairOverUnder": "5.5",
+          "bookOverUnder": "5.5",
+          "openFairOdds": "-118",
+          "openBookOdds": "-138",
+          "openFairOverUnder": "5.5",
+          "openBookOverUnder": "5.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-138",
+              "overUnder": "5.5",
+              "lastUpdatedAt": "2026-01-30T10:43:38.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.553653249&selectionId=42384518"
+            }
+          }
+        }
+      },
+      "players": {
+        "ALEXANDRE_SARR_1_NBA": {
+          "playerID": "ALEXANDRE_SARR_1_NBA",
+          "teamID": "WASHINGTON_WIZARDS_NBA",
+          "firstName": "Alex",
+          "lastName": "Sarr",
+          "name": "Alexandre Sarr"
+        },
+        "BILAL_COULIBALY_1_NBA": {
+          "playerID": "BILAL_COULIBALY_1_NBA",
+          "teamID": "WASHINGTON_WIZARDS_NBA",
+          "firstName": "Bilal",
+          "lastName": "Coulibaly",
+          "name": "Bilal Coulibaly"
+        },
+        "BUB_CARRINGTON_1_NBA": {
+          "playerID": "BUB_CARRINGTON_1_NBA",
+          "teamID": "WASHINGTON_WIZARDS_NBA",
+          "firstName": "Bub",
+          "lastName": "Carrington",
+          "name": "Carlton Carrington"
+        },
+        "DEANDRE_AYTON_1_NBA": {
+          "playerID": "DEANDRE_AYTON_1_NBA",
+          "teamID": "LOS_ANGELES_LAKERS_NBA",
+          "firstName": "Deandre",
+          "lastName": "Ayton",
+          "name": "Deandre Ayton"
+        },
+        "JAKE_LARAVIA_1_NBA": {
+          "playerID": "JAKE_LARAVIA_1_NBA",
+          "teamID": "LOS_ANGELES_LAKERS_NBA",
+          "firstName": "Jake",
+          "lastName": "LaRavia",
+          "name": "Jake Laravia"
+        },
+        "JUSTIN_CHAMPAGNIE_1_NBA": {
+          "playerID": "JUSTIN_CHAMPAGNIE_1_NBA",
+          "teamID": "WASHINGTON_WIZARDS_NBA",
+          "firstName": "Justin",
+          "lastName": "Champagnie",
+          "name": "Justin Champagnie"
+        },
+        "KYSHAWN_GEORGE_1_NBA": {
+          "playerID": "KYSHAWN_GEORGE_1_NBA",
+          "teamID": "WASHINGTON_WIZARDS_NBA",
+          "firstName": "Kyshawn",
+          "lastName": "George",
+          "name": "Kyshawn George"
+        },
+        "LEBRON_JAMES_1_NBA": {
+          "playerID": "LEBRON_JAMES_1_NBA",
+          "teamID": "LOS_ANGELES_LAKERS_NBA",
+          "firstName": "LeBron",
+          "lastName": "James",
+          "name": "LeBron James"
+        },
+        "LUKA_DONCIC_1_NBA": {
+          "playerID": "LUKA_DONCIC_1_NBA",
+          "teamID": "LOS_ANGELES_LAKERS_NBA",
+          "firstName": "Luka",
+          "lastName": "Doncic",
+          "name": "Luka Don\u010di\u0107"
+        },
+        "MARCUS_SMART_1_NBA": {
+          "playerID": "MARCUS_SMART_1_NBA",
+          "teamID": "LOS_ANGELES_LAKERS_NBA",
+          "firstName": "Marcus",
+          "lastName": "Smart",
+          "name": "Marcus Smart"
+        },
+        "AUSTIN_REAVES_1_NBA": {
+          "playerID": "AUSTIN_REAVES_1_NBA",
+          "teamID": "LOS_ANGELES_LAKERS_NBA",
+          "firstName": "Austin",
+          "lastName": "Reaves",
+          "name": "Austin Reaves"
+        },
+        "TRE_JOHNSON_1_NBA": {
+          "playerID": "TRE_JOHNSON_1_NBA",
+          "teamID": "WASHINGTON_WIZARDS_NBA",
+          "firstName": "Tre",
+          "lastName": "Johnson",
+          "name": "Tre Johnson"
+        }
+      },
+      "results": {}
+    }
+  ]
+}

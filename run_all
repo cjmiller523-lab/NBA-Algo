@@ -11,8 +11,8 @@ def run(cmd):
 today = date.today().isoformat()
 
 # --- Your scripts ---
-run("python combined37")
-run("python nhlv11")
+run("python combined38")
+run("python nhlv12")
 run("python nhlgrowth1")
 
 # --- Git automation ---
