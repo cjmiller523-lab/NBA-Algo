@@ -1,0 +1,1845 @@
+{
+  "nextCursor": "n.1770249600000.YJD4fFlC5BGJ455JO75t",
+  "success": true,
+  "data": [
+    {
+      "eventID": "YJD4fFlC5BGJ455JO75t",
+      "sportID": "BASKETBALL",
+      "leagueID": "NBA",
+      "type": "match",
+      "teams": {
+        "home": {
+          "teamID": "NEW_YORK_KNICKS_NBA",
+          "names": {
+            "long": "New York Knicks",
+            "medium": "Knicks",
+            "short": "NYK",
+            "location": "New York"
+          },
+          "colors": {
+            "primary": "#006BB6",
+            "secondary": "#F58426",
+            "primaryContrast": "#FFFFFF",
+            "secondaryContrast": "#006BB6"
+          },
+          "statEntityID": "home"
+        },
+        "away": {
+          "teamID": "DENVER_NUGGETS_NBA",
+          "names": {
+            "long": "Denver Nuggets",
+            "medium": "Nuggets",
+            "short": "DEN",
+            "location": "Denver"
+          },
+          "colors": {
+            "primary": "#4FA8FF",
+            "secondary": "#F3BB4B",
+            "primaryContrast": "#000000",
+            "secondaryContrast": "#000000"
+          },
+          "statEntityID": "away"
+        }
+      },
+      "status": {
+        "started": false,
+        "completed": false,
+        "cancelled": false,
+        "ended": false,
+        "live": false,
+        "delayed": false,
+        "currentPeriodID": "",
+        "previousPeriodID": "",
+        "displayShort": "",
+        "displayLong": "Upcoming",
+        "inBreak": false,
+        "startsAt": "2026-02-05T00:00:00.000Z",
+        "previousStartsAt": [],
+        "hardStart": true,
+        "periods": {
+          "started": [],
+          "ended": []
+        },
+        "oddsPresent": true,
+        "oddsAvailable": true,
+        "finalized": false
+      },
+      "info": {
+        "seasonWeek": "NBA 25/26",
+        "venue": {
+          "name": "Madison Square Garden",
+          "countryName": "United States",
+          "countryCode": "US",
+          "regionName": "New York",
+          "regionCode": "NY",
+          "city": "New York",
+          "address": "4 Pennsylvania Plaza, New York, NY 10001",
+          "capacity": 19812
+        }
+      },
+      "links": {
+        "bookmakers": {
+          "fanduel": "https://sportsbook.fanduel.com/basketball/-/35209672",
+          "1xbet": "https://1xbet.com/en/line/football/13589-nba/302395428-new-york-knicks-denver-nuggets",
+          "pointsbet": "https://pointsbet.com.au/sports/basketball/NBA/2594403",
+          "paddypower": "https://www.paddypower.com/basketball/nba/denver-nuggets-@-new-york-knicks-35209672",
+          "sportsbet": "https://www.sportsbet.com.au/betting/basketball---us/nba/denver-nuggets-at-new-york-knicks-10104993",
+          "ladbrokes": "https://www.ladbrokes.com.au/sports/-/-/-/ccf743c9-ebd8-449a-b9e2-dc93ca666653",
+          "neds": "https://www.neds.com.au/sports/-/-/-/ccf743c9-ebd8-449a-b9e2-dc93ca666653",
+          "888sport": "https://www.888sport.com/basketball/united-states-of-america/nba/denver-nuggets-new-york-knicks-e-7090178",
+          "betrsportsbook": "https://www.betr.com.au/sports/Basketball/107/United-States-of-America/NBA/Denver-Nuggets-@-New-York-Knicks/1979527/All-Markets",
+          "matchbook": "https://www.matchbook.com/events/basketball/united-states-of-america/nba/32420708250600045",
+          "boylesports": "https://www.boylesports.com/sports/basketball/event/usa-nba/new-york-knicks-v-denver-nuggets",
+          "betsson": "https://www.betsson.com/en/sportsbook/basketball/nba/nba?eventId=f-OKdxS45VZEiSfgI3j_ANnQ",
+          "nordicbet": "https://www.nordicbet.com/en/sportsbook/basketball/nba/nba/new-york-knicks-denver-nuggets-",
+          "betfairsportsbook": "https://www.betfair.com/betting/basketball/nba/denver-nuggets-@-new-york-knicks/e-35209672",
+          "playup": "https://www.playup.com.au/betting/sports/nba/new-york-knicks-v-denver-nuggets/1803867",
+          "coolbet": "https://www.coolbet.com/en/sports/match/4984403",
+          "williamhill": "https://sports.williamhill.com/betting/en-gb/basketball/OB_EV38607254/denver-nuggets-at-new-york-knicks",
+          "draftkings": "https://sportsbook.draftkings.com/event/33574051",
+          "hardrockbet": "https://app.hardrock.bet/home/competition/nba/9176506489772966132",
+          "tab": "https://www.tab.com.au/sports/betting/Basketball/competitions/NBA/matches/New%20York%20v%20Denver",
+          "espnbet": "https://espnbet.com/sport/basketball/organization/united-states/competition/nba/event/d322c45c-922b-4cd9-a08c-10ca1603c11c",
+          "fliff": "https://sports.getfliff.com/markets/366759_c_p_204_prematch",
+          "thescorebet": "https://thescore.bet/sport/basketball/organization/united-states/competition/nba/event/d322c45c-922b-4cd9-a08c-10ca1603c11c",
+          "betway": "https://betway.com/en/sports/evt/16324279",
+          "caesars": "https://sportsbook.caesars.com/us/nj/bet/basketball/06415fbe-68c6-425e-b919-ba9890aa4daa/denver-nuggets-at-new-york-knicks",
+          "betonline": "https://sports.betonline.ag/sportsbook/basketball/nba/game/490953053",
+          "lowvig": "https://sports.lowvig.ag/sportsbook/basketball/nba/game/490953053",
+          "betmgm": "https://sports.nj.betmgm.com/en/sports/events/18888543",
+          "coral": "https://sports.coral.co.uk/event/basketball/basketball-usa/nba/ny-knicks-v-den-nuggets/41691662",
+          "pinnacle": "https://www.pinnacle.com/en/basketball/nba/denver-nuggets-vs-new-york-knicks/1623187044",
+          "bovada": "https://www.bovada.lv/sports/basketball/nba/denver-nuggets-new-york-knicks-202602041900",
+          "ballybet": "https://play.ballybet.com/sports#event/1024653569",
+          "betrivers": "https://nj.betrivers.com/?page=sportsbook#event/1024653569",
+          "casumo": "https://www.casumo.com/en-gb/sports#event/1024653569",
+          "grosvenor": "https://www.grosvenorcasinos.com/sport#event/1024653569",
+          "leovegas": "https://www.leovegas.co.uk/betting#event/1024653569",
+          "livescorebet": "https://www.livescorebet.com/uk/sports/basketball/nba/new-york-knicks-denver-nuggets/SBTE_2_1024653569",
+          "tabtouch": "https://www.tabtouch.mobi/tabtouch-sports/event/1024653569",
+          "virginbet": "https://www.virginbet.com/sports/basketball/nba/new-york-knicks-denver-nuggets/SBTE_2_1024653569",
+          "betparx": "https://nj.betparx.com/kambi#event/1024653569",
+          "unibet": "https://www.unibet.com/betting/sports/event/1024653569",
+          "everygame": "https://sports.everygame.eu/en/Bets/Basketball/NBA-Lines/Denver-Nuggets-at-New-York-Knicks/2791827"
+        }
+      },
+      "odds": {
+        "assists-NIKOLA_JOKIC_1_NBA-game-ou-over": {
+          "oddID": "assists-NIKOLA_JOKIC_1_NBA-game-ou-over",
+          "opposingOddID": "assists-NIKOLA_JOKIC_1_NBA-game-ou-under",
+          "marketName": "Nikola Joki\u0107 Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "NIKOLA_JOKIC_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "NIKOLA_JOKIC_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+121",
+          "bookOdds": "+105",
+          "fairOverUnder": "8.5",
+          "bookOverUnder": "8.5",
+          "openFairOdds": "+112",
+          "openBookOdds": "+102",
+          "openFairOverUnder": "8.5",
+          "openBookOverUnder": "8.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+102",
+              "overUnder": "8.5",
+              "lastUpdatedAt": "2026-02-04T12:01:40.000Z",
+              "available": true,
+              "altLines": [
+                {
+                  "odds": "-4500",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2026-02-04T11:56:58.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "-590",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2026-02-04T12:01:40.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-164",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2026-02-04T12:01:40.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+158",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-02-04T12:01:40.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+430",
+                  "overUnder": "11.5",
+                  "lastUpdatedAt": "2026-02-04T12:01:40.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1060",
+                  "overUnder": "13.5",
+                  "lastUpdatedAt": "2026-02-04T12:01:40.000Z",
+                  "available": true
+                }
+              ],
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.554625498&selectionId=12257278"
+            }
+          }
+        },
+        "assists-NIKOLA_JOKIC_1_NBA-game-ou-under": {
+          "oddID": "assists-NIKOLA_JOKIC_1_NBA-game-ou-under",
+          "opposingOddID": "assists-NIKOLA_JOKIC_1_NBA-game-ou-over",
+          "marketName": "Nikola Joki\u0107 Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "NIKOLA_JOKIC_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "NIKOLA_JOKIC_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-121",
+          "fairOverUnder": "8.5",
+          "openFairOdds": "-112",
+          "openFairOverUnder": "8.5",
+          "scoringSupported": true,
+          "bookOdds": "-141",
+          "bookOverUnder": "8.5",
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-136",
+              "overUnder": "8.5",
+              "lastUpdatedAt": "2026-02-04T12:01:40.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.554625498&selectionId=12257279"
+            }
+          },
+          "openBookOdds": "-136",
+          "openBookOverUnder": "8.5"
+        },
+        "points-NIKOLA_JOKIC_1_NBA-game-ou-over": {
+          "oddID": "points-NIKOLA_JOKIC_1_NBA-game-ou-over",
+          "opposingOddID": "points-NIKOLA_JOKIC_1_NBA-game-ou-under",
+          "marketName": "Nikola Joki\u0107 Points Over/Under",
+          "statID": "points",
+          "statEntityID": "NIKOLA_JOKIC_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "NIKOLA_JOKIC_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+121",
+          "bookOdds": "-116",
+          "fairOverUnder": "25.5",
+          "bookOverUnder": "24.5",
+          "openFairOdds": "-109",
+          "openBookOdds": "-120",
+          "openFairOverUnder": "24.5",
+          "openBookOverUnder": "24.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-122",
+              "overUnder": "24.5",
+              "lastUpdatedAt": "2026-02-04T12:01:40.000Z",
+              "available": true,
+              "altLines": [
+                {
+                  "odds": "-1800",
+                  "overUnder": "14.5",
+                  "lastUpdatedAt": "2026-02-04T12:01:40.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-350",
+                  "overUnder": "19.5",
+                  "lastUpdatedAt": "2026-02-04T12:01:40.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+215",
+                  "overUnder": "29.5",
+                  "lastUpdatedAt": "2026-02-04T12:01:40.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+520",
+                  "overUnder": "34.5",
+                  "lastUpdatedAt": "2026-02-04T12:01:40.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1100",
+                  "overUnder": "39.5",
+                  "lastUpdatedAt": "2026-02-04T12:01:40.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+2500",
+                  "overUnder": "44.5",
+                  "lastUpdatedAt": "2026-02-04T12:01:40.000Z",
+                  "available": true
+                }
+              ],
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.554625496&selectionId=12257278"
+            }
+          }
+        },
+        "points-NIKOLA_JOKIC_1_NBA-game-ou-under": {
+          "oddID": "points-NIKOLA_JOKIC_1_NBA-game-ou-under",
+          "opposingOddID": "points-NIKOLA_JOKIC_1_NBA-game-ou-over",
+          "marketName": "Nikola Joki\u0107 Points Over/Under",
+          "statID": "points",
+          "statEntityID": "NIKOLA_JOKIC_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "NIKOLA_JOKIC_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-121",
+          "fairOverUnder": "25.5",
+          "openFairOdds": "+109",
+          "openFairOverUnder": "24.5",
+          "scoringSupported": true,
+          "bookOdds": "-113",
+          "bookOverUnder": "24.5",
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-108",
+              "overUnder": "24.5",
+              "lastUpdatedAt": "2026-02-04T12:01:40.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.554625496&selectionId=12257279"
+            }
+          },
+          "openBookOdds": "-108",
+          "openBookOverUnder": "24.5"
+        },
+        "rebounds-NIKOLA_JOKIC_1_NBA-game-ou-over": {
+          "oddID": "rebounds-NIKOLA_JOKIC_1_NBA-game-ou-over",
+          "opposingOddID": "rebounds-NIKOLA_JOKIC_1_NBA-game-ou-under",
+          "marketName": "Nikola Joki\u0107 Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "NIKOLA_JOKIC_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "NIKOLA_JOKIC_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+119",
+          "bookOdds": "+105",
+          "fairOverUnder": "10.5",
+          "bookOverUnder": "10.5",
+          "openFairOdds": "+118",
+          "openBookOdds": "+104",
+          "openFairOverUnder": "10.5",
+          "openBookOverUnder": "10.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+104",
+              "overUnder": "10.5",
+              "lastUpdatedAt": "2026-02-04T12:01:40.000Z",
+              "available": true,
+              "altLines": [
+                {
+                  "odds": "-1600",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2026-02-04T12:01:40.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-340",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2026-02-04T12:01:40.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-158",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-02-04T12:01:40.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+176",
+                  "overUnder": "11.5",
+                  "lastUpdatedAt": "2026-02-04T12:01:40.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+430",
+                  "overUnder": "13.5",
+                  "lastUpdatedAt": "2026-02-04T12:01:40.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1000",
+                  "overUnder": "15.5",
+                  "lastUpdatedAt": "2026-02-04T12:01:40.000Z",
+                  "available": true
+                }
+              ],
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.554625497&selectionId=12257278"
+            }
+          }
+        },
+        "rebounds-NIKOLA_JOKIC_1_NBA-game-ou-under": {
+          "oddID": "rebounds-NIKOLA_JOKIC_1_NBA-game-ou-under",
+          "opposingOddID": "rebounds-NIKOLA_JOKIC_1_NBA-game-ou-over",
+          "marketName": "Nikola Joki\u0107 Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "NIKOLA_JOKIC_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "NIKOLA_JOKIC_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-119",
+          "bookOdds": "-137",
+          "fairOverUnder": "10.5",
+          "bookOverUnder": "10.5",
+          "openFairOdds": "-118",
+          "openBookOdds": "-138",
+          "openFairOverUnder": "10.5",
+          "openBookOverUnder": "10.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-138",
+              "overUnder": "10.5",
+              "lastUpdatedAt": "2026-02-04T12:01:40.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.554625497&selectionId=12257279"
+            }
+          }
+        },
+        "assists-JAMAL_MURRAY_1_NBA-game-ou-over": {
+          "oddID": "assists-JAMAL_MURRAY_1_NBA-game-ou-over",
+          "opposingOddID": "assists-JAMAL_MURRAY_1_NBA-game-ou-under",
+          "marketName": "Jamal Murray Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "JAMAL_MURRAY_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "JAMAL_MURRAY_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+109",
+          "bookOdds": "-105",
+          "fairOverUnder": "6.5",
+          "bookOverUnder": "6.5",
+          "openFairOdds": "+114",
+          "openBookOdds": "+100",
+          "openFairOverUnder": "6.5",
+          "openBookOverUnder": "6.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+100",
+              "overUnder": "6.5",
+              "lastUpdatedAt": "2026-02-04T12:01:40.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.554626614&selectionId=16127791",
+              "altLines": [
+                {
+                  "odds": "-950",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2026-02-04T12:01:40.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-184",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2026-02-04T12:01:40.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+186",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2026-02-04T12:01:40.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+470",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-02-04T12:01:40.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1300",
+                  "overUnder": "11.5",
+                  "lastUpdatedAt": "2026-02-04T12:01:40.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+3500",
+                  "overUnder": "13.5",
+                  "lastUpdatedAt": "2026-02-04T12:01:40.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "assists-JAMAL_MURRAY_1_NBA-game-ou-under": {
+          "oddID": "assists-JAMAL_MURRAY_1_NBA-game-ou-under",
+          "opposingOddID": "assists-JAMAL_MURRAY_1_NBA-game-ou-over",
+          "marketName": "Jamal Murray Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "JAMAL_MURRAY_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "JAMAL_MURRAY_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-109",
+          "bookOdds": "-126",
+          "fairOverUnder": "6.5",
+          "bookOverUnder": "6.5",
+          "openFairOdds": "-114",
+          "openBookOdds": "-132",
+          "openFairOverUnder": "6.5",
+          "openBookOverUnder": "6.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-132",
+              "overUnder": "6.5",
+              "lastUpdatedAt": "2026-02-04T12:01:40.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.554626614&selectionId=16127792"
+            }
+          }
+        },
+        "points-JAMAL_MURRAY_1_NBA-game-ou-over": {
+          "oddID": "points-JAMAL_MURRAY_1_NBA-game-ou-over",
+          "opposingOddID": "points-JAMAL_MURRAY_1_NBA-game-ou-under",
+          "marketName": "Jamal Murray Points Over/Under",
+          "statID": "points",
+          "statEntityID": "JAMAL_MURRAY_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "JAMAL_MURRAY_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+124",
+          "bookOdds": "-121",
+          "fairOverUnder": "23.5",
+          "bookOverUnder": "22.5",
+          "openFairOdds": "+141",
+          "openBookOdds": "-122",
+          "openFairOverUnder": "24.5",
+          "openBookOverUnder": "22.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-122",
+              "overUnder": "22.5",
+              "lastUpdatedAt": "2026-02-04T12:01:40.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.554626612&selectionId=16127791",
+              "altLines": [
+                {
+                  "odds": "-7000",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-02-04T12:01:40.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-850",
+                  "overUnder": "14.5",
+                  "lastUpdatedAt": "2026-02-04T12:01:40.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-225",
+                  "overUnder": "19.5",
+                  "lastUpdatedAt": "2026-02-04T12:01:40.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+126",
+                  "overUnder": "24.5",
+                  "lastUpdatedAt": "2026-02-04T12:01:40.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+330",
+                  "overUnder": "29.5",
+                  "lastUpdatedAt": "2026-02-04T12:01:40.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+830",
+                  "overUnder": "34.5",
+                  "lastUpdatedAt": "2026-02-04T12:01:40.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1500",
+                  "overUnder": "39.5",
+                  "lastUpdatedAt": "2026-02-04T12:01:40.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+5000",
+                  "overUnder": "44.5",
+                  "lastUpdatedAt": "2026-02-04T12:01:40.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "points-JAMAL_MURRAY_1_NBA-game-ou-under": {
+          "oddID": "points-JAMAL_MURRAY_1_NBA-game-ou-under",
+          "opposingOddID": "points-JAMAL_MURRAY_1_NBA-game-ou-over",
+          "marketName": "Jamal Murray Points Over/Under",
+          "statID": "points",
+          "statEntityID": "JAMAL_MURRAY_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "JAMAL_MURRAY_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-124",
+          "bookOdds": "-113",
+          "fairOverUnder": "23.5",
+          "bookOverUnder": "22.5",
+          "openFairOdds": "-141",
+          "openBookOdds": "-108",
+          "openFairOverUnder": "24.5",
+          "openBookOverUnder": "22.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-108",
+              "overUnder": "22.5",
+              "lastUpdatedAt": "2026-02-04T12:01:40.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.554626612&selectionId=16127792"
+            }
+          }
+        },
+        "rebounds-JAMAL_MURRAY_1_NBA-game-ou-over": {
+          "oddID": "rebounds-JAMAL_MURRAY_1_NBA-game-ou-over",
+          "opposingOddID": "rebounds-JAMAL_MURRAY_1_NBA-game-ou-under",
+          "marketName": "Jamal Murray Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "JAMAL_MURRAY_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "JAMAL_MURRAY_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "-115",
+          "fairOverUnder": "3.5",
+          "bookOverUnder": "3.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "-114",
+          "openFairOverUnder": "3.5",
+          "openBookOverUnder": "3.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-114",
+              "overUnder": "3.5",
+              "lastUpdatedAt": "2026-02-04T12:01:40.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.554626613&selectionId=16127791",
+              "altLines": [
+                {
+                  "odds": "+420",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2026-02-04T12:01:40.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1500",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2026-02-04T12:01:40.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "rebounds-JAMAL_MURRAY_1_NBA-game-ou-under": {
+          "oddID": "rebounds-JAMAL_MURRAY_1_NBA-game-ou-under",
+          "opposingOddID": "rebounds-JAMAL_MURRAY_1_NBA-game-ou-over",
+          "marketName": "Jamal Murray Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "JAMAL_MURRAY_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "JAMAL_MURRAY_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "-115",
+          "fairOverUnder": "3.5",
+          "bookOverUnder": "3.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "-114",
+          "openFairOverUnder": "3.5",
+          "openBookOverUnder": "3.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-114",
+              "overUnder": "3.5",
+              "lastUpdatedAt": "2026-02-04T12:01:40.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.554626613&selectionId=16127792"
+            }
+          }
+        },
+        "assists-PEYTON_WATSON_1_NBA-game-ou-over": {
+          "oddID": "assists-PEYTON_WATSON_1_NBA-game-ou-over",
+          "opposingOddID": "assists-PEYTON_WATSON_1_NBA-game-ou-under",
+          "marketName": "Peyton Watson Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "PEYTON_WATSON_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "PEYTON_WATSON_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+155",
+          "bookOdds": "-182",
+          "fairOverUnder": "2.5",
+          "bookOverUnder": "1.5",
+          "openFairOdds": "-157",
+          "openBookOdds": "-188",
+          "openFairOverUnder": "1.5",
+          "openBookOverUnder": "1.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-188",
+              "overUnder": "1.5",
+              "lastUpdatedAt": "2026-02-04T12:01:40.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.554628323&selectionId=54472264",
+              "altLines": [
+                {
+                  "odds": "+400",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2026-02-04T12:01:40.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1500",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2026-02-04T05:40:07.000Z",
+                  "available": false
+                }
+              ]
+            }
+          }
+        },
+        "assists-PEYTON_WATSON_1_NBA-game-ou-under": {
+          "oddID": "assists-PEYTON_WATSON_1_NBA-game-ou-under",
+          "opposingOddID": "assists-PEYTON_WATSON_1_NBA-game-ou-over",
+          "marketName": "Peyton Watson Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "PEYTON_WATSON_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "PEYTON_WATSON_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-155",
+          "bookOdds": "+135",
+          "fairOverUnder": "2.5",
+          "bookOverUnder": "1.5",
+          "openFairOdds": "+157",
+          "openBookOdds": "+140",
+          "openFairOverUnder": "1.5",
+          "openBookOverUnder": "1.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+140",
+              "overUnder": "1.5",
+              "lastUpdatedAt": "2026-02-04T12:01:40.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.554628323&selectionId=54472265"
+            }
+          }
+        },
+        "points-PEYTON_WATSON_1_NBA-game-ou-over": {
+          "oddID": "points-PEYTON_WATSON_1_NBA-game-ou-over",
+          "opposingOddID": "points-PEYTON_WATSON_1_NBA-game-ou-under",
+          "marketName": "Peyton Watson Points Over/Under",
+          "statID": "points",
+          "statEntityID": "PEYTON_WATSON_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "PEYTON_WATSON_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+115",
+          "bookOdds": "-105",
+          "fairOverUnder": "17.5",
+          "bookOverUnder": "16.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "-108",
+          "openFairOverUnder": "17.5",
+          "openBookOverUnder": "16.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-108",
+              "overUnder": "16.5",
+              "lastUpdatedAt": "2026-02-04T12:01:40.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.554628321&selectionId=54472264",
+              "altLines": [
+                {
+                  "odds": "-900",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-02-04T12:01:40.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-178",
+                  "overUnder": "14.5",
+                  "lastUpdatedAt": "2026-02-04T12:01:40.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+190",
+                  "overUnder": "19.5",
+                  "lastUpdatedAt": "2026-02-04T12:01:40.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+540",
+                  "overUnder": "24.5",
+                  "lastUpdatedAt": "2026-02-04T12:01:40.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1300",
+                  "overUnder": "29.5",
+                  "lastUpdatedAt": "2026-02-04T12:01:40.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+4000",
+                  "overUnder": "34.5",
+                  "lastUpdatedAt": "2026-02-04T12:01:40.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "points-PEYTON_WATSON_1_NBA-game-ou-under": {
+          "oddID": "points-PEYTON_WATSON_1_NBA-game-ou-under",
+          "opposingOddID": "points-PEYTON_WATSON_1_NBA-game-ou-over",
+          "marketName": "Peyton Watson Points Over/Under",
+          "statID": "points",
+          "statEntityID": "PEYTON_WATSON_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "PEYTON_WATSON_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-115",
+          "bookOdds": "-122",
+          "fairOverUnder": "17.5",
+          "bookOverUnder": "16.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "-122",
+          "openFairOverUnder": "17.5",
+          "openBookOverUnder": "16.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-122",
+              "overUnder": "16.5",
+              "lastUpdatedAt": "2026-02-04T12:01:40.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.554628321&selectionId=54472265"
+            }
+          }
+        },
+        "rebounds-PEYTON_WATSON_1_NBA-game-ou-over": {
+          "oddID": "rebounds-PEYTON_WATSON_1_NBA-game-ou-over",
+          "opposingOddID": "rebounds-PEYTON_WATSON_1_NBA-game-ou-under",
+          "marketName": "Peyton Watson Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "PEYTON_WATSON_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "PEYTON_WATSON_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+154",
+          "bookOdds": "-150",
+          "fairOverUnder": "5.5",
+          "bookOverUnder": "4.5",
+          "openFairOdds": "-130",
+          "openBookOdds": "-152",
+          "openFairOverUnder": "4.5",
+          "openBookOverUnder": "4.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-152",
+              "overUnder": "4.5",
+              "lastUpdatedAt": "2026-02-04T12:01:40.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.554628322&selectionId=54472264",
+              "altLines": [
+                {
+                  "odds": "-340",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2026-02-04T12:01:40.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+140",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2026-02-04T12:01:40.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+500",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2026-02-04T12:01:40.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1300",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-02-04T12:01:40.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "rebounds-PEYTON_WATSON_1_NBA-game-ou-under": {
+          "oddID": "rebounds-PEYTON_WATSON_1_NBA-game-ou-under",
+          "opposingOddID": "rebounds-PEYTON_WATSON_1_NBA-game-ou-over",
+          "marketName": "Peyton Watson Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "PEYTON_WATSON_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "PEYTON_WATSON_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-154",
+          "bookOdds": "+105",
+          "fairOverUnder": "5.5",
+          "bookOverUnder": "4.5",
+          "openFairOdds": "+130",
+          "openBookOdds": "+116",
+          "openFairOverUnder": "4.5",
+          "openBookOverUnder": "4.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+114",
+              "overUnder": "4.5",
+              "lastUpdatedAt": "2026-02-04T12:01:40.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.554628322&selectionId=54472265"
+            }
+          }
+        },
+        "points-JALEN_PICKETT_1_NBA-game-ou-over": {
+          "oddID": "points-JALEN_PICKETT_1_NBA-game-ou-over",
+          "opposingOddID": "points-JALEN_PICKETT_1_NBA-game-ou-under",
+          "marketName": "Jalen Pickett Points Over/Under",
+          "statID": "points",
+          "statEntityID": "JALEN_PICKETT_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "JALEN_PICKETT_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "-106",
+          "fairOverUnder": "3.5",
+          "bookOverUnder": "4.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "+102",
+          "openFairOverUnder": "4",
+          "openBookOverUnder": "4.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-102",
+              "overUnder": "4.5",
+              "lastUpdatedAt": "2026-02-04T12:01:40.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.554628812&selectionId=43095770",
+              "altLines": [
+                {
+                  "odds": "+600",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-02-04T12:01:40.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "points-JALEN_PICKETT_1_NBA-game-ou-under": {
+          "oddID": "points-JALEN_PICKETT_1_NBA-game-ou-under",
+          "opposingOddID": "points-JALEN_PICKETT_1_NBA-game-ou-over",
+          "marketName": "Jalen Pickett Points Over/Under",
+          "statID": "points",
+          "statEntityID": "JALEN_PICKETT_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "JALEN_PICKETT_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "-125",
+          "fairOverUnder": "3.5",
+          "bookOverUnder": "4.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "-136",
+          "openFairOverUnder": "4",
+          "openBookOverUnder": "4.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-130",
+              "overUnder": "4.5",
+              "lastUpdatedAt": "2026-02-04T12:01:40.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.554628812&selectionId=43095771"
+            }
+          }
+        },
+        "points-CHRISTIAN_BRAUN_1_NBA-game-ou-over": {
+          "oddID": "points-CHRISTIAN_BRAUN_1_NBA-game-ou-over",
+          "opposingOddID": "points-CHRISTIAN_BRAUN_1_NBA-game-ou-under",
+          "marketName": "Christian Braun Points Over/Under",
+          "statID": "points",
+          "statEntityID": "CHRISTIAN_BRAUN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "CHRISTIAN_BRAUN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "-115",
+          "fairOverUnder": "7",
+          "bookOverUnder": "6.5",
+          "openFairOdds": "+102",
+          "openBookOdds": "-112",
+          "openFairOverUnder": "6.5",
+          "openBookOverUnder": "6.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-112",
+              "overUnder": "6.5",
+              "lastUpdatedAt": "2026-02-04T12:01:40.000Z",
+              "available": true,
+              "altLines": [
+                {
+                  "odds": "-240",
+                  "overUnder": "4.5",
+                  "lastUpdatedAt": "2026-02-04T12:03:35.189Z",
+                  "available": true
+                },
+                {
+                  "odds": "+260",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-02-04T12:01:40.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1060",
+                  "overUnder": "14.5",
+                  "lastUpdatedAt": "2026-02-04T12:01:40.000Z",
+                  "available": true
+                }
+              ],
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.554628880&selectionId=43026473"
+            }
+          }
+        },
+        "points-CHRISTIAN_BRAUN_1_NBA-game-ou-under": {
+          "oddID": "points-CHRISTIAN_BRAUN_1_NBA-game-ou-under",
+          "opposingOddID": "points-CHRISTIAN_BRAUN_1_NBA-game-ou-over",
+          "marketName": "Christian Braun Points Over/Under",
+          "statID": "points",
+          "statEntityID": "CHRISTIAN_BRAUN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "CHRISTIAN_BRAUN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "-115",
+          "fairOverUnder": "7",
+          "bookOverUnder": "6.5",
+          "openFairOdds": "-102",
+          "openBookOdds": "-118",
+          "openFairOverUnder": "6.5",
+          "openBookOverUnder": "6.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-118",
+              "overUnder": "6.5",
+              "lastUpdatedAt": "2026-02-04T12:01:40.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.554628880&selectionId=43026472"
+            }
+          }
+        },
+        "rebounds-CHRISTIAN_BRAUN_1_NBA-game-ou-over": {
+          "oddID": "rebounds-CHRISTIAN_BRAUN_1_NBA-game-ou-over",
+          "opposingOddID": "rebounds-CHRISTIAN_BRAUN_1_NBA-game-ou-under",
+          "marketName": "Christian Braun Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "CHRISTIAN_BRAUN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "CHRISTIAN_BRAUN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+127",
+          "bookOdds": "+112",
+          "fairOverUnder": "2.5",
+          "bookOverUnder": "2.5",
+          "openFairOdds": "+125",
+          "openBookOdds": "+110",
+          "openFairOverUnder": "2.5",
+          "openBookOverUnder": "2.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+110",
+              "overUnder": "2.5",
+              "lastUpdatedAt": "2026-02-04T12:01:40.000Z",
+              "available": true,
+              "altLines": [
+                {
+                  "odds": "+265",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2026-02-04T12:01:40.000Z",
+                  "available": true
+                }
+              ],
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.554628881&selectionId=43026473"
+            }
+          }
+        },
+        "rebounds-CHRISTIAN_BRAUN_1_NBA-game-ou-under": {
+          "oddID": "rebounds-CHRISTIAN_BRAUN_1_NBA-game-ou-under",
+          "opposingOddID": "rebounds-CHRISTIAN_BRAUN_1_NBA-game-ou-over",
+          "marketName": "Christian Braun Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "CHRISTIAN_BRAUN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "CHRISTIAN_BRAUN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-127",
+          "bookOdds": "-149",
+          "fairOverUnder": "2.5",
+          "bookOverUnder": "2.5",
+          "openFairOdds": "-125",
+          "openBookOdds": "-146",
+          "openFairOverUnder": "2.5",
+          "openBookOverUnder": "2.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-146",
+              "overUnder": "2.5",
+              "lastUpdatedAt": "2026-02-04T12:01:40.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.554628881&selectionId=43026472"
+            }
+          }
+        },
+        "assists-JALEN_PICKETT_1_NBA-game-ou-over": {
+          "oddID": "assists-JALEN_PICKETT_1_NBA-game-ou-over",
+          "opposingOddID": "assists-JALEN_PICKETT_1_NBA-game-ou-under",
+          "marketName": "Jalen Pickett Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "JALEN_PICKETT_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "JALEN_PICKETT_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "bookOdds": "-104",
+          "bookOverUnder": "1.5",
+          "openBookOdds": "+260",
+          "openBookOverUnder": "2.5",
+          "scoringSupported": true,
+          "byBookmaker": {},
+          "fairOdds": "+100",
+          "fairOverUnder": "1",
+          "openFairOdds": "+100",
+          "openFairOverUnder": "0.5"
+        },
+        "blocks-JAMAL_MURRAY_1_NBA-game-ou-over": {
+          "oddID": "blocks-JAMAL_MURRAY_1_NBA-game-ou-over",
+          "opposingOddID": "blocks-JAMAL_MURRAY_1_NBA-game-ou-under",
+          "marketName": "Jamal Murray Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "JAMAL_MURRAY_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "JAMAL_MURRAY_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+176",
+          "bookOdds": "+155",
+          "fairOverUnder": "0.5",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "+181",
+          "openBookOdds": "+165",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        },
+        "blocks-JAMAL_MURRAY_1_NBA-game-ou-under": {
+          "oddID": "blocks-JAMAL_MURRAY_1_NBA-game-ou-under",
+          "opposingOddID": "blocks-JAMAL_MURRAY_1_NBA-game-ou-over",
+          "marketName": "Jamal Murray Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "JAMAL_MURRAY_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "JAMAL_MURRAY_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-176",
+          "fairOverUnder": "0.5",
+          "openFairOdds": "-181",
+          "openFairOverUnder": "0.5",
+          "scoringSupported": true,
+          "bookOdds": "-222",
+          "bookOverUnder": "0.5",
+          "byBookmaker": {},
+          "openBookOdds": "-222",
+          "openBookOverUnder": "0.5"
+        },
+        "blocks-NIKOLA_JOKIC_1_NBA-game-ou-over": {
+          "oddID": "blocks-NIKOLA_JOKIC_1_NBA-game-ou-over",
+          "opposingOddID": "blocks-NIKOLA_JOKIC_1_NBA-game-ou-under",
+          "marketName": "Nikola Joki\u0107 Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "NIKOLA_JOKIC_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "NIKOLA_JOKIC_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-108",
+          "bookOdds": "-136",
+          "fairOverUnder": "0.5",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "+115",
+          "openBookOdds": "+105",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        },
+        "blocks-NIKOLA_JOKIC_1_NBA-game-ou-under": {
+          "oddID": "blocks-NIKOLA_JOKIC_1_NBA-game-ou-under",
+          "opposingOddID": "blocks-NIKOLA_JOKIC_1_NBA-game-ou-over",
+          "marketName": "Nikola Joki\u0107 Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "NIKOLA_JOKIC_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "NIKOLA_JOKIC_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+108",
+          "fairOverUnder": "0.5",
+          "openFairOdds": "-115",
+          "openFairOverUnder": "0.5",
+          "scoringSupported": true,
+          "bookOdds": "-115",
+          "bookOverUnder": "0.5",
+          "byBookmaker": {},
+          "openBookOdds": "-141",
+          "openBookOverUnder": "0.5"
+        },
+        "blocks-PEYTON_WATSON_1_NBA-game-ou-over": {
+          "oddID": "blocks-PEYTON_WATSON_1_NBA-game-ou-over",
+          "opposingOddID": "blocks-PEYTON_WATSON_1_NBA-game-ou-under",
+          "marketName": "Peyton Watson Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "PEYTON_WATSON_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "PEYTON_WATSON_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+163",
+          "bookOdds": "+141",
+          "fairOverUnder": "1.5",
+          "bookOverUnder": "1.5",
+          "openFairOdds": "+171",
+          "openBookOdds": "+155",
+          "openFairOverUnder": "1.5",
+          "openBookOverUnder": "1.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        },
+        "blocks-PEYTON_WATSON_1_NBA-game-ou-under": {
+          "oddID": "blocks-PEYTON_WATSON_1_NBA-game-ou-under",
+          "opposingOddID": "blocks-PEYTON_WATSON_1_NBA-game-ou-over",
+          "marketName": "Peyton Watson Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "PEYTON_WATSON_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "PEYTON_WATSON_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-163",
+          "fairOverUnder": "1.5",
+          "openFairOdds": "-171",
+          "openFairOverUnder": "1.5",
+          "scoringSupported": true,
+          "bookOdds": "-208",
+          "bookOverUnder": "1.5",
+          "byBookmaker": {},
+          "openBookOdds": "-213",
+          "openBookOverUnder": "1.5"
+        },
+        "rebounds-JALEN_PICKETT_1_NBA-game-ou-over": {
+          "oddID": "rebounds-JALEN_PICKETT_1_NBA-game-ou-over",
+          "opposingOddID": "rebounds-JALEN_PICKETT_1_NBA-game-ou-under",
+          "marketName": "Jalen Pickett Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "JALEN_PICKETT_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "JALEN_PICKETT_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-118",
+          "bookOdds": "-126",
+          "fairOverUnder": "1.5",
+          "bookOverUnder": "1.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "+135",
+          "openFairOverUnder": "1",
+          "openBookOverUnder": "2.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        },
+        "rebounds-JALEN_PICKETT_1_NBA-game-ou-under": {
+          "oddID": "rebounds-JALEN_PICKETT_1_NBA-game-ou-under",
+          "opposingOddID": "rebounds-JALEN_PICKETT_1_NBA-game-ou-over",
+          "marketName": "Jalen Pickett Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "JALEN_PICKETT_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "JALEN_PICKETT_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+118",
+          "fairOverUnder": "1.5",
+          "openFairOdds": "+100",
+          "openFairOverUnder": "1",
+          "scoringSupported": true,
+          "bookOdds": "+112",
+          "bookOverUnder": "1.5",
+          "byBookmaker": {},
+          "openBookOdds": "-190",
+          "openBookOverUnder": "2.5"
+        },
+        "steals-JALEN_PICKETT_1_NBA-game-ou-over": {
+          "oddID": "steals-JALEN_PICKETT_1_NBA-game-ou-over",
+          "opposingOddID": "steals-JALEN_PICKETT_1_NBA-game-ou-under",
+          "marketName": "Jalen Pickett Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "JALEN_PICKETT_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "JALEN_PICKETT_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+296",
+          "bookOdds": "+270",
+          "fairOverUnder": "0.5",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "+286",
+          "openBookOdds": "+260",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        },
+        "steals-JALEN_PICKETT_1_NBA-game-ou-under": {
+          "oddID": "steals-JALEN_PICKETT_1_NBA-game-ou-under",
+          "opposingOddID": "steals-JALEN_PICKETT_1_NBA-game-ou-over",
+          "marketName": "Jalen Pickett Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "JALEN_PICKETT_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "JALEN_PICKETT_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-296",
+          "fairOverUnder": "0.5",
+          "openFairOdds": "-286",
+          "openFairOverUnder": "0.5",
+          "scoringSupported": true,
+          "bookOdds": "-400",
+          "bookOverUnder": "0.5",
+          "byBookmaker": {},
+          "openBookOdds": "-400",
+          "openBookOverUnder": "0.5"
+        },
+        "steals-JAMAL_MURRAY_1_NBA-game-ou-over": {
+          "oddID": "steals-JAMAL_MURRAY_1_NBA-game-ou-over",
+          "opposingOddID": "steals-JAMAL_MURRAY_1_NBA-game-ou-under",
+          "marketName": "Jamal Murray Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "JAMAL_MURRAY_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "JAMAL_MURRAY_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-139",
+          "bookOdds": "-165",
+          "fairOverUnder": "0.5",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "-150",
+          "openBookOdds": "-165",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        },
+        "steals-JAMAL_MURRAY_1_NBA-game-ou-under": {
+          "oddID": "steals-JAMAL_MURRAY_1_NBA-game-ou-under",
+          "opposingOddID": "steals-JAMAL_MURRAY_1_NBA-game-ou-over",
+          "marketName": "Jamal Murray Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "JAMAL_MURRAY_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "JAMAL_MURRAY_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+139",
+          "fairOverUnder": "0.5",
+          "openFairOdds": "+150",
+          "openFairOverUnder": "0.5",
+          "scoringSupported": true,
+          "bookOdds": "+124",
+          "bookOverUnder": "0.5",
+          "byBookmaker": {},
+          "openBookOdds": "+130",
+          "openBookOverUnder": "0.5"
+        },
+        "steals-NIKOLA_JOKIC_1_NBA-game-ou-over": {
+          "oddID": "steals-NIKOLA_JOKIC_1_NBA-game-ou-over",
+          "opposingOddID": "steals-NIKOLA_JOKIC_1_NBA-game-ou-under",
+          "marketName": "Nikola Joki\u0107 Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "NIKOLA_JOKIC_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "NIKOLA_JOKIC_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-188",
+          "bookOdds": "-230",
+          "fairOverUnder": "0.5",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "-209",
+          "openBookOdds": "-230",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        },
+        "steals-NIKOLA_JOKIC_1_NBA-game-ou-under": {
+          "oddID": "steals-NIKOLA_JOKIC_1_NBA-game-ou-under",
+          "opposingOddID": "steals-NIKOLA_JOKIC_1_NBA-game-ou-over",
+          "marketName": "Nikola Joki\u0107 Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "NIKOLA_JOKIC_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "NIKOLA_JOKIC_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+188",
+          "fairOverUnder": "0.5",
+          "openFairOdds": "+209",
+          "openFairOverUnder": "0.5",
+          "scoringSupported": true,
+          "bookOdds": "+170",
+          "bookOverUnder": "0.5",
+          "byBookmaker": {},
+          "openBookOdds": "+160",
+          "openBookOverUnder": "0.5"
+        },
+        "steals-PEYTON_WATSON_1_NBA-game-ou-over": {
+          "oddID": "steals-PEYTON_WATSON_1_NBA-game-ou-over",
+          "opposingOddID": "steals-PEYTON_WATSON_1_NBA-game-ou-under",
+          "marketName": "Peyton Watson Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "PEYTON_WATSON_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "PEYTON_WATSON_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-142",
+          "bookOdds": "-167",
+          "fairOverUnder": "0.5",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "-159",
+          "openBookOdds": "-175",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        },
+        "steals-PEYTON_WATSON_1_NBA-game-ou-under": {
+          "oddID": "steals-PEYTON_WATSON_1_NBA-game-ou-under",
+          "opposingOddID": "steals-PEYTON_WATSON_1_NBA-game-ou-over",
+          "marketName": "Peyton Watson Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "PEYTON_WATSON_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "PEYTON_WATSON_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+142",
+          "fairOverUnder": "0.5",
+          "openFairOdds": "+159",
+          "openFairOverUnder": "0.5",
+          "scoringSupported": true,
+          "bookOdds": "+127",
+          "bookOverUnder": "0.5",
+          "byBookmaker": {},
+          "openBookOdds": "+135",
+          "openBookOverUnder": "0.5"
+        },
+        "assists-JALEN_PICKETT_1_NBA-game-ou-under": {
+          "oddID": "assists-JALEN_PICKETT_1_NBA-game-ou-under",
+          "opposingOddID": "assists-JALEN_PICKETT_1_NBA-game-ou-over",
+          "marketName": "Jalen Pickett Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "JALEN_PICKETT_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "JALEN_PICKETT_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "-125",
+          "fairOverUnder": "1",
+          "bookOverUnder": "1.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "+100",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "1.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        }
+      },
+      "players": {
+        "CHRISTIAN_BRAUN_1_NBA": {
+          "playerID": "CHRISTIAN_BRAUN_1_NBA",
+          "teamID": "DENVER_NUGGETS_NBA",
+          "firstName": "Christian",
+          "lastName": "Braun",
+          "name": "Christian Braun"
+        },
+        "JALEN_BRUNSON_1_NBA": {
+          "playerID": "JALEN_BRUNSON_1_NBA",
+          "teamID": "NEW_YORK_KNICKS_NBA",
+          "firstName": "Jalen",
+          "lastName": "Brunson",
+          "name": "Jalen Brunson"
+        },
+        "JALEN_PICKETT_1_NBA": {
+          "playerID": "JALEN_PICKETT_1_NBA",
+          "teamID": "DENVER_NUGGETS_NBA",
+          "firstName": "Jalen",
+          "lastName": "Pickett",
+          "name": "Jalen Pickett"
+        },
+        "JAMAL_MURRAY_1_NBA": {
+          "playerID": "JAMAL_MURRAY_1_NBA",
+          "teamID": "DENVER_NUGGETS_NBA",
+          "firstName": "Jamal",
+          "lastName": "Murray",
+          "name": "Jamal Murray"
+        },
+        "JOSH_HART_1_NBA": {
+          "playerID": "JOSH_HART_1_NBA",
+          "teamID": "NEW_YORK_KNICKS_NBA",
+          "firstName": "Josh",
+          "lastName": "Hart",
+          "name": "Josh Hart"
+        },
+        "KARLANTHONY_TOWNS_1_NBA": {
+          "playerID": "KARLANTHONY_TOWNS_1_NBA",
+          "teamID": "NEW_YORK_KNICKS_NBA",
+          "firstName": "Karl-Anthony",
+          "lastName": "Towns",
+          "name": "Karl-Anthony Towns"
+        },
+        "MIKAL_BRIDGES_1_NBA": {
+          "playerID": "MIKAL_BRIDGES_1_NBA",
+          "teamID": "NEW_YORK_KNICKS_NBA",
+          "firstName": "Mikal",
+          "lastName": "Bridges",
+          "name": "Mikal Bridges"
+        },
+        "NIKOLA_JOKIC_1_NBA": {
+          "playerID": "NIKOLA_JOKIC_1_NBA",
+          "teamID": "DENVER_NUGGETS_NBA",
+          "firstName": "Nikola",
+          "lastName": "Jokic",
+          "name": "Nikola Joki\u0107"
+        },
+        "OG_ANUNOBY_1_NBA": {
+          "playerID": "OG_ANUNOBY_1_NBA",
+          "teamID": "NEW_YORK_KNICKS_NBA",
+          "firstName": "OG",
+          "lastName": "Anunoby",
+          "name": "OG Anunoby"
+        },
+        "PEYTON_WATSON_1_NBA": {
+          "playerID": "PEYTON_WATSON_1_NBA",
+          "teamID": "DENVER_NUGGETS_NBA",
+          "firstName": "Peyton",
+          "lastName": "Watson",
+          "name": "Peyton Watson"
+        },
+        "MILES_MCBRIDE_1_NBA": {
+          "playerID": "MILES_MCBRIDE_1_NBA",
+          "teamID": "NEW_YORK_KNICKS_NBA",
+          "firstName": "Miles",
+          "lastName": "McBride",
+          "name": "Miles McBride"
+        },
+        "MITCHELL_ROBINSON_1_NBA": {
+          "playerID": "MITCHELL_ROBINSON_1_NBA",
+          "teamID": "NEW_YORK_KNICKS_NBA",
+          "firstName": "Mitchell",
+          "lastName": "Robinson",
+          "name": "Mitchell Robinson"
+        },
+        "LANDRY_SHAMET_1_NBA": {
+          "playerID": "LANDRY_SHAMET_1_NBA",
+          "teamID": "NEW_YORK_KNICKS_NBA",
+          "firstName": "Landry",
+          "lastName": "Shamet",
+          "name": "Landry Shamet"
+        },
+        "SPENCER_JONES_1_NBA": {
+          "playerID": "SPENCER_JONES_1_NBA",
+          "teamID": "DENVER_NUGGETS_NBA",
+          "firstName": "Spencer",
+          "lastName": "Jones",
+          "name": "Spencer Jones"
+        }
+      },
+      "results": {}
+    }
+  ]
+}

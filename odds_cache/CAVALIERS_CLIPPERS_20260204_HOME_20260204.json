@@ -1,0 +1,1431 @@
+{
+  "nextCursor": "n.1770262200000.19C8QaMVmfX7bMJZ9aBw",
+  "success": true,
+  "data": [
+    {
+      "eventID": "19C8QaMVmfX7bMJZ9aBw",
+      "sportID": "BASKETBALL",
+      "leagueID": "NBA",
+      "type": "match",
+      "teams": {
+        "home": {
+          "teamID": "LA_CLIPPERS_NBA",
+          "names": {
+            "long": "Los Angeles Clippers",
+            "medium": "Clippers",
+            "short": "LAC",
+            "location": "LA"
+          },
+          "colors": {
+            "primary": "#006BB6",
+            "secondary": "#ED174C",
+            "primaryContrast": "#FFFFFF",
+            "secondaryContrast": "#000000"
+          },
+          "statEntityID": "home"
+        },
+        "away": {
+          "teamID": "CLEVELAND_CAVALIERS_NBA",
+          "names": {
+            "long": "Cleveland Cavaliers",
+            "medium": "Cavaliers",
+            "short": "CLE",
+            "location": "Cleveland"
+          },
+          "colors": {
+            "primary": "#871539",
+            "secondary": "#000000",
+            "primaryContrast": "#FFFFFF",
+            "secondaryContrast": "#871539"
+          },
+          "statEntityID": "away"
+        }
+      },
+      "status": {
+        "started": false,
+        "completed": false,
+        "cancelled": false,
+        "ended": false,
+        "live": false,
+        "delayed": false,
+        "currentPeriodID": "",
+        "previousPeriodID": "",
+        "displayShort": "",
+        "displayLong": "Upcoming",
+        "inBreak": false,
+        "startsAt": "2026-02-05T03:30:00.000Z",
+        "previousStartsAt": [],
+        "hardStart": true,
+        "periods": {
+          "started": [],
+          "ended": []
+        },
+        "oddsPresent": true,
+        "oddsAvailable": true,
+        "finalized": false
+      },
+      "info": {
+        "seasonWeek": "NBA 25/26",
+        "venue": {
+          "name": "Intuit Dome",
+          "countryName": "United States",
+          "countryCode": "US",
+          "regionName": "California",
+          "regionCode": "CA",
+          "city": "Inglewood",
+          "address": "3930 W Century Blvd, Inglewood, CA 90303",
+          "capacity": 18000
+        }
+      },
+      "links": {
+        "bookmakers": {
+          "fanduel": "https://sportsbook.fanduel.com/basketball/-/35209681",
+          "sportsbet": "https://www.sportsbet.com.au/betting/basketball---us/nba/cleveland-cavaliers-at-los-angeles-clippers-10105003",
+          "888sport": "https://www.888sport.com/basketball/united-states-of-america/nba/cleveland-cavaliers-los-angeles-clippers-e-7090601",
+          "boylesports": "https://www.boylesports.com/sports/basketball/event/usa-nba/los-angeles-clippers-v-cleveland-cavaliers",
+          "ladbrokes": "https://www.ladbrokes.com.au/sports/-/-/-/665b6d92-760f-4dab-84c8-4daa997de636",
+          "neds": "https://www.neds.com.au/sports/-/-/-/665b6d92-760f-4dab-84c8-4daa997de636",
+          "paddypower": "https://www.paddypower.com/basketball/nba/cleveland-cavaliers-@-los-angeles-clippers-35209681",
+          "draftkings": "https://sportsbook.draftkings.com/event/33574058",
+          "pointsbet": "https://pointsbet.com.au/sports/basketball/NBA/2594514",
+          "coolbet": "https://www.coolbet.com/en/sports/match/4984906",
+          "tab": "https://www.tab.com.au/sports/betting/Basketball/competitions/NBA/matches/LA%20Clippers%20v%20Cleveland",
+          "1xbet": "https://1xbet.com/en/line/football/13589-nba/302395426-los-angeles-clippers-cleveland-cavaliers",
+          "caesars": "https://sportsbook.caesars.com/us/nj/bet/basketball/5385d528-04b7-4fd1-9534-fbc3f111d8f2/cleveland-cavaliers-at-los-angeles-clippers",
+          "williamhill": "https://sports.williamhill.com/betting/en-gb/basketball/OB_EV38590885/cleveland-cavaliers-at-los-angeles-clippers",
+          "betonline": "https://sports.betonline.ag/sportsbook/basketball/nba/game/490953048",
+          "betsson": "https://www.betsson.com/en/sportsbook/basketball/nba/nba?eventId=f-wwW7MSKgHEmMkHV1zR4dnA",
+          "lowvig": "https://sports.lowvig.ag/sportsbook/basketball/nba/game/490953048",
+          "nordicbet": "https://www.nordicbet.com/en/sportsbook/basketball/nba/nba/la-clippers-cleveland-cavaliers",
+          "playup": "https://www.playup.com.au/betting/sports/nba/los-angeles-clippers-v-cleveland-cavaliers/1803826",
+          "betmgm": "https://sports.nj.betmgm.com/en/sports/events/18888549",
+          "coral": "https://sports.coral.co.uk/event/basketball/basketball-usa/nba/la-clippers-v-cle-cavaliers/41689832",
+          "fliff": "https://sports.getfliff.com/markets/366780_c_p_204_prematch",
+          "pinnacle": "https://www.pinnacle.com/en/basketball/nba/cleveland-cavaliers-vs-los-angeles-clippers/1623190607",
+          "bovada": "https://www.bovada.lv/sports/basketball/nba/cleveland-cavaliers-l-a-clippers-202602042230",
+          "betrsportsbook": "https://www.betr.com.au/sports/Basketball/107/United-States-of-America/NBA/Cleveland-Cavaliers-@-Los-Angeles-Clippers/1979522/All-Markets",
+          "matchbook": "https://www.matchbook.com/events/basketball/united-states-of-america/nba/32421391750800045",
+          "hardrockbet": "https://app.hardrock.bet/home/competition/nba/619188635333034233",
+          "betfairsportsbook": "https://www.betfair.com/betting/basketball/nba/cleveland-cavaliers-@-los-angeles-clippers/e-35209681",
+          "espnbet": "https://espnbet.com/sport/basketball/organization/united-states/competition/nba/event/5851c18f-074e-418b-b5c0-861e7717b100",
+          "thescorebet": "https://thescore.bet/sport/basketball/organization/united-states/competition/nba/event/5851c18f-074e-418b-b5c0-861e7717b100",
+          "everygame": "https://sports.everygame.eu/en/Bets/Basketball/NBA-Lines/Cleveland-Cavaliers-at-Los-Angeles-Clippers/2791833",
+          "betway": "https://betway.com/en/sports/evt/16324807",
+          "virginbet": "https://www.virginbet.com/sports/basketball/nba/la-clippers-cleveland-cavaliers/SBTE_2_1024653478",
+          "ballybet": "https://play.ballybet.com/sports#event/1024653478",
+          "betparx": "https://nj.betparx.com/kambi#event/1024653478",
+          "betrivers": "https://nj.betrivers.com/?page=sportsbook#event/1024653478",
+          "casumo": "https://www.casumo.com/en-gb/sports#event/1024653478",
+          "grosvenor": "https://www.grosvenorcasinos.com/sport#event/1024653478",
+          "leovegas": "https://www.leovegas.co.uk/betting#event/1024653478",
+          "livescorebet": "https://www.livescorebet.com/uk/sports/basketball/nba/la-clippers-cleveland-cavaliers/SBTE_2_1024653478",
+          "tabtouch": "https://www.tabtouch.mobi/tabtouch-sports/event/1024653478",
+          "unibet": "https://www.unibet.com/betting/sports/event/1024653478"
+        }
+      },
+      "odds": {
+        "assists-KAWHI_LEONARD_1_NBA-game-ou-over": {
+          "oddID": "assists-KAWHI_LEONARD_1_NBA-game-ou-over",
+          "opposingOddID": "assists-KAWHI_LEONARD_1_NBA-game-ou-under",
+          "statID": "assists",
+          "statEntityID": "KAWHI_LEONARD_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "KAWHI_LEONARD_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+159",
+          "bookOdds": "-134",
+          "fairOverUnder": "5.5",
+          "bookOverUnder": "4.5",
+          "openFairOdds": "-108",
+          "openBookOdds": "-125",
+          "openFairOverUnder": "4.5",
+          "openBookOverUnder": "4.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-140",
+              "overUnder": "4.5",
+              "lastUpdatedAt": "2026-02-04T12:04:56.000Z",
+              "available": true,
+              "altLines": [
+                {
+                  "odds": "-4500",
+                  "overUnder": "1.5",
+                  "lastUpdatedAt": "2026-02-04T12:04:56.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-310",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2026-02-04T12:04:56.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+152",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2026-02-04T12:04:56.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+520",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2026-02-04T12:04:56.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1300",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-02-04T12:04:56.000Z",
+                  "available": true
+                }
+              ],
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.554629899&selectionId=12260583"
+            }
+          },
+          "marketName": "Kawhi Leonard Assists Over/Under"
+        },
+        "assists-KAWHI_LEONARD_1_NBA-game-ou-under": {
+          "oddID": "assists-KAWHI_LEONARD_1_NBA-game-ou-under",
+          "opposingOddID": "assists-KAWHI_LEONARD_1_NBA-game-ou-over",
+          "statID": "assists",
+          "statEntityID": "KAWHI_LEONARD_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "KAWHI_LEONARD_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-159",
+          "bookOdds": "+100",
+          "fairOverUnder": "5.5",
+          "bookOverUnder": "4.5",
+          "openFairOdds": "+108",
+          "openBookOdds": "-105",
+          "openFairOverUnder": "4.5",
+          "openBookOverUnder": "4.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+106",
+              "overUnder": "4.5",
+              "lastUpdatedAt": "2026-02-04T12:04:56.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.554629899&selectionId=12260584"
+            }
+          },
+          "marketName": "Kawhi Leonard Assists Over/Under"
+        },
+        "points-IVICA_ZUBAC_1_NBA-game-ou-over": {
+          "oddID": "points-IVICA_ZUBAC_1_NBA-game-ou-over",
+          "opposingOddID": "points-IVICA_ZUBAC_1_NBA-game-ou-under",
+          "statID": "points",
+          "statEntityID": "IVICA_ZUBAC_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "IVICA_ZUBAC_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+132",
+          "bookOdds": "-114",
+          "fairOverUnder": "14.5",
+          "bookOverUnder": "13.5",
+          "openFairOdds": "+121",
+          "openBookOdds": "-120",
+          "openFairOverUnder": "14.5",
+          "openBookOverUnder": "13.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-114",
+              "overUnder": "13.5",
+              "lastUpdatedAt": "2026-02-04T12:04:56.000Z",
+              "available": true,
+              "altLines": [
+                {
+                  "odds": "-390",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-02-04T12:04:56.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+120",
+                  "overUnder": "14.5",
+                  "lastUpdatedAt": "2026-02-04T12:04:56.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+400",
+                  "overUnder": "19.5",
+                  "lastUpdatedAt": "2026-02-04T12:04:56.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1200",
+                  "overUnder": "24.5",
+                  "lastUpdatedAt": "2026-02-04T12:04:56.000Z",
+                  "available": true
+                }
+              ],
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.554629884&selectionId=13527611"
+            }
+          },
+          "marketName": "Ivica Zubac Points Over/Under"
+        },
+        "points-IVICA_ZUBAC_1_NBA-game-ou-under": {
+          "oddID": "points-IVICA_ZUBAC_1_NBA-game-ou-under",
+          "opposingOddID": "points-IVICA_ZUBAC_1_NBA-game-ou-over",
+          "statID": "points",
+          "statEntityID": "IVICA_ZUBAC_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "IVICA_ZUBAC_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-132",
+          "bookOdds": "-115",
+          "fairOverUnder": "14.5",
+          "bookOverUnder": "13.5",
+          "openFairOdds": "-121",
+          "openBookOdds": "-110",
+          "openFairOverUnder": "14.5",
+          "openBookOverUnder": "13.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-114",
+              "overUnder": "13.5",
+              "lastUpdatedAt": "2026-02-04T12:04:56.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.554629884&selectionId=22190771"
+            }
+          },
+          "marketName": "Ivica Zubac Points Over/Under"
+        },
+        "points-JOHN_COLLINS_1_NBA-game-ou-over": {
+          "oddID": "points-JOHN_COLLINS_1_NBA-game-ou-over",
+          "opposingOddID": "points-JOHN_COLLINS_1_NBA-game-ou-under",
+          "statID": "points",
+          "statEntityID": "JOHN_COLLINS_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "JOHN_COLLINS_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+121",
+          "bookOdds": "-115",
+          "fairOverUnder": "16.5",
+          "bookOverUnder": "15.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "-115",
+          "openFairOverUnder": "15",
+          "openBookOverUnder": "14.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-114",
+              "overUnder": "15.5",
+              "lastUpdatedAt": "2026-02-04T12:04:56.000Z",
+              "available": true,
+              "altLines": [
+                {
+                  "odds": "-720",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-02-04T12:04:56.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-146",
+                  "overUnder": "14.5",
+                  "lastUpdatedAt": "2026-02-04T12:04:56.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+240",
+                  "overUnder": "19.5",
+                  "lastUpdatedAt": "2026-02-04T12:04:56.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+750",
+                  "overUnder": "24.5",
+                  "lastUpdatedAt": "2026-02-04T12:04:56.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1700",
+                  "overUnder": "29.5",
+                  "lastUpdatedAt": "2026-02-04T12:04:56.000Z",
+                  "available": true
+                }
+              ],
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.554629883&selectionId=15742045"
+            }
+          },
+          "marketName": "John Collins Points Over/Under"
+        },
+        "points-JOHN_COLLINS_1_NBA-game-ou-under": {
+          "oddID": "points-JOHN_COLLINS_1_NBA-game-ou-under",
+          "opposingOddID": "points-JOHN_COLLINS_1_NBA-game-ou-over",
+          "statID": "points",
+          "statEntityID": "JOHN_COLLINS_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "JOHN_COLLINS_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-121",
+          "fairOverUnder": "16.5",
+          "openFairOdds": "+100",
+          "openFairOverUnder": "15",
+          "scoringSupported": true,
+          "marketName": "John Collins Points Over/Under",
+          "bookOdds": "-111",
+          "bookOverUnder": "15.5",
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-114",
+              "overUnder": "15.5",
+              "lastUpdatedAt": "2026-02-04T12:04:56.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.554629883&selectionId=15742046",
+              "altLines": [
+                {
+                  "odds": "-104",
+                  "overUnder": "14.5",
+                  "lastUpdatedAt": "2026-02-04T06:07:25.000Z",
+                  "available": false
+                }
+              ]
+            }
+          },
+          "openBookOdds": "-115",
+          "openBookOverUnder": "14.5"
+        },
+        "points-KAWHI_LEONARD_1_NBA-game-ou-over": {
+          "oddID": "points-KAWHI_LEONARD_1_NBA-game-ou-over",
+          "opposingOddID": "points-KAWHI_LEONARD_1_NBA-game-ou-under",
+          "statID": "points",
+          "statEntityID": "KAWHI_LEONARD_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "KAWHI_LEONARD_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+119",
+          "bookOdds": "-115",
+          "fairOverUnder": "27.5",
+          "bookOverUnder": "26.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "-105",
+          "openFairOverUnder": "27",
+          "openBookOverUnder": "26.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-118",
+              "overUnder": "26.5",
+              "lastUpdatedAt": "2026-02-04T12:04:56.000Z",
+              "available": true,
+              "altLines": [
+                {
+                  "odds": "-3500",
+                  "overUnder": "14.5",
+                  "lastUpdatedAt": "2026-02-04T12:04:56.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-520",
+                  "overUnder": "19.5",
+                  "lastUpdatedAt": "2026-02-04T12:04:56.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-172",
+                  "overUnder": "24.5",
+                  "lastUpdatedAt": "2026-02-04T12:04:56.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+154",
+                  "overUnder": "29.5",
+                  "lastUpdatedAt": "2026-02-04T12:04:56.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+360",
+                  "overUnder": "34.5",
+                  "lastUpdatedAt": "2026-02-04T12:04:56.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+870",
+                  "overUnder": "39.5",
+                  "lastUpdatedAt": "2026-02-04T12:04:56.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1700",
+                  "overUnder": "44.5",
+                  "lastUpdatedAt": "2026-02-04T12:04:56.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+4000",
+                  "overUnder": "49.5",
+                  "lastUpdatedAt": "2026-02-04T12:04:56.000Z",
+                  "available": true
+                }
+              ],
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.554629882&selectionId=12260583"
+            }
+          },
+          "marketName": "Kawhi Leonard Points Over/Under"
+        },
+        "points-KAWHI_LEONARD_1_NBA-game-ou-under": {
+          "oddID": "points-KAWHI_LEONARD_1_NBA-game-ou-under",
+          "opposingOddID": "points-KAWHI_LEONARD_1_NBA-game-ou-over",
+          "statID": "points",
+          "statEntityID": "KAWHI_LEONARD_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "KAWHI_LEONARD_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-119",
+          "fairOverUnder": "27.5",
+          "openFairOdds": "+100",
+          "openFairOverUnder": "27",
+          "scoringSupported": true,
+          "marketName": "Kawhi Leonard Points Over/Under",
+          "bookOdds": "-115",
+          "bookOverUnder": "26.5",
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-112",
+              "overUnder": "26.5",
+              "lastUpdatedAt": "2026-02-04T12:04:56.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.554629882&selectionId=12260584"
+            }
+          },
+          "openBookOdds": "-125",
+          "openBookOverUnder": "26.5"
+        },
+        "rebounds-IVICA_ZUBAC_1_NBA-game-ou-over": {
+          "oddID": "rebounds-IVICA_ZUBAC_1_NBA-game-ou-over",
+          "opposingOddID": "rebounds-IVICA_ZUBAC_1_NBA-game-ou-under",
+          "marketName": "Ivica Zubac Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "IVICA_ZUBAC_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "IVICA_ZUBAC_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+113",
+          "bookOdds": "+100",
+          "fairOverUnder": "11.5",
+          "bookOverUnder": "11.5",
+          "openFairOdds": "+120",
+          "openBookOdds": "+105",
+          "openFairOverUnder": "11.5",
+          "openBookOverUnder": "11.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+108",
+              "overUnder": "11.5",
+              "lastUpdatedAt": "2026-02-04T12:04:56.000Z",
+              "available": true,
+              "altLines": [
+                {
+                  "odds": "-3500",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2026-02-04T12:04:56.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-620",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2026-02-04T12:04:56.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-230",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-02-04T12:04:56.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+255",
+                  "overUnder": "13.5",
+                  "lastUpdatedAt": "2026-02-04T12:04:56.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+600",
+                  "overUnder": "15.5",
+                  "lastUpdatedAt": "2026-02-04T12:04:56.000Z",
+                  "available": true
+                }
+              ],
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.554629894&selectionId=13527611"
+            }
+          }
+        },
+        "rebounds-IVICA_ZUBAC_1_NBA-game-ou-under": {
+          "oddID": "rebounds-IVICA_ZUBAC_1_NBA-game-ou-under",
+          "opposingOddID": "rebounds-IVICA_ZUBAC_1_NBA-game-ou-over",
+          "marketName": "Ivica Zubac Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "IVICA_ZUBAC_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "IVICA_ZUBAC_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-113",
+          "bookOdds": "-130",
+          "fairOverUnder": "11.5",
+          "bookOverUnder": "11.5",
+          "openFairOdds": "-120",
+          "openBookOdds": "-140",
+          "openFairOverUnder": "11.5",
+          "openBookOverUnder": "11.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-144",
+              "overUnder": "11.5",
+              "lastUpdatedAt": "2026-02-04T12:04:56.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.554629894&selectionId=22190771"
+            }
+          }
+        },
+        "rebounds-JOHN_COLLINS_1_NBA-game-ou-over": {
+          "oddID": "rebounds-JOHN_COLLINS_1_NBA-game-ou-over",
+          "opposingOddID": "rebounds-JOHN_COLLINS_1_NBA-game-ou-under",
+          "marketName": "John Collins Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "JOHN_COLLINS_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "JOHN_COLLINS_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+124",
+          "bookOdds": "+110",
+          "fairOverUnder": "5.5",
+          "bookOverUnder": "5.5",
+          "openFairOdds": "+137",
+          "openBookOdds": "+120",
+          "openFairOverUnder": "5.5",
+          "openBookOverUnder": "5.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+110",
+              "overUnder": "5.5",
+              "lastUpdatedAt": "2026-02-04T12:04:56.000Z",
+              "available": true,
+              "altLines": [
+                {
+                  "odds": "-410",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2026-02-04T12:04:56.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+390",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2026-02-04T12:04:56.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1060",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-02-04T12:04:56.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+2500",
+                  "overUnder": "11.5",
+                  "lastUpdatedAt": "2026-02-04T11:03:56.000Z",
+                  "available": false
+                }
+              ],
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.554629893&selectionId=15742045"
+            }
+          }
+        },
+        "rebounds-JOHN_COLLINS_1_NBA-game-ou-under": {
+          "oddID": "rebounds-JOHN_COLLINS_1_NBA-game-ou-under",
+          "opposingOddID": "rebounds-JOHN_COLLINS_1_NBA-game-ou-over",
+          "marketName": "John Collins Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "JOHN_COLLINS_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "JOHN_COLLINS_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-124",
+          "bookOdds": "-145",
+          "fairOverUnder": "5.5",
+          "bookOverUnder": "5.5",
+          "openFairOdds": "-137",
+          "openBookOdds": "-165",
+          "openFairOverUnder": "5.5",
+          "openBookOverUnder": "5.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-146",
+              "overUnder": "5.5",
+              "lastUpdatedAt": "2026-02-04T12:04:56.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.554629893&selectionId=15742046"
+            }
+          }
+        },
+        "rebounds-KAWHI_LEONARD_1_NBA-game-ou-over": {
+          "oddID": "rebounds-KAWHI_LEONARD_1_NBA-game-ou-over",
+          "opposingOddID": "rebounds-KAWHI_LEONARD_1_NBA-game-ou-under",
+          "marketName": "Kawhi Leonard Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "KAWHI_LEONARD_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "KAWHI_LEONARD_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+102",
+          "bookOdds": "-112",
+          "fairOverUnder": "5.5",
+          "bookOverUnder": "5.5",
+          "openFairOdds": "+108",
+          "openBookOdds": "-105",
+          "openFairOverUnder": "5.5",
+          "openBookOverUnder": "5.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-106",
+              "overUnder": "5.5",
+              "lastUpdatedAt": "2026-02-04T12:04:56.000Z",
+              "available": true,
+              "altLines": [
+                {
+                  "odds": "-500",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2026-02-04T12:04:56.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+320",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2026-02-04T12:04:56.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+830",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-02-04T12:04:56.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+2000",
+                  "overUnder": "11.5",
+                  "lastUpdatedAt": "2026-02-04T12:04:56.000Z",
+                  "available": true
+                }
+              ],
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.554629892&selectionId=12260583"
+            }
+          }
+        },
+        "rebounds-KAWHI_LEONARD_1_NBA-game-ou-under": {
+          "oddID": "rebounds-KAWHI_LEONARD_1_NBA-game-ou-under",
+          "opposingOddID": "rebounds-KAWHI_LEONARD_1_NBA-game-ou-over",
+          "marketName": "Kawhi Leonard Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "KAWHI_LEONARD_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "KAWHI_LEONARD_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-102",
+          "bookOdds": "-116",
+          "fairOverUnder": "5.5",
+          "bookOverUnder": "5.5",
+          "openFairOdds": "-108",
+          "openBookOdds": "-125",
+          "openFairOverUnder": "5.5",
+          "openBookOverUnder": "5.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-125",
+              "overUnder": "5.5",
+              "lastUpdatedAt": "2026-02-04T12:04:56.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.554629892&selectionId=12260584"
+            }
+          }
+        },
+        "assists-IVICA_ZUBAC_1_NBA-game-ou-over": {
+          "oddID": "assists-IVICA_ZUBAC_1_NBA-game-ou-over",
+          "opposingOddID": "assists-IVICA_ZUBAC_1_NBA-game-ou-under",
+          "marketName": "Ivica Zubac Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "IVICA_ZUBAC_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "IVICA_ZUBAC_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+115",
+          "bookOdds": "+102",
+          "fairOverUnder": "2.5",
+          "bookOverUnder": "2.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "+100",
+          "openFairOverUnder": "2.5",
+          "openBookOverUnder": "2.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        },
+        "assists-IVICA_ZUBAC_1_NBA-game-ou-under": {
+          "oddID": "assists-IVICA_ZUBAC_1_NBA-game-ou-under",
+          "opposingOddID": "assists-IVICA_ZUBAC_1_NBA-game-ou-over",
+          "marketName": "Ivica Zubac Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "IVICA_ZUBAC_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "IVICA_ZUBAC_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-115",
+          "bookOdds": "-132",
+          "fairOverUnder": "2.5",
+          "bookOverUnder": "2.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "+100",
+          "openFairOverUnder": "2.5",
+          "openBookOverUnder": "2.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        },
+        "assists-JOHN_COLLINS_1_NBA-game-ou-over": {
+          "oddID": "assists-JOHN_COLLINS_1_NBA-game-ou-over",
+          "opposingOddID": "assists-JOHN_COLLINS_1_NBA-game-ou-under",
+          "marketName": "John Collins Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "JOHN_COLLINS_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "JOHN_COLLINS_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+110",
+          "bookOdds": "+100",
+          "fairOverUnder": "1.5",
+          "bookOverUnder": "1.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "+100",
+          "openFairOverUnder": "1.5",
+          "openBookOverUnder": "1.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        },
+        "assists-JOHN_COLLINS_1_NBA-game-ou-under": {
+          "oddID": "assists-JOHN_COLLINS_1_NBA-game-ou-under",
+          "opposingOddID": "assists-JOHN_COLLINS_1_NBA-game-ou-over",
+          "marketName": "John Collins Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "JOHN_COLLINS_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "JOHN_COLLINS_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-110",
+          "bookOdds": "-121",
+          "fairOverUnder": "1.5",
+          "bookOverUnder": "1.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "+100",
+          "openFairOverUnder": "1.5",
+          "openBookOverUnder": "1.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        },
+        "steals-KAWHI_LEONARD_1_NBA-game-ou-over": {
+          "oddID": "steals-KAWHI_LEONARD_1_NBA-game-ou-over",
+          "opposingOddID": "steals-KAWHI_LEONARD_1_NBA-game-ou-under",
+          "marketName": "Kawhi Leonard Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "KAWHI_LEONARD_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "KAWHI_LEONARD_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "-132",
+          "fairOverUnder": "2",
+          "bookOverUnder": "1.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "+100",
+          "openFairOverUnder": "1.5",
+          "openBookOverUnder": "1.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-114",
+              "overUnder": "1.5",
+              "lastUpdatedAt": "2026-02-04T12:04:56.000Z",
+              "available": true,
+              "altLines": [
+                {
+                  "odds": "-580",
+                  "overUnder": "0.5",
+                  "lastUpdatedAt": "2026-02-04T12:04:56.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+270",
+                  "overUnder": "2.5",
+                  "lastUpdatedAt": "2026-02-04T12:04:56.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+680",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2026-02-04T12:04:56.000Z",
+                  "available": true
+                }
+              ],
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.554631513&selectionId=12260583"
+            }
+          }
+        },
+        "steals-KAWHI_LEONARD_1_NBA-game-ou-under": {
+          "oddID": "steals-KAWHI_LEONARD_1_NBA-game-ou-under",
+          "opposingOddID": "steals-KAWHI_LEONARD_1_NBA-game-ou-over",
+          "marketName": "Kawhi Leonard Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "KAWHI_LEONARD_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "KAWHI_LEONARD_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "-110",
+          "fairOverUnder": "2",
+          "bookOverUnder": "1.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "+100",
+          "openFairOverUnder": "1.5",
+          "openBookOverUnder": "1.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-114",
+              "overUnder": "1.5",
+              "lastUpdatedAt": "2026-02-04T12:04:56.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.554631513&selectionId=12260584"
+            }
+          }
+        },
+        "blocks-IVICA_ZUBAC_1_NBA-game-ou-over": {
+          "oddID": "blocks-IVICA_ZUBAC_1_NBA-game-ou-over",
+          "opposingOddID": "blocks-IVICA_ZUBAC_1_NBA-game-ou-under",
+          "marketName": "Ivica Zubac Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "IVICA_ZUBAC_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "IVICA_ZUBAC_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "-186",
+          "fairOverUnder": "1",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "+100",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-192",
+              "overUnder": "0.5",
+              "lastUpdatedAt": "2026-02-04T12:04:56.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.554631330&selectionId=12706223",
+              "altLines": [
+                {
+                  "odds": "+260",
+                  "overUnder": "1.5",
+                  "lastUpdatedAt": "2026-02-04T12:04:56.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "blocks-IVICA_ZUBAC_1_NBA-game-ou-under": {
+          "oddID": "blocks-IVICA_ZUBAC_1_NBA-game-ou-under",
+          "opposingOddID": "blocks-IVICA_ZUBAC_1_NBA-game-ou-over",
+          "marketName": "Ivica Zubac Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "IVICA_ZUBAC_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "IVICA_ZUBAC_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "-120",
+          "fairOverUnder": "1",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "+100",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        },
+        "steals-JOHN_COLLINS_1_NBA-game-ou-over": {
+          "oddID": "steals-JOHN_COLLINS_1_NBA-game-ou-over",
+          "opposingOddID": "steals-JOHN_COLLINS_1_NBA-game-ou-under",
+          "marketName": "John Collins Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "JOHN_COLLINS_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "JOHN_COLLINS_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "-192",
+          "fairOverUnder": "1",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "+100",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-192",
+              "overUnder": "0.5",
+              "lastUpdatedAt": "2026-02-04T12:04:56.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.554631361&selectionId=14921443",
+              "altLines": [
+                {
+                  "odds": "+240",
+                  "overUnder": "1.5",
+                  "lastUpdatedAt": "2026-02-04T12:04:56.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "steals-JOHN_COLLINS_1_NBA-game-ou-under": {
+          "oddID": "steals-JOHN_COLLINS_1_NBA-game-ou-under",
+          "opposingOddID": "steals-JOHN_COLLINS_1_NBA-game-ou-over",
+          "marketName": "John Collins Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "JOHN_COLLINS_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "JOHN_COLLINS_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "-105",
+          "fairOverUnder": "1",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "+100",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        },
+        "blocks-JOHN_COLLINS_1_NBA-game-ou-over": {
+          "oddID": "blocks-JOHN_COLLINS_1_NBA-game-ou-over",
+          "opposingOddID": "blocks-JOHN_COLLINS_1_NBA-game-ou-under",
+          "marketName": "John Collins Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "JOHN_COLLINS_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "JOHN_COLLINS_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "-182",
+          "fairOverUnder": "1",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "-137",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-210",
+              "overUnder": "0.5",
+              "lastUpdatedAt": "2026-02-04T12:04:56.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.554631330&selectionId=14921443",
+              "altLines": [
+                {
+                  "odds": "+230",
+                  "overUnder": "1.5",
+                  "lastUpdatedAt": "2026-02-04T12:04:56.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+750",
+                  "overUnder": "2.5",
+                  "lastUpdatedAt": "2026-02-04T12:04:56.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "blocks-JOHN_COLLINS_1_NBA-game-ou-under": {
+          "oddID": "blocks-JOHN_COLLINS_1_NBA-game-ou-under",
+          "opposingOddID": "blocks-JOHN_COLLINS_1_NBA-game-ou-over",
+          "marketName": "John Collins Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "JOHN_COLLINS_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "JOHN_COLLINS_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "-120",
+          "fairOverUnder": "1",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "-137",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        },
+        "blocks-KAWHI_LEONARD_1_NBA-game-ou-over": {
+          "oddID": "blocks-KAWHI_LEONARD_1_NBA-game-ou-over",
+          "opposingOddID": "blocks-KAWHI_LEONARD_1_NBA-game-ou-under",
+          "marketName": "Kawhi Leonard Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "KAWHI_LEONARD_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "KAWHI_LEONARD_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+145",
+          "bookOdds": "+130",
+          "fairOverUnder": "0.5",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "+137",
+          "openBookOdds": "+125",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        },
+        "blocks-KAWHI_LEONARD_1_NBA-game-ou-under": {
+          "oddID": "blocks-KAWHI_LEONARD_1_NBA-game-ou-under",
+          "opposingOddID": "blocks-KAWHI_LEONARD_1_NBA-game-ou-over",
+          "marketName": "Kawhi Leonard Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "KAWHI_LEONARD_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "KAWHI_LEONARD_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-145",
+          "fairOverUnder": "0.5",
+          "openFairOdds": "-137",
+          "openFairOverUnder": "0.5",
+          "scoringSupported": true,
+          "bookOdds": "-172",
+          "bookOverUnder": "0.5",
+          "byBookmaker": {},
+          "openBookOdds": "-172",
+          "openBookOverUnder": "0.5"
+        },
+        "steals-IVICA_ZUBAC_1_NBA-game-ou-over": {
+          "oddID": "steals-IVICA_ZUBAC_1_NBA-game-ou-over",
+          "opposingOddID": "steals-IVICA_ZUBAC_1_NBA-game-ou-under",
+          "marketName": "Ivica Zubac Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "IVICA_ZUBAC_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "IVICA_ZUBAC_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+141",
+          "bookOdds": "+125",
+          "fairOverUnder": "0.5",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "+132",
+          "openBookOdds": "+120",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        },
+        "steals-IVICA_ZUBAC_1_NBA-game-ou-under": {
+          "oddID": "steals-IVICA_ZUBAC_1_NBA-game-ou-under",
+          "opposingOddID": "steals-IVICA_ZUBAC_1_NBA-game-ou-over",
+          "marketName": "Ivica Zubac Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "IVICA_ZUBAC_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "IVICA_ZUBAC_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-141",
+          "fairOverUnder": "0.5",
+          "openFairOdds": "-132",
+          "openFairOverUnder": "0.5",
+          "scoringSupported": true,
+          "bookOdds": "-167",
+          "bookOverUnder": "0.5",
+          "byBookmaker": {},
+          "openBookOdds": "-167",
+          "openBookOverUnder": "0.5"
+        }
+      },
+      "players": {
+        "DONOVAN_MITCHELL_1_NBA": {
+          "playerID": "DONOVAN_MITCHELL_1_NBA",
+          "teamID": "CLEVELAND_CAVALIERS_NBA",
+          "firstName": "Donovan",
+          "lastName": "Mitchell",
+          "name": "Donovan Mitchell"
+        },
+        "IVICA_ZUBAC_1_NBA": {
+          "playerID": "IVICA_ZUBAC_1_NBA",
+          "teamID": "LA_CLIPPERS_NBA",
+          "firstName": "Ivica",
+          "lastName": "Zubac",
+          "name": "Ivica Zubac"
+        },
+        "JARRETT_ALLEN_1_NBA": {
+          "playerID": "JARRETT_ALLEN_1_NBA",
+          "teamID": "CLEVELAND_CAVALIERS_NBA",
+          "firstName": "Jarrett",
+          "lastName": "Allen",
+          "name": "Jarrett Allen"
+        },
+        "JAYLON_TYSON_1_NBA": {
+          "playerID": "JAYLON_TYSON_1_NBA",
+          "teamID": "CLEVELAND_CAVALIERS_NBA",
+          "firstName": "Jaylon",
+          "lastName": "Tyson",
+          "name": "Jaylon Tyson"
+        },
+        "JOHN_COLLINS_1_NBA": {
+          "playerID": "JOHN_COLLINS_1_NBA",
+          "teamID": "LA_CLIPPERS_NBA",
+          "firstName": "John",
+          "lastName": "Collins",
+          "name": "John Collins"
+        },
+        "KAWHI_LEONARD_1_NBA": {
+          "playerID": "KAWHI_LEONARD_1_NBA",
+          "teamID": "LA_CLIPPERS_NBA",
+          "firstName": "Kawhi",
+          "lastName": "Leonard",
+          "name": "Kawhi Leonard"
+        },
+        "SAM_MERRILL_1_NBA": {
+          "playerID": "SAM_MERRILL_1_NBA",
+          "teamID": "CLEVELAND_CAVALIERS_NBA",
+          "firstName": "Sam",
+          "lastName": "Merrill",
+          "name": "Sam Merrill"
+        },
+        "DEAN_WADE_1_NBA": {
+          "playerID": "DEAN_WADE_1_NBA",
+          "teamID": "CLEVELAND_CAVALIERS_NBA",
+          "firstName": "Dean",
+          "lastName": "Wade",
+          "name": "Dean Wade"
+        },
+        "KRIS_DUNN_1_NBA": {
+          "playerID": "KRIS_DUNN_1_NBA",
+          "teamID": "LA_CLIPPERS_NBA",
+          "firstName": "Kris",
+          "lastName": "Dunn",
+          "name": "Kris Dunn"
+        },
+        "NAEQWAN_TOMLIN_1_NBA": {
+          "playerID": "NAEQWAN_TOMLIN_1_NBA",
+          "teamID": "CLEVELAND_CAVALIERS_NBA",
+          "firstName": "NaeQwan",
+          "lastName": "Tomlin",
+          "name": "NaeQwan Tomlin"
+        },
+        "BRADLEY_BEAL_1_NBA": {
+          "playerID": "BRADLEY_BEAL_1_NBA",
+          "teamID": "LA_CLIPPERS_NBA",
+          "firstName": "Bradley",
+          "lastName": "Beal",
+          "name": "Bradley Beal"
+        },
+        "KOBE_SANDERS_1_NBA": {
+          "playerID": "KOBE_SANDERS_1_NBA",
+          "teamID": "LA_CLIPPERS_NBA",
+          "firstName": "Kobe",
+          "lastName": "Sanders",
+          "name": "Kobe Sanders"
+        }
+      },
+      "results": {}
+    }
+  ]
+}
