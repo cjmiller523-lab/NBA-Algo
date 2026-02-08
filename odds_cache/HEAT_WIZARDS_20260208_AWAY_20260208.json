@@ -1,0 +1,1733 @@
+{
+  "nextCursor": "n.1770577200000.RI7DRe6uPgoKSsFGcIxU",
+  "success": true,
+  "data": [
+    {
+      "eventID": "RI7DRe6uPgoKSsFGcIxU",
+      "sportID": "BASKETBALL",
+      "leagueID": "NBA",
+      "type": "match",
+      "teams": {
+        "home": {
+          "teamID": "WASHINGTON_WIZARDS_NBA",
+          "names": {
+            "long": "Washington Wizards",
+            "medium": "Wizards",
+            "short": "WAS",
+            "location": "Washington"
+          },
+          "colors": {
+            "primary": "#F5002F",
+            "secondary": "#002566",
+            "primaryContrast": "#000000",
+            "secondaryContrast": "#F5002F"
+          },
+          "statEntityID": "home"
+        },
+        "away": {
+          "teamID": "MIAMI_HEAT_NBA",
+          "names": {
+            "long": "Miami Heat",
+            "medium": "Heat",
+            "short": "MIA",
+            "location": "Miami"
+          },
+          "colors": {
+            "primary": "#98002E",
+            "secondary": "#000000",
+            "primaryContrast": "#FFFFFF",
+            "secondaryContrast": "#98002E"
+          },
+          "statEntityID": "away"
+        }
+      },
+      "status": {
+        "started": false,
+        "completed": false,
+        "cancelled": false,
+        "ended": false,
+        "live": false,
+        "delayed": false,
+        "currentPeriodID": "",
+        "previousPeriodID": "",
+        "displayShort": "",
+        "displayLong": "Upcoming",
+        "inBreak": false,
+        "startsAt": "2026-02-08T19:00:00.000Z",
+        "previousStartsAt": [],
+        "hardStart": true,
+        "periods": {
+          "started": [],
+          "ended": []
+        },
+        "oddsPresent": true,
+        "oddsAvailable": true,
+        "finalized": false
+      },
+      "info": {
+        "seasonWeek": "NBA 25/26",
+        "venue": {
+          "name": "Capital One Arena",
+          "countryName": "United States",
+          "countryCode": "US",
+          "regionName": "District of Columbia",
+          "regionCode": "DC",
+          "city": "Washington",
+          "address": "601 F St NW, Washington, DC 20004",
+          "capacity": 20356
+        }
+      },
+      "links": {
+        "bookmakers": {
+          "fanduel": "https://sportsbook.fanduel.com/basketball/-/35232760",
+          "sportsbet": "https://www.sportsbet.com.au/betting/basketball---us/nba/miami-heat-at-washington-wizards-10127596",
+          "paddypower": "https://www.paddypower.com/basketball/nba/miami-heat-@-washington-wizards-35232760",
+          "888sport": "https://www.888sport.com/basketball/united-states-of-america/nba/miami-heat-washington-wizards-e-7111134",
+          "matchbook": "https://www.matchbook.com/events/basketball/united-states-of-america/nba/32453394994400045",
+          "betrsportsbook": "https://www.betr.com.au/sports/Basketball/107/United-States-of-America/NBA/Miami-Heat-@-Washington-Wizards/1984114/All-Markets",
+          "boylesports": "https://www.boylesports.com/sports/basketball/event/usa-nba/washington-wizards-v-miami-heat",
+          "coolbet": "https://www.coolbet.com/en/sports/match/5002650",
+          "1xbet": "https://1xbet.com/en/line/football/13589-nba/303569414-washington-wizards-miami-heat",
+          "pointsbet": "https://pointsbet.com.au/sports/basketball/NBA/2599419",
+          "betway": "https://betway.com/en/sports/evt/16340194",
+          "betsson": "https://www.betsson.com/en/sportsbook/basketball/nba/nba?eventId=f-MkuMxyOrhk-LV07kBb7W0g",
+          "nordicbet": "https://www.nordicbet.com/en/sportsbook/basketball/nba/nba/washington-wizards-miami-heat-",
+          "playup": "https://www.playup.com.au/betting/sports/nba/washington-wizards-v-miami-heat/1809350",
+          "williamhill": "https://sports.williamhill.com/betting/en-gb/basketball/OB_EV38653548/miami-heat-at-washington-wizards",
+          "draftkings": "https://sportsbook.draftkings.com/event/33595395",
+          "fliff": "https://sports.getfliff.com/markets/368518_c_p_204_prematch",
+          "tab": "https://www.tab.com.au/sports/betting/Basketball/competitions/NBA/matches/Washington%20v%20Miami",
+          "caesars": "https://sportsbook.caesars.com/us/nj/bet/basketball/095c70a1-e89d-4f39-805a-9446e4784ab0/miami-heat-at-washington-wizards",
+          "betfairsportsbook": "https://www.betfair.com/betting/basketball/nba/miami-heat-@-washington-wizards/e-35232760",
+          "ballybet": "https://play.ballybet.com/sports#event/1024653652",
+          "betparx": "https://nj.betparx.com/kambi#event/1024653652",
+          "betrivers": "https://nj.betrivers.com/?page=sportsbook#event/1024653652",
+          "casumo": "https://www.casumo.com/en-gb/sports#event/1024653652",
+          "grosvenor": "https://www.grosvenorcasinos.com/sport#event/1024653652",
+          "leovegas": "https://www.leovegas.co.uk/betting#event/1024653652",
+          "livescorebet": "https://www.livescorebet.com/uk/sports/basketball/nba/washington-wizards-miami-heat/SBTE_2_1024653652",
+          "tabtouch": "https://www.tabtouch.mobi/tabtouch-sports/event/1024653652",
+          "unibet": "https://www.unibet.com/betting/sports/event/1024653652",
+          "virginbet": "https://www.virginbet.com/sports/basketball/nba/washington-wizards-miami-heat/SBTE_2_1024653652",
+          "betonline": "https://sports.betonline.ag/sportsbook/basketball/nba/game/490955392",
+          "lowvig": "https://sports.lowvig.ag/sportsbook/basketball/nba/game/490955392",
+          "betmgm": "https://sports.nj.betmgm.com/en/sports/events/18888575",
+          "coral": "https://sports.coral.co.uk/event/basketball/basketball-usa/nba/was-wizards-v-mia-heat/41755009",
+          "ladbrokes": "https://sports.ladbrokes.com/event/basketball/-/-/-/254428241",
+          "hardrockbet": "https://app.hardrock.bet/home/competition/nba/4355245927229555001",
+          "pinnacle": "https://www.pinnacle.com/en/basketball/nba/miami-heat-vs-washington-wizards/1623441800",
+          "neds": "https://www.neds.com.au/sports/-/-/-/c1d83f35-08de-4daf-8261-a4d2151a31e8",
+          "bovada": "https://www.bovada.lv/sports/basketball/nba/miami-heat-washington-wizards-202602081400",
+          "espnbet": "https://espnbet.com/sport/basketball/organization/united-states/competition/nba/event/0be5b885-f2d2-4676-b410-e271f1ccbeb4",
+          "thescorebet": "https://thescore.bet/sport/basketball/organization/united-states/competition/nba/event/0be5b885-f2d2-4676-b410-e271f1ccbeb4",
+          "everygame": "https://sports.everygame.eu/en/Bets/Basketball/NBA-Lines/Miami-Heat-at-Washington-Wizards/2793904"
+        }
+      },
+      "odds": {
+        "assists-ANDREW_WIGGINS_1_NBA-game-ou-over": {
+          "oddID": "assists-ANDREW_WIGGINS_1_NBA-game-ou-over",
+          "opposingOddID": "assists-ANDREW_WIGGINS_1_NBA-game-ou-under",
+          "marketName": "Andrew Wiggins Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "ANDREW_WIGGINS_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "ANDREW_WIGGINS_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "-115",
+          "fairOverUnder": "3",
+          "bookOverUnder": "2.5",
+          "openFairOdds": "-104",
+          "openBookOdds": "-125",
+          "openFairOverUnder": "2.5",
+          "openBookOverUnder": "2.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        },
+        "assists-ANDREW_WIGGINS_1_NBA-game-ou-under": {
+          "oddID": "assists-ANDREW_WIGGINS_1_NBA-game-ou-under",
+          "opposingOddID": "assists-ANDREW_WIGGINS_1_NBA-game-ou-over",
+          "marketName": "Andrew Wiggins Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "ANDREW_WIGGINS_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "ANDREW_WIGGINS_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "-115",
+          "fairOverUnder": "3",
+          "bookOverUnder": "2.5",
+          "openFairOdds": "+104",
+          "openBookOdds": "-115",
+          "openFairOverUnder": "2.5",
+          "openBookOverUnder": "2.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        },
+        "assists-BAM_ADEBAYO_1_NBA-game-ou-over": {
+          "oddID": "assists-BAM_ADEBAYO_1_NBA-game-ou-over",
+          "opposingOddID": "assists-BAM_ADEBAYO_1_NBA-game-ou-under",
+          "marketName": "Bam Adebayo Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "BAM_ADEBAYO_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "BAM_ADEBAYO_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "-115",
+          "fairOverUnder": "3",
+          "bookOverUnder": "2.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "-105",
+          "openFairOverUnder": "2",
+          "openBookOverUnder": "2.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-108",
+              "overUnder": "2.5",
+              "lastUpdatedAt": "2026-02-08T14:12:50.569Z",
+              "available": true,
+              "altLines": [
+                {
+                  "odds": "-390",
+                  "overUnder": "1.5",
+                  "lastUpdatedAt": "2026-02-08T14:12:38.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+196",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2026-02-08T14:12:38.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+870",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2026-02-08T14:12:38.000Z",
+                  "available": true
+                }
+              ],
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.555513435&selectionId=22043940"
+            }
+          }
+        },
+        "assists-BAM_ADEBAYO_1_NBA-game-ou-under": {
+          "oddID": "assists-BAM_ADEBAYO_1_NBA-game-ou-under",
+          "opposingOddID": "assists-BAM_ADEBAYO_1_NBA-game-ou-over",
+          "marketName": "Bam Adebayo Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "BAM_ADEBAYO_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "BAM_ADEBAYO_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "-115",
+          "fairOverUnder": "3",
+          "bookOverUnder": "2.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "-135",
+          "openFairOverUnder": "2",
+          "openBookOverUnder": "2.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-122",
+              "overUnder": "2.5",
+              "lastUpdatedAt": "2026-02-08T14:12:50.569Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.555513435&selectionId=22043941"
+            }
+          }
+        },
+        "assists-DAVION_MITCHELL_1_NBA-game-ou-over": {
+          "oddID": "assists-DAVION_MITCHELL_1_NBA-game-ou-over",
+          "opposingOddID": "assists-DAVION_MITCHELL_1_NBA-game-ou-under",
+          "marketName": "Davion Mitchell Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "DAVION_MITCHELL_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "DAVION_MITCHELL_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+148",
+          "bookOdds": "-130",
+          "fairOverUnder": "7.5",
+          "bookOverUnder": "6.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "-120",
+          "openFairOverUnder": "7",
+          "openBookOverUnder": "6.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-136",
+              "overUnder": "6.5",
+              "lastUpdatedAt": "2026-02-08T14:12:38.000Z",
+              "available": true,
+              "altLines": [
+                {
+                  "odds": "-1400",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2026-02-08T14:12:38.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-250",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2026-02-08T14:12:38.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+132",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2026-02-08T14:12:38.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+310",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-02-08T14:12:38.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+800",
+                  "overUnder": "11.5",
+                  "lastUpdatedAt": "2026-02-08T14:12:38.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1500",
+                  "overUnder": "13.5",
+                  "lastUpdatedAt": "2026-02-08T14:12:38.000Z",
+                  "available": true
+                }
+              ],
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.555513437&selectionId=40195572"
+            }
+          }
+        },
+        "assists-DAVION_MITCHELL_1_NBA-game-ou-under": {
+          "oddID": "assists-DAVION_MITCHELL_1_NBA-game-ou-under",
+          "opposingOddID": "assists-DAVION_MITCHELL_1_NBA-game-ou-over",
+          "marketName": "Davion Mitchell Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "DAVION_MITCHELL_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "DAVION_MITCHELL_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-148",
+          "bookOdds": "-101",
+          "fairOverUnder": "7.5",
+          "bookOverUnder": "6.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "-120",
+          "openFairOverUnder": "7",
+          "openBookOverUnder": "6.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+102",
+              "overUnder": "6.5",
+              "lastUpdatedAt": "2026-02-08T14:12:38.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.555513437&selectionId=40195573"
+            }
+          }
+        },
+        "blocks-ANDREW_WIGGINS_1_NBA-game-ou-over": {
+          "oddID": "blocks-ANDREW_WIGGINS_1_NBA-game-ou-over",
+          "opposingOddID": "blocks-ANDREW_WIGGINS_1_NBA-game-ou-under",
+          "marketName": "Andrew Wiggins Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "ANDREW_WIGGINS_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "ANDREW_WIGGINS_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-169",
+          "bookOdds": "-210",
+          "fairOverUnder": "0.5",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "-168",
+          "openBookOdds": "-185",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        },
+        "blocks-ANDREW_WIGGINS_1_NBA-game-ou-under": {
+          "oddID": "blocks-ANDREW_WIGGINS_1_NBA-game-ou-under",
+          "opposingOddID": "blocks-ANDREW_WIGGINS_1_NBA-game-ou-over",
+          "marketName": "Andrew Wiggins Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "ANDREW_WIGGINS_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "ANDREW_WIGGINS_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+169",
+          "fairOverUnder": "0.5",
+          "openFairOdds": "+168",
+          "openFairOverUnder": "0.5",
+          "scoringSupported": true,
+          "bookOdds": "+150",
+          "bookOverUnder": "0.5",
+          "byBookmaker": {},
+          "openBookOdds": "+140",
+          "openBookOverUnder": "0.5"
+        },
+        "blocks-BAM_ADEBAYO_1_NBA-game-ou-over": {
+          "oddID": "blocks-BAM_ADEBAYO_1_NBA-game-ou-over",
+          "opposingOddID": "blocks-BAM_ADEBAYO_1_NBA-game-ou-under",
+          "marketName": "Bam Adebayo Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "BAM_ADEBAYO_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "BAM_ADEBAYO_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "-160",
+          "fairOverUnder": "1",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "-145",
+          "openBookOdds": "-160",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-146",
+              "overUnder": "0.5",
+              "lastUpdatedAt": "2026-02-08T14:12:38.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.555525902&selectionId=14388955",
+              "altLines": [
+                {
+                  "odds": "+320",
+                  "overUnder": "1.5",
+                  "lastUpdatedAt": "2026-02-08T14:12:38.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "blocks-BAM_ADEBAYO_1_NBA-game-ou-under": {
+          "oddID": "blocks-BAM_ADEBAYO_1_NBA-game-ou-under",
+          "opposingOddID": "blocks-BAM_ADEBAYO_1_NBA-game-ou-over",
+          "marketName": "Bam Adebayo Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "BAM_ADEBAYO_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "BAM_ADEBAYO_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "fairOverUnder": "1",
+          "openFairOdds": "+145",
+          "openFairOverUnder": "0.5",
+          "scoringSupported": true,
+          "bookOdds": "+119",
+          "bookOverUnder": "0.5",
+          "byBookmaker": {},
+          "openBookOdds": "+120",
+          "openBookOverUnder": "0.5"
+        },
+        "blocks-DAVION_MITCHELL_1_NBA-game-ou-over": {
+          "oddID": "blocks-DAVION_MITCHELL_1_NBA-game-ou-over",
+          "opposingOddID": "blocks-DAVION_MITCHELL_1_NBA-game-ou-under",
+          "marketName": "Davion Mitchell Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "DAVION_MITCHELL_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "DAVION_MITCHELL_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+366",
+          "bookOdds": "+325",
+          "fairOverUnder": "0.5",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "+413",
+          "openBookOdds": "+375",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        },
+        "blocks-DAVION_MITCHELL_1_NBA-game-ou-under": {
+          "oddID": "blocks-DAVION_MITCHELL_1_NBA-game-ou-under",
+          "opposingOddID": "blocks-DAVION_MITCHELL_1_NBA-game-ou-over",
+          "marketName": "Davion Mitchell Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "DAVION_MITCHELL_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "DAVION_MITCHELL_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-366",
+          "fairOverUnder": "0.5",
+          "openFairOdds": "-413",
+          "openFairOverUnder": "0.5",
+          "scoringSupported": true,
+          "bookOdds": "-625",
+          "bookOverUnder": "0.5",
+          "byBookmaker": {},
+          "openBookOdds": "-625",
+          "openBookOverUnder": "0.5"
+        },
+        "points-ANDREW_WIGGINS_1_NBA-game-ou-over": {
+          "oddID": "points-ANDREW_WIGGINS_1_NBA-game-ou-over",
+          "opposingOddID": "points-ANDREW_WIGGINS_1_NBA-game-ou-under",
+          "marketName": "Andrew Wiggins Points Over/Under",
+          "statID": "points",
+          "statEntityID": "ANDREW_WIGGINS_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "ANDREW_WIGGINS_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+136",
+          "bookOdds": "-105",
+          "fairOverUnder": "17.5",
+          "bookOverUnder": "16.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "-110",
+          "openFairOverUnder": "17.5",
+          "openBookOverUnder": "16.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-104",
+              "overUnder": "16.5",
+              "lastUpdatedAt": "2026-02-08T14:12:38.000Z",
+              "available": true,
+              "altLines": [
+                {
+                  "odds": "-900",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-02-08T14:12:38.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-172",
+                  "overUnder": "14.5",
+                  "lastUpdatedAt": "2026-02-08T14:12:38.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+200",
+                  "overUnder": "19.5",
+                  "lastUpdatedAt": "2026-02-08T14:12:38.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+600",
+                  "overUnder": "24.5",
+                  "lastUpdatedAt": "2026-02-08T14:12:38.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1500",
+                  "overUnder": "29.5",
+                  "lastUpdatedAt": "2026-02-08T14:12:38.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+4000",
+                  "overUnder": "34.5",
+                  "lastUpdatedAt": "2026-02-08T13:32:37.000Z",
+                  "available": false
+                }
+              ],
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.555513428&selectionId=12257194"
+            }
+          }
+        },
+        "points-ANDREW_WIGGINS_1_NBA-game-ou-under": {
+          "oddID": "points-ANDREW_WIGGINS_1_NBA-game-ou-under",
+          "opposingOddID": "points-ANDREW_WIGGINS_1_NBA-game-ou-over",
+          "marketName": "Andrew Wiggins Points Over/Under",
+          "statID": "points",
+          "statEntityID": "ANDREW_WIGGINS_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "ANDREW_WIGGINS_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-136",
+          "bookOdds": "-125",
+          "fairOverUnder": "17.5",
+          "bookOverUnder": "16.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "-120",
+          "openFairOverUnder": "17.5",
+          "openBookOverUnder": "16.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-128",
+              "overUnder": "16.5",
+              "lastUpdatedAt": "2026-02-08T14:12:38.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.555513428&selectionId=12257195"
+            }
+          }
+        },
+        "points-BAM_ADEBAYO_1_NBA-game-ou-over": {
+          "oddID": "points-BAM_ADEBAYO_1_NBA-game-ou-over",
+          "opposingOddID": "points-BAM_ADEBAYO_1_NBA-game-ou-under",
+          "marketName": "Bam Adebayo Points Over/Under",
+          "statID": "points",
+          "statEntityID": "BAM_ADEBAYO_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "BAM_ADEBAYO_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+114",
+          "bookOdds": "-125",
+          "fairOverUnder": "21.5",
+          "bookOverUnder": "20.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "-130",
+          "openFairOverUnder": "22",
+          "openBookOverUnder": "20.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-122",
+              "overUnder": "20.5",
+              "lastUpdatedAt": "2026-02-08T14:12:38.000Z",
+              "available": true,
+              "altLines": [
+                {
+                  "odds": "-5000",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-02-08T14:12:38.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-560",
+                  "overUnder": "14.5",
+                  "lastUpdatedAt": "2026-02-08T14:12:38.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-148",
+                  "overUnder": "19.5",
+                  "lastUpdatedAt": "2026-02-08T14:12:38.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+200",
+                  "overUnder": "24.5",
+                  "lastUpdatedAt": "2026-02-08T14:12:38.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+560",
+                  "overUnder": "29.5",
+                  "lastUpdatedAt": "2026-02-08T14:12:38.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1400",
+                  "overUnder": "34.5",
+                  "lastUpdatedAt": "2026-02-08T14:12:38.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+4000",
+                  "overUnder": "39.5",
+                  "lastUpdatedAt": "2026-02-08T14:12:38.000Z",
+                  "available": true
+                }
+              ],
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.555513426&selectionId=22043940"
+            }
+          }
+        },
+        "points-BAM_ADEBAYO_1_NBA-game-ou-under": {
+          "oddID": "points-BAM_ADEBAYO_1_NBA-game-ou-under",
+          "opposingOddID": "points-BAM_ADEBAYO_1_NBA-game-ou-over",
+          "marketName": "Bam Adebayo Points Over/Under",
+          "statID": "points",
+          "statEntityID": "BAM_ADEBAYO_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "BAM_ADEBAYO_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-114",
+          "bookOdds": "-107",
+          "fairOverUnder": "21.5",
+          "bookOverUnder": "20.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "+100",
+          "openFairOverUnder": "22",
+          "openBookOverUnder": "20.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-108",
+              "overUnder": "20.5",
+              "lastUpdatedAt": "2026-02-08T14:12:38.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.555513426&selectionId=22043941"
+            }
+          }
+        },
+        "points-DAVION_MITCHELL_1_NBA-game-ou-over": {
+          "oddID": "points-DAVION_MITCHELL_1_NBA-game-ou-over",
+          "opposingOddID": "points-DAVION_MITCHELL_1_NBA-game-ou-under",
+          "marketName": "Davion Mitchell Points Over/Under",
+          "statID": "points",
+          "statEntityID": "DAVION_MITCHELL_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "DAVION_MITCHELL_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+135",
+          "bookOdds": "-115",
+          "fairOverUnder": "10.5",
+          "bookOverUnder": "9.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "-120",
+          "openFairOverUnder": "10.5",
+          "openBookOverUnder": "9.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-114",
+              "overUnder": "9.5",
+              "lastUpdatedAt": "2026-02-08T14:12:38.000Z",
+              "available": true,
+              "altLines": [
+                {
+                  "odds": "+390",
+                  "overUnder": "14.5",
+                  "lastUpdatedAt": "2026-02-08T14:12:38.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1200",
+                  "overUnder": "19.5",
+                  "lastUpdatedAt": "2026-02-08T14:12:38.000Z",
+                  "available": true
+                }
+              ],
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.555513429&selectionId=40195572"
+            }
+          }
+        },
+        "points-DAVION_MITCHELL_1_NBA-game-ou-under": {
+          "oddID": "points-DAVION_MITCHELL_1_NBA-game-ou-under",
+          "opposingOddID": "points-DAVION_MITCHELL_1_NBA-game-ou-over",
+          "marketName": "Davion Mitchell Points Over/Under",
+          "statID": "points",
+          "statEntityID": "DAVION_MITCHELL_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "DAVION_MITCHELL_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-135",
+          "bookOdds": "-114",
+          "fairOverUnder": "10.5",
+          "bookOverUnder": "9.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "-110",
+          "openFairOverUnder": "10.5",
+          "openBookOverUnder": "9.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-114",
+              "overUnder": "9.5",
+              "lastUpdatedAt": "2026-02-08T14:12:38.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.555513429&selectionId=40195573"
+            }
+          }
+        },
+        "rebounds-ANDREW_WIGGINS_1_NBA-game-ou-over": {
+          "oddID": "rebounds-ANDREW_WIGGINS_1_NBA-game-ou-over",
+          "opposingOddID": "rebounds-ANDREW_WIGGINS_1_NBA-game-ou-under",
+          "marketName": "Andrew Wiggins Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "ANDREW_WIGGINS_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "ANDREW_WIGGINS_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+101",
+          "bookOdds": "-114",
+          "fairOverUnder": "5.5",
+          "bookOverUnder": "5.5",
+          "openFairOdds": "-123",
+          "openBookOdds": "-150",
+          "openFairOverUnder": "5.5",
+          "openBookOverUnder": "5.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-114",
+              "overUnder": "5.5",
+              "lastUpdatedAt": "2026-02-08T14:12:38.000Z",
+              "available": true,
+              "altLines": [
+                {
+                  "odds": "-530",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2026-02-08T14:12:38.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+290",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2026-02-08T14:12:38.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+800",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-02-08T14:12:38.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1800",
+                  "overUnder": "11.5",
+                  "lastUpdatedAt": "2026-02-08T14:12:38.000Z",
+                  "available": true
+                }
+              ],
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.555513433&selectionId=12257194"
+            }
+          }
+        },
+        "rebounds-ANDREW_WIGGINS_1_NBA-game-ou-under": {
+          "oddID": "rebounds-ANDREW_WIGGINS_1_NBA-game-ou-under",
+          "opposingOddID": "rebounds-ANDREW_WIGGINS_1_NBA-game-ou-over",
+          "marketName": "Andrew Wiggins Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "ANDREW_WIGGINS_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "ANDREW_WIGGINS_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-101",
+          "bookOdds": "-117",
+          "fairOverUnder": "5.5",
+          "bookOverUnder": "5.5",
+          "openFairOdds": "+123",
+          "openBookOdds": "+105",
+          "openFairOverUnder": "5.5",
+          "openBookOverUnder": "5.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-114",
+              "overUnder": "5.5",
+              "lastUpdatedAt": "2026-02-08T14:12:38.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.555513433&selectionId=12257195"
+            }
+          }
+        },
+        "rebounds-BAM_ADEBAYO_1_NBA-game-ou-over": {
+          "oddID": "rebounds-BAM_ADEBAYO_1_NBA-game-ou-over",
+          "opposingOddID": "rebounds-BAM_ADEBAYO_1_NBA-game-ou-under",
+          "marketName": "Bam Adebayo Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "BAM_ADEBAYO_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "BAM_ADEBAYO_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+107",
+          "bookOdds": "-108",
+          "fairOverUnder": "11.5",
+          "bookOverUnder": "11.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "-125",
+          "openFairOverUnder": "12",
+          "openBookOverUnder": "11.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+100",
+              "overUnder": "11.5",
+              "lastUpdatedAt": "2026-02-08T14:12:38.000Z",
+              "available": true,
+              "altLines": [
+                {
+                  "odds": "-750",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2026-02-08T14:12:38.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-290",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-02-08T14:12:38.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+240",
+                  "overUnder": "13.5",
+                  "lastUpdatedAt": "2026-02-08T14:12:38.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+540",
+                  "overUnder": "15.5",
+                  "lastUpdatedAt": "2026-02-08T14:12:38.000Z",
+                  "available": true
+                }
+              ],
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.555513431&selectionId=22043940"
+            }
+          }
+        },
+        "rebounds-BAM_ADEBAYO_1_NBA-game-ou-under": {
+          "oddID": "rebounds-BAM_ADEBAYO_1_NBA-game-ou-under",
+          "opposingOddID": "rebounds-BAM_ADEBAYO_1_NBA-game-ou-over",
+          "marketName": "Bam Adebayo Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "BAM_ADEBAYO_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "BAM_ADEBAYO_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-107",
+          "bookOdds": "-125",
+          "fairOverUnder": "11.5",
+          "bookOverUnder": "11.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "-110",
+          "openFairOverUnder": "12",
+          "openBookOverUnder": "11.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-132",
+              "overUnder": "11.5",
+              "lastUpdatedAt": "2026-02-08T14:12:38.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.555513431&selectionId=22043941"
+            }
+          }
+        },
+        "rebounds-DAVION_MITCHELL_1_NBA-game-ou-over": {
+          "oddID": "rebounds-DAVION_MITCHELL_1_NBA-game-ou-over",
+          "opposingOddID": "rebounds-DAVION_MITCHELL_1_NBA-game-ou-under",
+          "marketName": "Davion Mitchell Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "DAVION_MITCHELL_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "DAVION_MITCHELL_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "-140",
+          "fairOverUnder": "3",
+          "bookOverUnder": "2.5",
+          "openFairOdds": "-110",
+          "openBookOdds": "-130",
+          "openFairOverUnder": "2.5",
+          "openBookOverUnder": "2.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-148",
+              "overUnder": "2.5",
+              "lastUpdatedAt": "2026-02-08T14:12:38.000Z",
+              "available": true,
+              "altLines": [
+                {
+                  "odds": "+180",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2026-02-08T14:12:38.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+870",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2026-02-08T14:12:38.000Z",
+                  "available": true
+                }
+              ],
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.555513434&selectionId=40195572"
+            }
+          }
+        },
+        "rebounds-DAVION_MITCHELL_1_NBA-game-ou-under": {
+          "oddID": "rebounds-DAVION_MITCHELL_1_NBA-game-ou-under",
+          "opposingOddID": "rebounds-DAVION_MITCHELL_1_NBA-game-ou-over",
+          "marketName": "Davion Mitchell Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "DAVION_MITCHELL_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "DAVION_MITCHELL_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "+104",
+          "fairOverUnder": "3",
+          "bookOverUnder": "2.5",
+          "openFairOdds": "+110",
+          "openBookOdds": "-105",
+          "openFairOverUnder": "2.5",
+          "openBookOverUnder": "2.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+112",
+              "overUnder": "2.5",
+              "lastUpdatedAt": "2026-02-08T14:12:38.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.555513434&selectionId=40195573"
+            }
+          }
+        },
+        "steals-ANDREW_WIGGINS_1_NBA-game-ou-over": {
+          "oddID": "steals-ANDREW_WIGGINS_1_NBA-game-ou-over",
+          "opposingOddID": "steals-ANDREW_WIGGINS_1_NBA-game-ou-under",
+          "marketName": "Andrew Wiggins Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "ANDREW_WIGGINS_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "ANDREW_WIGGINS_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+125",
+          "bookOdds": "+114",
+          "fairOverUnder": "1.5",
+          "bookOverUnder": "1.5",
+          "openFairOdds": "+127",
+          "openBookOdds": "+115",
+          "openFairOverUnder": "1.5",
+          "openBookOverUnder": "1.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+148",
+              "overUnder": "1.5",
+              "lastUpdatedAt": "2026-02-08T14:12:38.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.555525898&selectionId=8520904",
+              "altLines": [
+                {
+                  "odds": "-330",
+                  "overUnder": "0.5",
+                  "lastUpdatedAt": "2026-02-08T14:12:38.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+470",
+                  "overUnder": "2.5",
+                  "lastUpdatedAt": "2026-02-08T14:12:38.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "steals-ANDREW_WIGGINS_1_NBA-game-ou-under": {
+          "oddID": "steals-ANDREW_WIGGINS_1_NBA-game-ou-under",
+          "opposingOddID": "steals-ANDREW_WIGGINS_1_NBA-game-ou-over",
+          "marketName": "Andrew Wiggins Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "ANDREW_WIGGINS_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "ANDREW_WIGGINS_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-125",
+          "fairOverUnder": "1.5",
+          "openFairOdds": "-127",
+          "openFairOverUnder": "1.5",
+          "scoringSupported": true,
+          "bookOdds": "-141",
+          "bookOverUnder": "1.5",
+          "byBookmaker": {},
+          "openBookOdds": "-125",
+          "openBookOverUnder": "1.5"
+        },
+        "steals-BAM_ADEBAYO_1_NBA-game-ou-over": {
+          "oddID": "steals-BAM_ADEBAYO_1_NBA-game-ou-over",
+          "opposingOddID": "steals-BAM_ADEBAYO_1_NBA-game-ou-under",
+          "marketName": "Bam Adebayo Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "BAM_ADEBAYO_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "BAM_ADEBAYO_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+167",
+          "bookOdds": "+150",
+          "fairOverUnder": "1.5",
+          "bookOverUnder": "1.5",
+          "openFairOdds": "+165",
+          "openBookOdds": "+150",
+          "openFairOverUnder": "1.5",
+          "openBookOverUnder": "1.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+225",
+              "overUnder": "1.5",
+              "lastUpdatedAt": "2026-02-08T14:12:38.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.555525898&selectionId=14388955",
+              "altLines": [
+                {
+                  "odds": "-225",
+                  "overUnder": "0.5",
+                  "lastUpdatedAt": "2026-02-08T14:12:38.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+680",
+                  "overUnder": "2.5",
+                  "lastUpdatedAt": "2026-02-08T14:12:38.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "steals-BAM_ADEBAYO_1_NBA-game-ou-under": {
+          "oddID": "steals-BAM_ADEBAYO_1_NBA-game-ou-under",
+          "opposingOddID": "steals-BAM_ADEBAYO_1_NBA-game-ou-over",
+          "marketName": "Bam Adebayo Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "BAM_ADEBAYO_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "BAM_ADEBAYO_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-167",
+          "fairOverUnder": "1.5",
+          "openFairOdds": "-165",
+          "openFairOverUnder": "1.5",
+          "scoringSupported": true,
+          "bookOdds": "-200",
+          "bookOverUnder": "1.5",
+          "byBookmaker": {},
+          "openBookOdds": "-144",
+          "openBookOverUnder": "1.5"
+        },
+        "steals-DAVION_MITCHELL_1_NBA-game-ou-over": {
+          "oddID": "steals-DAVION_MITCHELL_1_NBA-game-ou-over",
+          "opposingOddID": "steals-DAVION_MITCHELL_1_NBA-game-ou-under",
+          "marketName": "Davion Mitchell Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "DAVION_MITCHELL_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "DAVION_MITCHELL_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+153",
+          "bookOdds": "+132",
+          "fairOverUnder": "1.5",
+          "bookOverUnder": "1.5",
+          "openFairOdds": "+154",
+          "openBookOdds": "+140",
+          "openFairOverUnder": "1.5",
+          "openBookOverUnder": "1.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        },
+        "steals-DAVION_MITCHELL_1_NBA-game-ou-under": {
+          "oddID": "steals-DAVION_MITCHELL_1_NBA-game-ou-under",
+          "opposingOddID": "steals-DAVION_MITCHELL_1_NBA-game-ou-over",
+          "marketName": "Davion Mitchell Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "DAVION_MITCHELL_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "DAVION_MITCHELL_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-153",
+          "fairOverUnder": "1.5",
+          "openFairOdds": "-154",
+          "openFairOverUnder": "1.5",
+          "scoringSupported": true,
+          "bookOdds": "-192",
+          "bookOverUnder": "1.5",
+          "byBookmaker": {},
+          "openBookOdds": "-137",
+          "openBookOverUnder": "1.5"
+        },
+        "points-JAIME_JAQUEZ_JR_1_NBA-game-ou-over": {
+          "oddID": "points-JAIME_JAQUEZ_JR_1_NBA-game-ou-over",
+          "opposingOddID": "points-JAIME_JAQUEZ_JR_1_NBA-game-ou-under",
+          "marketName": "Jaime Jaquez Jr. Points Over/Under",
+          "statID": "points",
+          "statEntityID": "JAIME_JAQUEZ_JR_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "JAIME_JAQUEZ_JR_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+109",
+          "bookOdds": "-103",
+          "fairOverUnder": "15.5",
+          "bookOverUnder": "15.5",
+          "openFairOdds": "-103",
+          "openBookOdds": "-113",
+          "openFairOverUnder": "14.5",
+          "openBookOverUnder": "14.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-102",
+              "overUnder": "15.5",
+              "lastUpdatedAt": "2026-02-08T14:12:38.000Z",
+              "available": true,
+              "altLines": [
+                {
+                  "odds": "-620",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-02-08T14:12:38.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-130",
+                  "overUnder": "14.5",
+                  "lastUpdatedAt": "2026-02-08T14:12:38.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+255",
+                  "overUnder": "19.5",
+                  "lastUpdatedAt": "2026-02-08T14:12:38.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+800",
+                  "overUnder": "24.5",
+                  "lastUpdatedAt": "2026-02-08T14:12:38.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1700",
+                  "overUnder": "29.5",
+                  "lastUpdatedAt": "2026-02-08T14:12:38.000Z",
+                  "available": true
+                }
+              ],
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.555513430&selectionId=43072643"
+            }
+          }
+        },
+        "points-JAIME_JAQUEZ_JR_1_NBA-game-ou-under": {
+          "oddID": "points-JAIME_JAQUEZ_JR_1_NBA-game-ou-under",
+          "opposingOddID": "points-JAIME_JAQUEZ_JR_1_NBA-game-ou-over",
+          "marketName": "Jaime Jaquez Jr. Points Over/Under",
+          "statID": "points",
+          "statEntityID": "JAIME_JAQUEZ_JR_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "JAIME_JAQUEZ_JR_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-109",
+          "fairOverUnder": "15.5",
+          "openFairOdds": "+103",
+          "openFairOverUnder": "14.5",
+          "scoringSupported": true,
+          "bookOdds": "-125",
+          "bookOverUnder": "15.5",
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-130",
+              "overUnder": "15.5",
+              "lastUpdatedAt": "2026-02-08T14:12:38.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.555513430&selectionId=43072644",
+              "altLines": [
+                {
+                  "odds": "-102",
+                  "overUnder": "14.5",
+                  "lastUpdatedAt": "2026-02-08T12:24:21.000Z",
+                  "available": false
+                }
+              ]
+            }
+          },
+          "openBookOdds": "-114",
+          "openBookOverUnder": "14.5"
+        },
+        "rebounds-JAIME_JAQUEZ_JR_1_NBA-game-ou-over": {
+          "oddID": "rebounds-JAIME_JAQUEZ_JR_1_NBA-game-ou-over",
+          "opposingOddID": "rebounds-JAIME_JAQUEZ_JR_1_NBA-game-ou-under",
+          "marketName": "Jaime Jaquez Jr. Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "JAIME_JAQUEZ_JR_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "JAIME_JAQUEZ_JR_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+157",
+          "bookOdds": "-130",
+          "fairOverUnder": "6.5",
+          "bookOverUnder": "5.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-130",
+              "overUnder": "5.5",
+              "lastUpdatedAt": "2026-02-08T14:12:38.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.555515712&selectionId=43072643",
+              "altLines": [
+                {
+                  "odds": "-520",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2026-02-08T14:12:38.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+250",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2026-02-08T14:12:38.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+560",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-02-08T14:12:38.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1200",
+                  "overUnder": "11.5",
+                  "lastUpdatedAt": "2026-02-08T14:12:38.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+3000",
+                  "overUnder": "13.5",
+                  "lastUpdatedAt": "2026-02-08T14:12:38.000Z",
+                  "available": true
+                }
+              ]
+            }
+          },
+          "openBookOdds": "-102",
+          "openBookOverUnder": "5.5",
+          "openFairOdds": "+112",
+          "openFairOverUnder": "5.5"
+        },
+        "rebounds-JAIME_JAQUEZ_JR_1_NBA-game-ou-under": {
+          "oddID": "rebounds-JAIME_JAQUEZ_JR_1_NBA-game-ou-under",
+          "opposingOddID": "rebounds-JAIME_JAQUEZ_JR_1_NBA-game-ou-over",
+          "marketName": "Jaime Jaquez Jr. Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "JAIME_JAQUEZ_JR_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "JAIME_JAQUEZ_JR_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-157",
+          "bookOdds": "-109",
+          "fairOverUnder": "6.5",
+          "bookOverUnder": "5.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-102",
+              "overUnder": "5.5",
+              "lastUpdatedAt": "2026-02-08T14:12:38.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.555515712&selectionId=43072644"
+            }
+          },
+          "openBookOdds": "-130",
+          "openBookOverUnder": "5.5",
+          "openFairOdds": "-112",
+          "openFairOverUnder": "5.5"
+        },
+        "assists-JAIME_JAQUEZ_JR_1_NBA-game-ou-over": {
+          "oddID": "assists-JAIME_JAQUEZ_JR_1_NBA-game-ou-over",
+          "opposingOddID": "assists-JAIME_JAQUEZ_JR_1_NBA-game-ou-under",
+          "marketName": "Jaime Jaquez Jr. Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "JAIME_JAQUEZ_JR_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "JAIME_JAQUEZ_JR_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "-120",
+          "fairOverUnder": "5",
+          "bookOverUnder": "4.5",
+          "openFairOdds": "+144",
+          "openBookOdds": "+128",
+          "openFairOverUnder": "4.5",
+          "openBookOverUnder": "4.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-120",
+              "overUnder": "4.5",
+              "lastUpdatedAt": "2026-02-08T14:12:38.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.555515713&selectionId=43072643",
+              "altLines": [
+                {
+                  "odds": "-3500",
+                  "overUnder": "1.5",
+                  "lastUpdatedAt": "2026-02-08T14:12:38.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-250",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2026-02-08T14:12:38.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+164",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2026-02-08T14:12:38.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+540",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2026-02-08T14:12:38.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1300",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-02-08T14:12:38.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+3000",
+                  "overUnder": "11.5",
+                  "lastUpdatedAt": "2026-02-08T12:46:48.000Z",
+                  "available": false
+                }
+              ]
+            }
+          }
+        },
+        "assists-JAIME_JAQUEZ_JR_1_NBA-game-ou-under": {
+          "oddID": "assists-JAIME_JAQUEZ_JR_1_NBA-game-ou-under",
+          "opposingOddID": "assists-JAIME_JAQUEZ_JR_1_NBA-game-ou-over",
+          "marketName": "Jaime Jaquez Jr. Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "JAIME_JAQUEZ_JR_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "JAIME_JAQUEZ_JR_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "-111",
+          "fairOverUnder": "5",
+          "bookOverUnder": "4.5",
+          "openFairOdds": "-144",
+          "openBookOdds": "-172",
+          "openFairOverUnder": "4.5",
+          "openBookOverUnder": "4.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-110",
+              "overUnder": "4.5",
+              "lastUpdatedAt": "2026-02-08T14:12:38.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.555515713&selectionId=43072644"
+            }
+          }
+        }
+      },
+      "players": {
+        "ALEXANDRE_SARR_1_NBA": {
+          "playerID": "ALEXANDRE_SARR_1_NBA",
+          "teamID": "WASHINGTON_WIZARDS_NBA",
+          "firstName": "Alex",
+          "lastName": "Sarr",
+          "name": "Alexandre Sarr"
+        },
+        "ANDREW_WIGGINS_1_NBA": {
+          "playerID": "ANDREW_WIGGINS_1_NBA",
+          "teamID": "MIAMI_HEAT_NBA",
+          "firstName": "Andrew",
+          "lastName": "Wiggins",
+          "name": "Andrew Wiggins"
+        },
+        "BAM_ADEBAYO_1_NBA": {
+          "playerID": "BAM_ADEBAYO_1_NBA",
+          "teamID": "MIAMI_HEAT_NBA",
+          "firstName": "Bam",
+          "lastName": "Adebayo",
+          "name": "Bam Adebayo"
+        },
+        "BILAL_COULIBALY_1_NBA": {
+          "playerID": "BILAL_COULIBALY_1_NBA",
+          "teamID": "WASHINGTON_WIZARDS_NBA",
+          "firstName": "Bilal",
+          "lastName": "Coulibaly",
+          "name": "Bilal Coulibaly"
+        },
+        "BUB_CARRINGTON_1_NBA": {
+          "playerID": "BUB_CARRINGTON_1_NBA",
+          "teamID": "WASHINGTON_WIZARDS_NBA",
+          "firstName": "Bub",
+          "lastName": "Carrington",
+          "name": "Carlton Carrington"
+        },
+        "DAVION_MITCHELL_1_NBA": {
+          "playerID": "DAVION_MITCHELL_1_NBA",
+          "teamID": "MIAMI_HEAT_NBA",
+          "firstName": "Davion",
+          "lastName": "Mitchell",
+          "name": "Davion Mitchell"
+        },
+        "JAIME_JAQUEZ_JR_1_NBA": {
+          "playerID": "JAIME_JAQUEZ_JR_1_NBA",
+          "teamID": "MIAMI_HEAT_NBA",
+          "firstName": "Jamie",
+          "lastName": "Jaquez",
+          "name": "Jaime Jaquez Jr."
+        },
+        "JUSTIN_CHAMPAGNIE_1_NBA": {
+          "playerID": "JUSTIN_CHAMPAGNIE_1_NBA",
+          "teamID": "WASHINGTON_WIZARDS_NBA",
+          "firstName": "Justin",
+          "lastName": "Champagnie",
+          "name": "Justin Champagnie"
+        },
+        "KYSHAWN_GEORGE_1_NBA": {
+          "playerID": "KYSHAWN_GEORGE_1_NBA",
+          "teamID": "WASHINGTON_WIZARDS_NBA",
+          "firstName": "Kyshawn",
+          "lastName": "George",
+          "name": "Kyshawn George"
+        },
+        "NORMAN_POWELL_1_NBA": {
+          "playerID": "NORMAN_POWELL_1_NBA",
+          "teamID": "MIAMI_HEAT_NBA",
+          "firstName": "Norman",
+          "lastName": "Powell",
+          "name": "Norman Powell"
+        },
+        "DRU_SMITH_1_NBA": {
+          "playerID": "DRU_SMITH_1_NBA",
+          "teamID": "MIAMI_HEAT_NBA",
+          "firstName": "Dru",
+          "lastName": "Smith",
+          "name": "Dru Smith"
+        },
+        "TRE_JOHNSON_1_NBA": {
+          "playerID": "TRE_JOHNSON_1_NBA",
+          "teamID": "WASHINGTON_WIZARDS_NBA",
+          "firstName": "Tre",
+          "lastName": "Johnson",
+          "name": "Tre Johnson"
+        },
+        "PELLE_LARSSON_1_NBA": {
+          "playerID": "PELLE_LARSSON_1_NBA",
+          "teamID": "MIAMI_HEAT_NBA",
+          "firstName": "Pelle",
+          "lastName": "Larsson",
+          "name": "Pelle Larsson"
+        },
+        "SIMONE_FONTECCHIO_1_NBA": {
+          "playerID": "SIMONE_FONTECCHIO_1_NBA",
+          "teamID": "MIAMI_HEAT_NBA",
+          "firstName": "Simone",
+          "lastName": "Fontecchio",
+          "name": "Simone Fontecchio"
+        }
+      },
+      "results": {}
+    }
+  ]
+}
