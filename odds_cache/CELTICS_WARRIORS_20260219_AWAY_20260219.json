@@ -1,0 +1,831 @@
+{
+  "nextCursor": "n.1771549200000.tWZ1lOkneewHrB3FabD8",
+  "success": true,
+  "data": [
+    {
+      "eventID": "tWZ1lOkneewHrB3FabD8",
+      "sportID": "BASKETBALL",
+      "leagueID": "NBA",
+      "type": "match",
+      "teams": {
+        "home": {
+          "teamID": "CHICAGO_BULLS_NBA",
+          "names": {
+            "long": "Chicago Bulls",
+            "medium": "Bulls",
+            "short": "CHI",
+            "location": "Chicago"
+          },
+          "colors": {
+            "primary": "#CE1141",
+            "secondary": "#000000",
+            "primaryContrast": "#FFFFFF",
+            "secondaryContrast": "#CE1141"
+          },
+          "statEntityID": "home"
+        },
+        "away": {
+          "teamID": "TORONTO_RAPTORS_NBA",
+          "names": {
+            "long": "Toronto Raptors",
+            "medium": "Raptors",
+            "short": "TOR",
+            "location": "Toronto"
+          },
+          "colors": {
+            "primary": "#CE1141",
+            "secondary": "#000000",
+            "primaryContrast": "#FFFFFF",
+            "secondaryContrast": "#CE1141"
+          },
+          "statEntityID": "away"
+        }
+      },
+      "status": {
+        "started": false,
+        "completed": false,
+        "cancelled": false,
+        "ended": false,
+        "live": false,
+        "delayed": false,
+        "currentPeriodID": "",
+        "previousPeriodID": "",
+        "displayShort": "",
+        "displayLong": "Upcoming",
+        "inBreak": false,
+        "startsAt": "2026-02-20T01:00:00.000Z",
+        "previousStartsAt": [],
+        "hardStart": true,
+        "periods": {
+          "started": [],
+          "ended": []
+        },
+        "oddsPresent": true,
+        "oddsAvailable": true,
+        "finalized": false
+      },
+      "info": {
+        "seasonWeek": "NBA 25/26",
+        "venue": {
+          "name": "United Center",
+          "countryName": "United States",
+          "countryCode": "US",
+          "regionName": "Illinois",
+          "regionCode": "IL",
+          "city": "Chicago",
+          "address": "1901 W Madison St, Chicago, IL 60612",
+          "capacity": 20917
+        }
+      },
+      "links": {
+        "bookmakers": {
+          "draftkings": "https://sportsbook.draftkings.com/event/33626566",
+          "fanduel": "https://sportsbook.fanduel.com/basketball/-/35260982",
+          "1xbet": "https://1xbet.com/en/line/football/13589-nba/305995666-chicago-bulls-toronto-raptors",
+          "boylesports": "https://www.boylesports.com/sports/basketball/event/usa-nba/chicago-bulls-v-toronto-raptors",
+          "ladbrokes": "https://www.ladbrokes.com.au/sports/-/-/-/7f119354-b0c4-46c9-8581-26c44fa9bd57",
+          "neds": "https://www.neds.com.au/sports/-/-/-/7f119354-b0c4-46c9-8581-26c44fa9bd57",
+          "playup": "https://www.playup.com.au/betting/sports/nba/chicago-bulls-v-toronto-raptors/1819700",
+          "sportsbet": "https://www.sportsbet.com.au/betting/basketball---us/nba/toronto-raptors-at-chicago-bulls-10154917",
+          "tab": "https://www.tab.com.au/sports/betting/Basketball/competitions/NBA/matches/Chicago%20v%20Toronto",
+          "paddypower": "https://www.paddypower.com/basketball/nba/toronto-raptors-@-chicago-bulls-35260982",
+          "williamhill": "https://sports.williamhill.com/betting/en-gb/basketball/OB_EV38763147/toronto-raptors-at-chicago-bulls",
+          "betfairsportsbook": "https://www.betfair.com/betting/basketball/nba/toronto-raptors-@-chicago-bulls/e-35260982",
+          "betparx": "https://nj.betparx.com/kambi#event/1024653472",
+          "888sport": "https://www.888sport.com/basketball/united-states-of-america/nba/toronto-raptors-chicago-bulls-e-7159073",
+          "betrivers": "https://nj.betrivers.com/?page=sportsbook#event/1024653472",
+          "casumo": "https://www.casumo.com/en-gb/sports#event/1024653472",
+          "grosvenor": "https://www.grosvenorcasinos.com/sport#event/1024653472",
+          "livescorebet": "https://www.livescorebet.com/uk/sports/basketball/nba/chicago-bulls-toronto-raptors/SBTE_2_1024653472",
+          "leovegas": "https://www.leovegas.co.uk/betting#event/1024653472",
+          "espnbet": "https://espnbet.com/sport/basketball/organization/united-states/competition/nba/event/f193bf33-ac89-44d1-a139-5ecef7f0e74d",
+          "thescorebet": "https://thescore.bet/sport/basketball/organization/united-states/competition/nba/event/f193bf33-ac89-44d1-a139-5ecef7f0e74d",
+          "virginbet": "https://www.virginbet.com/sports/basketball/nba/chicago-bulls-toronto-raptors/SBTE_2_1024653472",
+          "ballybet": "https://play.ballybet.com/sports#event/1024653472",
+          "pointsbet": "https://pointsbet.com.au/sports/basketball/NBA/2612681",
+          "fliff": "https://sports.getfliff.com/markets/370259_c_p_204_prematch",
+          "tabtouch": "https://www.tabtouch.mobi/tabtouch-sports/event/1024653472",
+          "betsson": "https://www.betsson.com/en/sportsbook/basketball/nba/nba?eventId=f-ZNtQ9809mkaSGPmpTmeyUA",
+          "unibet": "https://www.unibet.com/betting/sports/event/1024653472",
+          "betway": "https://betway.com/en/sports/evt/16373965",
+          "caesars": "https://sportsbook.caesars.com/us/nj/bet/basketball/68b1eada-2787-4737-b262-a260faee93af/toronto-raptors-at-chicago-bulls",
+          "nordicbet": "https://www.nordicbet.com/en/sportsbook/basketball/nba/nba/chicago-bulls-toronto-raptors-",
+          "betmgm": "https://sports.nj.betmgm.com/en/sports/events/18888976",
+          "coral": "https://sports.coral.co.uk/event/basketball/basketball-usa/nba/chi-bulls-v-tor-raptors/41888001",
+          "betrsportsbook": "https://www.betr.com.au/sports/Basketball/107/United-States-of-America/NBA/Toronto-Raptors-@-Chicago-Bulls/1993867/All-Markets",
+          "hardrockbet": "https://app.hardrock.bet/home/competition/nba/5592164175963750653",
+          "betonline": "https://sports.betonline.ag/sportsbook/basketball/nba/game/490964448",
+          "lowvig": "https://sports.lowvig.ag/sportsbook/basketball/nba/game/490964448",
+          "bovada": "https://www.bovada.lv/sports/basketball/nba/toronto-raptors-chicago-bulls-202602192000",
+          "coolbet": "https://www.coolbet.com/en/sports/match/5052883",
+          "pinnacle": "https://www.pinnacle.com/en/basketball/nba/toronto-raptors-vs-chicago-bulls/1624088629",
+          "everygame": "https://sports.everygame.eu/en/Bets/Basketball/NBA-Lines/Toronto-Raptors-at-Chicago-Bulls/2799731",
+          "matchbook": "https://www.matchbook.com/events/basketball/united-states-of-america/nba/32525663394000051"
+        }
+      },
+      "odds": {
+        "assists-ANFERNEE_SIMONS_1_NBA-game-ou-over": {
+          "oddID": "assists-ANFERNEE_SIMONS_1_NBA-game-ou-over",
+          "opposingOddID": "assists-ANFERNEE_SIMONS_1_NBA-game-ou-under",
+          "statID": "assists",
+          "statEntityID": "ANFERNEE_SIMONS_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "ANFERNEE_SIMONS_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+113",
+          "bookOdds": "+100",
+          "fairOverUnder": "3.5",
+          "bookOverUnder": "3.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "+100",
+          "openFairOverUnder": "3.5",
+          "openBookOverUnder": "3.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+104",
+              "overUnder": "3.5",
+              "lastUpdatedAt": "2026-02-19T20:09:35.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.557120068&selectionId=26870488",
+              "altLines": [
+                {
+                  "odds": "-770",
+                  "overUnder": "1.5",
+                  "lastUpdatedAt": "2026-02-19T20:09:35.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+440",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2026-02-19T20:09:35.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1500",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2026-02-19T20:09:35.000Z",
+                  "available": true
+                }
+              ]
+            }
+          },
+          "marketName": "Anfernee Simons Assists Over/Under"
+        },
+        "assists-ANFERNEE_SIMONS_1_NBA-game-ou-under": {
+          "oddID": "assists-ANFERNEE_SIMONS_1_NBA-game-ou-under",
+          "opposingOddID": "assists-ANFERNEE_SIMONS_1_NBA-game-ou-over",
+          "statID": "assists",
+          "statEntityID": "ANFERNEE_SIMONS_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "ANFERNEE_SIMONS_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-113",
+          "bookOdds": "-131",
+          "fairOverUnder": "3.5",
+          "bookOverUnder": "3.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "+100",
+          "openFairOverUnder": "3.5",
+          "openBookOverUnder": "3.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-138",
+              "overUnder": "3.5",
+              "lastUpdatedAt": "2026-02-19T20:09:35.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.557120068&selectionId=26870489"
+            }
+          },
+          "marketName": "Anfernee Simons Assists Over/Under"
+        },
+        "points-ANFERNEE_SIMONS_1_NBA-game-ou-over": {
+          "oddID": "points-ANFERNEE_SIMONS_1_NBA-game-ou-over",
+          "opposingOddID": "points-ANFERNEE_SIMONS_1_NBA-game-ou-under",
+          "statID": "points",
+          "statEntityID": "ANFERNEE_SIMONS_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "ANFERNEE_SIMONS_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+130",
+          "bookOdds": "-106",
+          "fairOverUnder": "17.5",
+          "bookOverUnder": "16.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "+100",
+          "openFairOverUnder": "17.5",
+          "openBookOverUnder": "17.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-106",
+              "overUnder": "16.5",
+              "lastUpdatedAt": "2026-02-19T20:09:35.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.557120048&selectionId=26870488",
+              "altLines": [
+                {
+                  "odds": "-800",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-02-19T20:09:35.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-550",
+                  "overUnder": "10.5",
+                  "lastUpdatedAt": "2026-02-19T20:09:35.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-420",
+                  "overUnder": "11.5",
+                  "lastUpdatedAt": "2026-02-19T20:09:35.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-310",
+                  "overUnder": "12.5",
+                  "lastUpdatedAt": "2026-02-19T20:09:35.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-235",
+                  "overUnder": "13.5",
+                  "lastUpdatedAt": "2026-02-19T20:09:35.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-172",
+                  "overUnder": "14.5",
+                  "lastUpdatedAt": "2026-02-19T20:09:35.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-136",
+                  "overUnder": "15.5",
+                  "lastUpdatedAt": "2026-02-19T20:09:35.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+118",
+                  "overUnder": "17.5",
+                  "lastUpdatedAt": "2026-02-19T20:09:35.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+152",
+                  "overUnder": "18.5",
+                  "lastUpdatedAt": "2026-02-19T20:09:35.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+196",
+                  "overUnder": "19.5",
+                  "lastUpdatedAt": "2026-02-19T20:09:35.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+225",
+                  "overUnder": "20.5",
+                  "lastUpdatedAt": "2026-02-19T20:09:35.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+280",
+                  "overUnder": "21.5",
+                  "lastUpdatedAt": "2026-02-19T20:09:35.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+320",
+                  "overUnder": "22.5",
+                  "lastUpdatedAt": "2026-02-19T20:09:35.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+400",
+                  "overUnder": "23.5",
+                  "lastUpdatedAt": "2026-02-19T20:09:35.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+520",
+                  "overUnder": "24.5",
+                  "lastUpdatedAt": "2026-02-19T20:09:35.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1300",
+                  "overUnder": "29.5",
+                  "lastUpdatedAt": "2026-02-19T20:09:35.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+3500",
+                  "overUnder": "34.5",
+                  "lastUpdatedAt": "2026-02-19T20:09:35.000Z",
+                  "available": true
+                }
+              ]
+            }
+          },
+          "marketName": "Anfernee Simons Points Over/Under"
+        },
+        "points-ANFERNEE_SIMONS_1_NBA-game-ou-under": {
+          "oddID": "points-ANFERNEE_SIMONS_1_NBA-game-ou-under",
+          "opposingOddID": "points-ANFERNEE_SIMONS_1_NBA-game-ou-over",
+          "statID": "points",
+          "statEntityID": "ANFERNEE_SIMONS_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "ANFERNEE_SIMONS_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-130",
+          "bookOdds": "-125",
+          "fairOverUnder": "17.5",
+          "bookOverUnder": "16.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "+100",
+          "openFairOverUnder": "17.5",
+          "openBookOverUnder": "17.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-125",
+              "overUnder": "16.5",
+              "lastUpdatedAt": "2026-02-19T20:09:35.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.557120048&selectionId=26870489",
+              "altLines": [
+                {
+                  "odds": "+450",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-02-19T20:09:35.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+350",
+                  "overUnder": "10.5",
+                  "lastUpdatedAt": "2026-02-19T20:09:35.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+270",
+                  "overUnder": "11.5",
+                  "lastUpdatedAt": "2026-02-19T20:09:35.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+220",
+                  "overUnder": "12.5",
+                  "lastUpdatedAt": "2026-02-19T20:09:35.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+172",
+                  "overUnder": "13.5",
+                  "lastUpdatedAt": "2026-02-19T20:09:35.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+132",
+                  "overUnder": "14.5",
+                  "lastUpdatedAt": "2026-02-19T20:09:35.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+102",
+                  "overUnder": "15.5",
+                  "lastUpdatedAt": "2026-02-19T20:09:35.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-158",
+                  "overUnder": "17.5",
+                  "lastUpdatedAt": "2026-02-19T20:09:35.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-205",
+                  "overUnder": "18.5",
+                  "lastUpdatedAt": "2026-02-19T20:09:35.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-260",
+                  "overUnder": "19.5",
+                  "lastUpdatedAt": "2026-02-19T20:09:35.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-320",
+                  "overUnder": "20.5",
+                  "lastUpdatedAt": "2026-02-19T20:09:35.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-420",
+                  "overUnder": "21.5",
+                  "lastUpdatedAt": "2026-02-19T20:09:35.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-500",
+                  "overUnder": "22.5",
+                  "lastUpdatedAt": "2026-02-19T20:09:35.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-670",
+                  "overUnder": "23.5",
+                  "lastUpdatedAt": "2026-02-19T20:09:35.000Z",
+                  "available": true
+                }
+              ]
+            }
+          },
+          "marketName": "Anfernee Simons Points Over/Under"
+        },
+        "rebounds-ANFERNEE_SIMONS_1_NBA-game-ou-over": {
+          "oddID": "rebounds-ANFERNEE_SIMONS_1_NBA-game-ou-over",
+          "opposingOddID": "rebounds-ANFERNEE_SIMONS_1_NBA-game-ou-under",
+          "statID": "rebounds",
+          "statEntityID": "ANFERNEE_SIMONS_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "ANFERNEE_SIMONS_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-120",
+          "bookOdds": "-140",
+          "fairOverUnder": "2.5",
+          "bookOverUnder": "2.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "+100",
+          "openFairOverUnder": "3.5",
+          "openBookOverUnder": "3.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-140",
+              "overUnder": "2.5",
+              "lastUpdatedAt": "2026-02-19T20:09:35.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.557120059&selectionId=26870488",
+              "altLines": [
+                {
+                  "odds": "-450",
+                  "overUnder": "1.5",
+                  "lastUpdatedAt": "2026-02-19T20:09:35.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+190",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2026-02-19T20:09:35.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+390",
+                  "overUnder": "4.5",
+                  "lastUpdatedAt": "2026-02-19T20:09:35.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+870",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2026-02-19T20:09:35.000Z",
+                  "available": true
+                }
+              ]
+            }
+          },
+          "marketName": "Anfernee Simons Rebounds Over/Under"
+        },
+        "rebounds-ANFERNEE_SIMONS_1_NBA-game-ou-under": {
+          "oddID": "rebounds-ANFERNEE_SIMONS_1_NBA-game-ou-under",
+          "opposingOddID": "rebounds-ANFERNEE_SIMONS_1_NBA-game-ou-over",
+          "statID": "rebounds",
+          "statEntityID": "ANFERNEE_SIMONS_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "ANFERNEE_SIMONS_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+120",
+          "bookOdds": "+105",
+          "fairOverUnder": "2.5",
+          "bookOverUnder": "2.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "+100",
+          "openFairOverUnder": "3.5",
+          "openBookOverUnder": "3.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+106",
+              "overUnder": "2.5",
+              "lastUpdatedAt": "2026-02-19T20:09:35.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.557120059&selectionId=26870489",
+              "altLines": [
+                {
+                  "odds": "+300",
+                  "overUnder": "1.5",
+                  "lastUpdatedAt": "2026-02-19T20:09:35.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-250",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2026-02-19T20:09:35.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-650",
+                  "overUnder": "4.5",
+                  "lastUpdatedAt": "2026-02-19T20:09:35.000Z",
+                  "available": true
+                }
+              ]
+            }
+          },
+          "marketName": "Anfernee Simons Rebounds Over/Under"
+        },
+        "steals-ANFERNEE_SIMONS_1_NBA-game-ou-over": {
+          "oddID": "steals-ANFERNEE_SIMONS_1_NBA-game-ou-over",
+          "opposingOddID": "steals-ANFERNEE_SIMONS_1_NBA-game-ou-under",
+          "marketName": "Anfernee Simons Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "ANFERNEE_SIMONS_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "ANFERNEE_SIMONS_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-143",
+          "bookOdds": "-195",
+          "fairOverUnder": "0.5",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "-158",
+          "openBookOdds": "-192",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-210",
+              "overUnder": "0.5",
+              "lastUpdatedAt": "2026-02-19T20:09:35.000Z",
+              "available": true,
+              "altLines": [
+                {
+                  "odds": "+235",
+                  "overUnder": "1.5",
+                  "lastUpdatedAt": "2026-02-19T20:09:35.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+750",
+                  "overUnder": "2.5",
+                  "lastUpdatedAt": "2026-02-19T20:09:35.000Z",
+                  "available": true
+                }
+              ],
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.557264875&selectionId=25293149"
+            }
+          }
+        },
+        "steals-ANFERNEE_SIMONS_1_NBA-game-ou-under": {
+          "oddID": "steals-ANFERNEE_SIMONS_1_NBA-game-ou-under",
+          "opposingOddID": "steals-ANFERNEE_SIMONS_1_NBA-game-ou-over",
+          "marketName": "Anfernee Simons Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "ANFERNEE_SIMONS_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "ANFERNEE_SIMONS_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+143",
+          "bookOdds": "+117",
+          "fairOverUnder": "0.5",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "+158",
+          "openBookOdds": "+140",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        },
+        "blocks-ANFERNEE_SIMONS_1_NBA-game-ou-over": {
+          "oddID": "blocks-ANFERNEE_SIMONS_1_NBA-game-ou-over",
+          "opposingOddID": "blocks-ANFERNEE_SIMONS_1_NBA-game-ou-under",
+          "marketName": "Anfernee Simons Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "ANFERNEE_SIMONS_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "ANFERNEE_SIMONS_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+298",
+          "bookOdds": "+272",
+          "fairOverUnder": "0.5",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "+317",
+          "openBookOdds": "+290",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        },
+        "blocks-ANFERNEE_SIMONS_1_NBA-game-ou-under": {
+          "oddID": "blocks-ANFERNEE_SIMONS_1_NBA-game-ou-under",
+          "opposingOddID": "blocks-ANFERNEE_SIMONS_1_NBA-game-ou-over",
+          "marketName": "Anfernee Simons Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "ANFERNEE_SIMONS_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "ANFERNEE_SIMONS_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-298",
+          "bookOdds": "-400",
+          "fairOverUnder": "0.5",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "-317",
+          "openBookOdds": "-435",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        }
+      },
+      "players": {
+        "ANFERNEE_SIMONS_1_NBA": {
+          "playerID": "ANFERNEE_SIMONS_1_NBA",
+          "teamID": "CHICAGO_BULLS_NBA",
+          "firstName": "Anfernee",
+          "lastName": "Simons",
+          "name": "Anfernee Simons"
+        },
+        "BRANDON_INGRAM_1_NBA": {
+          "playerID": "BRANDON_INGRAM_1_NBA",
+          "teamID": "TORONTO_RAPTORS_NBA",
+          "firstName": "Brandon",
+          "lastName": "Ingram",
+          "name": "Brandon Ingram"
+        },
+        "IMMANUEL_QUICKLEY_1_NBA": {
+          "playerID": "IMMANUEL_QUICKLEY_1_NBA",
+          "teamID": "TORONTO_RAPTORS_NBA",
+          "firstName": "Immanuel",
+          "lastName": "Quickley",
+          "name": "Immanuel Quickley"
+        },
+        "ISAAC_OKORO_1_NBA": {
+          "playerID": "ISAAC_OKORO_1_NBA",
+          "teamID": "CHICAGO_BULLS_NBA",
+          "firstName": "Isaac",
+          "lastName": "Okoro",
+          "name": "Isaac Okoro"
+        },
+        "JAKOB_POELTL_1_NBA": {
+          "playerID": "JAKOB_POELTL_1_NBA",
+          "teamID": "TORONTO_RAPTORS_NBA",
+          "firstName": "Jakob",
+          "lastName": "P\u00f6ltl",
+          "name": "Jakob Poeltl"
+        },
+        "JALEN_SMITH_1_NBA": {
+          "playerID": "JALEN_SMITH_1_NBA",
+          "teamID": "CHICAGO_BULLS_NBA",
+          "firstName": "Jalen",
+          "lastName": "Smith",
+          "name": "Jalen Smith"
+        },
+        "JOSH_GIDDEY_1_NBA": {
+          "playerID": "JOSH_GIDDEY_1_NBA",
+          "teamID": "CHICAGO_BULLS_NBA",
+          "firstName": "Josh",
+          "lastName": "Giddey",
+          "name": "Josh Giddey"
+        },
+        "MATAS_BUZELIS_1_NBA": {
+          "playerID": "MATAS_BUZELIS_1_NBA",
+          "teamID": "CHICAGO_BULLS_NBA",
+          "firstName": "Matas",
+          "lastName": "Buzelis",
+          "name": "Matas Buzelis"
+        },
+        "RJ_BARRETT_1_NBA": {
+          "playerID": "RJ_BARRETT_1_NBA",
+          "teamID": "TORONTO_RAPTORS_NBA",
+          "firstName": "RJ",
+          "lastName": "Barrett",
+          "name": "RJ Barrett"
+        },
+        "SCOTTIE_BARNES_1_NBA": {
+          "playerID": "SCOTTIE_BARNES_1_NBA",
+          "teamID": "TORONTO_RAPTORS_NBA",
+          "firstName": "Scottie",
+          "lastName": "Barnes",
+          "name": "Scottie Barnes"
+        },
+        "NIKOLA_VUCEVIC_1_NBA": {
+          "playerID": "NIKOLA_VUCEVIC_1_NBA",
+          "teamID": "CHICAGO_BULLS_NBA",
+          "firstName": "Nikola",
+          "lastName": "Vucevic",
+          "name": "Nikola Vu\u010devi\u0107"
+        },
+        "JAMAL_SHEAD_1_NBA": {
+          "playerID": "JAMAL_SHEAD_1_NBA",
+          "teamID": "TORONTO_RAPTORS_NBA",
+          "firstName": "Jamal",
+          "lastName": "Shead",
+          "name": "Jamal Shead"
+        },
+        "COLLIN_SEXTON_1_NBA": {
+          "playerID": "COLLIN_SEXTON_1_NBA",
+          "teamID": "CHICAGO_BULLS_NBA",
+          "firstName": "Collin",
+          "lastName": "Sexton",
+          "name": "Collin Sexton"
+        },
+        "COLLIN_MURRAYBOYLES_1_NBA": {
+          "playerID": "COLLIN_MURRAYBOYLES_1_NBA",
+          "teamID": "TORONTO_RAPTORS_NBA",
+          "firstName": "Collin",
+          "lastName": "Murray-Boyles",
+          "name": "Collin Murray-Boyles"
+        },
+        "JADEN_IVEY_1_NBA": {
+          "playerID": "JADEN_IVEY_1_NBA",
+          "teamID": "CHICAGO_BULLS_NBA",
+          "firstName": "Jaden",
+          "lastName": "Ivey",
+          "name": "Jaden Ivey"
+        },
+        "PATRICK_WILLIAMS_1_NBA": {
+          "playerID": "PATRICK_WILLIAMS_1_NBA",
+          "teamID": "CHICAGO_BULLS_NBA",
+          "firstName": "Patrick",
+          "lastName": "Williams",
+          "name": "Patrick Williams"
+        }
+      },
+      "results": {}
+    }
+  ]
+}
