@@ -1,0 +1,1029 @@
+{
+  "nextCursor": "n.1771990200000.SuwExqN5fWo7oemV8vgN",
+  "success": true,
+  "data": [
+    {
+      "eventID": "SuwExqN5fWo7oemV8vgN",
+      "sportID": "BASKETBALL",
+      "leagueID": "NBA",
+      "type": "match",
+      "teams": {
+        "home": {
+          "teamID": "LOS_ANGELES_LAKERS_NBA",
+          "names": {
+            "long": "Los Angeles Lakers",
+            "medium": "Lakers",
+            "short": "LAL",
+            "location": "Los Angeles"
+          },
+          "colors": {
+            "primary": "#552582",
+            "secondary": "#FDB927",
+            "primaryContrast": "#FFFFFF",
+            "secondaryContrast": "#552582"
+          },
+          "statEntityID": "home"
+        },
+        "away": {
+          "teamID": "ORLANDO_MAGIC_NBA",
+          "names": {
+            "long": "Orlando Magic",
+            "medium": "Magic",
+            "short": "ORL",
+            "location": "Orlando"
+          },
+          "colors": {
+            "primary": "#007DC5",
+            "secondary": "#C4CED3",
+            "primaryContrast": "#000000",
+            "secondaryContrast": "#007DC5"
+          },
+          "statEntityID": "away"
+        }
+      },
+      "status": {
+        "started": false,
+        "completed": false,
+        "cancelled": false,
+        "ended": false,
+        "live": false,
+        "delayed": false,
+        "currentPeriodID": "",
+        "previousPeriodID": "",
+        "displayShort": "",
+        "displayLong": "Upcoming",
+        "inBreak": false,
+        "startsAt": "2026-02-25T03:30:00.000Z",
+        "previousStartsAt": [],
+        "hardStart": true,
+        "periods": {
+          "started": [],
+          "ended": []
+        },
+        "oddsPresent": true,
+        "oddsAvailable": true,
+        "finalized": false
+      },
+      "info": {
+        "seasonWeek": "NBA 25/26",
+        "venue": {
+          "name": "crypto.com Arena",
+          "countryName": "United States",
+          "countryCode": "US",
+          "regionName": "California",
+          "regionCode": "CA",
+          "city": "Los Angeles",
+          "address": "1111 S Figueroa St, Los Angeles, CA 90015",
+          "capacity": 19068
+        }
+      },
+      "links": {
+        "bookmakers": {
+          "fanduel": "https://sportsbook.fanduel.com/basketball/-/35295922",
+          "paddypower": "https://www.paddypower.com/basketball/nba/orlando-magic-@-los-angeles-lakers-35295922",
+          "sportsbet": "https://www.sportsbet.com.au/betting/basketball---us/nba/orlando-magic-at-los-angeles-lakers-10187643",
+          "pointsbet": "https://pointsbet.com.au/sports/basketball/NBA/2620872",
+          "boylesports": "https://www.boylesports.com/sports/basketball/event/usa-nba/los-angeles-lakers-v-orlando-magic",
+          "888sport": "https://www.888sport.com/basketball/united-states-of-america/nba/orlando-magic-los-angeles-lakers-e-7196470",
+          "betrsportsbook": "https://www.betr.com.au/sports/Basketball/107/United-States-of-America/NBA/Orlando-Magic-@-Los-Angeles-Lakers/1999738/All-Markets",
+          "coolbet": "https://www.coolbet.com/en/sports/match/5076063",
+          "betfairsportsbook": "https://www.betfair.com/betting/basketball/nba/orlando-magic-@-los-angeles-lakers/e-35295922",
+          "playup": "https://www.playup.com.au/betting/sports/nba/los-angeles-lakers-v-orlando-magic/1829240",
+          "williamhill": "https://sports.williamhill.com/betting/en-gb/basketball/OB_EV38835562/orlando-magic-at-los-angeles-lakers",
+          "1xbet": "https://1xbet.com/en/line/football/13589-nba/308142372-los-angeles-lakers-orlando-magic",
+          "draftkings": "https://sportsbook.draftkings.com/event/33688554",
+          "tab": "https://www.tab.com.au/sports/betting/Basketball/competitions/NBA/matches/LA%20Lakers%20v%20Orlando",
+          "fliff": "https://sports.getfliff.com/markets/373915_c_p_204_prematch",
+          "betsson": "https://www.betsson.com/en/sportsbook/basketball/nba/nba?eventId=f-T6D2YbctL0OemIT6stXm_Q",
+          "nordicbet": "https://www.nordicbet.com/en/sportsbook/basketball/nba/nba/la-lakers-orlando-magic-",
+          "caesars": "https://sportsbook.caesars.com/us/nj/bet/basketball/18e09640-0687-4baf-bf3e-781821a0699a/orlando-magic-at-los-angeles-lakers"
+        }
+      },
+      "odds": {
+        "assists-ANTHONY_BLACK_1_NBA-game-ou-over": {
+          "oddID": "assists-ANTHONY_BLACK_1_NBA-game-ou-over",
+          "opposingOddID": "assists-ANTHONY_BLACK_1_NBA-game-ou-under",
+          "marketName": "Anthony Black Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "ANTHONY_BLACK_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "ANTHONY_BLACK_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+132",
+          "bookOdds": "-163",
+          "fairOverUnder": "4.5",
+          "bookOverUnder": "3.5",
+          "openFairOdds": "-129",
+          "openBookOdds": "-152",
+          "openFairOverUnder": "3.5",
+          "openBookOverUnder": "3.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-152",
+              "overUnder": "3.5",
+              "lastUpdatedAt": "2026-02-23T11:45:09.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.558516637&selectionId=50378078",
+              "altLines": [
+                {
+                  "odds": "-1600",
+                  "overUnder": "1.5",
+                  "lastUpdatedAt": "2026-02-23T11:45:09.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+330",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2026-02-23T11:45:09.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1200",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2026-02-23T11:45:09.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "assists-ANTHONY_BLACK_1_NBA-game-ou-under": {
+          "oddID": "assists-ANTHONY_BLACK_1_NBA-game-ou-under",
+          "opposingOddID": "assists-ANTHONY_BLACK_1_NBA-game-ou-over",
+          "marketName": "Anthony Black Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "ANTHONY_BLACK_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "ANTHONY_BLACK_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-132",
+          "bookOdds": "+114",
+          "fairOverUnder": "4.5",
+          "bookOverUnder": "3.5",
+          "openFairOdds": "+129",
+          "openBookOdds": "+114",
+          "openFairOverUnder": "3.5",
+          "openBookOverUnder": "3.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+114",
+              "overUnder": "3.5",
+              "lastUpdatedAt": "2026-02-23T11:45:09.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.558516637&selectionId=50378080"
+            }
+          }
+        },
+        "assists-DESMOND_BANE_1_NBA-game-ou-over": {
+          "oddID": "assists-DESMOND_BANE_1_NBA-game-ou-over",
+          "opposingOddID": "assists-DESMOND_BANE_1_NBA-game-ou-under",
+          "marketName": "Desmond Bane Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "DESMOND_BANE_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "DESMOND_BANE_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+124",
+          "bookOdds": "+108",
+          "fairOverUnder": "3.5",
+          "bookOverUnder": "3.5",
+          "openFairOdds": "+127",
+          "openBookOdds": "+112",
+          "openFairOverUnder": "3.5",
+          "openBookOverUnder": "3.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+112",
+              "overUnder": "3.5",
+              "lastUpdatedAt": "2026-02-23T11:45:09.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.558516636&selectionId=38187360",
+              "altLines": [
+                {
+                  "odds": "-770",
+                  "overUnder": "1.5",
+                  "lastUpdatedAt": "2026-02-23T11:45:09.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+520",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2026-02-23T11:45:09.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1700",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2026-02-23T11:45:09.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "assists-DESMOND_BANE_1_NBA-game-ou-under": {
+          "oddID": "assists-DESMOND_BANE_1_NBA-game-ou-under",
+          "opposingOddID": "assists-DESMOND_BANE_1_NBA-game-ou-over",
+          "marketName": "Desmond Bane Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "DESMOND_BANE_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "DESMOND_BANE_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-124",
+          "bookOdds": "-148",
+          "fairOverUnder": "3.5",
+          "bookOverUnder": "3.5",
+          "openFairOdds": "-127",
+          "openBookOdds": "-148",
+          "openFairOverUnder": "3.5",
+          "openBookOverUnder": "3.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-148",
+              "overUnder": "3.5",
+              "lastUpdatedAt": "2026-02-23T11:45:09.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.558516636&selectionId=38187370"
+            }
+          }
+        },
+        "assists-PAOLO_BANCHERO_1_NBA-game-ou-over": {
+          "oddID": "assists-PAOLO_BANCHERO_1_NBA-game-ou-over",
+          "opposingOddID": "assists-PAOLO_BANCHERO_1_NBA-game-ou-under",
+          "marketName": "Paolo Banchero Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "PAOLO_BANCHERO_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "PAOLO_BANCHERO_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+134",
+          "bookOdds": "+117",
+          "fairOverUnder": "5.5",
+          "bookOverUnder": "5.5",
+          "openFairOdds": "+135",
+          "openBookOdds": "+120",
+          "openFairOverUnder": "5.5",
+          "openBookOverUnder": "5.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+120",
+              "overUnder": "5.5",
+              "lastUpdatedAt": "2026-02-23T11:45:09.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.558516635&selectionId=43036900",
+              "altLines": [
+                {
+                  "odds": "-350",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2026-02-23T11:45:09.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+420",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2026-02-23T11:45:09.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1000",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-02-23T11:45:09.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+3000",
+                  "overUnder": "11.5",
+                  "lastUpdatedAt": "2026-02-23T11:45:09.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "assists-PAOLO_BANCHERO_1_NBA-game-ou-under": {
+          "oddID": "assists-PAOLO_BANCHERO_1_NBA-game-ou-under",
+          "opposingOddID": "assists-PAOLO_BANCHERO_1_NBA-game-ou-over",
+          "marketName": "Paolo Banchero Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "PAOLO_BANCHERO_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "PAOLO_BANCHERO_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-134",
+          "bookOdds": "-160",
+          "fairOverUnder": "5.5",
+          "bookOverUnder": "5.5",
+          "openFairOdds": "-135",
+          "openBookOdds": "-160",
+          "openFairOverUnder": "5.5",
+          "openBookOverUnder": "5.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-160",
+              "overUnder": "5.5",
+              "lastUpdatedAt": "2026-02-23T11:45:09.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.558516635&selectionId=43036902"
+            }
+          }
+        },
+        "points-ANTHONY_BLACK_1_NBA-game-ou-over": {
+          "oddID": "points-ANTHONY_BLACK_1_NBA-game-ou-over",
+          "opposingOddID": "points-ANTHONY_BLACK_1_NBA-game-ou-under",
+          "marketName": "Anthony Black Points Over/Under",
+          "statID": "points",
+          "statEntityID": "ANTHONY_BLACK_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "ANTHONY_BLACK_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "-105",
+          "fairOverUnder": "16",
+          "bookOverUnder": "15.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "-102",
+          "openFairOverUnder": "16",
+          "openBookOverUnder": "15.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-102",
+              "overUnder": "15.5",
+              "lastUpdatedAt": "2026-02-23T11:45:09.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.558516624&selectionId=50378078",
+              "altLines": [
+                {
+                  "odds": "-620",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-02-23T11:45:09.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-130",
+                  "overUnder": "14.5",
+                  "lastUpdatedAt": "2026-02-23T11:45:09.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+250",
+                  "overUnder": "19.5",
+                  "lastUpdatedAt": "2026-02-23T11:45:09.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+800",
+                  "overUnder": "24.5",
+                  "lastUpdatedAt": "2026-02-23T11:45:09.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+2000",
+                  "overUnder": "29.5",
+                  "lastUpdatedAt": "2026-02-23T11:45:09.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "points-ANTHONY_BLACK_1_NBA-game-ou-under": {
+          "oddID": "points-ANTHONY_BLACK_1_NBA-game-ou-under",
+          "opposingOddID": "points-ANTHONY_BLACK_1_NBA-game-ou-over",
+          "marketName": "Anthony Black Points Over/Under",
+          "statID": "points",
+          "statEntityID": "ANTHONY_BLACK_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "ANTHONY_BLACK_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "-130",
+          "fairOverUnder": "16",
+          "bookOverUnder": "15.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "-130",
+          "openFairOverUnder": "16",
+          "openBookOverUnder": "15.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-130",
+              "overUnder": "15.5",
+              "lastUpdatedAt": "2026-02-23T11:45:09.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.558516624&selectionId=50378080"
+            }
+          }
+        },
+        "points-DESMOND_BANE_1_NBA-game-ou-over": {
+          "oddID": "points-DESMOND_BANE_1_NBA-game-ou-over",
+          "opposingOddID": "points-DESMOND_BANE_1_NBA-game-ou-under",
+          "marketName": "Desmond Bane Points Over/Under",
+          "statID": "points",
+          "statEntityID": "DESMOND_BANE_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "DESMOND_BANE_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+106",
+          "bookOdds": "-126",
+          "fairOverUnder": "20.5",
+          "bookOverUnder": "19.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "-125",
+          "openFairOverUnder": "21",
+          "openBookOverUnder": "19.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-125",
+              "overUnder": "19.5",
+              "lastUpdatedAt": "2026-02-23T11:45:09.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.558516623&selectionId=38187360",
+              "altLines": [
+                {
+                  "odds": "-4000",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-02-23T11:45:09.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-430",
+                  "overUnder": "14.5",
+                  "lastUpdatedAt": "2026-02-23T11:45:09.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+240",
+                  "overUnder": "24.5",
+                  "lastUpdatedAt": "2026-02-23T11:45:09.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+630",
+                  "overUnder": "29.5",
+                  "lastUpdatedAt": "2026-02-23T11:45:09.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1500",
+                  "overUnder": "34.5",
+                  "lastUpdatedAt": "2026-02-23T11:45:09.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+4000",
+                  "overUnder": "39.5",
+                  "lastUpdatedAt": "2026-02-23T11:45:09.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "points-DESMOND_BANE_1_NBA-game-ou-under": {
+          "oddID": "points-DESMOND_BANE_1_NBA-game-ou-under",
+          "opposingOddID": "points-DESMOND_BANE_1_NBA-game-ou-over",
+          "marketName": "Desmond Bane Points Over/Under",
+          "statID": "points",
+          "statEntityID": "DESMOND_BANE_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "DESMOND_BANE_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-106",
+          "bookOdds": "-106",
+          "fairOverUnder": "20.5",
+          "bookOverUnder": "19.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "-106",
+          "openFairOverUnder": "21",
+          "openBookOverUnder": "19.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-106",
+              "overUnder": "19.5",
+              "lastUpdatedAt": "2026-02-23T11:45:09.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.558516623&selectionId=38187370"
+            }
+          }
+        },
+        "points-PAOLO_BANCHERO_1_NBA-game-ou-over": {
+          "oddID": "points-PAOLO_BANCHERO_1_NBA-game-ou-over",
+          "opposingOddID": "points-PAOLO_BANCHERO_1_NBA-game-ou-under",
+          "marketName": "Paolo Banchero Points Over/Under",
+          "statID": "points",
+          "statEntityID": "PAOLO_BANCHERO_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "PAOLO_BANCHERO_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+110",
+          "bookOdds": "-104",
+          "fairOverUnder": "21.5",
+          "bookOverUnder": "21.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "-104",
+          "openFairOverUnder": "22",
+          "openBookOverUnder": "21.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-104",
+              "overUnder": "21.5",
+              "lastUpdatedAt": "2026-02-23T11:45:09.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.558516622&selectionId=43036900",
+              "altLines": [
+                {
+                  "odds": "-5000",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-02-23T11:45:09.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-590",
+                  "overUnder": "14.5",
+                  "lastUpdatedAt": "2026-02-23T11:45:09.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-160",
+                  "overUnder": "19.5",
+                  "lastUpdatedAt": "2026-02-23T11:45:09.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+190",
+                  "overUnder": "24.5",
+                  "lastUpdatedAt": "2026-02-23T11:45:09.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+520",
+                  "overUnder": "29.5",
+                  "lastUpdatedAt": "2026-02-23T11:45:09.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1300",
+                  "overUnder": "34.5",
+                  "lastUpdatedAt": "2026-02-23T11:45:09.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+3500",
+                  "overUnder": "39.5",
+                  "lastUpdatedAt": "2026-02-23T11:45:09.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "points-PAOLO_BANCHERO_1_NBA-game-ou-under": {
+          "oddID": "points-PAOLO_BANCHERO_1_NBA-game-ou-under",
+          "opposingOddID": "points-PAOLO_BANCHERO_1_NBA-game-ou-over",
+          "marketName": "Paolo Banchero Points Over/Under",
+          "statID": "points",
+          "statEntityID": "PAOLO_BANCHERO_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "PAOLO_BANCHERO_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-110",
+          "bookOdds": "-128",
+          "fairOverUnder": "21.5",
+          "bookOverUnder": "21.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "-128",
+          "openFairOverUnder": "22",
+          "openBookOverUnder": "21.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-128",
+              "overUnder": "21.5",
+              "lastUpdatedAt": "2026-02-23T11:45:09.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.558516622&selectionId=43036902"
+            }
+          }
+        },
+        "rebounds-ANTHONY_BLACK_1_NBA-game-ou-over": {
+          "oddID": "rebounds-ANTHONY_BLACK_1_NBA-game-ou-over",
+          "opposingOddID": "rebounds-ANTHONY_BLACK_1_NBA-game-ou-under",
+          "marketName": "Anthony Black Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "ANTHONY_BLACK_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "ANTHONY_BLACK_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+105",
+          "bookOdds": "-109",
+          "fairOverUnder": "3.5",
+          "bookOverUnder": "3.5",
+          "openFairOdds": "+104",
+          "openBookOdds": "-110",
+          "openFairOverUnder": "3.5",
+          "openBookOverUnder": "3.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-110",
+              "overUnder": "3.5",
+              "lastUpdatedAt": "2026-02-23T11:45:09.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.558516631&selectionId=50378078",
+              "altLines": [
+                {
+                  "odds": "+440",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2026-02-23T11:45:09.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1500",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2026-02-23T11:45:09.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "rebounds-ANTHONY_BLACK_1_NBA-game-ou-under": {
+          "oddID": "rebounds-ANTHONY_BLACK_1_NBA-game-ou-under",
+          "opposingOddID": "rebounds-ANTHONY_BLACK_1_NBA-game-ou-over",
+          "marketName": "Anthony Black Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "ANTHONY_BLACK_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "ANTHONY_BLACK_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-105",
+          "bookOdds": "-120",
+          "fairOverUnder": "3.5",
+          "bookOverUnder": "3.5",
+          "openFairOdds": "-104",
+          "openBookOdds": "-120",
+          "openFairOverUnder": "3.5",
+          "openBookOverUnder": "3.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-120",
+              "overUnder": "3.5",
+              "lastUpdatedAt": "2026-02-23T11:45:09.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.558516631&selectionId=50378080"
+            }
+          }
+        },
+        "rebounds-DESMOND_BANE_1_NBA-game-ou-over": {
+          "oddID": "rebounds-DESMOND_BANE_1_NBA-game-ou-over",
+          "opposingOddID": "rebounds-DESMOND_BANE_1_NBA-game-ou-under",
+          "marketName": "Desmond Bane Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "DESMOND_BANE_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "DESMOND_BANE_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+134",
+          "bookOdds": "+116",
+          "fairOverUnder": "4.5",
+          "bookOverUnder": "4.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "+122",
+          "openFairOverUnder": "4",
+          "openBookOverUnder": "4.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+122",
+              "overUnder": "4.5",
+              "lastUpdatedAt": "2026-02-23T11:45:09.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.558516630&selectionId=38187360",
+              "altLines": [
+                {
+                  "odds": "-186",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2026-02-23T11:45:09.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+250",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2026-02-23T11:45:09.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1000",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2026-02-23T11:45:09.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "rebounds-DESMOND_BANE_1_NBA-game-ou-under": {
+          "oddID": "rebounds-DESMOND_BANE_1_NBA-game-ou-under",
+          "opposingOddID": "rebounds-DESMOND_BANE_1_NBA-game-ou-over",
+          "marketName": "Desmond Bane Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "DESMOND_BANE_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "DESMOND_BANE_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-134",
+          "bookOdds": "-162",
+          "fairOverUnder": "4.5",
+          "bookOverUnder": "4.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "-162",
+          "openFairOverUnder": "4",
+          "openBookOverUnder": "4.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-162",
+              "overUnder": "4.5",
+              "lastUpdatedAt": "2026-02-23T11:45:09.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.558516630&selectionId=38187370"
+            }
+          }
+        },
+        "rebounds-PAOLO_BANCHERO_1_NBA-game-ou-over": {
+          "oddID": "rebounds-PAOLO_BANCHERO_1_NBA-game-ou-over",
+          "opposingOddID": "rebounds-PAOLO_BANCHERO_1_NBA-game-ou-under",
+          "marketName": "Paolo Banchero Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "PAOLO_BANCHERO_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "PAOLO_BANCHERO_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+127",
+          "bookOdds": "-143",
+          "fairOverUnder": "8.5",
+          "bookOverUnder": "7.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "-144",
+          "openFairOverUnder": "8.5",
+          "openBookOverUnder": "7.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-144",
+              "overUnder": "7.5",
+              "lastUpdatedAt": "2026-02-23T11:45:09.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.558516629&selectionId=43036900",
+              "altLines": [
+                {
+                  "odds": "-4500",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2026-02-23T11:45:09.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-500",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2026-02-23T11:45:09.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+176",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-02-23T11:45:09.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+470",
+                  "overUnder": "11.5",
+                  "lastUpdatedAt": "2026-02-23T11:45:09.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1200",
+                  "overUnder": "13.5",
+                  "lastUpdatedAt": "2026-02-23T11:45:09.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+3000",
+                  "overUnder": "15.5",
+                  "lastUpdatedAt": "2026-02-23T11:45:09.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "rebounds-PAOLO_BANCHERO_1_NBA-game-ou-under": {
+          "oddID": "rebounds-PAOLO_BANCHERO_1_NBA-game-ou-under",
+          "opposingOddID": "rebounds-PAOLO_BANCHERO_1_NBA-game-ou-over",
+          "marketName": "Paolo Banchero Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "PAOLO_BANCHERO_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "PAOLO_BANCHERO_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-127",
+          "bookOdds": "+108",
+          "fairOverUnder": "8.5",
+          "bookOverUnder": "7.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "+108",
+          "openFairOverUnder": "8.5",
+          "openBookOverUnder": "7.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+108",
+              "overUnder": "7.5",
+              "lastUpdatedAt": "2026-02-23T11:45:09.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.558516629&selectionId=43036902"
+            }
+          }
+        }
+      },
+      "players": {
+        "ANTHONY_BLACK_1_NBA": {
+          "playerID": "ANTHONY_BLACK_1_NBA",
+          "teamID": "ORLANDO_MAGIC_NBA",
+          "firstName": "Anthony",
+          "lastName": "Black",
+          "name": "Anthony Black"
+        },
+        "DESMOND_BANE_1_NBA": {
+          "playerID": "DESMOND_BANE_1_NBA",
+          "teamID": "ORLANDO_MAGIC_NBA",
+          "firstName": "Desmond",
+          "lastName": "Bane",
+          "name": "Desmond Bane"
+        },
+        "JALEN_SUGGS_1_NBA": {
+          "playerID": "JALEN_SUGGS_1_NBA",
+          "teamID": "ORLANDO_MAGIC_NBA",
+          "firstName": "Jalen",
+          "lastName": "Suggs",
+          "name": "Jalen Suggs"
+        },
+        "PAOLO_BANCHERO_1_NBA": {
+          "playerID": "PAOLO_BANCHERO_1_NBA",
+          "teamID": "ORLANDO_MAGIC_NBA",
+          "firstName": "Paolo",
+          "lastName": "Banchero",
+          "name": "Paolo Banchero"
+        },
+        "WENDELL_CARTER_JR_1_NBA": {
+          "playerID": "WENDELL_CARTER_JR_1_NBA",
+          "teamID": "ORLANDO_MAGIC_NBA",
+          "firstName": "Wendell",
+          "lastName": "Carter",
+          "name": "Wendell Carter Jr."
+        },
+        "AUSTIN_REAVES_1_NBA": {
+          "playerID": "AUSTIN_REAVES_1_NBA",
+          "teamID": "LOS_ANGELES_LAKERS_NBA",
+          "firstName": "Austin",
+          "lastName": "Reaves",
+          "name": "Austin Reaves"
+        },
+        "LEBRON_JAMES_1_NBA": {
+          "playerID": "LEBRON_JAMES_1_NBA",
+          "teamID": "LOS_ANGELES_LAKERS_NBA",
+          "firstName": "LeBron",
+          "lastName": "James",
+          "name": "LeBron James"
+        },
+        "LUKA_DONCIC_1_NBA": {
+          "playerID": "LUKA_DONCIC_1_NBA",
+          "teamID": "LOS_ANGELES_LAKERS_NBA",
+          "firstName": "Luka",
+          "lastName": "Doncic",
+          "name": "Luka Don\u010di\u0107"
+        }
+      },
+      "results": {}
+    }
+  ]
+}
