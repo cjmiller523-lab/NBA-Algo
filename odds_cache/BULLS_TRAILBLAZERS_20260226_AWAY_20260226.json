@@ -1,0 +1,2141 @@
+{
+  "nextCursor": "n.1772154000000.L0cENlkjOp1LYhRbYHSS",
+  "success": true,
+  "data": [
+    {
+      "eventID": "L0cENlkjOp1LYhRbYHSS",
+      "sportID": "BASKETBALL",
+      "leagueID": "NBA",
+      "type": "match",
+      "teams": {
+        "home": {
+          "teamID": "CHICAGO_BULLS_NBA",
+          "names": {
+            "long": "Chicago Bulls",
+            "medium": "Bulls",
+            "short": "CHI",
+            "location": "Chicago"
+          },
+          "colors": {
+            "primary": "#CE1141",
+            "secondary": "#000000",
+            "primaryContrast": "#FFFFFF",
+            "secondaryContrast": "#CE1141"
+          },
+          "statEntityID": "home"
+        },
+        "away": {
+          "teamID": "PORTLAND_TRAIL_BLAZERS_NBA",
+          "names": {
+            "long": "Portland Trail Blazers",
+            "medium": "Trail Blazers",
+            "short": "POR",
+            "location": "Portland"
+          },
+          "colors": {
+            "primary": "#F0163A",
+            "secondary": "#FFFFFF",
+            "primaryContrast": "#000000",
+            "secondaryContrast": "#F0163A"
+          },
+          "statEntityID": "away"
+        }
+      },
+      "status": {
+        "started": false,
+        "completed": false,
+        "cancelled": false,
+        "ended": false,
+        "live": false,
+        "delayed": false,
+        "currentPeriodID": "",
+        "previousPeriodID": "",
+        "displayShort": "",
+        "displayLong": "Upcoming",
+        "inBreak": false,
+        "startsAt": "2026-02-27T01:00:00.000Z",
+        "previousStartsAt": [],
+        "hardStart": true,
+        "periods": {
+          "started": [],
+          "ended": []
+        },
+        "oddsPresent": true,
+        "oddsAvailable": true,
+        "finalized": false
+      },
+      "info": {
+        "seasonWeek": "NBA 25/26",
+        "venue": {
+          "name": "United Center",
+          "countryName": "United States",
+          "countryCode": "US",
+          "regionName": "Illinois",
+          "regionCode": "IL",
+          "city": "Chicago",
+          "address": "1901 W Madison St, Chicago, IL 60612",
+          "capacity": 20917
+        }
+      },
+      "links": {
+        "bookmakers": {
+          "fanduel": "https://sportsbook.fanduel.com/basketball/-/35302221",
+          "sportsbet": "https://www.sportsbet.com.au/betting/basketball---us/nba/portland-trail-blazers-at-chicago-bulls-10193591",
+          "neds": "https://www.neds.com.au/sports/-/-/-/d6cfac61-0e55-4b57-b763-f3068d2c631e",
+          "paddypower": "https://www.paddypower.com/basketball/nba/portland-trail-blazers-@-chicago-bulls-35302221",
+          "ladbrokes": "https://www.ladbrokes.com.au/sports/-/-/-/d6cfac61-0e55-4b57-b763-f3068d2c631e",
+          "boylesports": "https://www.boylesports.com/sports/basketball/event/usa-nba/chicago-bulls-v-portland-trail-blazers",
+          "pointsbet": "https://pointsbet.com.au/sports/basketball/NBA/2623416",
+          "1xbet": "https://1xbet.com/en/line/football/13589-nba/308998708-chicago-bulls-portland-trail-blazers",
+          "draftkings": "https://sportsbook.draftkings.com/event/33705571",
+          "tab": "https://www.tab.com.au/sports/betting/Basketball/competitions/NBA/matches/Chicago%20v%20Portland",
+          "888sport": "https://www.888sport.com/basketball/united-states-of-america/nba/portland-trail-blazers-chicago-bulls-e-7205951",
+          "ballybet": "https://play.ballybet.com/sports#event/1024653585",
+          "betparx": "https://nj.betparx.com/kambi#event/1024653585",
+          "betrivers": "https://nj.betrivers.com/?page=sportsbook#event/1024653585",
+          "caesars": "https://sportsbook.caesars.com/us/nj/bet/basketball/8457e4c0-b76b-4dd0-9f85-4efc1b8e486e/portland-trail-blazers-at-chicago-bulls",
+          "casumo": "https://www.casumo.com/en-gb/sports#event/1024653585",
+          "grosvenor": "https://www.grosvenorcasinos.com/sport#event/1024653585",
+          "leovegas": "https://www.leovegas.co.uk/betting#event/1024653585",
+          "livescorebet": "https://www.livescorebet.com/uk/sports/basketball/nba/chicago-bulls-portland-trail-blazers/SBTE_2_1024653585",
+          "tabtouch": "https://www.tabtouch.mobi/tabtouch-sports/event/1024653585",
+          "virginbet": "https://www.virginbet.com/sports/basketball/nba/chicago-bulls-portland-trail-blazers/SBTE_2_1024653585",
+          "coolbet": "https://www.coolbet.com/en/sports/match/5084403",
+          "unibet": "https://www.unibet.com/betting/sports/event/1024653585",
+          "williamhill": "https://sports.williamhill.com/betting/en-gb/basketball/OB_EV38862096/portland-trail-blazers-at-chicago-bulls",
+          "betsson": "https://www.betsson.com/en/sportsbook/basketball/nba/nba?eventId=f-vwBOQ0MB50-WLOrL-arf7w",
+          "fliff": "https://sports.getfliff.com/markets/374696_c_p_204_prematch",
+          "nordicbet": "https://www.nordicbet.com/en/sportsbook/basketball/nba/nba/chicago-bulls-portland-trail-blazers-",
+          "playup": "https://www.playup.com.au/betting/sports/nba/chicago-bulls-v-portland-trail-blazers/1832733",
+          "betonline": "https://sports.betonline.ag/sportsbook/basketball/nba/game/490972037",
+          "lowvig": "https://sports.lowvig.ag/sportsbook/basketball/nba/game/490972037",
+          "betmgm": "https://sports.nj.betmgm.com/en/sports/events/18890176",
+          "coral": "https://sports.coral.co.uk/event/basketball/basketball-usa/nba/chi-bulls-v-por-trail-blazers/42052224",
+          "matchbook": "https://www.matchbook.com/events/basketball/united-states-of-america/nba/32611210969800045",
+          "hardrockbet": "https://app.hardrock.bet/home/competition/nba/8798628841799811334",
+          "pinnacle": "https://www.pinnacle.com/en/basketball/nba/portland-trail-blazers-vs-chicago-bulls/1624516407",
+          "betfairsportsbook": "https://www.betfair.com/betting/basketball/nba/portland-trail-blazers-@-chicago-bulls/e-35302221",
+          "bovada": "https://www.bovada.lv/sports/basketball/nba/portland-trail-blazers-chicago-bulls-202602262000",
+          "betway": "https://betway.com/en/sports/evt/16414035",
+          "espnbet": "https://espnbet.com/sport/basketball/organization/united-states/competition/nba/event/f7bb7c9d-e081-438d-a4a8-cd54b59ccf71",
+          "everygame": "https://sports.everygame.eu/en/Bets/Basketball/NBA-Lines/Portland-Trail-Blazers-at-Chicago-Bulls/2804425",
+          "thescorebet": "https://thescore.bet/sport/basketball/organization/united-states/competition/nba/event/f7bb7c9d-e081-438d-a4a8-cd54b59ccf71"
+        }
+      },
+      "odds": {
+        "assists-DONOVAN_CLINGAN_1_NBA-game-ou-over": {
+          "oddID": "assists-DONOVAN_CLINGAN_1_NBA-game-ou-over",
+          "opposingOddID": "assists-DONOVAN_CLINGAN_1_NBA-game-ou-under",
+          "statID": "assists",
+          "statEntityID": "DONOVAN_CLINGAN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "DONOVAN_CLINGAN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-135",
+          "bookOdds": "-160",
+          "fairOverUnder": "2.5",
+          "bookOverUnder": "2.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "+100",
+          "openFairOverUnder": "2.5",
+          "openBookOverUnder": "2.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-154",
+              "overUnder": "2.5",
+              "lastUpdatedAt": "2026-02-26T14:10:31.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.559074493&selectionId=50752175",
+              "altLines": [
+                {
+                  "odds": "-480",
+                  "overUnder": "1.5",
+                  "lastUpdatedAt": "2026-02-26T14:10:31.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+164",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2026-02-26T14:10:31.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+750",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2026-02-26T14:10:31.000Z",
+                  "available": true
+                }
+              ]
+            }
+          },
+          "marketName": "Donovan Clingan Assists Over/Under"
+        },
+        "assists-DONOVAN_CLINGAN_1_NBA-game-ou-under": {
+          "oddID": "assists-DONOVAN_CLINGAN_1_NBA-game-ou-under",
+          "opposingOddID": "assists-DONOVAN_CLINGAN_1_NBA-game-ou-over",
+          "statID": "assists",
+          "statEntityID": "DONOVAN_CLINGAN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "DONOVAN_CLINGAN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+135",
+          "bookOdds": "+120",
+          "fairOverUnder": "2.5",
+          "bookOverUnder": "2.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "+100",
+          "openFairOverUnder": "2.5",
+          "openBookOverUnder": "2.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+116",
+              "overUnder": "2.5",
+              "lastUpdatedAt": "2026-02-26T14:10:31.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.559074493&selectionId=50752173"
+            }
+          },
+          "marketName": "Donovan Clingan Assists Over/Under"
+        },
+        "assists-JERAMI_GRANT_1_NBA-game-ou-over": {
+          "oddID": "assists-JERAMI_GRANT_1_NBA-game-ou-over",
+          "opposingOddID": "assists-JERAMI_GRANT_1_NBA-game-ou-under",
+          "statID": "assists",
+          "statEntityID": "JERAMI_GRANT_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "JERAMI_GRANT_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "+135",
+          "fairOverUnder": "2",
+          "bookOverUnder": "2.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "+100",
+          "openFairOverUnder": "2.5",
+          "openBookOverUnder": "2.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-188",
+              "overUnder": "1.5",
+              "lastUpdatedAt": "2026-02-26T14:10:31.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.559074491&selectionId=16529226",
+              "altLines": [
+                {
+                  "odds": "+430",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2026-02-26T14:10:31.000Z",
+                  "available": true
+                }
+              ]
+            }
+          },
+          "marketName": "Jerami Grant Assists Over/Under"
+        },
+        "assists-JERAMI_GRANT_1_NBA-game-ou-under": {
+          "oddID": "assists-JERAMI_GRANT_1_NBA-game-ou-under",
+          "opposingOddID": "assists-JERAMI_GRANT_1_NBA-game-ou-over",
+          "statID": "assists",
+          "statEntityID": "JERAMI_GRANT_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "JERAMI_GRANT_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "-190",
+          "fairOverUnder": "2",
+          "bookOverUnder": "2.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "+100",
+          "openFairOverUnder": "2.5",
+          "openBookOverUnder": "2.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+140",
+              "overUnder": "1.5",
+              "lastUpdatedAt": "2026-02-26T14:10:31.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.559074491&selectionId=16529227"
+            }
+          },
+          "marketName": "Jerami Grant Assists Over/Under"
+        },
+        "assists-JRUE_HOLIDAY_1_NBA-game-ou-over": {
+          "oddID": "assists-JRUE_HOLIDAY_1_NBA-game-ou-over",
+          "opposingOddID": "assists-JRUE_HOLIDAY_1_NBA-game-ou-under",
+          "statID": "assists",
+          "statEntityID": "JRUE_HOLIDAY_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "JRUE_HOLIDAY_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+149",
+          "bookOdds": "-134",
+          "fairOverUnder": "7.5",
+          "bookOverUnder": "6.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "+100",
+          "openFairOverUnder": "6.5",
+          "openBookOverUnder": "6.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-130",
+              "overUnder": "6.5",
+              "lastUpdatedAt": "2026-02-26T14:10:31.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.559074492&selectionId=12260620",
+              "altLines": [
+                {
+                  "odds": "-1400",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2026-02-26T14:10:31.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-235",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2026-02-26T14:10:31.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+140",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2026-02-26T14:10:31.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+350",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-02-26T14:10:31.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1000",
+                  "overUnder": "11.5",
+                  "lastUpdatedAt": "2026-02-26T14:10:31.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+2500",
+                  "overUnder": "13.5",
+                  "lastUpdatedAt": "2026-02-26T14:10:31.000Z",
+                  "available": true
+                }
+              ]
+            }
+          },
+          "marketName": "Jrue Holiday Assists Over/Under"
+        },
+        "assists-JRUE_HOLIDAY_1_NBA-game-ou-under": {
+          "oddID": "assists-JRUE_HOLIDAY_1_NBA-game-ou-under",
+          "opposingOddID": "assists-JRUE_HOLIDAY_1_NBA-game-ou-over",
+          "statID": "assists",
+          "statEntityID": "JRUE_HOLIDAY_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "JRUE_HOLIDAY_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-149",
+          "bookOdds": "+100",
+          "fairOverUnder": "7.5",
+          "bookOverUnder": "6.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "+100",
+          "openFairOverUnder": "6.5",
+          "openBookOverUnder": "6.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-102",
+              "overUnder": "6.5",
+              "lastUpdatedAt": "2026-02-26T14:10:31.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.559074492&selectionId=12260621"
+            }
+          },
+          "marketName": "Jrue Holiday Assists Over/Under"
+        },
+        "assists-KRIS_MURRAY_1_NBA-game-ou-over": {
+          "oddID": "assists-KRIS_MURRAY_1_NBA-game-ou-over",
+          "opposingOddID": "assists-KRIS_MURRAY_1_NBA-game-ou-under",
+          "statID": "assists",
+          "statEntityID": "KRIS_MURRAY_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "KRIS_MURRAY_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "-145",
+          "fairOverUnder": "2",
+          "bookOverUnder": "1.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "+100",
+          "openFairOverUnder": "1.5",
+          "openBookOverUnder": "1.5",
+          "scoringSupported": true,
+          "byBookmaker": {},
+          "marketName": "Kris Murray Assists Over/Under"
+        },
+        "assists-KRIS_MURRAY_1_NBA-game-ou-under": {
+          "oddID": "assists-KRIS_MURRAY_1_NBA-game-ou-under",
+          "opposingOddID": "assists-KRIS_MURRAY_1_NBA-game-ou-over",
+          "statID": "assists",
+          "statEntityID": "KRIS_MURRAY_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "KRIS_MURRAY_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "+107",
+          "fairOverUnder": "2",
+          "bookOverUnder": "1.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "+100",
+          "openFairOverUnder": "1.5",
+          "openBookOverUnder": "1.5",
+          "scoringSupported": true,
+          "byBookmaker": {},
+          "marketName": "Kris Murray Assists Over/Under"
+        },
+        "assists-TOUMANI_CAMARA_1_NBA-game-ou-over": {
+          "oddID": "assists-TOUMANI_CAMARA_1_NBA-game-ou-over",
+          "opposingOddID": "assists-TOUMANI_CAMARA_1_NBA-game-ou-under",
+          "statID": "assists",
+          "statEntityID": "TOUMANI_CAMARA_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "TOUMANI_CAMARA_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "-125",
+          "fairOverUnder": "3",
+          "bookOverUnder": "2.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "+100",
+          "openFairOverUnder": "2.5",
+          "openBookOverUnder": "2.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-138",
+              "overUnder": "2.5",
+              "lastUpdatedAt": "2026-02-26T14:10:31.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.559074494&selectionId=43450264",
+              "altLines": [
+                {
+                  "odds": "-430",
+                  "overUnder": "1.5",
+                  "lastUpdatedAt": "2026-02-26T14:10:31.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+180",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2026-02-26T14:10:31.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+870",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2026-02-26T14:10:31.000Z",
+                  "available": true
+                }
+              ]
+            }
+          },
+          "marketName": "Toumani Camara Assists Over/Under"
+        },
+        "assists-TOUMANI_CAMARA_1_NBA-game-ou-under": {
+          "oddID": "assists-TOUMANI_CAMARA_1_NBA-game-ou-under",
+          "opposingOddID": "assists-TOUMANI_CAMARA_1_NBA-game-ou-over",
+          "statID": "assists",
+          "statEntityID": "TOUMANI_CAMARA_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "TOUMANI_CAMARA_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "+100",
+          "fairOverUnder": "3",
+          "bookOverUnder": "2.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "+100",
+          "openFairOverUnder": "2.5",
+          "openBookOverUnder": "2.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+104",
+              "overUnder": "2.5",
+              "lastUpdatedAt": "2026-02-26T14:10:31.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.559074494&selectionId=43450266"
+            }
+          },
+          "marketName": "Toumani Camara Assists Over/Under"
+        },
+        "blocks-DONOVAN_CLINGAN_1_NBA-game-ou-over": {
+          "oddID": "blocks-DONOVAN_CLINGAN_1_NBA-game-ou-over",
+          "opposingOddID": "blocks-DONOVAN_CLINGAN_1_NBA-game-ou-under",
+          "statID": "blocks",
+          "statEntityID": "DONOVAN_CLINGAN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "DONOVAN_CLINGAN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "+137",
+          "fairOverUnder": "2",
+          "bookOverUnder": "2.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "+100",
+          "openFairOverUnder": "2.5",
+          "openBookOverUnder": "2.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-188",
+              "overUnder": "1.5",
+              "lastUpdatedAt": "2026-02-26T14:10:31.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.559078045&selectionId=50752175",
+              "altLines": [
+                {
+                  "odds": "-1000",
+                  "overUnder": "0.5",
+                  "lastUpdatedAt": "2026-02-26T14:10:31.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+168",
+                  "overUnder": "2.5",
+                  "lastUpdatedAt": "2026-02-26T14:10:31.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+430",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2026-02-26T14:10:31.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+920",
+                  "overUnder": "4.5",
+                  "lastUpdatedAt": "2026-02-26T14:10:31.000Z",
+                  "available": true
+                }
+              ]
+            }
+          },
+          "marketName": "Donovan Clingan Blocks Over/Under"
+        },
+        "blocks-DONOVAN_CLINGAN_1_NBA-game-ou-under": {
+          "oddID": "blocks-DONOVAN_CLINGAN_1_NBA-game-ou-under",
+          "opposingOddID": "blocks-DONOVAN_CLINGAN_1_NBA-game-ou-over",
+          "statID": "blocks",
+          "statEntityID": "DONOVAN_CLINGAN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "DONOVAN_CLINGAN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "-192",
+          "fairOverUnder": "2",
+          "bookOverUnder": "2.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "+100",
+          "openFairOverUnder": "2.5",
+          "openBookOverUnder": "2.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+140",
+              "overUnder": "1.5",
+              "lastUpdatedAt": "2026-02-26T14:10:31.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.559078045&selectionId=50752173"
+            }
+          },
+          "marketName": "Donovan Clingan Blocks Over/Under"
+        },
+        "points-DONOVAN_CLINGAN_1_NBA-game-ou-over": {
+          "oddID": "points-DONOVAN_CLINGAN_1_NBA-game-ou-over",
+          "opposingOddID": "points-DONOVAN_CLINGAN_1_NBA-game-ou-under",
+          "statID": "points",
+          "statEntityID": "DONOVAN_CLINGAN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "DONOVAN_CLINGAN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+127",
+          "bookOdds": "-115",
+          "fairOverUnder": "16.5",
+          "bookOverUnder": "15.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "+100",
+          "openFairOverUnder": "15.5",
+          "openBookOverUnder": "15.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-122",
+              "overUnder": "15.5",
+              "lastUpdatedAt": "2026-02-26T14:10:31.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.559074484&selectionId=50752175",
+              "altLines": [
+                {
+                  "odds": "-770",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-02-26T14:10:31.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-158",
+                  "overUnder": "14.5",
+                  "lastUpdatedAt": "2026-02-26T14:10:31.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+235",
+                  "overUnder": "19.5",
+                  "lastUpdatedAt": "2026-02-26T14:10:31.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+700",
+                  "overUnder": "24.5",
+                  "lastUpdatedAt": "2026-02-26T14:10:31.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1700",
+                  "overUnder": "29.5",
+                  "lastUpdatedAt": "2026-02-26T14:10:31.000Z",
+                  "available": true
+                }
+              ]
+            }
+          },
+          "marketName": "Donovan Clingan Points Over/Under"
+        },
+        "points-DONOVAN_CLINGAN_1_NBA-game-ou-under": {
+          "oddID": "points-DONOVAN_CLINGAN_1_NBA-game-ou-under",
+          "opposingOddID": "points-DONOVAN_CLINGAN_1_NBA-game-ou-over",
+          "statID": "points",
+          "statEntityID": "DONOVAN_CLINGAN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "DONOVAN_CLINGAN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-127",
+          "bookOdds": "-114",
+          "fairOverUnder": "16.5",
+          "bookOverUnder": "15.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "+100",
+          "openFairOverUnder": "15.5",
+          "openBookOverUnder": "15.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-108",
+              "overUnder": "15.5",
+              "lastUpdatedAt": "2026-02-26T14:10:31.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.559074484&selectionId=50752173"
+            }
+          },
+          "marketName": "Donovan Clingan Points Over/Under"
+        },
+        "points-JERAMI_GRANT_1_NBA-game-ou-over": {
+          "oddID": "points-JERAMI_GRANT_1_NBA-game-ou-over",
+          "opposingOddID": "points-JERAMI_GRANT_1_NBA-game-ou-under",
+          "statID": "points",
+          "statEntityID": "JERAMI_GRANT_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "JERAMI_GRANT_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+115",
+          "bookOdds": "-118",
+          "fairOverUnder": "21.5",
+          "bookOverUnder": "20.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "+100",
+          "openFairOverUnder": "20.5",
+          "openBookOverUnder": "20.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-114",
+              "overUnder": "20.5",
+              "lastUpdatedAt": "2026-02-26T14:10:31.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.559074482&selectionId=16529226",
+              "altLines": [
+                {
+                  "odds": "-4500",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-02-26T14:10:31.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-520",
+                  "overUnder": "14.5",
+                  "lastUpdatedAt": "2026-02-26T14:10:31.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-146",
+                  "overUnder": "19.5",
+                  "lastUpdatedAt": "2026-02-26T14:10:31.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+200",
+                  "overUnder": "24.5",
+                  "lastUpdatedAt": "2026-02-26T14:10:31.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+520",
+                  "overUnder": "29.5",
+                  "lastUpdatedAt": "2026-02-26T14:10:31.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1300",
+                  "overUnder": "34.5",
+                  "lastUpdatedAt": "2026-02-26T14:10:31.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+3500",
+                  "overUnder": "39.5",
+                  "lastUpdatedAt": "2026-02-26T14:10:31.000Z",
+                  "available": true
+                }
+              ]
+            }
+          },
+          "marketName": "Jerami Grant Points Over/Under"
+        },
+        "points-JERAMI_GRANT_1_NBA-game-ou-under": {
+          "oddID": "points-JERAMI_GRANT_1_NBA-game-ou-under",
+          "opposingOddID": "points-JERAMI_GRANT_1_NBA-game-ou-over",
+          "statID": "points",
+          "statEntityID": "JERAMI_GRANT_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "JERAMI_GRANT_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-115",
+          "bookOdds": "-112",
+          "fairOverUnder": "21.5",
+          "bookOverUnder": "20.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "+100",
+          "openFairOverUnder": "20.5",
+          "openBookOverUnder": "20.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-114",
+              "overUnder": "20.5",
+              "lastUpdatedAt": "2026-02-26T14:10:31.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.559074482&selectionId=16529227"
+            }
+          },
+          "marketName": "Jerami Grant Points Over/Under"
+        },
+        "points-JRUE_HOLIDAY_1_NBA-game-ou-over": {
+          "oddID": "points-JRUE_HOLIDAY_1_NBA-game-ou-over",
+          "opposingOddID": "points-JRUE_HOLIDAY_1_NBA-game-ou-under",
+          "statID": "points",
+          "statEntityID": "JRUE_HOLIDAY_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "JRUE_HOLIDAY_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+123",
+          "bookOdds": "-114",
+          "fairOverUnder": "19.5",
+          "bookOverUnder": "18.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "+100",
+          "openFairOverUnder": "18.5",
+          "openBookOverUnder": "18.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-112",
+              "overUnder": "18.5",
+              "lastUpdatedAt": "2026-02-26T14:10:31.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.559074483&selectionId=12260620",
+              "altLines": [
+                {
+                  "odds": "-1800",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-02-26T14:10:31.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-295",
+                  "overUnder": "14.5",
+                  "lastUpdatedAt": "2026-02-26T14:10:31.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+116",
+                  "overUnder": "19.5",
+                  "lastUpdatedAt": "2026-02-26T14:10:31.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+320",
+                  "overUnder": "24.5",
+                  "lastUpdatedAt": "2026-02-26T14:10:31.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+870",
+                  "overUnder": "29.5",
+                  "lastUpdatedAt": "2026-02-26T14:10:31.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+2000",
+                  "overUnder": "34.5",
+                  "lastUpdatedAt": "2026-02-26T14:10:31.000Z",
+                  "available": true
+                }
+              ]
+            }
+          },
+          "marketName": "Jrue Holiday Points Over/Under"
+        },
+        "points-JRUE_HOLIDAY_1_NBA-game-ou-under": {
+          "oddID": "points-JRUE_HOLIDAY_1_NBA-game-ou-under",
+          "opposingOddID": "points-JRUE_HOLIDAY_1_NBA-game-ou-over",
+          "statID": "points",
+          "statEntityID": "JRUE_HOLIDAY_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "JRUE_HOLIDAY_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-123",
+          "bookOdds": "-117",
+          "fairOverUnder": "19.5",
+          "bookOverUnder": "18.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "+100",
+          "openFairOverUnder": "18.5",
+          "openBookOverUnder": "18.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-118",
+              "overUnder": "18.5",
+              "lastUpdatedAt": "2026-02-26T14:10:31.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.559074483&selectionId=12260621"
+            }
+          },
+          "marketName": "Jrue Holiday Points Over/Under"
+        },
+        "points-KRIS_MURRAY_1_NBA-game-ou-over": {
+          "oddID": "points-KRIS_MURRAY_1_NBA-game-ou-over",
+          "opposingOddID": "points-KRIS_MURRAY_1_NBA-game-ou-under",
+          "statID": "points",
+          "statEntityID": "KRIS_MURRAY_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "KRIS_MURRAY_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+118",
+          "bookOdds": "-130",
+          "fairOverUnder": "9.5",
+          "bookOverUnder": "8.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "+100",
+          "openFairOverUnder": "8.5",
+          "openBookOverUnder": "8.5",
+          "scoringSupported": true,
+          "byBookmaker": {},
+          "marketName": "Kris Murray Points Over/Under"
+        },
+        "points-KRIS_MURRAY_1_NBA-game-ou-under": {
+          "oddID": "points-KRIS_MURRAY_1_NBA-game-ou-under",
+          "opposingOddID": "points-KRIS_MURRAY_1_NBA-game-ou-over",
+          "statID": "points",
+          "statEntityID": "KRIS_MURRAY_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "KRIS_MURRAY_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-118",
+          "bookOdds": "-115",
+          "fairOverUnder": "9.5",
+          "bookOverUnder": "8.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "+100",
+          "openFairOverUnder": "8.5",
+          "openBookOverUnder": "8.5",
+          "scoringSupported": true,
+          "byBookmaker": {},
+          "marketName": "Kris Murray Points Over/Under"
+        },
+        "points-TOUMANI_CAMARA_1_NBA-game-ou-over": {
+          "oddID": "points-TOUMANI_CAMARA_1_NBA-game-ou-over",
+          "opposingOddID": "points-TOUMANI_CAMARA_1_NBA-game-ou-under",
+          "statID": "points",
+          "statEntityID": "TOUMANI_CAMARA_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "TOUMANI_CAMARA_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+112",
+          "bookOdds": "-122",
+          "fairOverUnder": "14.5",
+          "bookOverUnder": "13.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "+100",
+          "openFairOverUnder": "14.5",
+          "openBookOverUnder": "14.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-128",
+              "overUnder": "13.5",
+              "lastUpdatedAt": "2026-02-26T14:10:31.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.559074485&selectionId=43450264",
+              "altLines": [
+                {
+                  "odds": "-410",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-02-26T14:10:31.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+106",
+                  "overUnder": "14.5",
+                  "lastUpdatedAt": "2026-02-26T14:10:31.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+350",
+                  "overUnder": "19.5",
+                  "lastUpdatedAt": "2026-02-26T14:10:31.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1100",
+                  "overUnder": "24.5",
+                  "lastUpdatedAt": "2026-02-26T14:10:31.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+3000",
+                  "overUnder": "29.5",
+                  "lastUpdatedAt": "2026-02-26T14:10:31.000Z",
+                  "available": true
+                }
+              ]
+            }
+          },
+          "marketName": "Toumani Camara Points Over/Under"
+        },
+        "points-TOUMANI_CAMARA_1_NBA-game-ou-under": {
+          "oddID": "points-TOUMANI_CAMARA_1_NBA-game-ou-under",
+          "opposingOddID": "points-TOUMANI_CAMARA_1_NBA-game-ou-over",
+          "statID": "points",
+          "statEntityID": "TOUMANI_CAMARA_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "TOUMANI_CAMARA_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-112",
+          "bookOdds": "-107",
+          "fairOverUnder": "14.5",
+          "bookOverUnder": "13.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "+100",
+          "openFairOverUnder": "14.5",
+          "openBookOverUnder": "14.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-104",
+              "overUnder": "13.5",
+              "lastUpdatedAt": "2026-02-26T14:10:31.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.559074485&selectionId=43450266"
+            }
+          },
+          "marketName": "Toumani Camara Points Over/Under"
+        },
+        "rebounds-DONOVAN_CLINGAN_1_NBA-game-ou-over": {
+          "oddID": "rebounds-DONOVAN_CLINGAN_1_NBA-game-ou-over",
+          "opposingOddID": "rebounds-DONOVAN_CLINGAN_1_NBA-game-ou-under",
+          "statID": "rebounds",
+          "statEntityID": "DONOVAN_CLINGAN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "DONOVAN_CLINGAN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-110",
+          "bookOdds": "-130",
+          "fairOverUnder": "13.5",
+          "bookOverUnder": "13.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "+100",
+          "openFairOverUnder": "13.5",
+          "openBookOverUnder": "13.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-136",
+              "overUnder": "13.5",
+              "lastUpdatedAt": "2026-02-26T14:10:31.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.559074489&selectionId=50752175",
+              "altLines": [
+                {
+                  "odds": "-4000",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2026-02-26T14:10:31.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-950",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-02-26T14:10:31.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-320",
+                  "overUnder": "11.5",
+                  "lastUpdatedAt": "2026-02-26T14:10:31.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+168",
+                  "overUnder": "15.5",
+                  "lastUpdatedAt": "2026-02-26T14:10:31.000Z",
+                  "available": true
+                }
+              ]
+            }
+          },
+          "marketName": "Donovan Clingan Rebounds Over/Under"
+        },
+        "rebounds-DONOVAN_CLINGAN_1_NBA-game-ou-under": {
+          "oddID": "rebounds-DONOVAN_CLINGAN_1_NBA-game-ou-under",
+          "opposingOddID": "rebounds-DONOVAN_CLINGAN_1_NBA-game-ou-over",
+          "statID": "rebounds",
+          "statEntityID": "DONOVAN_CLINGAN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "DONOVAN_CLINGAN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+110",
+          "bookOdds": "-105",
+          "fairOverUnder": "13.5",
+          "bookOverUnder": "13.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "+100",
+          "openFairOverUnder": "13.5",
+          "openBookOverUnder": "13.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+102",
+              "overUnder": "13.5",
+              "lastUpdatedAt": "2026-02-26T14:10:31.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.559074489&selectionId=50752173"
+            }
+          },
+          "marketName": "Donovan Clingan Rebounds Over/Under"
+        },
+        "rebounds-JERAMI_GRANT_1_NBA-game-ou-over": {
+          "oddID": "rebounds-JERAMI_GRANT_1_NBA-game-ou-over",
+          "opposingOddID": "rebounds-JERAMI_GRANT_1_NBA-game-ou-under",
+          "statID": "rebounds",
+          "statEntityID": "JERAMI_GRANT_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "JERAMI_GRANT_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "-143",
+          "fairOverUnder": "4",
+          "bookOverUnder": "3.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "+100",
+          "openFairOverUnder": "4.5",
+          "openBookOverUnder": "4.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-152",
+              "overUnder": "3.5",
+              "lastUpdatedAt": "2026-02-26T14:10:31.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.559074487&selectionId=16529226",
+              "altLines": [
+                {
+                  "odds": "+320",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2026-02-26T14:10:31.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1100",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2026-02-26T14:10:31.000Z",
+                  "available": true
+                }
+              ]
+            }
+          },
+          "marketName": "Jerami Grant Rebounds Over/Under"
+        },
+        "rebounds-JERAMI_GRANT_1_NBA-game-ou-under": {
+          "oddID": "rebounds-JERAMI_GRANT_1_NBA-game-ou-under",
+          "opposingOddID": "rebounds-JERAMI_GRANT_1_NBA-game-ou-over",
+          "statID": "rebounds",
+          "statEntityID": "JERAMI_GRANT_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "JERAMI_GRANT_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "+108",
+          "fairOverUnder": "4",
+          "bookOverUnder": "3.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "+100",
+          "openFairOverUnder": "4.5",
+          "openBookOverUnder": "4.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+114",
+              "overUnder": "3.5",
+              "lastUpdatedAt": "2026-02-26T14:10:31.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.559074487&selectionId=16529227"
+            }
+          },
+          "marketName": "Jerami Grant Rebounds Over/Under"
+        },
+        "rebounds-JRUE_HOLIDAY_1_NBA-game-ou-over": {
+          "oddID": "rebounds-JRUE_HOLIDAY_1_NBA-game-ou-over",
+          "opposingOddID": "rebounds-JRUE_HOLIDAY_1_NBA-game-ou-under",
+          "statID": "rebounds",
+          "statEntityID": "JRUE_HOLIDAY_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "JRUE_HOLIDAY_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+139",
+          "bookOdds": "+123",
+          "fairOverUnder": "4.5",
+          "bookOverUnder": "4.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "+100",
+          "openFairOverUnder": "4.5",
+          "openBookOverUnder": "4.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+122",
+              "overUnder": "4.5",
+              "lastUpdatedAt": "2026-02-26T14:10:31.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.559074488&selectionId=12260620",
+              "altLines": [
+                {
+                  "odds": "-184",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2026-02-26T14:10:31.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+255",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2026-02-26T14:10:31.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+900",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2026-02-26T14:10:31.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+2000",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-02-26T14:10:31.000Z",
+                  "available": true
+                }
+              ]
+            }
+          },
+          "marketName": "Jrue Holiday Rebounds Over/Under"
+        },
+        "rebounds-JRUE_HOLIDAY_1_NBA-game-ou-under": {
+          "oddID": "rebounds-JRUE_HOLIDAY_1_NBA-game-ou-under",
+          "opposingOddID": "rebounds-JRUE_HOLIDAY_1_NBA-game-ou-over",
+          "statID": "rebounds",
+          "statEntityID": "JRUE_HOLIDAY_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "JRUE_HOLIDAY_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-139",
+          "bookOdds": "-164",
+          "fairOverUnder": "4.5",
+          "bookOverUnder": "4.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "+100",
+          "openFairOverUnder": "4.5",
+          "openBookOverUnder": "4.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-162",
+              "overUnder": "4.5",
+              "lastUpdatedAt": "2026-02-26T14:10:31.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.559074488&selectionId=12260621"
+            }
+          },
+          "marketName": "Jrue Holiday Rebounds Over/Under"
+        },
+        "rebounds-KRIS_MURRAY_1_NBA-game-ou-over": {
+          "oddID": "rebounds-KRIS_MURRAY_1_NBA-game-ou-over",
+          "opposingOddID": "rebounds-KRIS_MURRAY_1_NBA-game-ou-under",
+          "statID": "rebounds",
+          "statEntityID": "KRIS_MURRAY_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "KRIS_MURRAY_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+114",
+          "bookOdds": "+100",
+          "fairOverUnder": "4.5",
+          "bookOverUnder": "4.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "+100",
+          "openFairOverUnder": "4.5",
+          "openBookOverUnder": "4.5",
+          "scoringSupported": true,
+          "byBookmaker": {},
+          "marketName": "Kris Murray Rebounds Over/Under"
+        },
+        "rebounds-KRIS_MURRAY_1_NBA-game-ou-under": {
+          "oddID": "rebounds-KRIS_MURRAY_1_NBA-game-ou-under",
+          "opposingOddID": "rebounds-KRIS_MURRAY_1_NBA-game-ou-over",
+          "statID": "rebounds",
+          "statEntityID": "KRIS_MURRAY_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "KRIS_MURRAY_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-114",
+          "bookOdds": "-132",
+          "fairOverUnder": "4.5",
+          "bookOverUnder": "4.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "+100",
+          "openFairOverUnder": "4.5",
+          "openBookOverUnder": "4.5",
+          "scoringSupported": true,
+          "byBookmaker": {},
+          "marketName": "Kris Murray Rebounds Over/Under"
+        },
+        "rebounds-TOUMANI_CAMARA_1_NBA-game-ou-over": {
+          "oddID": "rebounds-TOUMANI_CAMARA_1_NBA-game-ou-over",
+          "opposingOddID": "rebounds-TOUMANI_CAMARA_1_NBA-game-ou-under",
+          "statID": "rebounds",
+          "statEntityID": "TOUMANI_CAMARA_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "TOUMANI_CAMARA_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-109",
+          "bookOdds": "-127",
+          "fairOverUnder": "5.5",
+          "bookOverUnder": "5.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "+100",
+          "openFairOverUnder": "5.5",
+          "openBookOverUnder": "5.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-132",
+              "overUnder": "5.5",
+              "lastUpdatedAt": "2026-02-26T14:10:31.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.559074490&selectionId=43450264",
+              "altLines": [
+                {
+                  "odds": "-620",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2026-02-26T14:10:31.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+265",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2026-02-26T14:10:31.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+680",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-02-26T14:10:31.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1700",
+                  "overUnder": "11.5",
+                  "lastUpdatedAt": "2026-02-26T14:10:31.000Z",
+                  "available": true
+                }
+              ]
+            }
+          },
+          "marketName": "Toumani Camara Rebounds Over/Under"
+        },
+        "rebounds-TOUMANI_CAMARA_1_NBA-game-ou-under": {
+          "oddID": "rebounds-TOUMANI_CAMARA_1_NBA-game-ou-under",
+          "opposingOddID": "rebounds-TOUMANI_CAMARA_1_NBA-game-ou-over",
+          "statID": "rebounds",
+          "statEntityID": "TOUMANI_CAMARA_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "TOUMANI_CAMARA_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+109",
+          "bookOdds": "-105",
+          "fairOverUnder": "5.5",
+          "bookOverUnder": "5.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "+100",
+          "openFairOverUnder": "5.5",
+          "openBookOverUnder": "5.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+100",
+              "overUnder": "5.5",
+              "lastUpdatedAt": "2026-02-26T14:10:31.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.559074490&selectionId=43450266"
+            }
+          },
+          "marketName": "Toumani Camara Rebounds Over/Under"
+        },
+        "steals-JRUE_HOLIDAY_1_NBA-game-ou-over": {
+          "oddID": "steals-JRUE_HOLIDAY_1_NBA-game-ou-over",
+          "opposingOddID": "steals-JRUE_HOLIDAY_1_NBA-game-ou-under",
+          "statID": "steals",
+          "statEntityID": "JRUE_HOLIDAY_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "JRUE_HOLIDAY_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+161",
+          "bookOdds": "+140",
+          "fairOverUnder": "1.5",
+          "bookOverUnder": "1.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "+100",
+          "openFairOverUnder": "1.5",
+          "openBookOverUnder": "1.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+162",
+              "overUnder": "1.5",
+              "lastUpdatedAt": "2026-02-26T14:10:31.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.559074517&selectionId=12260620",
+              "altLines": [
+                {
+                  "odds": "-290",
+                  "overUnder": "0.5",
+                  "lastUpdatedAt": "2026-02-26T14:10:31.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+520",
+                  "overUnder": "2.5",
+                  "lastUpdatedAt": "2026-02-26T14:10:31.000Z",
+                  "available": true
+                }
+              ]
+            }
+          },
+          "marketName": "Jrue Holiday Steals Over/Under"
+        },
+        "steals-JRUE_HOLIDAY_1_NBA-game-ou-under": {
+          "oddID": "steals-JRUE_HOLIDAY_1_NBA-game-ou-under",
+          "opposingOddID": "steals-JRUE_HOLIDAY_1_NBA-game-ou-over",
+          "statID": "steals",
+          "statEntityID": "JRUE_HOLIDAY_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "JRUE_HOLIDAY_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-161",
+          "bookOdds": "-205",
+          "fairOverUnder": "1.5",
+          "bookOverUnder": "1.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "+100",
+          "openFairOverUnder": "1.5",
+          "openBookOverUnder": "1.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-220",
+              "overUnder": "1.5",
+              "lastUpdatedAt": "2026-02-26T14:10:31.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.559074517&selectionId=12260621"
+            }
+          },
+          "marketName": "Jrue Holiday Steals Over/Under"
+        },
+        "steals-KRIS_MURRAY_1_NBA-game-ou-over": {
+          "oddID": "steals-KRIS_MURRAY_1_NBA-game-ou-over",
+          "opposingOddID": "steals-KRIS_MURRAY_1_NBA-game-ou-under",
+          "statID": "steals",
+          "statEntityID": "KRIS_MURRAY_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "KRIS_MURRAY_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+121",
+          "bookOdds": "+115",
+          "fairOverUnder": "1.5",
+          "bookOverUnder": "1.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "+100",
+          "openFairOverUnder": "1.5",
+          "openBookOverUnder": "1.5",
+          "scoringSupported": true,
+          "byBookmaker": {},
+          "marketName": "Kris Murray Steals Over/Under"
+        },
+        "steals-KRIS_MURRAY_1_NBA-game-ou-under": {
+          "oddID": "steals-KRIS_MURRAY_1_NBA-game-ou-under",
+          "opposingOddID": "steals-KRIS_MURRAY_1_NBA-game-ou-over",
+          "statID": "steals",
+          "statEntityID": "KRIS_MURRAY_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "KRIS_MURRAY_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-121",
+          "bookOdds": "-129",
+          "fairOverUnder": "1.5",
+          "bookOverUnder": "1.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "+100",
+          "openFairOverUnder": "1.5",
+          "openBookOverUnder": "1.5",
+          "scoringSupported": true,
+          "byBookmaker": {},
+          "marketName": "Kris Murray Steals Over/Under"
+        },
+        "steals-TOUMANI_CAMARA_1_NBA-game-ou-over": {
+          "oddID": "steals-TOUMANI_CAMARA_1_NBA-game-ou-over",
+          "opposingOddID": "steals-TOUMANI_CAMARA_1_NBA-game-ou-under",
+          "statID": "steals",
+          "statEntityID": "TOUMANI_CAMARA_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "TOUMANI_CAMARA_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+176",
+          "bookOdds": "+155",
+          "fairOverUnder": "1.5",
+          "bookOverUnder": "1.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "+100",
+          "openFairOverUnder": "1.5",
+          "openBookOverUnder": "1.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+178",
+              "overUnder": "1.5",
+              "lastUpdatedAt": "2026-02-26T14:10:31.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.559074518&selectionId=43450264",
+              "altLines": [
+                {
+                  "odds": "-280",
+                  "overUnder": "0.5",
+                  "lastUpdatedAt": "2026-02-26T14:10:31.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+580",
+                  "overUnder": "2.5",
+                  "lastUpdatedAt": "2026-02-26T14:10:31.000Z",
+                  "available": true
+                }
+              ]
+            }
+          },
+          "marketName": "Toumani Camara Steals Over/Under"
+        },
+        "steals-TOUMANI_CAMARA_1_NBA-game-ou-under": {
+          "oddID": "steals-TOUMANI_CAMARA_1_NBA-game-ou-under",
+          "opposingOddID": "steals-TOUMANI_CAMARA_1_NBA-game-ou-over",
+          "statID": "steals",
+          "statEntityID": "TOUMANI_CAMARA_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "TOUMANI_CAMARA_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-176",
+          "bookOdds": "-222",
+          "fairOverUnder": "1.5",
+          "bookOverUnder": "1.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "+100",
+          "openFairOverUnder": "1.5",
+          "openBookOverUnder": "1.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-245",
+              "overUnder": "1.5",
+              "lastUpdatedAt": "2026-02-26T14:10:31.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.559074518&selectionId=43450266"
+            }
+          },
+          "marketName": "Toumani Camara Steals Over/Under"
+        },
+        "blocks-JERAMI_GRANT_1_NBA-game-ou-over": {
+          "oddID": "blocks-JERAMI_GRANT_1_NBA-game-ou-over",
+          "opposingOddID": "blocks-JERAMI_GRANT_1_NBA-game-ou-under",
+          "marketName": "Jerami Grant Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "JERAMI_GRANT_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "JERAMI_GRANT_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-104",
+          "bookOdds": "-122",
+          "fairOverUnder": "0.5",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "+100",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        },
+        "blocks-JERAMI_GRANT_1_NBA-game-ou-under": {
+          "oddID": "blocks-JERAMI_GRANT_1_NBA-game-ou-under",
+          "opposingOddID": "blocks-JERAMI_GRANT_1_NBA-game-ou-over",
+          "marketName": "Jerami Grant Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "JERAMI_GRANT_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "JERAMI_GRANT_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+104",
+          "bookOdds": "-111",
+          "fairOverUnder": "0.5",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "+100",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        },
+        "blocks-JRUE_HOLIDAY_1_NBA-game-ou-over": {
+          "oddID": "blocks-JRUE_HOLIDAY_1_NBA-game-ou-over",
+          "opposingOddID": "blocks-JRUE_HOLIDAY_1_NBA-game-ou-under",
+          "marketName": "Jrue Holiday Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "JRUE_HOLIDAY_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "JRUE_HOLIDAY_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+403",
+          "bookOdds": "+367",
+          "fairOverUnder": "0.5",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "+413",
+          "openBookOdds": "+375",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        },
+        "blocks-JRUE_HOLIDAY_1_NBA-game-ou-under": {
+          "oddID": "blocks-JRUE_HOLIDAY_1_NBA-game-ou-under",
+          "opposingOddID": "blocks-JRUE_HOLIDAY_1_NBA-game-ou-over",
+          "marketName": "Jrue Holiday Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "JRUE_HOLIDAY_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "JRUE_HOLIDAY_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-403",
+          "fairOverUnder": "0.5",
+          "openFairOdds": "-413",
+          "openFairOverUnder": "0.5",
+          "scoringSupported": true,
+          "bookOdds": "-625",
+          "bookOverUnder": "0.5",
+          "byBookmaker": {},
+          "openBookOdds": "-625",
+          "openBookOverUnder": "0.5"
+        },
+        "blocks-KRIS_MURRAY_1_NBA-game-ou-over": {
+          "oddID": "blocks-KRIS_MURRAY_1_NBA-game-ou-over",
+          "opposingOddID": "blocks-KRIS_MURRAY_1_NBA-game-ou-under",
+          "marketName": "Kris Murray Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "KRIS_MURRAY_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "KRIS_MURRAY_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+127",
+          "bookOdds": "+110",
+          "fairOverUnder": "0.5",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "+121",
+          "openBookOdds": "+110",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        },
+        "blocks-KRIS_MURRAY_1_NBA-game-ou-under": {
+          "oddID": "blocks-KRIS_MURRAY_1_NBA-game-ou-under",
+          "opposingOddID": "blocks-KRIS_MURRAY_1_NBA-game-ou-over",
+          "marketName": "Kris Murray Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "KRIS_MURRAY_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "KRIS_MURRAY_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-127",
+          "fairOverUnder": "0.5",
+          "openFairOdds": "-121",
+          "openFairOverUnder": "0.5",
+          "scoringSupported": true,
+          "bookOdds": "-153",
+          "bookOverUnder": "0.5",
+          "byBookmaker": {},
+          "openBookOdds": "-152",
+          "openBookOverUnder": "0.5"
+        },
+        "blocks-TOUMANI_CAMARA_1_NBA-game-ou-over": {
+          "oddID": "blocks-TOUMANI_CAMARA_1_NBA-game-ou-over",
+          "opposingOddID": "blocks-TOUMANI_CAMARA_1_NBA-game-ou-under",
+          "marketName": "Toumani Camara Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "TOUMANI_CAMARA_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "TOUMANI_CAMARA_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+163",
+          "bookOdds": "+145",
+          "fairOverUnder": "0.5",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "+171",
+          "openBookOdds": "+155",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        },
+        "blocks-TOUMANI_CAMARA_1_NBA-game-ou-under": {
+          "oddID": "blocks-TOUMANI_CAMARA_1_NBA-game-ou-under",
+          "opposingOddID": "blocks-TOUMANI_CAMARA_1_NBA-game-ou-over",
+          "marketName": "Toumani Camara Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "TOUMANI_CAMARA_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "TOUMANI_CAMARA_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-163",
+          "fairOverUnder": "0.5",
+          "openFairOdds": "-171",
+          "openFairOverUnder": "0.5",
+          "scoringSupported": true,
+          "bookOdds": "-200",
+          "bookOverUnder": "0.5",
+          "byBookmaker": {},
+          "openBookOdds": "-213",
+          "openBookOverUnder": "0.5"
+        },
+        "steals-DONOVAN_CLINGAN_1_NBA-game-ou-over": {
+          "oddID": "steals-DONOVAN_CLINGAN_1_NBA-game-ou-over",
+          "opposingOddID": "steals-DONOVAN_CLINGAN_1_NBA-game-ou-under",
+          "marketName": "Donovan Clingan Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "DONOVAN_CLINGAN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "DONOVAN_CLINGAN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-175",
+          "bookOdds": "-213",
+          "fairOverUnder": "0.5",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "-182",
+          "openBookOdds": "-200",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        },
+        "steals-DONOVAN_CLINGAN_1_NBA-game-ou-under": {
+          "oddID": "steals-DONOVAN_CLINGAN_1_NBA-game-ou-under",
+          "opposingOddID": "steals-DONOVAN_CLINGAN_1_NBA-game-ou-over",
+          "marketName": "Donovan Clingan Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "DONOVAN_CLINGAN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "DONOVAN_CLINGAN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+175",
+          "fairOverUnder": "0.5",
+          "openFairOdds": "+182",
+          "openFairOverUnder": "0.5",
+          "scoringSupported": true,
+          "bookOdds": "+157",
+          "bookOverUnder": "0.5",
+          "byBookmaker": {},
+          "openBookOdds": "+155",
+          "openBookOverUnder": "0.5"
+        },
+        "steals-JERAMI_GRANT_1_NBA-game-ou-over": {
+          "oddID": "steals-JERAMI_GRANT_1_NBA-game-ou-over",
+          "opposingOddID": "steals-JERAMI_GRANT_1_NBA-game-ou-under",
+          "marketName": "Jerami Grant Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "JERAMI_GRANT_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "JERAMI_GRANT_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-196",
+          "bookOdds": "-235",
+          "fairOverUnder": "0.5",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "-218",
+          "openBookOdds": "-240",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        },
+        "steals-JERAMI_GRANT_1_NBA-game-ou-under": {
+          "oddID": "steals-JERAMI_GRANT_1_NBA-game-ou-under",
+          "opposingOddID": "steals-JERAMI_GRANT_1_NBA-game-ou-over",
+          "marketName": "Jerami Grant Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "JERAMI_GRANT_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "JERAMI_GRANT_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+196",
+          "fairOverUnder": "0.5",
+          "openFairOdds": "+218",
+          "openFairOverUnder": "0.5",
+          "scoringSupported": true,
+          "bookOdds": "+180",
+          "bookOverUnder": "0.5",
+          "byBookmaker": {},
+          "openBookOdds": "+182",
+          "openBookOverUnder": "0.5"
+        }
+      },
+      "players": {
+        "DONOVAN_CLINGAN_1_NBA": {
+          "playerID": "DONOVAN_CLINGAN_1_NBA",
+          "teamID": "PORTLAND_TRAIL_BLAZERS_NBA",
+          "firstName": "Donovan",
+          "lastName": "Clingan",
+          "name": "Donovan Clingan"
+        },
+        "GUERSCHON_YABUSELE_1_NBA": {
+          "playerID": "GUERSCHON_YABUSELE_1_NBA",
+          "teamID": "CHICAGO_BULLS_NBA",
+          "firstName": "Guerschon",
+          "lastName": "Yabusele",
+          "name": "Guerschon Yabusele"
+        },
+        "ISAAC_OKORO_1_NBA": {
+          "playerID": "ISAAC_OKORO_1_NBA",
+          "teamID": "CHICAGO_BULLS_NBA",
+          "firstName": "Isaac",
+          "lastName": "Okoro",
+          "name": "Isaac Okoro"
+        },
+        "JERAMI_GRANT_1_NBA": {
+          "playerID": "JERAMI_GRANT_1_NBA",
+          "teamID": "PORTLAND_TRAIL_BLAZERS_NBA",
+          "firstName": "Jerami",
+          "lastName": "Grant",
+          "name": "Jerami Grant"
+        },
+        "JOSH_GIDDEY_1_NBA": {
+          "playerID": "JOSH_GIDDEY_1_NBA",
+          "teamID": "CHICAGO_BULLS_NBA",
+          "firstName": "Josh",
+          "lastName": "Giddey",
+          "name": "Josh Giddey"
+        },
+        "JRUE_HOLIDAY_1_NBA": {
+          "playerID": "JRUE_HOLIDAY_1_NBA",
+          "teamID": "PORTLAND_TRAIL_BLAZERS_NBA",
+          "firstName": "Jrue",
+          "lastName": "Holiday",
+          "name": "Jrue Holiday"
+        },
+        "KRIS_MURRAY_1_NBA": {
+          "playerID": "KRIS_MURRAY_1_NBA",
+          "teamID": "PORTLAND_TRAIL_BLAZERS_NBA",
+          "firstName": "Kris",
+          "lastName": "Murray",
+          "name": "Kris Murray"
+        },
+        "MATAS_BUZELIS_1_NBA": {
+          "playerID": "MATAS_BUZELIS_1_NBA",
+          "teamID": "CHICAGO_BULLS_NBA",
+          "firstName": "Matas",
+          "lastName": "Buzelis",
+          "name": "Matas Buzelis"
+        },
+        "TOUMANI_CAMARA_1_NBA": {
+          "playerID": "TOUMANI_CAMARA_1_NBA",
+          "teamID": "PORTLAND_TRAIL_BLAZERS_NBA",
+          "firstName": "Toumani",
+          "lastName": "Camara",
+          "name": "Toumani Camara"
+        },
+        "TRE_JONES_1_NBA": {
+          "playerID": "TRE_JONES_1_NBA",
+          "teamID": "CHICAGO_BULLS_NBA",
+          "firstName": "Tre",
+          "lastName": "Jones",
+          "name": "Tre Jones"
+        },
+        "NICK_RICHARDS_1_NBA": {
+          "playerID": "NICK_RICHARDS_1_NBA",
+          "teamID": "CHICAGO_BULLS_NBA",
+          "firstName": "Nick",
+          "lastName": "Richards",
+          "name": "Nick Richards"
+        },
+        "COLLIN_SEXTON_1_NBA": {
+          "playerID": "COLLIN_SEXTON_1_NBA",
+          "teamID": "CHICAGO_BULLS_NBA",
+          "firstName": "Collin",
+          "lastName": "Sexton",
+          "name": "Collin Sexton"
+        },
+        "PATRICK_WILLIAMS_1_NBA": {
+          "playerID": "PATRICK_WILLIAMS_1_NBA",
+          "teamID": "CHICAGO_BULLS_NBA",
+          "firstName": "Patrick",
+          "lastName": "Williams",
+          "name": "Patrick Williams"
+        }
+      },
+      "results": {}
+    }
+  ]
+}
