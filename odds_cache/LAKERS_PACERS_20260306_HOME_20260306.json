@@ -1,0 +1,1438 @@
+{
+  "nextCursor": "n.1772854200000.zFP8fnuU7gtpNclAPClE",
+  "success": true,
+  "data": [
+    {
+      "eventID": "zFP8fnuU7gtpNclAPClE",
+      "sportID": "BASKETBALL",
+      "leagueID": "NBA",
+      "type": "match",
+      "teams": {
+        "home": {
+          "teamID": "LOS_ANGELES_LAKERS_NBA",
+          "names": {
+            "long": "Los Angeles Lakers",
+            "medium": "Lakers",
+            "short": "LAL",
+            "location": "Los Angeles"
+          },
+          "colors": {
+            "primary": "#552582",
+            "secondary": "#FDB927",
+            "primaryContrast": "#FFFFFF",
+            "secondaryContrast": "#552582"
+          },
+          "statEntityID": "home"
+        },
+        "away": {
+          "teamID": "INDIANA_PACERS_NBA",
+          "names": {
+            "long": "Indiana Pacers",
+            "medium": "Pacers",
+            "short": "IND",
+            "location": "Indiana"
+          },
+          "colors": {
+            "primary": "#00275D",
+            "secondary": "#FFC633",
+            "primaryContrast": "#FFFFFF",
+            "secondaryContrast": "#00275D"
+          },
+          "statEntityID": "away"
+        }
+      },
+      "status": {
+        "started": false,
+        "completed": false,
+        "cancelled": false,
+        "ended": false,
+        "live": false,
+        "delayed": false,
+        "currentPeriodID": "",
+        "previousPeriodID": "",
+        "displayShort": "",
+        "displayLong": "Upcoming",
+        "inBreak": false,
+        "startsAt": "2026-03-07T03:30:00.000Z",
+        "previousStartsAt": [],
+        "hardStart": true,
+        "periods": {
+          "started": [],
+          "ended": []
+        },
+        "oddsPresent": true,
+        "oddsAvailable": true,
+        "finalized": false
+      },
+      "info": {
+        "seasonWeek": "NBA 25/26",
+        "venue": {
+          "name": "crypto.com Arena",
+          "countryName": "United States",
+          "countryCode": "US",
+          "regionName": "California",
+          "regionCode": "CA",
+          "city": "Los Angeles",
+          "address": "1111 S Figueroa St, Los Angeles, CA 90015",
+          "capacity": 19068
+        }
+      },
+      "links": {
+        "bookmakers": {
+          "fanduel": "https://sportsbook.fanduel.com/basketball/-/35333805",
+          "betway": "https://betway.com/en/sports/evt/16447464",
+          "lowvig": "https://sports.lowvig.ag/sportsbook/basketball/nba/game/490979553",
+          "betsson": "https://www.betsson.com/en/sportsbook/basketball/nba/nba?eventId=f-6NhOkDlYYEWA8GfxjVtrrg",
+          "pointsbet": "https://pointsbet.com.au/sports/basketball/NBA/2634201",
+          "neds": "https://www.neds.com.au/sports/-/-/-/50bb8a57-e661-4624-9c5b-4004e0b7bb01",
+          "nordicbet": "https://www.nordicbet.com/en/sportsbook/basketball/nba/nba/la-lakers-indiana-pacers",
+          "betonline": "https://sports.betonline.ag/sportsbook/basketball/nba/game/490979553",
+          "playup": "https://www.playup.com.au/betting/sports/nba/los-angeles-lakers-v-indiana-pacers/10467",
+          "ladbrokes": "https://www.ladbrokes.com.au/sports/-/-/-/50bb8a57-e661-4624-9c5b-4004e0b7bb01",
+          "betrsportsbook": "https://www.betr.com.au/sports/Basketball/107/United-States-of-America/NBA/Indiana-Pacers-@-Los-Angeles-Lakers/2009601/All-Markets",
+          "boylesports": "https://www.boylesports.com/sports/basketball/event/usa-nba/los-angeles-lakers-v-indiana-pacers",
+          "matchbook": "https://www.matchbook.com/events/basketball/united-states-of-america/nba/32681092982700045",
+          "paddypower": "https://www.paddypower.com/basketball/nba/indiana-pacers-@-los-angeles-lakers-35333805",
+          "coolbet": "https://www.coolbet.com/en/sports/match/5121853",
+          "williamhill": "https://sports.williamhill.com/betting/en-gb/basketball/OB_EV38959048/indiana-pacers-at-los-angeles-lakers",
+          "caesars": "https://sportsbook.caesars.com/us/nj/bet/basketball/33d8f7e2-221b-4536-ba33-054be7b2c459/indiana-pacers-at-los-angeles-lakers",
+          "fliff": "https://sports.getfliff.com/markets/377354_c_p_204_prematch",
+          "pinnacle": "https://www.pinnacle.com/en/basketball/nba/indiana-pacers-vs-los-angeles-lakers/1625124813",
+          "1xbet": "https://1xbet.com/en/line/football/13589-nba/311483142-los-angeles-lakers-indiana-pacers",
+          "betfairsportsbook": "https://www.betfair.com/betting/basketball/nba/indiana-pacers-@-los-angeles-lakers/e-35333805",
+          "bovada": "https://www.bovada.lv/sports/basketball/nba/indiana-pacers-los-angeles-lakers-202603062230",
+          "espnbet": "https://espnbet.com/sport/basketball/organization/united-states/competition/nba/event/33db7ef6-7440-483f-b73f-cc79238cbb01",
+          "thescorebet": "https://thescore.bet/sport/basketball/organization/united-states/competition/nba/event/33db7ef6-7440-483f-b73f-cc79238cbb01",
+          "betmgm": "https://sports.nj.betmgm.com/en/sports/events/19025794",
+          "coral": "https://sports.coral.co.uk/event/basketball/basketball-usa/nba/la-lakers-v-ind-pacers/42191771",
+          "tab": "https://www.tab.com.au/sports/betting/Basketball/competitions/NBA/matches/LA%20Lakers%20v%20Indiana",
+          "hardrockbet": "https://app.hardrock.bet/home/competition/nba/5335982399098192116",
+          "sportsbet": "https://www.sportsbet.com.au/betting/basketball---us/nba/indiana-pacers-at-los-angeles-lakers-10223765",
+          "everygame": "https://sports.everygame.eu/en/Bets/Basketball/NBA-Lines/Indiana-Pacers-at-Los-Angeles-Lakers/2809264",
+          "draftkings": "https://sportsbook.draftkings.com/event/33748910",
+          "ballybet": "https://play.ballybet.com/sports#event/1024653433",
+          "betparx": "https://nj.betparx.com/kambi#event/1024653433",
+          "betrivers": "https://nj.betrivers.com/?page=sportsbook#event/1024653433",
+          "casumo": "https://www.casumo.com/en-gb/sports#event/1024653433",
+          "grosvenor": "https://www.grosvenorcasinos.com/sport#event/1024653433",
+          "leovegas": "https://www.leovegas.co.uk/betting#event/1024653433",
+          "livescorebet": "https://www.livescorebet.com/uk/sports/basketball/nba/los-angeles-lakers-indiana-pacers/SBTE_2_1024653433",
+          "tabtouch": "https://www.tabtouch.mobi/tabtouch-sports/event/1024653433",
+          "unibet": "https://www.unibet.com/betting/sports/event/1024653433",
+          "virginbet": "https://www.virginbet.com/sports/basketball/nba/los-angeles-lakers-indiana-pacers/SBTE_2_1024653433"
+        }
+      },
+      "odds": {
+        "assists-LUKA_DONCIC_1_NBA-game-ou-over": {
+          "oddID": "assists-LUKA_DONCIC_1_NBA-game-ou-over",
+          "opposingOddID": "assists-LUKA_DONCIC_1_NBA-game-ou-under",
+          "marketName": "Luka Don\u010di\u0107 Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "LUKA_DONCIC_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "LUKA_DONCIC_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-115",
+          "bookOdds": "-134",
+          "fairOverUnder": "9.5",
+          "bookOverUnder": "9.5",
+          "openFairOdds": "-124",
+          "openBookOdds": "-136",
+          "openFairOverUnder": "9.5",
+          "openBookOverUnder": "9.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-138",
+              "overUnder": "9.5",
+              "lastUpdatedAt": "2026-03-06T13:06:40.000Z",
+              "available": true,
+              "altLines": [
+                {
+                  "odds": "-2000",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2026-03-06T13:06:40.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-370",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2026-03-06T13:06:40.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+215",
+                  "overUnder": "11.5",
+                  "lastUpdatedAt": "2026-03-06T13:06:40.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+560",
+                  "overUnder": "13.5",
+                  "lastUpdatedAt": "2026-03-06T13:06:40.000Z",
+                  "available": true
+                }
+              ],
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.560755440&selectionId=12463224"
+            }
+          }
+        },
+        "assists-LUKA_DONCIC_1_NBA-game-ou-under": {
+          "oddID": "assists-LUKA_DONCIC_1_NBA-game-ou-under",
+          "opposingOddID": "assists-LUKA_DONCIC_1_NBA-game-ou-over",
+          "marketName": "Luka Don\u010di\u0107 Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "LUKA_DONCIC_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "LUKA_DONCIC_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+115",
+          "fairOverUnder": "9.5",
+          "openFairOdds": "+124",
+          "openFairOverUnder": "9.5",
+          "scoringSupported": true,
+          "bookOdds": "+100",
+          "bookOverUnder": "9.5",
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+104",
+              "overUnder": "9.5",
+              "lastUpdatedAt": "2026-03-06T13:06:40.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.560755440&selectionId=12463223"
+            }
+          },
+          "openBookOdds": "+104",
+          "openBookOverUnder": "9.5"
+        },
+        "points-LUKA_DONCIC_1_NBA-game-ou-over": {
+          "oddID": "points-LUKA_DONCIC_1_NBA-game-ou-over",
+          "opposingOddID": "points-LUKA_DONCIC_1_NBA-game-ou-under",
+          "marketName": "Luka Don\u010di\u0107 Points Over/Under",
+          "statID": "points",
+          "statEntityID": "LUKA_DONCIC_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "LUKA_DONCIC_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+101",
+          "bookOdds": "-115",
+          "fairOverUnder": "33.5",
+          "bookOverUnder": "33.5",
+          "openFairOdds": "+115",
+          "openBookOdds": "+104",
+          "openFairOverUnder": "34.5",
+          "openBookOverUnder": "34.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-114",
+              "overUnder": "33.5",
+              "lastUpdatedAt": "2026-03-06T13:06:40.000Z",
+              "available": true,
+              "altLines": [
+                {
+                  "odds": "-4000",
+                  "overUnder": "19.5",
+                  "lastUpdatedAt": "2026-03-06T13:06:40.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-750",
+                  "overUnder": "24.5",
+                  "lastUpdatedAt": "2026-03-06T13:06:40.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-245",
+                  "overUnder": "29.5",
+                  "lastUpdatedAt": "2026-03-06T13:06:40.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+106",
+                  "overUnder": "34.5",
+                  "lastUpdatedAt": "2026-03-06T13:06:40.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+255",
+                  "overUnder": "39.5",
+                  "lastUpdatedAt": "2026-03-06T13:06:40.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+600",
+                  "overUnder": "44.5",
+                  "lastUpdatedAt": "2026-03-06T13:06:40.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1100",
+                  "overUnder": "49.5",
+                  "lastUpdatedAt": "2026-03-06T13:06:40.000Z",
+                  "available": true
+                }
+              ],
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.560755438&selectionId=12463224"
+            }
+          }
+        },
+        "points-LUKA_DONCIC_1_NBA-game-ou-under": {
+          "oddID": "points-LUKA_DONCIC_1_NBA-game-ou-under",
+          "opposingOddID": "points-LUKA_DONCIC_1_NBA-game-ou-over",
+          "marketName": "Luka Don\u010di\u0107 Points Over/Under",
+          "statID": "points",
+          "statEntityID": "LUKA_DONCIC_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "LUKA_DONCIC_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-101",
+          "fairOverUnder": "33.5",
+          "openFairOdds": "-115",
+          "openFairOverUnder": "34.5",
+          "scoringSupported": true,
+          "bookOdds": "-117",
+          "bookOverUnder": "33.5",
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-114",
+              "overUnder": "33.5",
+              "lastUpdatedAt": "2026-03-06T13:06:40.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.560755438&selectionId=12463223"
+            }
+          },
+          "openBookOdds": "-114",
+          "openBookOverUnder": "33.5"
+        },
+        "rebounds-LUKA_DONCIC_1_NBA-game-ou-over": {
+          "oddID": "rebounds-LUKA_DONCIC_1_NBA-game-ou-over",
+          "opposingOddID": "rebounds-LUKA_DONCIC_1_NBA-game-ou-under",
+          "marketName": "Luka Don\u010di\u0107 Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "LUKA_DONCIC_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "LUKA_DONCIC_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+123",
+          "bookOdds": "-139",
+          "fairOverUnder": "9.5",
+          "bookOverUnder": "8.5",
+          "openFairOdds": "+110",
+          "openBookOdds": "+100",
+          "openFairOverUnder": "9.5",
+          "openBookOverUnder": "9.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-138",
+              "overUnder": "8.5",
+              "lastUpdatedAt": "2026-03-06T13:06:40.000Z",
+              "available": true,
+              "altLines": [
+                {
+                  "odds": "-850",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2026-03-06T13:06:40.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-210",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2026-03-06T13:06:40.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-102",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-03-06T13:06:40.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+300",
+                  "overUnder": "11.5",
+                  "lastUpdatedAt": "2026-03-06T13:06:40.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+830",
+                  "overUnder": "13.5",
+                  "lastUpdatedAt": "2026-03-06T13:06:40.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1700",
+                  "overUnder": "15.5",
+                  "lastUpdatedAt": "2026-03-06T13:06:40.000Z",
+                  "available": true
+                }
+              ],
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.560755439&selectionId=12463224"
+            }
+          }
+        },
+        "rebounds-LUKA_DONCIC_1_NBA-game-ou-under": {
+          "oddID": "rebounds-LUKA_DONCIC_1_NBA-game-ou-under",
+          "opposingOddID": "rebounds-LUKA_DONCIC_1_NBA-game-ou-over",
+          "marketName": "Luka Don\u010di\u0107 Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "LUKA_DONCIC_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "LUKA_DONCIC_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-123",
+          "fairOverUnder": "9.5",
+          "openFairOdds": "-110",
+          "openFairOverUnder": "9.5",
+          "scoringSupported": true,
+          "bookOdds": "+103",
+          "bookOverUnder": "8.5",
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+104",
+              "overUnder": "8.5",
+              "lastUpdatedAt": "2026-03-06T13:06:40.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.560755439&selectionId=12463223"
+            }
+          },
+          "openBookOdds": "+104",
+          "openBookOverUnder": "8.5"
+        },
+        "assists-AUSTIN_REAVES_1_NBA-game-ou-over": {
+          "oddID": "assists-AUSTIN_REAVES_1_NBA-game-ou-over",
+          "opposingOddID": "assists-AUSTIN_REAVES_1_NBA-game-ou-under",
+          "marketName": "Austin Reaves Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "AUSTIN_REAVES_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "AUSTIN_REAVES_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+158",
+          "bookOdds": "-131",
+          "fairOverUnder": "6.5",
+          "bookOverUnder": "5.5",
+          "openFairOdds": "-124",
+          "openBookOdds": "-136",
+          "openFairOverUnder": "5.5",
+          "openBookOverUnder": "5.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-136",
+              "overUnder": "5.5",
+              "lastUpdatedAt": "2026-03-06T13:06:40.000Z",
+              "available": true,
+              "altLines": [
+                {
+                  "odds": "-700",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2026-03-06T13:06:40.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+120",
+                  "overUnder": "6.5",
+                  "lastUpdatedAt": "2026-03-06T09:26:20.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "+265",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2026-03-06T13:06:40.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+680",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-03-06T13:06:40.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1700",
+                  "overUnder": "11.5",
+                  "lastUpdatedAt": "2026-03-06T13:06:40.000Z",
+                  "available": true
+                }
+              ],
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.560756021&selectionId=41574998"
+            }
+          }
+        },
+        "assists-AUSTIN_REAVES_1_NBA-game-ou-under": {
+          "oddID": "assists-AUSTIN_REAVES_1_NBA-game-ou-under",
+          "opposingOddID": "assists-AUSTIN_REAVES_1_NBA-game-ou-over",
+          "marketName": "Austin Reaves Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "AUSTIN_REAVES_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "AUSTIN_REAVES_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-158",
+          "fairOverUnder": "6.5",
+          "openFairOdds": "+124",
+          "openFairOverUnder": "5.5",
+          "scoringSupported": true,
+          "bookOdds": "+100",
+          "bookOverUnder": "5.5",
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+102",
+              "overUnder": "5.5",
+              "lastUpdatedAt": "2026-03-06T13:06:40.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.560756021&selectionId=41574999",
+              "altLines": [
+                {
+                  "odds": "-160",
+                  "overUnder": "6.5",
+                  "lastUpdatedAt": "2026-03-06T09:26:20.000Z",
+                  "available": false
+                }
+              ]
+            }
+          },
+          "openBookOdds": "+104",
+          "openBookOverUnder": "5.5"
+        },
+        "points-AUSTIN_REAVES_1_NBA-game-ou-over": {
+          "oddID": "points-AUSTIN_REAVES_1_NBA-game-ou-over",
+          "opposingOddID": "points-AUSTIN_REAVES_1_NBA-game-ou-under",
+          "marketName": "Austin Reaves Points Over/Under",
+          "statID": "points",
+          "statEntityID": "AUSTIN_REAVES_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "AUSTIN_REAVES_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+116",
+          "bookOdds": "-121",
+          "fairOverUnder": "24.5",
+          "bookOverUnder": "23.5",
+          "openFairOdds": "+110",
+          "openBookOdds": "+100",
+          "openFairOverUnder": "24.5",
+          "openBookOverUnder": "24.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-128",
+              "overUnder": "23.5",
+              "lastUpdatedAt": "2026-03-06T13:06:40.000Z",
+              "available": true,
+              "altLines": [
+                {
+                  "odds": "-1400",
+                  "overUnder": "14.5",
+                  "lastUpdatedAt": "2026-03-06T13:06:40.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-310",
+                  "overUnder": "19.5",
+                  "lastUpdatedAt": "2026-03-06T13:06:40.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-102",
+                  "overUnder": "24.5",
+                  "lastUpdatedAt": "2026-03-06T13:06:40.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+255",
+                  "overUnder": "29.5",
+                  "lastUpdatedAt": "2026-03-06T13:06:40.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+630",
+                  "overUnder": "34.5",
+                  "lastUpdatedAt": "2026-03-06T13:06:40.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1400",
+                  "overUnder": "39.5",
+                  "lastUpdatedAt": "2026-03-06T13:06:40.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+3500",
+                  "overUnder": "44.5",
+                  "lastUpdatedAt": "2026-03-06T13:06:40.000Z",
+                  "available": true
+                }
+              ],
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.560756019&selectionId=41574998"
+            }
+          }
+        },
+        "points-AUSTIN_REAVES_1_NBA-game-ou-under": {
+          "oddID": "points-AUSTIN_REAVES_1_NBA-game-ou-under",
+          "opposingOddID": "points-AUSTIN_REAVES_1_NBA-game-ou-over",
+          "marketName": "Austin Reaves Points Over/Under",
+          "statID": "points",
+          "statEntityID": "AUSTIN_REAVES_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "AUSTIN_REAVES_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-116",
+          "fairOverUnder": "24.5",
+          "openFairOdds": "-110",
+          "openFairOverUnder": "24.5",
+          "scoringSupported": true,
+          "bookOdds": "-108",
+          "bookOverUnder": "23.5",
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-104",
+              "overUnder": "23.5",
+              "lastUpdatedAt": "2026-03-06T13:06:40.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.560756019&selectionId=41574999"
+            }
+          },
+          "openBookOdds": "-102",
+          "openBookOverUnder": "23.5"
+        },
+        "rebounds-AUSTIN_REAVES_1_NBA-game-ou-over": {
+          "oddID": "rebounds-AUSTIN_REAVES_1_NBA-game-ou-over",
+          "opposingOddID": "rebounds-AUSTIN_REAVES_1_NBA-game-ou-under",
+          "marketName": "Austin Reaves Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "AUSTIN_REAVES_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "AUSTIN_REAVES_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+139",
+          "bookOdds": "-149",
+          "fairOverUnder": "5.5",
+          "bookOverUnder": "4.5",
+          "openFairOdds": "+154",
+          "openBookOdds": "+140",
+          "openFairOverUnder": "5.5",
+          "openBookOverUnder": "5.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-152",
+              "overUnder": "4.5",
+              "lastUpdatedAt": "2026-03-06T13:06:40.000Z",
+              "available": true,
+              "altLines": [
+                {
+                  "odds": "-340",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2026-03-06T13:06:40.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+136",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2026-03-06T13:06:40.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+480",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2026-03-06T13:06:40.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1200",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-03-06T13:06:40.000Z",
+                  "available": true
+                }
+              ],
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.560756020&selectionId=41574998"
+            }
+          }
+        },
+        "rebounds-AUSTIN_REAVES_1_NBA-game-ou-under": {
+          "oddID": "rebounds-AUSTIN_REAVES_1_NBA-game-ou-under",
+          "opposingOddID": "rebounds-AUSTIN_REAVES_1_NBA-game-ou-over",
+          "marketName": "Austin Reaves Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "AUSTIN_REAVES_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "AUSTIN_REAVES_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-139",
+          "fairOverUnder": "5.5",
+          "openFairOdds": "-154",
+          "openFairOverUnder": "5.5",
+          "scoringSupported": true,
+          "bookOdds": "+110",
+          "bookOverUnder": "4.5",
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+114",
+              "overUnder": "4.5",
+              "lastUpdatedAt": "2026-03-06T13:06:40.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.560756020&selectionId=41574999"
+            }
+          },
+          "openBookOdds": "+114",
+          "openBookOverUnder": "4.5"
+        },
+        "points-JAXSON_HAYES_1_NBA-game-ou-over": {
+          "oddID": "points-JAXSON_HAYES_1_NBA-game-ou-over",
+          "opposingOddID": "points-JAXSON_HAYES_1_NBA-game-ou-under",
+          "marketName": "Jaxson Hayes Points Over/Under",
+          "statID": "points",
+          "statEntityID": "JAXSON_HAYES_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "JAXSON_HAYES_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+111",
+          "bookOdds": "-129",
+          "fairOverUnder": "10.5",
+          "bookOverUnder": "9.5",
+          "openFairOdds": "-112",
+          "openBookOdds": "-130",
+          "openFairOverUnder": "9.5",
+          "openBookOverUnder": "9.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-132",
+              "overUnder": "9.5",
+              "lastUpdatedAt": "2026-03-06T13:06:40.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.560756770&selectionId=27031950",
+              "altLines": [
+                {
+                  "odds": "+300",
+                  "overUnder": "14.5",
+                  "lastUpdatedAt": "2026-03-06T13:06:40.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+900",
+                  "overUnder": "19.5",
+                  "lastUpdatedAt": "2026-03-06T13:06:40.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+2500",
+                  "overUnder": "24.5",
+                  "lastUpdatedAt": "2026-03-06T12:44:07.000Z",
+                  "available": false
+                }
+              ]
+            }
+          }
+        },
+        "points-JAXSON_HAYES_1_NBA-game-ou-under": {
+          "oddID": "points-JAXSON_HAYES_1_NBA-game-ou-under",
+          "opposingOddID": "points-JAXSON_HAYES_1_NBA-game-ou-over",
+          "marketName": "Jaxson Hayes Points Over/Under",
+          "statID": "points",
+          "statEntityID": "JAXSON_HAYES_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "JAXSON_HAYES_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-111",
+          "bookOdds": "-105",
+          "fairOverUnder": "10.5",
+          "bookOverUnder": "9.5",
+          "openFairOdds": "+112",
+          "openBookOdds": "-102",
+          "openFairOverUnder": "9.5",
+          "openBookOverUnder": "9.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+100",
+              "overUnder": "9.5",
+              "lastUpdatedAt": "2026-03-06T13:06:40.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.560756770&selectionId=27031951"
+            }
+          }
+        },
+        "rebounds-JAXSON_HAYES_1_NBA-game-ou-over": {
+          "oddID": "rebounds-JAXSON_HAYES_1_NBA-game-ou-over",
+          "opposingOddID": "rebounds-JAXSON_HAYES_1_NBA-game-ou-under",
+          "marketName": "Jaxson Hayes Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "JAXSON_HAYES_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "JAXSON_HAYES_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+128",
+          "bookOdds": "-130",
+          "fairOverUnder": "6.5",
+          "bookOverUnder": "5.5",
+          "openFairOdds": "-112",
+          "openBookOdds": "-130",
+          "openFairOverUnder": "5.5",
+          "openBookOverUnder": "5.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-130",
+              "overUnder": "5.5",
+              "lastUpdatedAt": "2026-03-06T13:06:40.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.560756771&selectionId=27031950",
+              "altLines": [
+                {
+                  "odds": "-480",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2026-03-06T13:06:40.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+240",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2026-03-06T13:06:40.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+520",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-03-06T13:06:40.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1200",
+                  "overUnder": "11.5",
+                  "lastUpdatedAt": "2026-03-06T13:06:40.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+3000",
+                  "overUnder": "13.5",
+                  "lastUpdatedAt": "2026-03-06T13:06:40.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "rebounds-JAXSON_HAYES_1_NBA-game-ou-under": {
+          "oddID": "rebounds-JAXSON_HAYES_1_NBA-game-ou-under",
+          "opposingOddID": "rebounds-JAXSON_HAYES_1_NBA-game-ou-over",
+          "marketName": "Jaxson Hayes Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "JAXSON_HAYES_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "JAXSON_HAYES_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-128",
+          "bookOdds": "+100",
+          "fairOverUnder": "6.5",
+          "bookOverUnder": "5.5",
+          "openFairOdds": "+112",
+          "openBookOdds": "-102",
+          "openFairOverUnder": "5.5",
+          "openBookOverUnder": "5.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-102",
+              "overUnder": "5.5",
+              "lastUpdatedAt": "2026-03-06T13:06:40.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.560756771&selectionId=27031951"
+            }
+          }
+        },
+        "blocks-AUSTIN_REAVES_1_NBA-game-ou-over": {
+          "oddID": "blocks-AUSTIN_REAVES_1_NBA-game-ou-over",
+          "opposingOddID": "blocks-AUSTIN_REAVES_1_NBA-game-ou-under",
+          "marketName": "Austin Reaves Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "AUSTIN_REAVES_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "AUSTIN_REAVES_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+185",
+          "bookOdds": "+165",
+          "fairOverUnder": "0.5",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "+187",
+          "openBookOdds": "+170",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        },
+        "blocks-AUSTIN_REAVES_1_NBA-game-ou-under": {
+          "oddID": "blocks-AUSTIN_REAVES_1_NBA-game-ou-under",
+          "opposingOddID": "blocks-AUSTIN_REAVES_1_NBA-game-ou-over",
+          "marketName": "Austin Reaves Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "AUSTIN_REAVES_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "AUSTIN_REAVES_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-185",
+          "fairOverUnder": "0.5",
+          "openFairOdds": "-187",
+          "openFairOverUnder": "0.5",
+          "scoringSupported": true,
+          "bookOdds": "-233",
+          "bookOverUnder": "0.5",
+          "byBookmaker": {},
+          "openBookOdds": "-233",
+          "openBookOverUnder": "0.5"
+        },
+        "blocks-LUKA_DONCIC_1_NBA-game-ou-over": {
+          "oddID": "blocks-LUKA_DONCIC_1_NBA-game-ou-over",
+          "opposingOddID": "blocks-LUKA_DONCIC_1_NBA-game-ou-under",
+          "marketName": "Luka Don\u010di\u0107 Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "LUKA_DONCIC_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "LUKA_DONCIC_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+165",
+          "bookOdds": "+147",
+          "fairOverUnder": "0.5",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "+165",
+          "openBookOdds": "+150",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        },
+        "blocks-LUKA_DONCIC_1_NBA-game-ou-under": {
+          "oddID": "blocks-LUKA_DONCIC_1_NBA-game-ou-under",
+          "opposingOddID": "blocks-LUKA_DONCIC_1_NBA-game-ou-over",
+          "marketName": "Luka Don\u010di\u0107 Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "LUKA_DONCIC_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "LUKA_DONCIC_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-165",
+          "fairOverUnder": "0.5",
+          "openFairOdds": "-165",
+          "openFairOverUnder": "0.5",
+          "scoringSupported": true,
+          "bookOdds": "-200",
+          "bookOverUnder": "0.5",
+          "byBookmaker": {},
+          "openBookOdds": "-200",
+          "openBookOverUnder": "0.5"
+        },
+        "steals-AUSTIN_REAVES_1_NBA-game-ou-over": {
+          "oddID": "steals-AUSTIN_REAVES_1_NBA-game-ou-over",
+          "opposingOddID": "steals-AUSTIN_REAVES_1_NBA-game-ou-under",
+          "marketName": "Austin Reaves Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "AUSTIN_REAVES_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "AUSTIN_REAVES_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+146",
+          "bookOdds": "+150",
+          "fairOverUnder": "1.5",
+          "bookOverUnder": "1.5",
+          "openFairOdds": "+160",
+          "openBookOdds": "+145",
+          "openFairOverUnder": "1.5",
+          "openBookOverUnder": "1.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        },
+        "steals-AUSTIN_REAVES_1_NBA-game-ou-under": {
+          "oddID": "steals-AUSTIN_REAVES_1_NBA-game-ou-under",
+          "opposingOddID": "steals-AUSTIN_REAVES_1_NBA-game-ou-over",
+          "marketName": "Austin Reaves Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "AUSTIN_REAVES_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "AUSTIN_REAVES_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-146",
+          "fairOverUnder": "1.5",
+          "openFairOdds": "-160",
+          "openFairOverUnder": "1.5",
+          "scoringSupported": true,
+          "bookOdds": "-140",
+          "bookOverUnder": "1.5",
+          "byBookmaker": {},
+          "openBookOdds": "+100",
+          "openBookOverUnder": "1.5"
+        },
+        "steals-LUKA_DONCIC_1_NBA-game-ou-over": {
+          "oddID": "steals-LUKA_DONCIC_1_NBA-game-ou-over",
+          "opposingOddID": "steals-LUKA_DONCIC_1_NBA-game-ou-under",
+          "marketName": "Luka Don\u010di\u0107 Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "LUKA_DONCIC_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "LUKA_DONCIC_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+133",
+          "bookOdds": "+117",
+          "fairOverUnder": "1.5",
+          "bookOverUnder": "1.5",
+          "openFairOdds": "+110",
+          "openBookOdds": "+100",
+          "openFairOverUnder": "1.5",
+          "openBookOverUnder": "1.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+148",
+              "overUnder": "1.5",
+              "lastUpdatedAt": "2026-03-06T13:06:40.000Z",
+              "available": true,
+              "altLines": [
+                {
+                  "odds": "-330",
+                  "overUnder": "0.5",
+                  "lastUpdatedAt": "2026-03-06T13:06:40.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+490",
+                  "overUnder": "2.5",
+                  "lastUpdatedAt": "2026-03-06T13:06:40.000Z",
+                  "available": true
+                }
+              ],
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.560796616&selectionId=12463224"
+            }
+          }
+        },
+        "steals-LUKA_DONCIC_1_NBA-game-ou-under": {
+          "oddID": "steals-LUKA_DONCIC_1_NBA-game-ou-under",
+          "opposingOddID": "steals-LUKA_DONCIC_1_NBA-game-ou-over",
+          "marketName": "Luka Don\u010di\u0107 Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "LUKA_DONCIC_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "LUKA_DONCIC_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-133",
+          "fairOverUnder": "1.5",
+          "openFairOdds": "-110",
+          "openFairOverUnder": "1.5",
+          "scoringSupported": true,
+          "bookOdds": "-159",
+          "bookOverUnder": "1.5",
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-200",
+              "overUnder": "1.5",
+              "lastUpdatedAt": "2026-03-06T13:06:40.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.560796616&selectionId=12463223"
+            }
+          },
+          "openBookOdds": "-137",
+          "openBookOverUnder": "1.5"
+        },
+        "assists-JAXSON_HAYES_1_NBA-game-ou-over": {
+          "oddID": "assists-JAXSON_HAYES_1_NBA-game-ou-over",
+          "opposingOddID": "assists-JAXSON_HAYES_1_NBA-game-ou-under",
+          "marketName": "Jaxson Hayes Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "JAXSON_HAYES_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "JAXSON_HAYES_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "bookOdds": "+100",
+          "bookOverUnder": "1.5",
+          "openBookOdds": "+300",
+          "openBookOverUnder": "2.5",
+          "scoringSupported": true,
+          "byBookmaker": {},
+          "fairOdds": "+100",
+          "fairOverUnder": "1",
+          "openFairOdds": "+100",
+          "openFairOverUnder": "1.5"
+        },
+        "blocks-JAXSON_HAYES_1_NBA-game-ou-over": {
+          "oddID": "blocks-JAXSON_HAYES_1_NBA-game-ou-over",
+          "opposingOddID": "blocks-JAXSON_HAYES_1_NBA-game-ou-under",
+          "marketName": "Jaxson Hayes Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "JAXSON_HAYES_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "JAXSON_HAYES_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-167",
+          "bookOdds": "-200",
+          "fairOverUnder": "0.5",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "-177",
+          "openBookOdds": "-195",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        },
+        "blocks-JAXSON_HAYES_1_NBA-game-ou-under": {
+          "oddID": "blocks-JAXSON_HAYES_1_NBA-game-ou-under",
+          "opposingOddID": "blocks-JAXSON_HAYES_1_NBA-game-ou-over",
+          "marketName": "Jaxson Hayes Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "JAXSON_HAYES_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "JAXSON_HAYES_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+167",
+          "fairOverUnder": "0.5",
+          "openFairOdds": "+177",
+          "openFairOverUnder": "0.5",
+          "scoringSupported": true,
+          "bookOdds": "+150",
+          "bookOverUnder": "0.5",
+          "byBookmaker": {},
+          "openBookOdds": "+150",
+          "openBookOverUnder": "0.5"
+        },
+        "steals-JAXSON_HAYES_1_NBA-game-ou-over": {
+          "oddID": "steals-JAXSON_HAYES_1_NBA-game-ou-over",
+          "opposingOddID": "steals-JAXSON_HAYES_1_NBA-game-ou-under",
+          "marketName": "Jaxson Hayes Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "JAXSON_HAYES_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "JAXSON_HAYES_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "-141",
+          "fairOverUnder": "1",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "-127",
+          "openBookOdds": "-140",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        },
+        "steals-JAXSON_HAYES_1_NBA-game-ou-under": {
+          "oddID": "steals-JAXSON_HAYES_1_NBA-game-ou-under",
+          "opposingOddID": "steals-JAXSON_HAYES_1_NBA-game-ou-over",
+          "marketName": "Jaxson Hayes Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "JAXSON_HAYES_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "JAXSON_HAYES_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "fairOverUnder": "1",
+          "openFairOdds": "+127",
+          "openFairOverUnder": "0.5",
+          "scoringSupported": true,
+          "bookOdds": "+105",
+          "bookOverUnder": "0.5",
+          "byBookmaker": {},
+          "openBookOdds": "+105",
+          "openBookOverUnder": "0.5"
+        },
+        "assists-JAXSON_HAYES_1_NBA-game-ou-under": {
+          "oddID": "assists-JAXSON_HAYES_1_NBA-game-ou-under",
+          "opposingOddID": "assists-JAXSON_HAYES_1_NBA-game-ou-over",
+          "marketName": "Jaxson Hayes Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "JAXSON_HAYES_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "JAXSON_HAYES_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "-135",
+          "fairOverUnder": "1",
+          "bookOverUnder": "1.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "+100",
+          "openFairOverUnder": "1.5",
+          "openBookOverUnder": "1.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        }
+      },
+      "players": {
+        "AARON_NESMITH_1_NBA": {
+          "playerID": "AARON_NESMITH_1_NBA",
+          "teamID": "INDIANA_PACERS_NBA",
+          "firstName": "Aaron",
+          "lastName": "Nesmith",
+          "name": "Aaron Nesmith"
+        },
+        "ANDREW_NEMBHARD_1_NBA": {
+          "playerID": "ANDREW_NEMBHARD_1_NBA",
+          "teamID": "INDIANA_PACERS_NBA",
+          "firstName": "Andrew",
+          "lastName": "Nembhard",
+          "name": "Andrew Nembhard"
+        },
+        "JARACE_WALKER_1_NBA": {
+          "playerID": "JARACE_WALKER_1_NBA",
+          "teamID": "INDIANA_PACERS_NBA",
+          "firstName": "Jarace",
+          "lastName": "Walker",
+          "name": "Jarace Walker"
+        },
+        "JAY_HUFF_1_NBA": {
+          "playerID": "JAY_HUFF_1_NBA",
+          "teamID": "INDIANA_PACERS_NBA",
+          "firstName": "Jay",
+          "lastName": "Huff",
+          "name": "Jay Huff"
+        },
+        "PASCAL_SIAKAM_1_NBA": {
+          "playerID": "PASCAL_SIAKAM_1_NBA",
+          "teamID": "INDIANA_PACERS_NBA",
+          "firstName": "Pascal",
+          "lastName": "Siakam",
+          "name": "Pascal Siakam"
+        },
+        "AUSTIN_REAVES_1_NBA": {
+          "playerID": "AUSTIN_REAVES_1_NBA",
+          "teamID": "LOS_ANGELES_LAKERS_NBA",
+          "firstName": "Austin",
+          "lastName": "Reaves",
+          "name": "Austin Reaves"
+        },
+        "JAXSON_HAYES_1_NBA": {
+          "playerID": "JAXSON_HAYES_1_NBA",
+          "teamID": "LOS_ANGELES_LAKERS_NBA",
+          "firstName": "Jaxson",
+          "lastName": "Hayes",
+          "name": "Jaxson Hayes"
+        },
+        "LUKA_DONCIC_1_NBA": {
+          "playerID": "LUKA_DONCIC_1_NBA",
+          "teamID": "LOS_ANGELES_LAKERS_NBA",
+          "firstName": "Luka",
+          "lastName": "Doncic",
+          "name": "Luka Don\u010di\u0107"
+        },
+        "MARCUS_SMART_1_NBA": {
+          "playerID": "MARCUS_SMART_1_NBA",
+          "teamID": "LOS_ANGELES_LAKERS_NBA",
+          "firstName": "Marcus",
+          "lastName": "Smart",
+          "name": "Marcus Smart"
+        },
+        "RUI_HACHIMURA_1_NBA": {
+          "playerID": "RUI_HACHIMURA_1_NBA",
+          "teamID": "LOS_ANGELES_LAKERS_NBA",
+          "firstName": "Rui",
+          "lastName": "Hachimura",
+          "name": "Rui Hachimura"
+        },
+        "BEN_SHEPPARD_1_NBA": {
+          "playerID": "BEN_SHEPPARD_1_NBA",
+          "teamID": "INDIANA_PACERS_NBA",
+          "firstName": "Ben",
+          "lastName": "Sheppard",
+          "name": "Ben Sheppard"
+        },
+        "TJ_MCCONNELL_1_NBA": {
+          "playerID": "TJ_MCCONNELL_1_NBA",
+          "teamID": "INDIANA_PACERS_NBA",
+          "firstName": "T.J.",
+          "lastName": "McConnell",
+          "name": "T.J. McConnell"
+        },
+        "DEANDRE_AYTON_1_NBA": {
+          "playerID": "DEANDRE_AYTON_1_NBA",
+          "teamID": "LOS_ANGELES_LAKERS_NBA",
+          "firstName": "Deandre",
+          "lastName": "Ayton",
+          "name": "Deandre Ayton"
+        },
+        "LEBRON_JAMES_1_NBA": {
+          "playerID": "LEBRON_JAMES_1_NBA",
+          "teamID": "LOS_ANGELES_LAKERS_NBA",
+          "firstName": "LeBron",
+          "lastName": "James",
+          "name": "LeBron James"
+        }
+      },
+      "results": {}
+    }
+  ]
+}

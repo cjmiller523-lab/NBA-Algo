@@ -1,0 +1,2283 @@
+{
+  "nextCursor": "n.1772848800000.g2bzegUBJW1x5TJ6hQO2",
+  "success": true,
+  "data": [
+    {
+      "eventID": "g2bzegUBJW1x5TJ6hQO2",
+      "sportID": "BASKETBALL",
+      "leagueID": "NBA",
+      "type": "match",
+      "teams": {
+        "home": {
+          "teamID": "PHOENIX_SUNS_NBA",
+          "names": {
+            "long": "Phoenix Suns",
+            "medium": "Suns",
+            "short": "PHX",
+            "location": "Phoenix"
+          },
+          "colors": {
+            "primary": "#E56020",
+            "secondary": "#1D1160",
+            "primaryContrast": "#000000",
+            "secondaryContrast": "#E56020"
+          },
+          "statEntityID": "home"
+        },
+        "away": {
+          "teamID": "NEW_ORLEANS_PELICANS_NBA",
+          "names": {
+            "long": "New Orleans Pelicans",
+            "medium": "Pelicans",
+            "short": "NOP",
+            "location": "New Orleans"
+          },
+          "colors": {
+            "primary": "#002B5C",
+            "secondary": "#B4975A",
+            "primaryContrast": "#FFFFFF",
+            "secondaryContrast": "#002B5C"
+          },
+          "statEntityID": "away"
+        }
+      },
+      "status": {
+        "started": false,
+        "completed": false,
+        "cancelled": false,
+        "ended": false,
+        "live": false,
+        "delayed": false,
+        "currentPeriodID": "",
+        "previousPeriodID": "",
+        "displayShort": "",
+        "displayLong": "Upcoming",
+        "inBreak": false,
+        "startsAt": "2026-03-07T02:00:00.000Z",
+        "previousStartsAt": [],
+        "hardStart": true,
+        "periods": {
+          "started": [],
+          "ended": []
+        },
+        "oddsPresent": true,
+        "oddsAvailable": true,
+        "finalized": false
+      },
+      "info": {
+        "seasonWeek": "NBA 25/26",
+        "venue": {
+          "name": "Mortgage Matchup Center",
+          "countryName": "United States",
+          "countryCode": "US",
+          "regionName": "Arizona",
+          "regionCode": "AZ",
+          "city": "Phoenix",
+          "address": "201 E Jefferson St, Phoenix, AZ 85004",
+          "capacity": 18055
+        }
+      },
+      "links": {
+        "bookmakers": {
+          "fanduel": "https://sportsbook.fanduel.com/basketball/-/35333799",
+          "sportsbet": "https://www.sportsbet.com.au/betting/basketball---us/nba/new-orleans-pelicans-at-phoenix-suns-10223759",
+          "pointsbet": "https://pointsbet.com.au/sports/basketball/NBA/2634168",
+          "paddypower": "https://www.paddypower.com/basketball/nba/new-orleans-pelicans-@-phoenix-suns-35333799",
+          "1xbet": "https://1xbet.com/en/line/football/13589-nba/311442832-phoenix-suns-new-orleans-pelicans",
+          "lowvig": "https://sports.lowvig.ag/sportsbook/basketball/nba/game/490979554",
+          "betonline": "https://sports.betonline.ag/sportsbook/basketball/nba/game/490979554",
+          "boylesports": "https://www.boylesports.com/sports/basketball/event/usa-nba/phoenix-suns-v-new-orleans-pelicans",
+          "betrsportsbook": "https://www.betr.com.au/sports/Basketball/107/United-States-of-America/NBA/New-Orleans-Pelicans-@-Phoenix-Suns/2009631/All-Markets",
+          "coolbet": "https://www.coolbet.com/en/sports/match/5121652",
+          "caesars": "https://sportsbook.caesars.com/us/nj/bet/basketball/35bed73c-d261-4445-9697-d335fa9f5898/new-orleans-pelicans-at-phoenix-suns",
+          "coral": "https://sports.coral.co.uk/event/basketball/basketball-usa/nba/phx-suns-v-no-pelicans/42190159",
+          "draftkings": "https://sportsbook.draftkings.com/event/33748908",
+          "tab": "https://www.tab.com.au/sports/betting/Basketball/competitions/NBA/matches/Phoenix%20v%20New%20Orleans",
+          "betmgm": "https://sports.nj.betmgm.com/en/sports/events/19025792",
+          "fliff": "https://sports.getfliff.com/markets/377352_c_p_204_prematch",
+          "ladbrokes": "https://www.ladbrokes.com.au/sports/-/-/-/2b884751-4b58-4684-a6cc-8e03e24ba14f",
+          "neds": "https://www.neds.com.au/sports/-/-/-/2b884751-4b58-4684-a6cc-8e03e24ba14f",
+          "ballybet": "https://play.ballybet.com/sports#event/1024653452",
+          "betparx": "https://nj.betparx.com/kambi#event/1024653452",
+          "betrivers": "https://nj.betrivers.com/?page=sportsbook#event/1024653452",
+          "casumo": "https://www.casumo.com/en-gb/sports#event/1024653452",
+          "grosvenor": "https://www.grosvenorcasinos.com/sport#event/1024653452",
+          "leovegas": "https://www.leovegas.co.uk/betting#event/1024653452",
+          "livescorebet": "https://www.livescorebet.com/uk/sports/basketball/nba/phoenix-suns-new-orleans-pelicans/SBTE_2_1024653452",
+          "tabtouch": "https://www.tabtouch.mobi/tabtouch-sports/event/1024653452",
+          "unibet": "https://www.unibet.com/betting/sports/event/1024653452",
+          "virginbet": "https://www.virginbet.com/sports/basketball/nba/phoenix-suns-new-orleans-pelicans/SBTE_2_1024653452",
+          "williamhill": "https://sports.williamhill.com/betting/en-gb/basketball/OB_EV38970534/new-orleans-pelicans-at-phoenix-suns",
+          "espnbet": "https://espnbet.com/sport/basketball/organization/united-states/competition/nba/event/9da36457-5ac0-4e0b-8587-545f37f07e08",
+          "thescorebet": "https://thescore.bet/sport/basketball/organization/united-states/competition/nba/event/9da36457-5ac0-4e0b-8587-545f37f07e08",
+          "betsson": "https://www.betsson.com/en/sportsbook/basketball/nba/nba?eventId=f-61KUBPmvxkudUmlcSqheqQ",
+          "nordicbet": "https://www.nordicbet.com/en/sportsbook/basketball/nba/nba/phoenix-suns-new-orleans-pelicans",
+          "playup": "https://www.playup.com.au/betting/sports/nba/phoenix-suns-v-new-orleans-pelicans/10216",
+          "betfairsportsbook": "https://www.betfair.com/betting/basketball/nba/new-orleans-pelicans-@-phoenix-suns/e-35333799",
+          "matchbook": "https://www.matchbook.com/events/basketball/united-states-of-america/nba/32680553441900045",
+          "hardrockbet": "https://app.hardrock.bet/home/competition/nba/6687992027469840724",
+          "betway": "https://betway.com/en/sports/evt/16447458",
+          "pinnacle": "https://www.pinnacle.com/en/basketball/nba/new-orleans-pelicans-vs-phoenix-suns/1625107444",
+          "bovada": "https://www.bovada.lv/sports/basketball/nba/new-orleans-pelicans-phoenix-suns-202603062100",
+          "everygame": "https://sports.everygame.eu/en/Bets/Basketball/NBA-Lines/New-Orleans-Pelicans-at-Phoenix-Suns/2809261"
+        }
+      },
+      "odds": {
+        "assists-COLLIN_GILLESPIE_1_NBA-game-ou-over": {
+          "oddID": "assists-COLLIN_GILLESPIE_1_NBA-game-ou-over",
+          "opposingOddID": "assists-COLLIN_GILLESPIE_1_NBA-game-ou-under",
+          "marketName": "Collin Gillespie Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "COLLIN_GILLESPIE_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "COLLIN_GILLESPIE_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+189",
+          "bookOdds": "-118",
+          "fairOverUnder": "5.5",
+          "bookOverUnder": "4.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "-114",
+          "openFairOverUnder": "5",
+          "openBookOverUnder": "4.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-114",
+              "overUnder": "4.5",
+              "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.560754163&selectionId=43026356",
+              "altLines": [
+                {
+                  "odds": "-4000",
+                  "overUnder": "1.5",
+                  "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-260",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+180",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+630",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1500",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "assists-COLLIN_GILLESPIE_1_NBA-game-ou-under": {
+          "oddID": "assists-COLLIN_GILLESPIE_1_NBA-game-ou-under",
+          "opposingOddID": "assists-COLLIN_GILLESPIE_1_NBA-game-ou-over",
+          "marketName": "Collin Gillespie Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "COLLIN_GILLESPIE_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "COLLIN_GILLESPIE_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-189",
+          "bookOdds": "-114",
+          "fairOverUnder": "5.5",
+          "bookOverUnder": "4.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "-114",
+          "openFairOverUnder": "5",
+          "openBookOverUnder": "4.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-114",
+              "overUnder": "4.5",
+              "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.560754163&selectionId=43026355"
+            }
+          }
+        },
+        "assists-DEVIN_BOOKER_1_NBA-game-ou-over": {
+          "oddID": "assists-DEVIN_BOOKER_1_NBA-game-ou-over",
+          "opposingOddID": "assists-DEVIN_BOOKER_1_NBA-game-ou-under",
+          "marketName": "Devin Booker Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "DEVIN_BOOKER_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "DEVIN_BOOKER_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+166",
+          "bookOdds": "-120",
+          "fairOverUnder": "6.5",
+          "bookOverUnder": "5.5",
+          "openFairOdds": "-106",
+          "openBookOdds": "-122",
+          "openFairOverUnder": "5.5",
+          "openBookOverUnder": "5.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-125",
+              "overUnder": "5.5",
+              "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.560754160&selectionId=12257187",
+              "altLines": [
+                {
+                  "odds": "-590",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+300",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+830",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+2000",
+                  "overUnder": "11.5",
+                  "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "assists-DEVIN_BOOKER_1_NBA-game-ou-under": {
+          "oddID": "assists-DEVIN_BOOKER_1_NBA-game-ou-under",
+          "opposingOddID": "assists-DEVIN_BOOKER_1_NBA-game-ou-over",
+          "marketName": "Devin Booker Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "DEVIN_BOOKER_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "DEVIN_BOOKER_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-166",
+          "bookOdds": "-110",
+          "fairOverUnder": "6.5",
+          "bookOverUnder": "5.5",
+          "openFairOdds": "+106",
+          "openBookOdds": "-108",
+          "openFairOverUnder": "5.5",
+          "openBookOverUnder": "5.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-106",
+              "overUnder": "5.5",
+              "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.560754160&selectionId=12257186"
+            }
+          }
+        },
+        "assists-GRAYSON_ALLEN_1_NBA-game-ou-over": {
+          "oddID": "assists-GRAYSON_ALLEN_1_NBA-game-ou-over",
+          "opposingOddID": "assists-GRAYSON_ALLEN_1_NBA-game-ou-under",
+          "statID": "assists",
+          "statEntityID": "GRAYSON_ALLEN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "GRAYSON_ALLEN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+143",
+          "bookOdds": "-132",
+          "fairOverUnder": "4.5",
+          "bookOverUnder": "3.5",
+          "openFairOdds": "-118",
+          "openBookOdds": "-138",
+          "openFairOverUnder": "3.5",
+          "openBookOverUnder": "3.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-136",
+              "overUnder": "3.5",
+              "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.560754162&selectionId=37819081",
+              "altLines": [
+                {
+                  "odds": "-1200",
+                  "overUnder": "1.5",
+                  "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+320",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1060",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+2500",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-03-06T11:55:45.000Z",
+                  "available": false
+                }
+              ]
+            }
+          },
+          "marketName": "Grayson Allen Assists Over/Under"
+        },
+        "assists-GRAYSON_ALLEN_1_NBA-game-ou-under": {
+          "oddID": "assists-GRAYSON_ALLEN_1_NBA-game-ou-under",
+          "opposingOddID": "assists-GRAYSON_ALLEN_1_NBA-game-ou-over",
+          "statID": "assists",
+          "statEntityID": "GRAYSON_ALLEN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "GRAYSON_ALLEN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-143",
+          "bookOdds": "+100",
+          "fairOverUnder": "4.5",
+          "bookOverUnder": "3.5",
+          "openFairOdds": "+118",
+          "openBookOdds": "+104",
+          "openFairOverUnder": "3.5",
+          "openBookOverUnder": "3.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+102",
+              "overUnder": "3.5",
+              "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.560754162&selectionId=37819080"
+            }
+          },
+          "marketName": "Grayson Allen Assists Over/Under"
+        },
+        "assists-JALEN_GREEN_1_NBA-game-ou-over": {
+          "oddID": "assists-JALEN_GREEN_1_NBA-game-ou-over",
+          "opposingOddID": "assists-JALEN_GREEN_1_NBA-game-ou-under",
+          "marketName": "Jalen Green Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "JALEN_GREEN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "JALEN_GREEN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+167",
+          "bookOdds": "-160",
+          "fairOverUnder": "3.5",
+          "bookOverUnder": "2.5",
+          "openFairOdds": "-135",
+          "openBookOdds": "-160",
+          "openFairOverUnder": "2.5",
+          "openBookOverUnder": "2.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-162",
+              "overUnder": "2.5",
+              "lastUpdatedAt": "2026-03-06T12:58:08.788Z",
+              "available": false,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.560754161&selectionId=41386184",
+              "altLines": [
+                {
+                  "odds": "-500",
+                  "overUnder": "1.5",
+                  "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+162",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+800",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "assists-JALEN_GREEN_1_NBA-game-ou-under": {
+          "oddID": "assists-JALEN_GREEN_1_NBA-game-ou-under",
+          "opposingOddID": "assists-JALEN_GREEN_1_NBA-game-ou-over",
+          "marketName": "Jalen Green Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "JALEN_GREEN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "JALEN_GREEN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-167",
+          "bookOdds": "+111",
+          "fairOverUnder": "3.5",
+          "bookOverUnder": "2.5",
+          "openFairOdds": "+135",
+          "openBookOdds": "+120",
+          "openFairOverUnder": "2.5",
+          "openBookOverUnder": "2.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+122",
+              "overUnder": "2.5",
+              "lastUpdatedAt": "2026-03-06T12:58:08.788Z",
+              "available": false,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.560754161&selectionId=41386185"
+            }
+          }
+        },
+        "assists-OSO_IGHODARO_1_NBA-game-ou-over": {
+          "oddID": "assists-OSO_IGHODARO_1_NBA-game-ou-over",
+          "opposingOddID": "assists-OSO_IGHODARO_1_NBA-game-ou-under",
+          "marketName": "Oso Ighodaro Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "OSO_IGHODARO_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "OSO_IGHODARO_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+171",
+          "bookOdds": "-160",
+          "fairOverUnder": "3.5",
+          "bookOverUnder": "2.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "-140",
+          "openFairOverUnder": "3",
+          "openBookOverUnder": "2.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-154",
+              "overUnder": "2.5",
+              "lastUpdatedAt": "2026-03-06T12:58:08.788Z",
+              "available": false,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.560754164&selectionId=50184535",
+              "altLines": [
+                {
+                  "odds": "-460",
+                  "overUnder": "1.5",
+                  "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+164",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+800",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "assists-OSO_IGHODARO_1_NBA-game-ou-under": {
+          "oddID": "assists-OSO_IGHODARO_1_NBA-game-ou-under",
+          "opposingOddID": "assists-OSO_IGHODARO_1_NBA-game-ou-over",
+          "marketName": "Oso Ighodaro Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "OSO_IGHODARO_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "OSO_IGHODARO_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-171",
+          "bookOdds": "+119",
+          "fairOverUnder": "3.5",
+          "bookOverUnder": "2.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "+106",
+          "openFairOverUnder": "3",
+          "openBookOverUnder": "2.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+116",
+              "overUnder": "2.5",
+              "lastUpdatedAt": "2026-03-06T12:58:08.788Z",
+              "available": false,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.560754164&selectionId=50184532"
+            }
+          }
+        },
+        "points-COLLIN_GILLESPIE_1_NBA-game-ou-over": {
+          "oddID": "points-COLLIN_GILLESPIE_1_NBA-game-ou-over",
+          "opposingOddID": "points-COLLIN_GILLESPIE_1_NBA-game-ou-under",
+          "marketName": "Collin Gillespie Points Over/Under",
+          "statID": "points",
+          "statEntityID": "COLLIN_GILLESPIE_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "COLLIN_GILLESPIE_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+136",
+          "bookOdds": "-105",
+          "fairOverUnder": "14.5",
+          "bookOverUnder": "13.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "-130",
+          "openFairOverUnder": "13.5",
+          "openBookOverUnder": "12.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-130",
+              "overUnder": "12.5",
+              "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.560754152&selectionId=43026356",
+              "altLines": [
+                {
+                  "odds": "-320",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+132",
+                  "overUnder": "14.5",
+                  "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+420",
+                  "overUnder": "19.5",
+                  "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1200",
+                  "overUnder": "24.5",
+                  "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+3000",
+                  "overUnder": "29.5",
+                  "lastUpdatedAt": "2026-03-06T07:30:18.000Z",
+                  "available": false
+                }
+              ]
+            }
+          }
+        },
+        "points-COLLIN_GILLESPIE_1_NBA-game-ou-under": {
+          "oddID": "points-COLLIN_GILLESPIE_1_NBA-game-ou-under",
+          "opposingOddID": "points-COLLIN_GILLESPIE_1_NBA-game-ou-over",
+          "marketName": "Collin Gillespie Points Over/Under",
+          "statID": "points",
+          "statEntityID": "COLLIN_GILLESPIE_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "COLLIN_GILLESPIE_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-136",
+          "bookOdds": "-125",
+          "fairOverUnder": "14.5",
+          "bookOverUnder": "13.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "-102",
+          "openFairOverUnder": "13.5",
+          "openBookOverUnder": "12.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-102",
+              "overUnder": "12.5",
+              "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.560754152&selectionId=43026355"
+            }
+          }
+        },
+        "points-DEVIN_BOOKER_1_NBA-game-ou-over": {
+          "oddID": "points-DEVIN_BOOKER_1_NBA-game-ou-over",
+          "opposingOddID": "points-DEVIN_BOOKER_1_NBA-game-ou-under",
+          "marketName": "Devin Booker Points Over/Under",
+          "statID": "points",
+          "statEntityID": "DEVIN_BOOKER_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "DEVIN_BOOKER_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+129",
+          "bookOdds": "-109",
+          "fairOverUnder": "25.5",
+          "bookOverUnder": "24.5",
+          "openFairOdds": "+112",
+          "openBookOdds": "-122",
+          "openFairOverUnder": "24.5",
+          "openBookOverUnder": "23.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-128",
+              "overUnder": "23.5",
+              "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.560754149&selectionId=12257187",
+              "altLines": [
+                {
+                  "odds": "-1400",
+                  "overUnder": "14.5",
+                  "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-310",
+                  "overUnder": "19.5",
+                  "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+102",
+                  "overUnder": "24.5",
+                  "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+285",
+                  "overUnder": "29.5",
+                  "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+750",
+                  "overUnder": "34.5",
+                  "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1500",
+                  "overUnder": "39.5",
+                  "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+4000",
+                  "overUnder": "44.5",
+                  "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "points-DEVIN_BOOKER_1_NBA-game-ou-under": {
+          "oddID": "points-DEVIN_BOOKER_1_NBA-game-ou-under",
+          "opposingOddID": "points-DEVIN_BOOKER_1_NBA-game-ou-over",
+          "marketName": "Devin Booker Points Over/Under",
+          "statID": "points",
+          "statEntityID": "DEVIN_BOOKER_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "DEVIN_BOOKER_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-129",
+          "bookOdds": "-122",
+          "fairOverUnder": "25.5",
+          "bookOverUnder": "24.5",
+          "openFairOdds": "-112",
+          "openBookOdds": "-108",
+          "openFairOverUnder": "24.5",
+          "openBookOverUnder": "23.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-104",
+              "overUnder": "23.5",
+              "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.560754149&selectionId=12257186"
+            }
+          }
+        },
+        "points-GRAYSON_ALLEN_1_NBA-game-ou-over": {
+          "oddID": "points-GRAYSON_ALLEN_1_NBA-game-ou-over",
+          "opposingOddID": "points-GRAYSON_ALLEN_1_NBA-game-ou-under",
+          "statID": "points",
+          "statEntityID": "GRAYSON_ALLEN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "GRAYSON_ALLEN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+134",
+          "bookOdds": "-105",
+          "fairOverUnder": "19.5",
+          "bookOverUnder": "18.5",
+          "openFairOdds": "+114",
+          "openBookOdds": "+100",
+          "openFairOverUnder": "18.5",
+          "openBookOverUnder": "18.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+100",
+              "overUnder": "18.5",
+              "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.560754151&selectionId=37819081",
+              "altLines": [
+                {
+                  "odds": "-1100",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-250",
+                  "overUnder": "14.5",
+                  "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+124",
+                  "overUnder": "19.5",
+                  "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+330",
+                  "overUnder": "24.5",
+                  "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+870",
+                  "overUnder": "29.5",
+                  "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1800",
+                  "overUnder": "34.5",
+                  "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+                  "available": true
+                }
+              ]
+            }
+          },
+          "marketName": "Grayson Allen Points Over/Under"
+        },
+        "points-GRAYSON_ALLEN_1_NBA-game-ou-under": {
+          "oddID": "points-GRAYSON_ALLEN_1_NBA-game-ou-under",
+          "opposingOddID": "points-GRAYSON_ALLEN_1_NBA-game-ou-over",
+          "statID": "points",
+          "statEntityID": "GRAYSON_ALLEN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "GRAYSON_ALLEN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-134",
+          "bookOdds": "-125",
+          "fairOverUnder": "19.5",
+          "bookOverUnder": "18.5",
+          "openFairOdds": "-114",
+          "openBookOdds": "-132",
+          "openFairOverUnder": "18.5",
+          "openBookOverUnder": "18.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-132",
+              "overUnder": "18.5",
+              "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.560754151&selectionId=37819080"
+            }
+          },
+          "marketName": "Grayson Allen Points Over/Under"
+        },
+        "points-JALEN_GREEN_1_NBA-game-ou-over": {
+          "oddID": "points-JALEN_GREEN_1_NBA-game-ou-over",
+          "opposingOddID": "points-JALEN_GREEN_1_NBA-game-ou-under",
+          "marketName": "Jalen Green Points Over/Under",
+          "statID": "points",
+          "statEntityID": "JALEN_GREEN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "JALEN_GREEN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+111",
+          "bookOdds": "-116",
+          "fairOverUnder": "19.5",
+          "bookOverUnder": "18.5",
+          "openFairOdds": "+102",
+          "openBookOdds": "-112",
+          "openFairOverUnder": "18.5",
+          "openBookOverUnder": "18.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-114",
+              "overUnder": "18.5",
+              "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.560754150&selectionId=41386184",
+              "altLines": [
+                {
+                  "odds": "-2000",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-310",
+                  "overUnder": "14.5",
+                  "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+112",
+                  "overUnder": "19.5",
+                  "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+320",
+                  "overUnder": "24.5",
+                  "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+830",
+                  "overUnder": "29.5",
+                  "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1700",
+                  "overUnder": "34.5",
+                  "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "points-JALEN_GREEN_1_NBA-game-ou-under": {
+          "oddID": "points-JALEN_GREEN_1_NBA-game-ou-under",
+          "opposingOddID": "points-JALEN_GREEN_1_NBA-game-ou-over",
+          "marketName": "Jalen Green Points Over/Under",
+          "statID": "points",
+          "statEntityID": "JALEN_GREEN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "JALEN_GREEN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-111",
+          "bookOdds": "-114",
+          "fairOverUnder": "19.5",
+          "bookOverUnder": "18.5",
+          "openFairOdds": "-102",
+          "openBookOdds": "-118",
+          "openFairOverUnder": "18.5",
+          "openBookOverUnder": "18.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-114",
+              "overUnder": "18.5",
+              "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.560754150&selectionId=41386185"
+            }
+          }
+        },
+        "points-OSO_IGHODARO_1_NBA-game-ou-over": {
+          "oddID": "points-OSO_IGHODARO_1_NBA-game-ou-over",
+          "opposingOddID": "points-OSO_IGHODARO_1_NBA-game-ou-under",
+          "marketName": "Oso Ighodaro Points Over/Under",
+          "statID": "points",
+          "statEntityID": "OSO_IGHODARO_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "OSO_IGHODARO_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+141",
+          "bookOdds": "-115",
+          "fairOverUnder": "10.5",
+          "bookOverUnder": "9.5",
+          "openFairOdds": "+114",
+          "openBookOdds": "+100",
+          "openFairOverUnder": "9.5",
+          "openBookOverUnder": "9.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-114",
+              "overUnder": "9.5",
+              "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.560754153&selectionId=50184535",
+              "altLines": [
+                {
+                  "odds": "+360",
+                  "overUnder": "14.5",
+                  "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1300",
+                  "overUnder": "19.5",
+                  "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "points-OSO_IGHODARO_1_NBA-game-ou-under": {
+          "oddID": "points-OSO_IGHODARO_1_NBA-game-ou-under",
+          "opposingOddID": "points-OSO_IGHODARO_1_NBA-game-ou-over",
+          "marketName": "Oso Ighodaro Points Over/Under",
+          "statID": "points",
+          "statEntityID": "OSO_IGHODARO_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "OSO_IGHODARO_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-141",
+          "bookOdds": "-114",
+          "fairOverUnder": "10.5",
+          "bookOverUnder": "9.5",
+          "openFairOdds": "-114",
+          "openBookOdds": "-132",
+          "openFairOverUnder": "9.5",
+          "openBookOverUnder": "9.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-114",
+              "overUnder": "9.5",
+              "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.560754153&selectionId=50184532"
+            }
+          }
+        },
+        "rebounds-COLLIN_GILLESPIE_1_NBA-game-ou-over": {
+          "oddID": "rebounds-COLLIN_GILLESPIE_1_NBA-game-ou-over",
+          "opposingOddID": "rebounds-COLLIN_GILLESPIE_1_NBA-game-ou-under",
+          "marketName": "Collin Gillespie Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "COLLIN_GILLESPIE_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "COLLIN_GILLESPIE_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+127",
+          "bookOdds": "+111",
+          "fairOverUnder": "4.5",
+          "bookOverUnder": "4.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "+118",
+          "openFairOverUnder": "4",
+          "openBookOverUnder": "4.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+118",
+              "overUnder": "4.5",
+              "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.560754158&selectionId=43026356",
+              "altLines": [
+                {
+                  "odds": "-188",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+240",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+870",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+2000",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "rebounds-COLLIN_GILLESPIE_1_NBA-game-ou-under": {
+          "oddID": "rebounds-COLLIN_GILLESPIE_1_NBA-game-ou-under",
+          "opposingOddID": "rebounds-COLLIN_GILLESPIE_1_NBA-game-ou-over",
+          "marketName": "Collin Gillespie Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "COLLIN_GILLESPIE_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "COLLIN_GILLESPIE_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-127",
+          "bookOdds": "-150",
+          "fairOverUnder": "4.5",
+          "bookOverUnder": "4.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "-158",
+          "openFairOverUnder": "4",
+          "openBookOverUnder": "4.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-158",
+              "overUnder": "4.5",
+              "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.560754158&selectionId=43026355"
+            }
+          }
+        },
+        "rebounds-DEVIN_BOOKER_1_NBA-game-ou-over": {
+          "oddID": "rebounds-DEVIN_BOOKER_1_NBA-game-ou-over",
+          "opposingOddID": "rebounds-DEVIN_BOOKER_1_NBA-game-ou-under",
+          "marketName": "Devin Booker Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "DEVIN_BOOKER_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "DEVIN_BOOKER_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+118",
+          "bookOdds": "+102",
+          "fairOverUnder": "4.5",
+          "bookOverUnder": "4.5",
+          "openFairOdds": "+116",
+          "openBookOdds": "+102",
+          "openFairOverUnder": "4.5",
+          "openBookOverUnder": "4.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+102",
+              "overUnder": "4.5",
+              "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.560754155&selectionId=12257187",
+              "altLines": [
+                {
+                  "odds": "-215",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+210",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+750",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1700",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "rebounds-DEVIN_BOOKER_1_NBA-game-ou-under": {
+          "oddID": "rebounds-DEVIN_BOOKER_1_NBA-game-ou-under",
+          "opposingOddID": "rebounds-DEVIN_BOOKER_1_NBA-game-ou-over",
+          "marketName": "Devin Booker Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "DEVIN_BOOKER_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "DEVIN_BOOKER_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-118",
+          "bookOdds": "-140",
+          "fairOverUnder": "4.5",
+          "bookOverUnder": "4.5",
+          "openFairOdds": "-116",
+          "openBookOdds": "-136",
+          "openFairOverUnder": "4.5",
+          "openBookOverUnder": "4.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-136",
+              "overUnder": "4.5",
+              "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.560754155&selectionId=12257186"
+            }
+          }
+        },
+        "rebounds-GRAYSON_ALLEN_1_NBA-game-ou-over": {
+          "oddID": "rebounds-GRAYSON_ALLEN_1_NBA-game-ou-over",
+          "opposingOddID": "rebounds-GRAYSON_ALLEN_1_NBA-game-ou-under",
+          "statID": "rebounds",
+          "statEntityID": "GRAYSON_ALLEN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "GRAYSON_ALLEN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+144",
+          "bookOdds": "+128",
+          "fairOverUnder": "3.5",
+          "bookOverUnder": "3.5",
+          "openFairOdds": "+159",
+          "openBookOdds": "+142",
+          "openFairOverUnder": "3.5",
+          "openBookOverUnder": "3.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+128",
+              "overUnder": "3.5",
+              "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.560754157&selectionId=37819081",
+              "altLines": [
+                {
+                  "odds": "+560",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+                  "available": true
+                }
+              ]
+            }
+          },
+          "marketName": "Grayson Allen Rebounds Over/Under"
+        },
+        "rebounds-GRAYSON_ALLEN_1_NBA-game-ou-under": {
+          "oddID": "rebounds-GRAYSON_ALLEN_1_NBA-game-ou-under",
+          "opposingOddID": "rebounds-GRAYSON_ALLEN_1_NBA-game-ou-over",
+          "statID": "rebounds",
+          "statEntityID": "GRAYSON_ALLEN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "GRAYSON_ALLEN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-144",
+          "bookOdds": "-170",
+          "fairOverUnder": "3.5",
+          "bookOverUnder": "3.5",
+          "openFairOdds": "-159",
+          "openBookOdds": "-192",
+          "openFairOverUnder": "3.5",
+          "openBookOverUnder": "3.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-172",
+              "overUnder": "3.5",
+              "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.560754157&selectionId=37819080"
+            }
+          },
+          "marketName": "Grayson Allen Rebounds Over/Under"
+        },
+        "rebounds-JALEN_GREEN_1_NBA-game-ou-over": {
+          "oddID": "rebounds-JALEN_GREEN_1_NBA-game-ou-over",
+          "opposingOddID": "rebounds-JALEN_GREEN_1_NBA-game-ou-under",
+          "marketName": "Jalen Green Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "JALEN_GREEN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "JALEN_GREEN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+130",
+          "bookOdds": "-160",
+          "fairOverUnder": "4.5",
+          "bookOverUnder": "3.5",
+          "openFairOdds": "-137",
+          "openBookOdds": "-162",
+          "openFairOverUnder": "3.5",
+          "openBookOverUnder": "3.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-162",
+              "overUnder": "3.5",
+              "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.560754156&selectionId=41386184",
+              "altLines": [
+                {
+                  "odds": "+285",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1000",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "rebounds-JALEN_GREEN_1_NBA-game-ou-under": {
+          "oddID": "rebounds-JALEN_GREEN_1_NBA-game-ou-under",
+          "opposingOddID": "rebounds-JALEN_GREEN_1_NBA-game-ou-over",
+          "marketName": "Jalen Green Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "JALEN_GREEN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "JALEN_GREEN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-130",
+          "bookOdds": "+120",
+          "fairOverUnder": "4.5",
+          "bookOverUnder": "3.5",
+          "openFairOdds": "+137",
+          "openBookOdds": "+122",
+          "openFairOverUnder": "3.5",
+          "openBookOverUnder": "3.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+122",
+              "overUnder": "3.5",
+              "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.560754156&selectionId=41386185"
+            }
+          }
+        },
+        "rebounds-OSO_IGHODARO_1_NBA-game-ou-over": {
+          "oddID": "rebounds-OSO_IGHODARO_1_NBA-game-ou-over",
+          "opposingOddID": "rebounds-OSO_IGHODARO_1_NBA-game-ou-under",
+          "marketName": "Oso Ighodaro Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "OSO_IGHODARO_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "OSO_IGHODARO_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+148",
+          "bookOdds": "-120",
+          "fairOverUnder": "9.5",
+          "bookOverUnder": "8.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "-104",
+          "openFairOverUnder": "9",
+          "openBookOverUnder": "8.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-125",
+              "overUnder": "8.5",
+              "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.560754159&selectionId=50184535",
+              "altLines": [
+                {
+                  "odds": "-4500",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2026-03-06T06:39:39.000Z",
+                  "available": false
+                },
+                {
+                  "odds": "-770",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-210",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+114",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+285",
+                  "overUnder": "11.5",
+                  "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+750",
+                  "overUnder": "13.5",
+                  "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1400",
+                  "overUnder": "15.5",
+                  "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "rebounds-OSO_IGHODARO_1_NBA-game-ou-under": {
+          "oddID": "rebounds-OSO_IGHODARO_1_NBA-game-ou-under",
+          "opposingOddID": "rebounds-OSO_IGHODARO_1_NBA-game-ou-over",
+          "marketName": "Oso Ighodaro Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "OSO_IGHODARO_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "OSO_IGHODARO_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-148",
+          "bookOdds": "-110",
+          "fairOverUnder": "9.5",
+          "bookOverUnder": "8.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "-128",
+          "openFairOverUnder": "9",
+          "openBookOverUnder": "8.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-106",
+              "overUnder": "8.5",
+              "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.560754159&selectionId=50184532"
+            }
+          }
+        },
+        "blocks-COLLIN_GILLESPIE_1_NBA-game-ou-over": {
+          "oddID": "blocks-COLLIN_GILLESPIE_1_NBA-game-ou-over",
+          "opposingOddID": "blocks-COLLIN_GILLESPIE_1_NBA-game-ou-under",
+          "marketName": "Collin Gillespie Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "COLLIN_GILLESPIE_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "COLLIN_GILLESPIE_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+409",
+          "bookOdds": "+375",
+          "fairOverUnder": "0.5",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "+440",
+          "openBookOdds": "+400",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        },
+        "blocks-COLLIN_GILLESPIE_1_NBA-game-ou-under": {
+          "oddID": "blocks-COLLIN_GILLESPIE_1_NBA-game-ou-under",
+          "opposingOddID": "blocks-COLLIN_GILLESPIE_1_NBA-game-ou-over",
+          "marketName": "Collin Gillespie Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "COLLIN_GILLESPIE_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "COLLIN_GILLESPIE_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-409",
+          "fairOverUnder": "0.5",
+          "openFairOdds": "-440",
+          "openFairOverUnder": "0.5",
+          "scoringSupported": true,
+          "bookOdds": "-625",
+          "bookOverUnder": "0.5",
+          "byBookmaker": {},
+          "openBookOdds": "-667",
+          "openBookOverUnder": "0.5"
+        },
+        "blocks-DEVIN_BOOKER_1_NBA-game-ou-over": {
+          "oddID": "blocks-DEVIN_BOOKER_1_NBA-game-ou-over",
+          "opposingOddID": "blocks-DEVIN_BOOKER_1_NBA-game-ou-under",
+          "marketName": "Devin Booker Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "DEVIN_BOOKER_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "DEVIN_BOOKER_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+225",
+          "bookOdds": "+190",
+          "fairOverUnder": "0.5",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "+253",
+          "openBookOdds": "+230",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        },
+        "blocks-DEVIN_BOOKER_1_NBA-game-ou-under": {
+          "oddID": "blocks-DEVIN_BOOKER_1_NBA-game-ou-under",
+          "opposingOddID": "blocks-DEVIN_BOOKER_1_NBA-game-ou-over",
+          "marketName": "Devin Booker Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "DEVIN_BOOKER_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "DEVIN_BOOKER_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-225",
+          "fairOverUnder": "0.5",
+          "openFairOdds": "-253",
+          "openFairOverUnder": "0.5",
+          "scoringSupported": true,
+          "bookOdds": "-345",
+          "bookOverUnder": "0.5",
+          "byBookmaker": {},
+          "openBookOdds": "-345",
+          "openBookOverUnder": "0.5"
+        },
+        "blocks-JALEN_GREEN_1_NBA-game-ou-over": {
+          "oddID": "blocks-JALEN_GREEN_1_NBA-game-ou-over",
+          "opposingOddID": "blocks-JALEN_GREEN_1_NBA-game-ou-under",
+          "marketName": "Jalen Green Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "JALEN_GREEN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "JALEN_GREEN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+266",
+          "bookOdds": "+232",
+          "fairOverUnder": "0.5",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "+286",
+          "openBookOdds": "+260",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        },
+        "blocks-JALEN_GREEN_1_NBA-game-ou-under": {
+          "oddID": "blocks-JALEN_GREEN_1_NBA-game-ou-under",
+          "opposingOddID": "blocks-JALEN_GREEN_1_NBA-game-ou-over",
+          "marketName": "Jalen Green Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "JALEN_GREEN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "JALEN_GREEN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-266",
+          "fairOverUnder": "0.5",
+          "openFairOdds": "-286",
+          "openFairOverUnder": "0.5",
+          "scoringSupported": true,
+          "bookOdds": "-400",
+          "bookOverUnder": "0.5",
+          "byBookmaker": {},
+          "openBookOdds": "-400",
+          "openBookOverUnder": "0.5"
+        },
+        "blocks-OSO_IGHODARO_1_NBA-game-ou-over": {
+          "oddID": "blocks-OSO_IGHODARO_1_NBA-game-ou-over",
+          "opposingOddID": "blocks-OSO_IGHODARO_1_NBA-game-ou-under",
+          "marketName": "Oso Ighodaro Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "OSO_IGHODARO_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "OSO_IGHODARO_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+178",
+          "bookOdds": "-244",
+          "fairOverUnder": "1.5",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "-204",
+          "openBookOdds": "-225",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        },
+        "blocks-OSO_IGHODARO_1_NBA-game-ou-under": {
+          "oddID": "blocks-OSO_IGHODARO_1_NBA-game-ou-under",
+          "opposingOddID": "blocks-OSO_IGHODARO_1_NBA-game-ou-over",
+          "marketName": "Oso Ighodaro Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "OSO_IGHODARO_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "OSO_IGHODARO_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-178",
+          "fairOverUnder": "1.5",
+          "openFairOdds": "+204",
+          "openFairOverUnder": "0.5",
+          "scoringSupported": true,
+          "bookOdds": "+175",
+          "bookOverUnder": "0.5",
+          "byBookmaker": {},
+          "openBookOdds": "+170",
+          "openBookOverUnder": "0.5"
+        },
+        "steals-COLLIN_GILLESPIE_1_NBA-game-ou-over": {
+          "oddID": "steals-COLLIN_GILLESPIE_1_NBA-game-ou-over",
+          "opposingOddID": "steals-COLLIN_GILLESPIE_1_NBA-game-ou-under",
+          "marketName": "Collin Gillespie Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "COLLIN_GILLESPIE_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "COLLIN_GILLESPIE_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+179",
+          "bookOdds": "+161",
+          "fairOverUnder": "1.5",
+          "bookOverUnder": "1.5",
+          "openFairOdds": "-200",
+          "openBookOdds": "-220",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+162",
+              "overUnder": "1.5",
+              "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+              "available": true,
+              "altLines": [
+                {
+                  "odds": "-310",
+                  "overUnder": "0.5",
+                  "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+490",
+                  "overUnder": "2.5",
+                  "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+                  "available": true
+                }
+              ],
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.560798761&selectionId=43026356"
+            }
+          }
+        },
+        "steals-COLLIN_GILLESPIE_1_NBA-game-ou-under": {
+          "oddID": "steals-COLLIN_GILLESPIE_1_NBA-game-ou-under",
+          "opposingOddID": "steals-COLLIN_GILLESPIE_1_NBA-game-ou-over",
+          "marketName": "Collin Gillespie Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "COLLIN_GILLESPIE_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "COLLIN_GILLESPIE_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-179",
+          "fairOverUnder": "1.5",
+          "openFairOdds": "+200",
+          "openFairOverUnder": "0.5",
+          "scoringSupported": true,
+          "bookOdds": "-220",
+          "bookOverUnder": "1.5",
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-220",
+              "overUnder": "1.5",
+              "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.560798761&selectionId=43026355"
+            }
+          },
+          "openBookOdds": "+165",
+          "openBookOverUnder": "0.5"
+        },
+        "steals-DEVIN_BOOKER_1_NBA-game-ou-over": {
+          "oddID": "steals-DEVIN_BOOKER_1_NBA-game-ou-over",
+          "opposingOddID": "steals-DEVIN_BOOKER_1_NBA-game-ou-under",
+          "marketName": "Devin Booker Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "DEVIN_BOOKER_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "DEVIN_BOOKER_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "-176",
+          "fairOverUnder": "1",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "-154",
+          "openBookOdds": "-170",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        },
+        "steals-DEVIN_BOOKER_1_NBA-game-ou-under": {
+          "oddID": "steals-DEVIN_BOOKER_1_NBA-game-ou-under",
+          "opposingOddID": "steals-DEVIN_BOOKER_1_NBA-game-ou-over",
+          "marketName": "Devin Booker Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "DEVIN_BOOKER_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "DEVIN_BOOKER_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "fairOverUnder": "1",
+          "openFairOdds": "+154",
+          "openFairOverUnder": "0.5",
+          "scoringSupported": true,
+          "bookOdds": "+132",
+          "bookOverUnder": "0.5",
+          "byBookmaker": {},
+          "openBookOdds": "+132",
+          "openBookOverUnder": "0.5"
+        },
+        "steals-JALEN_GREEN_1_NBA-game-ou-over": {
+          "oddID": "steals-JALEN_GREEN_1_NBA-game-ou-over",
+          "opposingOddID": "steals-JALEN_GREEN_1_NBA-game-ou-under",
+          "marketName": "Jalen Green Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "JALEN_GREEN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "JALEN_GREEN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+157",
+          "bookOdds": "+136",
+          "fairOverUnder": "1.5",
+          "bookOverUnder": "1.5",
+          "openFairOdds": "+192",
+          "openBookOdds": "+175",
+          "openFairOverUnder": "1.5",
+          "openBookOverUnder": "1.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+136",
+              "overUnder": "1.5",
+              "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+              "available": true,
+              "altLines": [
+                {
+                  "odds": "-360",
+                  "overUnder": "0.5",
+                  "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+430",
+                  "overUnder": "2.5",
+                  "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+                  "available": true
+                }
+              ],
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.560798759&selectionId=41386184"
+            }
+          }
+        },
+        "steals-JALEN_GREEN_1_NBA-game-ou-under": {
+          "oddID": "steals-JALEN_GREEN_1_NBA-game-ou-under",
+          "opposingOddID": "steals-JALEN_GREEN_1_NBA-game-ou-over",
+          "marketName": "Jalen Green Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "JALEN_GREEN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "JALEN_GREEN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-157",
+          "fairOverUnder": "1.5",
+          "openFairOdds": "-192",
+          "openFairOverUnder": "1.5",
+          "scoringSupported": true,
+          "bookOdds": "-198",
+          "bookOverUnder": "1.5",
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-182",
+              "overUnder": "1.5",
+              "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.560798759&selectionId=41386185"
+            }
+          },
+          "openBookOdds": "-244",
+          "openBookOverUnder": "1.5"
+        },
+        "steals-OSO_IGHODARO_1_NBA-game-ou-over": {
+          "oddID": "steals-OSO_IGHODARO_1_NBA-game-ou-over",
+          "opposingOddID": "steals-OSO_IGHODARO_1_NBA-game-ou-under",
+          "marketName": "Oso Ighodaro Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "OSO_IGHODARO_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "OSO_IGHODARO_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+132",
+          "bookOdds": "+131",
+          "fairOverUnder": "1.5",
+          "bookOverUnder": "1.5",
+          "openFairOdds": "+143",
+          "openBookOdds": "+130",
+          "openFairOverUnder": "1.5",
+          "openBookOverUnder": "1.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-245",
+              "overUnder": "0.5",
+              "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+              "available": true,
+              "altLines": [
+                {
+                  "odds": "+198",
+                  "overUnder": "1.5",
+                  "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+640",
+                  "overUnder": "2.5",
+                  "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+                  "available": true
+                }
+              ],
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.560798763&selectionId=50184529"
+            }
+          }
+        },
+        "steals-OSO_IGHODARO_1_NBA-game-ou-under": {
+          "oddID": "steals-OSO_IGHODARO_1_NBA-game-ou-under",
+          "opposingOddID": "steals-OSO_IGHODARO_1_NBA-game-ou-over",
+          "marketName": "Oso Ighodaro Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "OSO_IGHODARO_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "OSO_IGHODARO_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-132",
+          "fairOverUnder": "1.5",
+          "openFairOdds": "-143",
+          "openFairOverUnder": "1.5",
+          "scoringSupported": true,
+          "bookOdds": "-132",
+          "bookOverUnder": "1.5",
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+142",
+              "overUnder": "0.5",
+              "lastUpdatedAt": "2026-03-06T12:58:08.788Z",
+              "available": false
+            }
+          },
+          "openBookOdds": "-175",
+          "openBookOverUnder": "1.5"
+        },
+        "blocks-GRAYSON_ALLEN_1_NBA-game-ou-over": {
+          "oddID": "blocks-GRAYSON_ALLEN_1_NBA-game-ou-over",
+          "opposingOddID": "blocks-GRAYSON_ALLEN_1_NBA-game-ou-under",
+          "marketName": "Grayson Allen Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "GRAYSON_ALLEN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "GRAYSON_ALLEN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+193",
+          "bookOdds": "+164",
+          "fairOverUnder": "0.5",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "+214",
+          "openBookOdds": "+195",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        },
+        "blocks-GRAYSON_ALLEN_1_NBA-game-ou-under": {
+          "oddID": "blocks-GRAYSON_ALLEN_1_NBA-game-ou-under",
+          "opposingOddID": "blocks-GRAYSON_ALLEN_1_NBA-game-ou-over",
+          "marketName": "Grayson Allen Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "GRAYSON_ALLEN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "GRAYSON_ALLEN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-193",
+          "fairOverUnder": "0.5",
+          "openFairOdds": "-214",
+          "openFairOverUnder": "0.5",
+          "scoringSupported": true,
+          "bookOdds": "-270",
+          "bookOverUnder": "0.5",
+          "byBookmaker": {},
+          "openBookOdds": "-278",
+          "openBookOverUnder": "0.5"
+        },
+        "steals-GRAYSON_ALLEN_1_NBA-game-ou-over": {
+          "oddID": "steals-GRAYSON_ALLEN_1_NBA-game-ou-over",
+          "opposingOddID": "steals-GRAYSON_ALLEN_1_NBA-game-ou-under",
+          "marketName": "Grayson Allen Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "GRAYSON_ALLEN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "GRAYSON_ALLEN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+179",
+          "bookOdds": "+160",
+          "fairOverUnder": "1.5",
+          "bookOverUnder": "1.5",
+          "openFairOdds": "+176",
+          "openBookOdds": "+160",
+          "openFairOverUnder": "1.5",
+          "openBookOverUnder": "1.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+178",
+              "overUnder": "1.5",
+              "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+              "available": true,
+              "altLines": [
+                {
+                  "odds": "-280",
+                  "overUnder": "0.5",
+                  "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+550",
+                  "overUnder": "2.5",
+                  "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+                  "available": true
+                }
+              ],
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.560798760&selectionId=37819081"
+            }
+          }
+        },
+        "steals-GRAYSON_ALLEN_1_NBA-game-ou-under": {
+          "oddID": "steals-GRAYSON_ALLEN_1_NBA-game-ou-under",
+          "opposingOddID": "steals-GRAYSON_ALLEN_1_NBA-game-ou-over",
+          "marketName": "Grayson Allen Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "GRAYSON_ALLEN_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "GRAYSON_ALLEN_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-179",
+          "fairOverUnder": "1.5",
+          "openFairOdds": "-176",
+          "openFairOverUnder": "1.5",
+          "scoringSupported": true,
+          "bookOdds": "-222",
+          "bookOverUnder": "1.5",
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-245",
+              "overUnder": "1.5",
+              "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.560798760&selectionId=37819080"
+            }
+          },
+          "openBookOdds": "-222",
+          "openBookOverUnder": "1.5"
+        }
+      },
+      "players": {
+        "COLLIN_GILLESPIE_1_NBA": {
+          "playerID": "COLLIN_GILLESPIE_1_NBA",
+          "teamID": "PHOENIX_SUNS_NBA",
+          "firstName": "Collin",
+          "lastName": "Gillespie",
+          "name": "Collin Gillespie"
+        },
+        "DEVIN_BOOKER_1_NBA": {
+          "playerID": "DEVIN_BOOKER_1_NBA",
+          "teamID": "PHOENIX_SUNS_NBA",
+          "firstName": "Devin",
+          "lastName": "Booker",
+          "name": "Devin Booker"
+        },
+        "JALEN_GREEN_1_NBA": {
+          "playerID": "JALEN_GREEN_1_NBA",
+          "teamID": "PHOENIX_SUNS_NBA",
+          "firstName": "Jalen",
+          "lastName": "Green",
+          "name": "Jalen Green"
+        },
+        "OSO_IGHODARO_1_NBA": {
+          "playerID": "OSO_IGHODARO_1_NBA",
+          "teamID": "PHOENIX_SUNS_NBA",
+          "firstName": "Oso",
+          "lastName": "Ighodaro",
+          "name": "Oso Ighodaro"
+        },
+        "ROYCE_ONEALE_1_NBA": {
+          "playerID": "ROYCE_ONEALE_1_NBA",
+          "teamID": "PHOENIX_SUNS_NBA",
+          "firstName": "Royce",
+          "lastName": "O'Neale",
+          "name": "Royce O'Neale"
+        },
+        "SADDIQ_BEY_1_NBA": {
+          "playerID": "SADDIQ_BEY_1_NBA",
+          "teamID": "NEW_ORLEANS_PELICANS_NBA",
+          "firstName": "Saddiq",
+          "lastName": "Bey",
+          "name": "Saddiq Bey"
+        },
+        "TREY_MURPHY_III_1_NBA": {
+          "playerID": "TREY_MURPHY_III_1_NBA",
+          "teamID": "NEW_ORLEANS_PELICANS_NBA",
+          "firstName": "Trey",
+          "lastName": "Murphy",
+          "name": "Trey Murphy III"
+        },
+        "YVES_MISSI_1_NBA": {
+          "playerID": "YVES_MISSI_1_NBA",
+          "teamID": "NEW_ORLEANS_PELICANS_NBA",
+          "firstName": "Yves",
+          "lastName": "Missi",
+          "name": "Yves Missi"
+        },
+        "ZION_WILLIAMSON_1_NBA": {
+          "playerID": "ZION_WILLIAMSON_1_NBA",
+          "teamID": "NEW_ORLEANS_PELICANS_NBA",
+          "firstName": "Zion",
+          "lastName": "Williamson",
+          "name": "Zion Williamson"
+        },
+        "GRAYSON_ALLEN_1_NBA": {
+          "playerID": "GRAYSON_ALLEN_1_NBA",
+          "teamID": "PHOENIX_SUNS_NBA",
+          "firstName": "Grayson",
+          "lastName": "Allen",
+          "name": "Grayson Allen"
+        },
+        "DEJOUNTE_MURRAY_1_NBA": {
+          "playerID": "DEJOUNTE_MURRAY_1_NBA",
+          "teamID": "NEW_ORLEANS_PELICANS_NBA",
+          "firstName": "Dejounte",
+          "lastName": "Murray",
+          "name": "Dejounte Murray"
+        },
+        "HERBERT_JONES_1_NBA": {
+          "playerID": "HERBERT_JONES_1_NBA",
+          "teamID": "NEW_ORLEANS_PELICANS_NBA",
+          "firstName": "Herbert",
+          "lastName": "Jones",
+          "name": "Herbert Jones"
+        }
+      },
+      "results": {}
+    }
+  ]
+}

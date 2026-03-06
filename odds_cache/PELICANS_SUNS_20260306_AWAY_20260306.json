@@ -1,0 +1,1748 @@
+{
+  "nextCursor": "n.1772848800000.g2bzegUBJW1x5TJ6hQO2",
+  "success": true,
+  "data": [
+    {
+      "eventID": "g2bzegUBJW1x5TJ6hQO2",
+      "sportID": "BASKETBALL",
+      "leagueID": "NBA",
+      "type": "match",
+      "teams": {
+        "home": {
+          "teamID": "PHOENIX_SUNS_NBA",
+          "names": {
+            "long": "Phoenix Suns",
+            "medium": "Suns",
+            "short": "PHX",
+            "location": "Phoenix"
+          },
+          "colors": {
+            "primary": "#E56020",
+            "secondary": "#1D1160",
+            "primaryContrast": "#000000",
+            "secondaryContrast": "#E56020"
+          },
+          "statEntityID": "home"
+        },
+        "away": {
+          "teamID": "NEW_ORLEANS_PELICANS_NBA",
+          "names": {
+            "long": "New Orleans Pelicans",
+            "medium": "Pelicans",
+            "short": "NOP",
+            "location": "New Orleans"
+          },
+          "colors": {
+            "primary": "#002B5C",
+            "secondary": "#B4975A",
+            "primaryContrast": "#FFFFFF",
+            "secondaryContrast": "#002B5C"
+          },
+          "statEntityID": "away"
+        }
+      },
+      "status": {
+        "started": false,
+        "completed": false,
+        "cancelled": false,
+        "ended": false,
+        "live": false,
+        "delayed": false,
+        "currentPeriodID": "",
+        "previousPeriodID": "",
+        "displayShort": "",
+        "displayLong": "Upcoming",
+        "inBreak": false,
+        "startsAt": "2026-03-07T02:00:00.000Z",
+        "previousStartsAt": [],
+        "hardStart": true,
+        "periods": {
+          "started": [],
+          "ended": []
+        },
+        "oddsPresent": true,
+        "oddsAvailable": true,
+        "finalized": false
+      },
+      "info": {
+        "seasonWeek": "NBA 25/26",
+        "venue": {
+          "name": "Mortgage Matchup Center",
+          "countryName": "United States",
+          "countryCode": "US",
+          "regionName": "Arizona",
+          "regionCode": "AZ",
+          "city": "Phoenix",
+          "address": "201 E Jefferson St, Phoenix, AZ 85004",
+          "capacity": 18055
+        }
+      },
+      "links": {
+        "bookmakers": {
+          "fanduel": "https://sportsbook.fanduel.com/basketball/-/35333799",
+          "sportsbet": "https://www.sportsbet.com.au/betting/basketball---us/nba/new-orleans-pelicans-at-phoenix-suns-10223759",
+          "pointsbet": "https://pointsbet.com.au/sports/basketball/NBA/2634168",
+          "paddypower": "https://www.paddypower.com/basketball/nba/new-orleans-pelicans-@-phoenix-suns-35333799",
+          "1xbet": "https://1xbet.com/en/line/football/13589-nba/311442832-phoenix-suns-new-orleans-pelicans",
+          "lowvig": "https://sports.lowvig.ag/sportsbook/basketball/nba/game/490979554",
+          "betonline": "https://sports.betonline.ag/sportsbook/basketball/nba/game/490979554",
+          "boylesports": "https://www.boylesports.com/sports/basketball/event/usa-nba/phoenix-suns-v-new-orleans-pelicans",
+          "betrsportsbook": "https://www.betr.com.au/sports/Basketball/107/United-States-of-America/NBA/New-Orleans-Pelicans-@-Phoenix-Suns/2009631/All-Markets",
+          "coolbet": "https://www.coolbet.com/en/sports/match/5121652",
+          "caesars": "https://sportsbook.caesars.com/us/nj/bet/basketball/35bed73c-d261-4445-9697-d335fa9f5898/new-orleans-pelicans-at-phoenix-suns",
+          "coral": "https://sports.coral.co.uk/event/basketball/basketball-usa/nba/phx-suns-v-no-pelicans/42190159",
+          "draftkings": "https://sportsbook.draftkings.com/event/33748908",
+          "tab": "https://www.tab.com.au/sports/betting/Basketball/competitions/NBA/matches/Phoenix%20v%20New%20Orleans",
+          "betmgm": "https://sports.nj.betmgm.com/en/sports/events/19025792",
+          "fliff": "https://sports.getfliff.com/markets/377352_c_p_204_prematch",
+          "ladbrokes": "https://www.ladbrokes.com.au/sports/-/-/-/2b884751-4b58-4684-a6cc-8e03e24ba14f",
+          "neds": "https://www.neds.com.au/sports/-/-/-/2b884751-4b58-4684-a6cc-8e03e24ba14f",
+          "ballybet": "https://play.ballybet.com/sports#event/1024653452",
+          "betparx": "https://nj.betparx.com/kambi#event/1024653452",
+          "betrivers": "https://nj.betrivers.com/?page=sportsbook#event/1024653452",
+          "casumo": "https://www.casumo.com/en-gb/sports#event/1024653452",
+          "grosvenor": "https://www.grosvenorcasinos.com/sport#event/1024653452",
+          "leovegas": "https://www.leovegas.co.uk/betting#event/1024653452",
+          "livescorebet": "https://www.livescorebet.com/uk/sports/basketball/nba/phoenix-suns-new-orleans-pelicans/SBTE_2_1024653452",
+          "tabtouch": "https://www.tabtouch.mobi/tabtouch-sports/event/1024653452",
+          "unibet": "https://www.unibet.com/betting/sports/event/1024653452",
+          "virginbet": "https://www.virginbet.com/sports/basketball/nba/phoenix-suns-new-orleans-pelicans/SBTE_2_1024653452",
+          "williamhill": "https://sports.williamhill.com/betting/en-gb/basketball/OB_EV38970534/new-orleans-pelicans-at-phoenix-suns",
+          "espnbet": "https://espnbet.com/sport/basketball/organization/united-states/competition/nba/event/9da36457-5ac0-4e0b-8587-545f37f07e08",
+          "thescorebet": "https://thescore.bet/sport/basketball/organization/united-states/competition/nba/event/9da36457-5ac0-4e0b-8587-545f37f07e08",
+          "betsson": "https://www.betsson.com/en/sportsbook/basketball/nba/nba?eventId=f-61KUBPmvxkudUmlcSqheqQ",
+          "nordicbet": "https://www.nordicbet.com/en/sportsbook/basketball/nba/nba/phoenix-suns-new-orleans-pelicans",
+          "playup": "https://www.playup.com.au/betting/sports/nba/phoenix-suns-v-new-orleans-pelicans/10216",
+          "betfairsportsbook": "https://www.betfair.com/betting/basketball/nba/new-orleans-pelicans-@-phoenix-suns/e-35333799",
+          "matchbook": "https://www.matchbook.com/events/basketball/united-states-of-america/nba/32680553441900045",
+          "hardrockbet": "https://app.hardrock.bet/home/competition/nba/6687992027469840724",
+          "betway": "https://betway.com/en/sports/evt/16447458",
+          "pinnacle": "https://www.pinnacle.com/en/basketball/nba/new-orleans-pelicans-vs-phoenix-suns/1625107444",
+          "bovada": "https://www.bovada.lv/sports/basketball/nba/new-orleans-pelicans-phoenix-suns-202603062100",
+          "everygame": "https://sports.everygame.eu/en/Bets/Basketball/NBA-Lines/New-Orleans-Pelicans-at-Phoenix-Suns/2809261"
+        }
+      },
+      "odds": {
+        "assists-TREY_MURPHY_III_1_NBA-game-ou-over": {
+          "oddID": "assists-TREY_MURPHY_III_1_NBA-game-ou-over",
+          "opposingOddID": "assists-TREY_MURPHY_III_1_NBA-game-ou-under",
+          "marketName": "Trey Murphy III Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "TREY_MURPHY_III_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "TREY_MURPHY_III_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+101",
+          "bookOdds": "-113",
+          "fairOverUnder": "3.5",
+          "bookOverUnder": "3.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "-114",
+          "openFairOverUnder": "4",
+          "openBookOverUnder": "3.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-114",
+              "overUnder": "3.5",
+              "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.560754523&selectionId=40336995",
+              "altLines": [
+                {
+                  "odds": "-1100",
+                  "overUnder": "1.5",
+                  "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+390",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1300",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "assists-TREY_MURPHY_III_1_NBA-game-ou-under": {
+          "oddID": "assists-TREY_MURPHY_III_1_NBA-game-ou-under",
+          "opposingOddID": "assists-TREY_MURPHY_III_1_NBA-game-ou-over",
+          "marketName": "Trey Murphy III Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "TREY_MURPHY_III_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "TREY_MURPHY_III_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-101",
+          "bookOdds": "-115",
+          "fairOverUnder": "3.5",
+          "bookOverUnder": "3.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "-114",
+          "openFairOverUnder": "4",
+          "openBookOverUnder": "3.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-114",
+              "overUnder": "3.5",
+              "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.560754523&selectionId=40336994"
+            }
+          }
+        },
+        "points-SADDIQ_BEY_1_NBA-game-ou-over": {
+          "oddID": "points-SADDIQ_BEY_1_NBA-game-ou-over",
+          "opposingOddID": "points-SADDIQ_BEY_1_NBA-game-ou-under",
+          "marketName": "Saddiq Bey Points Over/Under",
+          "statID": "points",
+          "statEntityID": "SADDIQ_BEY_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "SADDIQ_BEY_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+118",
+          "bookOdds": "-120",
+          "fairOverUnder": "17.5",
+          "bookOverUnder": "16.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "-118",
+          "openFairOverUnder": "17.5",
+          "openBookOverUnder": "16.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-118",
+              "overUnder": "16.5",
+              "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.560754520&selectionId=38090839",
+              "altLines": [
+                {
+                  "odds": "-1000",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-196",
+                  "overUnder": "14.5",
+                  "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+176",
+                  "overUnder": "19.5",
+                  "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+520",
+                  "overUnder": "24.5",
+                  "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1300",
+                  "overUnder": "29.5",
+                  "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+3500",
+                  "overUnder": "34.5",
+                  "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "points-SADDIQ_BEY_1_NBA-game-ou-under": {
+          "oddID": "points-SADDIQ_BEY_1_NBA-game-ou-under",
+          "opposingOddID": "points-SADDIQ_BEY_1_NBA-game-ou-over",
+          "marketName": "Saddiq Bey Points Over/Under",
+          "statID": "points",
+          "statEntityID": "SADDIQ_BEY_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "SADDIQ_BEY_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-118",
+          "bookOdds": "-111",
+          "fairOverUnder": "17.5",
+          "bookOverUnder": "16.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "-112",
+          "openFairOverUnder": "17.5",
+          "openBookOverUnder": "16.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-112",
+              "overUnder": "16.5",
+              "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.560754520&selectionId=38090838"
+            }
+          }
+        },
+        "points-TREY_MURPHY_III_1_NBA-game-ou-over": {
+          "oddID": "points-TREY_MURPHY_III_1_NBA-game-ou-over",
+          "opposingOddID": "points-TREY_MURPHY_III_1_NBA-game-ou-under",
+          "marketName": "Trey Murphy III Points Over/Under",
+          "statID": "points",
+          "statEntityID": "TREY_MURPHY_III_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "TREY_MURPHY_III_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+123",
+          "bookOdds": "-122",
+          "fairOverUnder": "20.5",
+          "bookOverUnder": "19.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "-125",
+          "openFairOverUnder": "21",
+          "openBookOverUnder": "19.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-125",
+              "overUnder": "19.5",
+              "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.560754623&selectionId=40336995",
+              "altLines": [
+                {
+                  "odds": "-3500",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "-430",
+                  "overUnder": "14.5",
+                  "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+235",
+                  "overUnder": "24.5",
+                  "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+600",
+                  "overUnder": "29.5",
+                  "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1400",
+                  "overUnder": "34.5",
+                  "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+4000",
+                  "overUnder": "39.5",
+                  "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "points-TREY_MURPHY_III_1_NBA-game-ou-under": {
+          "oddID": "points-TREY_MURPHY_III_1_NBA-game-ou-under",
+          "opposingOddID": "points-TREY_MURPHY_III_1_NBA-game-ou-over",
+          "marketName": "Trey Murphy III Points Over/Under",
+          "statID": "points",
+          "statEntityID": "TREY_MURPHY_III_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "TREY_MURPHY_III_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-123",
+          "bookOdds": "-110",
+          "fairOverUnder": "20.5",
+          "bookOverUnder": "19.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "-106",
+          "openFairOverUnder": "21",
+          "openBookOverUnder": "19.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-106",
+              "overUnder": "19.5",
+              "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.560754623&selectionId=40336994"
+            }
+          }
+        },
+        "rebounds-SADDIQ_BEY_1_NBA-game-ou-over": {
+          "oddID": "rebounds-SADDIQ_BEY_1_NBA-game-ou-over",
+          "opposingOddID": "rebounds-SADDIQ_BEY_1_NBA-game-ou-under",
+          "marketName": "Saddiq Bey Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "SADDIQ_BEY_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "SADDIQ_BEY_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+107",
+          "bookOdds": "-108",
+          "fairOverUnder": "5.5",
+          "bookOverUnder": "5.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "-114",
+          "openFairOverUnder": "6",
+          "openBookOverUnder": "5.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-114",
+              "overUnder": "5.5",
+              "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.560754522&selectionId=38090839",
+              "altLines": [
+                {
+                  "odds": "-530",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+300",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+800",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1800",
+                  "overUnder": "11.5",
+                  "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "rebounds-SADDIQ_BEY_1_NBA-game-ou-under": {
+          "oddID": "rebounds-SADDIQ_BEY_1_NBA-game-ou-under",
+          "opposingOddID": "rebounds-SADDIQ_BEY_1_NBA-game-ou-over",
+          "marketName": "Saddiq Bey Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "SADDIQ_BEY_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "SADDIQ_BEY_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-107",
+          "bookOdds": "-124",
+          "fairOverUnder": "5.5",
+          "bookOverUnder": "5.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "-114",
+          "openFairOverUnder": "6",
+          "openBookOverUnder": "5.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-114",
+              "overUnder": "5.5",
+              "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.560754522&selectionId=38090838"
+            }
+          }
+        },
+        "rebounds-TREY_MURPHY_III_1_NBA-game-ou-over": {
+          "oddID": "rebounds-TREY_MURPHY_III_1_NBA-game-ou-over",
+          "opposingOddID": "rebounds-TREY_MURPHY_III_1_NBA-game-ou-under",
+          "marketName": "Trey Murphy III Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "TREY_MURPHY_III_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "TREY_MURPHY_III_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+141",
+          "bookOdds": "-145",
+          "fairOverUnder": "5.5",
+          "bookOverUnder": "4.5",
+          "openFairOdds": "+144",
+          "openBookOdds": "+128",
+          "openFairOverUnder": "5.5",
+          "openBookOverUnder": "5.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+128",
+              "overUnder": "5.5",
+              "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.560754521&selectionId=40336995",
+              "altLines": [
+                {
+                  "odds": "-350",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+450",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1100",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "rebounds-TREY_MURPHY_III_1_NBA-game-ou-under": {
+          "oddID": "rebounds-TREY_MURPHY_III_1_NBA-game-ou-under",
+          "opposingOddID": "rebounds-TREY_MURPHY_III_1_NBA-game-ou-over",
+          "marketName": "Trey Murphy III Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "TREY_MURPHY_III_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "TREY_MURPHY_III_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-141",
+          "bookOdds": "+107",
+          "fairOverUnder": "5.5",
+          "bookOverUnder": "4.5",
+          "openFairOdds": "-144",
+          "openBookOdds": "-172",
+          "openFairOverUnder": "5.5",
+          "openBookOverUnder": "5.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-172",
+              "overUnder": "5.5",
+              "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.560754521&selectionId=40336994"
+            }
+          }
+        },
+        "assists-DEJOUNTE_MURRAY_1_NBA-game-ou-over": {
+          "oddID": "assists-DEJOUNTE_MURRAY_1_NBA-game-ou-over",
+          "opposingOddID": "assists-DEJOUNTE_MURRAY_1_NBA-game-ou-under",
+          "marketName": "Dejounte Murray Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "DEJOUNTE_MURRAY_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "DEJOUNTE_MURRAY_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "-109",
+          "fairOverUnder": "6",
+          "bookOverUnder": "5.5",
+          "openFairOdds": "+106",
+          "openBookOdds": "-104",
+          "openFairOverUnder": "5.5",
+          "openBookOverUnder": "5.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-106",
+              "overUnder": "5.5",
+              "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+              "available": true,
+              "altLines": [
+                {
+                  "odds": "-480",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+300",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+800",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1800",
+                  "overUnder": "11.5",
+                  "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+                  "available": true
+                }
+              ],
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.560754753&selectionId=15695648"
+            }
+          }
+        },
+        "assists-DEJOUNTE_MURRAY_1_NBA-game-ou-under": {
+          "oddID": "assists-DEJOUNTE_MURRAY_1_NBA-game-ou-under",
+          "opposingOddID": "assists-DEJOUNTE_MURRAY_1_NBA-game-ou-over",
+          "marketName": "Dejounte Murray Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "DEJOUNTE_MURRAY_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "DEJOUNTE_MURRAY_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "fairOverUnder": "6",
+          "openFairOdds": "-106",
+          "openFairOverUnder": "5.5",
+          "scoringSupported": true,
+          "bookOdds": "-122",
+          "bookOverUnder": "5.5",
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-125",
+              "overUnder": "5.5",
+              "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.560754753&selectionId=15695649"
+            }
+          },
+          "openBookOdds": "-125",
+          "openBookOverUnder": "5.5"
+        },
+        "points-DEJOUNTE_MURRAY_1_NBA-game-ou-over": {
+          "oddID": "points-DEJOUNTE_MURRAY_1_NBA-game-ou-over",
+          "opposingOddID": "points-DEJOUNTE_MURRAY_1_NBA-game-ou-under",
+          "marketName": "Dejounte Murray Points Over/Under",
+          "statID": "points",
+          "statEntityID": "DEJOUNTE_MURRAY_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "DEJOUNTE_MURRAY_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+117",
+          "bookOdds": "-125",
+          "fairOverUnder": "14.5",
+          "bookOverUnder": "13.5",
+          "openFairOdds": "+116",
+          "openBookOdds": "+106",
+          "openFairOverUnder": "14.5",
+          "openBookOverUnder": "14.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-125",
+              "overUnder": "13.5",
+              "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+              "available": true,
+              "altLines": [
+                {
+                  "odds": "-400",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+108",
+                  "overUnder": "14.5",
+                  "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+340",
+                  "overUnder": "19.5",
+                  "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1000",
+                  "overUnder": "24.5",
+                  "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+2500",
+                  "overUnder": "29.5",
+                  "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+                  "available": true
+                }
+              ],
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.560754751&selectionId=15695648"
+            }
+          }
+        },
+        "points-DEJOUNTE_MURRAY_1_NBA-game-ou-under": {
+          "oddID": "points-DEJOUNTE_MURRAY_1_NBA-game-ou-under",
+          "opposingOddID": "points-DEJOUNTE_MURRAY_1_NBA-game-ou-over",
+          "marketName": "Dejounte Murray Points Over/Under",
+          "statID": "points",
+          "statEntityID": "DEJOUNTE_MURRAY_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "DEJOUNTE_MURRAY_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-117",
+          "fairOverUnder": "14.5",
+          "openFairOdds": "-116",
+          "openFairOverUnder": "14.5",
+          "scoringSupported": true,
+          "bookOdds": "-106",
+          "bookOverUnder": "13.5",
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-106",
+              "overUnder": "13.5",
+              "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.560754751&selectionId=15695649"
+            }
+          },
+          "openBookOdds": "-104",
+          "openBookOverUnder": "13.5"
+        },
+        "rebounds-DEJOUNTE_MURRAY_1_NBA-game-ou-over": {
+          "oddID": "rebounds-DEJOUNTE_MURRAY_1_NBA-game-ou-over",
+          "opposingOddID": "rebounds-DEJOUNTE_MURRAY_1_NBA-game-ou-under",
+          "marketName": "Dejounte Murray Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "DEJOUNTE_MURRAY_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "DEJOUNTE_MURRAY_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+127",
+          "bookOdds": "+111",
+          "fairOverUnder": "4.5",
+          "bookOverUnder": "4.5",
+          "openFairOdds": "-162",
+          "openBookOdds": "-178",
+          "openFairOverUnder": "3.5",
+          "openBookOverUnder": "3.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+122",
+              "overUnder": "4.5",
+              "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+              "available": true,
+              "altLines": [
+                {
+                  "odds": "-180",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+250",
+                  "overUnder": "5.5",
+                  "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+870",
+                  "overUnder": "7.5",
+                  "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+1800",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+                  "available": true
+                }
+              ],
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.560754752&selectionId=15695648"
+            }
+          }
+        },
+        "rebounds-DEJOUNTE_MURRAY_1_NBA-game-ou-under": {
+          "oddID": "rebounds-DEJOUNTE_MURRAY_1_NBA-game-ou-under",
+          "opposingOddID": "rebounds-DEJOUNTE_MURRAY_1_NBA-game-ou-over",
+          "marketName": "Dejounte Murray Rebounds Over/Under",
+          "statID": "rebounds",
+          "statEntityID": "DEJOUNTE_MURRAY_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "DEJOUNTE_MURRAY_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-127",
+          "fairOverUnder": "4.5",
+          "openFairOdds": "+162",
+          "openFairOverUnder": "3.5",
+          "scoringSupported": true,
+          "bookOdds": "-152",
+          "bookOverUnder": "4.5",
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-162",
+              "overUnder": "4.5",
+              "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.560754752&selectionId=15695649"
+            }
+          },
+          "openBookOdds": "-166",
+          "openBookOverUnder": "4.5"
+        },
+        "assists-HERBERT_JONES_1_NBA-game-ou-over": {
+          "oddID": "assists-HERBERT_JONES_1_NBA-game-ou-over",
+          "opposingOddID": "assists-HERBERT_JONES_1_NBA-game-ou-under",
+          "statID": "assists",
+          "statEntityID": "HERBERT_JONES_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "HERBERT_JONES_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-109",
+          "bookOdds": "-127",
+          "fairOverUnder": "2.5",
+          "bookOverUnder": "2.5",
+          "openFairOdds": "+165",
+          "openBookOdds": "+150",
+          "openFairOverUnder": "3.5",
+          "openBookOverUnder": "3.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-122",
+              "overUnder": "2.5",
+              "lastUpdatedAt": "2026-03-06T12:58:08.788Z",
+              "available": false,
+              "altLines": [
+                {
+                  "odds": "+215",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2026-03-06T12:58:08.788Z",
+                  "available": true
+                }
+              ]
+            }
+          },
+          "marketName": "Herbert Jones Assists Over/Under"
+        },
+        "assists-HERBERT_JONES_1_NBA-game-ou-under": {
+          "oddID": "assists-HERBERT_JONES_1_NBA-game-ou-under",
+          "opposingOddID": "assists-HERBERT_JONES_1_NBA-game-ou-over",
+          "statID": "assists",
+          "statEntityID": "HERBERT_JONES_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "HERBERT_JONES_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+109",
+          "fairOverUnder": "2.5",
+          "openFairOdds": "-165",
+          "openFairOverUnder": "3.5",
+          "scoringSupported": true,
+          "marketName": "Herbert Jones Assists Over/Under",
+          "bookOdds": "-105",
+          "bookOverUnder": "2.5",
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-110",
+              "overUnder": "2.5",
+              "lastUpdatedAt": "2026-03-06T12:58:08.788Z",
+              "available": false
+            }
+          },
+          "openBookOdds": "-116",
+          "openBookOverUnder": "2.5"
+        },
+        "points-HERBERT_JONES_1_NBA-game-ou-over": {
+          "oddID": "points-HERBERT_JONES_1_NBA-game-ou-over",
+          "opposingOddID": "points-HERBERT_JONES_1_NBA-game-ou-under",
+          "statID": "points",
+          "statEntityID": "HERBERT_JONES_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "HERBERT_JONES_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "-115",
+          "fairOverUnder": "8.5",
+          "bookOverUnder": "8.5",
+          "openFairOdds": "+137",
+          "openBookOdds": "+124",
+          "openFairOverUnder": "9.5",
+          "openBookOverUnder": "9.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-114",
+              "overUnder": "8.5",
+              "lastUpdatedAt": "2026-03-06T12:58:08.788Z",
+              "available": true,
+              "altLines": [
+                {
+                  "odds": "+126",
+                  "overUnder": "9.5",
+                  "lastUpdatedAt": "2026-03-06T12:58:08.788Z",
+                  "available": true
+                }
+              ]
+            }
+          },
+          "marketName": "Herbert Jones Points Over/Under"
+        },
+        "points-HERBERT_JONES_1_NBA-game-ou-under": {
+          "oddID": "points-HERBERT_JONES_1_NBA-game-ou-under",
+          "opposingOddID": "points-HERBERT_JONES_1_NBA-game-ou-over",
+          "statID": "points",
+          "statEntityID": "HERBERT_JONES_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "HERBERT_JONES_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "fairOverUnder": "8.5",
+          "openFairOdds": "-137",
+          "openFairOverUnder": "9.5",
+          "scoringSupported": true,
+          "marketName": "Herbert Jones Points Over/Under",
+          "bookOdds": "-114",
+          "bookOverUnder": "8.5",
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-114",
+              "overUnder": "8.5",
+              "lastUpdatedAt": "2026-03-06T12:58:08.788Z",
+              "available": true
+            }
+          },
+          "openBookOdds": "+100",
+          "openBookOverUnder": "7.5"
+        },
+        "rebounds-HERBERT_JONES_1_NBA-game-ou-over": {
+          "oddID": "rebounds-HERBERT_JONES_1_NBA-game-ou-over",
+          "opposingOddID": "rebounds-HERBERT_JONES_1_NBA-game-ou-under",
+          "statID": "rebounds",
+          "statEntityID": "HERBERT_JONES_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "HERBERT_JONES_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "+120",
+          "fairOverUnder": "3",
+          "bookOverUnder": "3.5",
+          "openFairOdds": "+137",
+          "openBookOdds": "+124",
+          "openFairOverUnder": "3.5",
+          "openBookOverUnder": "3.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+124",
+              "overUnder": "3.5",
+              "lastUpdatedAt": "2026-03-06T12:58:08.788Z",
+              "available": true
+            }
+          },
+          "marketName": "Herbert Jones Rebounds Over/Under"
+        },
+        "rebounds-HERBERT_JONES_1_NBA-game-ou-under": {
+          "oddID": "rebounds-HERBERT_JONES_1_NBA-game-ou-under",
+          "opposingOddID": "rebounds-HERBERT_JONES_1_NBA-game-ou-over",
+          "statID": "rebounds",
+          "statEntityID": "HERBERT_JONES_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "HERBERT_JONES_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "fairOverUnder": "3",
+          "openFairOdds": "-137",
+          "openFairOverUnder": "3.5",
+          "scoringSupported": true,
+          "marketName": "Herbert Jones Rebounds Over/Under",
+          "bookOdds": "-160",
+          "bookOverUnder": "3.5",
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-162",
+              "overUnder": "3.5",
+              "lastUpdatedAt": "2026-03-06T12:58:08.788Z",
+              "available": true
+            }
+          },
+          "openBookOdds": "+100",
+          "openBookOverUnder": "3.5"
+        },
+        "assists-SADDIQ_BEY_1_NBA-game-ou-over": {
+          "oddID": "assists-SADDIQ_BEY_1_NBA-game-ou-over",
+          "opposingOddID": "assists-SADDIQ_BEY_1_NBA-game-ou-under",
+          "marketName": "Saddiq Bey Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "SADDIQ_BEY_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "SADDIQ_BEY_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+106",
+          "bookOdds": "-110",
+          "fairOverUnder": "2.5",
+          "bookOverUnder": "2.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "-105",
+          "openFairOverUnder": "2",
+          "openBookOverUnder": "2.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        },
+        "assists-SADDIQ_BEY_1_NBA-game-ou-under": {
+          "oddID": "assists-SADDIQ_BEY_1_NBA-game-ou-under",
+          "opposingOddID": "assists-SADDIQ_BEY_1_NBA-game-ou-over",
+          "marketName": "Saddiq Bey Assists Over/Under",
+          "statID": "assists",
+          "statEntityID": "SADDIQ_BEY_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "SADDIQ_BEY_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-106",
+          "bookOdds": "-124",
+          "fairOverUnder": "2.5",
+          "bookOverUnder": "2.5",
+          "openFairOdds": "+100",
+          "openBookOdds": "-114",
+          "openFairOverUnder": "2",
+          "openBookOverUnder": "2.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        },
+        "blocks-DEJOUNTE_MURRAY_1_NBA-game-ou-over": {
+          "oddID": "blocks-DEJOUNTE_MURRAY_1_NBA-game-ou-over",
+          "opposingOddID": "blocks-DEJOUNTE_MURRAY_1_NBA-game-ou-under",
+          "marketName": "Dejounte Murray Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "DEJOUNTE_MURRAY_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "DEJOUNTE_MURRAY_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+259",
+          "bookOdds": "+229",
+          "fairOverUnder": "0.5",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "+264",
+          "openBookOdds": "+240",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        },
+        "blocks-DEJOUNTE_MURRAY_1_NBA-game-ou-under": {
+          "oddID": "blocks-DEJOUNTE_MURRAY_1_NBA-game-ou-under",
+          "opposingOddID": "blocks-DEJOUNTE_MURRAY_1_NBA-game-ou-over",
+          "marketName": "Dejounte Murray Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "DEJOUNTE_MURRAY_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "DEJOUNTE_MURRAY_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-259",
+          "fairOverUnder": "0.5",
+          "openFairOdds": "-264",
+          "openFairOverUnder": "0.5",
+          "scoringSupported": true,
+          "bookOdds": "-370",
+          "bookOverUnder": "0.5",
+          "byBookmaker": {},
+          "openBookOdds": "-370",
+          "openBookOverUnder": "0.5"
+        },
+        "blocks-HERBERT_JONES_1_NBA-game-ou-over": {
+          "oddID": "blocks-HERBERT_JONES_1_NBA-game-ou-over",
+          "opposingOddID": "blocks-HERBERT_JONES_1_NBA-game-ou-under",
+          "marketName": "Herbert Jones Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "HERBERT_JONES_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "HERBERT_JONES_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+174",
+          "bookOdds": "+155",
+          "fairOverUnder": "0.5",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "+171",
+          "openBookOdds": "+155",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        },
+        "blocks-HERBERT_JONES_1_NBA-game-ou-under": {
+          "oddID": "blocks-HERBERT_JONES_1_NBA-game-ou-under",
+          "opposingOddID": "blocks-HERBERT_JONES_1_NBA-game-ou-over",
+          "marketName": "Herbert Jones Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "HERBERT_JONES_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "HERBERT_JONES_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-174",
+          "fairOverUnder": "0.5",
+          "openFairOdds": "-171",
+          "openFairOverUnder": "0.5",
+          "scoringSupported": true,
+          "bookOdds": "-213",
+          "bookOverUnder": "0.5",
+          "byBookmaker": {},
+          "openBookOdds": "-213",
+          "openBookOverUnder": "0.5"
+        },
+        "blocks-SADDIQ_BEY_1_NBA-game-ou-over": {
+          "oddID": "blocks-SADDIQ_BEY_1_NBA-game-ou-over",
+          "opposingOddID": "blocks-SADDIQ_BEY_1_NBA-game-ou-under",
+          "marketName": "Saddiq Bey Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "SADDIQ_BEY_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "SADDIQ_BEY_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+568",
+          "bookOdds": "+525",
+          "fairOverUnder": "0.5",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "+605",
+          "openBookOdds": "+550",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        },
+        "blocks-SADDIQ_BEY_1_NBA-game-ou-under": {
+          "oddID": "blocks-SADDIQ_BEY_1_NBA-game-ou-under",
+          "opposingOddID": "blocks-SADDIQ_BEY_1_NBA-game-ou-over",
+          "marketName": "Saddiq Bey Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "SADDIQ_BEY_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "SADDIQ_BEY_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-568",
+          "fairOverUnder": "0.5",
+          "openFairOdds": "-605",
+          "openFairOverUnder": "0.5",
+          "scoringSupported": true,
+          "bookOdds": "-1000",
+          "bookOverUnder": "0.5",
+          "byBookmaker": {},
+          "openBookOdds": "-1000",
+          "openBookOverUnder": "0.5"
+        },
+        "blocks-TREY_MURPHY_III_1_NBA-game-ou-over": {
+          "oddID": "blocks-TREY_MURPHY_III_1_NBA-game-ou-over",
+          "opposingOddID": "blocks-TREY_MURPHY_III_1_NBA-game-ou-under",
+          "marketName": "Trey Murphy III Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "TREY_MURPHY_III_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "TREY_MURPHY_III_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+206",
+          "bookOdds": "+176",
+          "fairOverUnder": "0.5",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "+220",
+          "openBookOdds": "+200",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        },
+        "blocks-TREY_MURPHY_III_1_NBA-game-ou-under": {
+          "oddID": "blocks-TREY_MURPHY_III_1_NBA-game-ou-under",
+          "opposingOddID": "blocks-TREY_MURPHY_III_1_NBA-game-ou-over",
+          "marketName": "Trey Murphy III Blocks Over/Under",
+          "statID": "blocks",
+          "statEntityID": "TREY_MURPHY_III_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "TREY_MURPHY_III_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-206",
+          "fairOverUnder": "0.5",
+          "openFairOdds": "-220",
+          "openFairOverUnder": "0.5",
+          "scoringSupported": true,
+          "bookOdds": "-294",
+          "bookOverUnder": "0.5",
+          "byBookmaker": {},
+          "openBookOdds": "-294",
+          "openBookOverUnder": "0.5"
+        },
+        "steals-DEJOUNTE_MURRAY_1_NBA-game-ou-over": {
+          "oddID": "steals-DEJOUNTE_MURRAY_1_NBA-game-ou-over",
+          "opposingOddID": "steals-DEJOUNTE_MURRAY_1_NBA-game-ou-under",
+          "marketName": "Dejounte Murray Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "DEJOUNTE_MURRAY_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "DEJOUNTE_MURRAY_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+159",
+          "bookOdds": "+140",
+          "fairOverUnder": "1.5",
+          "bookOverUnder": "1.5",
+          "openFairOdds": "+176",
+          "openBookOdds": "+160",
+          "openFairOverUnder": "1.5",
+          "openBookOverUnder": "1.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+140",
+              "overUnder": "1.5",
+              "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.560799135&selectionId=15695648",
+              "altLines": [
+                {
+                  "odds": "-330",
+                  "overUnder": "0.5",
+                  "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+450",
+                  "overUnder": "2.5",
+                  "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "steals-DEJOUNTE_MURRAY_1_NBA-game-ou-under": {
+          "oddID": "steals-DEJOUNTE_MURRAY_1_NBA-game-ou-under",
+          "opposingOddID": "steals-DEJOUNTE_MURRAY_1_NBA-game-ou-over",
+          "marketName": "Dejounte Murray Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "DEJOUNTE_MURRAY_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "DEJOUNTE_MURRAY_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-159",
+          "fairOverUnder": "1.5",
+          "openFairOdds": "-176",
+          "openFairOverUnder": "1.5",
+          "scoringSupported": true,
+          "bookOdds": "-196",
+          "bookOverUnder": "1.5",
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-188",
+              "overUnder": "1.5",
+              "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.560799135&selectionId=15695649"
+            }
+          },
+          "openBookOdds": "-222",
+          "openBookOverUnder": "1.5"
+        },
+        "steals-SADDIQ_BEY_1_NBA-game-ou-over": {
+          "oddID": "steals-SADDIQ_BEY_1_NBA-game-ou-over",
+          "opposingOddID": "steals-SADDIQ_BEY_1_NBA-game-ou-under",
+          "marketName": "Saddiq Bey Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "SADDIQ_BEY_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "SADDIQ_BEY_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "bookOdds": "-161",
+          "fairOverUnder": "1",
+          "bookOverUnder": "0.5",
+          "openFairOdds": "-141",
+          "openBookOdds": "-155",
+          "openFairOverUnder": "0.5",
+          "openBookOverUnder": "0.5",
+          "scoringSupported": true,
+          "byBookmaker": {}
+        },
+        "steals-SADDIQ_BEY_1_NBA-game-ou-under": {
+          "oddID": "steals-SADDIQ_BEY_1_NBA-game-ou-under",
+          "opposingOddID": "steals-SADDIQ_BEY_1_NBA-game-ou-over",
+          "marketName": "Saddiq Bey Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "SADDIQ_BEY_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "SADDIQ_BEY_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+100",
+          "fairOverUnder": "1",
+          "openFairOdds": "+141",
+          "openFairOverUnder": "0.5",
+          "scoringSupported": true,
+          "bookOdds": "+120",
+          "bookOverUnder": "0.5",
+          "byBookmaker": {},
+          "openBookOdds": "+120",
+          "openBookOverUnder": "0.5"
+        },
+        "steals-TREY_MURPHY_III_1_NBA-game-ou-over": {
+          "oddID": "steals-TREY_MURPHY_III_1_NBA-game-ou-over",
+          "opposingOddID": "steals-TREY_MURPHY_III_1_NBA-game-ou-under",
+          "marketName": "Trey Murphy III Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "TREY_MURPHY_III_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "TREY_MURPHY_III_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+139",
+          "bookOdds": "+124",
+          "fairOverUnder": "1.5",
+          "bookOverUnder": "1.5",
+          "openFairOdds": "+160",
+          "openBookOdds": "+145",
+          "openFairOverUnder": "1.5",
+          "openBookOverUnder": "1.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "+116",
+              "overUnder": "1.5",
+              "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.560799133&selectionId=40336995",
+              "altLines": [
+                {
+                  "odds": "-420",
+                  "overUnder": "0.5",
+                  "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+370",
+                  "overUnder": "2.5",
+                  "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+                  "available": true
+                },
+                {
+                  "odds": "+880",
+                  "overUnder": "3.5",
+                  "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+                  "available": true
+                }
+              ]
+            }
+          }
+        },
+        "steals-TREY_MURPHY_III_1_NBA-game-ou-under": {
+          "oddID": "steals-TREY_MURPHY_III_1_NBA-game-ou-under",
+          "opposingOddID": "steals-TREY_MURPHY_III_1_NBA-game-ou-over",
+          "marketName": "Trey Murphy III Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "TREY_MURPHY_III_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "TREY_MURPHY_III_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-139",
+          "fairOverUnder": "1.5",
+          "openFairOdds": "-160",
+          "openFairOverUnder": "1.5",
+          "scoringSupported": true,
+          "bookOdds": "-162",
+          "bookOverUnder": "1.5",
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-158",
+              "overUnder": "1.5",
+              "lastUpdatedAt": "2026-03-06T12:57:29.000Z",
+              "available": true,
+              "deeplink": "https://sportsbook.fanduel.com/addToBetslip?marketId=42.560799133&selectionId=40336994"
+            }
+          },
+          "openBookOdds": "-200",
+          "openBookOverUnder": "1.5"
+        },
+        "steals-HERBERT_JONES_1_NBA-game-ou-over": {
+          "oddID": "steals-HERBERT_JONES_1_NBA-game-ou-over",
+          "opposingOddID": "steals-HERBERT_JONES_1_NBA-game-ou-under",
+          "marketName": "Herbert Jones Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "HERBERT_JONES_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "over",
+          "playerID": "HERBERT_JONES_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "+109",
+          "bookOdds": "+100",
+          "fairOverUnder": "1.5",
+          "bookOverUnder": "1.5",
+          "openFairOdds": "+121",
+          "openBookOdds": "+110",
+          "openFairOverUnder": "1.5",
+          "openBookOverUnder": "1.5",
+          "scoringSupported": true,
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-114",
+              "overUnder": "1.5",
+              "lastUpdatedAt": "2026-03-06T12:58:08.788Z",
+              "available": true
+            }
+          }
+        },
+        "steals-HERBERT_JONES_1_NBA-game-ou-under": {
+          "oddID": "steals-HERBERT_JONES_1_NBA-game-ou-under",
+          "opposingOddID": "steals-HERBERT_JONES_1_NBA-game-ou-over",
+          "marketName": "Herbert Jones Steals Over/Under",
+          "statID": "steals",
+          "statEntityID": "HERBERT_JONES_1_NBA",
+          "periodID": "game",
+          "betTypeID": "ou",
+          "sideID": "under",
+          "playerID": "HERBERT_JONES_1_NBA",
+          "started": false,
+          "ended": false,
+          "cancelled": false,
+          "bookOddsAvailable": true,
+          "fairOddsAvailable": true,
+          "fairOdds": "-109",
+          "fairOverUnder": "1.5",
+          "openFairOdds": "-121",
+          "openFairOverUnder": "1.5",
+          "scoringSupported": true,
+          "bookOdds": "-119",
+          "bookOverUnder": "1.5",
+          "byBookmaker": {
+            "fanduel": {
+              "odds": "-114",
+              "overUnder": "1.5",
+              "lastUpdatedAt": "2026-03-06T12:58:08.788Z",
+              "available": true
+            }
+          },
+          "openBookOdds": "-152",
+          "openBookOverUnder": "1.5"
+        }
+      },
+      "players": {
+        "COLLIN_GILLESPIE_1_NBA": {
+          "playerID": "COLLIN_GILLESPIE_1_NBA",
+          "teamID": "PHOENIX_SUNS_NBA",
+          "firstName": "Collin",
+          "lastName": "Gillespie",
+          "name": "Collin Gillespie"
+        },
+        "DEVIN_BOOKER_1_NBA": {
+          "playerID": "DEVIN_BOOKER_1_NBA",
+          "teamID": "PHOENIX_SUNS_NBA",
+          "firstName": "Devin",
+          "lastName": "Booker",
+          "name": "Devin Booker"
+        },
+        "JALEN_GREEN_1_NBA": {
+          "playerID": "JALEN_GREEN_1_NBA",
+          "teamID": "PHOENIX_SUNS_NBA",
+          "firstName": "Jalen",
+          "lastName": "Green",
+          "name": "Jalen Green"
+        },
+        "OSO_IGHODARO_1_NBA": {
+          "playerID": "OSO_IGHODARO_1_NBA",
+          "teamID": "PHOENIX_SUNS_NBA",
+          "firstName": "Oso",
+          "lastName": "Ighodaro",
+          "name": "Oso Ighodaro"
+        },
+        "ROYCE_ONEALE_1_NBA": {
+          "playerID": "ROYCE_ONEALE_1_NBA",
+          "teamID": "PHOENIX_SUNS_NBA",
+          "firstName": "Royce",
+          "lastName": "O'Neale",
+          "name": "Royce O'Neale"
+        },
+        "SADDIQ_BEY_1_NBA": {
+          "playerID": "SADDIQ_BEY_1_NBA",
+          "teamID": "NEW_ORLEANS_PELICANS_NBA",
+          "firstName": "Saddiq",
+          "lastName": "Bey",
+          "name": "Saddiq Bey"
+        },
+        "TREY_MURPHY_III_1_NBA": {
+          "playerID": "TREY_MURPHY_III_1_NBA",
+          "teamID": "NEW_ORLEANS_PELICANS_NBA",
+          "firstName": "Trey",
+          "lastName": "Murphy",
+          "name": "Trey Murphy III"
+        },
+        "YVES_MISSI_1_NBA": {
+          "playerID": "YVES_MISSI_1_NBA",
+          "teamID": "NEW_ORLEANS_PELICANS_NBA",
+          "firstName": "Yves",
+          "lastName": "Missi",
+          "name": "Yves Missi"
+        },
+        "ZION_WILLIAMSON_1_NBA": {
+          "playerID": "ZION_WILLIAMSON_1_NBA",
+          "teamID": "NEW_ORLEANS_PELICANS_NBA",
+          "firstName": "Zion",
+          "lastName": "Williamson",
+          "name": "Zion Williamson"
+        },
+        "GRAYSON_ALLEN_1_NBA": {
+          "playerID": "GRAYSON_ALLEN_1_NBA",
+          "teamID": "PHOENIX_SUNS_NBA",
+          "firstName": "Grayson",
+          "lastName": "Allen",
+          "name": "Grayson Allen"
+        },
+        "DEJOUNTE_MURRAY_1_NBA": {
+          "playerID": "DEJOUNTE_MURRAY_1_NBA",
+          "teamID": "NEW_ORLEANS_PELICANS_NBA",
+          "firstName": "Dejounte",
+          "lastName": "Murray",
+          "name": "Dejounte Murray"
+        },
+        "HERBERT_JONES_1_NBA": {
+          "playerID": "HERBERT_JONES_1_NBA",
+          "teamID": "NEW_ORLEANS_PELICANS_NBA",
+          "firstName": "Herbert",
+          "lastName": "Jones",
+          "name": "Herbert Jones"
+        }
+      },
+      "results": {}
+    }
+  ]
+}
